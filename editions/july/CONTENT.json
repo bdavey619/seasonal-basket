@@ -1,0 +1,32 @@
+{
+  "month": "July",
+  "location": "San Diego",
+  "edition_number": 1,
+  "opening_note": "Tomatoes finally deserve the center of the plate. Cucumbers make everything cooler. Peaches need almost nothing. Your usual meals can stay exactly as simple as they are\u2014only now they taste like July.",
+  "palette": {
+    "background": "#f5efe4",
+    "paper": "#fffdf8",
+    "primary": "#b64b35",
+    "secondary": "#496b52",
+    "accent": "#d99662",
+    "ink": "#1f2a24"
+  },
+  "featured_ingredients": [
+    "heirloom-tomatoes",
+    "persian-cucumbers",
+    "peaches",
+    "sweet-corn",
+    "basil",
+    "mint",
+    "cherries",
+    "blackberries"
+  ],
+  "confidence": {
+    "score": 9.2,
+    "lunches_supported": 5,
+    "dinners_supported": 5,
+    "weekend_meals_supported": 2,
+    "waste_risk": "low"
+  },
+  "market_question": "What are you taking home tonight?"
+}
