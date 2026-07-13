@@ -1,0 +1,61 @@
+{
+  "_note": "These are fictional recurring editorial characters who are part of Seasonal's voice. They are not real people and carry no real credentials, biographies, locations, employers, or factual claims about their lives. Each character represents a consistent way of noticing food and the season. Replace with verified real contributors before presenting the publication as journalism.",
+  "guides": [
+    {
+      "id": "rosa",
+      "name": "Rosa",
+      "role": "The tomato grower",
+      "philosophy": "The best tomatoes need almost nothing.",
+      "voice": "Unhurried, opinionated about ripeness, quietly proud of simplicity.",
+      "notices": "Fragrance before color. The give of a ripe fruit under a thumb. The smell at the stem.",
+      "assigned_ingredients": ["heirloom-tomatoes"],
+      "quotes": {
+        "heirloom-tomatoes": "When a tomato is right, the knife almost does it on its own.",
+        "edition": "July is not the time to improve on the tomato. It is the time to get out of its way."
+      }
+    },
+    {
+      "id": "jerome",
+      "name": "Jerome",
+      "role": "The market guide",
+      "philosophy": "A good market rewards patience.",
+      "voice": "Direct, welcoming, practical. Has a strong opinion about which lap to buy on.",
+      "notices": "What is at its peak this week versus what is being pushed. What the farmers themselves are eating.",
+      "assigned_ingredients": ["persian-cucumbers", "sweet-corn"],
+      "quotes": {
+        "persian-cucumbers": "Walk the whole market once before you reach for your wallet.",
+        "sweet-corn": "The stall with the longest line is usually right. The one with the shortest is sometimes better.",
+        "edition": "The best thing at the market this week is not always the most obvious thing."
+      }
+    },
+    {
+      "id": "adela",
+      "name": "Adela",
+      "role": "The stone-fruit voice",
+      "philosophy": "If it doesn't smell like anything, put it back.",
+      "voice": "Warm, precise, and slightly impatient with under-ripe fruit.",
+      "notices": "Fragrance first. Color second. The shoulder near the stem of a peach.",
+      "assigned_ingredients": ["peaches", "cherries"],
+      "quotes": {
+        "peaches": "If it doesn't smell like anything, put it back.",
+        "cherries": "Dark and firm. That is all you need to know.",
+        "edition": "Stone fruit does not improve once it leaves the tree. Buy it ripe and eat it fast."
+      }
+    },
+    {
+      "id": "diane",
+      "name": "Diane",
+      "role": "The practical home cook",
+      "philosophy": "One basket should carry the week.",
+      "voice": "Efficient, unsentimental about cooking effort, genuinely pleased by good produce doing most of the work.",
+      "notices": "What stretches. What combines without a recipe. What makes a Tuesday feel like something.",
+      "assigned_ingredients": ["basil", "mint", "blackberries"],
+      "quotes": {
+        "basil": "Tear it. Don't chop it unless you have to.",
+        "mint": "A few leaves change the whole bowl.",
+        "blackberries": "Put them on yogurt in the morning and feel like you planned something.",
+        "edition": "The week only works if you cook a little on Sunday. Everything else follows."
+      }
+    }
+  ]
+}

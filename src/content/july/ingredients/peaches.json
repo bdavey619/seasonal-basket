@@ -1,0 +1,30 @@
+{
+  "slug": "peaches",
+  "name": "Peaches",
+  "month": "July",
+  "guide_id": "adela",
+  "why_now": "Southern California stone fruit peaks through July. The combination of warm days and cool nights produces fruit with real sugar and real fragrance. This is the short window.",
+  "how_to_choose": [
+    "Fragrant at the stem end — this is the most reliable test",
+    "Gives slightly near the top when gently pressed",
+    "Deep color, though variety varies",
+    "Avoid hard or refrigerated peaches"
+  ],
+  "buy_this_much": "4–5 peaches for one person for the week. They do not all need to be eaten at once.",
+  "pairs_with_month": ["mint", "blackberries", "sweet-corn", "basil"],
+  "pairs_with_staples": ["greek yogurt", "chicken thighs", "salmon"],
+  "flavor_paths": [
+    { "name": "Nearly nothing", "description": "A ripe peach over the sink. Salt if you want it." },
+    { "name": "Mint + honey", "description": "Sliced with fresh mint and a little honey. Breakfast or dessert." },
+    { "name": "Savory", "description": "Grilled or sliced alongside chicken. A little lime, a little heat." }
+  ],
+  "weekday_uses": [
+    "Sliced on Greek yogurt in the morning",
+    "Added to a salad with chicken or salmon",
+    "Eaten as a snack, ripe"
+  ],
+  "weekend_use": "Grilled peaches alongside chicken thighs with corn salad.",
+  "storage": "Counter until ripe. Eat within a day or two of peak ripeness. Do not refrigerate until fully ripe, and use quickly after.",
+  "one_thing_to_learn": "A peach ripens from the inside out. A soft shoulder near the stem means it is ready. A hard peach left on the counter will soften but will not improve the way tree-ripened fruit does.",
+  "market_question": "Which variety is ripest today?"
+}

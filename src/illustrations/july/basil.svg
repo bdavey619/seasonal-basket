@@ -1,0 +1,64 @@
+<!-- Provisional botanical illustration — basil
+     Original provisional artwork for the Seasonal prototype.
+     Field-guide register: observational, asymmetrical, thin line.
+     Not a commissioned botanical plate. Replaceable. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" fill="none" stroke="#1f2a24" stroke-linecap="round" stroke-linejoin="round" aria-label="Basil illustration">
+  <!-- main stem — slight lean to the right, not perfectly vertical -->
+  <path d="M97 220 C98 196 99 172 100 148 C101 124 102 104 103 86" stroke-width="0.85"/>
+
+  <!-- lowest leaf pair — largest, widest spread, left leaf slightly lower -->
+  <!-- left leaf -->
+  <path d="M99 190
+           C90 184 80 178 72 174
+           C68 172 66 170 67 167
+           C70 163 78 164 86 168
+           C92 171 97 178 99 190 Z"
+        stroke-width="0.9"/>
+  <!-- left leaf mid-vein -->
+  <path d="M99 190 C88 180 76 172 68 168" stroke-width="0.45" opacity="0.5"/>
+
+  <!-- right leaf — slightly higher, a little smaller -->
+  <path d="M100 184
+           C108 178 118 170 127 164
+           C131 161 134 160 135 163
+           C136 166 132 170 125 174
+           C118 178 108 182 100 184 Z"
+        stroke-width="0.9"/>
+  <!-- right leaf mid-vein -->
+  <path d="M100 184 C112 175 123 167 133 163" stroke-width="0.45" opacity="0.5"/>
+
+  <!-- middle leaf pair — smaller, leaves angled upward more -->
+  <!-- left -->
+  <path d="M100 152
+           C92 146 82 140 75 136
+           C72 134 71 132 73 130
+           C76 127 82 130 89 135
+           C94 139 98 146 100 152 Z"
+        stroke-width="0.9"/>
+  <path d="M100 152 C90 143 79 135 74 131" stroke-width="0.45" opacity="0.5"/>
+
+  <!-- right — slightly unequal -->
+  <path d="M101 147
+           C108 141 117 134 124 130
+           C127 128 129 128 130 130
+           C131 133 128 137 122 141
+           C115 146 107 149 101 147 Z"
+        stroke-width="0.9"/>
+  <path d="M101 147 C111 140 120 133 129 130" stroke-width="0.45" opacity="0.5"/>
+
+  <!-- upper single leaf — one leaf more prominent than the other, slight turn -->
+  <path d="M102 112
+           C96 106 88 100 83 97
+           C81 95 81 93 83 92
+           C86 90 91 93 96 98
+           C100 103 102 108 102 112 Z"
+        stroke-width="0.85"/>
+  <path d="M102 112 C94 103 86 96 83 93" stroke-width="0.4" opacity="0.45"/>
+
+  <!-- very small opposing leaf at top, barely formed -->
+  <path d="M103 100
+           C107 96 112 93 115 92
+           C116 91 117 92 116 93
+           C114 95 109 97 103 100 Z"
+        stroke-width="0.8"/>
+</svg>

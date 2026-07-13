@@ -1,0 +1,30 @@
+{
+  "slug": "cherries",
+  "name": "Cherries",
+  "month": "July",
+  "guide_id": "adela",
+  "why_now": "California cherry season runs through July. The window is short. Buy them when they are dark and firm and eat them without much ceremony.",
+  "how_to_choose": [
+    "Dark, deep color — mahogany to near-black for sweet varieties",
+    "Firm, not soft",
+    "Stems still attached and green",
+    "Avoid anything split or leaking"
+  ],
+  "buy_this_much": "A generous pound. They disappear faster than expected.",
+  "pairs_with_month": ["mint", "peaches", "blackberries"],
+  "pairs_with_staples": ["greek yogurt", "sourdough"],
+  "flavor_paths": [
+    { "name": "As they are", "description": "A bowl of cherries, cold, after dinner." },
+    { "name": "With yogurt", "description": "Halved over Greek yogurt in the morning. That is the whole thing." },
+    { "name": "In the drink", "description": "Tart cherry juice becomes the Hillcrest Spritz." }
+  ],
+  "weekday_uses": [
+    "Eaten as a snack",
+    "Halved over Greek yogurt",
+    "As the base for cherry juice in the Hillcrest Spritz"
+  ],
+  "weekend_use": "A plate of cherries alongside the weekend meal. No preparation needed.",
+  "storage": "Refrigerate and eat within three to four days. Leave stems on until eating.",
+  "one_thing_to_learn": "Tart cherry juice is a useful pantry item through July — it keeps longer than fresh cherries and makes the Hillcrest Spritz more reliable on short notice.",
+  "market_question": "What variety are these, and when were they picked?"
+}

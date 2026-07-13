@@ -1,0 +1,31 @@
+{
+  "slug": "mint",
+  "name": "Mint",
+  "month": "July",
+  "guide_id": "diane",
+  "why_now": "Mint is cooling by nature and perfect in summer heat. A few leaves change the temperature of a dish or a drink entirely.",
+  "how_to_choose": [
+    "Perky, upright leaves — not limp",
+    "Deep green without yellowing",
+    "Strongly fragrant when a leaf is pressed",
+    "Spearmint or peppermint both work for this edition"
+  ],
+  "buy_this_much": "One bunch. It goes further than you think.",
+  "pairs_with_month": ["persian-cucumbers", "peaches", "cherries", "blackberries"],
+  "pairs_with_staples": ["greek yogurt", "salmon", "chicken thighs", "sticky rice"],
+  "flavor_paths": [
+    { "name": "Cucumber-mint", "description": "Lime, salt, mint. The simplest summer side." },
+    { "name": "Fruit and mint", "description": "Peaches, cherries, or blackberries with a few leaves and honey." },
+    { "name": "Spritz", "description": "Slapped and dropped into the Hillcrest Spritz." }
+  ],
+  "weekday_uses": [
+    "Cucumber and mint side salad",
+    "Torn over yogurt with fruit",
+    "Added to a salmon rice bowl",
+    "Stirred into sparkling water with lime"
+  ],
+  "weekend_use": "In the Hillcrest Spritz. Or over a peach and blackberry plate with honey.",
+  "storage": "Keep in water at room temperature or wrapped loosely in a damp paper towel in the refrigerator. Use within five days.",
+  "one_thing_to_learn": "Slapping a mint leaf between your palms before using it releases the oils without bruising the leaf. It is worth doing.",
+  "market_question": "What variety is this?"
+}

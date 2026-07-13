@@ -1,0 +1,30 @@
+{
+  "slug": "sweet-corn",
+  "name": "Sweet corn",
+  "month": "July",
+  "guide_id": "jerome",
+  "why_now": "Corn sugars convert to starch quickly after picking. July corn bought at a farmers market and eaten the same day is a different ingredient from corn that has traveled.",
+  "how_to_choose": [
+    "Husk tightly wrapped and bright green",
+    "Silk slightly dry at the top, not slimy",
+    "Plump kernels felt through the husk",
+    "Buy from a stall that harvested recently"
+  ],
+  "buy_this_much": "2–3 ears for one person mid-week, another 1–2 for the weekend",
+  "pairs_with_month": ["heirloom-tomatoes", "basil", "persian-cucumbers", "peaches"],
+  "pairs_with_staples": ["ground beef or turkey", "chicken thighs", "beans", "sticky rice"],
+  "flavor_paths": [
+    { "name": "Bright Taco", "description": "Lime, taco seasoning, tomato, beans, cilantro." },
+    { "name": "Italian Summer", "description": "Basil, olive oil, garlic. Good off the cob into a bowl." },
+    { "name": "Chili-crisp bowl", "description": "Sesame, chili crisp, and a little soy over rice." }
+  ],
+  "weekday_uses": [
+    "Cut off the cob into a rice bowl",
+    "Added to taco bowls with beans and tomato",
+    "Quick corn and tomato salad with basil"
+  ],
+  "weekend_use": "Corn salad alongside grilled chicken thighs and peaches.",
+  "storage": "Keep husked corn refrigerated and use within two days. Husked is fine for a day, unhusked is better if waiting.",
+  "one_thing_to_learn": "Fresh corn is good raw. Shaved directly off the cob into a salad, it has a sweetness that disappears quickly with heat.",
+  "market_question": "How long ago was this picked?"
+}

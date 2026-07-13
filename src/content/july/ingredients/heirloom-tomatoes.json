@@ -1,0 +1,32 @@
+{
+  "slug": "heirloom-tomatoes",
+  "name": "Heirloom tomatoes",
+  "month": "July",
+  "guide_id": "rosa",
+  "why_now": "July is peak tomato season in Southern California. The heat concentrates their sugars and the variety is at its widest. This is the month they deserve the center of the plate.",
+  "how_to_choose": [
+    "Heavy for their size",
+    "Fragrant at the stem end",
+    "Give slightly under gentle pressure",
+    "Irregular shape is a good sign, not a flaw",
+    "Avoid anything refrigerated at the store"
+  ],
+  "buy_this_much": "4–6 medium tomatoes for one person for the week",
+  "pairs_with_month": ["basil", "persian-cucumbers", "sweet-corn", "peaches"],
+  "pairs_with_staples": ["chicken thighs", "ground beef or turkey", "salmon", "beans", "sourdough"],
+  "flavor_paths": [
+    { "name": "Italian Summer", "description": "Olive oil, basil, garlic, black pepper, flaky salt." },
+    { "name": "Bright Taco", "description": "Lime, cilantro, corn, cucumber, a little heat." },
+    { "name": "Simple Toast", "description": "Sourdough, olive oil, salt. The tomato does the rest." }
+  ],
+  "weekday_uses": [
+    "Rice bowl topping with basil",
+    "Chicken thigh salad with cucumber",
+    "Pasta sauce with garlic and olive oil",
+    "Toast with salt and olive oil"
+  ],
+  "weekend_use": "Thick slices with burrata, basil, olive oil, and sourdough for dragging.",
+  "storage": "Counter only. Never refrigerate. Use within four or five days.",
+  "one_thing_to_learn": "Smell the stem end before you buy. A tomato that smells like a tomato at the store will taste like one at home.",
+  "market_question": "Which variety do you think is best this week?"
+}

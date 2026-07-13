@@ -1,0 +1,27 @@
+<!-- Provisional botanical illustration — heirloom tomatoes
+     Original provisional artwork for the Seasonal prototype.
+     Field-guide register: observational, asymmetrical, thin line.
+     Not a commissioned botanical plate. Replaceable. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" fill="none" stroke="#1f2a24" stroke-linecap="round" stroke-linejoin="round" aria-label="Heirloom tomato illustration">
+  <!-- stem — slightly off-center, a little crooked -->
+  <path d="M104 74 C103 63 105 54 104 46" stroke-width="0.9"/>
+  <!-- calyx — five irregular sepals spreading naturally, not evenly spaced -->
+  <path d="M104 74 C98 68 90 64 84 62" stroke-width="0.8"/>
+  <path d="M104 74 C100 66 96 58 98 52" stroke-width="0.8"/>
+  <path d="M104 74 C107 66 110 59 112 53" stroke-width="0.8"/>
+  <path d="M104 74 C110 70 118 68 124 67" stroke-width="0.8"/>
+  <path d="M104 74 C96 72 88 73 83 76" stroke-width="0.8"/>
+  <!-- fruit body — slightly irregular, wider than tall, flat-ish shoulder -->
+  <path d="M104 76
+           C88 76 70 82 62 96
+           C56 108 58 126 66 140
+           C74 154 88 164 104 166
+           C120 166 134 156 142 142
+           C150 128 150 110 144 96
+           C136 80 120 76 104 76 Z"
+        stroke-width="1.1"/>
+  <!-- one faint crease — heirloom character, off to one side -->
+  <path d="M104 76 C101 100 100 130 102 166" stroke-width="0.55" opacity="0.4"/>
+  <!-- slight shoulder irregularity left side -->
+  <path d="M78 84 C74 88 70 92 68 96" stroke-width="0.6" opacity="0.35"/>
+</svg>

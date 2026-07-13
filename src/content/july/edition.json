@@ -1,0 +1,140 @@
+{
+  "_note": "This is the canonical editable source for the July edition. Run python3 src/build.py to regenerate site/. editions/july/CONTENT.json is auto-generated from this file and the ingredient JSONs.",
+  "month": "July",
+  "location": "San Diego",
+  "edition_number": 1,
+  "base_url": "/seasonal",
+  "opening_note": "Tomatoes finally deserve the center of the plate. Cucumbers make everything cooler. Peaches need almost nothing. Your usual meals can stay exactly as simple as they are—only now they taste like July.",
+  "palette": {
+    "background": "#f5efe4",
+    "paper": "#fffdf8",
+    "primary": "#b64b35",
+    "secondary": "#496b52",
+    "accent": "#d99662",
+    "ink": "#1f2a24",
+    "muted": "#6a746d",
+    "line": "#d8d0c3",
+    "cream": "#eee1ca",
+    "dark": "#1d3327"
+  },
+  "featured_ingredients": [
+    "heirloom-tomatoes",
+    "persian-cucumbers",
+    "peaches",
+    "sweet-corn",
+    "basil",
+    "mint",
+    "cherries",
+    "blackberries"
+  ],
+  "confidence": {
+    "score": 9.2,
+    "lunches_supported": 5,
+    "dinners_supported": 5,
+    "weekend_meals_supported": 2,
+    "waste_risk": "low",
+    "assumptions": [
+      "Pantry basics already on hand",
+      "One batch of rice cooked ahead",
+      "One or two proteins prepped at the start of the week"
+    ],
+    "editorial_note": "This score is editorial guidance, not a calculated metric. It reflects how confidently this basket supports a realistic week when combined with your usual staples."
+  },
+  "staples": [
+    "Sticky white rice",
+    "Ground beef or turkey",
+    "Chicken thighs",
+    "Salmon",
+    "Beans",
+    "Sourdough",
+    "Greek yogurt"
+  ],
+  "flavor_paths": [
+    {
+      "name": "Italian Summer",
+      "description": "Italian seasoning, garlic, basil, tomato, olive oil, black pepper.",
+      "color_var": "primary"
+    },
+    {
+      "name": "Bright Taco",
+      "description": "Taco seasoning, lime, corn, tomato, cucumber, beans, cilantro if desired.",
+      "color_var": "secondary"
+    },
+    {
+      "name": "Chili-Crisp Bowl",
+      "description": "Soy or sesame marinade, chili crisp, cucumber, corn, basil or mint.",
+      "color_var": "accent"
+    }
+  ],
+  "week": [
+    {
+      "day": "Monday",
+      "lunch": { "name": "Chicken rice bowl", "note": "cucumber + tomato + basil" },
+      "dinner": { "name": "Ground turkey bowl", "note": "Italian seasoning + corn" }
+    },
+    {
+      "day": "Tuesday",
+      "lunch": { "name": "Turkey bowl repeat", "note": "add beans + lime" },
+      "dinner": { "name": "Salmon + rice", "note": "cucumber-mint side" }
+    },
+    {
+      "day": "Wednesday",
+      "lunch": { "name": "Salmon wrap or salad", "note": "tomato + cucumber" },
+      "dinner": { "name": "Beef taco bowl", "note": "corn + beans + tomato" }
+    },
+    {
+      "day": "Thursday",
+      "lunch": { "name": "Beef bowl repeat", "note": "chili crisp + cucumber" },
+      "dinner": { "name": "Tomato-basil pasta", "note": "add chicken if desired" }
+    },
+    {
+      "day": "Friday",
+      "lunch": { "name": "Tomato sourdough toast", "note": "or chicken wrap at home" },
+      "dinner": { "name": "Flexible", "note": "pizza, leftovers, or dinner out" }
+    },
+    {
+      "day": "Saturday",
+      "lunch": { "name": "Farmers market plate", "note": "tomato + burrata + bread" },
+      "dinner": { "name": "Grilled chicken thighs", "note": "corn + peach salad" }
+    },
+    {
+      "day": "Sunday",
+      "lunch": { "name": "BLT or bean salad", "note": "tomato + cucumber + basil" },
+      "dinner": { "name": "Reset bowl", "note": "rice + protein + remaining produce" }
+    }
+  ],
+  "weekend_meal": {
+    "name": "Tomato, burrata, basil, and sourdough.",
+    "intro": "One meal should feel like the reason you went shopping. This is July’s.",
+    "ingredients": [
+      "2 heirloom tomatoes",
+      "1 ball burrata",
+      "Basil",
+      "Olive oil",
+      "Flaky salt and black pepper",
+      "Toasted sourdough"
+    ],
+    "method": "Slice the tomatoes thickly. Tear open the burrata. Add basil, olive oil, salt, and pepper. Use warm sourdough to drag through everything left on the plate."
+  },
+  "drink": {
+    "name": "Hillcrest Spritz",
+    "ingredients": [
+      "2 oz tart cherry juice",
+      "½ lime",
+      "6–8 mint leaves",
+      "Sparkling mineral water",
+      "Ice"
+    ],
+    "method": "Fill a rocks glass with ice. Add cherry juice and lime. Slap the mint once between your palms, drop it in, then top with sparkling water."
+  },
+  "local_ritual": {
+    "label": "San Diego ritual",
+    "name": "Take dinner outside.",
+    "description": "Pack tomatoes, bread, fruit, and something cold to drink. Eat near the water while the light is still hanging around."
+  },
+  "one_thing_to_notice": {
+    "headline": "The smell of a tomato vine.",
+    "body": "Most people know what a tomato tastes like. Fewer notice the green, almost peppery scent where the stem meets the fruit."
+  },
+  "market_question": "What are you taking home tonight?"
+}

@@ -1,0 +1,21 @@
+<!-- Provisional botanical illustration — Persian cucumbers
+     Original provisional artwork for the Seasonal prototype. Replaceable. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" fill="none" stroke="#1f2a24" stroke-linecap="round" stroke-linejoin="round" aria-label="Persian cucumber illustration">
+  <!-- main body — two cucumbers at slight angle -->
+  <path d="M72 48 C60 52 52 68 52 95 C52 122 60 148 72 158 C78 163 84 164 88 162 C94 160 98 152 100 140 C102 128 102 110 100 95 C98 80 94 62 88 52 C85 46 78 44 72 48 Z" stroke-width="1.8"/>
+  <!-- stem end top -->
+  <path d="M72 48 C70 42 72 36 76 34" stroke-width="1.2"/>
+  <path d="M74 47 C76 40 82 36 84 34" stroke-width="1.2"/>
+  <!-- blossom end bottom -->
+  <path d="M74 158 C73 164 76 168 80 168" stroke-width="1.2"/>
+  <!-- surface texture lines -->
+  <path d="M62 72 C60 88 60 120 62 136" stroke-width="1" opacity=".4"/>
+  <path d="M90 56 C92 72 94 112 92 140" stroke-width="1" opacity=".4"/>
+  <!-- second cucumber -->
+  <path d="M118 58 C108 62 102 76 102 100 C102 124 108 148 118 158 C123 162 128 162 132 158 C138 152 142 132 142 108 C142 84 138 66 132 58 C128 54 122 54 118 58 Z" stroke-width="1.8"/>
+  <path d="M118 58 C116 52 118 44 122 42" stroke-width="1.2"/>
+  <path d="M120 57 C124 50 130 46 132 44" stroke-width="1.2"/>
+  <path d="M120 158 C119 164 122 168 126 168" stroke-width="1.2"/>
+  <path d="M108 78 C106 96 106 124 108 142" stroke-width="1" opacity=".4"/>
+  <path d="M136 64 C138 80 140 116 138 144" stroke-width="1" opacity=".4"/>
+</svg>

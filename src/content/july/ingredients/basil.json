@@ -1,0 +1,31 @@
+{
+  "slug": "basil",
+  "name": "Basil",
+  "month": "July",
+  "guide_id": "diane",
+  "why_now": "Basil is at its most fragrant in warm weather. July heat brings out the volatile oils. The best basil right now smells like summer itself.",
+  "how_to_choose": [
+    "Bright, even green leaves — no dark spots",
+    "Fragrant when you lean in",
+    "Stems still firm",
+    "Avoid wilted or yellowing bunches"
+  ],
+  "buy_this_much": "One or two good bunches. It moves through a week faster than you expect.",
+  "pairs_with_month": ["heirloom-tomatoes", "persian-cucumbers", "sweet-corn", "peaches"],
+  "pairs_with_staples": ["chicken thighs", "ground beef or turkey", "salmon", "beans", "sourdough"],
+  "flavor_paths": [
+    { "name": "Italian Summer", "description": "Tomato, garlic, olive oil. Torn over anything warm." },
+    { "name": "Fresh bowl", "description": "Rice, protein, cucumber, tomato. Basil finishes it." },
+    { "name": "With stone fruit", "description": "A few leaves with peach and a little salt. Unexpected and very good." }
+  ],
+  "weekday_uses": [
+    "Torn over rice bowls",
+    "Added to tomato and cucumber salads",
+    "Stirred into pasta with olive oil and garlic",
+    "Layered on a tomato toast"
+  ],
+  "weekend_use": "Torn generously over burrata and tomatoes with good olive oil.",
+  "storage": "Keep at room temperature with stems in water, like flowers. Do not refrigerate. Use within three or four days.",
+  "one_thing_to_learn": "Tear basil instead of chopping when it will be served fresh. The knife bruises it and darkens it quickly. Torn leaves hold their color and fragrance longer.",
+  "market_question": "Is this Genovese or a different variety this week?"
+}

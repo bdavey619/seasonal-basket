@@ -1,0 +1,15 @@
+<!-- Provisional botanical illustration — peaches
+     Original provisional artwork for the Seasonal prototype. Replaceable. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" fill="none" stroke="#1f2a24" stroke-linecap="round" stroke-linejoin="round" aria-label="Peach illustration">
+  <!-- leaf -->
+  <path d="M112 50 C124 38 138 34 148 36 C140 46 128 52 112 50 Z" stroke-width="1.3"/>
+  <line x1="112" y1="50" x2="148" y2="36" stroke-width="1" opacity=".5"/>
+  <!-- stem -->
+  <line x1="104" y1="64" x2="112" y2="50" stroke-width="1.5"/>
+  <!-- peach body -->
+  <path d="M104 64 C80 64 58 80 56 104 C54 128 68 156 92 164 C98 166 102 167 104 167 C106 167 110 166 116 164 C140 156 154 128 152 104 C150 80 128 64 104 64 Z" stroke-width="1.8"/>
+  <!-- crease / suture line -->
+  <path d="M104 64 C100 90 100 130 104 167" stroke-width="1.1" opacity=".5"/>
+  <!-- shoulder indent at stem -->
+  <path d="M96 67 C98 61 104 59 110 62" stroke-width="1.1" opacity=".6"/>
+</svg>

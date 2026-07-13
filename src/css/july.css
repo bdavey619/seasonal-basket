@@ -1,0 +1,16 @@
+/* Seasonal — july.css
+   July palette variables. These are the only values that change between editions.
+   All layout, typography, and component styles live in base.css. */
+
+:root {
+  --bg:       #f5efe4;
+  --paper:    #fffdf8;
+  --primary:  #b64b35;   /* tomato red */
+  --secondary:#496b52;   /* basil green */
+  --accent:   #d99662;   /* peach */
+  --ink:      #1f2a24;
+  --muted:    #6a746d;
+  --line:     #d8d0c3;
+  --cream:    #eee1ca;
+  --dark:     #1d3327;
+}
