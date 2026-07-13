@@ -4,7 +4,7 @@
     {
       "name": "seasonal",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "--directory", "site", "8000"],
+      "runtimeArgs": ["-m", "http.server", "--directory", "docs", "8000"],
       "port": 8000
     }
   ]

@@ -2,7 +2,7 @@
 """
 Seasonal build script.
 Reads structured content from src/content/<edition>/ and generates
-static HTML into site/. Run with: python3 src/build.py
+static HTML into docs/. Run with: python3 src/build.py
 
 No third-party dependencies. Requires Python 3.8+.
 """
@@ -22,7 +22,7 @@ SRC        = ROOT / "src"
 CONTENT    = SRC / "content"
 TEMPLATES  = SRC / "templates"
 CSS_SRC    = SRC / "css"
-SITE       = ROOT / "site"
+SITE       = ROOT / "docs"
 EDITIONS   = ROOT / "editions"
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
@@ -709,10 +709,20 @@ def main():
     print("Seasonal build")
     print("=" * 40)
 
-    # Clean and recreate site/
+    # Files in docs/ that must survive the clean step.
+    PROTECTED = ["july-prototype.html"]
+
+    rescued = {}
     if SITE.exists():
+        for name in PROTECTED:
+            p = SITE / name
+            if p.exists():
+                rescued[name] = p.read_bytes()
         shutil.rmtree(SITE)
     SITE.mkdir()
+
+    for name, data in rescued.items():
+        (SITE / name).write_bytes(data)
 
     # Build all editions found in src/content/
     edition_dirs = sorted(d.name for d in CONTENT.iterdir() if d.is_dir())
@@ -723,7 +733,7 @@ def main():
         build_edition(edition_dir)
 
     print("\nBuild complete.")
-    print("Preview: python3 -m http.server --directory site 8000")
+    print("Preview: python3 -m http.server --directory docs 8000")
     print("Then open: http://localhost:8000/")
 
 
