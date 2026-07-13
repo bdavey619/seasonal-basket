@@ -66,43 +66,47 @@
       "color_var": "accent"
     }
   ],
-  "week": [
+  "meal_transformations": [
     {
-      "day": "Monday",
-      "lunch": { "name": "Chicken rice bowl", "note": "cucumber + tomato + basil" },
-      "dinner": { "name": "Ground turkey bowl", "note": "Italian seasoning + corn" }
+      "meal": "Rice bowl",
+      "change": "Tomatoes, cucumber, basil on top.",
+      "result": "It tastes like you planned it."
     },
     {
-      "day": "Tuesday",
-      "lunch": { "name": "Turkey bowl repeat", "note": "add beans + lime" },
-      "dinner": { "name": "Salmon + rice", "note": "cucumber-mint side" }
+      "meal": "Pasta",
+      "change": "Tomatoes, basil, olive oil. No jar.",
+      "result": "July does the work."
     },
     {
-      "day": "Wednesday",
-      "lunch": { "name": "Salmon wrap or salad", "note": "tomato + cucumber" },
-      "dinner": { "name": "Beef taco bowl", "note": "corn + beans + tomato" }
+      "meal": "Tacos",
+      "change": "Corn, tomato, cucumber instead of salsa.",
+      "result": "Brighter. Cooler. Still fast."
     },
     {
-      "day": "Thursday",
-      "lunch": { "name": "Beef bowl repeat", "note": "chili crisp + cucumber" },
-      "dinner": { "name": "Tomato-basil pasta", "note": "add chicken if desired" }
+      "meal": "Yogurt",
+      "change": "Peaches or blackberries, nothing else.",
+      "result": "Breakfast earns its keep."
     },
     {
-      "day": "Friday",
-      "lunch": { "name": "Tomato sourdough toast", "note": "or chicken wrap at home" },
-      "dinner": { "name": "Flexible", "note": "pizza, leftovers, or dinner out" }
-    },
-    {
-      "day": "Saturday",
-      "lunch": { "name": "Farmers market plate", "note": "tomato + burrata + bread" },
-      "dinner": { "name": "Grilled chicken thighs", "note": "corn + peach salad" }
-    },
-    {
-      "day": "Sunday",
-      "lunch": { "name": "BLT or bean salad", "note": "tomato + cucumber + basil" },
-      "dinner": { "name": "Reset bowl", "note": "rice + protein + remaining produce" }
+      "meal": "Grilled chicken",
+      "change": "Corn and peach alongside.",
+      "result": "The side becomes the reason."
     }
   ],
+  "week": {
+    "weekday_lunches": [
+      { "name": "Chicken rice bowl", "note": "tomato, cucumber, basil" },
+      { "name": "Salmon wrap", "note": "tomato, cucumber, a little lime" },
+      { "name": "Tomato toast", "note": "sourdough, olive oil, flaky salt" },
+      { "name": "Bean salad", "note": "tomato, cucumber, basil" }
+    ],
+    "weekday_dinners": [
+      { "name": "Turkey bowl", "note": "corn, tomato, Italian seasoning" },
+      { "name": "Salmon + rice", "note": "cucumber-mint alongside" },
+      { "name": "Beef taco bowl", "note": "corn, beans, tomato" },
+      { "name": "Tomato-basil pasta", "note": "olive oil, garlic, no jar needed" }
+    ]
+  },
   "weekend_meal": {
     "name": "Tomato, burrata, basil, and sourdough.",
     "intro": "One meal should feel like the reason you went shopping. This is July’s.",

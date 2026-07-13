@@ -172,48 +172,46 @@ def render_basket_tiles(ingredients, ingredients_path, depth):
     </a>""")
     return "\n".join(tiles)
 
-# ── Week grid ──────────────────────────────────────────────────────────────────
+# ── Meal transformations ───────────────────────────────────────────────────────
+
+def render_transformations(transformations):
+    rows = []
+    for t in transformations:
+        rows.append(f"""
+    <div class="transformation-row">
+      <span class="transformation-meal">{e(t['meal'])}</span>
+      <span class="transformation-arrow">→</span>
+      <span class="transformation-change">{e(t['change'])}</span>
+      <span class="transformation-result">{e(t['result'])}</span>
+    </div>""")
+    return "\n".join(rows)
+
+# ── Week buckets ───────────────────────────────────────────────────────────────
 
 def render_week(week):
-    days = []
-    for day in week:
-        lunch  = day.get("lunch",  {})
-        dinner = day.get("dinner", {})
-        days.append(f"""
-    <div class="day">
-      <strong>{e(day['day'])}</strong>
-      <div class="meal">
-        <span class="meal-name">Lunch: {e(lunch.get('name',''))}</span>
-        <span class="meal-note">{e(lunch.get('note',''))}</span>
-      </div>
-      <div class="meal">
-        <span class="meal-name">Dinner: {e(dinner.get('name',''))}</span>
-        <span class="meal-note">{e(dinner.get('note',''))}</span>
-      </div>
-    </div>""")
-    return "\n".join(days)
+    def meal_list(meals):
+        items = []
+        for m in meals:
+            items.append(f"""
+      <div class="week-meal">
+        <span class="week-meal-name">{e(m['name'])}</span>
+        <span class="week-meal-note">{e(m['note'])}</span>
+      </div>""")
+        return "\n".join(items)
 
-# ── Flavor paths ───────────────────────────────────────────────────────────────
-
-def render_flavor_paths(paths):
-    items = []
-    for fp in paths:
-        items.append(f"""
-    <div class="flavor">
-      <h3>{e(fp['name'])}</h3>
-      <p>{e(fp['description'])}</p>
-    </div>""")
-    return "\n".join(items)
-
-def render_flavor_paths_mini(paths):
-    items = []
-    for fp in paths:
-        items.append(f"""
-  <div class="flavor-path-item">
-    <div class="flavor-path-name">{e(fp['name'])}</div>
-    <div>{e(fp['description'])}</div>
-  </div>""")
-    return "\n".join(items)
+    lunches = meal_list(week.get("weekday_lunches", []))
+    dinners = meal_list(week.get("weekday_dinners", []))
+    return f"""
+  <div class="week-buckets">
+    <div class="week-bucket">
+      <div class="week-bucket-label">Weekday lunches</div>
+      {lunches}
+    </div>
+    <div class="week-bucket">
+      <div class="week-bucket-label">Weekday dinners</div>
+      {dinners}
+    </div>
+  </div>"""
 
 # ── Confidence score ───────────────────────────────────────────────────────────
 
@@ -337,8 +335,9 @@ def render_shell(title, description, canonical_url, css_depth, body, edition_slu
 
 # ── Edition page ───────────────────────────────────────────────────────────────
 
-def build_edition_page(edition, guides_list, depth, canonical_url):
-    require_fields(edition, ["month", "opening_note", "week", "featured_ingredients"], "edition.json")
+def build_edition_page(edition, depth, canonical_url):
+    require_fields(edition, ["month", "opening_note", "week", "featured_ingredients",
+                              "meal_transformations"], "edition.json")
 
     slug = edition["month"].lower()
     basket_href = rel(depth, "seasonal-basket/july-ingredients/")
@@ -359,8 +358,6 @@ def build_edition_page(edition, guides_list, depth, canonical_url):
       </aside>
     </section>
 
-    {render_guides_section(guides_list)}
-
     <div class="grid">
       <article class="card col-8" id="basket" aria-labelledby="basket-heading">
         <div class="section-label">The July basket</div>
@@ -378,29 +375,20 @@ def build_edition_page(edition, guides_list, depth, canonical_url):
         {render_confidence(edition['confidence'])}
       </aside>
 
-      <article class="card col-5" aria-labelledby="staples-heading">
-        <div class="section-label">Your staples</div>
-        <h2 id="staples-heading">Keep the canvas.</h2>
-        <p>Seasonal doesn't replace the meals you rely on. It makes them taste like July.</p>
-        {render_staples(edition['staples'])}
-      </article>
-
-      <article class="card col-7" aria-labelledby="flavors-heading">
-        <div class="section-label">July flavor paths</div>
-        <h2 id="flavors-heading">Choose a direction, not a recipe.</h2>
-        <p>Your proteins stay easy. The seasoning changes to complement the basket.</p>
-        <div class="flavor-grid">
-          {render_flavor_paths(edition['flavor_paths'])}
+      <article class="card col-12" aria-labelledby="transforms-heading">
+        <div class="section-label">Keep the meal. Change the season.</div>
+        <h2 id="transforms-heading">Your usual meals, wearing July.</h2>
+        <p>The basket doesn't replace what you already make. It just makes those meals taste like right now.</p>
+        <div class="transformations">
+          {render_transformations(edition['meal_transformations'])}
         </div>
       </article>
 
       <article class="card col-12" id="week" aria-labelledby="week-heading">
         <div class="section-label">The week</div>
-        <h2 id="week-heading">A realistic lunch-and-dinner plan.</h2>
-        <p>This assumes light breakfasts, one cooking session for rice and protein, and deliberate leftovers.</p>
-        <div class="week-grid">
-          {render_week(edition['week'])}
-        </div>
+        <h2 id="week-heading">What a week actually looks like.</h2>
+        <p>Mix and match. Repeat what works. One protein batch, one rice cook, and this basket will carry you.</p>
+        {render_week(edition['week'])}
       </article>
 
       <article class="card col-7" id="weekend" aria-labelledby="weekend-heading">
@@ -429,11 +417,7 @@ def build_edition_page(edition, guides_list, depth, canonical_url):
       </aside>
     </div>
 
-    <blockquote class="pull-quote">Keep the meal. Change the season.</blockquote>
-
-    <p style="margin-top:24px;font-family:ui-sans-serif,system-ui,sans-serif;font-size:.9rem;color:var(--muted)">
-      <em>Market question: {e(edition['market_question'])}</em>
-    </p>"""
+    <blockquote class="pull-quote">Keep the meal. Change the season.</blockquote>"""
 
     return render_shell(
         title=f"Seasonal — {edition['month']} in {edition['location']}",
@@ -446,7 +430,7 @@ def build_edition_page(edition, guides_list, depth, canonical_url):
 
 # ── Ingredient index page ──────────────────────────────────────────────────────
 
-def build_ingredient_index(edition, ingredients_data, guides_list, depth, canonical_url):
+def build_ingredient_index(edition, ingredients_data, depth, canonical_url):
     tiles = []
     for slug in edition["featured_ingredients"]:
         ing = ingredients_data.get(slug, {})
@@ -484,24 +468,19 @@ def build_ingredient_index(edition, ingredients_data, guides_list, depth, canoni
 
 # ── Individual ingredient page ─────────────────────────────────────────────────
 
-def build_ingredient_page(ing, guide, depth, canonical_url):
+def build_ingredient_page(ing, depth, canonical_url):
     require_fields(ing, ["slug", "name", "why_now", "how_to_choose", "buy_this_much",
-                          "pairs_with_month", "pairs_with_staples", "flavor_paths",
+                          "pairs_with_month", "pairs_with_staples",
                           "weekday_uses", "weekend_use", "storage",
-                          "one_thing_to_learn", "market_question"], f"{ing.get('slug')}.json")
+                          "one_thing_to_learn"], f"{ing.get('slug')}.json")
 
     slug = ing["slug"]
 
-    choose_items = "".join(f'<li>{e(c)}</li>' for c in ing["how_to_choose"])
+    choose_items  = "".join(f'<li>{e(c)}</li>' for c in ing["how_to_choose"])
     weekday_items = "".join(f'<li>{e(u)}</li>' for u in ing["weekday_uses"])
 
     pairs_month  = ", ".join(e(INGREDIENT_DISPLAY.get(p, (p,))[0]) for p in ing["pairs_with_month"])
     pairs_staple = ", ".join(e(p) for p in ing["pairs_with_staples"])
-
-    quote_block  = render_guide_quote(guide, slug)
-    flavor_mini  = render_flavor_paths_mini(ing["flavor_paths"])
-    guide_name   = guide["name"] if guide else ""
-    guide_role   = guide["role"] if guide else ""
 
     index_href = rel(depth, "seasonal-basket/july-ingredients/")
 
@@ -527,13 +506,6 @@ def build_ingredient_page(ing, guide, depth, canonical_url):
           </p>
         </section>
 
-        <section aria-labelledby="directions-heading">
-          <h2 id="directions-heading">Three directions</h2>
-          <div class="flavor-paths-mini">
-            {flavor_mini}
-          </div>
-        </section>
-
         <section aria-labelledby="weekday-heading">
           <h2 id="weekday-heading">On a weekday</h2>
           <ul class="checklist">{weekday_items}</ul>
@@ -548,12 +520,6 @@ def build_ingredient_page(ing, guide, depth, canonical_url):
           <h2 id="learn-heading">One thing worth learning</h2>
           <p>{e(ing['one_thing_to_learn'])}</p>
         </section>
-
-        {quote_block}
-
-        <div class="market-question">
-          <p><em>Ask at the market: {e(ing['market_question'])}</em></p>
-        </div>
       </div>
 
       <aside class="ingredient-sidebar">
@@ -569,7 +535,6 @@ def build_ingredient_page(ing, guide, depth, canonical_url):
           <h3>Storage</h3>
           <p style="font-family:ui-sans-serif,system-ui,sans-serif;font-size:.9rem;color:var(--muted)">{e(ing['storage'])}</p>
         </section>
-        {'<section><h3>Guide</h3><p style="font-family:ui-sans-serif,system-ui,sans-serif;font-size:.9rem;color:var(--muted)"><strong>' + e(guide_name) + '</strong><br>' + e(guide_role) + '</p></section>' if guide_name else ''}
       </aside>
     </div>"""
 
@@ -670,18 +635,18 @@ def build_edition(edition_dir_name):
     # Edition pages (root + canonical /july/)
     july_canonical = f"{base_url}/july/"
 
-    root_html = build_edition_page(edition, guides_list, depth=0,
+    root_html = build_edition_page(edition, depth=0,
                                    canonical_url=july_canonical)
     write_page(SITE / "index.html", root_html)
 
-    july_html = build_edition_page(edition, guides_list, depth=1,
+    july_html = build_edition_page(edition, depth=1,
                                    canonical_url=july_canonical)
     write_page(SITE / "july" / "index.html", july_html)
 
     # Ingredient index
     ing_index_canonical = f"{base_url}/seasonal-basket/july-ingredients/"
     ing_index_html = build_ingredient_index(
-        edition, ingredients_data, guides_list,
+        edition, ingredients_data,
         depth=2, canonical_url=ing_index_canonical
     )
     write_page(SITE / "seasonal-basket" / "july-ingredients" / "index.html", ing_index_html)
@@ -689,9 +654,8 @@ def build_edition(edition_dir_name):
     # Individual ingredient pages
     for slug in EXPECTED_INGREDIENT_SLUGS:
         ing   = ingredients_data[slug]
-        guide = find_guide(guides_list, ing.get("guide_id"))
         ing_canonical = f"{base_url}/seasonal-basket/july-ingredients/{slug}/"
-        ing_html = build_ingredient_page(ing, guide, depth=3,
+        ing_html = build_ingredient_page(ing, depth=3,
                                          canonical_url=ing_canonical)
         write_page(
             SITE / "seasonal-basket" / "july-ingredients" / slug / "index.html",
