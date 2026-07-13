@@ -66,6 +66,21 @@
       "color_var": "accent"
     }
   ],
+  "field_notes_label": "Field Notes",
+  "field_notes": [
+    {
+      "name": "Sherry vinegar",
+      "body": "Tomatoes are already acidic. That's why sharp vinegar fights them — you're adding the same note twice. Sherry vinegar is rounder, with a quiet sweetness of its own. It cooperates. Try it on sliced tomatoes instead of lemon. A splash in the pan after chicken. A few drops in cucumber water. You'll notice immediately, and you won't go back."
+    },
+    {
+      "name": "Flaky salt goes on last",
+      "body": "Table salt dissolves into food. Flaky salt stays on the surface, so you taste it in distinct moments rather than uniformly throughout. On a ripe tomato or a peach, that difference is the whole experience. Keep a small dish of it near where you plate. It only goes on last — never while cooking."
+    },
+    {
+      "name": "Add herbs after the heat",
+      "body": "Basil and mint lose what makes them interesting the moment heat reaches them. The oils that carry the fragrance are gone within seconds of contact with a hot pan. Add them after the heat is off, or raw, right before the plate reaches the table. The smell alone will tell you something has changed."
+    }
+  ],
   "meal_transformations": [
     {
       "meal": "Rice bowl",

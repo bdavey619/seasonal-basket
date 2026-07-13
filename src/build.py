@@ -172,6 +172,18 @@ def render_basket_tiles(ingredients, ingredients_path, depth):
     </a>""")
     return "\n".join(tiles)
 
+# ── Field notes ────────────────────────────────────────────────────────────────
+
+def render_field_notes(notes):
+    items = []
+    for note in notes:
+        items.append(f"""
+    <div class="field-note">
+      <h3 class="field-note-name">{e(note['name'])}</h3>
+      <p class="field-note-body">{e(note['body'])}</p>
+    </div>""")
+    return "\n".join(items)
+
 # ── Meal transformations ───────────────────────────────────────────────────────
 
 def render_transformations(transformations):
@@ -337,7 +349,7 @@ def render_shell(title, description, canonical_url, css_depth, body, edition_slu
 
 def build_edition_page(edition, depth, canonical_url):
     require_fields(edition, ["month", "opening_note", "week", "featured_ingredients",
-                              "meal_transformations"], "edition.json")
+                              "meal_transformations", "field_notes"], "edition.json")
 
     slug = edition["month"].lower()
     basket_href = rel(depth, "seasonal-basket/july-ingredients/")
@@ -381,6 +393,13 @@ def build_edition_page(edition, depth, canonical_url):
         <p>The basket doesn't replace what you already make. It just makes those meals taste like right now.</p>
         <div class="transformations">
           {render_transformations(edition['meal_transformations'])}
+        </div>
+      </article>
+
+      <article class="field-notes-section col-12" aria-labelledby="field-notes-heading">
+        <div class="section-label">{e(edition.get('field_notes_label', 'Field Notes'))}</div>
+        <div class="field-notes">
+          {render_field_notes(edition['field_notes'])}
         </div>
       </article>
 
