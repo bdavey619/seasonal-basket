@@ -33,6 +33,11 @@
     "dinners_supported": 5,
     "weekend_meals_supported": 2,
     "waste_risk": "low",
+    "basket_cost": {
+      "range": "$30–45",
+      "where": "Whole Foods, Trader Joe's, or Sprouts",
+      "note": "Estimate for the seasonal basket only, not proteins or pantry staples. Farmers market pricing varies."
+    },
     "assumptions": [
       "Pantry basics already on hand",
       "One batch of rice cooked ahead",
@@ -137,14 +142,15 @@
     "name": "Tomato, burrata, basil, and sourdough.",
     "intro": "One meal should feel like the reason you went shopping. This is July’s.",
     "ingredients": [
-      "2 heirloom tomatoes",
-      "1 ball burrata",
+      "2 ripe tomatoes",
+      "1 ball burrata or fresh mozzarella",
       "Basil",
       "Olive oil",
       "Flaky salt and black pepper",
       "Toasted sourdough"
     ],
-    "method": "Slice the tomatoes thickly. Tear open the burrata. Add basil, olive oil, salt, and pepper. Use warm sourdough to drag through everything left on the plate."
+    "ingredient_note": "Burrata is richer and more indulgent. Fresh mozzarella is a reliable everyday alternative at about half the price — Trader Joe’s and Whole Foods both carry it.",
+    "method": "Slice the tomatoes thickly. Tear open the cheese. Add basil, olive oil, salt, and pepper. Use warm sourdough to drag through everything left on the plate."
   },
   "drink": {
     "slug": "hillcrest-spritz",
@@ -188,7 +194,7 @@
     "headline": "The smell of a tomato vine.",
     "body": "Most people know what a tomato tastes like. Fewer notice the green, almost peppery scent where the stem meets the fruit."
   },
-  "market_question": "What are you taking home tonight?",
+  "market_question": "What looked best when you were shopping?",
   "guides": [
     {
       "id": "rosa",
@@ -265,7 +271,7 @@
       "name": "Heirloom tomatoes",
       "month": "July",
       "guide_id": "rosa",
-      "why_now": "July is peak tomato season in Southern California. The heat concentrates their sugars and the variety is at its widest. This is the month they deserve the center of the plate.",
+      "why_now": "July is peak tomato season in Southern California. Any ripe tomato — heirloom or not — is at its best right now. The heat concentrates sugars across every variety. Heirlooms are worth it if you see good ones, but a ripe vine tomato from Trader Joe's or Whole Foods will do the same work.",
       "how_to_choose": [
         "Heavy for their size",
         "Fragrant at the stem end",
@@ -274,6 +280,7 @@
         "Avoid anything refrigerated at the store"
       ],
       "buy_this_much": "4–6 medium tomatoes for one person for the week",
+      "price_note": "Vine and roma tomatoes are among the most affordable options year-round — and July is when they're actually worth buying. Heirlooms cost more but aren't required.",
       "pairs_with_month": [
         "basil",
         "persian-cucumbers",
@@ -307,10 +314,10 @@
         "Pasta sauce with garlic and olive oil",
         "Toast with salt and olive oil"
       ],
-      "weekend_use": "Thick slices with burrata, basil, olive oil, and sourdough for dragging.",
+      "weekend_use": "Thick slices with burrata or fresh mozzarella, basil, olive oil, and sourdough for dragging. Burrata is richer; fresh mozzarella is half the price and nearly as good.",
       "storage": "Counter only. Never refrigerate. Use within four or five days.",
       "one_thing_to_learn": "Smell the stem end before you buy. A tomato that smells like a tomato at the store will taste like one at home.",
-      "market_question": "Which variety do you think is best this week?"
+      "market_question": "Which variety is ripest right now?"
     },
     "persian-cucumbers": {
       "slug": "persian-cucumbers",
@@ -325,6 +332,7 @@
         "Smaller is usually crisper"
       ],
       "buy_this_much": "4–6 cucumbers for one person for the week",
+      "price_note": "Trader Joe's sells a bag of six for around $2. One of the best deals in the basket.",
       "pairs_with_month": [
         "heirloom-tomatoes",
         "basil",
@@ -376,6 +384,7 @@
         "Avoid hard or refrigerated peaches"
       ],
       "buy_this_much": "4–5 peaches for one person for the week. They do not all need to be eaten at once.",
+      "price_note": "Stone fruit is most abundant and affordable in July. Expect $1–2 per pound at Whole Foods or Trader Joe's — sometimes less if they're featured.",
       "pairs_with_month": [
         "mint",
         "blackberries",
@@ -416,13 +425,14 @@
       "name": "Sweet corn",
       "month": "July",
       "guide_id": "jerome",
-      "why_now": "Corn sugars convert to starch quickly after picking. July corn bought at a farmers market and eaten the same day is a different ingredient from corn that has traveled.",
+      "why_now": "Corn sugars convert to starch quickly after picking. July corn eaten within a day or two of harvest is a different ingredient from corn that has traveled for a week. Grocery stores turn over fast in summer — the corn on the shelf right now is likely good.",
       "how_to_choose": [
         "Husk tightly wrapped and bright green",
         "Silk slightly dry at the top, not slimy",
         "Plump kernels felt through the husk",
-        "Buy from a stall that harvested recently"
+        "Avoid any ears with dried-out or blackened husks"
       ],
+      "price_note": "One of the cheapest vegetables of summer. Whole Foods and Trader Joe's both stock good ears in July, often on sale.",
       "buy_this_much": "2–3 ears for one person mid-week, another 1–2 for the weekend",
       "pairs_with_month": [
         "heirloom-tomatoes",
@@ -458,7 +468,7 @@
       "weekend_use": "Corn salad alongside grilled chicken thighs and peaches.",
       "storage": "Keep husked corn refrigerated and use within two days. Husked is fine for a day, unhusked is better if waiting.",
       "one_thing_to_learn": "Fresh corn is good raw. Shaved directly off the cob into a salad, it has a sweetness that disappears quickly with heat.",
-      "market_question": "How long ago was this picked?"
+      "market_question": "When did these come in?"
     },
     "basil": {
       "slug": "basil",
@@ -473,6 +483,7 @@
         "Avoid wilted or yellowing bunches"
       ],
       "buy_this_much": "One or two good bunches. It moves through a week faster than you expect.",
+      "price_note": "Usually $1–2 a bunch at any grocery store. A potted basil plant from the produce section costs the same and lasts longer — worth it if you cook with it often.",
       "pairs_with_month": [
         "heirloom-tomatoes",
         "persian-cucumbers",
@@ -509,7 +520,7 @@
       "weekend_use": "Torn generously over burrata and tomatoes with good olive oil.",
       "storage": "Keep at room temperature with stems in water, like flowers. Do not refrigerate. Use within three or four days.",
       "one_thing_to_learn": "Tear basil instead of chopping when it will be served fresh. The knife bruises it and darkens it quickly. Torn leaves hold their color and fragrance longer.",
-      "market_question": "Is this Genovese or a different variety this week?"
+      "market_question": "How fresh is this?"
     },
     "mint": {
       "slug": "mint",
@@ -524,6 +535,7 @@
         "Spearmint or peppermint both work for this edition"
       ],
       "buy_this_much": "One bunch. It goes further than you think.",
+      "price_note": "One of the least expensive things in this basket — usually $1–2 a bunch at any grocery store.",
       "pairs_with_month": [
         "persian-cucumbers",
         "peaches",
@@ -574,6 +586,7 @@
         "Avoid anything split or leaking"
       ],
       "buy_this_much": "A generous pound. They disappear faster than expected.",
+      "price_note": "Still a splurge compared to most things in the basket, but July is when the price drops from its winter peak. The season is short — worth it.",
       "pairs_with_month": [
         "mint",
         "peaches",
@@ -620,6 +633,7 @@
         "A little give without being mushy"
       ],
       "buy_this_much": "One pint. Use within two or three days.",
+      "price_note": "July is peak season — pints that cost $4–5 off-season often drop to $2–3. One of the best deals of the summer.",
       "pairs_with_month": [
         "mint",
         "peaches",
@@ -651,7 +665,7 @@
       "weekend_use": "Fruit plate with peaches, mint, and honey as a light dessert.",
       "storage": "Refrigerate unwashed and use within two to three days. Wash only just before eating.",
       "one_thing_to_learn": "Blackberries are fragile. They do not improve with time. Buy them close to when you will eat them and treat the container gently.",
-      "market_question": "Are these wild or cultivated?"
+      "market_question": "How ripe are these right now?"
     }
   }
 }
