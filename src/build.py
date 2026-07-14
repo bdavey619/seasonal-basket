@@ -244,11 +244,16 @@ def render_confidence(conf):
         f'<span class="badge">Waste risk: {e(conf["waste_risk"])}</span>',
     ]
     editorial = conf.get("editorial_note", "")
+    basket_cost = conf.get("basket_cost", {})
+    cost_line = ""
+    if basket_cost:
+        cost_line = f'<p style="font-size:.85rem;color:var(--muted);margin-top:8px">Basket cost: <strong>{e(basket_cost["range"])}</strong> at {e(basket_cost["where"])}. {e(basket_cost["note"])}</p>'
     return f"""
 <div class="section-label">Confidence score</div>
 <div class="score-number">{e(score)}</div>
 <p>With your usual rice, proteins, beans, sourdough, yogurt, and pantry basics, this basket comfortably supports:</p>
 <div>{"".join(badges)}</div>
+{cost_line}
 <p class="score-note">{e(editorial)}</p>"""
 
 # ── Staples list ───────────────────────────────────────────────────────────────
@@ -765,6 +770,7 @@ def build_ingredient_page(ing, depth, canonical_url, house_flavor=None):
           <p style="margin-top:12px;font-family:ui-sans-serif,system-ui,sans-serif;font-size:.9rem;color:var(--muted)">
             Buy this much: <strong>{e(ing['buy_this_much'])}</strong>
           </p>
+          {f'<p style="margin-top:8px;font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem;color:var(--muted)">{e(ing["price_note"])}</p>' if ing.get("price_note") else ""}
         </section>
 
         <section aria-labelledby="weekday-heading">
