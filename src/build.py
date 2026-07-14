@@ -186,12 +186,20 @@ def render_field_notes(notes):
 
 # ── Meal transformations ───────────────────────────────────────────────────────
 
-def render_transformations(transformations):
+def render_transformations(transformations, meal_hrefs=None):
+    if meal_hrefs is None:
+        meal_hrefs = {}
     rows = []
     for t in transformations:
+        meal_name = t['meal']
+        href = meal_hrefs.get(meal_name)
+        if href:
+            meal_cell = f'<a href="{e(href)}">{e(meal_name)}</a>'
+        else:
+            meal_cell = e(meal_name)
         rows.append(f"""
     <div class="transformation-row">
-      <span class="transformation-meal">{e(t['meal'])}</span>
+      <span class="transformation-meal">{meal_cell}</span>
       <span class="transformation-arrow">→</span>
       <span class="transformation-change">{e(t['change'])}</span>
       <span class="transformation-result">{e(t['result'])}</span>
@@ -296,14 +304,62 @@ def render_guides_section(guides_list):
   </div>
 </section>"""
 
+# ── Meal page renderers ────────────────────────────────────────────────────────
+
+def render_meal_checklist(items):
+    lis = "".join(f'<li>{e(item)}</li>' for item in items)
+    return f'<ul class="checklist">{lis}</ul>'
+
+def render_meal_variations(variations):
+    rows = []
+    for v in variations:
+        rows.append(f"""
+    <div class="meal-variation">
+      <span class="meal-variation-ingredients">{e(v['ingredients'])}</span>
+      <span class="meal-variation-context">{e(v['context'])}</span>
+    </div>""")
+    return "\n".join(rows)
+
+def render_meal_linked_notes(linked_slugs, notes_by_slug):
+    if not linked_slugs:
+        return ""
+    items = []
+    for slug in linked_slugs:
+        note = notes_by_slug.get(slug)
+        if not note:
+            continue
+        body = note['body']
+        excerpt = body[:120] + "…" if len(body) > 120 else body
+        items.append(f"""
+      <div class="meal-field-note">
+        <div class="meal-field-note-name">{e(note['name'])}</div>
+        <p class="meal-field-note-body">{e(excerpt)}</p>
+      </div>""")
+    if not items:
+        return ""
+    return f"""
+    <section>
+      <h3>From Field Notes</h3>
+      {"".join(items)}
+    </section>"""
+
 # ── HTML shell ─────────────────────────────────────────────────────────────────
 
-def render_shell(title, description, canonical_url, css_depth, body, edition_slug="july"):
+def render_shell(title, description, canonical_url, css_depth, body, edition_slug="july", page_class=None):
+    if page_class is None:
+        # Auto-detect narrow layout for single ingredient pages
+        if 'ingredient' in title.lower() and 'ingredients' not in title.lower():
+            page_class = "page--ingredient"
+        else:
+            page_class = ""
+    extra_class = f" {page_class}" if page_class else ""
+
     base_css  = rel(css_depth, "css/base.css")
     month_css = rel(css_depth, f"css/{edition_slug}.css")
     home_href = rel(css_depth, "")
     july_href = rel(css_depth, "july/")
     basket_href = rel(css_depth, "seasonal-basket/july-ingredients/")
+    meals_href  = rel(css_depth, "july/meals/")
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -324,7 +380,7 @@ def render_shell(title, description, canonical_url, css_depth, body, edition_slu
 </head>
 <body>
 <a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
-<div class="page{' page--ingredient' if 'ingredient' in title.lower() and 'ingredients' not in title.lower() else ''}">
+<div class="page{extra_class}">
   <header class="masthead">
     <a href="{home_href}" class="brand">Seasonal</a>
     <nav class="nav" aria-label="Primary navigation">
@@ -347,7 +403,7 @@ def render_shell(title, description, canonical_url, css_depth, body, edition_slu
 
 # ── Edition page ───────────────────────────────────────────────────────────────
 
-def build_edition_page(edition, depth, canonical_url):
+def build_edition_page(edition, depth, canonical_url, meal_hrefs=None):
     require_fields(edition, ["month", "opening_note", "week", "featured_ingredients",
                               "meal_transformations", "field_notes"], "edition.json")
 
@@ -392,7 +448,7 @@ def build_edition_page(edition, depth, canonical_url):
         <h2 id="transforms-heading">Your usual meals, wearing July.</h2>
         <p>The basket doesn't replace what you already make. It just makes those meals taste like right now.</p>
         <div class="transformations">
-          {render_transformations(edition['meal_transformations'])}
+          {render_transformations(edition['meal_transformations'], meal_hrefs)}
         </div>
       </article>
 
@@ -566,6 +622,114 @@ def build_ingredient_page(ing, depth, canonical_url):
         edition_slug="july",
     )
 
+# ── Meal index page ────────────────────────────────────────────────────────────
+
+def build_meal_index(meals_data, edition, depth, canonical_url):
+    tiles = []
+    for slug, meal in meals_data.items():
+        href = rel(depth, f"{slug}/")
+        tiles.append(f"""
+    <a class="meal-index-tile" href="{href}">
+      <strong>{e(meal.get('display_name', meal['name']))}</strong>
+      <span class="meal-intro">{e(meal.get('intro', ''))}</span>
+    </a>""")
+
+    body = f"""
+    <div style="padding:40px 0 20px">
+      <a href="{rel(depth, 'july/')}" class="back-link">← July</a>
+      <div class="section-label" style="margin-top:8px">Everyday meals</div>
+      <h1 style="font-size:clamp(2.2rem,5vw,4rem);margin:8px 0 16px">Your usual meals, wearing July.</h1>
+      <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:600px">
+        The basket doesn't replace what you already make. It makes those meals taste like right now.
+      </p>
+    </div>
+    <div class="meal-index-grid">
+      {"".join(tiles)}
+    </div>"""
+
+    return render_shell(
+        title="Everyday Meals — July — Seasonal",
+        description="How the July basket makes your usual weeknight meals taste like the season.",
+        canonical_url=canonical_url,
+        css_depth=depth,
+        body=body,
+        edition_slug="july",
+    )
+
+# ── Individual meal page ───────────────────────────────────────────────────────
+
+def build_meal_page(meal, edition, depth, canonical_url):
+    require_fields(meal, ["slug", "name", "intro", "keep", "july_adds",
+                           "variations", "works_well_with", "finish"], f"{meal.get('slug')}.json")
+
+    slug = meal["slug"]
+    july_href = rel(depth, "july/")
+    meals_href = rel(depth, "july/meals/")
+
+    notes_by_slug = {n["slug"]: n for n in edition.get("field_notes", []) if "slug" in n}
+
+    keep_items = render_meal_checklist(meal["keep"])
+    adds_items = render_meal_checklist(meal["july_adds"])
+    variations  = render_meal_variations(meal["variations"])
+    linked_notes = render_meal_linked_notes(meal.get("linked_field_notes", []), notes_by_slug)
+
+    works_well = "".join(f'<li>{e(w)}</li>' for w in meal["works_well_with"])
+
+    body = f"""
+    <div style="padding-top:28px">
+      <a href="{meals_href}" class="back-link">← Meals</a>
+    </div>
+
+    <div class="meal-header">
+      <div class="section-label">July · weekday</div>
+      <h1>{e(meal.get('display_name', meal['name']))}</h1>
+      <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:680px">{e(meal['intro'])}</p>
+    </div>
+
+    <div class="meal-body">
+      <div class="meal-main">
+        <section aria-labelledby="keep-heading">
+          <h2 id="keep-heading">Keep</h2>
+          {keep_items}
+        </section>
+
+        <section aria-labelledby="july-adds-heading">
+          <h2 id="july-adds-heading">July adds</h2>
+          {adds_items}
+        </section>
+
+        <section aria-labelledby="variations-heading">
+          <h2 id="variations-heading">Variations</h2>
+          <div class="meal-variations">
+            {variations}
+          </div>
+        </section>
+
+        <section aria-labelledby="finish-heading">
+          <h2 id="finish-heading">Finish</h2>
+          <p style="font-family:ui-sans-serif,system-ui,sans-serif;font-size:.97rem;color:#3d4842;line-height:1.6">{e(meal['finish'])}</p>
+        </section>
+      </div>
+
+      <aside class="meal-sidebar">
+        <section>
+          <h3>Works well with</h3>
+          <ul class="checklist">{works_well}</ul>
+        </section>
+        {linked_notes}
+      </aside>
+    </div>"""
+
+    return render_shell(
+        title=f"{meal.get('display_name', meal['name'])} — July — Seasonal",
+        description=meal["intro"],
+        canonical_url=canonical_url,
+        css_depth=depth,
+        body=body,
+        edition_slug="july",
+        page_class="page--meal",
+    )
+
 # ── Consolidated CONTENT.json snapshot ────────────────────────────────────────
 
 def build_content_snapshot(edition, guides, ingredients_data):
@@ -595,18 +759,25 @@ EXPECTED_INGREDIENT_SLUGS = [
     "basil", "mint", "cherries", "blackberries",
 ]
 
+EXPECTED_MEAL_SLUGS = ["rice-bowl", "tacos", "pasta"]
+
 def verify(edition_slug):
     errors = []
     expected_pages = [
         SITE / "index.html",
         SITE / f"{edition_slug}" / "index.html",
         SITE / "seasonal-basket" / "july-ingredients" / "index.html",
+        SITE / f"{edition_slug}" / "meals" / "index.html",
         SITE / "css" / "base.css",
         SITE / "css" / f"{edition_slug}.css",
     ]
     for slug in EXPECTED_INGREDIENT_SLUGS:
         expected_pages.append(
             SITE / "seasonal-basket" / "july-ingredients" / slug / "index.html"
+        )
+    for slug in EXPECTED_MEAL_SLUGS:
+        expected_pages.append(
+            SITE / f"{edition_slug}" / "meals" / slug / "index.html"
         )
 
     for p in expected_pages:
@@ -618,6 +789,12 @@ def verify(edition_slug):
     for slug in EXPECTED_INGREDIENT_SLUGS:
         if f"{slug}/" not in index_src:
             errors.append(f"Ingredient link missing from basket index: {slug}")
+
+    # Check meal links appear in the meal index
+    meal_index_src = (SITE / f"{edition_slug}" / "meals" / "index.html").read_text()
+    for slug in EXPECTED_MEAL_SLUGS:
+        if f"{slug}/" not in meal_index_src:
+            errors.append(f"Meal link missing from meal index: {slug}")
 
     if errors:
         print("\n  VERIFICATION FAILED:")
@@ -633,6 +810,7 @@ def build_edition(edition_dir_name):
     edition_slug = edition_dir_name  # e.g. "july"
     content_dir  = CONTENT / edition_slug
     ing_dir      = content_dir / "ingredients"
+    meals_dir    = content_dir / "meals"
 
     print(f"\nBuilding edition: {edition_slug}")
 
@@ -648,18 +826,35 @@ def build_edition(edition_dir_name):
         ing = read_json(ing_dir / f"{slug}.json")
         ingredients_data[slug] = ing
 
+    # Load meals (ordered)
+    meals_data = {}
+    for slug in EXPECTED_MEAL_SLUGS:
+        meal_path = meals_dir / f"{slug}.json"
+        if meal_path.exists():
+            meals_data[slug] = read_json(meal_path)
+
     # CSS
     build_css(edition_slug)
+
+    # Build meal href map for homepage linking (at depth 0 and depth 1)
+    # We compute at depth=0; depth=1 version computed inline below
+    def meal_hrefs_at(depth):
+        return {
+            meal['name']: rel(depth, f"july/meals/{slug}/")
+            for slug, meal in meals_data.items()
+        }
 
     # Edition pages (root + canonical /july/)
     july_canonical = f"{base_url}/july/"
 
     root_html = build_edition_page(edition, depth=0,
-                                   canonical_url=july_canonical)
+                                   canonical_url=july_canonical,
+                                   meal_hrefs=meal_hrefs_at(0))
     write_page(SITE / "index.html", root_html)
 
     july_html = build_edition_page(edition, depth=1,
-                                   canonical_url=july_canonical)
+                                   canonical_url=july_canonical,
+                                   meal_hrefs=meal_hrefs_at(1))
     write_page(SITE / "july" / "index.html", july_html)
 
     # Ingredient index
@@ -680,6 +875,23 @@ def build_edition(edition_dir_name):
             SITE / "seasonal-basket" / "july-ingredients" / slug / "index.html",
             ing_html
         )
+
+    # Meal index (depth=2: docs/july/meals/index.html)
+    meal_index_canonical = f"{base_url}/july/meals/"
+    meal_index_html = build_meal_index(
+        meals_data, edition,
+        depth=2, canonical_url=meal_index_canonical
+    )
+    write_page(SITE / "july" / "meals" / "index.html", meal_index_html)
+
+    # Individual meal pages (depth=3: docs/july/meals/<slug>/index.html)
+    for slug, meal in meals_data.items():
+        meal_canonical = f"{base_url}/july/meals/{slug}/"
+        meal_html = build_meal_page(
+            meal, edition,
+            depth=3, canonical_url=meal_canonical
+        )
+        write_page(SITE / "july" / "meals" / slug / "index.html", meal_html)
 
     # Consolidated snapshot
     build_content_snapshot(edition, guides, ingredients_data)

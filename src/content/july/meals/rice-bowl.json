@@ -1,0 +1,33 @@
+{
+  "slug": "rice-bowl",
+  "name": "Rice bowl",
+  "display_name": "Rice bowl",
+  "effort": "weekday",
+  "intro": "Everything in the July basket belongs on top of rice.",
+  "keep": [
+    "Rice",
+    "Your usual protein"
+  ],
+  "july_adds": [
+    "Heirloom tomato, chopped",
+    "Persian cucumber, sliced",
+    "Fresh basil",
+    "Sweet corn"
+  ],
+  "variations": [
+    { "ingredients": "Tomato + basil", "context": "Start here." },
+    { "ingredients": "Tomato + cucumber", "context": "If dinner just needs to be easy." },
+    { "ingredients": "Tomato + corn + lime", "context": "If you picked up sweet corn at the market." },
+    { "ingredients": "Tomato + avocado", "context": "If you have half an avocado left." }
+  ],
+  "works_well_with": [
+    "Ground beef",
+    "Ground turkey",
+    "Chicken thighs",
+    "Salmon",
+    "Beans"
+  ],
+  "finish": "Flaky salt on the tomatoes last. Tear basil over the top — don't let it near the heat.",
+  "linked_field_notes": ["flaky-salt-goes-on-last", "add-herbs-after-the-heat"],
+  "linked_ingredients": ["heirloom-tomatoes", "persian-cucumbers", "basil", "sweet-corn"]
+}

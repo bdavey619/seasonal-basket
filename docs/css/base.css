@@ -476,6 +476,125 @@ a { color: inherit; }
 }
 .back-link:hover { color: var(--ink); }
 
+/* ─── Meal index page ────────────────────────────────── */
+.meal-index-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin-top: 24px;
+  border: 1px solid var(--line);
+}
+.meal-index-tile {
+  padding: 28px 24px;
+  text-decoration: none;
+  background: var(--paper);
+  display: block;
+}
+.meal-index-tile:hover { background: var(--bg); }
+.meal-index-tile strong {
+  display: block;
+  font-family: Georgia, serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.meal-intro {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .84rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+/* ─── Individual meal page ───────────────────────────── */
+.page--meal { width: min(860px, calc(100% - 32px)); }
+
+.meal-header {
+  padding: 48px 0 32px;
+  border-bottom: 1px solid var(--line);
+}
+.meal-header h1 {
+  font-size: clamp(3rem, 7vw, 6rem);
+  margin-bottom: 16px;
+  line-height: .88;
+  letter-spacing: -.04em;
+}
+.meal-body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  margin-top: 36px;
+}
+.meal-main section {
+  margin-bottom: 32px;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+.meal-main section:first-child { border-top: none; padding-top: 0; }
+.meal-sidebar section {
+  margin-bottom: 24px;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+.meal-sidebar section:first-child { border-top: none; padding-top: 0; }
+.meal-sidebar h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Variations */
+.meal-variations { margin-top: 10px; }
+.meal-variation {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--line);
+  align-items: baseline;
+}
+.meal-variation:last-child { border-bottom: none; }
+.meal-variation-ingredients {
+  font-family: Georgia, serif;
+  font-size: .97rem;
+  color: var(--ink);
+}
+.meal-variation-context {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .84rem;
+  color: var(--muted);
+  font-style: italic;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Field note excerpts in meal sidebar */
+.meal-field-note {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+.meal-field-note:last-child { border-bottom: none; }
+.meal-field-note-name {
+  font-family: Georgia, serif;
+  font-size: .95rem;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.meal-field-note-body {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .82rem;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* Transformation row links */
+.transformation-meal a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid var(--primary);
+}
+.transformation-meal a:hover { color: var(--primary); }
+
 /* ─── Footer ─────────────────────────────────────────── */
 footer {
   margin-top: 56px;
@@ -514,6 +633,10 @@ footer {
     border-bottom: 1px solid var(--line);
   }
   .field-note:last-child { border-bottom: none; }
+  .meal-body { grid-template-columns: 1fr; }
+  .meal-index-grid { grid-template-columns: 1fr; }
+  .meal-variation { grid-template-columns: 1fr; gap: 2px; }
+  .meal-variation-context { text-align: left; white-space: normal; }
 }
 @media (max-width: 600px) {
   .ingredient-index-grid { grid-template-columns: repeat(2, 1fr); }

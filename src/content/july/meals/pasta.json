@@ -1,0 +1,29 @@
+{
+  "slug": "pasta",
+  "name": "Pasta",
+  "display_name": "Pasta",
+  "effort": "weekday",
+  "intro": "July tomatoes make the sauce — you don't need a jar.",
+  "keep": [
+    "Pasta",
+    "Olive oil and garlic"
+  ],
+  "july_adds": [
+    "Heirloom tomatoes, roughly chopped",
+    "Fresh basil"
+  ],
+  "variations": [
+    { "ingredients": "Tomatoes + basil", "context": "This is probably the version you'll make most often." },
+    { "ingredients": "Tomatoes + red pepper flakes", "context": "If you want a little more from it." },
+    { "ingredients": "Tomatoes + white beans + basil", "context": "If there's no protein in the house." }
+  ],
+  "works_well_with": [
+    "Chicken thighs",
+    "Ground turkey",
+    "White beans",
+    "No added protein"
+  ],
+  "finish": "Take the pan off the heat before the tomatoes go in — they need warmth, not cooking. Tear basil over the top last.",
+  "linked_field_notes": ["add-herbs-after-the-heat"],
+  "linked_ingredients": ["heirloom-tomatoes", "basil"]
+}

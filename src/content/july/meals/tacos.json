@@ -1,0 +1,31 @@
+{
+  "slug": "tacos",
+  "name": "Tacos",
+  "display_name": "Tacos + taco bowl",
+  "effort": "weekday",
+  "intro": "Chopped heirloom tomato is better than store salsa in July.",
+  "keep": [
+    "Tortillas or rice",
+    "Taco-seasoned protein"
+  ],
+  "july_adds": [
+    "Heirloom tomato, roughly chopped",
+    "Sweet corn",
+    "Persian cucumber, diced"
+  ],
+  "variations": [
+    { "ingredients": "Tomato + lime", "context": "Start here." },
+    { "ingredients": "Tomato + corn + lime", "context": "If you picked up corn." },
+    { "ingredients": "Tomato + cucumber + avocado", "context": "If it's been a hot week." },
+    { "ingredients": "Tomato + corn + cheese + hot sauce", "context": "If you're cooking for two." }
+  ],
+  "works_well_with": [
+    "Ground beef",
+    "Ground turkey",
+    "Chicken thighs",
+    "Beans"
+  ],
+  "finish": "Squeeze lime over everything.",
+  "linked_field_notes": [],
+  "linked_ingredients": ["heirloom-tomatoes", "sweet-corn", "persian-cucumbers"]
+}
