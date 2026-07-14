@@ -1,0 +1,58 @@
+{
+  "slug": "tomato-herb-vinaigrette",
+  "name": "Tomato Herb Vinaigrette",
+  "month": "july",
+  "intro": "One jar. Several jobs.",
+  "card_uses": [
+    "Spoon it over a rice bowl.",
+    "Thin it for fish or chicken.",
+    "Fold it into warm pasta.",
+    "Let white beans sit in it."
+  ],
+  "ingredients": [
+    "2 ripe heirloom tomatoes, roughly chopped",
+    "3 tbsp olive oil",
+    "1 tbsp sherry vinegar",
+    "Flaky salt",
+    "Optional: 1 small garlic clove, finely grated"
+  ],
+  "method": "Combine the tomato, olive oil, sherry vinegar, salt, and optional garlic in a bowl. Stir once. Taste and adjust — more vinegar if it needs brightness, more oil if it needs body. Leave it rough. Tear in basil when you use it.",
+  "storage": {
+    "note": "Refrigerate promptly. Add fresh basil when serving.",
+    "flagged_for_review": true
+  },
+  "uses": [
+    {
+      "meal": "rice-bowl",
+      "label": "Rice bowl",
+      "action": "Spoon it.",
+      "context": "Keep the tomato chunks visible. The texture belongs on top."
+    },
+    {
+      "meal": null,
+      "label": "Salmon or chicken",
+      "action": "Thin it.",
+      "context": "Stir in a little more olive oil or vinegar. It should drizzle rather than sit."
+    },
+    {
+      "meal": null,
+      "label": "Burrata or sourdough",
+      "action": "Leave it rustic.",
+      "context": "Use it as-is with larger tomato pieces. Spoon generously and let it pool."
+    },
+    {
+      "meal": "pasta",
+      "label": "Pasta",
+      "action": "Fold it in.",
+      "context": "Add after the heat is off. Toss until the pasta is coated, then let it rest for a minute."
+    },
+    {
+      "meal": null,
+      "label": "White beans",
+      "action": "Let it sit.",
+      "context": "Spoon over beans and give them a few minutes before eating. They absorb the vinegar and oil as they sit."
+    }
+  ],
+  "linked_ingredients": ["heirloom-tomatoes"],
+  "linked_field_notes": ["sherry-vinegar", "add-herbs-after-the-heat", "flaky-salt-goes-on-last"]
+}

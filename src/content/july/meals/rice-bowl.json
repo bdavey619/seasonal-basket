@@ -30,6 +30,7 @@
     "Beans"
   ],
   "finish": "Flaky salt on the tomatoes last. Tear basil over the top — don't let it near the heat.",
+  "linked_house_flavor": "tomato-herb-vinaigrette",
   "linked_drink": "hillcrest-spritz",
   "linked_field_notes": ["flaky-salt-goes-on-last", "add-herbs-after-the-heat"],
   "linked_ingredients": ["heirloom-tomatoes", "persian-cucumbers", "basil", "sweet-corn"]

@@ -26,6 +26,7 @@
     "No added protein"
   ],
   "finish": "Take the pan off the heat before the tomatoes go in — they need warmth, not cooking. Tear basil over the top last.",
+  "linked_house_flavor": "tomato-herb-vinaigrette",
   "linked_field_notes": ["add-herbs-after-the-heat"],
   "linked_ingredients": ["heirloom-tomatoes", "basil"]
 }

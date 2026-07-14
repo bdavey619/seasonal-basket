@@ -49,23 +49,7 @@
     "Sourdough",
     "Greek yogurt"
   ],
-  "flavor_paths": [
-    {
-      "name": "Italian Summer",
-      "description": "Italian seasoning, garlic, basil, tomato, olive oil, black pepper.",
-      "color_var": "primary"
-    },
-    {
-      "name": "Bright Taco",
-      "description": "Taco seasoning, lime, corn, tomato, cucumber, beans, cilantro if desired.",
-      "color_var": "secondary"
-    },
-    {
-      "name": "Chili-Crisp Bowl",
-      "description": "Soy or sesame marinade, chili crisp, cucumber, corn, basil or mint.",
-      "color_var": "accent"
-    }
-  ],
+  "house_flavor": "tomato-herb-vinaigrette",
   "field_notes_label": "Field Notes",
   "field_notes": [
     {

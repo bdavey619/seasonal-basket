@@ -636,6 +636,107 @@ a { color: inherit; }
 }
 .transformation-meal a:hover { color: var(--primary); }
 
+/* ─── House Flavor ───────────────────────────────────── */
+.house-flavor-section {
+  padding: 36px 0 28px;
+  border-top: 1px solid var(--line);
+}
+.house-flavor-section .section-label { margin-bottom: 4px; }
+.house-flavor-section h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin: 0 0 6px;
+}
+.house-flavor-tagline {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: .97rem;
+  color: var(--muted);
+  margin: 0 0 16px;
+  font-style: italic;
+}
+.house-flavor-card-uses {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 24px;
+}
+.house-flavor-card-uses li {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: .93rem;
+  color: var(--ink);
+  padding-left: 14px;
+  position: relative;
+}
+.house-flavor-card-uses li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+.house-flavor-cta {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: .93rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+.house-flavor-cta:hover { text-decoration: underline; }
+
+/* House Flavor — full page */
+.house-flavor-method {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: .97rem;
+  line-height: 1.65;
+  color: var(--ink);
+  margin: 16px 0 12px;
+}
+.house-flavor-storage {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: .88rem;
+  color: var(--muted);
+  margin: 0 0 32px;
+  border-left: 2px solid var(--line);
+  padding-left: 12px;
+}
+.house-flavor-uses { display: flex; flex-direction: column; gap: 24px; margin-top: 8px; }
+.house-flavor-use {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+}
+.house-flavor-use:first-child { border-top: none; padding-top: 0; }
+.house-flavor-use-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+.house-flavor-use-label {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+.house-flavor-use-action {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: .9rem;
+  color: var(--muted);
+  font-style: italic;
+  white-space: nowrap;
+}
+.house-flavor-use-context {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: .93rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+}
+.house-flavor-meal-link { color: var(--primary); text-decoration: none; }
+.house-flavor-meal-link:hover { text-decoration: underline; }
+.house-flavor-sidebar-link { color: var(--primary); text-decoration: none; }
+.house-flavor-sidebar-link:hover { text-decoration: underline; }
+
 /* ─── Footer ─────────────────────────────────────────── */
 footer {
   margin-top: 56px;

@@ -49,23 +49,7 @@
     "Sourdough",
     "Greek yogurt"
   ],
-  "flavor_paths": [
-    {
-      "name": "Italian Summer",
-      "description": "Italian seasoning, garlic, basil, tomato, olive oil, black pepper.",
-      "color_var": "primary"
-    },
-    {
-      "name": "Bright Taco",
-      "description": "Taco seasoning, lime, corn, tomato, cucumber, beans, cilantro if desired.",
-      "color_var": "secondary"
-    },
-    {
-      "name": "Chili-Crisp Bowl",
-      "description": "Soy or sesame marinade, chili crisp, cucumber, corn, basil or mint.",
-      "color_var": "accent"
-    }
-  ],
+  "house_flavor": "tomato-herb-vinaigrette",
   "field_notes_label": "Field Notes",
   "field_notes": [
     {
@@ -163,15 +147,37 @@
     "method": "Slice the tomatoes thickly. Tear open the burrata. Add basil, olive oil, salt, and pepper. Use warm sourdough to drag through everything left on the plate."
   },
   "drink": {
+    "slug": "hillcrest-spritz",
     "name": "Hillcrest Spritz",
-    "ingredients": [
+    "intro": "July's house drink. Make it on repeat.",
+    "keep": [
       "2 oz tart cherry juice",
-      "½ lime",
-      "6–8 mint leaves",
       "Sparkling mineral water",
       "Ice"
     ],
-    "method": "Fill a rocks glass with ice. Add cherry juice and lime. Slap the mint once between your palms, drop it in, then top with sparkling water."
+    "july_adds": [
+      "½ lime",
+      "6–8 mint leaves"
+    ],
+    "method": "Fill a rocks glass with ice. Add cherry juice and lime. Slap the mint once between your palms, drop it in, then top with sparkling water. Add more sparkling water to taste.",
+    "try_another_way": [
+      {
+        "change": "Use basil instead of mint",
+        "context": "If basil is already out for dinner."
+      },
+      {
+        "change": "Add a few cucumber slices",
+        "context": "If there's half a cucumber left."
+      },
+      {
+        "change": "Muddle a ripe peach slice with the lime",
+        "context": "If the peaches are especially ripe."
+      },
+      {
+        "change": "Add more sparkling water",
+        "context": "If you want something lighter."
+      }
+    ]
   },
   "local_ritual": {
     "label": "San Diego ritual",
