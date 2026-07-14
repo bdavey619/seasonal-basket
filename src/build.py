@@ -328,20 +328,37 @@ def render_meal_linked_notes(linked_slugs, notes_by_slug):
         note = notes_by_slug.get(slug)
         if not note:
             continue
-        body = note['body']
-        excerpt = body[:120] + "…" if len(body) > 120 else body
-        items.append(f"""
-      <div class="meal-field-note">
-        <div class="meal-field-note-name">{e(note['name'])}</div>
-        <p class="meal-field-note-body">{e(excerpt)}</p>
-      </div>""")
+        items.append(f'<li class="meal-field-note-title">{e(note["name"])}</li>')
     if not items:
         return ""
     return f"""
     <section>
       <h3>From Field Notes</h3>
-      {"".join(items)}
+      <ul class="meal-field-notes-list">{"".join(items)}</ul>
     </section>"""
+
+
+def render_meal_july_adds(meal):
+    anchor = meal.get("july_anchor", [])
+    options = meal.get("july_options", [])
+    legacy = meal.get("july_adds", [])
+
+    if anchor or options:
+        anchor_items = "".join(f'<li>{e(item)}</li>' for item in anchor)
+        options_items = "".join(f'<li>{e(item)}</li>' for item in options)
+        anchor_block = f"""
+      <div class="meal-adds-group">
+        <div class="meal-adds-sublabel">Start with</div>
+        <ul class="checklist">{anchor_items}</ul>
+      </div>""" if anchor else ""
+        options_block = f"""
+      <div class="meal-adds-group">
+        <div class="meal-adds-sublabel">Choose from</div>
+        <ul class="checklist">{options_items}</ul>
+      </div>""" if options else ""
+        return anchor_block + options_block
+    else:
+        return render_meal_checklist(legacy)
 
 # ── HTML shell ─────────────────────────────────────────────────────────────────
 
@@ -659,7 +676,7 @@ def build_meal_index(meals_data, edition, depth, canonical_url):
 # ── Individual meal page ───────────────────────────────────────────────────────
 
 def build_meal_page(meal, edition, depth, canonical_url):
-    require_fields(meal, ["slug", "name", "intro", "keep", "july_adds",
+    require_fields(meal, ["slug", "name", "intro", "keep",
                            "variations", "works_well_with", "finish"], f"{meal.get('slug')}.json")
 
     slug = meal["slug"]
@@ -669,7 +686,7 @@ def build_meal_page(meal, edition, depth, canonical_url):
     notes_by_slug = {n["slug"]: n for n in edition.get("field_notes", []) if "slug" in n}
 
     keep_items = render_meal_checklist(meal["keep"])
-    adds_items = render_meal_checklist(meal["july_adds"])
+    adds_section = render_meal_july_adds(meal)
     variations  = render_meal_variations(meal["variations"])
     linked_notes = render_meal_linked_notes(meal.get("linked_field_notes", []), notes_by_slug)
 
@@ -695,7 +712,7 @@ def build_meal_page(meal, edition, depth, canonical_url):
 
         <section aria-labelledby="july-adds-heading">
           <h2 id="july-adds-heading">July adds</h2>
-          {adds_items}
+          {adds_section}
         </section>
 
         <section aria-labelledby="variations-heading">

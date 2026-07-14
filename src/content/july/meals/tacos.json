@@ -8,8 +8,10 @@
     "Tortillas or rice",
     "Taco-seasoned protein"
   ],
-  "july_adds": [
-    "Heirloom tomato, roughly chopped",
+  "july_anchor": [
+    "Heirloom tomato, roughly chopped"
+  ],
+  "july_options": [
     "Sweet corn",
     "Persian cucumber, diced"
   ],

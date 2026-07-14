@@ -8,8 +8,10 @@
     "Rice",
     "Your usual protein"
   ],
-  "july_adds": [
-    "Heirloom tomato, chopped",
+  "july_anchor": [
+    "Heirloom tomato, chopped"
+  ],
+  "july_options": [
     "Persian cucumber, sliced",
     "Fresh basil",
     "Sweet corn"

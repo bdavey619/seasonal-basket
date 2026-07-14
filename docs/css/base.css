@@ -542,6 +542,35 @@ a { color: inherit; }
   margin-bottom: 10px;
 }
 
+/* July adds — anchor + options structure */
+.meal-adds-group { margin-bottom: 4px; }
+.meal-adds-sublabel {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-weight: 700;
+  color: var(--muted);
+  margin-top: 16px;
+  margin-bottom: 2px;
+}
+.meal-adds-group:first-child .meal-adds-sublabel { margin-top: 0; }
+
+/* Field notes sidebar — titles only */
+.meal-field-notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+.meal-field-note-title {
+  font-family: Georgia, serif;
+  font-size: .93rem;
+  color: var(--ink);
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+.meal-field-note-title:last-child { border-bottom: none; }
+
 /* Variations */
 .meal-variations { margin-top: 10px; }
 .meal-variation {
