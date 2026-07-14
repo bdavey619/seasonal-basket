@@ -276,18 +276,51 @@ def render_weekend(meal):
 # ── Drink ──────────────────────────────────────────────────────────────────────
 
 def render_drink(drink):
-    ingredients = "".join(f"<li>{e(i)}</li>" for i in drink.get("ingredients", []))
+    keep_items  = "".join(f"<li>{e(i)}</li>" for i in drink.get("keep", []))
+    adds_items  = "".join(f"<li>{e(i)}</li>" for i in drink.get("july_adds", []))
+    try_rows    = "".join(
+        f"""<div class="drink-try-row">
+          <span class="drink-try-change">{e(v['change'])}</span>
+          <span class="drink-try-context">{e(v['context'])}</span>
+        </div>"""
+        for v in drink.get("try_another_way", [])
+    )
+
+    intro = f'<p class="drink-intro">{e(drink["intro"])}</p>' if drink.get("intro") else ""
+    try_section = f"""
+      <div class="drink-try">
+        <div class="meal-adds-sublabel">Try another way</div>
+        {try_rows}
+      </div>""" if try_rows else ""
+
     return f"""
-<div class="two-col">
-  <div>
-    <strong>Ingredients</strong>
-    <ul>{ingredients}</ul>
+{intro}
+<div class="drink-grid">
+  <div class="drink-base">
+    <div class="meal-adds-sublabel">Keep</div>
+    <ul class="checklist">{keep_items}</ul>
+    <div class="meal-adds-sublabel" style="margin-top:16px">July adds</div>
+    <ul class="checklist">{adds_items}</ul>
+    <div class="meal-adds-sublabel" style="margin-top:16px">Method</div>
+    <p class="drink-method">{e(drink.get('method',''))}</p>
   </div>
-  <div>
-    <strong>Method</strong>
-    <p>{e(drink.get('method',''))}</p>
+  <div class="drink-variations">
+    {try_section}
   </div>
 </div>"""
+
+
+def render_drink_link(drink):
+    """Minimal drink reference for meal page sidebars — title only."""
+    if not drink or not drink.get("name"):
+        return ""
+    return f"""
+    <section>
+      <h3>The drink</h3>
+      <ul class="meal-field-notes-list">
+        <li class="meal-field-note-title">{e(drink['name'])}</li>
+      </ul>
+    </section>"""
 
 # ── Guide cards row ────────────────────────────────────────────────────────────
 
@@ -376,7 +409,6 @@ def render_shell(title, description, canonical_url, css_depth, body, edition_slu
     home_href = rel(css_depth, "")
     july_href = rel(css_depth, "july/")
     basket_href = rel(css_depth, "seasonal-basket/july-ingredients/")
-    meals_href  = rel(css_depth, "july/meals/")
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -460,7 +492,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None):
         {render_confidence(edition['confidence'])}
       </aside>
 
-      <article class="card col-12" aria-labelledby="transforms-heading">
+      <article class="card col-12" id="meals" aria-labelledby="transforms-heading">
         <div class="section-label">Keep the meal. Change the season.</div>
         <h2 id="transforms-heading">Your usual meals, wearing July.</h2>
         <p>The basket doesn't replace what you already make. It just makes those meals taste like right now.</p>
@@ -501,6 +533,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None):
         <h2 id="drink-heading">{e(edition['drink']['name'])}</h2>
         {render_drink(edition['drink'])}
       </article>
+
 
       <aside class="card card--warm col-5" aria-label="{e(edition['local_ritual']['label'])}">
         <div class="section-label">{e(edition['local_ritual']['label'])}</div>
@@ -639,40 +672,6 @@ def build_ingredient_page(ing, depth, canonical_url):
         edition_slug="july",
     )
 
-# ── Meal index page ────────────────────────────────────────────────────────────
-
-def build_meal_index(meals_data, edition, depth, canonical_url):
-    tiles = []
-    for slug, meal in meals_data.items():
-        href = rel(depth, f"{slug}/")
-        tiles.append(f"""
-    <a class="meal-index-tile" href="{href}">
-      <strong>{e(meal.get('display_name', meal['name']))}</strong>
-      <span class="meal-intro">{e(meal.get('intro', ''))}</span>
-    </a>""")
-
-    body = f"""
-    <div style="padding:40px 0 20px">
-      <a href="{rel(depth, 'july/')}" class="back-link">← July</a>
-      <div class="section-label" style="margin-top:8px">Everyday meals</div>
-      <h1 style="font-size:clamp(2.2rem,5vw,4rem);margin:8px 0 16px">Your usual meals, wearing July.</h1>
-      <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:600px">
-        The basket doesn't replace what you already make. It makes those meals taste like right now.
-      </p>
-    </div>
-    <div class="meal-index-grid">
-      {"".join(tiles)}
-    </div>"""
-
-    return render_shell(
-        title="Everyday Meals — July — Seasonal",
-        description="How the July basket makes your usual weeknight meals taste like the season.",
-        canonical_url=canonical_url,
-        css_depth=depth,
-        body=body,
-        edition_slug="july",
-    )
-
 # ── Individual meal page ───────────────────────────────────────────────────────
 
 def build_meal_page(meal, edition, depth, canonical_url):
@@ -680,21 +679,24 @@ def build_meal_page(meal, edition, depth, canonical_url):
                            "variations", "works_well_with", "finish"], f"{meal.get('slug')}.json")
 
     slug = meal["slug"]
-    july_href = rel(depth, "july/")
-    meals_href = rel(depth, "july/meals/")
+    meals_back_href = rel(depth, "july/#meals")
 
     notes_by_slug = {n["slug"]: n for n in edition.get("field_notes", []) if "slug" in n}
+    edition_drink = edition.get("drink", {})
 
-    keep_items = render_meal_checklist(meal["keep"])
+    keep_items   = render_meal_checklist(meal["keep"])
     adds_section = render_meal_july_adds(meal)
-    variations  = render_meal_variations(meal["variations"])
+    variations   = render_meal_variations(meal["variations"])
     linked_notes = render_meal_linked_notes(meal.get("linked_field_notes", []), notes_by_slug)
+
+    linked_drink_slug = meal.get("linked_drink")
+    drink_link = render_drink_link(edition_drink) if linked_drink_slug and linked_drink_slug == edition_drink.get("slug") else ""
 
     works_well = "".join(f'<li>{e(w)}</li>' for w in meal["works_well_with"])
 
     body = f"""
     <div style="padding-top:28px">
-      <a href="{meals_href}" class="back-link">← Meals</a>
+      <a href="{meals_back_href}" class="back-link">← Your usual meals</a>
     </div>
 
     <div class="meal-header">
@@ -734,6 +736,7 @@ def build_meal_page(meal, edition, depth, canonical_url):
           <ul class="checklist">{works_well}</ul>
         </section>
         {linked_notes}
+        {drink_link}
       </aside>
     </div>"""
 
@@ -784,7 +787,6 @@ def verify(edition_slug):
         SITE / "index.html",
         SITE / f"{edition_slug}" / "index.html",
         SITE / "seasonal-basket" / "july-ingredients" / "index.html",
-        SITE / f"{edition_slug}" / "meals" / "index.html",
         SITE / "css" / "base.css",
         SITE / "css" / f"{edition_slug}.css",
     ]
@@ -807,11 +809,11 @@ def verify(edition_slug):
         if f"{slug}/" not in index_src:
             errors.append(f"Ingredient link missing from basket index: {slug}")
 
-    # Check meal links appear in the meal index
-    meal_index_src = (SITE / f"{edition_slug}" / "meals" / "index.html").read_text()
+    # Check meal links appear on the homepage
+    home_src = (SITE / "index.html").read_text()
     for slug in EXPECTED_MEAL_SLUGS:
-        if f"{slug}/" not in meal_index_src:
-            errors.append(f"Meal link missing from meal index: {slug}")
+        if f"meals/{slug}/" not in home_src:
+            errors.append(f"Meal link missing from homepage: {slug}")
 
     if errors:
         print("\n  VERIFICATION FAILED:")
@@ -892,14 +894,6 @@ def build_edition(edition_dir_name):
             SITE / "seasonal-basket" / "july-ingredients" / slug / "index.html",
             ing_html
         )
-
-    # Meal index (depth=2: docs/july/meals/index.html)
-    meal_index_canonical = f"{base_url}/july/meals/"
-    meal_index_html = build_meal_index(
-        meals_data, edition,
-        depth=2, canonical_url=meal_index_canonical
-    )
-    write_page(SITE / "july" / "meals" / "index.html", meal_index_html)
 
     # Individual meal pages (depth=3: docs/july/meals/<slug>/index.html)
     for slug, meal in meals_data.items():
