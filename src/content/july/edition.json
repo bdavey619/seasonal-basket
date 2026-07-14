@@ -33,6 +33,11 @@
     "dinners_supported": 5,
     "weekend_meals_supported": 2,
     "waste_risk": "low",
+    "basket_cost": {
+      "range": "$30–45",
+      "where": "Whole Foods, Trader Joe's, or Sprouts",
+      "note": "Estimate for the seasonal basket only, not proteins or pantry staples. Farmers market pricing varies."
+    },
     "assumptions": [
       "Pantry basics already on hand",
       "One batch of rice cooked ahead",
@@ -113,14 +118,15 @@
     "name": "Tomato, burrata, basil, and sourdough.",
     "intro": "One meal should feel like the reason you went shopping. This is July’s.",
     "ingredients": [
-      "2 heirloom tomatoes",
-      "1 ball burrata",
+      "2 ripe tomatoes",
+      "1 ball burrata or fresh mozzarella",
       "Basil",
       "Olive oil",
       "Flaky salt and black pepper",
       "Toasted sourdough"
     ],
-    "method": "Slice the tomatoes thickly. Tear open the burrata. Add basil, olive oil, salt, and pepper. Use warm sourdough to drag through everything left on the plate."
+    "ingredient_note": "Burrata is richer and more indulgent. Fresh mozzarella is a reliable everyday alternative at about half the price — Trader Joe’s and Whole Foods both carry it.",
+    "method": "Slice the tomatoes thickly. Tear open the cheese. Add basil, olive oil, salt, and pepper. Use warm sourdough to drag through everything left on the plate."
   },
   "drink": {
     "slug": "hillcrest-spritz",
@@ -164,5 +170,5 @@
     "headline": "The smell of a tomato vine.",
     "body": "Most people know what a tomato tastes like. Fewer notice the green, almost peppery scent where the stem meets the fruit."
   },
-  "market_question": "What are you taking home tonight?"
+  "market_question": "What looked best when you were shopping?"
 }
