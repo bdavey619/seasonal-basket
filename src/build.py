@@ -247,7 +247,7 @@ def render_confidence(conf):
     basket_cost = conf.get("basket_cost", {})
     cost_line = ""
     if basket_cost:
-        cost_line = f'<p style="font-size:.85rem;color:var(--muted);margin-top:8px">Basket cost: <strong>{e(basket_cost["range"])}</strong> at {e(basket_cost["where"])}. {e(basket_cost["note"])}</p>'
+        cost_line = f'<p style="font-size:.85rem;color:var(--muted);margin-top:8px">Basket cost: <strong>{e(basket_cost["range"])}</strong>. {e(basket_cost["note"])}</p>'
     return f"""
 <div class="section-label">Confidence score</div>
 <div class="score-number">{e(score)}</div>
@@ -774,7 +774,7 @@ def build_ingredient_page(ing, depth, canonical_url, house_flavor=None):
         </section>
 
         <section aria-labelledby="weekday-heading">
-          <h2 id="weekday-heading">On a weekday</h2>
+          <h2 id="weekday-heading">During the week</h2>
           <ul class="checklist">{weekday_items}</ul>
         </section>
 

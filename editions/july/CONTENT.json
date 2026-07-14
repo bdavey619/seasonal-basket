@@ -35,8 +35,7 @@
     "waste_risk": "low",
     "basket_cost": {
       "range": "$30–45",
-      "where": "Whole Foods, Trader Joe's, or Sprouts",
-      "note": "Estimate for the seasonal basket only, not proteins or pantry staples. Farmers market pricing varies."
+      "note": "Estimate for the seasonal basket only — not proteins or pantry staples. Often less when produce is on sale. Store and region affect the total."
     },
     "assumptions": [
       "Pantry basics already on hand",
@@ -60,12 +59,12 @@
     {
       "slug": "sherry-vinegar",
       "name": "Sherry vinegar",
-      "body": "Tomatoes are already acidic. That's why sharp vinegar fights them — you're adding the same note twice. Sherry vinegar is rounder, with a quiet sweetness of its own. It cooperates. Try it on sliced tomatoes instead of lemon. A splash in the pan after chicken. A few drops in cucumber water. You'll notice immediately, and you won't go back."
+      "body": "Tomatoes are already acidic. That's why sharp vinegar fights them — you're adding the same note twice. Sherry vinegar is rounder, with a quiet sweetness of its own. It cooperates. Try it on sliced tomatoes instead of lemon. A splash in the pan after chicken. A few drops in cucumber water. A mild red wine vinegar can work in its place, though the result will be a little sharper."
     },
     {
       "slug": "flaky-salt-goes-on-last",
       "name": "Flaky salt goes on last",
-      "body": "Table salt dissolves into food. Flaky salt stays on the surface, so you taste it in distinct moments rather than uniformly throughout. On a ripe tomato or a peach, that difference is the whole experience. Keep a small dish of it near where you plate. It only goes on last — never while cooking."
+      "body": "Table salt dissolves into food. Flaky salt stays on the surface, so you taste it in distinct moments rather than uniformly throughout. On a ripe tomato or a peach, that difference is the whole experience. Keep a small dish of it near where you plate. It only goes on last — never while cooking. Regular salt still seasons the meal — the difference is in how you experience it on the surface."
     },
     {
       "slug": "add-herbs-after-the-heat",
@@ -332,7 +331,7 @@
         "Smaller is usually crisper"
       ],
       "buy_this_much": "4–6 cucumbers for one person for the week",
-      "price_note": "Trader Joe's sells a bag of six for around $2. One of the best deals in the basket.",
+      "price_note": "Often one of the least expensive things in the basket. Sold in bags at most grocery stores — good value relative to how far they stretch across the week.",
       "pairs_with_month": [
         "heirloom-tomatoes",
         "basil",
@@ -369,7 +368,7 @@
       "weekend_use": "Smashed cucumber salad with sesame, chili crisp, and scallion.",
       "storage": "Refrigerate in a loose bag. Use within one week. Best used early in the week.",
       "one_thing_to_learn": "Salt briefly before dressing and let the water draw out for a few minutes. The cucumber becomes more concentrated and holds its crunch longer.",
-      "market_question": "Where did these come from this week?"
+      "market_question": "How fresh are these?"
     },
     "peaches": {
       "slug": "peaches",
@@ -384,7 +383,7 @@
         "Avoid hard or refrigerated peaches"
       ],
       "buy_this_much": "4–5 peaches for one person for the week. They do not all need to be eaten at once.",
-      "price_note": "Stone fruit is most abundant and affordable in July. Expect $1–2 per pound at Whole Foods or Trader Joe's — sometimes less if they're featured.",
+      "price_note": "Stone fruit is most abundant and affordable in July. Peak season tends to bring prices down across most grocery stores, and peaches are often featured on sale.",
       "pairs_with_month": [
         "mint",
         "blackberries",
@@ -432,7 +431,7 @@
         "Plump kernels felt through the husk",
         "Avoid any ears with dried-out or blackened husks"
       ],
-      "price_note": "One of the cheapest vegetables of summer. Whole Foods and Trader Joe's both stock good ears in July, often on sale.",
+      "price_note": "One of the least expensive vegetables of summer. Widely available at any grocery store in July and often on sale.",
       "buy_this_much": "2–3 ears for one person mid-week, another 1–2 for the weekend",
       "pairs_with_month": [
         "heirloom-tomatoes",
@@ -483,7 +482,7 @@
         "Avoid wilted or yellowing bunches"
       ],
       "buy_this_much": "One or two good bunches. It moves through a week faster than you expect.",
-      "price_note": "Usually $1–2 a bunch at any grocery store. A potted basil plant from the produce section costs the same and lasts longer — worth it if you cook with it often.",
+      "price_note": "Usually inexpensive — one of the least costly things in the basket. If basil appears in several meals this month — and in July it will — a small potted plant from the produce section may outlast a cut bunch and lets you take only what you need throughout the week. A cut bunch is completely fine when you only need basil once or twice. Both are widely available.",
       "pairs_with_month": [
         "heirloom-tomatoes",
         "persian-cucumbers",
@@ -517,7 +516,7 @@
         "Stirred into pasta with olive oil and garlic",
         "Layered on a tomato toast"
       ],
-      "weekend_use": "Torn generously over burrata and tomatoes with good olive oil.",
+      "weekend_use": "Torn generously over tomatoes with good olive oil. This is where burrata or fresh mozzarella belongs — burrata if you want something richer, fresh mozzarella if you want something simpler.",
       "storage": "Keep at room temperature with stems in water, like flowers. Do not refrigerate. Use within three or four days.",
       "one_thing_to_learn": "Tear basil instead of chopping when it will be served fresh. The knife bruises it and darkens it quickly. Torn leaves hold their color and fragrance longer.",
       "market_question": "How fresh is this?"
@@ -618,7 +617,7 @@
       "weekend_use": "A plate of cherries alongside the weekend meal. No preparation needed.",
       "storage": "Refrigerate and eat within three to four days. Leave stems on until eating.",
       "one_thing_to_learn": "Tart cherry juice is a useful pantry item through July — it keeps longer than fresh cherries and makes the Hillcrest Spritz more reliable on short notice.",
-      "market_question": "What variety are these, and when were they picked?"
+      "market_question": "Which variety is ripest right now?"
     },
     "blackberries": {
       "slug": "blackberries",
@@ -633,7 +632,7 @@
         "A little give without being mushy"
       ],
       "buy_this_much": "One pint. Use within two or three days.",
-      "price_note": "July is peak season — pints that cost $4–5 off-season often drop to $2–3. One of the best deals of the summer.",
+      "price_note": "Peak season often brings the price down noticeably compared to off-season. Worth picking up when they look good — they're typically among the more affordable berry options in July.",
       "pairs_with_month": [
         "mint",
         "peaches",

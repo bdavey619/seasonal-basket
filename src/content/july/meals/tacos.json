@@ -3,13 +3,13 @@
   "name": "Tacos",
   "display_name": "Tacos + taco bowl",
   "effort": "weekday",
-  "intro": "Chopped heirloom tomato is better than store salsa in July.",
+  "intro": "A ripe July tomato, chopped, is better than store salsa.",
   "keep": [
     "Tortillas or rice",
     "Taco-seasoned protein"
   ],
   "july_anchor": [
-    "Heirloom tomato, roughly chopped"
+    "Ripe tomato, roughly chopped"
   ],
   "july_options": [
     "Sweet corn",

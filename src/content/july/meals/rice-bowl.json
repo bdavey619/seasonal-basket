@@ -9,7 +9,7 @@
     "Your usual protein"
   ],
   "july_anchor": [
-    "Heirloom tomato, chopped"
+    "Ripe tomato, chopped"
   ],
   "july_options": [
     "Persian cucumber, sliced",
@@ -19,7 +19,7 @@
   "variations": [
     { "ingredients": "Tomato + basil", "context": "Start here." },
     { "ingredients": "Tomato + cucumber", "context": "If dinner just needs to be easy." },
-    { "ingredients": "Tomato + corn + lime", "context": "If you picked up sweet corn at the market." },
+    { "ingredients": "Tomato + corn + lime", "context": "If you picked up sweet corn." },
     { "ingredients": "Tomato + avocado", "context": "If you have half an avocado left." }
   ],
   "works_well_with": [

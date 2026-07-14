@@ -35,8 +35,7 @@
     "waste_risk": "low",
     "basket_cost": {
       "range": "$30–45",
-      "where": "Whole Foods, Trader Joe's, or Sprouts",
-      "note": "Estimate for the seasonal basket only, not proteins or pantry staples. Farmers market pricing varies."
+      "note": "Estimate for the seasonal basket only — not proteins or pantry staples. Often less when produce is on sale. Store and region affect the total."
     },
     "assumptions": [
       "Pantry basics already on hand",
@@ -60,12 +59,12 @@
     {
       "slug": "sherry-vinegar",
       "name": "Sherry vinegar",
-      "body": "Tomatoes are already acidic. That's why sharp vinegar fights them — you're adding the same note twice. Sherry vinegar is rounder, with a quiet sweetness of its own. It cooperates. Try it on sliced tomatoes instead of lemon. A splash in the pan after chicken. A few drops in cucumber water. You'll notice immediately, and you won't go back."
+      "body": "Tomatoes are already acidic. That's why sharp vinegar fights them — you're adding the same note twice. Sherry vinegar is rounder, with a quiet sweetness of its own. It cooperates. Try it on sliced tomatoes instead of lemon. A splash in the pan after chicken. A few drops in cucumber water. A mild red wine vinegar can work in its place, though the result will be a little sharper."
     },
     {
       "slug": "flaky-salt-goes-on-last",
       "name": "Flaky salt goes on last",
-      "body": "Table salt dissolves into food. Flaky salt stays on the surface, so you taste it in distinct moments rather than uniformly throughout. On a ripe tomato or a peach, that difference is the whole experience. Keep a small dish of it near where you plate. It only goes on last — never while cooking."
+      "body": "Table salt dissolves into food. Flaky salt stays on the surface, so you taste it in distinct moments rather than uniformly throughout. On a ripe tomato or a peach, that difference is the whole experience. Keep a small dish of it near where you plate. It only goes on last — never while cooking. Regular salt still seasons the meal — the difference is in how you experience it on the surface."
     },
     {
       "slug": "add-herbs-after-the-heat",
