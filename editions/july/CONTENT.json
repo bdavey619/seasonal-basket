@@ -34,8 +34,7 @@
     "weekend_meals_supported": 2,
     "waste_risk": "low",
     "basket_cost": {
-      "range": "$30–45",
-      "note": "Estimate for the seasonal basket only — not proteins or pantry staples. Often less when produce is on sale. Store and region affect the total."
+      "note": "Expect around $30–45 for the seasonal basket, often less when produce is on sale. Proteins and pantry staples are separate; prices vary by store and region."
     },
     "assumptions": [
       "Pantry basics already on hand",
@@ -482,7 +481,8 @@
         "Avoid wilted or yellowing bunches"
       ],
       "buy_this_much": "One or two good bunches. It moves through a week faster than you expect.",
-      "price_note": "Usually inexpensive — one of the least costly things in the basket. If basil appears in several meals this month — and in July it will — a small potted plant from the produce section may outlast a cut bunch and lets you take only what you need throughout the week. A cut bunch is completely fine when you only need basil once or twice. Both are widely available.",
+      "buying_note": "Using basil all month? A small potted plant may last longer than a cut bunch and lets you take only what you need. A cut bunch works well when you only need it once or twice.",
+      "price_note": "Usually inexpensive — one of the least costly things in the basket.",
       "pairs_with_month": [
         "heirloom-tomatoes",
         "persian-cucumbers",

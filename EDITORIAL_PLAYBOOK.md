@@ -157,6 +157,12 @@ The score is editorial guidance, not a scientific metric.
 - No trend language
 - No unnecessary photography
 
+## Sourcing and Organic Guidance
+
+Organic is optional, not a condition of participation. Seasonal prioritizes produce that is ripe, in season, accessible, and likely to be eaten. Any organic guidance must be evidence-based and useful enough to justify the additional decision.
+
+The underlying principle: conventional produce in season is worth eating. Seasonal should never discourage someone from buying fruits and vegetables because the theoretically ideal version is unavailable or unaffordable.
+
 ## Publication Checklist
 
 - Is the basket small enough to remember?

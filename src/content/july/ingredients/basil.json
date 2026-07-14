@@ -11,7 +11,8 @@
     "Avoid wilted or yellowing bunches"
   ],
   "buy_this_much": "One or two good bunches. It moves through a week faster than you expect.",
-  "price_note": "Usually inexpensive — one of the least costly things in the basket. If basil appears in several meals this month — and in July it will — a small potted plant from the produce section may outlast a cut bunch and lets you take only what you need throughout the week. A cut bunch is completely fine when you only need basil once or twice. Both are widely available.",
+  "buying_note": "Using basil all month? A small potted plant may last longer than a cut bunch and lets you take only what you need. A cut bunch works well when you only need it once or twice.",
+  "price_note": "Usually inexpensive — one of the least costly things in the basket.",
   "pairs_with_month": ["heirloom-tomatoes", "persian-cucumbers", "sweet-corn", "peaches"],
   "pairs_with_staples": ["chicken thighs", "ground beef or turkey", "salmon", "beans", "sourdough"],
   "flavor_paths": [

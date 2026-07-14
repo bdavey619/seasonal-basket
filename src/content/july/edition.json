@@ -34,8 +34,7 @@
     "weekend_meals_supported": 2,
     "waste_risk": "low",
     "basket_cost": {
-      "range": "$30–45",
-      "note": "Estimate for the seasonal basket only — not proteins or pantry staples. Often less when produce is on sale. Store and region affect the total."
+      "note": "Expect around $30–45 for the seasonal basket, often less when produce is on sale. Proteins and pantry staples are separate; prices vary by store and region."
     },
     "assumptions": [
       "Pantry basics already on hand",
