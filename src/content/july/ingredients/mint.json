@@ -11,6 +11,7 @@
     "Spearmint or peppermint both work for this edition"
   ],
   "buy_this_much": "One bunch. It goes further than you think.",
+  "price_note": "One of the least expensive things in this basket — usually $1–2 a bunch at any grocery store.",
   "pairs_with_month": ["persian-cucumbers", "peaches", "cherries", "blackberries"],
   "pairs_with_staples": ["greek yogurt", "salmon", "chicken thighs", "sticky rice"],
   "flavor_paths": [

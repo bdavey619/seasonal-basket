@@ -11,6 +11,7 @@
     "Avoid anything split or leaking"
   ],
   "buy_this_much": "A generous pound. They disappear faster than expected.",
+  "price_note": "Still a splurge compared to most things in the basket, but July is when the price drops from its winter peak. The season is short — worth it.",
   "pairs_with_month": ["mint", "peaches", "blackberries"],
   "pairs_with_staples": ["greek yogurt", "sourdough"],
   "flavor_paths": [

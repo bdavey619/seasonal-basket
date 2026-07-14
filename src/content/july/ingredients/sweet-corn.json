@@ -3,13 +3,14 @@
   "name": "Sweet corn",
   "month": "July",
   "guide_id": "jerome",
-  "why_now": "Corn sugars convert to starch quickly after picking. July corn bought at a farmers market and eaten the same day is a different ingredient from corn that has traveled.",
+  "why_now": "Corn sugars convert to starch quickly after picking. July corn eaten within a day or two of harvest is a different ingredient from corn that has traveled for a week. Grocery stores turn over fast in summer — the corn on the shelf right now is likely good.",
   "how_to_choose": [
     "Husk tightly wrapped and bright green",
     "Silk slightly dry at the top, not slimy",
     "Plump kernels felt through the husk",
-    "Buy from a stall that harvested recently"
+    "Avoid any ears with dried-out or blackened husks"
   ],
+  "price_note": "One of the cheapest vegetables of summer. Whole Foods and Trader Joe's both stock good ears in July, often on sale.",
   "buy_this_much": "2–3 ears for one person mid-week, another 1–2 for the weekend",
   "pairs_with_month": ["heirloom-tomatoes", "basil", "persian-cucumbers", "peaches"],
   "pairs_with_staples": ["ground beef or turkey", "chicken thighs", "beans", "sticky rice"],
@@ -26,5 +27,5 @@
   "weekend_use": "Corn salad alongside grilled chicken thighs and peaches.",
   "storage": "Keep husked corn refrigerated and use within two days. Husked is fine for a day, unhusked is better if waiting.",
   "one_thing_to_learn": "Fresh corn is good raw. Shaved directly off the cob into a salad, it has a sweetness that disappears quickly with heat.",
-  "market_question": "How long ago was this picked?"
+  "market_question": "When did these come in?"
 }

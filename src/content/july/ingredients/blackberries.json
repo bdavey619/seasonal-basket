@@ -11,6 +11,7 @@
     "A little give without being mushy"
   ],
   "buy_this_much": "One pint. Use within two or three days.",
+  "price_note": "July is peak season — pints that cost $4–5 off-season often drop to $2–3. One of the best deals of the summer.",
   "pairs_with_month": ["mint", "peaches", "cherries"],
   "pairs_with_staples": ["greek yogurt", "sourdough"],
   "flavor_paths": [
@@ -26,5 +27,5 @@
   "weekend_use": "Fruit plate with peaches, mint, and honey as a light dessert.",
   "storage": "Refrigerate unwashed and use within two to three days. Wash only just before eating.",
   "one_thing_to_learn": "Blackberries are fragile. They do not improve with time. Buy them close to when you will eat them and treat the container gently.",
-  "market_question": "Are these wild or cultivated?"
+  "market_question": "How ripe are these right now?"
 }

@@ -11,6 +11,7 @@
     "Avoid wilted or yellowing bunches"
   ],
   "buy_this_much": "One or two good bunches. It moves through a week faster than you expect.",
+  "price_note": "Usually $1–2 a bunch at any grocery store. A potted basil plant from the produce section costs the same and lasts longer — worth it if you cook with it often.",
   "pairs_with_month": ["heirloom-tomatoes", "persian-cucumbers", "sweet-corn", "peaches"],
   "pairs_with_staples": ["chicken thighs", "ground beef or turkey", "salmon", "beans", "sourdough"],
   "flavor_paths": [
@@ -27,5 +28,5 @@
   "weekend_use": "Torn generously over burrata and tomatoes with good olive oil.",
   "storage": "Keep at room temperature with stems in water, like flowers. Do not refrigerate. Use within three or four days.",
   "one_thing_to_learn": "Tear basil instead of chopping when it will be served fresh. The knife bruises it and darkens it quickly. Torn leaves hold their color and fragrance longer.",
-  "market_question": "Is this Genovese or a different variety this week?"
+  "market_question": "How fresh is this?"
 }
