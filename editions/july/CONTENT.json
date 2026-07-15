@@ -51,42 +51,42 @@
       {
         "name": "Ripe tomatoes",
         "qty": "4–5",
-        "note": "The week centers on these."
+        "note": "The week revolves around these."
       },
       {
         "name": "Persian cucumbers",
         "qty": "1 bag",
-        "note": "They last all week."
+        "note": "They'll last all week."
       },
       {
         "name": "Peaches",
         "qty": "3–4",
-        "note": "Ripe ones, ready to eat."
+        "note": "Buy the ones that smell ready."
       },
       {
         "name": "Sweet corn",
         "qty": "3–4 ears",
-        "note": "Or one bag frozen if needed."
+        "note": "Frozen works if that's what's there."
       },
       {
         "name": "Basil",
         "qty": "1 bunch",
-        "note": "Or a small potted plant."
+        "note": "A potted plant lasts longer."
       },
       {
         "name": "Mint",
         "qty": "1 small bunch",
-        "note": "For the drink and cucumbers."
+        "note": "For the drink and the cucumbers."
       },
       {
         "name": "Cherries",
         "qty": "1 lb",
-        "note": "Optional — buy if priced right."
+        "note": "Skip if expensive. The window comes back."
       },
       {
         "name": "Blackberries",
         "qty": "1 pint",
-        "note": "For yogurt and snacking."
+        "note": "Eat within two days of buying."
       }
     ]
   },
@@ -105,17 +105,17 @@
     {
       "slug": "sherry-vinegar",
       "name": "Sherry vinegar",
-      "body": "Tomatoes are already acidic. That's why sharp vinegar fights them — you're adding the same note twice. Sherry vinegar is rounder, with a quiet sweetness of its own. It cooperates. Try it on sliced tomatoes instead of lemon. A splash in the pan after chicken. A few drops in cucumber water. A mild red wine vinegar can work in its place, though the result will be a little sharper."
+      "body": "Tomatoes are already acidic — sharp vinegar just adds the same note twice. Sherry vinegar is rounder, with a quiet sweetness. It cooperates. Try it anywhere you'd reach for lemon. A mild red wine vinegar works if that's what you have."
     },
     {
       "slug": "flaky-salt-goes-on-last",
       "name": "Flaky salt goes on last",
-      "body": "Table salt dissolves into food. Flaky salt stays on the surface, so you taste it in distinct moments rather than uniformly throughout. On a ripe tomato or a peach, that difference is the whole experience. Keep a small dish of it near where you plate. It only goes on last — never while cooking. Regular salt still seasons the meal — the difference is in how you experience it on the surface."
+      "body": "It goes on last — never while cooking. Table salt dissolves in; flaky salt stays on the surface, so you taste it in distinct moments. On a ripe tomato or a peach, that difference is the whole experience. Keep a small dish near where you plate."
     },
     {
       "slug": "add-herbs-after-the-heat",
       "name": "Add herbs after the heat",
-      "body": "Basil and mint lose what makes them interesting the moment heat reaches them. The oils that carry the fragrance are gone within seconds of contact with a hot pan. Add them after the heat is off, or raw, right before the plate reaches the table. The smell alone will tell you something has changed."
+      "body": "The fragrance is gone within seconds of hitting a hot pan. Add basil and mint after the heat is off, or right before the plate reaches the table. The smell will tell you something changed."
     }
   ],
   "meal_transformations": [
