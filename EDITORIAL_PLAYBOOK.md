@@ -1,8 +1,18 @@
 # Seasonal — Editorial Playbook
 
+## Product Vision
+
+Seasonal is not a recipe publication. It is a monthly companion for people who already know how to cook.
+
+The problem it solves: modern grocery stores offer infinite choice. Everything is available all the time, and that abundance makes it hard to know what is actually worth buying this month. Seasonal answers that question.
+
+The transformation: from someone who knows how to cook, to someone who knows how to cook the season.
+
+Seasonal does not change how people cook. It changes what they buy — and by extension, how their existing meals taste.
+
 ## Editorial Objective
 
-Each edition should make the reader excited to visit a farmers market or grocery store, confident about what to buy, and capable of using those ingredients repeatedly throughout the week.
+Each edition should make the reader confident about what to buy this month, and capable of using those ingredients across the meals they already make.
 
 ## The Editorial Test
 
@@ -14,6 +24,7 @@ Before publishing any section, ask:
 4. Does this work in a real weekday kitchen?
 5. Does this sound appreciative rather than pretentious?
 6. Will this still feel true ten or thirty years from now?
+7. Does this section help someone upgrade the meals they already make — or does it ask them to learn new ones?
 
 ## Monthly Edition Structure
 
@@ -31,6 +42,16 @@ Each edition includes:
 10. One thing to notice
 11. Ingredient pages
 12. One market question
+
+## The Weekday / Weekend Philosophy
+
+These are two different modes, and both belong in each edition.
+
+**Weekdays:** Keep the meal. Change the season. The edition should help readers improve the meals they are already going to make. A weekday suggestion should be recognizable from their existing rotation. If it requires explanation, it has gone too far.
+
+**Weekends:** Slow down and let one ingredient be the reason you cook. People often have more time on weekends, may cook with others, and are more willing to try something they have never made before. The Weekend Meal exists to celebrate one seasonal recipe worth slowing down for.
+
+The Weekend Meal earns its place only when the dish is inseparable from the month — when it would not make sense to cook it in any other season.
 
 ## Contributor Voice
 

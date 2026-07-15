@@ -661,13 +661,6 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
         </div>
       </article>
 
-      <article class="card col-12" id="week" aria-labelledby="week-heading">
-        <div class="section-label">The week</div>
-        <h2 id="week-heading">What a week actually looks like.</h2>
-        <p>Mix and match. Repeat what works. One protein batch, one rice cook, and this basket will carry you.</p>
-        {render_week(edition['week'])}
-      </article>
-
       <article class="field-notes-section col-12" aria-labelledby="field-notes-heading">
         <div class="section-label">{e(edition.get('field_notes_label', 'Field Notes'))}</div>
         <div class="field-notes">
