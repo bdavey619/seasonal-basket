@@ -4,7 +4,8 @@
   "location": "San Diego",
   "edition_number": 1,
   "base_url": "/seasonal",
-  "opening_note": "Tomatoes finally deserve the center of the plate. Cucumbers make everything cooler. Peaches need almost nothing. Your usual meals can stay exactly as simple as they are—only now they taste like July.",
+  "opening_note": "Tomatoes deserve the center of the plate. Cucumbers make everything cooler. Peaches need almost nothing. Your usual meals can stay simple. Now they taste like July.",
+  "thesis": "Keep the meal. Change the season.",
   "palette": {
     "background": "#f5efe4",
     "paper": "#fffdf8",
@@ -42,6 +43,20 @@
       "One or two proteins prepped at the start of the week"
     ],
     "editorial_note": "This score is editorial guidance, not a calculated metric. It reflects how confidently this basket supports a realistic week when combined with your usual staples."
+  },
+  "bring_home": {
+    "heading": "This is what I'd bring home.",
+    "cost_note": "Around $30–45 for the seasonal basket. Proteins and pantry basics are separate.",
+    "items": [
+      { "name": "Ripe tomatoes", "qty": "4–5", "note": "The week centers on these." },
+      { "name": "Persian cucumbers", "qty": "1 bag", "note": "They last all week." },
+      { "name": "Peaches", "qty": "3–4", "note": "Ripe ones, ready to eat." },
+      { "name": "Sweet corn", "qty": "3–4 ears", "note": "Or one bag frozen if needed." },
+      { "name": "Basil", "qty": "1 bunch", "note": "Or a small potted plant." },
+      { "name": "Mint", "qty": "1 small bunch", "note": "For the drink and cucumbers." },
+      { "name": "Cherries", "qty": "1 lb", "note": "Optional — buy if priced right." },
+      { "name": "Blackberries", "qty": "1 pint", "note": "For yogurt and snacking." }
+    ]
   },
   "staples": [
     "Sticky white rice",
@@ -93,7 +108,7 @@
       "result": "Breakfast earns its keep."
     },
     {
-      "meal": "Grilled chicken",
+      "meal": "Chicken",
       "change": "Corn and peach alongside.",
       "result": "The side becomes the reason."
     }
@@ -129,7 +144,7 @@
   "drink": {
     "slug": "hillcrest-spritz",
     "name": "Hillcrest Spritz",
-    "intro": "July's house drink. Make it on repeat.",
+    "intro": "One drink. Make it on repeat.",
     "keep": [
       "2 oz tart cherry juice",
       "Sparkling mineral water",
@@ -166,7 +181,7 @@
   },
   "one_thing_to_notice": {
     "headline": "The smell of a tomato vine.",
-    "body": "Most people know what a tomato tastes like. Fewer notice the green, almost peppery scent where the stem meets the fruit."
+    "body": "Smell near the stem before you cut it. That green scent is easy to miss, and it's one of the best parts of a July tomato."
   },
   "market_question": "What looked best when you were shopping?"
 }

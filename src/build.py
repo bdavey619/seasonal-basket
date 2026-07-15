@@ -233,6 +233,26 @@ def render_week(week):
     </div>
   </div>"""
 
+# ── Shopping card ──────────────────────────────────────────────────────────────
+
+def render_bring_home(bring_home):
+    if not bring_home:
+        return ""
+    rows = "".join(
+        f"""<div class="bring-home-row">
+          <span class="bring-home-name">{e(item['name'])}</span>
+          <span class="bring-home-qty">{e(item['qty'])}</span>
+          <span class="bring-home-note">{e(item['note'])}</span>
+        </div>"""
+        for item in bring_home.get("items", [])
+    )
+    cost = e(bring_home.get("cost_note", ""))
+    return f"""
+<div class="section-label">This week's basket</div>
+<h2 style="font-size:1.15rem;margin-bottom:16px">{e(bring_home['heading'])}</h2>
+<div class="bring-home-list">{rows}</div>
+{f'<p style="font-size:.8rem;margin-top:14px;opacity:.7">{cost}</p>' if cost else ""}"""
+
 # ── Confidence score ───────────────────────────────────────────────────────────
 
 def render_confidence(conf):
@@ -601,10 +621,14 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
     basket_tiles = render_basket_tiles(edition["featured_ingredients"],
                                        "seasonal-basket/july-ingredients", depth)
 
+    thesis = edition.get("thesis", "")
+    thesis_html = f'<p class="thesis">{e(thesis)}</p>' if thesis else ""
+
     body = f"""
     <section class="hero" aria-label="July edition">
       <div>
         <h1>{e(edition['month'])}</h1>
+        {thesis_html}
         <p class="dek">{e(edition['opening_note'])}</p>
       </div>
       <aside class="month-card" aria-label="This month tastes like">
@@ -618,26 +642,30 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
       <article class="card col-8" id="basket" aria-labelledby="basket-heading">
         <div class="section-label">The July basket</div>
         <h2 id="basket-heading">One trip. A full week of meals.</h2>
-        <p>These are the ingredients worth organizing your week around. Repetition is intentional: the best produce should appear more than once.</p>
+        <p>The same basket will carry rice bowls, pasta, tacos, and breakfast. Nothing goes to waste — every ingredient shows up more than once.</p>
         <div class="basket-grid">
           {basket_tiles}
         </div>
-        <p style="margin-top:18px;font-family:ui-sans-serif,system-ui,sans-serif;font-size:.88rem;color:var(--muted)">
-          <a href="{basket_href}">View all July ingredients →</a>
-        </p>
       </article>
 
-      <aside class="card card--dark col-4" aria-label="Confidence score">
-        {render_confidence(edition['confidence'])}
+      <aside class="card card--dark col-4" aria-label="This week's basket">
+        {render_bring_home(edition.get('bring_home'))}
       </aside>
 
       <article class="card col-12" id="meals" aria-labelledby="transforms-heading">
-        <div class="section-label">Keep the meal. Change the season.</div>
+        <div class="section-label">The meals</div>
         <h2 id="transforms-heading">Your usual meals, wearing July.</h2>
-        <p>The basket doesn't replace what you already make. It just makes those meals taste like right now.</p>
+        <p>Keep what you already make. Add what's ripe.</p>
         <div class="transformations">
           {render_transformations(edition['meal_transformations'], meal_hrefs)}
         </div>
+      </article>
+
+      <article class="card col-12" id="week" aria-labelledby="week-heading">
+        <div class="section-label">The week</div>
+        <h2 id="week-heading">What a week actually looks like.</h2>
+        <p>Mix and match. Repeat what works. One protein batch, one rice cook, and this basket will carry you.</p>
+        {render_week(edition['week'])}
       </article>
 
       <article class="field-notes-section col-12" aria-labelledby="field-notes-heading">
@@ -649,12 +677,17 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
 
       {render_house_flavor_card(house_flavor, depth)}
 
-      <article class="card col-12" id="week" aria-labelledby="week-heading">
-        <div class="section-label">The week</div>
-        <h2 id="week-heading">What a week actually looks like.</h2>
-        <p>Mix and match. Repeat what works. One protein batch, one rice cook, and this basket will carry you.</p>
-        {render_week(edition['week'])}
+      <article class="card col-7" aria-labelledby="drink-heading">
+        <div class="section-label">The drink</div>
+        <h2 id="drink-heading">{e(edition['drink']['name'])}</h2>
+        {render_drink(edition['drink'])}
       </article>
+
+      <aside class="card card--warm col-5" aria-label="{e(edition['local_ritual']['label'])}">
+        <div class="section-label">{e(edition['local_ritual']['label'])}</div>
+        <h2>{e(edition['local_ritual']['name'])}</h2>
+        <p>{e(edition['local_ritual']['description'])}</p>
+      </aside>
 
       <article class="card col-7" id="weekend" aria-labelledby="weekend-heading">
         <div class="section-label">The weekend meal</div>
@@ -668,22 +701,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
         <h2>{e(edition['one_thing_to_notice']['headline'])}</h2>
         <p>{e(edition['one_thing_to_notice']['body'])}</p>
       </aside>
-
-      <article class="card col-7" aria-labelledby="drink-heading">
-        <div class="section-label">The drink</div>
-        <h2 id="drink-heading">{e(edition['drink']['name'])}</h2>
-        {render_drink(edition['drink'])}
-      </article>
-
-
-      <aside class="card card--warm col-5" aria-label="{e(edition['local_ritual']['label'])}">
-        <div class="section-label">{e(edition['local_ritual']['label'])}</div>
-        <h2>{e(edition['local_ritual']['name'])}</h2>
-        <p>{e(edition['local_ritual']['description'])}</p>
-      </aside>
-    </div>
-
-    <blockquote class="pull-quote">Keep the meal. Change the season.</blockquote>"""
+    </div>"""
 
     return render_shell(
         title=f"Seasonal — {edition['month']} in {edition['location']}",

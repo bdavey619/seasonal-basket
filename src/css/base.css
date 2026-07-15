@@ -221,6 +221,45 @@ a { color: inherit; }
   line-height: 1.4;
 }
 
+/* ─── Hero thesis ────────────────────────────────────── */
+.thesis {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: clamp(.95rem, 1.5vw, 1.1rem);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 6px 0 10px;
+}
+
+/* ─── Shopping card ──────────────────────────────────── */
+.bring-home-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.bring-home-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 10px;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .88rem;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255,255,255,.12);
+}
+.bring-home-name {
+  font-weight: 600;
+}
+.bring-home-qty {
+  text-align: right;
+  opacity: .75;
+  white-space: nowrap;
+}
+.bring-home-note {
+  grid-column: 1 / -1;
+  font-size: .78rem;
+  opacity: .65;
+}
+
 /* ─── Field notes ────────────────────────────────────── */
 .field-notes-section {
   padding: 32px 0 8px;
