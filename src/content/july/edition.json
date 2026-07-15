@@ -183,5 +183,9 @@
     "headline": "The smell of a tomato vine.",
     "body": "Smell near the stem before you cut it. That green scent is easy to miss, and it's one of the best parts of a July tomato."
   },
-  "market_question": "What looked best when you were shopping?"
+  "market_question": "What looked best when you were shopping?",
+  "next_edition": {
+    "month": "August",
+    "status": "Arriving soon."
+  }
 }

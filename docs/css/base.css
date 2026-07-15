@@ -894,3 +894,22 @@ footer {
   opacity: .75;
   transition: opacity .15s;
 }
+.pub-next {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  max-width: 600px;
+}
+.pub-next-month {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1;
+  letter-spacing: -.03em;
+  margin: 8px 0 4px;
+  color: var(--muted);
+}
+.pub-next-status {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .85rem;
+  color: var(--muted);
+  opacity: .7;
+}

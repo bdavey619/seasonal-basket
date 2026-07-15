@@ -616,10 +616,20 @@ def build_publication_home(edition, depth, canonical_url):
     palette = edition.get("palette", {})
     accent = e(palette.get("accent", "#d99662"))
 
+    next_ed = edition.get("next_edition", {})
+    next_html = ""
+    if next_ed.get("month"):
+        next_html = f"""
+    <div class="pub-next" aria-label="Next edition">
+      <div class="section-label">Next edition</div>
+      <div class="pub-next-month">{e(next_ed['month'])}</div>
+      <div class="pub-next-status">{e(next_ed.get('status', ''))}</div>
+    </div>"""
+
     body = f"""
     <section class="pub-intro" aria-label="About Seasonal">
       <h1 class="pub-headline">Cook with the year.</h1>
-      <p class="pub-body">The grocery store offers everything, all the time. Each month, Seasonal narrows that down — the handful of ingredients truly worth buying right now, one flavor that works across the week, one drink that captures the season.</p>
+      <p class="pub-body">The grocery store offers everything, all the time. Each month, Seasonal narrows that down — the handful of ingredients worth buying while they're at their best, one flavor that works across the week, one drink that captures the season.</p>
       <p class="pub-body">Your cooking stays exactly as it is. It starts to taste like the month.</p>
     </section>
 
@@ -629,13 +639,14 @@ def build_publication_home(edition, depth, canonical_url):
         <div class="edition-entry-month" style="color:{accent}">{e(edition['month'])}</div>
         <div class="edition-entry-location">{e(edition['location'])}</div>
         <p class="edition-entry-note">{e(edition['opening_note'])}</p>
-        <span class="edition-entry-cta">Read the July edition →</span>
+        <span class="edition-entry-cta">Read the {e(edition['month'])} edition →</span>
       </a>
+      {next_html}
     </section>"""
 
     return render_shell(
         title="Seasonal — Cook with the year.",
-        description="Each month, Seasonal narrows the grocery store down to what's truly worth buying right now.",
+        description="Each month, Seasonal narrows the grocery store down to the handful of ingredients worth buying while they're at their best.",
         canonical_url=canonical_url,
         css_depth=depth,
         body=body,
