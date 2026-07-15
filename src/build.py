@@ -594,7 +594,6 @@ def render_shell(title, description, canonical_url, css_depth, body, edition_slu
     <nav class="nav" aria-label="Primary navigation">
       <a href="{july_href}">July</a>
       <a href="{basket_href}">The Basket</a>
-      <a href="{july_href}#week">The Week</a>
       <a href="{july_href}#weekend">The Weekend</a>
     </nav>
   </header>
@@ -608,6 +607,41 @@ def render_shell(title, description, canonical_url, css_depth, body, edition_slu
 </div>
 </body>
 </html>"""
+
+# ── Publication homepage ───────────────────────────────────────────────────────
+
+def build_publication_home(edition, depth, canonical_url):
+    slug = edition["month"].lower()
+    edition_href = rel(depth, f"{slug}/")
+    palette = edition.get("palette", {})
+    accent = e(palette.get("accent", "#d99662"))
+
+    body = f"""
+    <section class="pub-intro" aria-label="About Seasonal">
+      <h1 class="pub-headline">Cook with the year.</h1>
+      <p class="pub-body">The grocery store offers everything, all the time. Each month, Seasonal narrows that down — the handful of ingredients truly worth buying right now, one flavor that works across the week, one drink that captures the season.</p>
+      <p class="pub-body">Your cooking stays exactly as it is. It starts to taste like the month.</p>
+    </section>
+
+    <section class="pub-edition-card" aria-label="Current edition">
+      <div class="section-label">Current edition</div>
+      <a href="{edition_href}" class="edition-entry">
+        <div class="edition-entry-month" style="color:{accent}">{e(edition['month'])}</div>
+        <div class="edition-entry-location">{e(edition['location'])}</div>
+        <p class="edition-entry-note">{e(edition['opening_note'])}</p>
+        <span class="edition-entry-cta">Read the July edition →</span>
+      </a>
+    </section>"""
+
+    return render_shell(
+        title="Seasonal — Cook with the year.",
+        description="Each month, Seasonal narrows the grocery store down to what's truly worth buying right now.",
+        canonical_url=canonical_url,
+        css_depth=depth,
+        body=body,
+        edition_slug=slug,
+        page_class="page--home",
+    )
 
 # ── Edition page ───────────────────────────────────────────────────────────────
 
@@ -969,11 +1003,11 @@ def verify(edition_slug):
         if f"{slug}/" not in index_src:
             errors.append(f"Ingredient link missing from basket index: {slug}")
 
-    # Check meal links appear on the homepage
-    home_src = (SITE / "index.html").read_text()
+    # Check meal links appear on the edition page
+    edition_src = (SITE / edition_slug / "index.html").read_text()
     for slug in EXPECTED_MEAL_SLUGS:
-        if f"meals/{slug}/" not in home_src:
-            errors.append(f"Meal link missing from homepage: {slug}")
+        if f"meals/{slug}/" not in edition_src:
+            errors.append(f"Meal link missing from edition page: {slug}")
 
     if errors:
         print("\n  VERIFICATION FAILED:")
@@ -1038,10 +1072,8 @@ def build_edition(edition_dir_name):
     # Edition pages (root + canonical /july/)
     july_canonical = f"{base_url}/july/"
 
-    root_html = build_edition_page(edition, depth=0,
-                                   canonical_url=july_canonical,
-                                   meal_hrefs=meal_hrefs_at(0),
-                                   house_flavor=house_flavor)
+    root_html = build_publication_home(edition, depth=0,
+                                       canonical_url=f"{base_url}/")
     write_page(SITE / "index.html", root_html)
 
     july_html = build_edition_page(edition, depth=1,

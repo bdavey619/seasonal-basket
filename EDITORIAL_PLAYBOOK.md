@@ -178,6 +178,26 @@ The score is editorial guidance, not a scientific metric.
 - No trend language
 - No unnecessary photography
 
+## What We've Learned Building July
+
+These are insights earned while building the first edition. They are not rules — they are things that turned out to be true and should be carried forward.
+
+**Confidence matters more than recipes.** The goal is not to give people new things to cook. It is to help them feel confident choosing and using ingredients they may not have bought before. A reader who feels comfortable picking a ripe tomato has gained something more durable than a new recipe.
+
+**Grocery stores are the venue, not farmers markets.** The edition should feel equally at home for someone shopping at Trader Joe's, Whole Foods, Sprouts, Walmart, or a farmers market. The ingredient is what matters. Where it's purchased is secondary.
+
+**The shopping card beats the confidence score.** An editorial shopping list ("This is what I'd bring home") answers a more useful question than a numerical confidence metric. Quantities and brief notes feel like advice from someone who knows these ingredients. Numbers feel like a feature.
+
+**The Week section worked against the philosophy.** Prescribing specific weekday meals — "Tuesday: chicken rice bowl, Wednesday: salmon wrap" — implied that Seasonal was planning the reader's week. The meal transformations section does the same job better by showing how July slots into meals the reader already makes.
+
+**Repetition is the architecture.** A basket that features eight ingredients, each used only once, feels overwhelming. A basket where tomatoes appear in five meals and basil in four feels coherent. The repetition is the whole point — it's how the season actually works.
+
+**The House Flavor is the connective tissue.** One sauce or preparation that works across rice bowls, pasta, chicken, and white beans turns the basket into a system rather than a list of ingredients. Every edition should have one.
+
+**Field Notes should feel like secrets, not essays.** Each note should land on a single memorable idea. If someone remembers one sentence from the Field Notes while they're cooking next week, the section has succeeded. Length is the enemy.
+
+**The Weekend Meal earns its place when it's inseparable from the month.** Tomatoes, burrata, basil, and sourdough in July works because the dish only makes sense in peak tomato season. A weekend meal that could be made any month of the year should not be the Weekend Meal.
+
 ## Sourcing and Organic Guidance
 
 Organic is optional, not a condition of participation. Seasonal prioritizes produce that is ripe, in season, accessible, and likely to be eaten. Any organic guidance must be evidence-based and useful enough to justify the additional decision.
