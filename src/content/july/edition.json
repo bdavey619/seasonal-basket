@@ -84,6 +84,11 @@
       "slug": "add-herbs-after-the-heat",
       "name": "Add herbs after the heat",
       "body": "The fragrance is gone within seconds of hitting a hot pan. Add basil and mint after the heat is off, or right before the plate reaches the table. The smell will tell you something changed."
+    },
+    {
+      "slug": "ask-whats-freshest",
+      "name": "Ask what's freshest.",
+      "body": "The best question at a fish counter isn't 'Do you have halibut?' It's 'What came in today?' The answer changes the dinner. Fish at its best needs almost nothing — a little oil, heat, and whatever's already on the counter. Let what's there decide what you're making."
     }
   ],
   "meal_transformations": [

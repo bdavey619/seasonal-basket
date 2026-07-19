@@ -137,6 +137,21 @@ A featured ingredient should appear across several meals in the same week.
 
 Do not create artificial variety simply to avoid repetition.
 
+## The Ingredient-First Principle
+
+Seasonal reverses the normal cooking process.
+
+Most cooking starts with a recipe and then sources the ingredients. Seasonal starts with what is exceptional today and builds dinner from there.
+
+The reader's transformation is not just learning new meals. It is learning a new sequence:
+
+1. Discover what's at its best right now.
+2. Build dinner around it.
+
+This is how a farmer shops. It is how a fisherman eats. It is how good home cooking actually works in a place with good produce and a good fish counter.
+
+Every section of the edition should reinforce this sequence — not by stating it, but by demonstrating it.
+
 ## Recipe Philosophy
 
 Most content should be meal guidance, not formal recipes.
@@ -197,6 +212,18 @@ These are insights earned while building the first edition. They are not rules �
 **Field Notes should feel like secrets, not essays.** Each note should land on a single memorable idea. If someone remembers one sentence from the Field Notes while they're cooking next week, the section has succeeded. Length is the enemy.
 
 **The Weekend Meal earns its place when it's inseparable from the month.** Tomatoes, burrata, basil, and sourdough in July works because the dish only makes sense in peak tomato season. A weekend meal that could be made any month of the year should not be the Weekend Meal.
+
+## Place and Seasonal Identity
+
+Each edition should feel subtly rooted in its place — not through landmarks or restaurant recommendations, but through everyday habits and the produce that defines the month.
+
+The goal is not a travel guide. It is the quiet recognition that someone who lives here buys differently than someone who does not.
+
+**Fish:** In coastal San Diego, buying fresh fish is a natural part of the week. The edition should teach readers to approach a fish counter with curiosity — asking what's freshest rather than committing to a species — because that is how good fish dinners happen here. This belongs in Field Notes, not in a new section.
+
+**Mexican flavor vocabulary:** San Diego home cooking is quietly influenced by proximity to Mexico. This influence belongs in Seasonal as a slow accumulation — fresh herbs, limes, chiles, simple salsas, instinctive flavor combinations — not as a recipe genre. The House Flavor section is the natural vehicle for this over the course of the year. July's flavor is correctly tomato-forward. Future editions (August, September) should look for natural opportunities to deepen this vocabulary when the seasonal ingredients invite it.
+
+**Restraint:** If an ingredient or habit doesn't belong naturally to the month, leave it for the month where it does.
 
 ## Sourcing and Organic Guidance
 
