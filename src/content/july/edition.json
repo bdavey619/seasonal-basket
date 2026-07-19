@@ -88,7 +88,7 @@
     {
       "slug": "ask-whats-freshest",
       "name": "Ask what's freshest.",
-      "body": "The best question at a fish counter isn't 'Do you have halibut?' It's 'What came in today?' The answer changes the dinner. Fish at its best needs almost nothing — a little oil, heat, and whatever's already on the counter. Let what's there decide what you're making."
+      "body": "The best question at a fish counter isn't 'Do you have halibut?' It's 'What came in today?' In July around San Diego, that often means yellowtail, white sea bass, or local albacore — fish that rarely make it to a standard grocery shelf. Fish at its best needs almost nothing. Let what's there decide what you're making."
     }
   ],
   "meal_transformations": [
@@ -104,8 +104,8 @@
     },
     {
       "meal": "Tacos",
-      "change": "Corn, tomato, cucumber instead of salsa.",
-      "result": "Brighter. Cooler. Still fast."
+      "change": "Corn, tomato, cucumber, lime.",
+      "result": "Brighter than any jar."
     },
     {
       "meal": "Yogurt",
