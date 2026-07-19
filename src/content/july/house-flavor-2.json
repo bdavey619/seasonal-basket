@@ -1,0 +1,52 @@
+{
+  "slug": "charred-tomato-salsa",
+  "name": "Charred Tomato Salsa",
+  "month": "july",
+  "intro": "Same tomato. Different life.",
+  "card_uses": [
+    "Spoon it over tacos.",
+    "Stir into beans.",
+    "Put it next to fish.",
+    "Scramble it into eggs."
+  ],
+  "ingredients": [
+    "3 ripe tomatoes, halved",
+    "½ white onion",
+    "1 garlic clove, unpeeled",
+    "Flaky salt",
+    "½ lime",
+    "Optional: ½ serrano, stem removed"
+  ],
+  "method": "Set a dry cast-iron pan or comal over high heat until very hot. Add the tomatoes cut-side down, the onion, the garlic, and the optional serrano. Leave them alone. Let them char — dark spots are the point. When the tomatoes have softened and the onion and garlic are charred in places, pull everything off. Squeeze the garlic from its skin. Rough-chop everything together or pulse briefly in a blender. Season with salt and a squeeze of lime. Leave it thick.",
+  "storage": {
+    "note": "Refrigerate. Gets better after an hour."
+  },
+  "uses": [
+    {
+      "meal": "tacos",
+      "label": "Tacos",
+      "action": "Spoon it on.",
+      "context": "Works with beef, fish, or beans. Let it be the sauce."
+    },
+    {
+      "meal": null,
+      "label": "Beans",
+      "action": "Stir it in.",
+      "context": "Add a few spoonfuls while the beans are still warm. They'll absorb it."
+    },
+    {
+      "meal": null,
+      "label": "Fish",
+      "action": "Serve alongside.",
+      "context": "Particularly good with salmon or whatever's freshest at the counter."
+    },
+    {
+      "meal": null,
+      "label": "Eggs",
+      "action": "Scramble it in.",
+      "context": "Add a spoonful to the pan when the eggs are half-set."
+    }
+  ],
+  "linked_ingredients": ["heirloom-tomatoes"],
+  "linked_field_notes": ["flaky-salt-goes-on-last", "ask-whats-freshest"]
+}

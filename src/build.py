@@ -369,13 +369,38 @@ def render_house_flavor_uses(uses, depth):
     return "\n".join(rows)
 
 
-def render_house_flavor_card(flavor, depth):
-    """Compact homepage section for the House Flavor."""
+def render_house_flavor_card(flavor, depth, flavor2=None):
+    """Compact homepage section for the House Flavor(s)."""
     if not flavor:
         return ""
-    href = rel(depth, "july/house-flavor/")
-    uses_html = "".join(f"<li>{e(u)}</li>" for u in flavor.get("card_uses", []))
-    return f"""
+
+    def flavor_card(f, slug, label):
+        href = rel(depth, f"july/{slug}/")
+        uses_html = "".join(f"<li>{e(u)}</li>" for u in f.get("card_uses", []))
+        return f"""
+        <div class="house-flavor-jar">
+          <h3 class="house-flavor-jar-name">{e(f['name'])}</h3>
+          <p class="house-flavor-tagline">{e(f['intro'])}</p>
+          <ul class="house-flavor-card-uses">{uses_html}</ul>
+          <a href="{href}" class="house-flavor-cta">→ {label}</a>
+        </div>"""
+
+    if flavor2:
+        card1 = flavor_card(flavor, "house-flavor", "Make the vinaigrette")
+        card2 = flavor_card(flavor2, "charred-tomato-salsa", "Make the salsa")
+        return f"""
+      <article class="house-flavor-section col-12" aria-labelledby="house-flavor-heading">
+        <div class="section-label">House Flavor</div>
+        <p class="house-flavor-two-lives" id="house-flavor-heading">July gives tomatoes two lives. One stays raw. One gets charred.</p>
+        <div class="house-flavor-two-jars">
+          {card1}
+          {card2}
+        </div>
+      </article>"""
+    else:
+        href = rel(depth, "july/house-flavor/")
+        uses_html = "".join(f"<li>{e(u)}</li>" for u in flavor.get("card_uses", []))
+        return f"""
       <article class="house-flavor-section col-12" aria-labelledby="house-flavor-heading">
         <div class="section-label">House Flavor</div>
         <h2 id="house-flavor-heading">{e(flavor['name'])}</h2>
@@ -472,7 +497,7 @@ def build_house_flavor_page(flavor, edition, depth, canonical_url):
     </div>"""
 
     return render_shell(
-        title=f"Tomato Herb Vinaigrette — July — Seasonal",
+        title=f"{flavor['name']} — July — Seasonal",
         description=flavor["intro"],
         canonical_url=canonical_url,
         css_depth=depth,
@@ -656,7 +681,7 @@ def build_publication_home(edition, depth, canonical_url):
 
 # ── Edition page ───────────────────────────────────────────────────────────────
 
-def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_flavor=None):
+def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_flavor=None, house_flavor2=None):
     require_fields(edition, ["month", "opening_note", "week", "featured_ingredients",
                               "meal_transformations", "field_notes"], "edition.json")
 
@@ -713,7 +738,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
         </div>
       </article>
 
-      {render_house_flavor_card(house_flavor, depth)}
+      {render_house_flavor_card(house_flavor, depth, flavor2=house_flavor2)}
 
       <article class="card col-7" aria-labelledby="drink-heading">
         <div class="section-label">The drink</div>
@@ -1003,6 +1028,7 @@ def verify(edition_slug):
             SITE / f"{edition_slug}" / "meals" / slug / "index.html"
         )
     expected_pages.append(SITE / f"{edition_slug}" / "house-flavor" / "index.html")
+    expected_pages.append(SITE / f"{edition_slug}" / "charred-tomato-salsa" / "index.html")
 
     for p in expected_pages:
         if not p.exists():
@@ -1069,6 +1095,17 @@ def build_edition(edition_dir_name):
                 fail(f"house-flavor.json references meal '{ms}' which does not exist in meals_data")
         house_flavor["linked_meals"] = derived
 
+    # Load second house flavor
+    hf2_path = content_dir / "house-flavor-2.json"
+    house_flavor2 = None
+    if hf2_path.exists():
+        house_flavor2 = read_json(hf2_path)
+        derived2 = [u["meal"] for u in house_flavor2.get("uses", []) if u.get("meal")]
+        for ms in derived2:
+            if ms not in meals_data:
+                fail(f"house-flavor-2.json references meal '{ms}' which does not exist in meals_data")
+        house_flavor2["linked_meals"] = derived2
+
     # CSS
     build_css(edition_slug)
 
@@ -1090,7 +1127,8 @@ def build_edition(edition_dir_name):
     july_html = build_edition_page(edition, depth=1,
                                    canonical_url=july_canonical,
                                    meal_hrefs=meal_hrefs_at(1),
-                                   house_flavor=house_flavor)
+                                   house_flavor=house_flavor,
+                                   house_flavor2=house_flavor2)
     write_page(SITE / "july" / "index.html", july_html)
 
     # Ingredient index
@@ -1129,6 +1167,13 @@ def build_edition(edition_dir_name):
         hf_html = build_house_flavor_page(house_flavor, edition,
                                           depth=2, canonical_url=hf_canonical)
         write_page(SITE / "july" / "house-flavor" / "index.html", hf_html)
+
+    # Second house flavor page (depth=2: docs/july/charred-tomato-salsa/index.html)
+    if house_flavor2:
+        hf2_canonical = f"{base_url}/july/charred-tomato-salsa/"
+        hf2_html = build_house_flavor_page(house_flavor2, edition,
+                                           depth=2, canonical_url=hf2_canonical)
+        write_page(SITE / "july" / "charred-tomato-salsa" / "index.html", hf2_html)
 
     # Consolidated snapshot
     build_content_snapshot(edition, guides, ingredients_data)
