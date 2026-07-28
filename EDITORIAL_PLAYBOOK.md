@@ -152,6 +152,50 @@ This is how a farmer shops. It is how a fisherman eats. It is how good home cook
 
 Every section of the edition should reinforce this sequence — not by stating it, but by demonstrating it.
 
+## North Star
+
+Teach fewer things that people actually keep.
+
+Most food media optimizes for breadth. Five hundred tomato recipes. A new idea every day. Seasonal optimizes for retention. If someone remembers, six months later, how to blister tomatoes, how to make a vinaigrette, how to roast peppers, how to brown butter — the publication has genuinely changed how they cook. That is a more enduring ambition than helping someone decide what to make for dinner tonight.
+
+## The Four Pillars
+
+Each edition is built on four editorial pillars. These are scaffolding, not visible architecture. Readers should experience a coherent month — not four distinct sections.
+
+**1. Seasonal ingredients.** A tightly curated basket that reduces decision fatigue. Opinionated about what is actually worth buying right now. Not exhaustive.
+
+**2. Foundational techniques.** One or two techniques per edition, maximum — chosen because they permanently expand the reader's cooking vocabulary and naturally unlock multiple meals throughout the month. If a technique doesn't earn its place this way, it doesn't belong. Seasonal is not a cooking school.
+
+**3. House jars and foundations.** Make-once preparations that leverage seasonal abundance and improve meals all week. Every edition should have at least one. A second belongs only when it serves a genuinely different flavor direction — not for symmetry.
+
+**4. Repeatable meals.** Every technique and every house jar should naturally lead to meals readers will actually make again. The goal is not variety. It is confidence through repetition.
+
+The overarching promise: seasonal ingredients, approachable techniques, repeatable meals with big flavor.
+
+## Don't Manufacture Symmetry
+
+Every month should teach what the season naturally wants to teach.
+
+Some months will have two foundational techniques. Some will have one. Some ingredients are best transformed; others are best left almost untouched. Some months teach how to cook. Others teach when not to cook. Both are equally valuable.
+
+A technique should not be added simply because last month had one. A second jar should not be added simply to match the first. If the season offers it naturally, include it. If it requires forcing, leave it for the month where it belongs.
+
+This is a gardener's mindset: pay attention to what the season is offering, then build the edition around that. The season determines the curriculum.
+
+## Techniques
+
+Techniques earn their place exactly the same way ingredients do.
+
+A technique belongs in an edition when it meets all three of these conditions:
+
+1. It permanently expands the reader's cooking vocabulary.
+2. It naturally unlocks multiple meals during that month.
+3. It could not be taught as effectively in any other season.
+
+Blistering tomatoes in July meets all three. It is worth teaching. A technique that only unlocks one dish, or that could be demonstrated with any ingredient at any time of year, does not belong.
+
+Not every house jar needs a technique underneath it. Sometimes a great seasonal ingredient needs only a simple preparation. The vinaigrette in July teaches something real — trust ripe tomatoes, don't cook them — but that is a lesson in judgment, not heat. Judgment is a technique too. Some of the most important things Seasonal can teach are when not to cook.
+
 ## Recipe Philosophy
 
 Most content should be meal guidance, not formal recipes.
@@ -163,22 +207,6 @@ Preferred format:
 - What you need
 - What to do
 - What to use next
-
-## Confidence Score
-
-The confidence score should communicate whether the basket can realistically carry the reader through the week.
-
-It should consider:
-
-- Number of lunches supported
-- Number of dinners supported
-- Weekend meals supported
-- Dependence on the user's staples
-- Waste risk
-- Number of repeated uses per ingredient
-- Required cooking effort
-
-The score is editorial guidance, not a scientific metric.
 
 ## Design Principles
 
@@ -241,4 +269,7 @@ The underlying principle: conventional produce in season is worth eating. Season
 - Is the waste risk acceptably low?
 - Is the contributor voice grounded and credible?
 - Does the page help someone shop with confidence?
-- Tomorrow, what ordinary thing will the reader notice differently because of this edition?
+- Does each technique unlock multiple meals this month — or does it only serve one?
+- Is there anything in this edition that was added for symmetry rather than because the season offered it?
+- Six months from now, what is one thing the reader will still remember from this edition?
+- Tomorrow, what ordinary thing will the reader notice differently?
