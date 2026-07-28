@@ -185,7 +185,7 @@ Each edition is built on four editorial pillars. These are scaffolding, not visi
 
 **2. Foundational techniques.** One or two techniques per edition, maximum — chosen because they permanently expand the reader's cooking vocabulary and naturally unlock multiple meals throughout the month. If a technique doesn't earn its place this way, it doesn't belong. Seasonal is not a cooking school.
 
-**3. House jars and foundations.** Make-once preparations that leverage seasonal abundance and improve meals all week. Every edition should have at least one. A second belongs only when it serves a genuinely different flavor direction — not for symmetry.
+**3. Make-once preparations.** A sauce, a brine, a braise base, a broth — whatever form the season naturally calls for. Made once, used across the week. Every edition should have at least one. A second belongs only when it serves a genuinely different flavor direction — not for symmetry.
 
 **4. Repeatable meals.** Every technique and every house jar should naturally lead to meals readers will actually make again. The goal is not variety. It is confidence through repetition.
 
@@ -227,7 +227,7 @@ This has practical implications:
 
 A technique introduced in July (blistering tomatoes) is available to all future editions. August does not need to re-teach it. If August's basket calls for charred peppers, the charring technique from July is already in the reader's hands. The edition can assume it and build forward.
 
-House jars accumulate across the year. The vinaigrette from July may appear by reference in a September salad. The salsa from July may reappear when dried chiles are in season. These callbacks are not cross-promotion — they are the point. They show the reader that what they learned last month is still useful.
+Make-once preparations accumulate across the year. The vinaigrette from July may appear by reference in a September salad. The salsa from July may reappear when dried chiles are in season. These callbacks are not cross-promotion — they are the point. They show the reader that what they learned last month is still useful.
 
 Repeatable meals are not monthly specials. If the rice bowl from July is a good rice bowl, it belongs in August too — with different seasonal additions. The meal is the constant. The season changes around it.
 

@@ -567,9 +567,9 @@ def render_meal_linked_notes(linked_slugs, notes_by_slug):
     </section>"""
 
 
-def render_meal_july_adds(meal):
-    anchor = meal.get("july_anchor", [])
-    options = meal.get("july_options", [])
+def render_meal_season_adds(meal):
+    anchor = meal.get("season_anchor", [])
+    options = meal.get("season_options", [])
     legacy = meal.get("july_adds", [])
 
     if anchor or options:
@@ -963,7 +963,7 @@ def build_meal_page(meal, edition, depth, canonical_url, house_flavor=None, edit
     edition_drink = edition.get("drink", {})
 
     keep_items   = render_meal_checklist(meal["keep"])
-    adds_section = render_meal_july_adds(meal)
+    adds_section = render_meal_season_adds(meal)
     variations   = render_meal_variations(meal["variations"])
     linked_notes = render_meal_linked_notes(meal.get("linked_field_notes", []), notes_by_slug)
 
