@@ -14,6 +14,8 @@ Seasonal does not change how people cook. It changes what they buy — and by ex
 
 Each edition should make the reader confident about what to buy this month, and capable of using those ingredients across the meals they already make.
 
+Over time, across editions, the reader should quietly accumulate a repertoire — techniques that have become instinct, preparations they return to, meals they no longer need to look up. That accumulation is the long-term product. Each individual edition is one installment in it.
+
 ## The Editorial Test
 
 Before publishing any section, ask:
@@ -24,24 +26,41 @@ Before publishing any section, ask:
 4. Does this work in a real weekday kitchen?
 5. Does this sound appreciative rather than pretentious?
 6. Will this still feel true ten or thirty years from now?
-7. Does this section help someone upgrade the meals they already make — or does it ask them to learn new ones?
+7. Does this section help someone upgrade the meals they already make — or does it ask them to learn something new without payoff across multiple meals?
 
-## Monthly Edition Structure
+## Edition Structure
 
-Each edition includes:
+Each edition is organized around the four pillars. These are editorial scaffolding — they are not visible sections on the page. Readers experience a coherent month; they do not navigate between frameworks.
 
-1. Opening note
-2. This month's guides
-3. The basket
-4. Confidence score
-5. The user's staples
-6. Seasonal flavor paths
-7. A realistic week
-8. One weekend meal
-9. One seasonal drink
-10. One thing to notice
-11. Ingredient pages
-12. One market question
+**What every edition includes:**
+
+- A curated basket of six to eight ingredients, with a shopping card ("This is what I'd bring home")
+- One or two foundational techniques that earn their place by unlocking multiple repeatable meals
+- One or two house jars or make-once preparations that carry flavor across the week
+- A handful of repeatable weekday meals — recognizable, improved by the season
+- One weekend meal that is inseparable from the month
+- Field Notes: two to four short notes, each a single memorable idea worth knowing
+- One seasonal drink
+- One thing to notice
+- Individual ingredient pages for everything in the basket
+- A market question
+
+**What each edition does not include:**
+
+- A confidence score (retired; the shopping card does this job better)
+- A prescribed week schedule (retired; meal transformations do this job better)
+- A section called "the user's staples" (this lives in the reader's kitchen, not on the page)
+- Techniques added for symmetry when the season doesn't naturally call for them
+
+**Page structure (homepage sections, in order):**
+
+1. Hero — month name, thesis, opening note
+2. Basket tiles + Shopping card (dark panel)
+3. Meal transformations — "Your usual meals, wearing [month]."
+4. Field Notes
+5. House Flavor — one jar, or two if the season naturally calls for it
+6. Drink + Local ritual
+7. Weekend meal + One thing to notice
 
 ## The Weekday / Weekend Philosophy
 
@@ -195,6 +214,32 @@ A technique belongs in an edition when it meets all three of these conditions:
 Blistering tomatoes in July meets all three. It is worth teaching. A technique that only unlocks one dish, or that could be demonstrated with any ingredient at any time of year, does not belong.
 
 Not every house jar needs a technique underneath it. Sometimes a great seasonal ingredient needs only a simple preparation. The vinaigrette in July teaches something real — trust ripe tomatoes, don't cook them — but that is a lesson in judgment, not heat. Judgment is a technique too. Some of the most important things Seasonal can teach are when not to cook.
+
+## How Editions Accumulate
+
+Seasonal is not twelve independent editions. It is one ongoing education, delivered monthly.
+
+A reader who has followed along for a year has not accumulated twelve sets of seasonal ingredients. They have accumulated a repertoire: a handful of techniques that have become instinct, a set of house preparations they return to without looking anything up, and a collection of repeatable meals that feel like their own cooking now.
+
+**Each edition should add to that repertoire, not replace it.**
+
+This has practical implications:
+
+A technique introduced in July (blistering tomatoes) is available to all future editions. August does not need to re-teach it. If August's basket calls for charred peppers, the charring technique from July is already in the reader's hands. The edition can assume it and build forward.
+
+House jars accumulate across the year. The vinaigrette from July may appear by reference in a September salad. The salsa from July may reappear when dried chiles are in season. These callbacks are not cross-promotion — they are the point. They show the reader that what they learned last month is still useful.
+
+Repeatable meals are not monthly specials. If the rice bowl from July is a good rice bowl, it belongs in August too — with different seasonal additions. The meal is the constant. The season changes around it.
+
+**What each edition should leave the reader with:**
+
+At the end of each edition, the reader should have at least one thing they will still be using a year later. It could be a technique, a shopping habit, a jar recipe, or a single repeatable meal. If an edition does not clearly answer "what will they keep from this?" it has not done its job.
+
+**Cross-edition continuity:**
+
+- The drink should feel like it belongs to the same publication across months, even if it is completely different. The Hillcrest Spritz is July's. August's drink should feel like a natural companion — not a repetition, not an interruption.
+- Techniques from prior editions can be assumed without re-explanation. A brief callback ("the same charring technique from last month") is sufficient.
+- Staple meals carry forward. The basket changes; the meals stay familiar.
 
 ## Recipe Philosophy
 

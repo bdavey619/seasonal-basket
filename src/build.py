@@ -369,13 +369,17 @@ def render_house_flavor_uses(uses, depth):
     return "\n".join(rows)
 
 
-def render_house_flavor_card(flavor, depth, flavor2=None):
+def render_house_flavor_card(flavor, depth, flavor2=None, edition_slug="july", edition_context=None):
     """Compact homepage section for the House Flavor(s)."""
     if not flavor:
         return ""
 
-    def flavor_card(f, slug, label):
-        href = rel(depth, f"july/{slug}/")
+    ctx   = edition_context or {}
+    month = ctx.get("month", "July")
+
+    def flavor_card(f, label):
+        hf_slug = f["slug"]
+        href    = rel(depth, f"{edition_slug}/{hf_slug}/")
         uses_html = "".join(f"<li>{e(u)}</li>" for u in f.get("card_uses", []))
         return f"""
         <div class="house-flavor-jar">
@@ -386,19 +390,22 @@ def render_house_flavor_card(flavor, depth, flavor2=None):
         </div>"""
 
     if flavor2:
-        card1 = flavor_card(flavor, "house-flavor", "Make the vinaigrette")
-        card2 = flavor_card(flavor2, "charred-tomato-salsa", "Make the salsa")
+        two_lives = edition_context.get("house_flavor_framing",
+            f"{month} gives tomatoes two lives. One stays raw. One gets charred.")
+        card1 = flavor_card(flavor,  f"Make the {flavor['name'].lower()}")
+        card2 = flavor_card(flavor2, f"Make the {flavor2['name'].lower()}")
         return f"""
       <article class="house-flavor-section col-12" aria-labelledby="house-flavor-heading">
         <div class="section-label">House Flavor</div>
-        <p class="house-flavor-two-lives" id="house-flavor-heading">July gives tomatoes two lives. One stays raw. One gets charred.</p>
+        <p class="house-flavor-two-lives" id="house-flavor-heading">{e(two_lives)}</p>
         <div class="house-flavor-two-jars">
           {card1}
           {card2}
         </div>
       </article>"""
     else:
-        href = rel(depth, "july/house-flavor/")
+        hf_slug   = flavor["slug"]
+        href      = rel(depth, f"{edition_slug}/{hf_slug}/")
         uses_html = "".join(f"<li>{e(u)}</li>" for u in flavor.get("card_uses", []))
         return f"""
       <article class="house-flavor-section col-12" aria-labelledby="house-flavor-heading">
@@ -410,11 +417,12 @@ def render_house_flavor_card(flavor, depth, flavor2=None):
       </article>"""
 
 
-def render_house_flavor_link(flavor, depth):
+def render_house_flavor_link(flavor, depth, edition_slug="july"):
     """Title-only sidebar reference for meal and ingredient pages."""
     if not flavor:
         return ""
-    href = rel(depth, "july/house-flavor/")
+    hf_slug = flavor.get("slug", "house-flavor")
+    href = rel(depth, f"{edition_slug}/{hf_slug}/")
     return f"""
     <section>
       <h3>House Flavor</h3>
@@ -426,10 +434,13 @@ def render_house_flavor_link(flavor, depth):
     </section>"""
 
 
-def build_house_flavor_page(flavor, edition, depth, canonical_url):
+def build_house_flavor_page(flavor, edition, depth, canonical_url, edition_context=None):
     """Build the dedicated House Flavor page."""
-    slug = flavor["slug"]
-    july_href = rel(depth, "july/")
+    ctx      = edition_context or {}
+    month    = ctx.get("month", edition.get("month", "July"))
+    ing_index_path = ctx.get("ingredient_index_path", "seasonal-basket/july-ingredients/")
+
+    edition_href = rel(depth, f"{month.lower()}/")
 
     notes_by_slug = {n["slug"]: n for n in edition.get("field_notes", []) if "slug" in n}
     ingredients_html = "".join(f"<li>{e(i)}</li>" for i in flavor["ingredients"])
@@ -451,7 +462,7 @@ def build_house_flavor_page(flavor, edition, depth, canonical_url):
     ing_items = []
     for ing_slug in flavor.get("linked_ingredients", []):
         name = INGREDIENT_DISPLAY.get(ing_slug, (ing_slug,))[0]
-        href = rel(depth, f"seasonal-basket/july-ingredients/{ing_slug}/")
+        href = rel(depth, f"{ing_index_path.rstrip('/')}/{ing_slug}/")
         ing_items.append(f'<li class="meal-field-note-title"><a href="{href}" class="house-flavor-sidebar-link">{e(name)}</a></li>')
     ingredients_block = f"""
     <section>
@@ -464,11 +475,11 @@ def build_house_flavor_page(flavor, edition, depth, canonical_url):
 
     body = f"""
     <div style="padding-top:28px">
-      <a href="{july_href}" class="back-link">← July</a>
+      <a href="{edition_href}" class="back-link">← {e(month)}</a>
     </div>
 
     <div class="meal-header">
-      <div class="section-label">House Flavor · July</div>
+      <div class="section-label">House Flavor · {e(month)}</div>
       <h1>{e(flavor['name'])}</h1>
       <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:680px">{e(flavor['intro'])}</p>
     </div>
@@ -497,13 +508,14 @@ def build_house_flavor_page(flavor, edition, depth, canonical_url):
     </div>"""
 
     return render_shell(
-        title=f"{flavor['name']} — July — Seasonal",
+        title=f"{flavor['name']} — {month} — Seasonal",
         description=flavor["intro"],
         canonical_url=canonical_url,
         css_depth=depth,
         body=body,
-        edition_slug="july",
+        edition_slug=month.lower(),
         page_class="page--meal",
+        edition_context=edition_context,
     )
 
 # ── Guide cards row ────────────────────────────────────────────────────────────
@@ -579,7 +591,12 @@ def render_meal_july_adds(meal):
 
 # ── HTML shell ─────────────────────────────────────────────────────────────────
 
-def render_shell(title, description, canonical_url, css_depth, body, edition_slug="july", page_class=None):
+def render_shell(title, description, canonical_url, css_depth, body,
+                 edition_slug="july", page_class=None, edition_context=None):
+    """
+    edition_context: dict with keys month, location, edition_number, ingredient_index_path
+    If omitted, falls back to July defaults for backwards compatibility.
+    """
     if page_class is None:
         # Auto-detect narrow layout for single ingredient pages
         if 'ingredient' in title.lower() and 'ingredients' not in title.lower():
@@ -588,11 +605,19 @@ def render_shell(title, description, canonical_url, css_depth, body, edition_slu
             page_class = ""
     extra_class = f" {page_class}" if page_class else ""
 
-    base_css  = rel(css_depth, "css/base.css")
-    month_css = rel(css_depth, f"css/{edition_slug}.css")
-    home_href = rel(css_depth, "")
-    july_href = rel(css_depth, "july/")
-    basket_href = rel(css_depth, "seasonal-basket/july-ingredients/")
+    ctx = edition_context or {}
+    month        = ctx.get("month", "July")
+    location     = ctx.get("location", "San Diego")
+    edition_num  = ctx.get("edition_number", 1)
+    ing_index    = ctx.get("ingredient_index_path", "seasonal-basket/july-ingredients/")
+
+    base_css     = rel(css_depth, "css/base.css")
+    month_css    = rel(css_depth, f"css/{edition_slug}.css")
+    home_href    = rel(css_depth, "")
+    edition_href = rel(css_depth, f"{edition_slug}/")
+    basket_href  = rel(css_depth, ing_index)
+    edition_num_str = str(edition_num).zfill(3)
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -617,9 +642,9 @@ def render_shell(title, description, canonical_url, css_depth, body, edition_slu
   <header class="masthead">
     <a href="{home_href}" class="brand">Seasonal</a>
     <nav class="nav" aria-label="Primary navigation">
-      <a href="{july_href}">July</a>
+      <a href="{edition_href}">{e(month)}</a>
       <a href="{basket_href}">The Basket</a>
-      <a href="{july_href}#weekend">The Weekend</a>
+      <a href="{edition_href}#weekend">The Weekend</a>
     </nav>
   </header>
   <main id="main">
@@ -627,7 +652,7 @@ def render_shell(title, description, canonical_url, css_depth, body, edition_slu
   </main>
   <footer>
     <div>Seasonal · Know what now tastes like.</div>
-    <div>San Diego · July · Edition 001</div>
+    <div>{e(location)} · {e(month)} · Edition {edition_num_str}</div>
   </footer>
 </div>
 </body>
@@ -681,36 +706,49 @@ def build_publication_home(edition, depth, canonical_url):
 
 # ── Edition page ───────────────────────────────────────────────────────────────
 
-def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_flavor=None, house_flavor2=None):
-    require_fields(edition, ["month", "opening_note", "week", "featured_ingredients",
+def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_flavor=None,
+                       house_flavor2=None, edition_context=None):
+    require_fields(edition, ["month", "opening_note", "featured_ingredients",
                               "meal_transformations", "field_notes"], "edition.json")
 
     slug = edition["month"].lower()
-    basket_href = rel(depth, "seasonal-basket/july-ingredients/")
+    ctx = edition_context or {}
+    ing_index_path = ctx.get("ingredient_index_path", "seasonal-basket/july-ingredients/")
+    basket_href = rel(depth, ing_index_path)
 
     basket_tiles = render_basket_tiles(edition["featured_ingredients"],
-                                       "seasonal-basket/july-ingredients", depth)
+                                       ing_index_path.rstrip("/"), depth)
 
     thesis = edition.get("thesis", "")
     thesis_html = f'<p class="thesis">{e(thesis)}</p>' if thesis else ""
 
+    month = edition["month"]
+    month_card = edition.get("month_card", {})
+    month_card_items = month_card.get("items", [])
+    month_card_sub   = month_card.get("sub", "")
+    month_card_html  = ""
+    if month_card_items or month_card_sub:
+        items_html = "<br>".join(e(i) for i in month_card_items)
+        month_card_html = f"""
+      <aside class="month-card" aria-label="This month tastes like">
+        <div class="eyebrow">This month tastes like</div>
+        <div class="big">{items_html}</div>
+        <div class="sub">{e(month_card_sub)}</div>
+      </aside>"""
+
     body = f"""
-    <section class="hero" aria-label="July edition">
+    <section class="hero" aria-label="{e(month)} edition">
       <div>
-        <h1>{e(edition['month'])}</h1>
+        <h1>{e(month)}</h1>
         {thesis_html}
         <p class="dek">{e(edition['opening_note'])}</p>
       </div>
-      <aside class="month-card" aria-label="This month tastes like">
-        <div class="eyebrow">This month tastes like</div>
-        <div class="big">Tomato<br>Cucumber<br>Peach</div>
-        <div class="sub">Fresh, bright, and barely cooked.</div>
-      </aside>
+      {month_card_html}
     </section>
 
     <div class="grid">
       <article class="card col-8" id="basket" aria-labelledby="basket-heading">
-        <div class="section-label">The July basket</div>
+        <div class="section-label">The {e(month)} basket</div>
         <h2 id="basket-heading">One trip. A full week of meals.</h2>
         <p>The same basket will carry rice bowls, pasta, tacos, and breakfast. Nothing goes to waste — every ingredient shows up more than once.</p>
         <div class="basket-grid">
@@ -724,7 +762,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
 
       <article class="card col-12" id="meals" aria-labelledby="transforms-heading">
         <div class="section-label">The meals</div>
-        <h2 id="transforms-heading">Your usual meals, wearing July.</h2>
+        <h2 id="transforms-heading">Your usual meals, wearing {e(month)}.</h2>
         <p>Keep what you already make. Add what's ripe.</p>
         <div class="transformations">
           {render_transformations(edition['meal_transformations'], meal_hrefs)}
@@ -738,7 +776,8 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
         </div>
       </article>
 
-      {render_house_flavor_card(house_flavor, depth, flavor2=house_flavor2)}
+      {render_house_flavor_card(house_flavor, depth, flavor2=house_flavor2,
+                                 edition_slug=slug, edition_context=edition_context)}
 
       <article class="card col-7" aria-labelledby="drink-heading">
         <div class="section-label">The drink</div>
@@ -773,31 +812,37 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
         css_depth=depth,
         body=body,
         edition_slug=slug,
+        edition_context=edition_context,
     )
 
 # ── Ingredient index page ──────────────────────────────────────────────────────
 
-def build_ingredient_index(edition, ingredients_data, depth, canonical_url):
+def build_ingredient_index(edition, ingredients_data, depth, canonical_url, edition_context=None):
+    ctx   = edition_context or {}
+    month = edition["month"]
+    slug  = month.lower()
+    count = len(edition["featured_ingredients"])
+
     tiles = []
-    for slug in edition["featured_ingredients"]:
-        ing = ingredients_data.get(slug, {})
-        name = ing.get("name", slug)
+    for ing_slug in edition["featured_ingredients"]:
+        ing  = ingredients_data.get(ing_slug, {})
+        name = ing.get("name", ing_slug)
         why  = ing.get("why_now", "")[:90] + ("…" if len(ing.get("why_now","")) > 90 else "")
-        href = rel(depth, f"{slug}/")
+        href = rel(depth, f"{ing_slug}/")
         tiles.append(f"""
     <a class="ingredient-index-tile" href="{href}">
-      {illustration_slot(slug)}
+      {illustration_slot(ing_slug)}
       <strong>{e(name)}</strong>
       <span class="why">{e(why)}</span>
     </a>""")
 
     body = f"""
     <div style="padding:40px 0 20px">
-      <a href="{rel(depth, 'july/')}" class="back-link">← July</a>
+      <a href="{rel(depth, slug + '/')}" class="back-link">← {e(month)}</a>
       <div class="section-label" style="margin-top:8px">The seasonal basket</div>
-      <h1 style="font-size:clamp(2.2rem,5vw,4rem);margin:8px 0 16px">July ingredients</h1>
+      <h1 style="font-size:clamp(2.2rem,5vw,4rem);margin:8px 0 16px">{e(month)} ingredients</h1>
       <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:600px">
-        Eight ingredients worth organizing your week around. Each page explains why now, how to choose it, and what to do with it.
+        {count} ingredients worth organizing your week around. Each page explains why now, how to choose it, and what to do with it.
       </p>
     </div>
     <div class="ingredient-index-grid">
@@ -805,23 +850,28 @@ def build_ingredient_index(edition, ingredients_data, depth, canonical_url):
     </div>"""
 
     return render_shell(
-        title="July Ingredients — Seasonal",
-        description="Eight seasonal ingredients worth buying in July in San Diego.",
+        title=f"{e(month)} Ingredients — Seasonal",
+        description=f"Seasonal ingredients worth buying in {month} in {edition.get('location', 'San Diego')}.",
         canonical_url=canonical_url,
         css_depth=depth,
         body=body,
-        edition_slug="july",
+        edition_slug=slug,
+        edition_context=edition_context,
     )
 
 # ── Individual ingredient page ─────────────────────────────────────────────────
 
-def build_ingredient_page(ing, depth, canonical_url, house_flavor=None):
+def build_ingredient_page(ing, depth, canonical_url, house_flavor=None, edition_context=None):
     require_fields(ing, ["slug", "name", "why_now", "how_to_choose", "buy_this_much",
                           "pairs_with_month", "pairs_with_staples",
                           "weekday_uses", "weekend_use", "storage",
                           "one_thing_to_learn"], f"{ing.get('slug')}.json")
 
     slug = ing["slug"]
+    ctx      = edition_context or {}
+    month    = ctx.get("month", ing.get("month", "July"))
+    location = ctx.get("location", "San Diego")
+    ing_index_path = ctx.get("ingredient_index_path", "seasonal-basket/july-ingredients/")
 
     choose_items  = "".join(f'<li>{e(c)}</li>' for c in ing["how_to_choose"])
     weekday_items = "".join(f'<li>{e(u)}</li>' for u in ing["weekday_uses"])
@@ -829,16 +879,16 @@ def build_ingredient_page(ing, depth, canonical_url, house_flavor=None):
     pairs_month  = ", ".join(e(INGREDIENT_DISPLAY.get(p, (p,))[0]) for p in ing["pairs_with_month"])
     pairs_staple = ", ".join(e(p) for p in ing["pairs_with_staples"])
 
-    index_href = rel(depth, "seasonal-basket/july-ingredients/")
+    index_href = rel(depth, ing_index_path)
 
     body = f"""
     <div style="padding-top:28px">
-      <a href="{index_href}" class="back-link">← July ingredients</a>
+      <a href="{index_href}" class="back-link">← {e(month)} ingredients</a>
     </div>
 
     <div class="ingredient-header">
       {illustration_slot(slug)}
-      <div class="section-label">July · San Diego</div>
+      <div class="section-label">{e(month)} · {e(location)}</div>
       <h1>{e(ing['name'])}</h1>
       <p class="dek" style="font-size:clamp(1rem,2vw,1.45rem);max-width:680px">{e(ing['why_now'])}</p>
     </div>
@@ -889,22 +939,25 @@ def build_ingredient_page(ing, depth, canonical_url, house_flavor=None):
     </div>"""
 
     return render_shell(
-        title=f"{ing['name']} — July — Seasonal",
+        title=f"{ing['name']} — {month} — Seasonal",
         description=ing["why_now"],
         canonical_url=canonical_url,
         css_depth=depth,
         body=body,
-        edition_slug="july",
+        edition_slug=month.lower(),
+        edition_context=edition_context,
     )
 
 # ── Individual meal page ───────────────────────────────────────────────────────
 
-def build_meal_page(meal, edition, depth, canonical_url, house_flavor=None):
+def build_meal_page(meal, edition, depth, canonical_url, house_flavor=None, edition_context=None):
     require_fields(meal, ["slug", "name", "intro", "keep",
                            "variations", "works_well_with", "finish"], f"{meal.get('slug')}.json")
 
-    slug = meal["slug"]
-    meals_back_href = rel(depth, "july/#meals")
+    slug  = meal["slug"]
+    ctx   = edition_context or {}
+    month = ctx.get("month", edition.get("month", "July"))
+    meals_back_href = rel(depth, f"{month.lower()}/#meals")
 
     notes_by_slug = {n["slug"]: n for n in edition.get("field_notes", []) if "slug" in n}
     edition_drink = edition.get("drink", {})
@@ -928,7 +981,7 @@ def build_meal_page(meal, edition, depth, canonical_url, house_flavor=None):
     </div>
 
     <div class="meal-header">
-      <div class="section-label">July · weekday</div>
+      <div class="section-label">{e(month)} · weekday</div>
       <h1>{e(meal.get('display_name', meal['name']))}</h1>
       <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:680px">{e(meal['intro'])}</p>
     </div>
@@ -940,8 +993,8 @@ def build_meal_page(meal, edition, depth, canonical_url, house_flavor=None):
           {keep_items}
         </section>
 
-        <section aria-labelledby="july-adds-heading">
-          <h2 id="july-adds-heading">July adds</h2>
+        <section aria-labelledby="adds-heading">
+          <h2 id="adds-heading">{e(month)} adds</h2>
           {adds_section}
         </section>
 
@@ -970,79 +1023,69 @@ def build_meal_page(meal, edition, depth, canonical_url, house_flavor=None):
     </div>"""
 
     return render_shell(
-        title=f"{meal.get('display_name', meal['name'])} — July — Seasonal",
+        title=f"{meal.get('display_name', meal['name'])} — {month} — Seasonal",
         description=meal["intro"],
         canonical_url=canonical_url,
         css_depth=depth,
         body=body,
-        edition_slug="july",
+        edition_slug=month.lower(),
         page_class="page--meal",
+        edition_context=edition_context,
     )
 
 # ── Consolidated CONTENT.json snapshot ────────────────────────────────────────
 
 def build_content_snapshot(edition, guides, ingredients_data):
     """
-    Generate editions/july/CONTENT.json as a consolidated snapshot of all
-    editorial content. This file is auto-generated — edit src/content/july/
-    instead. Marked clearly at the top.
+    Generate editions/{slug}/CONTENT.json as a consolidated snapshot of all
+    editorial content for the edition. Auto-generated — edit src/content/{slug}/ instead.
     """
+    slug = edition["month"].lower()
     snapshot = {
-        "_generated": "Auto-generated by src/build.py. Do not edit manually. Edit src/content/july/ instead.",
+        "_generated": f"Auto-generated by src/build.py. Do not edit manually. Edit src/content/{slug}/ instead.",
         **{k: v for k, v in edition.items() if not k.startswith("_")},
         "guides": [{k: v for k, v in g.items() if not k.startswith("_")}
                    for g in guides.get("guides", [])],
-        "ingredients": {slug: {k: v for k, v in ing.items() if not k.startswith("_")}
-                        for slug, ing in ingredients_data.items()},
+        "ingredients": {s: {k: v for k, v in ing.items() if not k.startswith("_")}
+                        for s, ing in ingredients_data.items()},
     }
-    out = EDITIONS / "july" / "CONTENT.json"
+    out = EDITIONS / slug / "CONTENT.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     with open(out, "w", encoding="utf-8") as f:
         json.dump(snapshot, f, indent=2, ensure_ascii=False)
-    print(f"  wrote editions/july/CONTENT.json (consolidated snapshot)")
+    print(f"  wrote editions/{slug}/CONTENT.json (consolidated snapshot)")
 
 # ── Verification ───────────────────────────────────────────────────────────────
 
-EXPECTED_INGREDIENT_SLUGS = [
-    "heirloom-tomatoes", "persian-cucumbers", "peaches", "sweet-corn",
-    "basil", "mint", "cherries", "blackberries",
-]
-
-EXPECTED_MEAL_SLUGS = ["rice-bowl", "tacos", "pasta"]
-
-def verify(edition_slug):
+def verify(edition_slug, ingredient_slugs, meal_slugs, house_flavor_slugs, ing_index_dir):
     errors = []
     expected_pages = [
         SITE / "index.html",
         SITE / f"{edition_slug}" / "index.html",
-        SITE / "seasonal-basket" / "july-ingredients" / "index.html",
+        SITE / ing_index_dir / "index.html",
         SITE / "css" / "base.css",
         SITE / "css" / f"{edition_slug}.css",
     ]
-    for slug in EXPECTED_INGREDIENT_SLUGS:
-        expected_pages.append(
-            SITE / "seasonal-basket" / "july-ingredients" / slug / "index.html"
-        )
-    for slug in EXPECTED_MEAL_SLUGS:
-        expected_pages.append(
-            SITE / f"{edition_slug}" / "meals" / slug / "index.html"
-        )
-    expected_pages.append(SITE / f"{edition_slug}" / "house-flavor" / "index.html")
-    expected_pages.append(SITE / f"{edition_slug}" / "charred-tomato-salsa" / "index.html")
+    for slug in ingredient_slugs:
+        expected_pages.append(SITE / ing_index_dir / slug / "index.html")
+    for slug in meal_slugs:
+        expected_pages.append(SITE / f"{edition_slug}" / "meals" / slug / "index.html")
+    for hf_slug in house_flavor_slugs:
+        expected_pages.append(SITE / f"{edition_slug}" / hf_slug / "index.html")
 
     for p in expected_pages:
         if not p.exists():
             errors.append(f"Missing output: {p.relative_to(ROOT)}")
 
     # Check ingredient links appear in the basket index
-    index_src = (SITE / "seasonal-basket" / "july-ingredients" / "index.html").read_text()
-    for slug in EXPECTED_INGREDIENT_SLUGS:
+    index_src = (SITE / ing_index_dir / "index.html").read_text()
+    for slug in ingredient_slugs:
         if f"{slug}/" not in index_src:
             errors.append(f"Ingredient link missing from basket index: {slug}")
 
     # Check meal links appear on the edition page
     edition_src = (SITE / edition_slug / "index.html").read_text()
-    for slug in EXPECTED_MEAL_SLUGS:
+    for slug in meal_slugs:
         if f"meals/{slug}/" not in edition_src:
             errors.append(f"Meal link missing from edition page: {slug}")
 
@@ -1057,129 +1100,142 @@ def verify(edition_slug):
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 def build_edition(edition_dir_name):
-    edition_slug = edition_dir_name  # e.g. "july"
+    edition_slug = edition_dir_name  # e.g. "july", "august"
     content_dir  = CONTENT / edition_slug
     ing_dir      = content_dir / "ingredients"
     meals_dir    = content_dir / "meals"
 
     print(f"\nBuilding edition: {edition_slug}")
 
-    # Load content
-    edition = read_json(content_dir / "edition.json")
-    guides  = read_json(content_dir / "guides.json")
+    # Load edition JSON
+    edition     = read_json(content_dir / "edition.json")
+    guides      = read_json(content_dir / "guides.json")
     guides_list = guides.get("guides", [])
+    base_url    = edition.get("base_url", "").rstrip("/")
+    month       = edition["month"]
 
-    base_url = edition.get("base_url", "").rstrip("/")
+    # Ingredient index URL pattern: seasonal-basket/{slug}-ingredients/
+    ing_index_path = f"seasonal-basket/{edition_slug}-ingredients/"
 
+    # Build edition context — passed to all page builders so they never hardcode month/location
+    edition_context = {
+        "month":                 month,
+        "location":              edition.get("location", ""),
+        "edition_number":        edition.get("edition_number", 1),
+        "ingredient_index_path": ing_index_path,
+        "house_flavor_framing":  edition.get("house_flavor_framing", ""),
+    }
+
+    # Ingredient slugs come from edition.json's featured_ingredients list
+    ingredient_slugs = edition.get("featured_ingredients", [])
+
+    # Load all ingredient JSON files
     ingredients_data = {}
-    for slug in EXPECTED_INGREDIENT_SLUGS:
-        ing = read_json(ing_dir / f"{slug}.json")
-        ingredients_data[slug] = ing
+    for slug in ingredient_slugs:
+        ing_path = ing_dir / f"{slug}.json"
+        if not ing_path.exists():
+            fail(f"Ingredient file missing: {ing_path}")
+        ingredients_data[slug] = read_json(ing_path)
 
-    # Load meals (ordered)
+    # Meal slugs are discovered by scanning the meals/ directory
+    meal_slugs = sorted(
+        p.stem for p in meals_dir.glob("*.json")
+    ) if meals_dir.exists() else []
+
+    # Load meals
     meals_data = {}
-    for slug in EXPECTED_MEAL_SLUGS:
-        meal_path = meals_dir / f"{slug}.json"
-        if meal_path.exists():
-            meals_data[slug] = read_json(meal_path)
+    for slug in meal_slugs:
+        meals_data[slug] = read_json(meals_dir / f"{slug}.json")
 
-    # Load house flavor
-    hf_path = content_dir / "house-flavor.json"
-    house_flavor = None
-    if hf_path.exists():
-        house_flavor = read_json(hf_path)
-        # Derive linked_meals from non-null uses[].meal, validate against meals_data
-        derived = [u["meal"] for u in house_flavor.get("uses", []) if u.get("meal")]
+    # Load house flavors (house-flavor.json, house-flavor-2.json, etc.)
+    house_flavors = []
+    for hf_filename in sorted(content_dir.glob("house-flavor*.json")):
+        hf = read_json(hf_filename)
+        derived = [u["meal"] for u in hf.get("uses", []) if u.get("meal")]
         for ms in derived:
             if ms not in meals_data:
-                fail(f"house-flavor.json references meal '{ms}' which does not exist in meals_data")
-        house_flavor["linked_meals"] = derived
-
-    # Load second house flavor
-    hf2_path = content_dir / "house-flavor-2.json"
-    house_flavor2 = None
-    if hf2_path.exists():
-        house_flavor2 = read_json(hf2_path)
-        derived2 = [u["meal"] for u in house_flavor2.get("uses", []) if u.get("meal")]
-        for ms in derived2:
-            if ms not in meals_data:
-                fail(f"house-flavor-2.json references meal '{ms}' which does not exist in meals_data")
-        house_flavor2["linked_meals"] = derived2
+                fail(f"{hf_filename.name} references meal '{ms}' which does not exist")
+        hf["linked_meals"] = derived
+        house_flavors.append(hf)
+    house_flavor  = house_flavors[0] if len(house_flavors) >= 1 else None
+    house_flavor2 = house_flavors[1] if len(house_flavors) >= 2 else None
 
     # CSS
     build_css(edition_slug)
 
-    # Build meal href map for homepage linking (at depth 0 and depth 1)
-    # We compute at depth=0; depth=1 version computed inline below
     def meal_hrefs_at(depth):
         return {
-            meal['name']: rel(depth, f"july/meals/{slug}/")
+            meal["name"]: rel(depth, f"{edition_slug}/meals/{slug}/")
             for slug, meal in meals_data.items()
         }
 
-    # Edition pages (root + canonical /july/)
-    july_canonical = f"{base_url}/july/"
+    edition_canonical = f"{base_url}/{edition_slug}/"
 
-    root_html = build_publication_home(edition, depth=0,
-                                       canonical_url=f"{base_url}/")
+    # Publication homepage (site root)
+    root_html = build_publication_home(edition, depth=0, canonical_url=f"{base_url}/")
     write_page(SITE / "index.html", root_html)
 
-    july_html = build_edition_page(edition, depth=1,
-                                   canonical_url=july_canonical,
-                                   meal_hrefs=meal_hrefs_at(1),
-                                   house_flavor=house_flavor,
-                                   house_flavor2=house_flavor2)
-    write_page(SITE / "july" / "index.html", july_html)
+    # Edition page
+    edition_html = build_edition_page(
+        edition, depth=1, canonical_url=edition_canonical,
+        meal_hrefs=meal_hrefs_at(1),
+        house_flavor=house_flavor, house_flavor2=house_flavor2,
+        edition_context=edition_context,
+    )
+    write_page(SITE / edition_slug / "index.html", edition_html)
 
     # Ingredient index
-    ing_index_canonical = f"{base_url}/seasonal-basket/july-ingredients/"
+    ing_index_dir     = Path(*ing_index_path.split("/"))
+    ing_index_canonical = f"{base_url}/{ing_index_path}"
     ing_index_html = build_ingredient_index(
-        edition, ingredients_data,
-        depth=2, canonical_url=ing_index_canonical
+        edition, ingredients_data, depth=2,
+        canonical_url=ing_index_canonical,
+        edition_context=edition_context,
     )
-    write_page(SITE / "seasonal-basket" / "july-ingredients" / "index.html", ing_index_html)
+    write_page(SITE / ing_index_dir / "index.html", ing_index_html)
 
     # Individual ingredient pages
-    for slug in EXPECTED_INGREDIENT_SLUGS:
-        ing   = ingredients_data[slug]
-        ing_canonical = f"{base_url}/seasonal-basket/july-ingredients/{slug}/"
-        ing_html = build_ingredient_page(ing, depth=3,
-                                         canonical_url=ing_canonical,
-                                         house_flavor=house_flavor)
-        write_page(
-            SITE / "seasonal-basket" / "july-ingredients" / slug / "index.html",
-            ing_html
+    for slug in ingredient_slugs:
+        ing = ingredients_data[slug]
+        ing_canonical = f"{base_url}/{ing_index_path}{slug}/"
+        ing_html = build_ingredient_page(
+            ing, depth=3, canonical_url=ing_canonical,
+            house_flavor=house_flavor, edition_context=edition_context,
         )
+        write_page(SITE / ing_index_dir / slug / "index.html", ing_html)
 
-    # Individual meal pages (depth=3: docs/july/meals/<slug>/index.html)
+    # Individual meal pages
     for slug, meal in meals_data.items():
-        meal_canonical = f"{base_url}/july/meals/{slug}/"
+        meal_canonical = f"{base_url}/{edition_slug}/meals/{slug}/"
         meal_html = build_meal_page(
-            meal, edition,
-            depth=3, canonical_url=meal_canonical,
-            house_flavor=house_flavor
+            meal, edition, depth=3, canonical_url=meal_canonical,
+            house_flavor=house_flavor, edition_context=edition_context,
         )
-        write_page(SITE / "july" / "meals" / slug / "index.html", meal_html)
+        write_page(SITE / edition_slug / "meals" / slug / "index.html", meal_html)
 
-    # House flavor page (depth=2: docs/july/house-flavor/index.html)
-    if house_flavor:
-        hf_canonical = f"{base_url}/july/house-flavor/"
-        hf_html = build_house_flavor_page(house_flavor, edition,
-                                          depth=2, canonical_url=hf_canonical)
-        write_page(SITE / "july" / "house-flavor" / "index.html", hf_html)
-
-    # Second house flavor page (depth=2: docs/july/charred-tomato-salsa/index.html)
-    if house_flavor2:
-        hf2_canonical = f"{base_url}/july/charred-tomato-salsa/"
-        hf2_html = build_house_flavor_page(house_flavor2, edition,
-                                           depth=2, canonical_url=hf2_canonical)
-        write_page(SITE / "july" / "charred-tomato-salsa" / "index.html", hf2_html)
+    # House flavor pages — each derives its URL from its own slug field
+    hf_slugs_built = []
+    for hf in house_flavors:
+        hf_slug     = hf["slug"]
+        hf_canonical = f"{base_url}/{edition_slug}/{hf_slug}/"
+        hf_html = build_house_flavor_page(
+            hf, edition, depth=2, canonical_url=hf_canonical,
+            edition_context=edition_context,
+        )
+        write_page(SITE / edition_slug / hf_slug / "index.html", hf_html)
+        hf_slugs_built.append(hf_slug)
 
     # Consolidated snapshot
     build_content_snapshot(edition, guides, ingredients_data)
 
     # Verify
-    verify(edition_slug)
+    verify(
+        edition_slug,
+        ingredient_slugs=ingredient_slugs,
+        meal_slugs=meal_slugs,
+        house_flavor_slugs=hf_slugs_built,
+        ing_index_dir=str(ing_index_dir),
+    )
 
 
 def main():

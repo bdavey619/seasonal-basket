@@ -28,22 +28,6 @@
     "cherries",
     "blackberries"
   ],
-  "confidence": {
-    "score": 9.2,
-    "lunches_supported": 5,
-    "dinners_supported": 5,
-    "weekend_meals_supported": 2,
-    "waste_risk": "low",
-    "basket_cost": {
-      "note": "Expect around $30–45 for the seasonal basket, often less when produce is on sale. Proteins and pantry staples are separate; prices vary by store and region."
-    },
-    "assumptions": [
-      "Pantry basics already on hand",
-      "One batch of rice cooked ahead",
-      "One or two proteins prepped at the start of the week"
-    ],
-    "editorial_note": "This score is editorial guidance, not a calculated metric. It reflects how confidently this basket supports a realistic week when combined with your usual staples."
-  },
   "bring_home": {
     "heading": "This is what I'd bring home.",
     "cost_note": "Around $30–45 for the seasonal basket. Proteins and pantry basics are separate.",
@@ -67,8 +51,13 @@
     "Sourdough",
     "Greek yogurt"
   ],
+  "month_card": {
+    "items": ["Tomato", "Cucumber", "Peach"],
+    "sub": "Fresh, bright, and barely cooked."
+  },
   "house_flavor": "tomato-herb-vinaigrette",
   "house_flavor_2": "charred-tomato-salsa",
+  "house_flavor_framing": "July gives tomatoes two lives. One stays raw. One gets charred.",
   "field_notes_label": "Field Notes",
   "field_notes": [
     {
@@ -119,20 +108,6 @@
       "result": "The side becomes the reason."
     }
   ],
-  "week": {
-    "weekday_lunches": [
-      { "name": "Chicken rice bowl", "note": "tomato, cucumber, basil" },
-      { "name": "Salmon wrap", "note": "tomato, cucumber, a little lime" },
-      { "name": "Tomato toast", "note": "sourdough, olive oil, flaky salt" },
-      { "name": "Bean salad", "note": "tomato, cucumber, basil" }
-    ],
-    "weekday_dinners": [
-      { "name": "Turkey bowl", "note": "corn, tomato, Italian seasoning" },
-      { "name": "Salmon + rice", "note": "cucumber-mint alongside" },
-      { "name": "Beef taco bowl", "note": "corn, beans, tomato" },
-      { "name": "Tomato-basil pasta", "note": "olive oil, garlic, no jar needed" }
-    ]
-  },
   "weekend_meal": {
     "name": "Tomato, burrata, basil, and sourdough.",
     "intro": "One meal should feel like the reason you went shopping. This is July’s.",
