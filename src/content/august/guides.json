@@ -1,0 +1,35 @@
+{
+  "_note": "These are fictional recurring editorial characters who are part of Seasonal's voice. They are not real people and carry no real credentials, biographies, locations, employers, or factual claims about their lives. Each character represents a consistent way of noticing food and the season. Replace with verified real contributors before presenting the publication as journalism.",
+  "guides": [
+    {
+      "id": "adela",
+      "name": "Adela",
+      "role": "The stone-fruit voice",
+      "philosophy": "If it doesn't smell like anything, put it back.",
+      "voice": "Warm, precise, and slightly impatient with under-ripe fruit.",
+      "notices": "Fragrance first. Color second. The shoulder near the stem of a nectarine.",
+      "assigned_ingredients": ["nectarines", "figs"],
+      "quotes": {
+        "nectarines": "A nectarine that doesn't smell like anything won't improve on the counter. It just gets softer.",
+        "figs": "You smell a fig before you taste it. That's how you know.",
+        "edition": "August stone fruit is the last good window before everything turns. Don't wait for it to ripen on the counter."
+      }
+    },
+    {
+      "id": "jerome",
+      "name": "Jerome",
+      "role": "The market guide",
+      "philosophy": "A good market rewards patience.",
+      "voice": "Direct, welcoming, practical. Has a strong opinion about which lap to buy on.",
+      "notices": "What is at its peak this week versus what is being pushed. What the farmers themselves are eating.",
+      "assigned_ingredients": ["bell-peppers", "eggplant", "zucchini", "cherry-tomatoes"],
+      "quotes": {
+        "bell-peppers": "The fully red ones are a different vegetable from the green ones. Most people don't know this.",
+        "eggplant": "Give it heat. That's all it needs from you.",
+        "zucchini": "The market is full of them in August. That's a feature.",
+        "cherry-tomatoes": "They're still here. Still worth buying.",
+        "edition": "August is the market at its most generous. The discipline is not buying everything."
+      }
+    }
+  ]
+}

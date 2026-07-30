@@ -1,0 +1,171 @@
+{
+  "_note": "This is the canonical editable source for the August edition. Run python3 src/build.py to regenerate docs/. editions/august/CONTENT.json is auto-generated from this file and the ingredient JSONs.",
+  "month": "August",
+  "location": "San Diego",
+  "edition_number": 2,
+  "base_url": "/seasonal",
+  "opening_note": "Peppers reach their sweetest now. Figs don't wait. Nectarines need almost nothing. The basket changes. The meals stay. Your kitchen starts to taste like August.",
+  "thesis": "Keep the meal. Change the season.",
+  "palette": {
+    "background": "#ede8df",
+    "paper": "#f9f7f2",
+    "primary": "#6b3f52",
+    "secondary": "#3d5242",
+    "accent": "#c07c42",
+    "ink": "#1e2520",
+    "muted": "#666f68",
+    "line": "#cdc7bc",
+    "cream": "#e5dcd0",
+    "dark": "#1c2a20"
+  },
+  "featured_ingredients": [
+    "figs",
+    "bell-peppers",
+    "eggplant",
+    "cherry-tomatoes",
+    "jalapenos",
+    "zucchini",
+    "basil",
+    "nectarines"
+  ],
+  "bring_home": {
+    "heading": "This is what I'd bring home.",
+    "cost_note": "Around $35–50 for the seasonal basket. Proteins and pantry basics are separate.",
+    "items": [
+      { "name": "Ripe figs", "qty": "1 pint", "note": "Buy them ripe. Plan to eat within two days." },
+      { "name": "Red bell peppers", "qty": "3–4", "note": "The house flavor starts here." },
+      { "name": "Eggplant", "qty": "1 large or 2 small", "note": "Roasts into something completely different." },
+      { "name": "Cherry tomatoes", "qty": "1 pint", "note": "Still abundant. Still worth it." },
+      { "name": "Jalapeños", "qty": "3–4", "note": "The sauce needs two. Keep the rest." },
+      { "name": "Zucchini", "qty": "3–4 medium", "note": "They carry the week without asking much." },
+      { "name": "Basil", "qty": "1 bunch", "note": "Same as last month. Buy a pot if you can." },
+      { "name": "Nectarines", "qty": "4–5", "note": "The peach's quieter cousin. Almost as good." }
+    ]
+  },
+  "staples": [
+    "Sticky white rice",
+    "Ground beef or turkey",
+    "Chicken thighs",
+    "Salmon",
+    "Beans",
+    "Sourdough",
+    "Greek yogurt"
+  ],
+  "month_card": {
+    "items": ["Fig", "Pepper", "Eggplant"],
+    "sub": "Deep, ripe, and barely needing heat."
+  },
+  "house_flavor": "charred-pepper-sauce",
+  "field_notes_label": "Field Notes",
+  "field_notes": [
+    {
+      "slug": "charring-a-pepper",
+      "name": "Charring a pepper",
+      "body": "The same dry cast-iron pan from July works — but peppers take longer and need to steam afterward. Char them on all sides until the skin is mostly blackened. Drop them into a bowl, cover tight, and leave them for 15 minutes. The skin will slip off cleanly. What's underneath is something the raw pepper never hinted at."
+    },
+    {
+      "slug": "figs-and-time",
+      "name": "Figs and time.",
+      "body": "A ripe fig goes from perfect to past-peak in about 24 hours. Buy them the day you plan to eat them, or the day before. If they're already splitting at the base, eat them today. This isn't a problem — it's the season telling you something."
+    },
+    {
+      "slug": "eggplant-myth",
+      "name": "You don't need to salt eggplant.",
+      "body": "Salting was right for older varieties, which were genuinely bitter. Modern cultivars have had that bred out. What actually matters is high heat. A crowded pan steams; a hot, uncrowded pan chars. Give it room, leave it alone, and it becomes something worth eating."
+    },
+    {
+      "slug": "august-fish-counter",
+      "name": "August at the fish counter.",
+      "body": "Yellowtail is still running. White sea bass is having its best weeks. Pacific swordfish shows up at some counters. The question from last month still applies: not 'Do you have salmon?' but 'What came in today?' In August, the honest answer is often better than what you planned."
+    }
+  ],
+  "meal_transformations": [
+    {
+      "meal": "Rice bowl",
+      "change": "Roasted peppers, zucchini, cherry tomatoes, torn basil.",
+      "result": "The pepper does the work."
+    },
+    {
+      "meal": "Pasta",
+      "change": "Cherry tomatoes burst in olive oil. Basil after the heat.",
+      "result": "Still no jar. Still August."
+    },
+    {
+      "meal": "Tacos",
+      "change": "Peppers, jalapeño, cherry tomato, cotija, lime.",
+      "result": "Brighter than it has any right to be."
+    },
+    {
+      "meal": "Yogurt",
+      "change": "Sliced figs or nectarines, a little honey.",
+      "result": "Breakfast becomes the moment."
+    },
+    {
+      "meal": "Chicken",
+      "change": "Zucchini, peppers, charred pepper sauce alongside.",
+      "result": "The sauce is why you made extra."
+    }
+  ],
+  "weekend_meal": {
+    "name": "Fig, prosciutto, burrata, and arugula.",
+    "intro": "One meal should feel like the reason you went shopping. In August, this is it.",
+    "ingredients": [
+      "6–8 ripe figs, halved",
+      "1 ball burrata",
+      "4 slices prosciutto",
+      "A handful of arugula",
+      "Olive oil",
+      "Flaky salt and black pepper",
+      "Optional: a drizzle of honey or aged balsamic"
+    ],
+    "ingredient_note": "If figs aren't at their peak, nectarines work. The dish follows the same logic — ripe fruit, good cheese, salt, oil.",
+    "method": "Arrange figs, torn burrata, and prosciutto on a plate. Scatter arugula. Drizzle with olive oil, flaky salt, black pepper. Add honey or balsamic if you have it. Eat with bread."
+  },
+  "drink": {
+    "slug": "north-park-cooler",
+    "name": "North Park Cooler",
+    "intro": "One drink. Make it as long as watermelon is around.",
+    "keep": [
+      "Sparkling mineral water",
+      "Ice",
+      "½ lime"
+    ],
+    "season_adds": [
+      "1 cup watermelon, roughly torn into chunks",
+      "4–5 basil leaves"
+    ],
+    "method": "Squeeze or press watermelon chunks through a fine-mesh strainer — or blend briefly and strain. Fill a rocks glass with ice. Add watermelon juice and a squeeze of lime. Slap the basil once between your palms, drop it in. Top with sparkling water.",
+    "try_another_way": [
+      {
+        "change": "Add a few thin jalapeño rounds",
+        "context": "If you want heat with the sweet."
+      },
+      {
+        "change": "Swap basil for mint",
+        "context": "If there's mint left from the week."
+      },
+      {
+        "change": "Use nectarine juice instead of watermelon",
+        "context": "If you have an overripe nectarine."
+      },
+      {
+        "change": "Add more sparkling water",
+        "context": "If you want something lighter."
+      }
+    ]
+  },
+  "local_ritual": {
+    "label": "San Diego ritual",
+    "name": "Go to the market without a list.",
+    "description": "August at a San Diego farmers market is worth giving yourself a slow hour. Walk the whole thing once before buying anything. Let what looks best decide the week."
+  },
+  "one_thing_to_notice": {
+    "headline": "The color of a ripe fig.",
+    "body": "A ripe fig darkens all the way to deep purple-black and sometimes splits at the base. Look for a small bead of sweetness near the stem. That's the one to buy."
+  },
+  "market_question": "What's at its best today?",
+  "next_edition": {
+    "month": "September",
+    "status": "Arriving soon."
+  }
+}

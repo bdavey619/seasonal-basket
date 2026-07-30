@@ -1,0 +1,31 @@
+{
+  "slug": "jalapenos",
+  "name": "Jalapeños",
+  "month": "August",
+  "tile_uses": "Tacos, eggs, house flavor, everything",
+  "why_now": "Jalapeños are peak summer, and in August the heat and color variation is at its widest. Green jalapeños are grassier; red jalapeños (fully ripened) are fruitier and a little hotter. The house flavor this month uses them alongside peppers — but they earn their place in almost every savory dish on the table.",
+  "how_to_choose": [
+    "Firm and glossy, no soft spots",
+    "Green is grassy and mild-to-medium; red is fruity and a bit hotter",
+    "Streaks of tan or brown on the skin (corking) indicate more heat — a sign of stress on the plant, which concentrates the capsaicin",
+    "Smaller jalapeños tend to be hotter than larger ones"
+  ],
+  "buy_this_much": "3–4 jalapeños. Two go into the house flavor; the rest carry the week.",
+  "price_note": "Jalapeños are inexpensive year-round but at their best now. Look for them at Mexican grocery stores or the farmers market for the freshest selection.",
+  "pairs_with_month": ["bell-peppers", "cherry-tomatoes", "basil", "zucchini"],
+  "pairs_with_staples": ["chicken thighs", "eggs", "white beans", "beans"],
+  "flavor_paths": [
+    { "name": "Charred into the sauce", "description": "The house flavor: charred alongside red peppers, blended smooth." },
+    { "name": "Raw, sliced thin", "description": "In tacos, rice bowls, or the drink. The raw crunch is different from the cooked version." },
+    { "name": "Quick-pickled", "description": "Sliced into rings with vinegar, sugar, and salt. Ready in an hour, good for a week." }
+  ],
+  "weekday_uses": [
+    "Sliced thin into tacos or rice bowls",
+    "A few rounds dropped into the drink",
+    "Diced and stirred into scrambled eggs"
+  ],
+  "weekend_use": "Quick-pickled jalapeño rings. Slice thin, cover with equal parts white vinegar and water, a pinch of sugar and salt, a garlic clove. Ready in an hour. Good on almost everything for the rest of the week.",
+  "storage": "Refrigerator crisper, up to two weeks. They dry out on the counter.",
+  "one_thing_to_learn": "Heat level in jalapeños varies seed to seed and plant to plant — you can't know from appearance alone. Taste a small piece before adding them to a dish. The seeds and membranes hold most of the heat; removing them makes the pepper significantly milder while keeping the flavor.",
+  "market_question": "Are these mild or hot this week?"
+}

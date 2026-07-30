@@ -160,11 +160,16 @@ INGREDIENT_DISPLAY = {
     "blackberries":       ("Blackberries",       "Breakfast, dessert, salads"),
 }
 
-def render_basket_tiles(ingredients, ingredients_path, depth):
+def render_basket_tiles(ingredients, ing_index_path, depth, ingredients_data=None):
     tiles = []
     for slug in ingredients:
-        name, note = INGREDIENT_DISPLAY.get(slug, (slug, ""))
-        href = rel(depth, f"seasonal-basket/july-ingredients/{slug}/")
+        if ingredients_data and slug in ingredients_data:
+            ing = ingredients_data[slug]
+            name = ing.get("name", slug)
+            note = ing.get("tile_uses", "")
+        else:
+            name, note = INGREDIENT_DISPLAY.get(slug, (slug, ""))
+        href = rel(depth, f"{ing_index_path.rstrip('/')}/{slug}/")
         tiles.append(f"""
     <a class="ingredient-tile" href="{href}">
       <strong>{e(name)}</strong>
@@ -300,9 +305,9 @@ def render_weekend(meal):
 
 # ── Drink ──────────────────────────────────────────────────────────────────────
 
-def render_drink(drink):
+def render_drink(drink, month="July"):
     keep_items  = "".join(f"<li>{e(i)}</li>" for i in drink.get("keep", []))
-    adds_items  = "".join(f"<li>{e(i)}</li>" for i in drink.get("july_adds", []))
+    adds_items  = "".join(f"<li>{e(i)}</li>" for i in drink.get("season_adds", drink.get("july_adds", [])))
     try_rows    = "".join(
         f"""<div class="drink-try-row">
           <span class="drink-try-change">{e(v['change'])}</span>
@@ -324,7 +329,7 @@ def render_drink(drink):
   <div class="drink-base">
     <div class="meal-adds-sublabel">Keep</div>
     <ul class="checklist">{keep_items}</ul>
-    <div class="meal-adds-sublabel" style="margin-top:16px">July adds</div>
+    <div class="meal-adds-sublabel" style="margin-top:16px">{e(month)} adds</div>
     <ul class="checklist">{adds_items}</ul>
     <div class="meal-adds-sublabel" style="margin-top:16px">Method</div>
     <p class="drink-method">{e(drink.get('method',''))}</p>
@@ -349,14 +354,14 @@ def render_drink_link(drink):
 
 # ── House Flavor ───────────────────────────────────────────────────────────────
 
-def render_house_flavor_uses(uses, depth):
+def render_house_flavor_uses(uses, depth, edition_slug="july"):
     """Render the 'Use it this week' sequence on the dedicated page."""
     rows = []
     for u in uses:
         meal_slug = u.get("meal")
         label = e(u["label"])
         if meal_slug:
-            href = rel(depth, f"july/meals/{meal_slug}/")
+            href = rel(depth, f"{edition_slug}/meals/{meal_slug}/")
             label = f'<a href="{href}" class="house-flavor-meal-link">{label}</a>'
         rows.append(f"""
     <div class="house-flavor-use">
@@ -444,7 +449,8 @@ def build_house_flavor_page(flavor, edition, depth, canonical_url, edition_conte
 
     notes_by_slug = {n["slug"]: n for n in edition.get("field_notes", []) if "slug" in n}
     ingredients_html = "".join(f"<li>{e(i)}</li>" for i in flavor["ingredients"])
-    uses_html = render_house_flavor_uses(flavor["uses"], depth)
+    edition_slug_for_uses = ctx.get("month", "july").lower()
+    uses_html = render_house_flavor_uses(flavor["uses"], depth, edition_slug=edition_slug_for_uses)
 
     # Linked field notes (titles only)
     fn_items = []
@@ -707,7 +713,7 @@ def build_publication_home(edition, depth, canonical_url):
 # ── Edition page ───────────────────────────────────────────────────────────────
 
 def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_flavor=None,
-                       house_flavor2=None, edition_context=None):
+                       house_flavor2=None, edition_context=None, ingredients_data=None):
     require_fields(edition, ["month", "opening_note", "featured_ingredients",
                               "meal_transformations", "field_notes"], "edition.json")
 
@@ -717,7 +723,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
     basket_href = rel(depth, ing_index_path)
 
     basket_tiles = render_basket_tiles(edition["featured_ingredients"],
-                                       ing_index_path.rstrip("/"), depth)
+                                       ing_index_path.rstrip("/"), depth, ingredients_data)
 
     thesis = edition.get("thesis", "")
     thesis_html = f'<p class="thesis">{e(thesis)}</p>' if thesis else ""
@@ -782,7 +788,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
       <article class="card col-7" aria-labelledby="drink-heading">
         <div class="section-label">The drink</div>
         <h2 id="drink-heading">{e(edition['drink']['name'])}</h2>
-        {render_drink(edition['drink'])}
+        {render_drink(edition['drink'], month=month)}
       </article>
 
       <aside class="card card--warm col-5" aria-label="{e(edition['local_ritual']['label'])}">
@@ -1099,7 +1105,7 @@ def verify(edition_slug, ingredient_slugs, meal_slugs, house_flavor_slugs, ing_i
 
 # ── Main ───────────────────────────────────────────────────────────────────────
 
-def build_edition(edition_dir_name):
+def build_edition(edition_dir_name, write_homepage=True):
     edition_slug = edition_dir_name  # e.g. "july", "august"
     content_dir  = CONTENT / edition_slug
     ing_dir      = content_dir / "ingredients"
@@ -1171,9 +1177,10 @@ def build_edition(edition_dir_name):
 
     edition_canonical = f"{base_url}/{edition_slug}/"
 
-    # Publication homepage (site root)
-    root_html = build_publication_home(edition, depth=0, canonical_url=f"{base_url}/")
-    write_page(SITE / "index.html", root_html)
+    # Publication homepage (site root) — only written by the current edition
+    if write_homepage:
+        root_html = build_publication_home(edition, depth=0, canonical_url=f"{base_url}/")
+        write_page(SITE / "index.html", root_html)
 
     # Edition page
     edition_html = build_edition_page(
@@ -1181,6 +1188,7 @@ def build_edition(edition_dir_name):
         meal_hrefs=meal_hrefs_at(1),
         house_flavor=house_flavor, house_flavor2=house_flavor2,
         edition_context=edition_context,
+        ingredients_data=ingredients_data,
     )
     write_page(SITE / edition_slug / "index.html", edition_html)
 
@@ -1262,8 +1270,17 @@ def main():
     if not edition_dirs:
         fail("No edition directories found in src/content/")
 
+    # Determine the current edition (highest edition_number) for the homepage
+    def edition_number(dir_name):
+        try:
+            return read_json(CONTENT / dir_name / "edition.json").get("edition_number", 0)
+        except SystemExit:
+            return 0
+
+    current_edition_dir = max(edition_dirs, key=edition_number)
+
     for edition_dir in edition_dirs:
-        build_edition(edition_dir)
+        build_edition(edition_dir, write_homepage=(edition_dir == current_edition_dir))
 
     print("\nBuild complete.")
     print("Preview: python3 -m http.server --directory docs 8000")

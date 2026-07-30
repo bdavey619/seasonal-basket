@@ -1,0 +1,36 @@
+{
+  "slug": "tacos",
+  "name": "Tacos",
+  "display_name": "Tacos",
+  "effort": "weekday",
+  "intro": "Peppers, jalapeño, cherry tomato, cotija, lime. This is the taco that August makes possible.",
+  "keep": [
+    "Corn or flour tortillas",
+    "Protein of choice",
+    "Cotija or crumbled feta",
+    "Lime"
+  ],
+  "season_anchor": [
+    "Roasted or raw bell pepper strips",
+    "Jalapeño, sliced thin"
+  ],
+  "season_options": [
+    "Cherry tomatoes, halved",
+    "Fresh basil"
+  ],
+  "variations": [
+    { "ingredients": "Peppers + jalapeño + cherry tomato + cotija", "context": "The August version. Brighter than it looks." },
+    { "ingredients": "Peppers + jalapeño + charred pepper sauce", "context": "Use the house flavor as the salsa." },
+    { "ingredients": "Zucchini + pepper + lime + cotija", "context": "If you want a vegetable-forward taco." }
+  ],
+  "works_well_with": [
+    "Ground beef or turkey",
+    "Chicken thighs, pulled",
+    "Black beans",
+    "Fish"
+  ],
+  "finish": "Warm the tortillas directly over a gas flame or in a dry pan. Stack them and wrap in a kitchen towel while you assemble everything else. A taco with a warm tortilla is a different thing.",
+  "linked_house_flavor": "charred-pepper-sauce",
+  "linked_field_notes": ["charring-a-pepper"],
+  "linked_ingredients": ["bell-peppers", "jalapenos", "cherry-tomatoes"]
+}

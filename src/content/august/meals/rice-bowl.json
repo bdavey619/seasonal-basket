@@ -1,0 +1,35 @@
+{
+  "slug": "rice-bowl",
+  "name": "Rice bowl",
+  "display_name": "Rice bowl",
+  "effort": "weekday",
+  "intro": "August turns a rice bowl into something you'd actually plan for.",
+  "keep": [
+    "Sticky white rice",
+    "Protein of choice (chicken, salmon, or nothing)"
+  ],
+  "season_anchor": [
+    "Roasted or sautéed bell pepper strips",
+    "Cherry tomatoes, halved"
+  ],
+  "season_options": [
+    "Zucchini, quickly sautéed",
+    "A spoonful of charred pepper sauce",
+    "Fresh basil, torn"
+  ],
+  "variations": [
+    { "ingredients": "Peppers + cherry tomatoes + basil", "context": "The version you'll make most often." },
+    { "ingredients": "Peppers + zucchini + charred pepper sauce", "context": "If you made the house flavor. Worth it." },
+    { "ingredients": "Cherry tomatoes + jalapeño + cotija", "context": "If you want something closer to the taco bowl direction." }
+  ],
+  "works_well_with": [
+    "Chicken thighs",
+    "Salmon",
+    "A soft-cooked egg",
+    "No added protein"
+  ],
+  "finish": "Warm the bowl before assembling if you have a minute. Tear basil over the top after plating — don't add it while anything is still hot.",
+  "linked_house_flavor": "charred-pepper-sauce",
+  "linked_field_notes": ["charring-a-pepper"],
+  "linked_ingredients": ["bell-peppers", "cherry-tomatoes", "basil"]
+}

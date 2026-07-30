@@ -1,0 +1,31 @@
+{
+  "slug": "bell-peppers",
+  "name": "Bell peppers",
+  "month": "August",
+  "tile_uses": "Rice bowls, tacos, house flavor, chicken",
+  "why_now": "Red and yellow bell peppers are fully ripened green peppers — and August is when they arrive in abundance. The color change takes weeks on the plant, which is why they cost more and why they taste completely different. The bitterness is gone. What's left is sweet, thick, and worth roasting.",
+  "how_to_choose": [
+    "Fully red or fully yellow — no green patches",
+    "Firm and heavy for their size",
+    "Glossy skin without soft spots",
+    "The thicker the walls, the better for roasting"
+  ],
+  "buy_this_much": "3–4 peppers for the week. Two go into the house flavor; the rest go into meals.",
+  "price_note": "Red and yellow peppers cost more than green because they've spent longer on the plant. In August, supply increases and prices tend to soften slightly.",
+  "pairs_with_month": ["eggplant", "cherry-tomatoes", "jalapenos", "basil", "zucchini"],
+  "pairs_with_staples": ["chicken thighs", "salmon", "eggs", "white beans"],
+  "flavor_paths": [
+    { "name": "Charred", "description": "The house flavor. Blistered in a dry pan, steamed, peeled, blended with garlic, oil, and sherry vinegar." },
+    { "name": "Raw", "description": "Sliced thin in a taco or rice bowl. The sweetness holds without cooking." },
+    { "name": "Roasted whole", "description": "In the oven at high heat. Collapse into softness, serve alongside chicken or fold into pasta." }
+  ],
+  "weekday_uses": [
+    "Sliced raw into tacos or rice bowls",
+    "Roasted and added to a rice bowl or pasta",
+    "Used as the base for the charred pepper sauce"
+  ],
+  "weekend_use": "Roasted whole alongside chicken thighs. Tear them open over the plate.",
+  "storage": "Refrigerator crisper. Up to a week before roasting; a few days once roasted.",
+  "one_thing_to_learn": "A fully red bell pepper and a green bell pepper are the same vegetable at different points of ripeness. The green one was picked early. Weeks more on the plant produce the color, the sweetness, and the complete absence of that grassy bitterness. This is also why charring works so well on red peppers — there's actual sugar to caramelize.",
+  "market_question": "Are these fully ripened on the plant, or ripened in transit?"
+}

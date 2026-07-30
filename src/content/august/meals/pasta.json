@@ -1,0 +1,33 @@
+{
+  "slug": "pasta",
+  "name": "Pasta",
+  "display_name": "Pasta",
+  "effort": "weekday",
+  "intro": "Cherry tomatoes burst in olive oil. August does the work again.",
+  "keep": [
+    "Pasta",
+    "Olive oil and garlic"
+  ],
+  "season_anchor": [
+    "Cherry tomatoes, left whole"
+  ],
+  "season_options": [
+    "Fresh basil",
+    "Roasted bell pepper strips",
+    "A thin slice of jalapeño"
+  ],
+  "variations": [
+    { "ingredients": "Cherry tomatoes + basil", "context": "The simplest version. The tomatoes are the sauce." },
+    { "ingredients": "Cherry tomatoes + roasted pepper + basil", "context": "If you have leftover roasted peppers, fold them in." },
+    { "ingredients": "Cherry tomatoes + jalapeño + cotija", "context": "If you want heat and something salty at the end." }
+  ],
+  "works_well_with": [
+    "Chicken thighs",
+    "White beans",
+    "No added protein"
+  ],
+  "finish": "Let the tomatoes sit in a hot pan with olive oil, undisturbed, until they start to burst — about 4 minutes. Then press gently and let the liquid reduce. Add garlic after, basil last, always after the heat is off.",
+  "linked_house_flavor": "charred-pepper-sauce",
+  "linked_field_notes": ["eggplant-myth"],
+  "linked_ingredients": ["cherry-tomatoes", "basil", "bell-peppers"]
+}

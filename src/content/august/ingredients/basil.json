@@ -1,0 +1,31 @@
+{
+  "slug": "basil",
+  "name": "Basil",
+  "month": "August",
+  "tile_uses": "Peppers, tomatoes, pasta, the drink",
+  "why_now": "Basil is at peak abundance in August — warm nights and hot days produce the most fragrant leaves of the year. If you kept a potted plant from July, it's probably thriving. This is the month to use it generously.",
+  "how_to_choose": [
+    "Bright, vivid green — yellow or black-edged leaves are past their best",
+    "Fragrant when you brush the leaves",
+    "Stems still firm and upright",
+    "Avoid bunches stored in cold refrigerator display — cold turns basil black"
+  ],
+  "buy_this_much": "1 large bunch, or one potted plant (which lasts longer and regrows if you harvest the tops).",
+  "price_note": "Basil is widely available and inexpensive in August. A potted plant from a grocery store costs about the same as a bunch and will yield multiple harvests.",
+  "pairs_with_month": ["bell-peppers", "cherry-tomatoes", "eggplant", "zucchini", "figs"],
+  "pairs_with_staples": ["pasta", "chicken thighs", "eggs", "white beans"],
+  "flavor_paths": [
+    { "name": "Raw, torn", "description": "Over pasta, rice bowls, or salads. The fragrance is the point." },
+    { "name": "Into the drink", "description": "A few leaves slapped between the palms and dropped into the cooler. Different from mint, warmer." },
+    { "name": "Blended", "description": "A rough paste with olive oil and garlic. Not quite pesto — no pine nuts or cheese necessary." }
+  ],
+  "weekday_uses": [
+    "Torn over pasta at the end, after the heat is off",
+    "Dropped into the North Park Cooler",
+    "Scattered over a rice bowl with peppers and cherry tomatoes"
+  ],
+  "weekend_use": "A rough basil oil: blend a handful of leaves with olive oil, a garlic clove, and salt. Spoon over burrata, chicken, or fish.",
+  "storage": "Keep at room temperature in a glass of water like flowers — never in the refrigerator. Cut the stems every few days. Lasts up to a week this way.",
+  "one_thing_to_learn": "Basil blackens from the cold, not from age. Refrigerator storage turns it black overnight. Keep it on the counter in water, and it will outlast basil stored in the fridge by several days. The fragrance concentrates if you let it sit somewhere warm.",
+  "market_question": "Is this Italian basil or Thai basil? Do you have lemon basil?"
+}

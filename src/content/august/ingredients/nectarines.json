@@ -1,0 +1,31 @@
+{
+  "slug": "nectarines",
+  "name": "Nectarines",
+  "month": "August",
+  "tile_uses": "Yogurt, breakfast, snacks, the plate",
+  "why_now": "Nectarines are peaches without the fuzz, and in August they often hit their stride when peach season begins to wind down. The flavor is similar — sweet, aromatic, deeply summery — but the skin is thinner and doesn't need peeling. This is the last good stone fruit window before fall.",
+  "how_to_choose": [
+    "Fragrant at the stem end — this is the most reliable test",
+    "Gives slightly when gently pressed near the top",
+    "Deep color, though variety affects this (yellow and white varieties both have peak moments)",
+    "Avoid hard nectarines — they were picked underripe and won't improve meaningfully"
+  ],
+  "buy_this_much": "4–5 nectarines for the week. They don't all need to be eaten at once.",
+  "price_note": "Stone fruit is still affordable in August, though supply begins to thin by late in the month. Buy them when you see good ones — the window doesn't come back.",
+  "pairs_with_month": ["basil", "figs"],
+  "pairs_with_staples": ["Greek yogurt", "chicken thighs", "prosciutto"],
+  "flavor_paths": [
+    { "name": "Nearly nothing", "description": "Sliced and eaten as they are. A pinch of flaky salt if you want to push it." },
+    { "name": "With yogurt", "description": "Sliced on Greek yogurt in the morning, maybe a little honey. That's it." },
+    { "name": "On the plate", "description": "Alongside burrata when figs aren't enough or aren't available." }
+  ],
+  "weekday_uses": [
+    "Sliced on Greek yogurt in the morning",
+    "Eaten as a snack, ripe",
+    "Sliced alongside the weekend cheese plate"
+  ],
+  "weekend_use": "Alongside the fig and burrata plate — or in place of figs if they weren't available. The combination of ripe stone fruit, good cheese, and cured meat holds up in either direction.",
+  "storage": "Counter until ripe. Eat within a day or two of peak ripeness. Do not refrigerate until fully ripe, and use quickly after.",
+  "one_thing_to_learn": "Nectarines and peaches are genetically almost identical — the difference is a single gene that determines whether the skin is fuzzy or smooth. Their flavor profiles and peak windows are nearly the same. If you're buying from a farmers market, ask which variety the grower would eat today. They usually know exactly which ones are ready.",
+  "market_question": "Which variety is ripest right now?"
+}

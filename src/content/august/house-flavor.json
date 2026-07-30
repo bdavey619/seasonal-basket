@@ -1,0 +1,59 @@
+{
+  "slug": "charred-pepper-sauce",
+  "name": "Charred Pepper Sauce",
+  "month": "august",
+  "intro": "One jar. A week of flavor.",
+  "card_uses": [
+    "Spoon it over a rice bowl.",
+    "Drizzle alongside chicken or fish.",
+    "Stir into scrambled eggs.",
+    "Thin it for pasta."
+  ],
+  "ingredients": [
+    "3–4 red bell peppers",
+    "1–2 jalapeños",
+    "1 garlic clove, unpeeled",
+    "2 tbsp olive oil",
+    "1 tbsp sherry vinegar",
+    "Flaky salt"
+  ],
+  "method": "Set a dry cast-iron pan over high heat until smoking. Add the peppers and jalapeños whole, and the garlic clove. Leave them alone — dark spots are the point. Turn occasionally until charred on most sides, about 12–15 minutes. Transfer peppers and jalapeños to a bowl, cover tight, and leave to steam for 15 minutes. Peel off skins and discard seeds. Squeeze the garlic from its skin. Blend everything with olive oil, sherry vinegar, and salt — leave a little texture rather than making it perfectly smooth. Taste and adjust.",
+  "storage": {
+    "note": "Keeps in the refrigerator for up to a week. The flavor deepens overnight.",
+    "flagged_for_review": false
+  },
+  "uses": [
+    {
+      "meal": "rice-bowl",
+      "label": "Rice bowl",
+      "action": "Spoon it.",
+      "context": "A generous spoonful on top. Let it pool slightly rather than mixing it in."
+    },
+    {
+      "meal": null,
+      "label": "Chicken thighs",
+      "action": "Serve alongside.",
+      "context": "Spoon it next to the chicken rather than over it. Let the diner decide how much."
+    },
+    {
+      "meal": null,
+      "label": "Eggs",
+      "action": "Stir it in.",
+      "context": "Add a spoonful to scrambled eggs in the last 30 seconds. Or spoon it over fried eggs."
+    },
+    {
+      "meal": "pasta",
+      "label": "Pasta",
+      "action": "Thin it.",
+      "context": "Stir in a little olive oil or pasta water. Toss with warm pasta off the heat."
+    },
+    {
+      "meal": null,
+      "label": "White beans",
+      "action": "Let it sit.",
+      "context": "Spoon over beans and give them a few minutes. They absorb it slowly."
+    }
+  ],
+  "linked_ingredients": ["bell-peppers", "jalapenos"],
+  "linked_field_notes": ["charring-a-pepper", "eggplant-myth"]
+}

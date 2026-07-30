@@ -1,0 +1,31 @@
+{
+  "slug": "eggplant",
+  "name": "Eggplant",
+  "month": "August",
+  "tile_uses": "House flavor base, rice bowls, pasta, sides",
+  "why_now": "Eggplant peaks in late summer — August is when Southern California farms produce them in abundance. The flesh is less bitter than in off-season months, and the skin is thinner. What arrives now roasts into something deeply savory with minimal effort.",
+  "how_to_choose": [
+    "Firm with no soft spots — a soft eggplant will be bitter and seedy",
+    "Glossy, taut skin rather than dull or wrinkled",
+    "Lighter weight for its size often means fewer seeds",
+    "The cap and stem should still look fresh, not dry"
+  ],
+  "buy_this_much": "1 large eggplant or 2 small ones for the week.",
+  "price_note": "Eggplant is inexpensive in August when supply peaks. Italian eggplant (the long, narrow variety) and Japanese eggplant roast particularly well.",
+  "pairs_with_month": ["bell-peppers", "cherry-tomatoes", "basil", "jalapenos"],
+  "pairs_with_staples": ["chicken thighs", "white beans", "eggs", "Greek yogurt"],
+  "flavor_paths": [
+    { "name": "Roasted high and hot", "description": "Cut into chunks, high heat, left alone. It collapses into something sweet and savory." },
+    { "name": "Charred whole", "description": "Over an open flame or under a broiler until the skin is completely black. Scoop out the smoky flesh." },
+    { "name": "Pan-fried", "description": "Sliced thick, olive oil, high heat. Leave it alone until it releases from the pan." }
+  ],
+  "weekday_uses": [
+    "Roasted in chunks and added to a rice bowl",
+    "Pan-fried thick slices alongside chicken or fish",
+    "Folded into pasta with cherry tomatoes and basil"
+  ],
+  "weekend_use": "Charred whole over flame or under the broiler, flesh scooped out and mixed with olive oil, garlic, and lemon. Serve with bread.",
+  "storage": "Counter for a day or two, then refrigerator. Don't buy it more than three or four days before you plan to use it.",
+  "one_thing_to_learn": "You don't need to salt modern eggplant. The salting-and-draining method was developed for older, bitter varieties. Current cultivars have had the bitterness bred out. What actually matters is heat — a crowded pan steams and makes it soggy. Give the pieces room, use a hot pan, and leave them alone until they release and color.",
+  "market_question": "What variety is this? Italian or Japanese?"
+}

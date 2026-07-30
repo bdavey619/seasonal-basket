@@ -1,0 +1,31 @@
+{
+  "slug": "zucchini",
+  "name": "Zucchini",
+  "month": "August",
+  "tile_uses": "Rice bowls, pasta, chicken, sides",
+  "why_now": "Zucchini is abundantly available through August and at its best when small to medium sized — the larger ones that appear later in the season can be watery. Right now they're quick to cook, mild enough to take on other flavors, and cheap enough to use without planning precisely.",
+  "how_to_choose": [
+    "Small to medium — 6 to 8 inches is ideal; larger ones are often seedy and watery",
+    "Firm with no soft spots",
+    "Glossy skin, no bruising",
+    "The ends should look fresh, not dry or shriveled"
+  ],
+  "buy_this_much": "3–4 medium zucchini. They cook down significantly, so buy more than you think you need.",
+  "price_note": "Zucchini is very inexpensive in August — often one of the lowest-cost items in the basket. Any grocery store will have them.",
+  "pairs_with_month": ["bell-peppers", "cherry-tomatoes", "basil", "eggplant", "jalapenos"],
+  "pairs_with_staples": ["chicken thighs", "pasta", "eggs", "white beans"],
+  "flavor_paths": [
+    { "name": "Sautéed high and fast", "description": "In a hot pan with olive oil until golden on the edges. Basil at the end." },
+    { "name": "Roasted", "description": "Cut into half-moons, high heat, until the edges caramelize. Goes into rice bowls or pasta." },
+    { "name": "Shaved raw", "description": "With a peeler or mandoline into thin ribbons. Dressed with olive oil and lemon. A different vegetable entirely." }
+  ],
+  "weekday_uses": [
+    "Sautéed and added to a rice bowl with peppers and basil",
+    "Roasted alongside chicken",
+    "Folded into pasta with cherry tomatoes"
+  ],
+  "weekend_use": "Shaved raw into thin ribbons, dressed simply with olive oil, lemon, and flaky salt. Serve alongside grilled chicken or fish.",
+  "storage": "Refrigerator crisper, up to a week. Don't wash before storing.",
+  "one_thing_to_learn": "Zucchini releases a lot of water. To avoid a soggy pan, don't crowd them — cook in a single layer with space between pieces, and don't stir too often. High heat and patience are the technique. Once the water has cooked off, what's left will actually brown.",
+  "market_question": "Do you have any smaller zucchini? Or yellow squash?"
+}

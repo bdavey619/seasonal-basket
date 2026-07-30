@@ -1,0 +1,16 @@
+/* Seasonal — august.css
+   August palette variables. These are the only values that change between editions.
+   All layout, typography, and component styles live in base.css. */
+
+:root {
+  --bg:       #ede8df;
+  --paper:    #f9f7f2;
+  --primary:  #6b3f52;   /* fig plum */
+  --secondary:#3d5242;   /* deep sage */
+  --accent:   #c07c42;   /* amber, fig honey */
+  --ink:      #1e2520;
+  --muted:    #666f68;
+  --line:     #cdc7bc;
+  --cream:    #e5dcd0;
+  --dark:     #1c2a20;
+}

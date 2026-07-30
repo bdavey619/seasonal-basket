@@ -1,0 +1,32 @@
+{
+  "slug": "figs",
+  "name": "Figs",
+  "month": "August",
+  "tile_uses": "Yogurt, cheese plates, weekend meal",
+  "why_now": "Mission figs peak in late July through August. The window is short — often just two or three weeks of genuinely perfect fruit. What you find now was picked ripe and won't be available like this again until next year.",
+  "how_to_choose": [
+    "Deep purple to almost black — that's ripe, not overripe",
+    "Slightly soft when gently pressed, especially near the base",
+    "Sometimes splitting at the base — that's a good sign",
+    "A small bead of sweetness near the stem means it's ready",
+    "Avoid pale green or tan figs; they haven't ripened"
+  ],
+  "buy_this_much": "1 pint for the week. Plan to eat most of them within two days of buying.",
+  "price_note": "Figs are briefly abundant in August and reasonably priced at farmers markets. Grocery store figs are available but often picked underripe for transport — the farmers market version is worth the detour this month.",
+  "pairs_with_month": ["basil", "nectarines"],
+  "pairs_with_staples": ["Greek yogurt", "burrata", "prosciutto", "sourdough"],
+  "flavor_paths": [
+    { "name": "Nearly nothing", "description": "Halved and eaten as they are. Salt if you want it." },
+    { "name": "Sweet", "description": "Sliced on yogurt with a little honey. That's breakfast." },
+    { "name": "Savory", "description": "With prosciutto, burrata, and arugula. The weekend plate." }
+  ],
+  "weekday_uses": [
+    "Halved on Greek yogurt in the morning",
+    "Eaten as a snack, ripe, over the sink",
+    "Sliced alongside cheese and crackers"
+  ],
+  "weekend_use": "The weekend plate: halved figs, torn burrata, prosciutto, arugula, olive oil, and flaky salt. Eat with bread.",
+  "storage": "Counter for a day, two at most. Refrigerate only if necessary and use immediately after. Do not buy them expecting them to keep.",
+  "one_thing_to_learn": "A fig ripens from the outside in, not the inside out. The color tells you something. Black-purple with a soft give near the base is ready. A hard, pale fig won't ripen meaningfully on the counter — it will soften but not sweeten the way a tree-ripened one does.",
+  "market_question": "Which variety is this? Are these mission figs?"
+}
