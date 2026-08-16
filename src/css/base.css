@@ -66,11 +66,19 @@ a { color: inherit; }
 }
 
 /* ─── Masthead ───────────────────────────────────────── */
+/* Sticky, so the section menu stays reachable without scrolling back up —
+   that was the one thing the old always-visible jump bar did well. */
 .masthead {
+  position: sticky;
+  top: 0;
+  z-index: 30;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: var(--bg);
   border-bottom: 1px solid var(--line);
-  padding: 10px 2px 16px;
+  padding: 12px 2px;
 }
 .brand {
   font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
@@ -134,44 +142,75 @@ a { color: inherit; }
   align-items: start;
 }
 
-/* ─── Running header ─────────────────────────────────── */
-/* Sits in flow below the hero, then pins once scrolled past. No JS. */
-.jump-bar {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  margin: 26px 0 4px;
-  background: var(--bg);
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+/* ─── Section menu ───────────────────────────────────── */
+/* Native <details> disclosure in the masthead. Collapsed by default so the
+   eight section names aren't permanently on screen. */
+.sections {
+  position: relative;
 }
-.jump-bar-inner {
-  display: flex;
-  gap: 22px;
-  overflow-x: auto;
-  scrollbar-width: none;
-  padding: 10px 0;
-  /* Fades the last link where the row scrolls; invisible when it all fits,
-     since the fade resolves to the page background either way. */
-  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 34px), transparent);
-          mask-image: linear-gradient(to right, #000 calc(100% - 34px), transparent);
-}
-.jump-bar-inner::-webkit-scrollbar { display: none; }
-.jump-bar a {
+.sections > summary {
+  list-style: none;
+  cursor: pointer;
   font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
   font-size: .74rem;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: .14em;
   font-weight: 700;
   color: var(--muted);
-  text-decoration: none;
-  white-space: nowrap;
+  padding: 4px 2px;
   transition: color .15s;
 }
-.jump-bar a:hover { color: var(--primary); }
+.sections > summary::-webkit-details-marker { display: none; }
+.sections > summary::after {
+  content: "";
+  display: inline-block;
+  width: .42em;
+  height: .42em;
+  margin-left: .6em;
+  vertical-align: .12em;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform .18s;
+}
+.sections[open] > summary::after { transform: rotate(-135deg); }
+.sections > summary:hover,
+.sections[open] > summary { color: var(--ink); }
+.sections > summary:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
 
-/* Keep a jumped-to heading clear of the pinned bar. */
-.grid > [id] { scroll-margin-top: 62px; }
+.sections-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 10px);
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  min-width: 190px;
+  padding: 6px 0;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  box-shadow: 0 6px 22px rgba(31, 42, 36, .1);
+}
+.sections-menu a {
+  padding: 9px 18px;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .88rem;
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background .12s, color .12s;
+}
+.sections-menu a:hover {
+  background: var(--bg);
+  color: var(--primary);
+}
+
+/* Keep a jumped-to heading clear of the pinned masthead. */
+.grid > [id] { scroll-margin-top: 74px; }
 
 /* ─── Sections ───────────────────────────────────────── */
 /* The default treatment: a rule, a label, and content. Reserved cards are the
@@ -932,7 +971,7 @@ footer {
   .month-card-item { display: inline; }
   .month-card-sep  { display: inline; opacity: .5; }
 
-  .grid > [id] { scroll-margin-top: 52px; }
+  .grid > [id] { scroll-margin-top: 66px; }
   .col-8, .col-7, .col-5, .col-4, .col-12 { grid-column: 1 / -1; }
 
   /* One column of rows once two no longer fit. */

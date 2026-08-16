@@ -805,7 +805,7 @@ def render_meal_season_adds(meal):
 # ── HTML shell ─────────────────────────────────────────────────────────────────
 
 def render_shell(title, description, canonical_url, css_depth, body,
-                 edition_context, page_class=""):
+                 edition_context, page_class="", section_menu=""):
     """
     edition_context is required. Every page belongs to exactly one edition, and
     the masthead, palette stylesheet, and colophon are all derived from it — a
@@ -846,11 +846,11 @@ def render_shell(title, description, canonical_url, css_depth, body,
 <a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
 <div class="page{extra_class}">
   <header class="masthead">
-    <!-- No primary nav. Its three links duplicated the edition page's running
-         header under near-identical labels but pointed at pages rather than
-         sections ("The Basket" → the ingredient index, "Basket" → #basket).
-         The wordmark goes home; every sub-page carries a back-link up. -->
+    <!-- Wordmark plus, on the edition page only, a collapsed section menu.
+         There is no page-level nav: its links duplicated these under
+         near-identical labels while pointing at pages rather than sections. -->
     <a href="{home_href}" class="brand">Seasonal</a>
+    {section_menu}
   </header>
   <main id="main">
 {body}
@@ -860,6 +860,16 @@ def render_shell(title, description, canonical_url, css_depth, body,
     <div>{e(location)} · {e(month)} · Edition {edition_num_str}</div>
   </footer>
 </div>
+<!-- Progressive enhancement only: the section menu is a native <details> and
+     works without this. It closes the menu after you pick a section, which
+     CSS alone cannot do. -->
+<script>
+  document.querySelectorAll('.sections-menu a').forEach(function (a) {{
+    a.addEventListener('click', function () {{
+      a.closest('details').open = false;
+    }});
+  }});
+</script>
 </body>
 </html>"""
 
@@ -947,17 +957,21 @@ def build_publication_home(edition, depth, canonical_url, edition_context, past_
 
 # ── Edition page ───────────────────────────────────────────────────────────────
 
-def render_jump_bar(entries):
+def render_section_menu(entries):
     """
-    Slim running header. Sits in flow under the contents block and pins to the
-    top once scrolled past — CSS `position: sticky`, no JavaScript.
+    Section jump menu, collapsed into the masthead beside the wordmark.
+    A native <details> disclosure: keyboard accessible and fully working with
+    JavaScript off. The inline script at the end of the shell only adds the
+    nicety of closing it after you pick a section.
     """
+    if not entries:
+        return ""
     links = "".join(
         f'<a href="#{e(anchor)}">{e(short)}</a>' for anchor, short in entries)
-    return f"""
-    <nav class="jump-bar" aria-label="Jump to section">
-      <div class="jump-bar-inner">{links}</div>
-    </nav>"""
+    return f"""<details class="sections">
+      <summary aria-label="Jump to a section">Sections</summary>
+      <nav class="sections-menu">{links}</nav>
+    </details>"""
 
 
 def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_flavor=None,
@@ -1015,7 +1029,6 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
       {month_card_html}
     </section>
 
-{render_jump_bar(jump_entries)}
 
     <div class="grid">
       <article class="section col-12" id="basket" aria-labelledby="basket-heading">
@@ -1074,6 +1087,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
         css_depth=depth,
         body=body,
         edition_context=edition_context,
+        section_menu=render_section_menu(jump_entries),
     )
 
 # ── Ingredient index page ──────────────────────────────────────────────────────

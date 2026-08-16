@@ -20,11 +20,11 @@
 <a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
 <div class="page page--meal">
   <header class="masthead">
-    <!-- No primary nav. Its three links duplicated the edition page's running
-         header under near-identical labels but pointed at pages rather than
-         sections ("The Basket" → the ingredient index, "Basket" → #basket).
-         The wordmark goes home; every sub-page carries a back-link up. -->
+    <!-- Wordmark plus, on the edition page only, a collapsed section menu.
+         There is no page-level nav: its links duplicated these under
+         near-identical labels while pointing at pages rather than sections. -->
     <a href="../../../" class="brand">Seasonal</a>
+    
   </header>
   <main id="main">
 
@@ -114,5 +114,15 @@
     <div>San Diego · July · Edition 001</div>
   </footer>
 </div>
+<!-- Progressive enhancement only: the section menu is a native <details> and
+     works without this. It closes the menu after you pick a section, which
+     CSS alone cannot do. -->
+<script>
+  document.querySelectorAll('.sections-menu a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      a.closest('details').open = false;
+    });
+  });
+</script>
 </body>
 </html>
