@@ -160,20 +160,6 @@ def display_name(slug, ingredients_data=None):
         return ingredients_data[slug].get("name", slug)
     return slug.replace("-", " ").capitalize()
 
-def render_basket_tiles(ingredients, ing_index_path, depth, ingredients_data=None):
-    tiles = []
-    for slug in ingredients:
-        ing  = (ingredients_data or {}).get(slug, {})
-        name = display_name(slug, ingredients_data)
-        note = ing.get("tile_uses", "")
-        href = rel(depth, f"{ing_index_path.rstrip('/')}/{slug}/")
-        tiles.append(f"""
-    <a class="ingredient-tile" href="{href}">
-      <strong>{e(name)}</strong>
-      <span>{e(note)}</span>
-    </a>""")
-    return "\n".join(tiles)
-
 # ── Field notes ────────────────────────────────────────────────────────────────
 
 def render_field_notes(notes):
@@ -237,18 +223,19 @@ def render_week(week):
 
 # ── Shopping card ──────────────────────────────────────────────────────────────
 
-def render_bring_home(bring_home, ingredients_data=None, featured=None):
+def render_bring_home(bring_home, ingredients_data, featured, depth, ing_index_path):
     """
-    The shopping card. Each row also carries the ingredient's `tile_uses`, hidden
-    on desktop and revealed below 860px — where the basket tile grid is hidden and
-    this list has to do both jobs at once (what to buy, and what it's for).
-    Rows join to ingredient content by `slug`.
+    The basket: one row per ingredient carrying what it is, how much to buy, why,
+    and what it's for — and linking to that ingredient's page. This is the only
+    representation of the basket on the edition page; browsing lives on the
+    ingredient index. Rows join to ingredient content by `slug`.
     """
     if not bring_home:
         return ""
 
     ingredients_data = ingredients_data or {}
     featured = set(featured or [])
+    base = ing_index_path.rstrip("/")
 
     row_html = []
     for item in bring_home.get("items", []):
@@ -258,21 +245,22 @@ def render_bring_home(bring_home, ingredients_data=None, featured=None):
                  f"which is not in featured_ingredients")
         uses = ingredients_data.get(slug, {}).get("tile_uses", "") if slug else ""
         uses_html = (f'<span class="bring-home-uses">{e(uses)}</span>' if uses else "")
-        row_html.append(f"""<div class="bring-home-row">
+        inner = (f"""
           <span class="bring-home-name">{e(item['name'])}</span>
           <span class="bring-home-qty">{e(item['qty'])}</span>
           <span class="bring-home-note">{e(item['note'])}</span>
-          {uses_html}
-        </div>""")
+          {uses_html}""")
+        if slug:
+            href = rel(depth, f"{base}/{slug}/")
+            row_html.append(f'<a class="bring-home-row" href="{href}">{inner}\n        </a>')
+        else:
+            # An item with no slug has no ingredient page to link to.
+            row_html.append(f'<div class="bring-home-row">{inner}\n        </div>')
     rows = "".join(row_html)
     cost = e(bring_home.get("cost_note", ""))
     return f"""
-<div class="bring-home-heading">
-  <div class="section-label">This week's basket</div>
-  <h2>{e(bring_home['heading'])}</h2>
-</div>
 <div class="bring-home-list">{rows}</div>
-{f'<p style="font-size:.8rem;margin-top:14px;opacity:.7">{cost}</p>' if cost else ""}"""
+{f'<p class="bring-home-cost">{cost}</p>' if cost else ""}"""
 
 # ── Confidence score ───────────────────────────────────────────────────────────
 
@@ -915,10 +903,6 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
 
     slug = edition["month"].lower()
     ing_index_path = edition_context["ingredient_index_path"]
-    basket_href = rel(depth, ing_index_path)
-
-    basket_tiles = render_basket_tiles(edition["featured_ingredients"],
-                                       ing_index_path.rstrip("/"), depth, ingredients_data)
 
     thesis = edition.get("thesis", "")
     thesis_html = f'<p class="thesis">{e(thesis)}</p>' if thesis else ""
@@ -967,18 +951,14 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
 {render_jump_bar(jump_entries)}
 
     <div class="grid">
-      <article class="section col-8" id="basket" aria-labelledby="basket-heading">
+      <article class="section col-12" id="basket" aria-labelledby="basket-heading">
         <div class="section-label">The {e(month)} basket</div>
-        <h2 id="basket-heading">One trip. A full week of meals.</h2>
-        <div class="basket-grid">
-          {basket_tiles}
+        <h2 id="basket-heading">{e(edition['bring_home']['heading'])}</h2>
+        <div class="card card--dark">
+          {render_bring_home(edition['bring_home'], ingredients_data,
+                             edition.get('featured_ingredients'), depth, ing_index_path)}
         </div>
       </article>
-
-      <aside class="card card--dark col-4" aria-label="This week's basket">
-        {render_bring_home(edition.get('bring_home'), ingredients_data,
-                           edition.get('featured_ingredients'))}
-      </aside>
 
       <article class="section col-12" id="meals" aria-labelledby="transforms-heading">
         <div class="section-label">The meals</div>

@@ -252,37 +252,6 @@ a { color: inherit; }
 .col-4  { grid-column: span 4; }
 .col-12 { grid-column: 1 / -1; }
 
-/* ─── Basket ingredient tiles ────────────────────────── */
-.basket-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-  margin-top: 18px;
-}
-.ingredient-tile {
-  border: 1px solid var(--line);
-  border-radius: 3px;
-  padding: 16px 14px;
-  text-decoration: none;
-  background: #fffaf2;
-  display: block;
-  transition: border-color .15s;
-}
-.ingredient-tile:hover { border-color: var(--primary); }
-.ingredient-tile strong {
-  display: block;
-  margin-bottom: 5px;
-  font-family: Georgia, serif;
-  font-weight: 500;
-  font-size: .97rem;
-}
-.ingredient-tile span {
-  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
-  color: var(--muted);
-  font-size: .84rem;
-  line-height: 1.4;
-}
-
 /* ─── Confidence score ───────────────────────────────── */
 .score-number {
   font-size: 5rem;
@@ -316,45 +285,60 @@ a { color: inherit; }
   margin: 6px 0 10px;
 }
 
-/* ─── Shopping card ──────────────────────────────────── */
-.bring-home-heading h2 {
-  font-size: 1.15rem;
-  margin-bottom: 16px;
-}
+/* ─── The basket ─────────────────────────────────────── */
+/* One row per ingredient: what it is, how much, why, what it's for — and a
+   link to its page. The only representation of the basket on the edition
+   page; browsing the full set lives on the ingredient index. */
 .bring-home-list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 34px;
 }
 .bring-home-row {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 4px 10px;
+  gap: 3px 10px;
   font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
   font-size: .88rem;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(255,255,255,.12);
+  padding: 11px 0;
+  border-bottom: 1px solid rgba(255,255,255,.14);
+  text-decoration: none;
+  color: inherit;
 }
+.bring-home-row:last-child,
+.bring-home-row:nth-last-child(2):nth-child(odd) { border-bottom: none; }
 .bring-home-name {
   font-weight: 600;
+  justify-self: start;
 }
+/* Same affordance the meal transformations use — an underlined name is how a
+   link reads elsewhere on the page, and on a dark ground it needs to be
+   visible at rest, not only on hover. */
+a.bring-home-row .bring-home-name {
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+}
+a.bring-home-row:hover .bring-home-name { color: var(--accent); }
 .bring-home-qty {
   text-align: right;
   opacity: .75;
   white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }
 .bring-home-note {
   grid-column: 1 / -1;
   font-size: .78rem;
   opacity: .65;
 }
-/* Revealed only below 860px, where the basket tile grid is hidden and this
-   list carries both jobs. See the merge rule in the responsive block. */
 .bring-home-uses {
-  display: none;
   grid-column: 1 / -1;
   font-size: .78rem;
   opacity: .8;
+}
+.bring-home-cost {
+  font-size: .8rem;
+  margin-top: 16px;
+  opacity: .7;
 }
 
 /* ─── Field notes ────────────────────────────────────── */
@@ -918,9 +902,6 @@ footer {
 /* ─── Responsive ─────────────────────────────────────── */
 @media (max-width: 1000px) {
   .ingredient-index-grid { grid-template-columns: repeat(2, 1fr); }
-  /* Four tiles inside a narrowed col-8 wrap to three or four lines each.
-     Two columns keeps the tiles legible until the merge takes over at 860px. */
-  .basket-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 860px) {
   .hero { grid-template-columns: 1fr; padding: 32px 0 16px; gap: 18px; }
@@ -932,22 +913,11 @@ footer {
   .grid > [id] { scroll-margin-top: 52px; }
   .col-8, .col-7, .col-5, .col-4, .col-12 { grid-column: 1 / -1; }
 
-  /* ── The basket merge ──────────────────────────────
-     Stacked into one column, the tile grid and the shopping list became the
-     same eight ingredients listed twice in a row — over two phone screens of
-     repetition. Below this breakpoint the tiles are dropped and each shopping
-     row grows a uses line, so one list answers both what to buy and what for.
-     The side-by-side pairing is kept above 860px, where it reads as intended. */
-  #basket .basket-grid { display: none; }
-  #basket { padding-bottom: 0; }
-  .bring-home-uses { display: block; }
-  .bring-home-row { gap: 3px 10px; padding-bottom: 11px; }
-  /* The basket section heading above now introduces this list, so the card's
-     own heading would be the second of two stacked headings saying one thing. */
-  .bring-home-heading { display: none; }
-  .card--dark { margin-top: 4px; }
-
-  .basket-grid { grid-template-columns: repeat(2, 1fr); }
+  /* One column of rows once two no longer fit. */
+  .bring-home-list { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .bring-home-row:nth-last-child(2):nth-child(odd) {
+    border-bottom: 1px solid rgba(255,255,255,.14);
+  }
   .week-buckets { grid-template-columns: 1fr; gap: 24px; }
   .two-col { grid-template-columns: 1fr; }
   .ingredient-body { grid-template-columns: 1fr; }
@@ -973,7 +943,6 @@ footer {
 }
 @media (max-width: 400px) {
   .ingredient-index-grid { grid-template-columns: 1fr; }
-  .basket-grid { grid-template-columns: 1fr; }
 }
 
 /* ─── Publication homepage ───────────────────────────────── */
