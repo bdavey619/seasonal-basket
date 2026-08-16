@@ -822,9 +822,6 @@ def render_shell(title, description, canonical_url, css_depth, body,
     base_css     = rel(css_depth, "css/base.css")
     month_css    = rel(css_depth, f"css/{edition_slug}.css")
     home_href    = rel(css_depth, "")
-    edition_href = rel(css_depth, f"{edition_slug}/")
-    weekend_href = rel(css_depth, f"{edition_slug}/weekend/")
-    basket_href  = rel(css_depth, ing_index)
     edition_num_str = str(edition_num).zfill(3)
 
     return f"""<!DOCTYPE html>
@@ -849,12 +846,11 @@ def render_shell(title, description, canonical_url, css_depth, body,
 <a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
 <div class="page{extra_class}">
   <header class="masthead">
+    <!-- No primary nav. Its three links duplicated the edition page's running
+         header under near-identical labels but pointed at pages rather than
+         sections ("The Basket" → the ingredient index, "Basket" → #basket).
+         The wordmark goes home; every sub-page carries a back-link up. -->
     <a href="{home_href}" class="brand">Seasonal</a>
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="{edition_href}">{e(month)}</a>
-      <a href="{basket_href}">The Basket</a>
-      <a href="{weekend_href}">The Weekend</a>
-    </nav>
   </header>
   <main id="main">
 {body}
@@ -1004,6 +1000,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
 
     drink        = edition["drink"]
     weekend      = edition["weekend_meal"]
+    basket_href      = rel(depth, ing_index_path)
     field_notes_href = rel(depth, f"{slug}/field-notes/")
     drink_href   = rel(depth, f"{slug}/{drink['slug']}/")
     weekend_href = rel(depth, f"{slug}/weekend/")
@@ -1028,6 +1025,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
           {render_bring_home(edition['bring_home'], ingredients_data,
                              edition.get('featured_ingredients'), depth, ing_index_path)}
         </div>
+        <a href="{basket_href}" class="house-flavor-cta">→ All {len(edition['featured_ingredients'])} ingredients, in full</a>
       </article>
 
       <article class="section col-12" id="meals" aria-labelledby="transforms-heading">

@@ -69,11 +69,8 @@ a { color: inherit; }
 .masthead {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 18px;
   border-bottom: 1px solid var(--line);
-  padding: 10px 2px 20px;
-  flex-wrap: wrap;
+  padding: 10px 2px 16px;
 }
 .brand {
   font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
@@ -84,16 +81,6 @@ a { color: inherit; }
   text-decoration: none;
   color: var(--ink);
 }
-.nav {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
-  font-size: .88rem;
-  color: var(--muted);
-}
-.nav a { text-decoration: none; }
-.nav a:hover { color: var(--ink); }
 
 /* ─── Hero ───────────────────────────────────────────── */
 .hero {
@@ -937,8 +924,10 @@ footer {
   .ingredient-index-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 860px) {
-  .hero { grid-template-columns: 1fr; padding: 32px 0 16px; gap: 18px; }
-  .month-card { min-height: 0; padding: 18px 20px; }
+  .hero { grid-template-columns: 1fr; padding: 26px 0 16px; gap: 18px; }
+  /* Stacked, the month name and opening note push the concrete answer —
+     what the month actually tastes like — below the fold. Lead with it. */
+  .month-card { order: -1; min-height: 0; padding: 18px 20px; }
   .month-card .big { font-size: 1.85rem; line-height: 1.12; margin: 8px 0 5px; }
   .month-card-item { display: inline; }
   .month-card-sep  { display: inline; opacity: .5; }
