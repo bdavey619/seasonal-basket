@@ -964,9 +964,9 @@ footer {
 }
 @media (max-width: 860px) {
   .hero { grid-template-columns: 1fr; padding: 26px 0 16px; gap: 18px; }
-  /* Stacked, the month name and opening note push the concrete answer —
-     what the month actually tastes like — below the fold. Lead with it. */
-  .month-card { order: -1; min-height: 0; padding: 18px 20px; }
+  /* Follows the month name and opening note, as on desktop — the card reads
+     as the answer to the note rather than an assertion ahead of it. */
+  .month-card { min-height: 0; padding: 18px 20px; }
   .month-card .big { font-size: 1.85rem; line-height: 1.12; margin: 8px 0 5px; }
   .month-card-item { display: inline; }
   .month-card-sep  { display: inline; opacity: .5; }
