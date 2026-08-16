@@ -7,6 +7,7 @@ static HTML into docs/. Run with: python3 src/build.py
 No third-party dependencies. Requires Python 3.8+.
 """
 
+import hashlib
 import html
 import json
 import os
@@ -102,17 +103,23 @@ def rel(depth, target):
 
 # ── CSS builder ────────────────────────────────────────────────────────────────
 
+# Content hash per stylesheet, used to bust the browser cache on deploy.
+# GitHub Pages serves css/*.css with max-age=600 and the filenames never
+# change, so without this a CSS-only change is invisible to anyone who
+# loaded the page recently.
+CSS_VERSIONS = {}
+
 def build_css(edition_slug):
     css_dir = SITE / "css"
     css_dir.mkdir(parents=True, exist_ok=True)
     for name in ["base.css", f"{edition_slug}.css"]:
         src = CSS_SRC / name
         dst = css_dir / name
-        if src.exists():
-            shutil.copy2(src, dst)
-            print(f"  wrote css/{name}")
-        else:
+        if not src.exists():
             fail(f"Missing CSS file: {src}")
+        shutil.copy2(src, dst)
+        CSS_VERSIONS[name] = hashlib.sha256(src.read_bytes()).hexdigest()[:8]
+        print(f"  wrote css/{name} (v{CSS_VERSIONS[name]})")
 
 # ── Guide helpers ──────────────────────────────────────────────────────────────
 
@@ -819,8 +826,8 @@ def render_shell(title, description, canonical_url, css_depth, body,
 
     extra_class  = f" {page_class}" if page_class else ""
 
-    base_css     = rel(css_depth, "css/base.css")
-    month_css    = rel(css_depth, f"css/{edition_slug}.css")
+    base_css     = rel(css_depth, f"css/base.css?v={CSS_VERSIONS.get('base.css', '')}")
+    month_css    = rel(css_depth, f"css/{edition_slug}.css?v={CSS_VERSIONS.get(edition_slug + '.css', '')}")
     home_href    = rel(css_depth, "")
     edition_num_str = str(edition_num).zfill(3)
 
