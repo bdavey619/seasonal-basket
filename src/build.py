@@ -1311,20 +1311,10 @@ def main():
     print("Seasonal build")
     print("=" * 40)
 
-    # Files in docs/ that must survive the clean step.
-    PROTECTED = ["july-prototype.html"]
-
-    rescued = {}
+    # docs/ is entirely build output — nothing in it is authored by hand.
     if SITE.exists():
-        for name in PROTECTED:
-            p = SITE / name
-            if p.exists():
-                rescued[name] = p.read_bytes()
         shutil.rmtree(SITE)
     SITE.mkdir()
-
-    for name, data in rescued.items():
-        (SITE / name).write_bytes(data)
 
     # Build all editions found in src/content/
     edition_dirs = sorted(d.name for d in CONTENT.iterdir() if d.is_dir())
