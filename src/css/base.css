@@ -342,35 +342,28 @@ a.bring-home-row:hover .bring-home-name { color: var(--accent); }
 }
 
 /* ─── Field notes ────────────────────────────────────── */
-/* Separators sit on top of each note rather than between them, so any number
-   of notes tiles cleanly without last-child special cases. */
-.field-notes {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0 0;
-  margin-top: 20px;
-}
-.field-note {
-  padding: 22px 28px 22px 0;
+/* The bodies live on the Field Notes page. The edition page carries the
+   titles, so you still see what the month teaches without the section
+   growing every time a note is added. */
+.field-note-index {
+  list-style: none;
+  margin: 16px 0 18px;
+  padding: 0;
+  max-width: 620px;
   border-top: 1px solid var(--line);
 }
-.field-note:nth-child(even) {
-  padding-right: 0;
-  padding-left: 28px;
-  border-left: 1px solid var(--line);
+.field-note-index-item {
+  border-bottom: 1px solid var(--line);
 }
-.field-note-name {
-  font-size: 1.15rem;
-  margin-bottom: 10px;
+.field-note-index-item a {
+  display: block;
+  padding: 12px 0;
+  font-size: 1.05rem;
+  text-decoration: none;
   color: var(--ink);
+  transition: color .15s;
 }
-.field-note-body {
-  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
-  font-size: .9rem;
-  line-height: 1.6;
-  color: var(--muted);
-  margin: 0;
-}
+.field-note-index-item a:hover { color: var(--primary); }
 
 /* ─── Meal transformations ───────────────────────────── */
 .transformations {
@@ -973,13 +966,6 @@ footer {
   .meal-way { grid-template-columns: 1fr; gap: 1px; padding: 7px 0; }
   .meal-way-when { text-align: left; }
   .meal-way-more { margin-left: 16px; }
-  .field-notes { grid-template-columns: 1fr; }
-  .field-note,
-  .field-note:nth-child(even) {
-    padding: 20px 0;
-    border-left: none;
-    border-top: 1px solid var(--line);
-  }
   .section { padding-top: 28px; }
   .meal-body { grid-template-columns: 1fr; }
   .meal-index-grid { grid-template-columns: 1fr; }

@@ -160,18 +160,6 @@ def display_name(slug, ingredients_data=None):
         return ingredients_data[slug].get("name", slug)
     return slug.replace("-", " ").capitalize()
 
-# ── Field notes ────────────────────────────────────────────────────────────────
-
-def render_field_notes(notes):
-    items = []
-    for note in notes:
-        items.append(f"""
-    <div class="field-note">
-      <h3 class="field-note-name">{e(note['name'])}</h3>
-      <p class="field-note-body">{e(note['body'])}</p>
-    </div>""")
-    return "\n".join(items)
-
 # ── Meal transformations ───────────────────────────────────────────────────────
 
 def render_transformations(transformations, meal_hrefs=None, meals_by_name=None):
@@ -501,17 +489,10 @@ def build_house_flavor_page(flavor, edition, depth, canonical_url, edition_conte
     ingredients_html = "".join(f"<li>{e(i)}</li>" for i in flavor["ingredients"])
     uses_html = render_house_flavor_uses(flavor["uses"], depth, edition_slug=month.lower())
 
-    # Linked field notes (titles only)
-    fn_items = []
-    for fn_slug in flavor.get("linked_field_notes", []):
-        note = notes_by_slug.get(fn_slug)
-        if note:
-            fn_items.append(f'<li class="meal-field-note-title">{e(note["name"])}</li>')
-    field_notes_block = f"""
-    <section>
-      <h3>From Field Notes</h3>
-      <ul class="meal-field-notes-list">{"".join(fn_items)}</ul>
-    </section>""" if fn_items else ""
+    # Linked field notes, pointing at the note on the Field Notes page
+    field_notes_block = render_linked_note_titles(
+        flavor.get("linked_field_notes", []), notes_by_slug,
+        rel(depth, f"{month.lower()}/field-notes/"))
 
     # Linked ingredients
     ing_items = []
@@ -688,6 +669,86 @@ def build_weekend_page(edition, depth, canonical_url, edition_context):
         page_class="page--meal",
     )
 
+# ── Field Notes page ───────────────────────────────────────────────────────────
+
+def build_field_notes_page(edition, depth, canonical_url, edition_context):
+    """
+    Field Notes on its own page. Kept as one coherent section rather than split
+    across ingredient pages: only some notes are about a basket ingredient — the
+    rest are pantry and technique advice with no ingredient home — and a rule
+    that scatters a section unevenly per edition teaches the reader nothing
+    about where to look. One home, and it grows without bloating the edition.
+    """
+    month = edition_context["month"]
+    label = edition.get("field_notes_label", "Field Notes")
+    edition_href = rel(depth, f"{month.lower()}/")
+
+    notes = "".join(f"""
+        <section id="{e(n['slug'])}" aria-labelledby="fn-{e(n['slug'])}">
+          <h2 id="fn-{e(n['slug'])}">{e(n['name'])}</h2>
+          <p>{e(n['body'])}</p>
+        </section>""" for n in edition["field_notes"])
+
+    body = f"""
+    <div style="padding-top:28px">
+      <a href="{edition_href}" class="back-link">← {e(month)}</a>
+    </div>
+
+    <div class="meal-header">
+      <div class="section-label">{e(label)} · {e(month)}</div>
+      <h1>{e(label)}</h1>
+      <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:680px">Small things worth knowing this month.</p>
+    </div>
+
+    <div class="meal-body meal-body--solo">
+      <div class="meal-main">
+        {notes}
+      </div>
+    </div>"""
+
+    return render_shell(
+        title=f"{label} — {month} — Seasonal",
+        description=f"{label} for the {month} edition of Seasonal.",
+        canonical_url=canonical_url,
+        css_depth=depth,
+        body=body,
+        edition_context=edition_context,
+        page_class="page--meal",
+    )
+
+
+def render_field_note_index(notes, href):
+    """Titles only on the edition page — you still see what the month teaches."""
+    items = "".join(f"""
+          <li class="field-note-index-item">
+            <a href="{href}#{e(n['slug'])}">{e(n['name'])}</a>
+          </li>""" for n in notes)
+    return f"""
+        <ul class="field-note-index">{items}
+        </ul>
+        <a href="{href}" class="house-flavor-cta">→ Read the field notes</a>"""
+
+
+def render_linked_note_titles(linked_slugs, notes_by_slug, fn_href):
+    """Sidebar cross-reference, now linked to the note on the Field Notes page."""
+    if not linked_slugs:
+        return ""
+    items = []
+    for slug in linked_slugs:
+        note = notes_by_slug.get(slug)
+        if not note:
+            continue
+        items.append(f'<li class="meal-field-note-title">'
+                     f'<a href="{fn_href}#{e(slug)}" class="house-flavor-sidebar-link">'
+                     f'{e(note["name"])}</a></li>')
+    if not items:
+        return ""
+    return f"""
+    <section>
+      <h3>From Field Notes</h3>
+      <ul class="meal-field-notes-list">{"".join(items)}</ul>
+    </section>"""
+
 # ── Guide cards row ────────────────────────────────────────────────────────────
 
 def render_guides_section(guides_list):
@@ -718,24 +779,6 @@ def render_meal_variations(variations):
       <span class="meal-variation-context">{e(v['context'])}</span>
     </div>""")
     return "\n".join(rows)
-
-def render_meal_linked_notes(linked_slugs, notes_by_slug):
-    if not linked_slugs:
-        return ""
-    items = []
-    for slug in linked_slugs:
-        note = notes_by_slug.get(slug)
-        if not note:
-            continue
-        items.append(f'<li class="meal-field-note-title">{e(note["name"])}</li>')
-    if not items:
-        return ""
-    return f"""
-    <section>
-      <h3>From Field Notes</h3>
-      <ul class="meal-field-notes-list">{"".join(items)}</ul>
-    </section>"""
-
 
 def render_meal_season_adds(meal):
     anchor = meal.get("season_anchor", [])
@@ -961,6 +1004,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
 
     drink        = edition["drink"]
     weekend      = edition["weekend_meal"]
+    field_notes_href = rel(depth, f"{slug}/field-notes/")
     drink_href   = rel(depth, f"{slug}/{drink['slug']}/")
     weekend_href = rel(depth, f"{slug}/weekend/")
 
@@ -997,9 +1041,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
 
       <article class="section col-12" id="field-notes" aria-labelledby="field-notes-heading">
         <div class="section-label" id="field-notes-heading">{e(edition.get('field_notes_label', 'Field Notes'))}</div>
-        <div class="field-notes">
-          {render_field_notes(edition['field_notes'])}
-        </div>
+        {render_field_note_index(edition['field_notes'], field_notes_href)}
       </article>
 
       {render_house_flavor_card(house_flavor, depth, edition_context, flavor2=house_flavor2)}
@@ -1187,7 +1229,8 @@ def build_meal_page(meal, edition, depth, canonical_url, edition_context, house_
     keep_items   = render_meal_checklist(meal["keep"])
     adds_section = render_meal_season_adds(meal)
     variations   = render_meal_variations(meal["variations"])
-    linked_notes = render_meal_linked_notes(meal.get("linked_field_notes", []), notes_by_slug)
+    fn_href      = rel(depth, f"{month.lower()}/field-notes/")
+    linked_notes = render_linked_note_titles(meal.get("linked_field_notes", []), notes_by_slug, fn_href)
 
     linked_drink_slug = meal.get("linked_drink")
     drink_link = (render_drink_link(edition_drink, depth, month.lower())
@@ -1496,6 +1539,13 @@ def build_edition(edition_dir_name):
     )
     write_page(SITE / edition_slug / drink_slug / "index.html", drink_html)
 
+    # Field Notes page — fixed slug, one home for the whole section
+    fn_html = build_field_notes_page(
+        edition, depth=2, canonical_url=f"{base_url}/{edition_slug}/field-notes/",
+        edition_context=edition_context,
+    )
+    write_page(SITE / edition_slug / "field-notes" / "index.html", fn_html)
+
     # Weekend meal page — fixed slug so the masthead link is stable across editions
     weekend_html = build_weekend_page(
         edition, depth=2, canonical_url=f"{base_url}/{edition_slug}/weekend/",
@@ -1511,7 +1561,7 @@ def build_edition(edition_dir_name):
         edition_slug,
         ingredient_slugs=ingredient_slugs,
         meal_slugs=meal_slugs,
-        house_flavor_slugs=hf_slugs_built + [drink_slug, "weekend"],
+        house_flavor_slugs=hf_slugs_built + [drink_slug, "weekend", "field-notes"],
         ing_index_dir=str(ing_index_dir),
     )
 
