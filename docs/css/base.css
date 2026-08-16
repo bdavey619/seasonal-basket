@@ -147,56 +147,13 @@ a { color: inherit; }
   align-items: start;
 }
 
-/* ─── Edition contents ───────────────────────────────── */
-.edition-index {
-  padding: 30px 0 4px;
-  border-top: 1px solid var(--line);
-}
-.edition-index-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0 40px;
-  margin-top: 14px;
-  max-width: 860px;
-}
-.edition-index-row {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 14px;
-  padding: 9px 0;
-  border-bottom: 1px solid var(--line);
-  text-decoration: none;
-  color: inherit;
-}
-.edition-index-name {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1rem;
-  white-space: nowrap;
-}
-.edition-index-row:hover .edition-index-name { color: var(--primary); }
-.edition-index-detail {
-  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
-  font-size: .8rem;
-  color: var(--muted);
-  text-align: right;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  /* Flex items default to min-width:auto, which refuses to shrink below the
-     content width — the ellipsis never engages and the row overflows instead. */
-  min-width: 0;
-  flex: 0 1 auto;
-}
-.edition-index-name { flex: 0 0 auto; }
-
 /* ─── Running header ─────────────────────────────────── */
-/* Sits in flow beneath the contents, then pins once scrolled past. No JS. */
+/* Sits in flow below the hero, then pins once scrolled past. No JS. */
 .jump-bar {
   position: sticky;
   top: 0;
   z-index: 20;
-  margin: 22px 0 4px;
+  margin: 26px 0 4px;
   background: var(--bg);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -972,9 +929,6 @@ footer {
   .month-card-item { display: inline; }
   .month-card-sep  { display: inline; opacity: .5; }
 
-  /* minmax(0,…) not 1fr — a 1fr track also defaults to min-width:auto and
-     widens to fit its longest row rather than letting the detail truncate. */
-  .edition-index-list { grid-template-columns: minmax(0, 1fr); gap: 0; }
   .grid > [id] { scroll-margin-top: 52px; }
   .col-8, .col-7, .col-5, .col-4, .col-12 { grid-column: 1 / -1; }
 

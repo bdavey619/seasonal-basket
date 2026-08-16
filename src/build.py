@@ -895,24 +895,6 @@ def build_publication_home(edition, depth, canonical_url, edition_context, past_
 
 # ── Edition page ───────────────────────────────────────────────────────────────
 
-def render_edition_index(entries):
-    """
-    Contents block: what's in this edition and where. A printed guide opens with
-    one of these, and it's what makes a long page addressable — you go to the
-    part you need instead of scrolling from the top every visit.
-    """
-    rows = "".join(f"""
-        <a class="edition-index-row" href="#{e(anchor)}">
-          <span class="edition-index-name">{e(name)}</span>
-          <span class="edition-index-detail">{e(detail)}</span>
-        </a>""" for anchor, name, detail in entries)
-    return f"""
-    <nav class="edition-index" aria-label="In this edition">
-      <div class="section-label">In this edition</div>
-      <div class="edition-index-list">{rows}</div>
-    </nav>"""
-
-
 def render_jump_bar(entries):
     """
     Slim running header. Sits in flow under the contents block and pins to the
@@ -958,20 +940,8 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
         <div class="sub">{e(month_card_sub)}</div>
       </aside>"""
 
-    # Contents + running header. Built from the edition's own data so a month
-    # with two House Flavors or a different section mix stays accurate.
-    hf_detail = (f"{house_flavor['name']} and {house_flavor2['name']}"
-                 if house_flavor2 else (house_flavor or {}).get("name", ""))
-    index_entries = [
-        ("basket",      f"The {month} basket", f"{len(edition['featured_ingredients'])} ingredients"),
-        ("meals",       "The meals",           f"{len(edition['meal_transformations'])} transformations"),
-        ("field-notes", edition.get("field_notes_label", "Field Notes"), f"{len(edition['field_notes'])} notes"),
-        ("house-flavor","House Flavor",        hf_detail),
-        ("drink",       "The drink",           edition["drink"]["name"]),
-        ("ritual",      edition["local_ritual"]["label"], edition["local_ritual"]["name"]),
-        ("weekend",     "The weekend meal",    edition["weekend_meal"]["name"]),
-        ("notice",      "One thing to notice", edition["one_thing_to_notice"]["headline"]),
-    ]
+    # Running header. Section labels come from the edition so a month that
+    # renames Field Notes stays accurate.
     jump_entries = [
         ("basket", "Basket"), ("meals", "Meals"),
         ("field-notes", edition.get("field_notes_label", "Field Notes")),
@@ -994,7 +964,6 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
       {month_card_html}
     </section>
 
-{render_edition_index(index_entries)}
 {render_jump_bar(jump_entries)}
 
     <div class="grid">
