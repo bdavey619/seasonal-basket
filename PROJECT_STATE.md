@@ -14,7 +14,7 @@ After a year of reading Seasonal, a reader hasn't accumulated dozens of recipes.
 
 ## Current Status
 
-July edition is live. The architecture, voice, and product philosophy are established. The edition is deployed at GitHub Pages from `/docs` on `main`.
+August is the current edition; July remains published and linked from the homepage archive. The architecture, voice, and product philosophy are established. The site is deployed at GitHub Pages from `/docs` on `main`, served at `https://bdavey.co/seasonal-basket/`.
 
 ## What We Know
 
@@ -97,9 +97,10 @@ Supporting pages:
 
 - Whether guide voices are real contributors at launch or added later
 - Illustration sourcing and style
-- Whether archive navigation should exist in the first public version
 - How much personalization should be added after the static edition proves useful
-- August featured ingredients and palette
+- Whether the archive stays a flat list or gains its own index page once several editions exist
+
+**Resolved:** archive navigation ships in the first public version — the homepage lists past editions below the current and next ones. Editions do not expire; each stays readable at its own URL.
 
 ## July — What the Edition Teaches
 

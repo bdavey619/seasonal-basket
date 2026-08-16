@@ -944,3 +944,68 @@ footer {
   color: var(--muted);
   opacity: .7;
 }
+
+/* ─── Past editions (archive) ────────────────────────── */
+.pub-past {
+  /* Matches .pub-intro's measure so both full-width rules line up. */
+  max-width: 680px;
+  border-top: 1px solid var(--line);
+  padding: 40px 0 80px;
+}
+.past-edition-list {
+  margin-top: 20px;
+  max-width: 600px;
+}
+.past-edition {
+  display: grid;
+  grid-template-columns: minmax(0, 7rem) 1fr;
+  align-items: baseline;
+  gap: 4px 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  color: inherit;
+}
+.past-edition:first-child {
+  border-top: 1px solid var(--line);
+}
+.past-edition-month {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: -.03em;
+  color: var(--muted);
+  transition: color .15s;
+}
+.past-edition:hover .past-edition-month {
+  color: var(--primary);
+}
+.past-edition-taste {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .82rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--muted);
+}
+.past-edition-sub {
+  grid-column: 2;
+  font-size: .95rem;
+  line-height: 1.45;
+  color: var(--muted);
+  opacity: .8;
+}
+.pub-past-note {
+  margin-top: 20px;
+  max-width: 480px;
+  font-size: .9rem;
+  color: var(--muted);
+  opacity: .75;
+}
+@media (max-width: 560px) {
+  .past-edition {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .past-edition-sub {
+    grid-column: 1;
+  }
+}
