@@ -174,9 +174,17 @@ def render_field_notes(notes):
 
 # ── Meal transformations ───────────────────────────────────────────────────────
 
-def render_transformations(transformations, meal_hrefs=None):
+def render_transformations(transformations, meal_hrefs=None, meals_by_name=None):
+    """
+    The meals section. Each transformation is the month's default version of a
+    meal; the variations beneath it are the other ways to combine the basket for
+    that same meal. Those were previously reachable only by opening the meal
+    page, which put the edition's densest combination advice one click out of
+    sight.
+    """
     if meal_hrefs is None:
         meal_hrefs = {}
+    meals_by_name = meals_by_name or {}
     rows = []
     for t in transformations:
         meal_name = t['meal']
@@ -185,12 +193,29 @@ def render_transformations(transformations, meal_hrefs=None):
             meal_cell = f'<a href="{e(href)}">{e(meal_name)}</a>'
         else:
             meal_cell = e(meal_name)
+
+        variations = (meals_by_name.get(meal_name) or {}).get("variations", [])
+        var_html = ""
+        if variations:
+            items = "".join(f"""
+        <li class="meal-way">
+          <span class="meal-way-combo">{e(v['ingredients'])}</span>
+          <span class="meal-way-when">{e(v['context'])}</span>
+        </li>""" for v in variations)
+            more = f'<a class="meal-way-more" href="{e(href)}">All of it →</a>' if href else ""
+            var_html = f"""
+      <ul class="meal-ways">{items}
+      </ul>
+      {more}"""
+
         rows.append(f"""
-    <div class="transformation-row">
-      <span class="transformation-meal">{meal_cell}</span>
-      <span class="transformation-arrow">→</span>
-      <span class="transformation-change">{e(t['change'])}</span>
-      <span class="transformation-result">{e(t['result'])}</span>
+    <div class="transformation-group">
+      <div class="transformation-row">
+        <span class="transformation-meal">{meal_cell}</span>
+        <span class="transformation-arrow">→</span>
+        <span class="transformation-change">{e(t['change'])}</span>
+        <span class="transformation-result">{e(t['result'])}</span>
+      </div>{var_html}
     </div>""")
     return "\n".join(rows)
 
@@ -897,7 +922,8 @@ def render_jump_bar(entries):
 
 
 def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_flavor=None,
-                       house_flavor2=None, edition_context=None, ingredients_data=None):
+                       house_flavor2=None, edition_context=None, ingredients_data=None,
+                       meals_by_name=None):
     require_fields(edition, ["month", "opening_note", "featured_ingredients",
                               "meal_transformations", "field_notes"], "edition.json")
 
@@ -965,7 +991,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
         <h2 id="transforms-heading">Your usual meals, wearing {e(month)}.</h2>
         <p class="section-dek">Keep what you already make. Add what's ripe.</p>
         <div class="transformations">
-          {render_transformations(edition['meal_transformations'], meal_hrefs)}
+          {render_transformations(edition['meal_transformations'], meal_hrefs, meals_by_name)}
         </div>
       </article>
 
@@ -1404,12 +1430,15 @@ def build_edition(edition_dir_name):
             for slug, meal in meals_data.items()
         }
 
+    # Keyed by display name, the same key meal_transformations uses.
+    meals_by_name = {meal["name"]: meal for meal in meals_data.values()}
+
     edition_canonical = f"{base_url}/{edition_slug}/"
 
     # Edition page
     edition_html = build_edition_page(
         edition, depth=1, canonical_url=edition_canonical,
-        meal_hrefs=meal_hrefs_at(1),
+        meal_hrefs=meal_hrefs_at(1), meals_by_name=meals_by_name,
         house_flavor=house_flavor, house_flavor2=house_flavor2,
         edition_context=edition_context,
         ingredients_data=ingredients_data,

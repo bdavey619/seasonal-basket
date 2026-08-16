@@ -378,15 +378,55 @@ a.bring-home-row:hover .bring-home-name { color: var(--accent); }
   display: flex;
   flex-direction: column;
 }
+.transformation-group {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 4px;
+}
+.transformation-group:last-child { border-bottom: none; }
 .transformation-row {
   display: grid;
   grid-template-columns: 140px 24px 1fr auto;
   align-items: baseline;
   gap: 0 12px;
   padding: 13px 0;
-  border-bottom: 1px solid var(--line);
 }
-.transformation-row:last-child { border-bottom: none; }
+
+/* ─── Ways to combine ────────────────────────────────── */
+/* The other combinations for a meal. Indented to sit under the month's
+   default version rather than competing with it. */
+.meal-ways {
+  list-style: none;
+  margin: 0 0 4px;
+  padding: 0 0 0 176px;   /* clears the meal name + arrow columns */
+}
+.meal-way {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  gap: 0 16px;
+  padding: 6px 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+.meal-way-combo {
+  font-size: .88rem;
+  color: #3d4842;
+}
+.meal-way-when {
+  font-size: .82rem;
+  color: var(--muted);
+  text-align: right;
+  font-style: italic;
+}
+.meal-way-more {
+  display: inline-block;
+  margin: 2px 0 12px 176px;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .8rem;
+  color: var(--primary);
+  text-decoration: none;
+  opacity: .85;
+}
+.meal-way-more:hover { opacity: 1; }
 .transformation-meal {
   font-family: Georgia, serif;
   font-size: 1.05rem;
@@ -924,6 +964,15 @@ footer {
   .transformation-row { grid-template-columns: 1fr; gap: 2px; }
   .transformation-arrow { display: none; }
   .transformation-result { text-align: left; }
+  /* No name column to clear once the row stacks — a rule carries the nesting. */
+  .meal-ways {
+    padding: 0 0 0 14px;
+    border-left: 2px solid var(--line);
+    margin-top: 8px;
+  }
+  .meal-way { grid-template-columns: 1fr; gap: 1px; padding: 7px 0; }
+  .meal-way-when { text-align: left; }
+  .meal-way-more { margin-left: 16px; }
   .field-notes { grid-template-columns: 1fr; }
   .field-note,
   .field-note:nth-child(even) {
