@@ -33,41 +33,49 @@
     "cost_note": "Around $30–45 for the seasonal basket. Proteins and pantry basics are separate.",
     "items": [
       {
+        "slug": "heirloom-tomatoes",
         "name": "Ripe tomatoes",
         "qty": "4–5",
         "note": "The week revolves around these."
       },
       {
+        "slug": "persian-cucumbers",
         "name": "Persian cucumbers",
         "qty": "1 bag",
         "note": "They'll last all week."
       },
       {
+        "slug": "peaches",
         "name": "Peaches",
         "qty": "3–4",
         "note": "Buy the ones that smell ready."
       },
       {
+        "slug": "sweet-corn",
         "name": "Sweet corn",
         "qty": "3–4 ears",
         "note": "Frozen works if that's what's there."
       },
       {
+        "slug": "basil",
         "name": "Basil",
         "qty": "1 bunch",
         "note": "A potted plant lasts longer."
       },
       {
+        "slug": "mint",
         "name": "Mint",
         "qty": "1 small bunch",
         "note": "For the drink and the cucumbers."
       },
       {
+        "slug": "cherries",
         "name": "Cherries",
         "qty": "1 lb",
         "note": "Skip if expensive. The window comes back."
       },
       {
+        "slug": "blackberries",
         "name": "Blackberries",
         "qty": "1 pint",
         "note": "Eat within two days of buying."
@@ -279,6 +287,7 @@
     "heirloom-tomatoes": {
       "slug": "heirloom-tomatoes",
       "name": "Heirloom tomatoes",
+      "tile_uses": "Pasta, rice bowls, tacos, weekend plate",
       "month": "July",
       "guide_id": "rosa",
       "why_now": "July is peak tomato season in Southern California. Any ripe tomato — heirloom or not — is at its best right now. The heat concentrates sugars across every variety. Heirlooms are worth it if you see good ones, but a ripe vine tomato from Trader Joe's or Whole Foods will do the same work.",
@@ -332,6 +341,7 @@
     "persian-cucumbers": {
       "slug": "persian-cucumbers",
       "name": "Persian cucumbers",
+      "tile_uses": "Rice bowls, tacos, salads",
       "month": "July",
       "guide_id": "jerome",
       "why_now": "Small, seedless, and thin-skinned, Persian cucumbers are at their crispest in summer. They need no peeling and almost no preparation.",
@@ -384,6 +394,7 @@
     "peaches": {
       "slug": "peaches",
       "name": "Peaches",
+      "tile_uses": "Yogurt, chicken, snacks, dessert",
       "month": "July",
       "guide_id": "adela",
       "why_now": "Southern California stone fruit peaks through July. The combination of warm days and cool nights produces fruit with real sugar and real fragrance. This is the short window.",
@@ -433,6 +444,7 @@
     "sweet-corn": {
       "slug": "sweet-corn",
       "name": "Sweet corn",
+      "tile_uses": "Rice bowls, tacos, chicken",
       "month": "July",
       "guide_id": "jerome",
       "why_now": "Corn sugars convert to starch quickly after picking. July corn eaten within a day or two of harvest is a different ingredient from corn that has traveled for a week. Grocery stores turn over fast in summer — the corn on the shelf right now is likely good.",
@@ -483,6 +495,7 @@
     "basil": {
       "slug": "basil",
       "name": "Basil",
+      "tile_uses": "Tomatoes, pasta, rice bowls, weekend plate",
       "month": "July",
       "guide_id": "diane",
       "why_now": "Basil is at its most fragrant in warm weather. July heat brings out the volatile oils. The best basil right now smells like summer itself.",
@@ -536,6 +549,7 @@
     "mint": {
       "slug": "mint",
       "name": "Mint",
+      "tile_uses": "The drink, cucumbers, yogurt",
       "month": "July",
       "guide_id": "diane",
       "why_now": "Mint is cooling by nature and perfect in summer heat. A few leaves change the temperature of a dish or a drink entirely.",
@@ -587,6 +601,7 @@
     "cherries": {
       "slug": "cherries",
       "name": "Cherries",
+      "tile_uses": "Snacking, yogurt, the drink",
       "month": "July",
       "guide_id": "adela",
       "why_now": "California cherry season runs through July. The window is short. Buy them when they are dark and firm and eat them without much ceremony.",
@@ -634,6 +649,7 @@
     "blackberries": {
       "slug": "blackberries",
       "name": "Blackberries",
+      "tile_uses": "Yogurt, breakfast, dessert",
       "month": "July",
       "guide_id": "diane",
       "why_now": "Wild and cultivated blackberries both peak in July in Southern California. They are deeply flavored, slightly tart, and good with almost nothing added.",

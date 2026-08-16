@@ -138,9 +138,40 @@ a { color: inherit; }
   grid-template-columns: repeat(12, 1fr);
   gap: 20px;
   margin-top: 20px;
+  /* Cards take their natural height. Stretching a 40-word aside to match a
+     recipe beside it produced large empty panels that read as a mistake. */
+  align-items: start;
+}
+
+/* ─── Sections ───────────────────────────────────────── */
+/* The default treatment: a rule, a label, and content. Reserved cards are the
+   exception — see .card below. Modelled on Field Notes, which was the most
+   readable block on the page precisely because it was never boxed. */
+.section {
+  padding: 34px 0 10px;
+  border-top: 1px solid var(--line);
+}
+.section > h2 { margin-bottom: 10px; }
+.section-dek {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .92rem;
+  color: var(--muted);
+  max-width: 62ch;
+  margin-bottom: 20px;
+}
+/* Short editorial asides: full width, but held to a readable measure. */
+.section--aside > h2,
+.section--aside > p {
+  max-width: 40ch;
+}
+.section--aside > p {
+  font-size: 1.02rem;
+  color: #3d4842;
 }
 
 /* ─── Cards ──────────────────────────────────────────── */
+/* Only for material that genuinely isn't prose: the shopping list you scan in
+   a store, and the month card. */
 .card {
   background: var(--paper);
   border: 1px solid var(--line);
@@ -232,6 +263,10 @@ a { color: inherit; }
 }
 
 /* ─── Shopping card ──────────────────────────────────── */
+.bring-home-heading h2 {
+  font-size: 1.15rem;
+  margin-bottom: 16px;
+}
 .bring-home-list {
   display: flex;
   flex-direction: column;
@@ -259,30 +294,32 @@ a { color: inherit; }
   font-size: .78rem;
   opacity: .65;
 }
+/* Revealed only below 860px, where the basket tile grid is hidden and this
+   list carries both jobs. See the merge rule in the responsive block. */
+.bring-home-uses {
+  display: none;
+  grid-column: 1 / -1;
+  font-size: .78rem;
+  opacity: .8;
+}
 
 /* ─── Field notes ────────────────────────────────────── */
-.field-notes-section {
-  padding: 32px 0 8px;
-  border-top: 1px solid var(--line);
-}
+/* Separators sit on top of each note rather than between them, so any number
+   of notes tiles cleanly without last-child special cases. */
 .field-notes {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  margin-top: 22px;
-  border-top: 1px solid var(--line);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 0;
+  margin-top: 20px;
 }
 .field-note {
-  padding: 24px 28px 24px 0;
-  border-right: 1px solid var(--line);
+  padding: 22px 28px 22px 0;
+  border-top: 1px solid var(--line);
 }
-.field-note:last-child {
-  border-right: none;
+.field-note:nth-child(even) {
   padding-right: 0;
   padding-left: 28px;
-}
-.field-note:nth-child(2) {
-  padding-left: 28px;
+  border-left: 1px solid var(--line);
 }
 .field-note-name {
   font-size: 1.15rem;
@@ -824,11 +861,30 @@ footer {
 /* ─── Responsive ─────────────────────────────────────── */
 @media (max-width: 1000px) {
   .ingredient-index-grid { grid-template-columns: repeat(2, 1fr); }
+  /* Four tiles inside a narrowed col-8 wrap to three or four lines each.
+     Two columns keeps the tiles legible until the merge takes over at 860px. */
+  .basket-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 860px) {
   .hero { grid-template-columns: 1fr; padding: 36px 0 20px; }
   .month-card { min-height: 180px; }
   .col-8, .col-7, .col-5, .col-4, .col-12 { grid-column: 1 / -1; }
+
+  /* ── The basket merge ──────────────────────────────
+     Stacked into one column, the tile grid and the shopping list became the
+     same eight ingredients listed twice in a row — over two phone screens of
+     repetition. Below this breakpoint the tiles are dropped and each shopping
+     row grows a uses line, so one list answers both what to buy and what for.
+     The side-by-side pairing is kept above 860px, where it reads as intended. */
+  #basket .basket-grid { display: none; }
+  #basket { padding-bottom: 0; }
+  .bring-home-uses { display: block; }
+  .bring-home-row { gap: 3px 10px; padding-bottom: 11px; }
+  /* The basket section heading above now introduces this list, so the card's
+     own heading would be the second of two stacked headings saying one thing. */
+  .bring-home-heading { display: none; }
+  .card--dark { margin-top: 4px; }
+
   .basket-grid { grid-template-columns: repeat(2, 1fr); }
   .week-buckets { grid-template-columns: 1fr; gap: 24px; }
   .two-col { grid-template-columns: 1fr; }
@@ -838,13 +894,12 @@ footer {
   .transformation-result { text-align: left; }
   .field-notes { grid-template-columns: 1fr; }
   .field-note,
-  .field-note:last-child,
-  .field-note:nth-child(2) {
+  .field-note:nth-child(even) {
     padding: 20px 0;
-    border-right: none;
-    border-bottom: 1px solid var(--line);
+    border-left: none;
+    border-top: 1px solid var(--line);
   }
-  .field-note:last-child { border-bottom: none; }
+  .section { padding-top: 28px; }
   .meal-body { grid-template-columns: 1fr; }
   .meal-index-grid { grid-template-columns: 1fr; }
   .meal-variation { grid-template-columns: 1fr; gap: 2px; }

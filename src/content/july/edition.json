@@ -32,14 +32,14 @@
     "heading": "This is what I'd bring home.",
     "cost_note": "Around $30–45 for the seasonal basket. Proteins and pantry basics are separate.",
     "items": [
-      { "name": "Ripe tomatoes", "qty": "4–5", "note": "The week revolves around these." },
-      { "name": "Persian cucumbers", "qty": "1 bag", "note": "They'll last all week." },
-      { "name": "Peaches", "qty": "3–4", "note": "Buy the ones that smell ready." },
-      { "name": "Sweet corn", "qty": "3–4 ears", "note": "Frozen works if that's what's there." },
-      { "name": "Basil", "qty": "1 bunch", "note": "A potted plant lasts longer." },
-      { "name": "Mint", "qty": "1 small bunch", "note": "For the drink and the cucumbers." },
-      { "name": "Cherries", "qty": "1 lb", "note": "Skip if expensive. The window comes back." },
-      { "name": "Blackberries", "qty": "1 pint", "note": "Eat within two days of buying." }
+      { "slug": "heirloom-tomatoes", "name": "Ripe tomatoes", "qty": "4–5", "note": "The week revolves around these." },
+      { "slug": "persian-cucumbers", "name": "Persian cucumbers", "qty": "1 bag", "note": "They'll last all week." },
+      { "slug": "peaches", "name": "Peaches", "qty": "3–4", "note": "Buy the ones that smell ready." },
+      { "slug": "sweet-corn", "name": "Sweet corn", "qty": "3–4 ears", "note": "Frozen works if that's what's there." },
+      { "slug": "basil", "name": "Basil", "qty": "1 bunch", "note": "A potted plant lasts longer." },
+      { "slug": "mint", "name": "Mint", "qty": "1 small bunch", "note": "For the drink and the cucumbers." },
+      { "slug": "cherries", "name": "Cherries", "qty": "1 lb", "note": "Skip if expensive. The window comes back." },
+      { "slug": "blackberries", "name": "Blackberries", "qty": "1 pint", "note": "Eat within two days of buying." }
     ]
   },
   "staples": [

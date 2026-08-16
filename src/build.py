@@ -237,21 +237,40 @@ def render_week(week):
 
 # ── Shopping card ──────────────────────────────────────────────────────────────
 
-def render_bring_home(bring_home):
+def render_bring_home(bring_home, ingredients_data=None, featured=None):
+    """
+    The shopping card. Each row also carries the ingredient's `tile_uses`, hidden
+    on desktop and revealed below 860px — where the basket tile grid is hidden and
+    this list has to do both jobs at once (what to buy, and what it's for).
+    Rows join to ingredient content by `slug`.
+    """
     if not bring_home:
         return ""
-    rows = "".join(
-        f"""<div class="bring-home-row">
+
+    ingredients_data = ingredients_data or {}
+    featured = set(featured or [])
+
+    row_html = []
+    for item in bring_home.get("items", []):
+        slug = item.get("slug")
+        if slug and featured and slug not in featured:
+            fail(f"bring_home item '{item['name']}' has slug '{slug}', "
+                 f"which is not in featured_ingredients")
+        uses = ingredients_data.get(slug, {}).get("tile_uses", "") if slug else ""
+        uses_html = (f'<span class="bring-home-uses">{e(uses)}</span>' if uses else "")
+        row_html.append(f"""<div class="bring-home-row">
           <span class="bring-home-name">{e(item['name'])}</span>
           <span class="bring-home-qty">{e(item['qty'])}</span>
           <span class="bring-home-note">{e(item['note'])}</span>
-        </div>"""
-        for item in bring_home.get("items", [])
-    )
+          {uses_html}
+        </div>""")
+    rows = "".join(row_html)
     cost = e(bring_home.get("cost_note", ""))
     return f"""
-<div class="section-label">This week's basket</div>
-<h2 style="font-size:1.15rem;margin-bottom:16px">{e(bring_home['heading'])}</h2>
+<div class="bring-home-heading">
+  <div class="section-label">This week's basket</div>
+  <h2>{e(bring_home['heading'])}</h2>
+</div>
 <div class="bring-home-list">{rows}</div>
 {f'<p style="font-size:.8rem;margin-top:14px;opacity:.7">{cost}</p>' if cost else ""}"""
 
@@ -780,30 +799,30 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
     </section>
 
     <div class="grid">
-      <article class="card col-8" id="basket" aria-labelledby="basket-heading">
+      <article class="section col-8" id="basket" aria-labelledby="basket-heading">
         <div class="section-label">The {e(month)} basket</div>
         <h2 id="basket-heading">One trip. A full week of meals.</h2>
-        <p>The same basket will carry rice bowls, pasta, tacos, and breakfast. Nothing goes to waste — every ingredient shows up more than once.</p>
         <div class="basket-grid">
           {basket_tiles}
         </div>
       </article>
 
       <aside class="card card--dark col-4" aria-label="This week's basket">
-        {render_bring_home(edition.get('bring_home'))}
+        {render_bring_home(edition.get('bring_home'), ingredients_data,
+                           edition.get('featured_ingredients'))}
       </aside>
 
-      <article class="card col-12" id="meals" aria-labelledby="transforms-heading">
+      <article class="section col-12" id="meals" aria-labelledby="transforms-heading">
         <div class="section-label">The meals</div>
         <h2 id="transforms-heading">Your usual meals, wearing {e(month)}.</h2>
-        <p>Keep what you already make. Add what's ripe.</p>
+        <p class="section-dek">Keep what you already make. Add what's ripe.</p>
         <div class="transformations">
           {render_transformations(edition['meal_transformations'], meal_hrefs)}
         </div>
       </article>
 
-      <article class="field-notes-section col-12" aria-labelledby="field-notes-heading">
-        <div class="section-label">{e(edition.get('field_notes_label', 'Field Notes'))}</div>
+      <article class="section col-12" aria-labelledby="field-notes-heading">
+        <div class="section-label" id="field-notes-heading">{e(edition.get('field_notes_label', 'Field Notes'))}</div>
         <div class="field-notes">
           {render_field_notes(edition['field_notes'])}
         </div>
@@ -811,26 +830,26 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
 
       {render_house_flavor_card(house_flavor, depth, edition_context, flavor2=house_flavor2)}
 
-      <article class="card col-7" aria-labelledby="drink-heading">
+      <article class="section col-12" aria-labelledby="drink-heading">
         <div class="section-label">The drink</div>
         <h2 id="drink-heading">{e(edition['drink']['name'])}</h2>
         {render_drink(edition['drink'], month=month)}
       </article>
 
-      <aside class="card card--warm col-5" aria-label="{e(edition['local_ritual']['label'])}">
+      <aside class="section section--aside col-12" aria-label="{e(edition['local_ritual']['label'])}">
         <div class="section-label">{e(edition['local_ritual']['label'])}</div>
         <h2>{e(edition['local_ritual']['name'])}</h2>
         <p>{e(edition['local_ritual']['description'])}</p>
       </aside>
 
-      <article class="card col-7" id="weekend" aria-labelledby="weekend-heading">
+      <article class="section col-12" id="weekend" aria-labelledby="weekend-heading">
         <div class="section-label">The weekend meal</div>
         <h2 id="weekend-heading">{e(edition['weekend_meal']['name'])}</h2>
-        <p>{e(edition['weekend_meal']['intro'])}</p>
+        <p class="section-dek">{e(edition['weekend_meal']['intro'])}</p>
         {render_weekend(edition['weekend_meal'])}
       </article>
 
-      <aside class="card card--cream col-5" aria-label="One thing to notice">
+      <aside class="section section--aside col-12" aria-label="One thing to notice">
         <div class="section-label">One thing to notice</div>
         <h2>{e(edition['one_thing_to_notice']['headline'])}</h2>
         <p>{e(edition['one_thing_to_notice']['body'])}</p>

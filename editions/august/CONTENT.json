@@ -33,41 +33,49 @@
     "cost_note": "Around $35–50 for the seasonal basket. Proteins and pantry basics are separate.",
     "items": [
       {
+        "slug": "figs",
         "name": "Ripe figs",
         "qty": "1 pint",
         "note": "Buy them ripe. Plan to eat within two days."
       },
       {
+        "slug": "bell-peppers",
         "name": "Red bell peppers",
         "qty": "3–4",
         "note": "The house flavor starts here."
       },
       {
+        "slug": "eggplant",
         "name": "Eggplant",
         "qty": "1 large or 2 small",
         "note": "Roasts into something completely different."
       },
       {
+        "slug": "cherry-tomatoes",
         "name": "Cherry tomatoes",
         "qty": "1 pint",
         "note": "Still abundant. Still worth it."
       },
       {
+        "slug": "jalapenos",
         "name": "Jalapeños",
         "qty": "3–4",
         "note": "The sauce needs two. Keep the rest."
       },
       {
+        "slug": "zucchini",
         "name": "Zucchini",
         "qty": "3–4 medium",
         "note": "They carry the week without asking much."
       },
       {
+        "slug": "basil",
         "name": "Basil",
         "qty": "1 bunch",
         "note": "Same as last month. Buy a pot if you can."
       },
       {
+        "slug": "nectarines",
         "name": "Nectarines",
         "qty": "4–5",
         "note": "The peach's quieter cousin. Almost as good."
