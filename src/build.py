@@ -356,17 +356,36 @@ def render_drink(drink, month):
 </div>"""
 
 
-def render_drink_link(drink):
-    """Minimal drink reference for meal page sidebars — title only."""
+def render_drink_link(drink, depth, edition_slug):
+    """Drink reference for meal page sidebars, linked to the drink's own page."""
     if not drink or not drink.get("name"):
         return ""
+    href = rel(depth, f"{edition_slug}/{drink['slug']}/")
     return f"""
     <section>
       <h3>The drink</h3>
       <ul class="meal-field-notes-list">
-        <li class="meal-field-note-title">{e(drink['name'])}</li>
+        <li class="meal-field-note-title">
+          <a href="{href}" class="house-flavor-sidebar-link">{e(drink['name'])}</a>
+        </li>
       </ul>
     </section>"""
+
+
+# ── Link-out blocks (edition page) ─────────────────────────────────────────────
+
+def render_linkout(label, name, intro, card_line, href, cta, heading_id):
+    """
+    Compact edition-page block for content that lives on its own page.
+    Same shape the House Flavor already uses: say what it is, then send the
+    reader to the page where they can actually cook from it.
+    """
+    return f"""
+        <div class="section-label">{e(label)}</div>
+        <h2 id="{e(heading_id)}">{e(name)}</h2>
+        <p class="section-dek">{e(intro)}</p>
+        <p class="linkout-line">{e(card_line)}</p>
+        <a href="{href}" class="house-flavor-cta">→ {e(cta)}</a>"""
 
 # ── House Flavor ───────────────────────────────────────────────────────────────
 
@@ -417,7 +436,7 @@ def render_house_flavor_card(flavor, depth, edition_context, flavor2=None):
         card1 = flavor_card(flavor,  f"Make the {flavor['name'].lower()}")
         card2 = flavor_card(flavor2, f"Make the {flavor2['name'].lower()}")
         return f"""
-      <article class="house-flavor-section col-12" aria-labelledby="house-flavor-heading">
+      <article class="house-flavor-section col-12" id="house-flavor" aria-labelledby="house-flavor-heading">
         <div class="section-label">House Flavor</div>
         <p class="house-flavor-two-lives" id="house-flavor-heading">{e(two_lives)}</p>
         <div class="house-flavor-two-jars">
@@ -430,7 +449,7 @@ def render_house_flavor_card(flavor, depth, edition_context, flavor2=None):
         href      = rel(depth, f"{edition_slug}/{hf_slug}/")
         uses_html = "".join(f"<li>{e(u)}</li>" for u in flavor.get("card_uses", []))
         return f"""
-      <article class="house-flavor-section col-12" aria-labelledby="house-flavor-heading">
+      <article class="house-flavor-section col-12" id="house-flavor" aria-labelledby="house-flavor-heading">
         <div class="section-label">House Flavor</div>
         <h2 id="house-flavor-heading">{e(flavor['name'])}</h2>
         <p class="house-flavor-tagline">{e(flavor['intro'])}</p>
@@ -540,6 +559,122 @@ def build_house_flavor_page(flavor, edition, depth, canonical_url, edition_conte
         page_class="page--meal",
     )
 
+# ── Drink page ─────────────────────────────────────────────────────────────────
+
+def build_drink_page(edition, depth, canonical_url, edition_context):
+    """
+    The drink on its own page. It was the tallest block on the edition page, and
+    it's the one thing you read while standing at the counter making it.
+    """
+    drink = edition["drink"]
+    month = edition_context["month"]
+    edition_href = rel(depth, f"{month.lower()}/")
+
+    keep_items = "".join(f"<li>{e(i)}</li>" for i in drink.get("keep", []))
+    adds_items = "".join(f"<li>{e(i)}</li>" for i in drink.get("season_adds", []))
+    try_rows = "".join(
+        f"""<div class="drink-try-row">
+          <span class="drink-try-change">{e(v['change'])}</span>
+          <span class="drink-try-context">{e(v['context'])}</span>
+        </div>"""
+        for v in drink.get("try_another_way", [])
+    )
+    try_block = f"""
+        <section aria-labelledby="try-heading">
+          <h2 id="try-heading">Try another way</h2>
+          <div class="drink-try">{try_rows}</div>
+        </section>""" if try_rows else ""
+
+    body = f"""
+    <div style="padding-top:28px">
+      <a href="{edition_href}" class="back-link">← {e(month)}</a>
+    </div>
+
+    <div class="meal-header">
+      <div class="section-label">The drink · {e(month)}</div>
+      <h1>{e(drink['name'])}</h1>
+      <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:680px">{e(drink['intro'])}</p>
+    </div>
+
+    <div class="meal-body meal-body--solo">
+      <div class="meal-main">
+        <section aria-labelledby="keep-heading">
+          <h2 id="keep-heading">Keep</h2>
+          <ul class="checklist">{keep_items}</ul>
+        </section>
+
+        <section aria-labelledby="adds-heading">
+          <h2 id="adds-heading">{e(month)} adds</h2>
+          <ul class="checklist">{adds_items}</ul>
+        </section>
+
+        <section aria-labelledby="method-heading">
+          <h2 id="method-heading">Method</h2>
+          <p class="drink-method">{e(drink.get('method',''))}</p>
+        </section>
+
+        {try_block}
+      </div>
+    </div>"""
+
+    return render_shell(
+        title=f"{drink['name']} — {month} — Seasonal",
+        description=drink["intro"],
+        canonical_url=canonical_url,
+        css_depth=depth,
+        body=body,
+        edition_context=edition_context,
+        page_class="page--meal",
+    )
+
+# ── Weekend meal page ──────────────────────────────────────────────────────────
+
+def build_weekend_page(edition, depth, canonical_url, edition_context):
+    """The weekend meal on its own page — the one meal worth slowing down for."""
+    meal  = edition["weekend_meal"]
+    month = edition_context["month"]
+    edition_href = rel(depth, f"{month.lower()}/")
+
+    ing_items = "".join(f"<li>{e(i)}</li>" for i in meal.get("ingredients", []))
+    note = meal.get("ingredient_note", "")
+    note_block = f'<p class="house-flavor-storage">{e(note)}</p>' if note else ""
+
+    body = f"""
+    <div style="padding-top:28px">
+      <a href="{edition_href}" class="back-link">← {e(month)}</a>
+    </div>
+
+    <div class="meal-header">
+      <div class="section-label">The weekend meal · {e(month)}</div>
+      <h1>{e(meal['name'])}</h1>
+      <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:680px">{e(meal['intro'])}</p>
+    </div>
+
+    <div class="meal-body meal-body--solo">
+      <div class="meal-main">
+        <section aria-labelledby="use-heading">
+          <h2 id="use-heading">Use</h2>
+          <ul class="checklist">{ing_items}</ul>
+          {note_block}
+        </section>
+
+        <section aria-labelledby="do-heading">
+          <h2 id="do-heading">Do</h2>
+          <p class="drink-method">{e(meal.get('method',''))}</p>
+        </section>
+      </div>
+    </div>"""
+
+    return render_shell(
+        title=f"{meal['name']} — {month} — Seasonal",
+        description=meal["intro"],
+        canonical_url=canonical_url,
+        css_depth=depth,
+        body=body,
+        edition_context=edition_context,
+        page_class="page--meal",
+    )
+
 # ── Guide cards row ────────────────────────────────────────────────────────────
 
 def render_guides_section(guides_list):
@@ -632,6 +767,7 @@ def render_shell(title, description, canonical_url, css_depth, body,
     month_css    = rel(css_depth, f"css/{edition_slug}.css")
     home_href    = rel(css_depth, "")
     edition_href = rel(css_depth, f"{edition_slug}/")
+    weekend_href = rel(css_depth, f"{edition_slug}/weekend/")
     basket_href  = rel(css_depth, ing_index)
     edition_num_str = str(edition_num).zfill(3)
 
@@ -661,7 +797,7 @@ def render_shell(title, description, canonical_url, css_depth, body,
     <nav class="nav" aria-label="Primary navigation">
       <a href="{edition_href}">{e(month)}</a>
       <a href="{basket_href}">The Basket</a>
-      <a href="{edition_href}#weekend">The Weekend</a>
+      <a href="{weekend_href}">The Weekend</a>
     </nav>
   </header>
   <main id="main">
@@ -759,6 +895,37 @@ def build_publication_home(edition, depth, canonical_url, edition_context, past_
 
 # ── Edition page ───────────────────────────────────────────────────────────────
 
+def render_edition_index(entries):
+    """
+    Contents block: what's in this edition and where. A printed guide opens with
+    one of these, and it's what makes a long page addressable — you go to the
+    part you need instead of scrolling from the top every visit.
+    """
+    rows = "".join(f"""
+        <a class="edition-index-row" href="#{e(anchor)}">
+          <span class="edition-index-name">{e(name)}</span>
+          <span class="edition-index-detail">{e(detail)}</span>
+        </a>""" for anchor, name, detail in entries)
+    return f"""
+    <nav class="edition-index" aria-label="In this edition">
+      <div class="section-label">In this edition</div>
+      <div class="edition-index-list">{rows}</div>
+    </nav>"""
+
+
+def render_jump_bar(entries):
+    """
+    Slim running header. Sits in flow under the contents block and pins to the
+    top once scrolled past — CSS `position: sticky`, no JavaScript.
+    """
+    links = "".join(
+        f'<a href="#{e(anchor)}">{e(short)}</a>' for anchor, short in entries)
+    return f"""
+    <nav class="jump-bar" aria-label="Jump to section">
+      <div class="jump-bar-inner">{links}</div>
+    </nav>"""
+
+
 def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_flavor=None,
                        house_flavor2=None, edition_context=None, ingredients_data=None):
     require_fields(edition, ["month", "opening_note", "featured_ingredients",
@@ -780,13 +947,42 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
     month_card_sub   = month_card.get("sub", "")
     month_card_html  = ""
     if month_card_items or month_card_sub:
-        items_html = "<br>".join(e(i) for i in month_card_items)
+        # Separators are real elements so the card can run as a stacked block on
+        # desktop and a single compact line on mobile without duplicate markup.
+        items_html = '<span class="month-card-sep"> · </span>'.join(
+            f'<span class="month-card-item">{e(i)}</span>' for i in month_card_items)
         month_card_html = f"""
       <aside class="month-card" aria-label="This month tastes like">
         <div class="eyebrow">This month tastes like</div>
         <div class="big">{items_html}</div>
         <div class="sub">{e(month_card_sub)}</div>
       </aside>"""
+
+    # Contents + running header. Built from the edition's own data so a month
+    # with two House Flavors or a different section mix stays accurate.
+    hf_detail = (f"{house_flavor['name']} and {house_flavor2['name']}"
+                 if house_flavor2 else (house_flavor or {}).get("name", ""))
+    index_entries = [
+        ("basket",      f"The {month} basket", f"{len(edition['featured_ingredients'])} ingredients"),
+        ("meals",       "The meals",           f"{len(edition['meal_transformations'])} transformations"),
+        ("field-notes", edition.get("field_notes_label", "Field Notes"), f"{len(edition['field_notes'])} notes"),
+        ("house-flavor","House Flavor",        hf_detail),
+        ("drink",       "The drink",           edition["drink"]["name"]),
+        ("ritual",      edition["local_ritual"]["label"], edition["local_ritual"]["name"]),
+        ("weekend",     "The weekend meal",    edition["weekend_meal"]["name"]),
+        ("notice",      "One thing to notice", edition["one_thing_to_notice"]["headline"]),
+    ]
+    jump_entries = [
+        ("basket", "Basket"), ("meals", "Meals"),
+        ("field-notes", edition.get("field_notes_label", "Field Notes")),
+        ("house-flavor", "House Flavor"), ("drink", "Drink"),
+        ("ritual", "Ritual"), ("weekend", "Weekend"), ("notice", "Notice"),
+    ]
+
+    drink        = edition["drink"]
+    weekend      = edition["weekend_meal"]
+    drink_href   = rel(depth, f"{slug}/{drink['slug']}/")
+    weekend_href = rel(depth, f"{slug}/weekend/")
 
     body = f"""
     <section class="hero" aria-label="{e(month)} edition">
@@ -797,6 +993,9 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
       </div>
       {month_card_html}
     </section>
+
+{render_edition_index(index_entries)}
+{render_jump_bar(jump_entries)}
 
     <div class="grid">
       <article class="section col-8" id="basket" aria-labelledby="basket-heading">
@@ -821,7 +1020,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
         </div>
       </article>
 
-      <article class="section col-12" aria-labelledby="field-notes-heading">
+      <article class="section col-12" id="field-notes" aria-labelledby="field-notes-heading">
         <div class="section-label" id="field-notes-heading">{e(edition.get('field_notes_label', 'Field Notes'))}</div>
         <div class="field-notes">
           {render_field_notes(edition['field_notes'])}
@@ -830,26 +1029,23 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
 
       {render_house_flavor_card(house_flavor, depth, edition_context, flavor2=house_flavor2)}
 
-      <article class="section col-12" aria-labelledby="drink-heading">
-        <div class="section-label">The drink</div>
-        <h2 id="drink-heading">{e(edition['drink']['name'])}</h2>
-        {render_drink(edition['drink'], month=month)}
+      <article class="section col-12" id="drink" aria-labelledby="drink-heading">
+        {render_linkout("The drink", drink['name'], drink['intro'],
+                        drink['card_line'], drink_href, "Make the drink", "drink-heading")}
       </article>
 
-      <aside class="section section--aside col-12" aria-label="{e(edition['local_ritual']['label'])}">
+      <aside class="section section--aside col-12" id="ritual" aria-label="{e(edition['local_ritual']['label'])}">
         <div class="section-label">{e(edition['local_ritual']['label'])}</div>
         <h2>{e(edition['local_ritual']['name'])}</h2>
         <p>{e(edition['local_ritual']['description'])}</p>
       </aside>
 
       <article class="section col-12" id="weekend" aria-labelledby="weekend-heading">
-        <div class="section-label">The weekend meal</div>
-        <h2 id="weekend-heading">{e(edition['weekend_meal']['name'])}</h2>
-        <p class="section-dek">{e(edition['weekend_meal']['intro'])}</p>
-        {render_weekend(edition['weekend_meal'])}
+        {render_linkout("The weekend meal", weekend['name'], weekend['intro'],
+                        weekend['card_line'], weekend_href, "Make the weekend meal", "weekend-heading")}
       </article>
 
-      <aside class="section section--aside col-12" aria-label="One thing to notice">
+      <aside class="section section--aside col-12" id="notice" aria-label="One thing to notice">
         <div class="section-label">One thing to notice</div>
         <h2>{e(edition['one_thing_to_notice']['headline'])}</h2>
         <p>{e(edition['one_thing_to_notice']['body'])}</p>
@@ -1019,7 +1215,8 @@ def build_meal_page(meal, edition, depth, canonical_url, edition_context, house_
     linked_notes = render_meal_linked_notes(meal.get("linked_field_notes", []), notes_by_slug)
 
     linked_drink_slug = meal.get("linked_drink")
-    drink_link = render_drink_link(edition_drink) if linked_drink_slug and linked_drink_slug == edition_drink.get("slug") else ""
+    drink_link = (render_drink_link(edition_drink, depth, month.lower())
+                  if linked_drink_slug and linked_drink_slug == edition_drink.get("slug") else "")
 
     linked_hf_slug = meal.get("linked_house_flavor")
     flavor_link = render_house_flavor_link(house_flavor, depth, edition_slug=month.lower()) if linked_hf_slug and house_flavor and linked_hf_slug == house_flavor.get("slug") else ""
@@ -1313,6 +1510,21 @@ def build_edition(edition_dir_name):
         write_page(SITE / edition_slug / hf_slug / "index.html", hf_html)
         hf_slugs_built.append(hf_slug)
 
+    # Drink page — same hub-and-spoke pattern as meals and house flavors
+    drink_slug = edition["drink"]["slug"]
+    drink_html = build_drink_page(
+        edition, depth=2, canonical_url=f"{base_url}/{edition_slug}/{drink_slug}/",
+        edition_context=edition_context,
+    )
+    write_page(SITE / edition_slug / drink_slug / "index.html", drink_html)
+
+    # Weekend meal page — fixed slug so the masthead link is stable across editions
+    weekend_html = build_weekend_page(
+        edition, depth=2, canonical_url=f"{base_url}/{edition_slug}/weekend/",
+        edition_context=edition_context,
+    )
+    write_page(SITE / edition_slug / "weekend" / "index.html", weekend_html)
+
     # Consolidated snapshot
     build_content_snapshot(edition, guides, ingredients_data)
 
@@ -1321,7 +1533,7 @@ def build_edition(edition_dir_name):
         edition_slug,
         ingredient_slugs=ingredient_slugs,
         meal_slugs=meal_slugs,
-        house_flavor_slugs=hf_slugs_built,
+        house_flavor_slugs=hf_slugs_built + [drink_slug, "weekend"],
         ing_index_dir=str(ing_index_dir),
     )
 

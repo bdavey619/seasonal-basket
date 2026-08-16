@@ -126,6 +126,10 @@ a { color: inherit; }
   line-height: .98;
   margin: 14px 0 6px;
 }
+/* Stacked on desktop; collapses to one line on mobile, where three lines of
+   3rem type pushed the first useful thing on the page below the fold. */
+.month-card-item { display: block; }
+.month-card-sep  { display: none; }
 .month-card .sub {
   font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
   font-size: .88rem;
@@ -142,6 +146,88 @@ a { color: inherit; }
      recipe beside it produced large empty panels that read as a mistake. */
   align-items: start;
 }
+
+/* ─── Edition contents ───────────────────────────────── */
+.edition-index {
+  padding: 30px 0 4px;
+  border-top: 1px solid var(--line);
+}
+.edition-index-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 40px;
+  margin-top: 14px;
+  max-width: 860px;
+}
+.edition-index-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  color: inherit;
+}
+.edition-index-name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+.edition-index-row:hover .edition-index-name { color: var(--primary); }
+.edition-index-detail {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .8rem;
+  color: var(--muted);
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* Flex items default to min-width:auto, which refuses to shrink below the
+     content width — the ellipsis never engages and the row overflows instead. */
+  min-width: 0;
+  flex: 0 1 auto;
+}
+.edition-index-name { flex: 0 0 auto; }
+
+/* ─── Running header ─────────────────────────────────── */
+/* Sits in flow beneath the contents, then pins once scrolled past. No JS. */
+.jump-bar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  margin: 22px 0 4px;
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.jump-bar-inner {
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 10px 0;
+  /* Fades the last link where the row scrolls; invisible when it all fits,
+     since the fade resolves to the page background either way. */
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 34px), transparent);
+          mask-image: linear-gradient(to right, #000 calc(100% - 34px), transparent);
+}
+.jump-bar-inner::-webkit-scrollbar { display: none; }
+.jump-bar a {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .74rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: 700;
+  color: var(--muted);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color .15s;
+}
+.jump-bar a:hover { color: var(--primary); }
+
+/* Keep a jumped-to heading clear of the pinned bar. */
+.grid > [id] { scroll-margin-top: 62px; }
 
 /* ─── Sections ───────────────────────────────────────── */
 /* The default treatment: a rule, a label, and content. Reserved cards are the
@@ -167,6 +253,17 @@ a { color: inherit; }
 .section--aside > p {
   font-size: 1.02rem;
   color: #3d4842;
+}
+/* One-line summary in a block whose full version lives on its own page. */
+.linkout-line {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .9rem;
+  color: var(--muted);
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  max-width: 62ch;
+  margin-bottom: 14px;
 }
 
 /* ─── Cards ──────────────────────────────────────────── */
@@ -613,6 +710,9 @@ a { color: inherit; }
   gap: 40px;
   margin-top: 36px;
 }
+/* Pages with no sidebar (the drink, the weekend meal) run one full column
+   rather than leaving the sidebar's third of the page empty. */
+.meal-body--solo { grid-template-columns: minmax(0, 1fr); }
 .meal-main section {
   margin-bottom: 32px;
   border-top: 1px solid var(--line);
@@ -866,8 +966,16 @@ footer {
   .basket-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 860px) {
-  .hero { grid-template-columns: 1fr; padding: 36px 0 20px; }
-  .month-card { min-height: 180px; }
+  .hero { grid-template-columns: 1fr; padding: 32px 0 16px; gap: 18px; }
+  .month-card { min-height: 0; padding: 18px 20px; }
+  .month-card .big { font-size: 1.85rem; line-height: 1.12; margin: 8px 0 5px; }
+  .month-card-item { display: inline; }
+  .month-card-sep  { display: inline; opacity: .5; }
+
+  /* minmax(0,…) not 1fr — a 1fr track also defaults to min-width:auto and
+     widens to fit its longest row rather than letting the detail truncate. */
+  .edition-index-list { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .grid > [id] { scroll-margin-top: 52px; }
   .col-8, .col-7, .col-5, .col-4, .col-12 { grid-column: 1 / -1; }
 
   /* ── The basket merge ──────────────────────────────

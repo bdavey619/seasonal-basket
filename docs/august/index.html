@@ -24,7 +24,7 @@
     <nav class="nav" aria-label="Primary navigation">
       <a href="../august/">August</a>
       <a href="../basket/august-ingredients/">The Basket</a>
-      <a href="../august/#weekend">The Weekend</a>
+      <a href="../august/weekend/">The Weekend</a>
     </nav>
   </header>
   <main id="main">
@@ -38,10 +38,52 @@
       
       <aside class="month-card" aria-label="This month tastes like">
         <div class="eyebrow">This month tastes like</div>
-        <div class="big">Fig<br>Pepper<br>Eggplant</div>
+        <div class="big"><span class="month-card-item">Fig</span><span class="month-card-sep"> · </span><span class="month-card-item">Pepper</span><span class="month-card-sep"> · </span><span class="month-card-item">Eggplant</span></div>
         <div class="sub">Deep, ripe, and barely needing heat.</div>
       </aside>
     </section>
+
+
+    <nav class="edition-index" aria-label="In this edition">
+      <div class="section-label">In this edition</div>
+      <div class="edition-index-list">
+        <a class="edition-index-row" href="#basket">
+          <span class="edition-index-name">The August basket</span>
+          <span class="edition-index-detail">8 ingredients</span>
+        </a>
+        <a class="edition-index-row" href="#meals">
+          <span class="edition-index-name">The meals</span>
+          <span class="edition-index-detail">5 transformations</span>
+        </a>
+        <a class="edition-index-row" href="#field-notes">
+          <span class="edition-index-name">Field Notes</span>
+          <span class="edition-index-detail">4 notes</span>
+        </a>
+        <a class="edition-index-row" href="#house-flavor">
+          <span class="edition-index-name">House Flavor</span>
+          <span class="edition-index-detail">Charred Pepper Sauce</span>
+        </a>
+        <a class="edition-index-row" href="#drink">
+          <span class="edition-index-name">The drink</span>
+          <span class="edition-index-detail">North Park Cooler</span>
+        </a>
+        <a class="edition-index-row" href="#ritual">
+          <span class="edition-index-name">San Diego ritual</span>
+          <span class="edition-index-detail">Go to the market without a list.</span>
+        </a>
+        <a class="edition-index-row" href="#weekend">
+          <span class="edition-index-name">The weekend meal</span>
+          <span class="edition-index-detail">Fig, prosciutto, burrata, and arugula.</span>
+        </a>
+        <a class="edition-index-row" href="#notice">
+          <span class="edition-index-name">One thing to notice</span>
+          <span class="edition-index-detail">The color of a ripe fig.</span>
+        </a></div>
+    </nav>
+
+    <nav class="jump-bar" aria-label="Jump to section">
+      <div class="jump-bar-inner"><a href="#basket">Basket</a><a href="#meals">Meals</a><a href="#field-notes">Field Notes</a><a href="#house-flavor">House Flavor</a><a href="#drink">Drink</a><a href="#ritual">Ritual</a><a href="#weekend">Weekend</a><a href="#notice">Notice</a></div>
+    </nav>
 
     <div class="grid">
       <article class="section col-8" id="basket" aria-labelledby="basket-heading">
@@ -184,7 +226,7 @@
         </div>
       </article>
 
-      <article class="section col-12" aria-labelledby="field-notes-heading">
+      <article class="section col-12" id="field-notes" aria-labelledby="field-notes-heading">
         <div class="section-label" id="field-notes-heading">Field Notes</div>
         <div class="field-notes">
           
@@ -211,7 +253,7 @@
       </article>
 
       
-      <article class="house-flavor-section col-12" aria-labelledby="house-flavor-heading">
+      <article class="house-flavor-section col-12" id="house-flavor" aria-labelledby="house-flavor-heading">
         <div class="section-label">House Flavor</div>
         <h2 id="house-flavor-heading">Charred Pepper Sauce</h2>
         <p class="house-flavor-tagline">One jar. A week of flavor.</p>
@@ -219,66 +261,31 @@
         <a href="../august/charred-pepper-sauce/" class="house-flavor-cta">→ Make one jar</a>
       </article>
 
-      <article class="section col-12" aria-labelledby="drink-heading">
+      <article class="section col-12" id="drink" aria-labelledby="drink-heading">
+        
         <div class="section-label">The drink</div>
         <h2 id="drink-heading">North Park Cooler</h2>
-        
-<p class="drink-intro">One drink. Make it as long as watermelon is around.</p>
-<div class="drink-grid">
-  <div class="drink-base">
-    <div class="meal-adds-sublabel">Keep</div>
-    <ul class="checklist"><li>Sparkling mineral water</li><li>Ice</li><li>½ lime</li></ul>
-    <div class="meal-adds-sublabel" style="margin-top:16px">August adds</div>
-    <ul class="checklist"><li>1 cup watermelon, roughly torn into chunks</li><li>4–5 basil leaves</li></ul>
-    <div class="meal-adds-sublabel" style="margin-top:16px">Method</div>
-    <p class="drink-method">Squeeze or press watermelon chunks through a fine-mesh strainer — or blend briefly and strain. Fill a rocks glass with ice. Add watermelon juice and a squeeze of lime. Slap the basil once between your palms, drop it in. Top with sparkling water.</p>
-  </div>
-  <div class="drink-variations">
-    
-      <div class="drink-try">
-        <div class="meal-adds-sublabel">Try another way</div>
-        <div class="drink-try-row">
-          <span class="drink-try-change">Add a few thin jalapeño rounds</span>
-          <span class="drink-try-context">If you want heat with the sweet.</span>
-        </div><div class="drink-try-row">
-          <span class="drink-try-change">Swap basil for mint</span>
-          <span class="drink-try-context">If there&#x27;s mint left from the week.</span>
-        </div><div class="drink-try-row">
-          <span class="drink-try-change">Use nectarine juice instead of watermelon</span>
-          <span class="drink-try-context">If you have an overripe nectarine.</span>
-        </div><div class="drink-try-row">
-          <span class="drink-try-change">Add more sparkling water</span>
-          <span class="drink-try-context">If you want something lighter.</span>
-        </div>
-      </div>
-  </div>
-</div>
+        <p class="section-dek">One drink. Make it as long as watermelon is around.</p>
+        <p class="linkout-line">Watermelon, basil, lime, sparkling water</p>
+        <a href="../august/north-park-cooler/" class="house-flavor-cta">→ Make the drink</a>
       </article>
 
-      <aside class="section section--aside col-12" aria-label="San Diego ritual">
+      <aside class="section section--aside col-12" id="ritual" aria-label="San Diego ritual">
         <div class="section-label">San Diego ritual</div>
         <h2>Go to the market without a list.</h2>
         <p>August at a San Diego farmers market is worth giving yourself a slow hour. Walk the whole thing once before buying anything. Let what looks best decide the week.</p>
       </aside>
 
       <article class="section col-12" id="weekend" aria-labelledby="weekend-heading">
+        
         <div class="section-label">The weekend meal</div>
         <h2 id="weekend-heading">Fig, prosciutto, burrata, and arugula.</h2>
         <p class="section-dek">One meal should feel like the reason you went shopping. In August, this is it.</p>
-        
-<div class="two-col">
-  <div>
-    <strong>Use</strong>
-    <ul><li>6–8 ripe figs, halved</li><li>1 ball burrata</li><li>4 slices prosciutto</li><li>A handful of arugula</li><li>Olive oil</li><li>Flaky salt and black pepper</li><li>Optional: a drizzle of honey or aged balsamic</li></ul>
-  </div>
-  <div>
-    <strong>Do</strong>
-    <p>Arrange figs, torn burrata, and prosciutto on a plate. Scatter arugula. Drizzle with olive oil, flaky salt, black pepper. Add honey or balsamic if you have it. Eat with bread.</p>
-  </div>
-</div>
+        <p class="linkout-line">Figs, burrata, prosciutto, arugula</p>
+        <a href="../august/weekend/" class="house-flavor-cta">→ Make the weekend meal</a>
       </article>
 
-      <aside class="section section--aside col-12" aria-label="One thing to notice">
+      <aside class="section section--aside col-12" id="notice" aria-label="One thing to notice">
         <div class="section-label">One thing to notice</div>
         <h2>The color of a ripe fig.</h2>
         <p>A ripe fig darkens all the way to deep purple-black and sometimes splits at the base. Look for a small bead of sweetness near the stem. That&#x27;s the one to buy.</p>

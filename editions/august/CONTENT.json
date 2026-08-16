@@ -153,6 +153,7 @@
   "weekend_meal": {
     "name": "Fig, prosciutto, burrata, and arugula.",
     "intro": "One meal should feel like the reason you went shopping. In August, this is it.",
+    "card_line": "Figs, burrata, prosciutto, arugula",
     "ingredients": [
       "6–8 ripe figs, halved",
       "1 ball burrata",
@@ -169,6 +170,7 @@
     "slug": "north-park-cooler",
     "name": "North Park Cooler",
     "intro": "One drink. Make it as long as watermelon is around.",
+    "card_line": "Watermelon, basil, lime, sparkling water",
     "keep": [
       "Sparkling mineral water",
       "Ice",

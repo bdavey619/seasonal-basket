@@ -155,6 +155,7 @@
   "weekend_meal": {
     "name": "Tomato, burrata, basil, and sourdough.",
     "intro": "One meal should feel like the reason you went shopping. This is July’s.",
+    "card_line": "Tomatoes, burrata, basil, sourdough",
     "ingredients": [
       "2 ripe tomatoes",
       "1 ball burrata or fresh mozzarella",
@@ -170,6 +171,7 @@
     "slug": "hillcrest-spritz",
     "name": "Hillcrest Spritz",
     "intro": "One drink. Make it on repeat.",
+    "card_line": "Tart cherry, mint, lime, sparkling water",
     "keep": [
       "2 oz tart cherry juice",
       "Sparkling mineral water",
