@@ -1,0 +1,212 @@
+{
+  "_note": "This is the canonical editable source for the September edition. Run python3 src/build.py to regenerate docs/. editions/september/CONTENT.json is auto-generated from this file and the ingredient JSONs.",
+  "month": "September",
+  "location": "San Diego",
+  "edition_number": 3,
+  "base_url": "https://bdavey.co/seasonal-basket",
+  "opening_note": "Two seasons share the table this month. Chiles are at their best and about to be gone. The first squash and the first apples arrive while it is still eighty degrees out. Buy from both sides. September is the only month that lets you.",
+  "thesis": "Keep the meal. Change the season.",
+  "palette": {
+    "background": "#e9e4d6",
+    "paper": "#f8f6ef",
+    "primary": "#7a3b2e",
+    "secondary": "#4a5b33",
+    "accent": "#b07d2c",
+    "ink": "#23261d",
+    "muted": "#6a6d5c",
+    "line": "#cdc5b2",
+    "cream": "#e6dcc6",
+    "dark": "#241d26"
+  },
+  "featured_ingredients": [
+    "roasting-chiles",
+    "tomatillos",
+    "cilantro",
+    "limes",
+    "delicata-squash",
+    "apples",
+    "grapes"
+  ],
+  "bring_home": {
+    "heading": "This is what I'd bring home.",
+    "cost_note": "Around $30–45 for the seasonal basket. Proteins and pantry basics are separate, and the escabeche wants two carrots and half an onion you probably already have.",
+    "items": [
+      {
+        "slug": "roasting-chiles",
+        "name": "Roasting chiles",
+        "qty": "6–8 poblano or Anaheim",
+        "note": "Buy more than you think. They shrink by half."
+      },
+      {
+        "slug": "tomatillos",
+        "name": "Tomatillos",
+        "qty": "1 lb",
+        "note": "Salsa verde takes ten minutes and no recipe."
+      },
+      {
+        "slug": "cilantro",
+        "name": "Cilantro",
+        "qty": "1 large bunch",
+        "note": "The herb that arrives as basil leaves."
+      },
+      {
+        "slug": "limes",
+        "name": "Limes",
+        "qty": "5–6",
+        "note": "Heaviest and cheapest they'll be all year."
+      },
+      {
+        "slug": "delicata-squash",
+        "name": "Delicata squash",
+        "qty": "2",
+        "note": "The first fall thing worth buying."
+      },
+      {
+        "slug": "apples",
+        "name": "Julian apples",
+        "qty": "4–5",
+        "note": "Eat them raw. Don't bake them yet."
+      },
+      {
+        "slug": "grapes",
+        "name": "Table grapes",
+        "qty": "1–2 lbs",
+        "note": "Peak. Keep them cold and eat them cold."
+      }
+    ]
+  },
+  "staples": [
+    "Sticky white rice",
+    "Ground beef or turkey",
+    "Chicken thighs",
+    "Salmon",
+    "Beans",
+    "Sourdough",
+    "Greek yogurt"
+  ],
+  "month_card": {
+    "items": [
+      "Chile",
+      "Squash",
+      "Apple"
+    ],
+    "sub": "Summer's last heat and fall's first weight."
+  },
+  "house_flavor": "escabeche",
+  "field_notes_label": "Field Notes",
+  "field_notes": [
+    {
+      "slug": "chile-roasting-season",
+      "name": "The parking lot smells like September.",
+      "body": "For a few weeks, chiles get roasted in drum roasters outside markets across the Southwest, San Diego included. If you find one, buy a bag — it is cheaper than doing it yourself and better than you'd expect. If you don't, you already know how: the same dry pan from July, the same covered bowl from August. Chiles are just bigger and need longer. Char, steam fifteen minutes, slip the skins off, tear into strips."
+    },
+    {
+      "slug": "salsa-verde-no-recipe",
+      "name": "Salsa verde without a recipe.",
+      "body": "Husk and rinse a pound of tomatillos. Boil them until they turn from bright green to olive, about five minutes, or char them in a dry pan if you want smoke. Blend with a chile, a handful of cilantro, salt, and a squeeze of lime. That's it. There is no correct ratio — taste it and add whichever one is missing. It will be too sharp the first minute and right after ten."
+    },
+    {
+      "slug": "delicata-skin",
+      "name": "Don't peel the delicata.",
+      "body": "The skin is thin enough to eat, which is the entire reason to buy this squash instead of a butternut. Halve it lengthwise, scoop the seeds, cut into half-moons, toss with oil and salt, roast hot until the edges go dark. No peeler, no cleaver, no wrestling."
+    },
+    {
+      "slug": "september-fish-counter",
+      "name": "September at the fish counter.",
+      "body": "In a warm year, dorado shows up off San Diego in late summer and stays into the fall. Yellowtail is still around. The question hasn't changed since July: not 'Do you have salmon?' but 'What came in today?' In September the counter often knows something you didn't plan for."
+    }
+  ],
+  "meal_transformations": [
+    {
+      "meal": "Rice bowl",
+      "change": "Roasted chile strips, delicata half-moons, cilantro, a spoonful of escabeche.",
+      "result": "The jar does the work."
+    },
+    {
+      "meal": "Pasta",
+      "change": "Blended poblano and cream. Cilantro and lime after the heat.",
+      "result": "Green, and not from basil."
+    },
+    {
+      "meal": "Tacos",
+      "change": "Chile strips, salsa verde, cilantro, lime, escabeche.",
+      "result": "The taqueria taco, at home."
+    },
+    {
+      "meal": "Beans",
+      "change": "A spoonful of escabeche and its brine. Cilantro.",
+      "result": "Ten seconds. A different bowl."
+    },
+    {
+      "meal": "Yogurt",
+      "change": "Grated apple, cold grapes, honey.",
+      "result": "Breakfast turns cooler before the weather does."
+    }
+  ],
+  "weekend_meal": {
+    "name": "Chiles rellenos, the plain way.",
+    "intro": "One meal should feel like the reason you went shopping. In September, it's the one you can only make while the chiles are here.",
+    "card_line": "Poblanos, jack cheese, tomato broth",
+    "ingredients": [
+      "6 large poblano chiles",
+      "8 oz Monterey jack or Oaxaca cheese, cut into batons",
+      "1 can whole tomatoes, or 4 ripe tomatoes",
+      "½ white onion",
+      "1 garlic clove",
+      "Olive oil",
+      "Salt",
+      "Cilantro and lime, to finish"
+    ],
+    "ingredient_note": "The traditional version is battered in whipped egg and fried. It's worth doing once, and it is not what this is. Roasted, stuffed, and baked gets you most of the way there on a Sunday afternoon.",
+    "method": "Char the poblanos on all sides — burner, grill, or dry pan. Steam them covered for fifteen minutes, then slip off the skins, keeping the chiles whole. Cut one slit down each side and pull out the seeds. Blend tomatoes, onion, and garlic; simmer in a little oil with salt until it darkens slightly, about twenty minutes. Tuck cheese into each chile, set them in a baking dish, and bake at 425°F until the cheese gives, about fifteen minutes. Spoon the broth around them, not over them. Cilantro and lime at the table."
+  },
+  "drink": {
+    "slug": "golden-hill-agua-fresca",
+    "name": "Golden Hill Agua Fresca",
+    "intro": "One drink. Make it while the grapes are cheap.",
+    "card_line": "Grapes, lime, salt, ice",
+    "keep": [
+      "Cold water",
+      "Ice",
+      "1 lime",
+      "Flaky salt"
+    ],
+    "season_adds": [
+      "2 cups table grapes, stems removed",
+      "A few cilantro leaves, optional"
+    ],
+    "method": "Blend the grapes with a cup of cold water for about fifteen seconds — no longer, or the seeds and skins turn it bitter. Pour through a fine-mesh strainer, pressing gently. Add another cup of cold water, the juice of half a lime, and a pinch of salt. Taste: it should be barely sweet. Pour over ice with a lime wedge.",
+    "try_another_way": [
+      {
+        "change": "Salt the rim with Tajín",
+        "context": "If you want it to taste like the corner stand."
+      },
+      {
+        "change": "Top with sparkling water",
+        "context": "If you want it lighter and longer."
+      },
+      {
+        "change": "Blend in half an apple",
+        "context": "Late in the month, when the grapes get expensive."
+      },
+      {
+        "change": "Add a thin round of chile",
+        "context": "If you have one left from roasting."
+      }
+    ]
+  },
+  "local_ritual": {
+    "label": "San Diego ritual",
+    "name": "Drive up to Julian.",
+    "description": "An hour inland and four thousand feet up, the apples come in while the coast is still in shorts. Go on a weekday if you can. Buy more than you meant to, eat one in the car, and notice that it is genuinely cooler up there — the first cool air of the year most San Diegans get."
+  },
+  "one_thing_to_notice": {
+    "headline": "The stripes on a delicata.",
+    "body": "A delicata's green stripes deepen toward orange as it cures. Pale ones were picked recently and taste closer to summer squash. The ones with real orange down in the grooves have had time, and they're sweeter. Both are worth eating. They're just not the same squash."
+  },
+  "market_question": "What's about to be gone?",
+  "next_edition": {
+    "month": "October",
+    "status": "Arriving soon."
+  }
+}

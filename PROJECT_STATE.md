@@ -14,7 +14,7 @@ After a year of reading Seasonal, a reader hasn't accumulated dozens of recipes.
 
 ## Current Status
 
-August is the current edition; July remains published and linked from the homepage archive. The architecture, voice, and product philosophy are established. The site is deployed at GitHub Pages from `/docs` on `main`, served at `https://bdavey.co/seasonal-basket/`.
+September is the current edition; July and August remain published and linked from the homepage archive. The architecture, voice, and product philosophy are established. The site is deployed at GitHub Pages from `/docs` on `main`, served at `https://bdavey.co/seasonal-basket/`.
 
 ## What We Know
 
@@ -63,6 +63,21 @@ August is the current edition; July remains published and linked from the homepa
 - Sourdough
 - Greek yogurt
 
+## September Featured Ingredients
+
+Summer's last word:
+
+- Roasting chiles (poblano, Anaheim, Hatch)
+- Tomatillos
+- Cilantro
+- Limes
+
+Fall's first:
+
+- Delicata squash
+- Julian apples
+- Table grapes
+
 ## July Featured Ingredients
 
 - Ripe tomatoes (any variety)
@@ -106,9 +121,19 @@ Supporting pages:
 
 July's technique is blistering/charring tomatoes on a dry comal or cast-iron pan. It earns its place: it unlocks the charred tomato salsa, which leads to tacos, beans, fish, and eggs. The complementary lesson — trust ripe tomatoes, don't cook them — is equally important. July teaches both transformation and restraint.
 
+## September — What the Edition Teaches
+
+September is San Diego's overlap month: chile season is at its peak and about to end, while the first squash and the first Julian apples arrive during a week that is still eighty degrees. The edition is built on that overlap rather than pretending the season has turned.
+
+The one new technique is the quick pickle brine underneath the escabeche — one cup vinegar, one cup water, a tablespoon of salt, a teaspoon of sugar — which works on any crisp vegetable and is the thing a reader should still be making a year from now. Charring is deliberately *not* re-taught: July's dry pan and August's covered bowl are assumed, and the chiles simply build on them. That is the accumulation principle working as intended.
+
+The restraint half of the edition is the fruit. Apples and grapes are bought to be eaten raw and cold. Nothing is baked into a dessert. September does not need one.
+
+The House Flavor is a single jar (escabeche), not two. Salsa verde is taught as judgment rather than as a second jar — a Field Note with no fixed ratio — because the season offered it and the North Star did not call for another recipe.
+
 ## Next Milestone
 
-Begin the August edition. Identify the technique(s) the August basket naturally wants to teach before settling on the ingredient list.
+Begin the October edition. The chiles will be gone; the squash, apples, and pomegranates will not. Identify whether October teaches heat or storage before settling on the ingredient list.
 
 ## Development Handoff Goal
 

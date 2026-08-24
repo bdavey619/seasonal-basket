@@ -1,0 +1,33 @@
+{
+  "slug": "cilantro",
+  "name": "Cilantro",
+  "month": "September",
+  "tile_uses": "Salsa verde, tacos, rice bowls, beans",
+  "why_now": "Cilantro is a cool-weather herb. It bolts and turns bitter in July heat, and it comes back as the nights start to drop. September is the handoff: basil is on its way out, cilantro is on its way in, and this month's basket is built around the second one.",
+  "how_to_choose": [
+    "Deep green leaves with no yellowing at the edges",
+    "Stems firm, not limp or slimy at the cut",
+    "No flower buds — a bunch that has bolted will taste soapy and thin",
+    "Smell it. If it smells like nothing, it has been in a cooler too long",
+    "A bunch with roots attached, if you can find one, keeps twice as long"
+  ],
+  "buy_this_much": "1 large bunch. You will use more of it than you expect, because the stems count.",
+  "price_note": "One of the cheapest ingredients you can buy at any store. If a bunch looks tired, buy two — it costs almost nothing to be generous with it.",
+  "pairs_with_month": ["tomatillos", "roasting-chiles", "limes"],
+  "pairs_with_staples": ["beans", "sticky white rice", "chicken thighs", "salmon", "Greek yogurt"],
+  "flavor_paths": [
+    { "name": "Blended", "description": "Stems and all, into salsa verde. This is where most of the bunch goes." },
+    { "name": "Torn on top", "description": "Leaves only, after the heat. Tacos, bowls, beans, eggs." },
+    { "name": "Stirred into yogurt", "description": "Chopped fine with lime and salt. A cold sauce for anything charred." }
+  ],
+  "weekday_uses": [
+    "Blended into salsa verde, stems included",
+    "Torn over rice bowls at the table",
+    "Stirred through a pot of beans off the heat",
+    "Chopped into yogurt with lime for a cold sauce"
+  ],
+  "weekend_use": "Scattered over the chiles rellenos with a lime wedge — the only green thing on the plate, and it should be a lot of it.",
+  "storage": "Trim the stem ends, stand the bunch in an inch of water like flowers, and put a bag loosely over the top in the fridge. Ten days instead of three. Change the water when you think of it.",
+  "one_thing_to_learn": "The stems are not scraps. They carry more of the flavor than the leaves and none of the fragility, which is why they belong in anything blended or simmered while the leaves belong on top at the last second. Learning to split the bunch — stems into the blender, leaves into a bowl for later — is the whole technique, and it applies to parsley the same way.",
+  "market_question": "Was this cut this morning? Do you have any with the roots still on?"
+}

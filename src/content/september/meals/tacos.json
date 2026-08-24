@@ -1,0 +1,38 @@
+{
+  "slug": "tacos",
+  "name": "Tacos",
+  "display_name": "Tacos",
+  "effort": "weekday",
+  "intro": "Chile strips, salsa verde, escabeche, cilantro, lime. Everything on this list came from one shopping trip and two jars.",
+  "keep": [
+    "Corn tortillas",
+    "Protein of choice",
+    "Cotija or crumbled feta",
+    "Lime"
+  ],
+  "season_anchor": [
+    "Roasted chile strips",
+    "Salsa verde"
+  ],
+  "season_options": [
+    "Escabeche",
+    "Shredded apple slaw with lime and cilantro",
+    "Roasted delicata",
+    "Cilantro, a lot of it"
+  ],
+  "variations": [
+    { "ingredients": "Chile strips + salsa verde + cilantro + escabeche", "context": "The September taco. Nothing here is optional." },
+    { "ingredients": "Delicata + chile strips + cotija + lime", "context": "The vegetable taco that does not feel like a compromise." },
+    { "ingredients": "Beans + salsa verde + apple slaw", "context": "The one to make on a weeknight when nothing is defrosted." }
+  ],
+  "works_well_with": [
+    "Chicken thighs, simmered in salsa verde and shredded",
+    "Ground beef or turkey",
+    "Black beans",
+    "Whatever came in at the fish counter"
+  ],
+  "finish": "Warm the tortillas directly over a flame or in a dry pan until they blister in spots, then stack them under a kitchen towel while you set everything else out. Two warm tortillas per taco, not one. That is not excess, it is structural.",
+  "linked_house_flavor": "escabeche",
+  "linked_field_notes": ["chile-roasting-season", "salsa-verde-no-recipe"],
+  "linked_ingredients": ["roasting-chiles", "tomatillos", "cilantro", "limes"]
+}

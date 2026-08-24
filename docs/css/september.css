@@ -1,0 +1,16 @@
+/* Seasonal — september.css
+   September palette variables. These are the only values that change between editions.
+   All layout, typography, and component styles live in base.css. */
+
+:root {
+  --bg:       #e9e4d6;
+  --paper:    #f8f6ef;
+  --primary:  #7a3b2e;   /* roasted chile */
+  --secondary:#4a5b33;   /* tomatillo green */
+  --accent:   #b07d2c;   /* delicata gold */
+  --ink:      #23261d;
+  --muted:    #6a6d5c;
+  --line:     #cdc5b2;
+  --cream:    #e6dcc6;   /* tomatillo husk */
+  --dark:     #241d26;   /* table grape */
+}

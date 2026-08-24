@@ -1,7 +1,7 @@
 # Seasonal
 
 **Working title:** Seasonal  
-**Current edition:** August — San Diego  
+**Current edition:** September — San Diego  
 **Published:** <https://bdavey.co/seasonal-basket/>
 
 Seasonal is a monthly field guide to what is worth eating, buying, making, and noticing right now.
@@ -52,7 +52,8 @@ The user can continue eating simple staples such as rice, beans, chicken thighs,
 │   ├── illustrations/
 │   └── content/              # Canonical, hand-edited editorial source
 │       ├── july/
-│       └── august/
+│       ├── august/
+│       └── september/
 │           ├── edition.json
 │           ├── guides.json
 │           ├── house-flavor*.json

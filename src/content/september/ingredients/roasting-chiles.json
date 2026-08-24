@@ -1,0 +1,33 @@
+{
+  "slug": "roasting-chiles",
+  "name": "Roasting chiles",
+  "month": "September",
+  "tile_uses": "Rice bowls, tacos, pasta, the weekend meal",
+  "why_now": "Poblanos, Anaheims, and Hatch chiles come in together in late August and are gone by mid-October. This is the short window when they are everywhere, cheap, and often being roasted in a drum outside the market. Nothing else in the year replaces them.",
+  "how_to_choose": [
+    "Firm, glossy, and heavy for their size",
+    "Flat-ish sides char more evenly than deeply lobed ones",
+    "Poblano for stuffing — wide shoulders, thick walls",
+    "Anaheim or Hatch for strips — longer, thinner, milder",
+    "Skip anything wrinkled or light; it has been sitting"
+  ],
+  "buy_this_much": "6–8 for the week. They lose about half their volume once roasted and peeled, so this is less than it looks.",
+  "price_note": "Cheapest they will be all year, and cheaper still by the sack. If a market is roasting them on site, that price usually beats buying them raw and doing it yourself.",
+  "pairs_with_month": ["tomatillos", "cilantro", "limes", "delicata-squash"],
+  "pairs_with_staples": ["chicken thighs", "ground beef or turkey", "beans", "eggs", "sticky white rice"],
+  "flavor_paths": [
+    { "name": "Rajas", "description": "Roasted, peeled, torn into strips. The default. Into everything all week." },
+    { "name": "Creamed", "description": "Blended with cream or Greek yogurt into a sauce for pasta or chicken." },
+    { "name": "Stuffed", "description": "Whole poblanos, cheese, a simple tomato broth. The weekend meal." }
+  ],
+  "weekday_uses": [
+    "Strips folded into a rice bowl",
+    "Strips in tacos with escabeche and lime",
+    "Blended with cream for pasta",
+    "Chopped into scrambled eggs"
+  ],
+  "weekend_use": "Chiles rellenos: charred, peeled, stuffed with jack cheese, baked, and set in a simple tomato broth.",
+  "storage": "Whole and raw, a week in the crisper. Roasted and peeled, four days in the fridge in a covered container, or freeze them in strips — they freeze better than almost any other vegetable in this basket.",
+  "one_thing_to_learn": "Charring a chile is not about cooking it. It is about destroying the skin, which is thin, papery, and unpleasant to eat, so that what is underneath can be. That is also why the covered fifteen minutes after charring matters more than the char itself: the trapped steam separates skin from flesh. Skip the steam and you will spend ten minutes scraping. Do it, and the skin slips off in sheets.",
+  "market_question": "Are these Hatch, or grown here? And how hot is this batch?"
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "tomatillos",
+  "name": "Tomatillos",
+  "month": "September",
+  "tile_uses": "Salsa verde, tacos, rice bowls, chicken",
+  "why_now": "Tomatillos run from midsummer into October and are at their best right now — heavy, tight in the husk, and tart in a way that no other ingredient in the basket is. They are also the cheapest sauce you can make from scratch.",
+  "how_to_choose": [
+    "The husk should be tight and papery, not shriveled or loose",
+    "The fruit should fill its husk completely",
+    "Firm, with a slight tackiness underneath — that is normal, rinse it off",
+    "Bright green, not yellowing; yellow means sweeter and duller",
+    "Small ones are usually tarter than large ones"
+  ],
+  "buy_this_much": "1 lb. That is one batch of salsa verde, which is about a week's worth.",
+  "price_note": "Inexpensive year-round and especially now. A pound of tomatillos makes more salsa than a jar of it costs.",
+  "pairs_with_month": ["roasting-chiles", "cilantro", "limes"],
+  "pairs_with_staples": ["chicken thighs", "beans", "ground beef or turkey", "eggs", "sticky white rice"],
+  "flavor_paths": [
+    { "name": "Boiled", "description": "Simmered until olive-colored, then blended. Softer, rounder, the everyday version." },
+    { "name": "Charred", "description": "Blistered in a dry pan first. Smokier and darker. The July technique, again." },
+    { "name": "Raw", "description": "Blended straight, uncooked. Sharpest of the three. Good on rich meat, hard on eggs." }
+  ],
+  "weekday_uses": [
+    "Salsa verde on rice bowls",
+    "Salsa verde on tacos",
+    "Simmered with chicken thighs until the sauce thickens",
+    "Spooned over fried eggs"
+  ],
+  "weekend_use": "Simmer a pot of chicken thighs in salsa verde for an hour and shred them. It is the easiest thing in this edition and it feeds you for days.",
+  "storage": "Leave the husks on and keep them in a paper bag in the crisper — two weeks, easily. Husked, they go sticky and soft faster. Blended salsa keeps five days.",
+  "one_thing_to_learn": "Tomatillos are not unripe tomatoes. They are a different plant, related to the ground cherry, and the sourness is structural rather than a sign that you got there too early. That means you cannot fix a tomatillo by waiting. What you can do is decide how much of that sharpness you want: raw keeps all of it, boiling rounds it off, charring trades some of it for smoke.",
+  "market_question": "Were these picked this week? And do you cook yours or use them raw?"
+}
