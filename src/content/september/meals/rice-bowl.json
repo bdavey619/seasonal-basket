@@ -1,0 +1,36 @@
+{
+  "slug": "rice-bowl",
+  "name": "Rice bowl",
+  "display_name": "Rice bowl",
+  "effort": "weekday",
+  "intro": "September's rice bowl is built on two things you made once: a tray of roasted chiles and a jar of escabeche.",
+  "keep": [
+    "Sticky white rice",
+    "Protein of choice (chicken, beef, beans, or nothing)"
+  ],
+  "season_anchor": [
+    "Roasted chile strips",
+    "A spoonful of escabeche, with a little brine"
+  ],
+  "season_options": [
+    "Delicata squash, roasted in half-moons",
+    "Salsa verde",
+    "Cilantro, torn",
+    "Lime"
+  ],
+  "variations": [
+    { "ingredients": "Chile strips + escabeche + cilantro", "context": "The version you'll make most often. Three minutes if the jar is in the fridge." },
+    { "ingredients": "Delicata + chile strips + lime", "context": "Sweet against smoke. The one that feels like fall showed up." },
+    { "ingredients": "Salsa verde + beans + cilantro", "context": "No protein needed. Sharp, green, and finished." }
+  ],
+  "works_well_with": [
+    "Chicken thighs",
+    "Ground beef or turkey",
+    "Black or pinto beans",
+    "A fried egg"
+  ],
+  "finish": "Lime last, over everything, and more cilantro than looks reasonable. If the bowl tastes flat, it is almost never missing salt — it is missing the squeeze.",
+  "linked_house_flavor": "escabeche",
+  "linked_field_notes": ["chile-roasting-season", "delicata-skin"],
+  "linked_ingredients": ["roasting-chiles", "delicata-squash", "cilantro", "limes"]
+}

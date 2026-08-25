@@ -1,0 +1,36 @@
+{
+  "_note": "These are fictional recurring editorial characters who are part of Seasonal's voice. They are not real people and carry no real credentials, biographies, locations, employers, or factual claims about their lives. Each character represents a consistent way of noticing food and the season. Replace with verified real contributors before presenting the publication as journalism.",
+  "guides": [
+    {
+      "id": "jerome",
+      "name": "Jerome",
+      "role": "The market guide",
+      "philosophy": "A good market rewards patience.",
+      "voice": "Direct, welcoming, practical. Has a strong opinion about which lap to buy on.",
+      "notices": "What is at its peak this week versus what is being pushed. What the farmers themselves are eating.",
+      "assigned_ingredients": ["delicata-squash", "apples", "grapes"],
+      "quotes": {
+        "delicata-squash": "First squash of the year always outsells the good squash in November. Buy it anyway. It's a different pleasure.",
+        "apples": "An apple that traveled three days is a fine apple. An apple that came down the mountain yesterday is a different fruit.",
+        "grapes": "Cheapest they'll be. Buy twice what you'd normally buy and keep them cold.",
+        "edition": "September is two markets in one aisle. Half of it is leaving and half of it is showing up."
+      }
+    },
+    {
+      "id": "rocio",
+      "name": "Rocío",
+      "role": "The chile voice",
+      "philosophy": "Roast more than you think you need.",
+      "voice": "Unhurried, funny about how much heat people claim they can take.",
+      "notices": "Skin that blisters evenly. The moment a tomatillo turns from bright green to olive. Whether the cilantro was cut this morning.",
+      "assigned_ingredients": ["roasting-chiles", "tomatillos", "cilantro", "limes"],
+      "quotes": {
+        "roasting-chiles": "You will use every one. Nobody has ever roasted too many chiles.",
+        "tomatillos": "Sharp is not a mistake. That's what it's for.",
+        "cilantro": "Stems go in the blender. Only the leaves go on top.",
+        "limes": "Roll it on the counter first. You'll get twice as much out of it.",
+        "edition": "The chiles are here for a few weeks. Everything else in this basket will still be around in October."
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "limes",
+  "name": "Limes",
+  "month": "September",
+  "tile_uses": "Salsa verde, tacos, the drink, everything",
+  "why_now": "California limes are harvested from late summer through winter, and early fall is when they are heaviest with juice and cheapest at the register. Every other ingredient in this basket is sharpened by one. In September a lime is not a garnish — it is a seasoning you buy by the bag.",
+  "how_to_choose": [
+    "Heavy for its size — that is juice",
+    "Thin, smooth skin rather than thick and pebbled",
+    "A little yellow at the blossom end is fine and often means riper and juicier",
+    "Give it a gentle squeeze; it should have some give",
+    "Skip hard, light, dark-green ones — they are dry inside"
+  ],
+  "buy_this_much": "5–6 for the week. One goes into the salsa, one into the drink, and the rest get squeezed over whatever you made.",
+  "price_note": "Cheapest in late summer and fall. Bagged limes are usually a better deal than loose ones and are fine for juicing, if not for wedges.",
+  "pairs_with_month": ["tomatillos", "roasting-chiles", "cilantro", "grapes"],
+  "pairs_with_staples": ["beans", "sticky white rice", "salmon", "chicken thighs", "Greek yogurt"],
+  "flavor_paths": [
+    { "name": "Squeezed at the table", "description": "The last thing that happens to almost every plate this month." },
+    { "name": "In the blender", "description": "Into salsa verde, to keep it green and stop it tasting flat." },
+    { "name": "Zested", "description": "Over fruit, yogurt, or the drink. All the aroma, none of the acid." }
+  ],
+  "weekday_uses": [
+    "Squeezed over tacos and rice bowls",
+    "Into salsa verde at the end, to taste",
+    "Whisked with olive oil and salt as a two-ingredient dressing",
+    "Over cut fruit with a pinch of salt and chile"
+  ],
+  "weekend_use": "Wedges on the table with the chiles rellenos. The broth is rich and the lime is what keeps you eating.",
+  "storage": "Loose in the crisper drawer, not on the counter — two to three weeks cold versus one week warm. Juice keeps five days in a jar, or freeze it in an ice cube tray.",
+  "one_thing_to_learn": "Acid is a seasoning, and it does a job salt cannot. When a bowl of beans or a pot of salsa tastes finished but somehow flat, the missing thing is almost never more salt — it is a squeeze of lime. Learn to reach for that first, and half the food you cook gets better without a single new ingredient.",
+  "market_question": "Are these Persian or key limes? Which ones are juicier right now?"
+}

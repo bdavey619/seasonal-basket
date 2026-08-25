@@ -1,0 +1,67 @@
+{
+  "slug": "escabeche",
+  "name": "Escabeche",
+  "month": "september",
+  "intro": "One jar. Three weeks of acid and crunch.",
+  "card_uses": [
+    "Spoon it over a rice bowl.",
+    "Pile it on tacos.",
+    "Stir it into beans, brine and all.",
+    "Eat it next to anything rich."
+  ],
+  "ingredients": [
+    "2 Anaheim chiles or 4 jalapeños, cut into rounds",
+    "2 carrots, sliced on an angle",
+    "½ white onion, sliced thick",
+    "3 garlic cloves, peeled and smashed",
+    "1 cup white or apple cider vinegar",
+    "1 cup water",
+    "1 tbsp kosher salt",
+    "1 tsp sugar",
+    "2 bay leaves, a pinch of dried oregano, a few peppercorns",
+    "1 tbsp neutral oil"
+  ],
+  "method": "Warm the oil in a saucepan over medium heat. Add the onion, carrot, garlic, and chiles and cook for about three minutes — just until the edges soften and the kitchen starts to smell like it. Add the vinegar, water, salt, sugar, and the bay, oregano, and peppercorns. Bring to a simmer, then take it off the heat immediately. Pour everything, brine included, into a jar. Cool on the counter, then refrigerate. It's good in an hour and better on day three. The ratio underneath this is the part worth keeping: one cup vinegar, one cup water, one tablespoon salt, one teaspoon sugar. That brine works on any crisp vegetable you have too much of.",
+  "storage": {
+    "note": "Keeps in the refrigerator for three weeks, and the brine outlasts the vegetables. Don't throw the brine out — it belongs on beans and in dressings.",
+    "flagged_for_review": false
+  },
+  "uses": [
+    {
+      "meal": "rice-bowl",
+      "label": "Rice bowl",
+      "action": "Spoon it on top.",
+      "context": "Add a little brine with it. Rice takes acid better than people expect."
+    },
+    {
+      "meal": "tacos",
+      "label": "Tacos",
+      "action": "Pile it on.",
+      "context": "This is the jar that makes a home taco taste like it came from somewhere. Go heavier than feels right."
+    },
+    {
+      "meal": null,
+      "label": "Beans",
+      "action": "Stir in the brine.",
+      "context": "A spoonful of brine into a pot of beans does what a squeeze of vinegar does, with more going on."
+    },
+    {
+      "meal": null,
+      "label": "Chicken thighs",
+      "action": "Serve alongside.",
+      "context": "Something crisp and sharp next to something rich and browned. That's the whole idea."
+    },
+    {
+      "meal": null,
+      "label": "A sandwich",
+      "action": "Chop it fine.",
+      "context": "Chopped escabeche does the job of pickles, mustard, and hot sauce at once."
+    }
+  ],
+  "linked_ingredients": [
+    "roasting-chiles"
+  ],
+  "linked_field_notes": [
+    "chile-roasting-season"
+  ]
+}

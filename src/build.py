@@ -103,6 +103,22 @@ def rel(depth, target):
 
 # ── CSS builder ────────────────────────────────────────────────────────────────
 
+# ── Publication status ─────────────────────────────────────────────────────────
+
+# An edition marked "upcoming" is finished and committed, but not yet the one the
+# publication leads with. Its pages are still built — so the link check covers
+# them and the edition can be previewed at its own URL — but the homepage keeps
+# showing the previous month as current, lists the upcoming month only under
+# "Next edition", and the pages carry a noindex tag until the month arrives.
+# To publish: set "status": "published" in that edition's edition.json and rebuild.
+
+def is_published(edition):
+    return edition.get("status", "published") != "upcoming"
+
+# Set for the duration of each edition's build; read by render_shell so an
+# unpublished edition's pages are not indexed while they are staged.
+BUILDING_UNPUBLISHED = False
+
 # Content hash per stylesheet, used to bust the browser cache on deploy.
 # GitHub Pages serves css/*.css with max-age=600 and the filenames never
 # change, so without this a CSS-only change is invisible to anyone who
@@ -826,6 +842,11 @@ def render_shell(title, description, canonical_url, css_depth, body,
 
     extra_class  = f" {page_class}" if page_class else ""
 
+    # Staged editions are readable by anyone with the URL but stay out of search
+    # results until the month they belong to actually starts.
+    noindex = ('\n  <meta name="robots" content="noindex" />'
+               if BUILDING_UNPUBLISHED else "")
+
     base_css     = rel(css_depth, f"css/base.css?v={CSS_VERSIONS.get('base.css', '')}")
     month_css    = rel(css_depth, f"css/{edition_slug}.css?v={CSS_VERSIONS.get(edition_slug + '.css', '')}")
     home_href    = rel(css_depth, "")
@@ -838,7 +859,7 @@ def render_shell(title, description, canonical_url, css_depth, body,
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{e(title)}</title>
   <meta name="description" content="{e(description)}" />
-  <link rel="canonical" href="{e(canonical_url)}" />
+  <link rel="canonical" href="{e(canonical_url)}" />{noindex}
   <!-- Social preview -->
   <meta property="og:title" content="{e(title)}" />
   <meta property="og:description" content="{e(description)}" />
@@ -1431,6 +1452,7 @@ def edition_context_for(edition, edition_slug):
 
 
 def build_edition(edition_dir_name):
+    global BUILDING_UNPUBLISHED
     edition_slug = edition_dir_name  # e.g. "july", "august"
     content_dir  = CONTENT / edition_slug
     ing_dir      = content_dir / "ingredients"
@@ -1444,6 +1466,10 @@ def build_edition(edition_dir_name):
     guides_list = guides.get("guides", [])
     base_url    = edition.get("base_url", "").rstrip("/")
     month       = edition["month"]
+
+    BUILDING_UNPUBLISHED = not is_published(edition)
+    if BUILDING_UNPUBLISHED:
+        print("  (staged — built and previewable, but not yet the current edition)")
 
     # Build edition context — passed to all page builders so they never hardcode month/location
     edition_context = edition_context_for(edition, edition_slug)
@@ -1586,6 +1612,7 @@ def build_edition(edition_dir_name):
 
 
 def main():
+    global BUILDING_UNPUBLISHED
     print("Seasonal build")
     print("=" * 40)
 
@@ -1606,13 +1633,18 @@ def main():
         key=lambda pair: pair[1].get("edition_number", 0),
         reverse=True,
     )
-    current_dir, current_edition = all_editions[0]
-    past_editions = [ed for d, ed in all_editions[1:]]
+    published = [(d, ed) for d, ed in all_editions if is_published(ed)]
+    if not published:
+        fail("No published editions found — every edition is marked upcoming")
+    current_dir, current_edition = published[0]
+    past_editions = [ed for d, ed in published[1:]]
 
     for edition_dir in edition_dirs:
         build_edition(edition_dir)
 
-    # Publication homepage (site root) — written once, after every edition exists
+    # Publication homepage (site root) — written once, after every edition exists.
+    # It always belongs to the current published edition, whatever was built last.
+    BUILDING_UNPUBLISHED = False
     print("\nBuilding publication homepage")
     base_url = current_edition.get("base_url", "").rstrip("/")
     root_html = build_publication_home(
