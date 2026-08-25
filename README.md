@@ -1,7 +1,8 @@
 # Seasonal
 
 **Working title:** Seasonal  
-**Current edition:** September — San Diego  
+**Current edition:** August — San Diego  
+**Next edition:** September — staged in the repository, live September 1  
 **Published:** <https://bdavey.co/seasonal-basket/>
 
 Seasonal is a monthly field guide to what is worth eating, buying, making, and noticing right now.
@@ -83,8 +84,19 @@ python3 -m http.server --directory docs 8000
 
 1. Create `src/content/<month>/` with `edition.json`, `guides.json`, at least one `house-flavor*.json`, plus `ingredients/` and `meals/`.
 2. Add `src/css/<month>.css` with that month's palette. Palette variables are the only values that change between editions — all layout and typography live in `base.css`.
-3. Set `edition_number` higher than every existing edition. The highest number becomes the current edition on the homepage; everything below it moves into the archive automatically.
+3. Set `edition_number` higher than every existing edition. The highest published number becomes the current edition on the homepage; everything below it moves into the archive automatically.
 4. Run the build.
+
+### Staging an edition ahead of its month
+
+An edition can be finished and merged before the month it belongs to. Set `"status": "upcoming"` in its `edition.json` and the build will:
+
+- keep the previous month as the current edition on the homepage,
+- leave the staged month out of the archive — it appears only in the "Next edition" block, which is driven by the current edition's `next_edition` field,
+- still generate every page, so the link check covers the staged edition and it can be previewed at its own URL,
+- add `<meta name="robots" content="noindex">` to the staged edition's pages so it stays out of search results while it waits.
+
+To publish it, set `"status": "published"` (or remove the field) and rebuild. Nothing else changes.
 
 ## Deployment
 
