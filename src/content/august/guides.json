@@ -5,14 +5,14 @@
       "id": "adela",
       "name": "Adela",
       "role": "The stone-fruit voice",
-      "philosophy": "If it doesn't smell like anything, put it back.",
+      "philosophy": "A fruit that never smelled like anything was picked too early.",
       "voice": "Warm, precise, and slightly impatient with under-ripe fruit.",
-      "notices": "Fragrance first. Color second. The shoulder near the stem of a nectarine.",
+      "notices": "The shoulder near the stem. The color under the blush. Fragrance, once the fruit has warmed up.",
       "assigned_ingredients": ["nectarines", "figs"],
       "quotes": {
-        "nectarines": "A nectarine that doesn't smell like anything won't improve on the counter. It just gets softer.",
-        "figs": "You smell a fig before you taste it. That's how you know.",
-        "edition": "August stone fruit is the last good window before everything turns. Don't wait for it to ripen on the counter."
+        "nectarines": "Cold fruit doesn't smell like anything, so don't judge it in the store. Look at the shoulder. If there's green in it, no amount of waiting will help.",
+        "figs": "A ripe fig can't sit up straight. If the whole box is standing to attention, they picked it early.",
+        "edition": "August stone fruit is the last good window before everything turns. The counter is part of buying it — just don't start with green."
       }
     },
     {

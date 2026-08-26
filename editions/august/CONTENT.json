@@ -36,7 +36,7 @@
         "slug": "figs",
         "name": "Ripe figs",
         "qty": "1 pint",
-        "note": "Buy them ripe. Plan to eat within two days."
+        "note": "Soft and drooping, not firm. They will not ripen at home."
       },
       {
         "slug": "bell-peppers",
@@ -78,7 +78,7 @@
         "slug": "nectarines",
         "name": "Nectarines",
         "qty": "4–5",
-        "note": "The peach's quieter cousin. Almost as good."
+        "note": "Gold shoulders, no green. Give them two days on the counter."
       }
     ]
   },
@@ -206,8 +206,8 @@
     "description": "August at a San Diego farmers market is worth giving yourself a slow hour. Walk the whole thing once before buying anything. Let what looks best decide the week."
   },
   "one_thing_to_notice": {
-    "headline": "The color of a ripe fig.",
-    "body": "A ripe fig darkens all the way to deep purple-black and sometimes splits at the base. Look for a small bead of sweetness near the stem. That's the one to buy."
+    "headline": "The neck of a ripe fig.",
+    "body": "A ripe fig cannot hold itself up. The neck softens and the fruit droops from its stem, skin faintly cracked, sometimes with a bead of syrup at the eye. Color depends on the variety — Mission figs go purple-black, Kadota stays yellow-green — so the posture tells you more than the color does. The ones standing straight out were picked early, and a fig picked early stays that way."
   },
   "market_question": "What's at its best today?",
   "next_edition": {
@@ -219,17 +219,17 @@
       "id": "adela",
       "name": "Adela",
       "role": "The stone-fruit voice",
-      "philosophy": "If it doesn't smell like anything, put it back.",
+      "philosophy": "A fruit that never smelled like anything was picked too early.",
       "voice": "Warm, precise, and slightly impatient with under-ripe fruit.",
-      "notices": "Fragrance first. Color second. The shoulder near the stem of a nectarine.",
+      "notices": "The shoulder near the stem. The color under the blush. Fragrance, once the fruit has warmed up.",
       "assigned_ingredients": [
         "nectarines",
         "figs"
       ],
       "quotes": {
-        "nectarines": "A nectarine that doesn't smell like anything won't improve on the counter. It just gets softer.",
-        "figs": "You smell a fig before you taste it. That's how you know.",
-        "edition": "August stone fruit is the last good window before everything turns. Don't wait for it to ripen on the counter."
+        "nectarines": "Cold fruit doesn't smell like anything, so don't judge it in the store. Look at the shoulder. If there's green in it, no amount of waiting will help.",
+        "figs": "A ripe fig can't sit up straight. If the whole box is standing to attention, they picked it early.",
+        "edition": "August stone fruit is the last good window before everything turns. The counter is part of buying it — just don't start with green."
       }
     },
     {
@@ -260,16 +260,17 @@
       "name": "Figs",
       "month": "August",
       "tile_uses": "Yogurt, cheese plates, weekend meal",
-      "why_now": "Mission figs peak in late July through August. The window is short — often just two or three weeks of genuinely perfect fruit. What you find now was picked ripe and won't be available like this again until next year.",
+      "why_now": "Mission figs run from late summer into fall, and August is when they turn serious. The best of them often arrive in the last two weeks of the month — earlier fruit can look right and still taste faintly green, because the tree wasn't finished with it. The window is short and worth waiting out. What you find at its peak was picked ripe and won't be available like this again until next year.",
       "how_to_choose": [
-        "Deep purple to almost black — that's ripe, not overripe",
-        "Slightly soft when gently pressed, especially near the base",
-        "Sometimes splitting at the base — that's a good sign",
-        "A small bead of sweetness near the stem means it's ready",
-        "Avoid pale green or tan figs; they haven't ripened"
+        "The neck bends. A ripe fig hangs heavy and droops from its stem instead of standing straight out — this is the most reliable tell there is",
+        "Soft the whole way through, like a water balloon that's full. Not firm with a little give — properly soft",
+        "Fine cracks in the skin, and often a bead of syrup at the eye on the bottom. Both mean it's ready, not spoiled",
+        "Color follows the variety, not the ripeness. Mission figs go purple-black, but Kadota and Calimyrna are yellow-green when they're perfect. Don't reject a green fig — check its neck",
+        "A firm fig is a finished fig. If everything in the box is standing up straight, buy something else"
       ],
       "buy_this_much": "1 pint for the week. Plan to eat most of them within two days of buying.",
-      "price_note": "Figs are briefly abundant in August and reasonably priced at farmers markets. Grocery store figs are available but often picked underripe for transport — the farmers market version is worth the detour this month.",
+      "buying_note": "This is the ingredient worth being difficult about. Lift the clamshell, tilt it, look at how the figs sit. If they're all upright and firm, put it back — a pint of underripe figs is expensive, faintly grassy, and cannot be rescued on the counter, because a fig does not ripen after it leaves the tree. It softens and eventually ferments; it never gets sweeter. The nectarines can carry the weekend plate.",
+      "price_note": "Figs are briefly abundant in August and reasonably priced at farmers markets. Grocery store figs are available but are often picked early so they survive the trip — which is exactly the fruit that never comes good. The farmers market version is worth the detour this month.",
       "pairs_with_month": [
         "basil",
         "nectarines"
@@ -300,9 +301,9 @@
         "Sliced alongside cheese and crackers"
       ],
       "weekend_use": "The weekend plate: halved figs, torn burrata, prosciutto, arugula, olive oil, and flaky salt. Eat with bread.",
-      "storage": "Counter for a day, two at most. Refrigerate only if necessary and use immediately after. Do not buy them expecting them to keep.",
-      "one_thing_to_learn": "A fig ripens from the outside in, not the inside out. The color tells you something. Black-purple with a soft give near the base is ready. A hard, pale fig won't ripen meaningfully on the counter — it will soften but not sweeten the way a tree-ripened one does.",
-      "market_question": "Which variety is this? Are these mission figs?"
+      "storage": "Out of the clamshell, stem down on a plate in a single layer, on the counter for a day — two at most. Refrigerate only if you have to, and eat them soon after. Do not buy them expecting them to keep, and do not buy them expecting them to improve.",
+      "one_thing_to_learn": "A fig isn't really a fruit. It's a flower turned inward — a hollow stem end lined with hundreds of tiny blossoms that never see daylight. That's why the rules are different from every other fruit in the basket. A peach or a nectarine keeps ripening after picking because it carries its own reserves; a fig is fed through its stem right up until the moment it's cut, and the instant that connection breaks, it is as sweet as it will ever be. Everything a fig has, it got on the tree. Your only job is to choose one the tree was finished with.",
+      "market_question": "When were these picked — and which ones should I eat today?"
     },
     "bell-peppers": {
       "slug": "bell-peppers",
@@ -613,15 +614,18 @@
       "name": "Nectarines",
       "month": "August",
       "tile_uses": "Yogurt, breakfast, snacks, the plate",
-      "why_now": "Nectarines are peaches without the fuzz, and in August they often hit their stride when peach season begins to wind down. The flavor is similar — sweet, aromatic, deeply summery — but the skin is thinner and doesn't need peeling. This is the last good stone fruit window before fall.",
+      "why_now": "Nectarines are peaches without the fuzz, and in August they often hit their stride as peach season winds down. The flavor is similar — sweet, aromatic, deeply summery — but the skin is thinner and doesn't need peeling. This is the last good stone fruit window before fall. It is also the month when the fruit has traveled the furthest and been kept the coldest, which is why choosing well matters more now than it did in July.",
       "how_to_choose": [
-        "Fragrant at the stem end — this is the most reliable test",
-        "Gives slightly when gently pressed near the top",
-        "Deep color, though variety affects this (yellow and white varieties both have peak moments)",
-        "Avoid hard nectarines — they were picked underripe and won't improve meaningfully"
+        "Look at the background color, not the red blush — the gold or cream under the blush should have no green left in it. Red is variety and sun exposure, and it tells you nothing",
+        "Press the shoulder near the stem, not the cheek. The skin is thin enough to feel soft over flesh that isn't",
+        "Heavy for its size. A light nectarine was picked before it filled out",
+        "Buy from an unrefrigerated display when the store has one. Stone fruit chilled while still firm turns mealy and never recovers",
+        "Fragrance confirms; it doesn't filter. Cold fruit doesn't smell like anything, so a quiet nectarine with gold shoulders is still worth taking home",
+        "Avoid green shoulders and rock-hard fruit — that one was picked too early and will only soften, never sweeten"
       ],
-      "buy_this_much": "4–5 nectarines for the week. They don't all need to be eaten at once.",
-      "price_note": "Stone fruit is still affordable in August, though supply begins to thin by late in the month. Buy them when you see good ones — the window doesn't come back.",
+      "buy_this_much": "4–5 nectarines for the week. They don't all need to be ready on the same day.",
+      "buying_note": "Firm is fine. Green is not. Take home nectarines that are heavy and gold-shouldered even if they don't give yet, then leave them on the counter for two or three days — stem side down, out of direct sun, in a paper bag if you want to hurry them. They will soften, get juicy, and start to smell like something. What they will not do is get sweeter than the day they were picked, which is why the color under the blush decides the purchase and the give only decides the day you eat it.",
+      "price_note": "Stone fruit is still affordable in August, though supply thins by late in the month and more of it arrives from further away. Buy them when you see good ones — the window doesn't come back.",
       "pairs_with_month": [
         "basil",
         "figs"
@@ -651,9 +655,9 @@
         "Sliced alongside the weekend cheese plate"
       ],
       "weekend_use": "Alongside the fig and burrata plate — or in place of figs if they weren't available. The combination of ripe stone fruit, good cheese, and cured meat holds up in either direction.",
-      "storage": "Counter until ripe. Eat within a day or two of peak ripeness. Do not refrigerate until fully ripe, and use quickly after.",
-      "one_thing_to_learn": "Nectarines and peaches are genetically almost identical — the difference is a single gene that determines whether the skin is fuzzy or smooth. Their flavor profiles and peak windows are nearly the same. If you're buying from a farmers market, ask which variety the grower would eat today. They usually know exactly which ones are ready.",
-      "market_question": "Which variety is ripest right now?"
+      "storage": "Counter until ripe, stem side down, in a single layer. Refrigerate only once it's fully soft and fragrant, and eat within a day or two after that. A firm nectarine put in the refrigerator is the one that comes out dry and cottony.",
+      "one_thing_to_learn": "The dry, cottony nectarine has a name: internal breakdown, or woolliness. It happens when stone fruit is held cold — roughly 36°F to 46°F — while it is still firm, which describes almost every refrigerated grocery display in the second half of summer. The damage is done before you get there and cannot be undone on your counter. This is the whole reason a nectarine bought in August can look flawless, feel perfect, and taste like nothing. Buy from the room-temperature stack when there is one, ripen at home, and refrigerate only at the end.",
+      "market_question": "Which of these should I eat tomorrow, and which should I give a few days?"
     }
   }
 }

@@ -3,16 +3,17 @@
   "name": "Figs",
   "month": "August",
   "tile_uses": "Yogurt, cheese plates, weekend meal",
-  "why_now": "Mission figs peak in late July through August. The window is short — often just two or three weeks of genuinely perfect fruit. What you find now was picked ripe and won't be available like this again until next year.",
+  "why_now": "Mission figs run from late summer into fall, and August is when they turn serious. The best of them often arrive in the last two weeks of the month — earlier fruit can look right and still taste faintly green, because the tree wasn't finished with it. The window is short and worth waiting out. What you find at its peak was picked ripe and won't be available like this again until next year.",
   "how_to_choose": [
-    "Deep purple to almost black — that's ripe, not overripe",
-    "Slightly soft when gently pressed, especially near the base",
-    "Sometimes splitting at the base — that's a good sign",
-    "A small bead of sweetness near the stem means it's ready",
-    "Avoid pale green or tan figs; they haven't ripened"
+    "The neck bends. A ripe fig hangs heavy and droops from its stem instead of standing straight out — this is the most reliable tell there is",
+    "Soft the whole way through, like a water balloon that's full. Not firm with a little give — properly soft",
+    "Fine cracks in the skin, and often a bead of syrup at the eye on the bottom. Both mean it's ready, not spoiled",
+    "Color follows the variety, not the ripeness. Mission figs go purple-black, but Kadota and Calimyrna are yellow-green when they're perfect. Don't reject a green fig — check its neck",
+    "A firm fig is a finished fig. If everything in the box is standing up straight, buy something else"
   ],
   "buy_this_much": "1 pint for the week. Plan to eat most of them within two days of buying.",
-  "price_note": "Figs are briefly abundant in August and reasonably priced at farmers markets. Grocery store figs are available but often picked underripe for transport — the farmers market version is worth the detour this month.",
+  "buying_note": "This is the ingredient worth being difficult about. Lift the clamshell, tilt it, look at how the figs sit. If they're all upright and firm, put it back — a pint of underripe figs is expensive, faintly grassy, and cannot be rescued on the counter, because a fig does not ripen after it leaves the tree. It softens and eventually ferments; it never gets sweeter. The nectarines can carry the weekend plate.",
+  "price_note": "Figs are briefly abundant in August and reasonably priced at farmers markets. Grocery store figs are available but are often picked early so they survive the trip — which is exactly the fruit that never comes good. The farmers market version is worth the detour this month.",
   "pairs_with_month": ["basil", "nectarines"],
   "pairs_with_staples": ["Greek yogurt", "burrata", "prosciutto", "sourdough"],
   "flavor_paths": [
@@ -26,7 +27,7 @@
     "Sliced alongside cheese and crackers"
   ],
   "weekend_use": "The weekend plate: halved figs, torn burrata, prosciutto, arugula, olive oil, and flaky salt. Eat with bread.",
-  "storage": "Counter for a day, two at most. Refrigerate only if necessary and use immediately after. Do not buy them expecting them to keep.",
-  "one_thing_to_learn": "A fig ripens from the outside in, not the inside out. The color tells you something. Black-purple with a soft give near the base is ready. A hard, pale fig won't ripen meaningfully on the counter — it will soften but not sweeten the way a tree-ripened one does.",
-  "market_question": "Which variety is this? Are these mission figs?"
+  "storage": "Out of the clamshell, stem down on a plate in a single layer, on the counter for a day — two at most. Refrigerate only if you have to, and eat them soon after. Do not buy them expecting them to keep, and do not buy them expecting them to improve.",
+  "one_thing_to_learn": "A fig isn't really a fruit. It's a flower turned inward — a hollow stem end lined with hundreds of tiny blossoms that never see daylight. That's why the rules are different from every other fruit in the basket. A peach or a nectarine keeps ripening after picking because it carries its own reserves; a fig is fed through its stem right up until the moment it's cut, and the instant that connection breaks, it is as sweet as it will ever be. Everything a fig has, it got on the tree. Your only job is to choose one the tree was finished with.",
+  "market_question": "When were these picked — and which ones should I eat today?"
 }

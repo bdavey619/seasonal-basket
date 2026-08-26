@@ -30,6 +30,8 @@ August is the current edition. September is written, built, and merged, but stag
 
 **Don't manufacture symmetry.** The season determines the curriculum. Some months have two techniques; some have one; some ingredients are best transformed, others best left almost untouched. Nothing should be added simply to match last month or to complete a pattern.
 
+**Ripeness guidance is ingredient-specific.** August shipped nectarine advice inherited from July's peaches and fig advice that led with color. Both failed against the actual fruit: a nectarine has to be read by the ground color under its blush and by where it has been kept, not by fragrance in a cold store, and a fig has to be read by its posture, because color is a variety trait and a fig does not ripen after picking at all. When two ingredients look similar, write the selection guidance from the ingredient, never from its neighbor.
+
 **Repetition is the architecture.** A basket where tomatoes appear in five meals and basil in four feels coherent. Repetition is the whole point.
 
 **Weekdays:** help readers improve the meals they are already going to make.
