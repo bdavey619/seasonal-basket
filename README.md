@@ -22,7 +22,8 @@ Each monthly edition includes:
 - Meal transformations — your usual meals, wearing the month
 - Field Notes — short pieces, each a secret worth knowing
 - At least one House Flavor: a make-once jar that improves meals all week
-- One weekend meal
+- One weekend meal — where the month's new cut and method are taught
+- The month's cut — one protein in the basket, chosen to expand the repertoire past the staples
 - One seasonal drink
 - One thing to notice
 - An ingredient page for every ingredient in the basket

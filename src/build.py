@@ -1039,6 +1039,17 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
         ("house-flavor", "House Flavor"), ("drink", "Drink"),
         ("ritual", "Ritual"), ("weekend", "Weekend"), ("notice", "Notice"),
     ]
+    # The local ritual is optional: a month whose place-note isn't about
+    # cooking can leave it out, and the menu drops it with the section.
+    ritual = edition.get("local_ritual")
+    if not ritual:
+        jump_entries = [j for j in jump_entries if j[0] != "ritual"]
+    ritual_html = f"""
+      <aside class="section section--aside col-12" id="ritual" aria-label="{e(ritual['label'])}">
+        <div class="section-label">{e(ritual['label'])}</div>
+        <h2>{e(ritual['name'])}</h2>
+        <p>{e(ritual['description'])}</p>
+      </aside>""" if ritual else ""
 
     drink        = edition["drink"]
     weekend      = edition["weekend_meal"]
@@ -1089,12 +1100,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
         {render_linkout("The drink", drink['name'], drink['intro'],
                         drink['card_line'], drink_href, "Make the drink", "drink-heading")}
       </article>
-
-      <aside class="section section--aside col-12" id="ritual" aria-label="{e(edition['local_ritual']['label'])}">
-        <div class="section-label">{e(edition['local_ritual']['label'])}</div>
-        <h2>{e(edition['local_ritual']['name'])}</h2>
-        <p>{e(edition['local_ritual']['description'])}</p>
-      </aside>
+{ritual_html}
 
       <article class="section col-12" id="weekend" aria-labelledby="weekend-heading">
         {render_linkout("The weekend meal", weekend['name'], weekend['intro'],

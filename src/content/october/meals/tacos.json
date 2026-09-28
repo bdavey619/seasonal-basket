@@ -31,24 +31,25 @@
     },
     {
       "ingredients": "Rockfish + arugula + pomegranate + lime",
-      "context": "If you bought fish. Flaked, pan-seared, three minutes a side."
+      "context": "Weekend leftovers, or fillets seared three minutes a side."
     }
   ],
   "works_well_with": [
+    "Rockfish, pan-seared and flaked",
     "Black or pinto beans",
-    "Ground beef or turkey",
-    "Rockfish, pan-seared and flaked"
+    "Ground beef or turkey"
   ],
   "finish": "Warm the tortillas over a flame or in a dry pan until they blister in spots, and stack them under a towel. Pomegranate goes on last so it stays cold against the warm sweet potato.",
   "linked_house_flavor": "ajvar",
   "linked_field_notes": [
     "kabocha-cutting",
-    "october-fish-counter"
+    "on-the-bone"
   ],
   "linked_ingredients": [
     "sweet-potatoes",
     "pomegranates",
     "arugula",
-    "red-bell-peppers"
+    "red-bell-peppers",
+    "whole-rockfish"
   ]
 }

@@ -5,7 +5,7 @@
   "edition_number": 4,
   "status": "upcoming",
   "base_url": "https://bdavey.co/seasonal-basket",
-  "opening_note": "October is San Diego's second summer. Some years the hottest week lands now, when the wind turns and blows in from the desert. But the harvest has moved inland: new dates, new sweet potatoes, heavy pomegranates, the last sweet peppers, and a squash that will sit on your counter until Thanksgiving. For the first time since spring, you can shop for the month instead of the week.",
+  "opening_note": "October is San Diego's second summer. Some years the hottest week lands now, when the wind blows in from the desert. But the harvest has moved inland — new dates, new sweet potatoes, heavy pomegranates, the last sweet peppers — and as the water cools, the local rockfish comes in. This is the month to buy a fish whole.",
   "thesis": "Keep the meal. Change the season.",
   "palette": {
     "background": "#e9e3d6",
@@ -26,11 +26,12 @@
     "arugula",
     "pomegranates",
     "fresh-dates",
-    "guavas"
+    "guavas",
+    "whole-rockfish"
   ],
   "bring_home": {
     "heading": "This is what I'd bring home.",
-    "cost_note": "Around $35–45 for the seasonal basket, and most of it will still be good in three weeks. Proteins and pantry basics are separate. The ajvar also wants one eggplant.",
+    "cost_note": "Around $35–45 for the produce and $20–30 for the fish. Pantry basics are separate. The ajvar also wants one eggplant.",
     "items": [
       {
         "slug": "kabocha-squash",
@@ -73,6 +74,12 @@
         "name": "Guavas",
         "qty": "5–6",
         "note": "Smell them before you see them. Buy the fragrant ones."
+      },
+      {
+        "slug": "whole-rockfish",
+        "name": "Whole rockfish",
+        "qty": "1, 2–3 lbs",
+        "note": "The month's new cut. Ask them to scale and gut it."
       }
     ]
   },
@@ -88,10 +95,10 @@
   "month_card": {
     "items": [
       "Pomegranate",
-      "Date",
-      "Guava"
+      "Rockfish",
+      "Date"
     ],
-    "sub": "What the desert and the valley send down."
+    "sub": "The desert, the valley, and the cooling water."
   },
   "house_flavor": "ajvar",
   "field_notes_label": "Field Notes",
@@ -112,9 +119,9 @@
       "body": "A kabocha is dense enough to be dangerous with a knife. Put it whole in a 400°F oven for ten minutes, or the microwave for three, and the skin softens enough to cut through safely. Don't peel it. Roasted, the skin goes tender and you eat all of it."
     },
     {
-      "slug": "october-fish-counter",
-      "name": "October at the fish counter.",
-      "body": "Rockfish is the local fish that gets more reliable as the water cools: dozens of species, mild and firm, usually cheaper than anything flown in. Ask for it whole. A counter that sells it whole will scale and gut it for you, and a whole fish is easier to cook well than a fillet."
+      "slug": "on-the-bone",
+      "name": "Cook it on the bone.",
+      "body": "Fish and meat cooked on the bone are harder to overcook. The bone slows the heat, the skin holds in moisture, and the flesh next to the bone stays juicy. That's why a whole fish at 450°F is more forgiving than a fillet in a pan. Learn it on a fish this month; it's the same idea in a pot of bone-in chicken thighs once the evenings actually cool."
     }
   ],
   "meal_transformations": [
@@ -139,14 +146,14 @@
       "result": "A whole dinner, no meat, no effort."
     },
     {
-      "meal": "Yogurt",
-      "change": "Chopped new dates, pomegranate, a pinch of salt.",
-      "result": "Sweet enough on its own."
+      "meal": "Fish night",
+      "change": "Rockfish fillets instead of salmon. Pan-seared, ajvar, arugula.",
+      "result": "Same night, different fish."
     }
   ],
   "weekend_meal": {
     "name": "Whole roasted rockfish, and the October salad.",
-    "intro": "One meal should feel like the reason you went shopping. In October, it's a whole local fish and a salad that only works this month: the first mild arugula, pomegranate, and new dates.",
+    "intro": "One meal should feel like the reason you went shopping. In October, it's the fish most people never buy: a whole local rockfish, roasted on the bone, with a salad that only works this month.",
     "card_line": "Whole rockfish, arugula, pomegranate, dates, ajvar",
     "ingredients": [
       "1 whole rockfish, 2–3 lbs, scaled and gutted",
@@ -196,14 +203,9 @@
       }
     ]
   },
-  "local_ritual": {
-    "label": "San Diego ritual",
-    "name": "Go to the desert.",
-    "description": "Anza-Borrego is two hours east and unbearable until now. October is the first month it isn't. Go for a day, walk until it gets hot, and notice that the dates, the pomegranates, and the citrus coming next all grow somewhere that looks like this — dry, bright, and irrigated. The season in this basket comes from inland, not from the coast."
-  },
   "one_thing_to_notice": {
-    "headline": "The wind from the wrong direction.",
-    "body": "A few times each fall the wind turns around and blows from the desert instead of the ocean. The air goes warm and very dry, the sky turns unusually clear, and from the coast you can suddenly see the mountains. It's why October can be hotter than August. When it happens, look east."
+    "headline": "A fresh fish looks back at you.",
+    "body": "At the counter, look at the eyes before anything else. Clear, bright, and slightly bulging means it came in recently; cloudy and sunken means it didn't. Then ask to see under the gill flap: bright red is fresh, brown is not. It takes five seconds and tells you more than any label."
   },
   "market_question": "What will this keep until?",
   "next_edition": {

@@ -133,17 +133,33 @@ The House Flavor is a single jar (escabeche), not two. Salsa verde is taught as 
 
 ## October — What the Edition Teaches
 
-October follows September's blueprint exactly: basket, meals, Field Notes, one House Flavor, drink, ritual, weekend meal, one thing to notice.
+October follows September's blueprint with one section removed and one idea added. It is the first edition built on the cut / method / tool model in `EDITORIAL_PLAYBOOK.md`.
 
-October answers the question September left open — heat or storage — with storage. San Diego's October is a second summer (the desert wind can make it hotter than August), but the harvest moves inland: new-crop Medjool dates from the Coachella and Bard valleys, new-crop sweet potatoes, pomegranates, and kabocha, which improves for weeks on the counter. The shopping habit the edition teaches is buying for the month instead of the week. Red bell peppers (the jar's base), arugula, and guavas are the fresh side. Seven items, four of them vegetables — a basket of mostly fruit doesn't carry weeknight dinners.
+October answers the question September left open — heat or storage — with storage. San Diego's October is a second summer, but the harvest moves inland: new-crop Medjool dates, new-crop sweet potatoes, pomegranates, and kabocha, which improves for weeks on the counter. Red bell peppers (the jar's base), arugula, and guavas are the fresh side.
 
-The House Flavor is ajvar: red peppers and eggplant, charred (the dry-flame move from July and August, assumed rather than re-taught) and cooked down into a relish that keeps — the one new technique is that slow cook-down, which is how a vegetable becomes something that lasts. The weekend meal is a whole roasted rockfish — the local fish that gets more reliable as the water cools — with a salad that only works this month: the first mild arugula, pomegranate, and new dates. The drink is cold-steeped jamaica with pomegranate, because it's still hot.
+**The cut** is whole rockfish: local, more reliable as the water cools, cheaper than salmon, and a fish most readers have never bought whole. **The method** is cooking on the bone at high heat, taught by the weekend meal (whole roasted rockfish with an arugula, pomegranate, and date salad) and named in the Field Note "Cook it on the bone." **No new tool** — nothing is naturally coming back into use in a warm October. Rockfish fillets replace salmon for one weekday meal ("Fish night").
 
-October is nut-free throughout, sesame included. Keep it that way in future editions where possible, and never make a nut the load-bearing ingredient of a jar or weekend meal.
+The House Flavor is ajvar: red peppers and eggplant, charred (assumed from July and August) and cooked down into a relish that keeps. The drink is cold-steeped jamaica with pomegranate. One thing to notice is how to read a fresh fish. The local ritual is left out: the month's place-note wasn't about cooking, and the section is now optional in the build.
+
+October is nut-free throughout, sesame included. Keep it that way where possible, and never make a nut the load-bearing ingredient of a jar or weekend meal.
+
+## The Year's Cuts, Methods, and Tools (draft)
+
+A working plan, not a commitment. Confirm each month against real San Diego weather and seasonality before writing it.
+
+| Month | Cut | Method | Tool | Why then |
+|---|---|---|---|---|
+| October | Whole rockfish | Cooking on the bone, high heat | — | Still warm; rockfish more reliable as the water cools |
+| November | Bone-in, skin-on chicken thighs | Braising | Dutch oven | The first reliably cool evenings |
+| December | Pork shoulder | Slow roasting | Dutch oven or roasting pan | Coldest month; long oven time welcome |
+| January | Whole chicken | Roasting + pan sauce | Cast iron or roasting pan | Pairs with citrus season |
+| February | Spot prawns | Fast, in the shell | Cast iron | Local trap season reopens |
+
+Each month should build on the last: on-the-bone (October) → braise (November) → slow roast (December).
 
 ## Next Milestone
 
-Begin the November edition. Poblanos will be gone; persimmons and pomegranates peak; the first citrus arrives.
+Begin the November edition: bone-in chicken thighs, braising, and the Dutch oven, if the weather has actually turned. Persimmons and pomegranates peak; the first citrus arrives.
 
 ## Development Handoff Goal
 

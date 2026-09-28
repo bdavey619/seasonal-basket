@@ -62,6 +62,20 @@ Each edition is organized around the four pillars. These are editorial scaffoldi
 6. Drink + Local ritual
 7. Weekend meal + One thing to notice
 
+## The Month's Cut, Method, and Tool
+
+Produce isn't the only thing that's seasonal. How people cook changes through the year too: summer is raw, grilled, and fast; cooler months bring back bone-in cuts, long cooking, and the heavy pot. Every edition answers three questions — what's ripe, what it's cooked with, and how it's cooked — but only the first gets the page's full weight. The other two ride on sections that already exist:
+
+- **The cut goes in the basket.** One protein a month, chosen to expand the reader's repertoire past the staples — a whole fish, a bone-in cut, a shellfish in season. It gets a row in "This is what I'd bring home" and an ingredient page like any produce: why now, how to choose it, how much, what to ask the counter.
+- **The weekend meal teaches the method.** It is where the month's cut meets the month's method, because the weekend is when readers have time to try something new.
+- **A Field Note carries the lesson forward.** One short note that names the principle underneath the method, so it transfers to next month's cut.
+- **The weekday meals repeat it.** The cut shows up again in at least one weekday meal, so it becomes something the reader cooks, not something they read about once.
+- **A tool appears only when one is genuinely coming back into use.** Most months won't introduce one. Never add one for symmetry.
+
+The staples list stays the weekday base. The season changes the produce, and sometimes the cut and the pot.
+
+Seafood seasonality is literal and worth naming. Meat seasonality usually isn't — choose a cut because it fits the weather and the basket, and say so honestly.
+
 ## The Weekday / Weekend Philosophy
 
 These are two different modes, and both belong in each edition.
