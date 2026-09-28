@@ -35,7 +35,7 @@
       "meal": "tacos",
       "label": "Tacos",
       "action": "Under everything else.",
-      "context": "A smear on the warm tortilla first, then kabocha and beans. Smoky where salsa would be sharp."
+      "context": "A smear on the warm tortilla first, then sweet potato and beans. Smoky where salsa would be sharp."
     },
     {
       "meal": null,
@@ -56,7 +56,9 @@
       "context": "Sourdough, ajvar, a fried egg, a few arugula leaves."
     }
   ],
-  "linked_ingredients": [],
+  "linked_ingredients": [
+    "red-bell-peppers"
+  ],
   "linked_field_notes": [
     "october-peppers"
   ]

@@ -5,7 +5,7 @@
   "edition_number": 4,
   "status": "upcoming",
   "base_url": "https://bdavey.co/seasonal-basket",
-  "opening_note": "October is San Diego's second summer. Some years the hottest week lands now, when the wind turns and blows in from the desert. But the harvest has moved inland: new dates, heavy pomegranates, the first guavas, and a squash that will sit on your counter until Thanksgiving. For the first time since spring, you can shop for the month instead of the week.",
+  "opening_note": "October is San Diego's second summer. Some years the hottest week lands now, when the wind turns and blows in from the desert. But the harvest has moved inland: new dates, new sweet potatoes, heavy pomegranates, the last sweet peppers, and a squash that will sit on your counter until Thanksgiving. For the first time since spring, you can shop for the month instead of the week.",
   "thesis": "Keep the meal. Change the season.",
   "palette": {
     "background": "#e9e3d6",
@@ -21,21 +21,40 @@
   },
   "featured_ingredients": [
     "kabocha-squash",
+    "red-bell-peppers",
+    "sweet-potatoes",
+    "arugula",
     "pomegranates",
     "fresh-dates",
-    "guavas",
-    "arugula",
-    "asian-pears"
+    "guavas"
   ],
   "bring_home": {
     "heading": "This is what I'd bring home.",
-    "cost_note": "Around $30–40 for the seasonal basket, and half of it will still be good in three weeks. Proteins and pantry basics are separate. The ajvar wants four red bell peppers and one eggplant.",
+    "cost_note": "Around $35–45 for the seasonal basket, and most of it will still be good in three weeks. Proteins and pantry basics are separate. The ajvar also wants one eggplant.",
     "items": [
       {
         "slug": "kabocha-squash",
         "name": "Kabocha squash",
         "qty": "1 large",
         "note": "The sweetest squash there is. It keeps for months."
+      },
+      {
+        "slug": "red-bell-peppers",
+        "name": "Red bell peppers",
+        "qty": "6",
+        "note": "The last sweet ones. Four go into the jar."
+      },
+      {
+        "slug": "sweet-potatoes",
+        "name": "Sweet potatoes",
+        "qty": "2 lbs",
+        "note": "New crop. Dinner, when the week gets away from you."
+      },
+      {
+        "slug": "arugula",
+        "name": "Arugula",
+        "qty": "2 bunches",
+        "note": "The first greens since spring that aren't harsh."
       },
       {
         "slug": "pomegranates",
@@ -54,18 +73,6 @@
         "name": "Guavas",
         "qty": "5–6",
         "note": "Smell them before you see them. Buy the fragrant ones."
-      },
-      {
-        "slug": "arugula",
-        "name": "Arugula",
-        "qty": "2 bunches",
-        "note": "The first greens since spring that aren't harsh."
-      },
-      {
-        "slug": "asian-pears",
-        "name": "Asian pears",
-        "qty": "3–4",
-        "note": "Crisp like an apple, wet like a melon."
       }
     ]
   },
@@ -123,13 +130,13 @@
     },
     {
       "meal": "Tacos",
-      "change": "Roasted kabocha, black beans, pomegranate, cotija, lime.",
+      "change": "Roasted sweet potato, black beans, pomegranate, cotija, lime.",
       "result": "Sweet, sharp, salty."
     },
     {
       "meal": "Beans",
-      "change": "Ajvar stirred in. Arugula on top.",
-      "result": "Ten seconds. A different bowl."
+      "change": "Ajvar stirred in. A baked sweet potato alongside.",
+      "result": "A whole dinner, no meat, no effort."
     },
     {
       "meal": "Yogurt",
@@ -139,21 +146,20 @@
   ],
   "weekend_meal": {
     "name": "Whole roasted rockfish, and the October salad.",
-    "intro": "One meal should feel like the reason you went shopping. In October, it's a whole local fish and a salad that only works this month: the first mild arugula, Asian pear, pomegranate, and new dates.",
-    "card_line": "Whole rockfish, arugula, Asian pear, pomegranate, dates, ajvar",
+    "intro": "One meal should feel like the reason you went shopping. In October, it's a whole local fish and a salad that only works this month: the first mild arugula, pomegranate, and new dates.",
+    "card_line": "Whole rockfish, arugula, pomegranate, dates, ajvar",
     "ingredients": [
       "1 whole rockfish, 2–3 lbs, scaled and gutted",
       "1 lemon, sliced thin, plus another for the salad",
       "Olive oil and kosher salt",
       "4 big handfuls of arugula",
-      "1 Asian pear, sliced thin",
       "Seeds of half a pomegranate",
       "4 new-crop dates, pitted and torn",
       "A wedge of parmesan, for shaving",
       "Ajvar and good bread, for the table"
     ],
     "ingredient_note": "No whole fish at your counter? Two pounds of rockfish fillets work too — roast them for ten to twelve minutes instead.",
-    "method": "Heat the oven to 450°F. Pat the fish dry inside and out and cut three shallow slashes on each side, down to the bone. Rub it all over with olive oil, salt it well, inside and out, and tuck the lemon slices into the cavity. Roast on a sheet pan for 20 to 25 minutes, until the flesh at the thickest part is opaque and pulls easily from the bone. While it roasts, put the arugula, pear, pomegranate, and dates in a wide bowl, but don't dress them. At the table, add olive oil, a squeeze of lemon, and salt, toss, and shave parmesan over the top. Bring the fish out whole. Lift the top fillet off with a spoon, pull out the spine, and serve the bottom fillet. Ajvar and bread on the side."
+    "method": "Heat the oven to 450°F. Pat the fish dry inside and out and cut three shallow slashes on each side, down to the bone. Rub it all over with olive oil, salt it well, inside and out, and tuck the lemon slices into the cavity. Roast on a sheet pan for 20 to 25 minutes, until the flesh at the thickest part is opaque and pulls easily from the bone. While it roasts, put the arugula, pomegranate, and dates in a wide bowl, but don't dress them. At the table, add olive oil, a squeeze of lemon, and salt, toss, and shave parmesan over the top. Bring the fish out whole. Lift the top fillet off with a spoon, pull out the spine, and serve the bottom fillet. Ajvar and bread on the side."
   },
   "drink": {
     "slug": "barrio-logan-jamaica",
@@ -214,20 +220,22 @@
       "notices": "What is at its peak this week versus what is being pushed. What the farmers themselves are eating.",
       "assigned_ingredients": [
         "kabocha-squash",
+        "red-bell-peppers",
+        "sweet-potatoes",
+        "arugula",
         "pomegranates",
         "fresh-dates",
-        "guavas",
-        "arugula",
-        "asian-pears"
+        "guavas"
       ],
       "quotes": {
         "kabocha-squash": "Ugliest thing on the table. Sweetest thing on the table.",
         "pomegranates": "Pick it up. If it surprises you, buy it.",
         "fresh-dates": "People think dates are a winter thing because that's when they notice them. This is when they're good.",
         "arugula": "Summer arugula bites you. This one's just saying hello.",
-        "asian-pears": "They look expensive. Eat one and it makes sense.",
         "edition": "October is the first month you can buy things that wait for you.",
-        "guavas": "Follow your nose. The good ones announce themselves."
+        "guavas": "Follow your nose. The good ones announce themselves.",
+        "red-bell-peppers": "Last good week for these. Buy for the jar, not just for dinner.",
+        "sweet-potatoes": "Nobody gets excited about a sweet potato. That's why they're a good deal."
       }
     }
   ],
@@ -250,6 +258,7 @@
       "pairs_with_month": [
         "pomegranates",
         "arugula",
+        "red-bell-peppers",
         "fresh-dates"
       ],
       "pairs_with_staples": [
@@ -284,6 +293,161 @@
       "one_thing_to_learn": "Kabocha is drier than other squash, which is why it roasts so well: there's less water to steam off before the sugars can brown. That's also why it can taste chalky if undercooked. Roast it until a knife slides in with no resistance at all, then give it five more minutes.",
       "market_question": "How long ago was this picked?"
     },
+    "red-bell-peppers": {
+      "slug": "red-bell-peppers",
+      "name": "Red bell peppers",
+      "month": "October",
+      "tile_uses": "The ajvar, eggs, rice bowls, raw with salt",
+      "why_now": "A red pepper is a green pepper that was left on the plant long enough to ripen, and by the end of the season that's most of what's left. Early fall is when California's red peppers are sweetest and often cheapest. By November they'll be shipped from farther away and priced like it.",
+      "how_to_choose": [
+        "Glossy, firm, and heavy for their size",
+        "Deep, even red, with no green shoulders",
+        "Thick walls — press gently; they shouldn't flex",
+        "A green, fresh-looking stem",
+        "Blocky, four-lobed peppers char more evenly than twisted ones"
+      ],
+      "buy_this_much": "6. Four for the jar, two for the week.",
+      "price_note": "Loose peppers by the pound are almost always cheaper than the packaged three-color bags.",
+      "pairs_with_month": [
+        "kabocha-squash",
+        "sweet-potatoes",
+        "arugula"
+      ],
+      "pairs_with_staples": [
+        "eggs",
+        "chicken thighs",
+        "ground beef or turkey",
+        "beans",
+        "sticky white rice"
+      ],
+      "flavor_paths": [
+        {
+          "name": "Charred and cooked down",
+          "description": "Into the ajvar. The reason to buy six."
+        },
+        {
+          "name": "Raw",
+          "description": "Sliced thick, with salt. As sweet as any fruit in the basket."
+        },
+        {
+          "name": "Softened in oil",
+          "description": "Strips cooked slowly with garlic until they slump. Into eggs, onto bowls."
+        }
+      ],
+      "weekday_uses": [
+        "Charred and cooked down into the ajvar",
+        "Strips softened in olive oil, folded into scrambled eggs",
+        "Sliced raw into a rice bowl for crunch",
+        "Softened with garlic under chicken thighs"
+      ],
+      "weekend_use": "Charred on Saturday, cooked down into a jar of ajvar that carries the week.",
+      "storage": "Unwashed in the crisper for a week to ten days. Charred and peeled, four days in the fridge, or freeze the strips flat.",
+      "one_thing_to_learn": "Green, yellow, and red bell peppers are mostly the same plant at different stages. Red ones have spent the longest ripening, which is why they're sweetest and cost more most of the year. The end of the season is when that extra time is cheap.",
+      "market_question": "Are these the last of the local ones?"
+    },
+    "sweet-potatoes": {
+      "slug": "sweet-potatoes",
+      "name": "Sweet potatoes",
+      "month": "October",
+      "tile_uses": "Tacos, rice bowls, a weeknight dinner on their own",
+      "why_now": "California's sweet potatoes are dug in September and October, most of them in the Central Valley around Merced, then stored through the winter. The new crop is on shelves now. It's the basket's filling one: a starch that keeps for weeks and makes a dinner on its own.",
+      "how_to_choose": [
+        "Firm from end to end, with no soft or wet tips",
+        "Smooth skin, no sprouts or wrinkling",
+        "Medium and evenly shaped, so they cook at one speed",
+        "Orange-fleshed (garnet or jewel) for roasting"
+      ],
+      "buy_this_much": "2 lbs, about four medium. They keep, so they're the dinner you make when the week gets away from you.",
+      "price_note": "Cheap now, and cheaper still by the loose pound than in bags.",
+      "pairs_with_month": [
+        "red-bell-peppers",
+        "pomegranates",
+        "arugula",
+        "kabocha-squash"
+      ],
+      "pairs_with_staples": [
+        "black beans",
+        "Greek yogurt",
+        "ground beef or turkey",
+        "eggs"
+      ],
+      "flavor_paths": [
+        {
+          "name": "Roasted in cubes",
+          "description": "Small, oiled, 425°F until the edges char. For tacos and bowls."
+        },
+        {
+          "name": "Baked whole",
+          "description": "Split open, salted yogurt, ajvar. A whole dinner in one potato."
+        },
+        {
+          "name": "With something sharp",
+          "description": "Pomegranate or lime over the top. It needs the contrast."
+        }
+      ],
+      "weekday_uses": [
+        "Roasted cubes in tacos with black beans and cotija",
+        "Baked whole, split, with yogurt and a spoonful of ajvar",
+        "In a rice bowl, in place of the kabocha",
+        "Roasted cubes under a fried egg"
+      ],
+      "weekend_use": "A tray of roasted cubes beside the fish, for anyone who wants something warm and filling.",
+      "storage": "Somewhere cool and dark, not the fridge — cold makes the centers hard and off-tasting. They keep three weeks or more.",
+      "one_thing_to_learn": "A baked sweet potato is done well after it's merely soft. Keep going — an hour at 400°F — until the skin puffs away from the flesh and syrup starts to bead out and caramelize on the pan. That's the starch turning to sugar, and it's the difference between a vegetable and a meal.",
+      "market_question": "Is this the new crop?"
+    },
+    "arugula": {
+      "slug": "arugula",
+      "name": "Arugula",
+      "month": "October",
+      "tile_uses": "The salad, pasta, rice bowls, on top of anything",
+      "why_now": "Arugula is a cool-weather green. In summer heat it bolts and turns harsh; planted in September, it's ready in October with a gentler, peppery bite. It's the first green in months that tastes like it wanted to grow.",
+      "how_to_choose": [
+        "Bunches with small leaves are milder than big, deeply lobed ones",
+        "Perky leaves with no yellowing",
+        "No wet or slimy leaves at the bottom of the bag",
+        "Bunched arugula from a market usually tastes more of itself than the washed clamshells"
+      ],
+      "buy_this_much": "2 bunches, or one big bag. Buy it twice a week if you can — it doesn't keep like the rest of this basket.",
+      "price_note": "Farmers market bunches are often cheaper per ounce than clamshells, and taste better.",
+      "pairs_with_month": [
+        "pomegranates",
+        "kabocha-squash",
+        "sweet-potatoes",
+        "red-bell-peppers"
+      ],
+      "pairs_with_staples": [
+        "pasta",
+        "sticky white rice",
+        "beans",
+        "eggs",
+        "salmon"
+      ],
+      "flavor_paths": [
+        {
+          "name": "Raw, dressed last",
+          "description": "Olive oil, lemon, salt, right before eating. The default."
+        },
+        {
+          "name": "Wilted",
+          "description": "Tossed into hot pasta off the heat. It collapses in seconds."
+        },
+        {
+          "name": "As a topping",
+          "description": "A handful on anything warm, undressed."
+        }
+      ],
+      "weekday_uses": [
+        "Wilted into pasta with lemon and parmesan",
+        "A handful over rice bowls",
+        "On beans with ajvar",
+        "On top of a fried egg on toast"
+      ],
+      "weekend_use": "The base of the October salad: arugula, pomegranate, and torn dates, dressed at the last second.",
+      "storage": "Unwashed, wrapped in a dry paper towel inside a bag, in the crisper. Three or four days. Wash it right before using.",
+      "one_thing_to_learn": "Dress greens at the last possible moment. Salt pulls water out of leaves, and oil weighs them down, so a salad dressed ten minutes early is a wilted salad. Put everything in the bowl, carry it to the table, and toss it there.",
+      "market_question": "When was this cut?"
+    },
     "pomegranates": {
       "slug": "pomegranates",
       "name": "Pomegranates",
@@ -300,9 +464,10 @@
       "price_note": "Priced by the piece, so the heaviest one in the bin is the best deal.",
       "pairs_with_month": [
         "kabocha-squash",
+        "sweet-potatoes",
         "arugula",
-        "asian-pears",
-        "fresh-dates"
+        "fresh-dates",
+        "guavas"
       ],
       "pairs_with_staples": [
         "Greek yogurt",
@@ -317,7 +482,7 @@
         },
         {
           "name": "In the salad",
-          "description": "With arugula, pear, and dates. The weekend."
+          "description": "With arugula and dates. The weekend."
         },
         {
           "name": "Pressed",
@@ -326,7 +491,7 @@
       ],
       "weekday_uses": [
         "Over roasted kabocha while it's hot",
-        "On tacos in place of salsa",
+        "On sweet potato tacos in place of salsa",
         "On yogurt with chopped dates",
         "In the rice bowl, for the crunch"
       ],
@@ -353,7 +518,8 @@
       "pairs_with_month": [
         "pomegranates",
         "arugula",
-        "kabocha-squash"
+        "kabocha-squash",
+        "guavas"
       ],
       "pairs_with_staples": [
         "Greek yogurt",
@@ -378,7 +544,7 @@
         "Chopped over yogurt with pomegranate",
         "Split and salted, after dinner",
         "Torn into the arugula salad",
-        "With a sharp cheese and a slice of Asian pear"
+        "With a sharp cheese and a slice of guava"
       ],
       "weekend_use": "Torn into the October salad, and a small plate of dates, guava, and queso fresco after the fish.",
       "storage": "In the fridge in a closed container for up to six months, or the counter for a few weeks. Cold dates firm up; let them sit out before eating.",
@@ -401,7 +567,6 @@
       "price_note": "Much cheaper at Mexican markets, where they're sold as guayaba.",
       "pairs_with_month": [
         "pomegranates",
-        "asian-pears",
         "fresh-dates"
       ],
       "pairs_with_staples": [
@@ -432,106 +597,6 @@
       "storage": "On the counter until they're fragrant and give slightly, then in the fridge for three or four days. Their smell travels — keep them in a closed bag.",
       "one_thing_to_learn": "You eat all of a guava: the skin, the flesh, and the small hard seeds. Slice it into rounds and don't bother digging anything out. If the seeds bother you, halve it and scoop the smooth outer flesh, leaving the seedy center for the drink.",
       "market_question": "Which ones are ready today?"
-    },
-    "arugula": {
-      "slug": "arugula",
-      "name": "Arugula",
-      "month": "October",
-      "tile_uses": "The salad, pasta, rice bowls, on top of anything",
-      "why_now": "Arugula is a cool-weather green. In summer heat it bolts and turns harsh; planted in September, it's ready in October with a gentler, peppery bite. It's the first green in months that tastes like it wanted to grow.",
-      "how_to_choose": [
-        "Bunches with small leaves are milder than big, deeply lobed ones",
-        "Perky leaves with no yellowing",
-        "No wet or slimy leaves at the bottom of the bag",
-        "Bunched arugula from a market usually tastes more of itself than the washed clamshells"
-      ],
-      "buy_this_much": "2 bunches, or one big bag. Buy it twice a week if you can — it doesn't keep like the rest of this basket.",
-      "price_note": "Farmers market bunches are often cheaper per ounce than clamshells, and taste better.",
-      "pairs_with_month": [
-        "pomegranates",
-        "asian-pears",
-        "kabocha-squash"
-      ],
-      "pairs_with_staples": [
-        "pasta",
-        "sticky white rice",
-        "beans",
-        "eggs",
-        "salmon"
-      ],
-      "flavor_paths": [
-        {
-          "name": "Raw, dressed last",
-          "description": "Olive oil, lemon, salt, right before eating. The default."
-        },
-        {
-          "name": "Wilted",
-          "description": "Tossed into hot pasta off the heat. It collapses in seconds."
-        },
-        {
-          "name": "As a topping",
-          "description": "A handful on anything warm, undressed."
-        }
-      ],
-      "weekday_uses": [
-        "Wilted into pasta with lemon and parmesan",
-        "A handful over rice bowls",
-        "On beans with ajvar",
-        "On top of a fried egg on toast"
-      ],
-      "weekend_use": "The base of the October salad: arugula, Asian pear, pomegranate, and torn dates, dressed at the last second.",
-      "storage": "Unwashed, wrapped in a dry paper towel inside a bag, in the crisper. Three or four days. Wash it right before using.",
-      "one_thing_to_learn": "Dress greens at the last possible moment. Salt pulls water out of leaves, and oil weighs them down, so a salad dressed ten minutes early is a wilted salad. Put everything in the bowl, carry it to the table, and toss it there.",
-      "market_question": "When was this cut?"
-    },
-    "asian-pears": {
-      "slug": "asian-pears",
-      "name": "Asian pears",
-      "month": "October",
-      "tile_uses": "Sliced raw, the salad, with cheese",
-      "why_now": "California's Asian pear harvest runs from August into October, and the late varieties are the best of it. They're picked ripe and eaten crisp — unlike European pears, you don't wait for them to soften. They keep for weeks, which makes them October's lunchbox fruit.",
-      "how_to_choose": [
-        "Firm all over; this pear is supposed to be hard",
-        "Heavy, which means juice",
-        "Fragrant at the stem end",
-        "Russeted brown or smooth yellow, depending on the variety — both are good",
-        "No soft spots; they bruise easily, which is why they come in foam sleeves"
-      ],
-      "buy_this_much": "3–4. Enough for the salad and a few afternoons.",
-      "price_note": "Expensive in a supermarket, often half that at Asian markets in Convoy.",
-      "pairs_with_month": [
-        "arugula",
-        "pomegranates",
-        "fresh-dates"
-      ],
-      "pairs_with_staples": [
-        "Greek yogurt",
-        "sourdough"
-      ],
-      "flavor_paths": [
-        {
-          "name": "Sliced cold",
-          "description": "Straight from the fridge. The default."
-        },
-        {
-          "name": "In the salad",
-          "description": "Thin slices with arugula, pomegranate, and dates."
-        },
-        {
-          "name": "With cheese",
-          "description": "Anywhere you'd use an apple. Juicier."
-        }
-      ],
-      "weekday_uses": [
-        "Sliced cold, in the afternoon",
-        "Thin slices in the arugula salad",
-        "With sharp cheese and a few dates",
-        "Diced over yogurt"
-      ],
-      "weekend_use": "Sliced thin into the October salad, beside the whole fish.",
-      "storage": "In the fridge, where they'll stay crisp for two or three weeks. Handle them gently; they bruise.",
-      "one_thing_to_learn": "Some fruit is ripe when it softens, and some is ripe when it's picked. A European pear finishes ripening on your counter; an Asian pear is done when it comes off the tree, and waiting only makes it mealy. Knowing which is which saves a lot of fruit.",
-      "market_question": "Which variety is this, and how long does it keep?"
     }
   }
 }

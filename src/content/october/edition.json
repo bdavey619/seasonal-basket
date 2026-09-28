@@ -5,7 +5,7 @@
   "edition_number": 4,
   "status": "upcoming",
   "base_url": "https://bdavey.co/seasonal-basket",
-  "opening_note": "October is San Diego's second summer. Some years the hottest week lands now, when the wind turns and blows in from the desert. But the harvest has moved inland: new dates, heavy pomegranates, the first guavas, and a squash that will sit on your counter until Thanksgiving. For the first time since spring, you can shop for the month instead of the week.",
+  "opening_note": "October is San Diego's second summer. Some years the hottest week lands now, when the wind turns and blows in from the desert. But the harvest has moved inland: new dates, new sweet potatoes, heavy pomegranates, the last sweet peppers, and a squash that will sit on your counter until Thanksgiving. For the first time since spring, you can shop for the month instead of the week.",
   "thesis": "Keep the meal. Change the season.",
   "palette": {
     "background": "#e9e3d6",
@@ -21,21 +21,40 @@
   },
   "featured_ingredients": [
     "kabocha-squash",
+    "red-bell-peppers",
+    "sweet-potatoes",
+    "arugula",
     "pomegranates",
     "fresh-dates",
-    "guavas",
-    "arugula",
-    "asian-pears"
+    "guavas"
   ],
   "bring_home": {
     "heading": "This is what I'd bring home.",
-    "cost_note": "Around $30–40 for the seasonal basket, and half of it will still be good in three weeks. Proteins and pantry basics are separate. The ajvar wants four red bell peppers and one eggplant.",
+    "cost_note": "Around $35–45 for the seasonal basket, and most of it will still be good in three weeks. Proteins and pantry basics are separate. The ajvar also wants one eggplant.",
     "items": [
       {
         "slug": "kabocha-squash",
         "name": "Kabocha squash",
         "qty": "1 large",
         "note": "The sweetest squash there is. It keeps for months."
+      },
+      {
+        "slug": "red-bell-peppers",
+        "name": "Red bell peppers",
+        "qty": "6",
+        "note": "The last sweet ones. Four go into the jar."
+      },
+      {
+        "slug": "sweet-potatoes",
+        "name": "Sweet potatoes",
+        "qty": "2 lbs",
+        "note": "New crop. Dinner, when the week gets away from you."
+      },
+      {
+        "slug": "arugula",
+        "name": "Arugula",
+        "qty": "2 bunches",
+        "note": "The first greens since spring that aren't harsh."
       },
       {
         "slug": "pomegranates",
@@ -54,18 +73,6 @@
         "name": "Guavas",
         "qty": "5–6",
         "note": "Smell them before you see them. Buy the fragrant ones."
-      },
-      {
-        "slug": "arugula",
-        "name": "Arugula",
-        "qty": "2 bunches",
-        "note": "The first greens since spring that aren't harsh."
-      },
-      {
-        "slug": "asian-pears",
-        "name": "Asian pears",
-        "qty": "3–4",
-        "note": "Crisp like an apple, wet like a melon."
       }
     ]
   },
@@ -123,13 +130,13 @@
     },
     {
       "meal": "Tacos",
-      "change": "Roasted kabocha, black beans, pomegranate, cotija, lime.",
+      "change": "Roasted sweet potato, black beans, pomegranate, cotija, lime.",
       "result": "Sweet, sharp, salty."
     },
     {
       "meal": "Beans",
-      "change": "Ajvar stirred in. Arugula on top.",
-      "result": "Ten seconds. A different bowl."
+      "change": "Ajvar stirred in. A baked sweet potato alongside.",
+      "result": "A whole dinner, no meat, no effort."
     },
     {
       "meal": "Yogurt",
@@ -139,21 +146,20 @@
   ],
   "weekend_meal": {
     "name": "Whole roasted rockfish, and the October salad.",
-    "intro": "One meal should feel like the reason you went shopping. In October, it's a whole local fish and a salad that only works this month: the first mild arugula, Asian pear, pomegranate, and new dates.",
-    "card_line": "Whole rockfish, arugula, Asian pear, pomegranate, dates, ajvar",
+    "intro": "One meal should feel like the reason you went shopping. In October, it's a whole local fish and a salad that only works this month: the first mild arugula, pomegranate, and new dates.",
+    "card_line": "Whole rockfish, arugula, pomegranate, dates, ajvar",
     "ingredients": [
       "1 whole rockfish, 2–3 lbs, scaled and gutted",
       "1 lemon, sliced thin, plus another for the salad",
       "Olive oil and kosher salt",
       "4 big handfuls of arugula",
-      "1 Asian pear, sliced thin",
       "Seeds of half a pomegranate",
       "4 new-crop dates, pitted and torn",
       "A wedge of parmesan, for shaving",
       "Ajvar and good bread, for the table"
     ],
     "ingredient_note": "No whole fish at your counter? Two pounds of rockfish fillets work too — roast them for ten to twelve minutes instead.",
-    "method": "Heat the oven to 450°F. Pat the fish dry inside and out and cut three shallow slashes on each side, down to the bone. Rub it all over with olive oil, salt it well, inside and out, and tuck the lemon slices into the cavity. Roast on a sheet pan for 20 to 25 minutes, until the flesh at the thickest part is opaque and pulls easily from the bone. While it roasts, put the arugula, pear, pomegranate, and dates in a wide bowl, but don't dress them. At the table, add olive oil, a squeeze of lemon, and salt, toss, and shave parmesan over the top. Bring the fish out whole. Lift the top fillet off with a spoon, pull out the spine, and serve the bottom fillet. Ajvar and bread on the side."
+    "method": "Heat the oven to 450°F. Pat the fish dry inside and out and cut three shallow slashes on each side, down to the bone. Rub it all over with olive oil, salt it well, inside and out, and tuck the lemon slices into the cavity. Roast on a sheet pan for 20 to 25 minutes, until the flesh at the thickest part is opaque and pulls easily from the bone. While it roasts, put the arugula, pomegranate, and dates in a wide bowl, but don't dress them. At the table, add olive oil, a squeeze of lemon, and salt, toss, and shave parmesan over the top. Bring the fish out whole. Lift the top fillet off with a spoon, pull out the spine, and serve the bottom fillet. Ajvar and bread on the side."
   },
   "drink": {
     "slug": "barrio-logan-jamaica",

@@ -3,7 +3,7 @@
   "name": "Tacos",
   "display_name": "Tacos",
   "effort": "weekday",
-  "intro": "Roasted kabocha, black beans, pomegranate, cotija. Sweet, sharp, and salty in one bite.",
+  "intro": "Roasted sweet potato, black beans, pomegranate, cotija. Sweet, sharp, and salty in one bite.",
   "keep": [
     "Corn tortillas",
     "Black beans, or protein of choice",
@@ -11,22 +11,22 @@
     "Lime"
   ],
   "season_anchor": [
-    "Roasted kabocha, cubed",
+    "Roasted sweet potato, cubed",
     "Pomegranate seeds"
   ],
   "season_options": [
     "A smear of ajvar",
-    "Arugula, in place of lettuce",
+    "Pepper strips, softened in oil",
     "Guava, diced small, with lime",
     "Salted yogurt, in place of crema"
   ],
   "variations": [
     {
-      "ingredients": "Kabocha + black beans + pomegranate + cotija",
+      "ingredients": "Sweet potato + black beans + pomegranate + cotija",
       "context": "The October taco. The pomegranate is the salsa."
     },
     {
-      "ingredients": "Ajvar + kabocha + arugula",
+      "ingredients": "Ajvar + sweet potato + arugula",
       "context": "Smear the jar on the warm tortilla first."
     },
     {
@@ -39,15 +39,16 @@
     "Ground beef or turkey",
     "Rockfish, pan-seared and flaked"
   ],
-  "finish": "Warm the tortillas over a flame or in a dry pan until they blister in spots, and stack them under a towel. Pomegranate goes on last so it stays cold against the warm squash.",
+  "finish": "Warm the tortillas over a flame or in a dry pan until they blister in spots, and stack them under a towel. Pomegranate goes on last so it stays cold against the warm sweet potato.",
   "linked_house_flavor": "ajvar",
   "linked_field_notes": [
     "kabocha-cutting",
     "october-fish-counter"
   ],
   "linked_ingredients": [
-    "kabocha-squash",
+    "sweet-potatoes",
     "pomegranates",
-    "arugula"
+    "arugula",
+    "red-bell-peppers"
   ]
 }

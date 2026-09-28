@@ -10,20 +10,22 @@
       "notices": "What is at its peak this week versus what is being pushed. What the farmers themselves are eating.",
       "assigned_ingredients": [
         "kabocha-squash",
+        "red-bell-peppers",
+        "sweet-potatoes",
+        "arugula",
         "pomegranates",
         "fresh-dates",
-        "guavas",
-        "arugula",
-        "asian-pears"
+        "guavas"
       ],
       "quotes": {
         "kabocha-squash": "Ugliest thing on the table. Sweetest thing on the table.",
         "pomegranates": "Pick it up. If it surprises you, buy it.",
         "fresh-dates": "People think dates are a winter thing because that's when they notice them. This is when they're good.",
         "arugula": "Summer arugula bites you. This one's just saying hello.",
-        "asian-pears": "They look expensive. Eat one and it makes sense.",
         "edition": "October is the first month you can buy things that wait for you.",
-        "guavas": "Follow your nose. The good ones announce themselves."
+        "guavas": "Follow your nose. The good ones announce themselves.",
+        "red-bell-peppers": "Last good week for these. Buy for the jar, not just for dinner.",
+        "sweet-potatoes": "Nobody gets excited about a sweet potato. That's why they're a good deal."
       }
     }
   ]

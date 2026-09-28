@@ -14,9 +14,10 @@
   "price_note": "Priced by the piece, so the heaviest one in the bin is the best deal.",
   "pairs_with_month": [
     "kabocha-squash",
+    "sweet-potatoes",
     "arugula",
-    "asian-pears",
-    "fresh-dates"
+    "fresh-dates",
+    "guavas"
   ],
   "pairs_with_staples": [
     "Greek yogurt",
@@ -31,7 +32,7 @@
     },
     {
       "name": "In the salad",
-      "description": "With arugula, pear, and dates. The weekend."
+      "description": "With arugula and dates. The weekend."
     },
     {
       "name": "Pressed",
@@ -40,7 +41,7 @@
   ],
   "weekday_uses": [
     "Over roasted kabocha while it's hot",
-    "On tacos in place of salsa",
+    "On sweet potato tacos in place of salsa",
     "On yogurt with chopped dates",
     "In the rice bowl, for the crunch"
   ],
