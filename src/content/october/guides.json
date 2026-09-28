@@ -8,27 +8,15 @@
       "philosophy": "A good market rewards patience.",
       "voice": "Direct, welcoming, practical. Has a strong opinion about which lap to buy on.",
       "notices": "What is at its peak this week versus what is being pushed. What the farmers themselves are eating.",
-      "assigned_ingredients": ["delicata-squash", "sweet-potatoes", "apples", "pomegranates", "fuyu-persimmons"],
+      "assigned_ingredients": ["kabocha-squash", "pomegranates", "fresh-dates", "new-walnuts", "arugula", "asian-pears"],
       "quotes": {
-        "delicata-squash": "September's squash was a preview. This is the one you've been waiting for.",
-        "sweet-potatoes": "Nobody gets excited about a sweet potato. That's why they're a good deal.",
-        "apples": "The ones left on the mountain in October are the ones that can take the heat.",
+        "kabocha-squash": "Ugliest thing on the table. Sweetest thing on the table.",
         "pomegranates": "Pick it up. If it surprises you, buy it.",
-        "fuyu-persimmons": "Half the people who walk past these don't know what they are. Their loss.",
-        "edition": "October is the month the stalls stop looking like summer. Buy the heavy things."
-      }
-    },
-    {
-      "id": "rocio",
-      "name": "Rocío",
-      "role": "The chile voice",
-      "philosophy": "Roast more than you think you need.",
-      "voice": "Unhurried, funny about how much heat people claim they can take.",
-      "notices": "Skin that blisters evenly. The moment a green chile starts to blush red. Whether a dried chile still bends.",
-      "assigned_ingredients": ["poblanos"],
-      "quotes": {
-        "poblanos": "Get the last ones now. Next month they're anchos, and that's a different conversation.",
-        "edition": "The fresh chiles are leaving. The dried ones are how they stay."
+        "fresh-dates": "People think dates are a winter thing because that's when they notice them. This is when they're good.",
+        "new-walnuts": "Crack one open. If you have to think about whether it's bitter, it is.",
+        "arugula": "Summer arugula bites you. This one's just saying hello.",
+        "asian-pears": "They look expensive. Eat one and it makes sense.",
+        "edition": "October is the first month you can buy things that wait for you."
       }
     }
   ]

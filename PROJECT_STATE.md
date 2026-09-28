@@ -135,11 +135,9 @@ The House Flavor is a single jar (escabeche), not two. Salsa verde is taught as 
 
 October follows September's blueprint exactly: basket, meals, Field Notes, one House Flavor, drink, ritual, weekend meal, one thing to notice.
 
-October teaches heat. San Diego doesn't look like fall — some of the year's hottest days land this month — but the evenings shorten and the oven comes back on. The basket: fully cured delicata, the last poblanos, new-crop sweet potatoes, late Julian apples (tarter, and now for cooking — September said don't bake them yet), pomegranates, and Fuyu persimmons late in the month.
+October answers the question September left open — heat or storage — with storage. San Diego's October is a second summer (the desert wind can make it hotter than August), but the harvest moves inland: new-crop Medjool dates from the Coachella and Bard valleys, new California walnuts, pomegranates, and kabocha, which improves for weeks on the counter. The shopping habit the edition teaches is buying for the month instead of the week. Arugula and Asian pears are the fresh half of the basket.
 
-The one new technique is the braise, taught through the weekend meal (Dutch-oven chicken with delicata and white beans) and distilled into one Field Note: liquid halfway up, never over. Charring is assumed from July, August, and September.
-
-The House Flavor is salsa macha — the poblano, dried into an ancho, fried, and kept. It's the callback the playbook anticipated: the chile from September's roaster, a few weeks later, in a jar. The quiet lesson under the month is putting something sharp against something rich: lemon in the braise, cider vinegar in the shrub, pomegranate on the squash.
+The House Flavor is muhammara: charred peppers (the dry-flame move from July and August, assumed rather than re-taught), new walnuts, and pomegranate molasses. The one new technique is small and permanent: toast every nut. The weekend meal is a whole roasted rockfish — the local fish that gets more reliable as the water cools — with a salad that only works this month: the first mild arugula, Asian pear, pomegranate, and new walnuts. The drink is a date shake, because it's still hot and the dates just came in.
 
 ## Next Milestone
 

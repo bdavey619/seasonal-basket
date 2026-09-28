@@ -1,0 +1,33 @@
+{
+  "slug": "fresh-dates",
+  "name": "New-crop dates",
+  "month": "October",
+  "tile_uses": "The drink, yogurt, a plate with cheese",
+  "why_now": "Nearly every Medjool in the country is grown in the desert two hours from here, in the Coachella and Bard valleys, and they're picked from late summer through October. The ones on shelves now are this year's — soft, glossy, and much better than the ones that have been sitting since last fall.",
+  "how_to_choose": [
+    "Plump and glossy, with skin that clings to the fruit",
+    "Soft enough to dent with a thumb",
+    "No crystallized sugar on the surface — that's age",
+    "A packed-on date printed on the box, if there is one",
+    "Yellow dates still on the branch are Barhi: crunchy and fresh, and only around for a few weeks"
+  ],
+  "buy_this_much": "1 lb. They last for months in the fridge, so this is more about having them than using them up.",
+  "price_note": "Costco and Middle Eastern markets are often half the supermarket price for the same Medjools.",
+  "pairs_with_month": ["new-walnuts", "pomegranates", "arugula", "kabocha-squash"],
+  "pairs_with_staples": ["Greek yogurt", "sourdough", "chicken thighs"],
+  "flavor_paths": [
+    { "name": "Blended", "description": "Into the date shake. The reason to buy them this week." },
+    { "name": "With salt", "description": "Split, a walnut half inside, a few flakes of salt. Dessert." },
+    { "name": "Chopped into savory", "description": "Into the arugula salad, or over roasted squash. Sweetness where you don't expect it." }
+  ],
+  "weekday_uses": [
+    "Chopped over yogurt with walnuts",
+    "Split, stuffed with a walnut half, salted",
+    "Torn into the arugula salad",
+    "Blended into the drink"
+  ],
+  "weekend_use": "A small plate of dates, walnuts, and a sharp cheese after the fish.",
+  "storage": "In the fridge in a closed container for up to six months, or the counter for a few weeks. Cold dates firm up; let them sit out before eating.",
+  "one_thing_to_learn": "A date is a fresh fruit that happens to dry well, not a dried fruit. Growers let them cure on the palm in the desert heat, which is why they're soft and sticky rather than leathery. Once you've eaten a new-crop Medjool, you'll notice the difference in the ones that aren't.",
+  "market_question": "Are these this year's?"
+}

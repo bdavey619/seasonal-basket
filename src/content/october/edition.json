@@ -5,67 +5,67 @@
   "edition_number": 4,
   "status": "upcoming",
   "base_url": "https://bdavey.co/seasonal-basket",
-  "opening_note": "October in San Diego doesn't look like fall. Some of the year's hottest days land this month. But the evenings shorten, the squash is fully cured, the last poblanos are drying into anchos, and the pomegranates are heavy. It's the first month worth turning the oven on for an hour.",
+  "opening_note": "October is San Diego's second summer. Some years the hottest week lands now, when the wind turns and blows in from the desert. But the harvest has moved inland: new dates, new walnuts, heavy pomegranates, and a squash that will sit on your counter until Thanksgiving. For the first time since spring, you can shop for the month instead of the week.",
   "thesis": "Keep the meal. Change the season.",
   "palette": {
-    "background": "#e8e1d3",
-    "paper": "#f7f3ea",
-    "primary": "#8a3530",
-    "secondary": "#4f5b47",
-    "accent": "#c08238",
-    "ink": "#22221d",
-    "muted": "#6b675a",
-    "line": "#d0c5b0",
-    "cream": "#e9dcc3",
-    "dark": "#23221f"
+    "background": "#e9e3d6",
+    "paper": "#f8f5ee",
+    "primary": "#6b3a2a",
+    "secondary": "#56673a",
+    "accent": "#c2513e",
+    "ink": "#24211d",
+    "muted": "#6c665a",
+    "line": "#d2c8b5",
+    "cream": "#eadfc9",
+    "dark": "#2a2420"
   },
   "featured_ingredients": [
-    "delicata-squash",
-    "poblanos",
-    "sweet-potatoes",
-    "apples",
+    "kabocha-squash",
     "pomegranates",
-    "fuyu-persimmons"
+    "fresh-dates",
+    "new-walnuts",
+    "arugula",
+    "asian-pears"
   ],
   "bring_home": {
     "heading": "This is what I'd bring home.",
-    "cost_note": "Around $25–35 for the seasonal basket. Proteins and pantry basics are separate. The salsa macha wants a few dried chiles, a head of garlic, and a handful of peanuts and sesame.",
+    "cost_note": "Around $30–40 for the seasonal basket, and half of it will still be good in three weeks. Proteins and pantry basics are separate. The muhammara wants two red bell peppers and a slice of stale bread.",
     "items": [
       {
-        "slug": "delicata-squash",
-        "name": "Delicata squash",
-        "qty": "3",
-        "note": "Fully cured now. Sweeter and cheaper than September's."
-      },
-      {
-        "slug": "poblanos",
-        "name": "The last poblanos",
-        "qty": "4–6",
-        "note": "Gone by mid-month. Char the extras and freeze them."
-      },
-      {
-        "slug": "sweet-potatoes",
-        "name": "Sweet potatoes",
-        "qty": "2 lbs",
-        "note": "New crop. The thing you cook when the week gets away from you."
-      },
-      {
-        "slug": "apples",
-        "name": "Late Julian apples",
-        "qty": "4–6",
-        "note": "Tarter now. This is when you cook them."
+        "slug": "kabocha-squash",
+        "name": "Kabocha squash",
+        "qty": "1 large",
+        "note": "The sweetest squash there is. It keeps for months."
       },
       {
         "slug": "pomegranates",
         "name": "Pomegranates",
-        "qty": "2",
-        "note": "Buy the heavy ones. They keep for weeks."
+        "qty": "3",
+        "note": "Buy the heavy, lopsided ones."
       },
       {
-        "slug": "fuyu-persimmons",
-        "name": "Fuyu persimmons",
+        "slug": "fresh-dates",
+        "name": "New-crop dates",
+        "qty": "1 lb",
+        "note": "Soft enough to dent. Last year's never are."
+      },
+      {
+        "slug": "new-walnuts",
+        "name": "New walnuts",
+        "qty": "1 lb",
+        "note": "Taste one first. It shouldn't be bitter."
+      },
+      {
+        "slug": "arugula",
+        "name": "Arugula",
+        "qty": "2 bunches",
+        "note": "The first greens since spring that aren't harsh."
+      },
+      {
+        "slug": "asian-pears",
+        "name": "Asian pears",
         "qty": "3–4",
-        "note": "Late in the month. Eat them firm."
+        "note": "Crisp like an apple, wet like a melon."
       }
     ]
   },
@@ -80,127 +80,124 @@
   ],
   "month_card": {
     "items": [
-      "Squash",
       "Pomegranate",
-      "Ancho"
+      "Date",
+      "Walnut"
     ],
-    "sub": "Warm afternoons and the first slow dinners."
+    "sub": "What the desert and the valley send down."
   },
-  "house_flavor": "salsa-macha",
+  "house_flavor": "muhammara",
   "field_notes_label": "Field Notes",
   "field_notes": [
     {
-      "slug": "ancho-is-a-poblano",
-      "name": "An ancho is a poblano that waited.",
-      "body": "Leave a poblano on the plant until it turns red, dry it in the sun, and it becomes an ancho — wrinkled, nearly black, and smelling faintly of raisins. The chile you charred in September and the one in this month's jar are the same pepper, a few weeks apart. That's the whole season in one ingredient."
+      "slug": "fresh-dates",
+      "name": "A new date isn't dried fruit.",
+      "body": "Most dates in the store were picked last fall and have been sitting since. The ones picked this fall are softer, glossier, and taste like caramel instead of candy — squeeze the box and they give. If you ever see yellow dates still on the branch, those are Barhis, eaten crunchy and fresh for a few weeks and nowhere else. Buy a branch."
     },
     {
-      "slug": "halfway-up",
-      "name": "Halfway up, never over.",
-      "body": "The one rule of a braise: after you brown the meat, the liquid comes about halfway up it, not over the top. What's under the surface goes soft and turns to stew; what's above it stays browned, and the skin crisps again in the oven. Drown it and you've made soup. Every braise you make this winter works the same way."
+      "slug": "taste-the-walnut",
+      "name": "Taste the walnut before you buy the bag.",
+      "body": "A walnut that tastes bitter or smells like paint has gone rancid; the oil in it turns quickly. A new one is sweet and a little milky. Buy a pound when the new crop comes in, keep what you won't use this week in the freezer, and toast them in a dry pan for three minutes before they go into anything."
     },
     {
-      "slug": "pomegranate-underwater",
-      "name": "Seed a pomegranate underwater.",
-      "body": "Score around the crown, pull the fruit apart into sections, and hold them in a bowl of cold water while you push the seeds out with your thumbs. The seeds sink. The pith floats. Skim it, drain, and you have a cup of seeds and no red kitchen."
+      "slug": "kabocha-cutting",
+      "name": "Let the oven cut the kabocha.",
+      "body": "A kabocha is dense enough to be dangerous with a knife. Put it whole in a 400°F oven for ten minutes, or the microwave for three, and the skin softens enough to cut through safely. Don't peel it. Roasted, the skin goes tender and you eat all of it."
     },
     {
       "slug": "october-fish-counter",
       "name": "October at the fish counter.",
-      "body": "California spiny lobster season opens the first weekend of October, and for the first few weeks it is genuinely local, genuinely live, and worth one splurge. Ask for it split. Broil it with butter and garlic and eat it the way it's eaten an hour south: beans, rice, flour tortillas, lime. If it isn't there, the question from July still works: not 'Do you have salmon?' but 'What came in today?'"
+      "body": "Rockfish is the local fish that gets more reliable as the water cools: dozens of species, mild and firm, usually cheaper than anything flown in. Ask for it whole. A counter that sells it whole will scale and gut it for you, and a whole fish is easier to cook well than a fillet."
     }
   ],
   "meal_transformations": [
     {
       "meal": "Rice bowl",
-      "change": "Roasted sweet potato, charred poblano, pomegranate, a spoonful of salsa macha.",
+      "change": "Roasted kabocha, a spoonful of muhammara, arugula, pomegranate.",
       "result": "The jar does the work."
     },
     {
       "meal": "Pasta",
-      "change": "Roasted delicata, butter browned with sage, lemon.",
-      "result": "Ten minutes, once the squash is done."
+      "change": "Arugula wilted in at the end, toasted walnuts, lemon, parmesan.",
+      "result": "Green again."
     },
     {
       "meal": "Tacos",
-      "change": "Sweet potato and poblano, salsa macha, pomegranate, cotija.",
-      "result": "The vegetable taco that doesn't apologize."
+      "change": "Roasted kabocha, black beans, pomegranate, cotija, lime.",
+      "result": "Sweet, sharp, salty."
     },
     {
       "meal": "Beans",
-      "change": "A spoonful of salsa macha and its oil. A squeeze of lime.",
+      "change": "Muhammara stirred in. Arugula on top.",
       "result": "Ten seconds. A different bowl."
     },
     {
       "meal": "Yogurt",
-      "change": "Pomegranate, sliced persimmon, honey.",
-      "result": "Breakfast finally tastes like the calendar."
+      "change": "Chopped new dates, toasted walnuts, pomegranate.",
+      "result": "Sweet enough on its own."
     }
   ],
   "weekend_meal": {
-    "name": "Dutch-oven chicken with delicata and white beans.",
-    "intro": "One meal should feel like the reason you went shopping. In October, it's the first one that asks for the oven for an hour — and the reason to get the heavy pot back out.",
-    "card_line": "Bone-in chicken thighs, delicata, white beans, poblano, rosemary, lemon",
+    "name": "Whole roasted rockfish, and the October salad.",
+    "intro": "One meal should feel like the reason you went shopping. In October, it's a whole local fish and a salad that only works this month: the first mild arugula, new walnuts, pomegranate, and Asian pear.",
+    "card_line": "Whole rockfish, arugula, pomegranate, walnuts, Asian pear, muhammara",
     "ingredients": [
-      "6 bone-in, skin-on chicken thighs, about 2½ lbs",
-      "1 delicata squash — halved, seeded, cut into 1-inch half-moons, skin on",
-      "2 poblanos, seeded and cut into strips",
-      "6 garlic cloves, smashed",
-      "2 sprigs rosemary",
-      "2 cans cannellini beans, drained and rinsed",
-      "2 cups chicken stock, or 2 tsp bouillon in 2 cups hot water",
-      "1 lemon",
-      "Olive oil, kosher salt, black pepper",
-      "Salsa macha, for the table"
+      "1 whole rockfish, 2–3 lbs, scaled and gutted",
+      "1 lemon, sliced thin",
+      "Olive oil and kosher salt",
+      "4 big handfuls of arugula",
+      "1 Asian pear, sliced thin",
+      "Seeds of half a pomegranate",
+      "½ cup new walnuts, toasted",
+      "Muhammara and good bread, for the table"
     ],
-    "ingredient_note": "Any heavy, lidded, oven-safe pot will do if you don't have a Dutch oven. Salt the chicken the night before if you remember; right before is fine if you don't.",
-    "method": "Heat the oven to 375°F. Pat the chicken dry and salt both sides. In the Dutch oven over medium-high, with a thin film of oil, lay the thighs skin side down and leave them alone for 8 to 10 minutes, until the skin is deep golden and lets go on its own. Turn them for two minutes, then set them aside and pour off all but two tablespoons of fat. Add the poblano, garlic, and rosemary and stir for three or four minutes. Pour in a splash of stock and scrape up everything stuck to the bottom — that's the flavor. Add the beans, squash, and the rest of the stock, season, and nestle the chicken back in skin side up, with the liquid about halfway up the thighs. Into the oven, lid off, for 45 minutes, until the squash is tender and the meat pulls from the bone. Zest the lemon over the pot and squeeze in half of it. Let it sit ten minutes. Salsa macha at the table. It's better the next day, pulled off the bone and eaten over rice."
+    "ingredient_note": "No whole fish at your counter? Two pounds of rockfish fillets work too — roast them for ten to twelve minutes instead.",
+    "method": "Heat the oven to 450°F. Pat the fish dry inside and out and cut three shallow slashes on each side, down to the bone. Rub it all over with olive oil, salt it well, inside and out, and tuck the lemon slices into the cavity. Roast on a sheet pan for 20 to 25 minutes, until the flesh at the thickest part is opaque and pulls easily from the bone. While it roasts, toss the arugula, pear, pomegranate, and walnuts with olive oil, a squeeze of lemon, and salt — just before it goes to the table, not before. Bring the fish out whole. Lift the top fillet off with a spoon, pull out the spine, and serve the bottom fillet. Muhammara and bread on the side."
   },
   "drink": {
-    "slug": "south-park-shrub",
-    "name": "South Park Shrub",
-    "intro": "One drink. Make the base once and it lasts the week.",
-    "card_line": "Pomegranate, cider vinegar, sugar, soda",
+    "slug": "normal-heights-date-shake",
+    "name": "Normal Heights Date Shake",
+    "intro": "One drink. It's still hot, and the dates just came in.",
+    "card_line": "New dates, cold milk, vanilla ice cream, salt",
     "keep": [
-      "Apple cider vinegar",
-      "Sugar",
-      "Sparkling water",
-      "Ice"
+      "Cold milk",
+      "Vanilla ice cream",
+      "Ice",
+      "Flaky salt"
     ],
     "season_adds": [
-      "1 pomegranate, seeded",
-      "A thin slice of apple, optional"
+      "5 new-crop Medjool dates, pitted"
     ],
-    "method": "Press the seeds from one pomegranate through a strainer to get about half a cup of juice; save a spoonful of whole seeds. Stir the juice with two tablespoons of cider vinegar and two tablespoons of sugar until the sugar dissolves. That's the shrub — it keeps a week in the fridge. For a glass: two tablespoons over ice, topped with sparkling water, a few seeds on top. It should taste sharp first and sweet second.",
+    "method": "Tear the dates into pieces and let them sit in half a cup of the milk for ten minutes to soften. Blend with another half cup of milk, two big scoops of vanilla ice cream, a few ice cubes, and a pinch of salt until it's thick and nearly smooth — a few flecks of date are the point. Drink it with a straw, outside, on the hottest afternoon of the week. The desert has been making these for a hundred years.",
     "try_another_way": [
       {
-        "change": "Add a shot of mezcal",
-        "context": "If it's Friday."
+        "change": "Add a shot of cold espresso",
+        "context": "If it's the afternoon and you need it to count."
       },
       {
-        "change": "Top with cold apple cider instead of soda",
-        "context": "When the evening actually turns cool."
+        "change": "Greek yogurt and a frozen banana instead of ice cream",
+        "context": "If it's breakfast."
       },
       {
-        "change": "Salt the rim with Tajín",
-        "context": "If you miss September."
+        "change": "A spoonful of tahini",
+        "context": "If you want it less sweet and more interesting."
       },
       {
-        "change": "A splash of shrub in plain seltzer",
-        "context": "In the afternoon, instead of anything sweeter."
+        "change": "Oat milk",
+        "context": "Thicker than you'd expect, and good."
       }
     ]
   },
   "local_ritual": {
     "label": "San Diego ritual",
-    "name": "Walk out for the lobster opener.",
-    "description": "Lobster season opens at dusk on the first weekend of October, and the piers on Shelter Island fill with hoop nets and headlamps. You don't need to fish. Walk out after dark with something warm, watch the first nets come up, and notice that you wanted the jacket — the first night of the year that's true."
+    "name": "Go to the desert.",
+    "description": "Anza-Borrego is two hours east and unbearable until now. October is the first month it isn't. Go for a day, walk until it gets hot, and notice that the dates, the pomegranates, and the citrus coming next all grow somewhere that looks like this — dry, bright, and irrigated. The season in this basket comes from inland, not from the coast."
   },
   "one_thing_to_notice": {
-    "headline": "The corners on a pomegranate.",
-    "body": "An underripe pomegranate is round. As the seeds swell, they press out against the skin until the fruit goes slightly squared-off, with flat faces and soft ridges. The angular ones are the full ones. Once you see it, you'll stop picking the pretty round one."
+    "headline": "The wind from the wrong direction.",
+    "body": "A few times each fall the wind turns around and blows from the desert instead of the ocean. The air goes warm and very dry, the sky turns unusually clear, and from the coast you can suddenly see the mountains. It's why October can be hotter than August. When it happens, look east."
   },
-  "market_question": "What's just come in — and what's about to go?",
+  "market_question": "What will this keep until?",
   "next_edition": {
     "month": "November",
     "status": "Arriving November 1."

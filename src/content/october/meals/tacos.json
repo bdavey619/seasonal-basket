@@ -3,35 +3,35 @@
   "name": "Tacos",
   "display_name": "Tacos",
   "effort": "weekday",
-  "intro": "Sweet potato, poblano, salsa macha, pomegranate. The vegetable taco that doesn't feel like the vegetable option.",
+  "intro": "Roasted kabocha, black beans, pomegranate, cotija. Sweet, sharp, and salty in one bite.",
   "keep": [
     "Corn tortillas",
-    "Protein of choice, or none",
+    "Black beans, or protein of choice",
     "Cotija or crumbled feta",
     "Lime"
   ],
   "season_anchor": [
-    "Roasted sweet potato, cubed",
-    "Salsa macha"
+    "Roasted kabocha, cubed",
+    "Pomegranate seeds"
   ],
   "season_options": [
-    "Charred poblano strips",
-    "Pomegranate seeds",
-    "Apple slaw with cider vinegar",
-    "Salted Greek yogurt, instead of crema"
+    "A smear of muhammara",
+    "Arugula, in place of lettuce",
+    "Toasted walnuts, chopped",
+    "Salted yogurt, in place of crema"
   ],
   "variations": [
-    { "ingredients": "Sweet potato + poblano + salsa macha + cotija", "context": "The October taco. Nothing here is optional." },
-    { "ingredients": "Beans + salsa macha + apple slaw", "context": "The one to make on a weeknight when nothing is defrosted." },
-    { "ingredients": "Lobster + beans + lime", "context": "If the fish counter had it. Flour tortillas for this one." }
+    { "ingredients": "Kabocha + black beans + pomegranate + cotija", "context": "The October taco. The pomegranate is the salsa." },
+    { "ingredients": "Muhammara + kabocha + arugula", "context": "Smear the jar on the warm tortilla first." },
+    { "ingredients": "Rockfish + arugula + pomegranate + lime", "context": "If you bought fish. Flaked, pan-seared, three minutes a side." }
   ],
   "works_well_with": [
-    "Ground beef or turkey",
     "Black or pinto beans",
-    "Spiny lobster, split and broiled"
+    "Ground beef or turkey",
+    "Rockfish, pan-seared and flaked"
   ],
-  "finish": "Warm the tortillas over a flame or in a dry pan until they blister in spots, and stack them under a towel. Pomegranate goes on last, so it stays cold against the warm filling.",
-  "linked_house_flavor": "salsa-macha",
-  "linked_field_notes": ["october-fish-counter"],
-  "linked_ingredients": ["sweet-potatoes", "poblanos", "pomegranates", "apples"]
+  "finish": "Warm the tortillas over a flame or in a dry pan until they blister in spots, and stack them under a towel. Pomegranate goes on last so it stays cold against the warm squash.",
+  "linked_house_flavor": "muhammara",
+  "linked_field_notes": ["kabocha-cutting", "october-fish-counter"],
+  "linked_ingredients": ["kabocha-squash", "pomegranates", "arugula"]
 }

@@ -1,0 +1,33 @@
+{
+  "slug": "new-walnuts",
+  "name": "New walnuts",
+  "month": "October",
+  "tile_uses": "The muhammara, pasta, yogurt, the salad",
+  "why_now": "California grows almost every walnut sold in the United States, and the harvest runs from September into early November. Walnuts go rancid faster than most nuts, so the difference between this year's and last year's is not subtle: new ones are sweet and a little milky, with none of the bitterness people assume walnuts have.",
+  "how_to_choose": [
+    "Pale gold halves; dark or gray ones are older",
+    "No oily, papery, or paint-like smell",
+    "Taste one if you can — it should be sweet",
+    "In-shell walnuts are heavy and don't rattle",
+    "Bulk bins that turn over fast beat bags that have sat"
+  ],
+  "buy_this_much": "1 lb of halves. A cup goes into the jar, the rest into everything else, and whatever is left into the freezer.",
+  "price_note": "Cheapest in the fall, right after harvest. In-shell costs less and keeps longer.",
+  "pairs_with_month": ["pomegranates", "fresh-dates", "arugula", "asian-pears", "kabocha-squash"],
+  "pairs_with_staples": ["Greek yogurt", "sourdough", "pasta", "beans"],
+  "flavor_paths": [
+    { "name": "Toasted", "description": "Three minutes in a dry pan. Everything they go into is better for it." },
+    { "name": "Ground", "description": "Into muhammara, where they turn a pepper purée into something you can spread." },
+    { "name": "With something sweet", "description": "Split dates, pear, or honey on yogurt." }
+  ],
+  "weekday_uses": [
+    "Toasted and tossed into pasta with arugula and lemon",
+    "Over yogurt with dates and pomegranate",
+    "In the arugula salad",
+    "Ground into the muhammara"
+  ],
+  "weekend_use": "Toasted and scattered over the October salad, still warm.",
+  "storage": "In the fridge for a few months, or the freezer for a year. Never in the pantry — the oils turn in weeks at room temperature.",
+  "one_thing_to_learn": "Toast every nut before you use it. It takes three minutes in a dry pan over medium heat, shaking often, and it's done when you can smell it from across the kitchen. It changes a walnut from waxy to crisp and from mild to deep, and it's the step people skip most.",
+  "market_question": "When did these come in?"
+}

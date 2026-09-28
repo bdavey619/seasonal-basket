@@ -3,35 +3,36 @@
   "name": "Pasta",
   "display_name": "Pasta",
   "effort": "weekday",
-  "intro": "Roast the delicata once and this is a ten-minute dinner any night after. Butter, sage, squash, lemon.",
+  "intro": "Arugula wilts into hot pasta in about five seconds. With toasted walnuts and lemon, it's the fastest dinner in this edition.",
   "keep": [
-    "Dried pasta — something short",
-    "Butter",
+    "Dried pasta — something short, or spaghetti",
+    "Olive oil or butter",
     "Parmesan",
-    "Salt"
+    "Salt and black pepper"
   ],
   "season_anchor": [
-    "Roasted delicata half-moons",
-    "A few sage leaves"
+    "2 big handfuls of arugula",
+    "A handful of toasted walnuts"
   ],
   "season_options": [
-    "Lemon zest",
-    "White beans, warmed in the butter",
-    "A spoonful of salsa macha",
-    "Black pepper, a lot of it"
+    "Lemon, zest and juice",
+    "A spoonful of muhammara",
+    "Roasted kabocha, cubed",
+    "Chile flakes"
   ],
   "variations": [
-    { "ingredients": "Delicata + brown butter + sage", "context": "Melt the butter with the sage until it smells like toast, then fold in the squash." },
-    { "ingredients": "Delicata + white beans + lemon", "context": "Heartier. The beans turn creamy in the pasta water." },
-    { "ingredients": "Delicata + parmesan + salsa macha", "context": "Crunch and heat against the sweet. Stranger than it sounds, and better." }
+    { "ingredients": "Arugula + walnuts + lemon + parmesan", "context": "The base version. Toss the arugula in off the heat so it wilts without cooking." },
+    { "ingredients": "Muhammara + arugula", "context": "Loosen a few spoonfuls of the jar with pasta water. A red sauce that isn't tomato." },
+    { "ingredients": "Kabocha + walnuts + brown butter", "context": "Richer. The one that eats like a weekend." }
   ],
   "works_well_with": [
     "Nothing at all",
-    "Leftover chicken, pulled",
-    "A fried egg on top"
+    "White beans, warmed in the oil",
+    "Chicken thighs, sliced",
+    "A fried egg"
   ],
-  "finish": "Save a mug of pasta water — butter and parmesan need it to become a sauce rather than a coating. Lemon zest goes on off the heat.",
-  "linked_house_flavor": "salsa-macha",
-  "linked_field_notes": [],
-  "linked_ingredients": ["delicata-squash"]
+  "finish": "Save a mug of pasta water before draining — parmesan and oil need it to become a sauce. Arugula goes in after the heat is off, then lemon, then more parmesan than seems right.",
+  "linked_house_flavor": "muhammara",
+  "linked_field_notes": ["taste-the-walnut"],
+  "linked_ingredients": ["arugula", "new-walnuts", "kabocha-squash"]
 }

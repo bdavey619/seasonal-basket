@@ -2,31 +2,31 @@
   "slug": "pomegranates",
   "name": "Pomegranates",
   "month": "October",
-  "tile_uses": "Over squash, rice bowls, tacos, the drink",
-  "why_now": "Southern California grows pomegranates, and they ripen in October and November. A heavy one bought now keeps for weeks and turns anything rich into something brighter.",
+  "tile_uses": "Over squash, salads, yogurt, the muhammara",
+  "why_now": "California grows nearly all of the country's pomegranates, and the harvest runs from late September into November. In October they're heavy, cheap by the piece, and sold everywhere from the farmers market to the corner store. By spring, the only ones left are imported.",
   "how_to_choose": [
     "Heavy for its size — weight is juice",
-    "Slightly angular, flat-sided shapes are the fullest",
-    "Taut, leathery skin",
-    "A dry crack is fine; a soft or wet one is not"
+    "Angular and a little lopsided, with flat faces; round ones aren't full yet",
+    "Deep red, leathery skin",
+    "A small dry crack is fine; a soft or damp spot is not"
   ],
-  "buy_this_much": "2. One for the drink, one for scattering. One pomegranate is about a cup of seeds.",
-  "price_note": "Priced by the piece, so the heavy ones are the deal.",
-  "pairs_with_month": ["delicata-squash", "sweet-potatoes", "apples", "fuyu-persimmons"],
-  "pairs_with_staples": ["Greek yogurt", "ground beef or turkey", "sticky white rice"],
+  "buy_this_much": "3. One pomegranate gives about a cup of seeds, which is a week of scattering.",
+  "price_note": "Priced by the piece, so the heaviest one in the bin is the best deal.",
+  "pairs_with_month": ["kabocha-squash", "arugula", "new-walnuts", "asian-pears", "fresh-dates"],
+  "pairs_with_staples": ["Greek yogurt", "sticky white rice", "beans", "chicken thighs"],
   "flavor_paths": [
-    { "name": "Scattered", "description": "Over anything roasted, while it's hot. The default." },
-    { "name": "Pressed", "description": "Juiced through a strainer for the shrub." },
-    { "name": "On breakfast", "description": "With yogurt, persimmon, and honey." }
+    { "name": "Scattered", "description": "Over anything roasted, rich, or beige. The default." },
+    { "name": "In the salad", "description": "With arugula, walnuts, and pear. The weekend." },
+    { "name": "Cooked down", "description": "Juice simmered to a syrup — homemade pomegranate molasses for the jar." }
   ],
   "weekday_uses": [
-    "Over roasted delicata, while it's still hot",
-    "On a rice bowl with sweet potato and salsa macha",
-    "On sweet potato tacos",
-    "Over yogurt with honey"
+    "Over roasted kabocha while it's hot",
+    "On tacos in place of salsa",
+    "On yogurt with dates and walnuts",
+    "In the rice bowl, for the crunch"
   ],
-  "weekend_use": "Pressed into the South Park Shrub, with a spoonful of seeds saved for the glass.",
-  "storage": "Whole, a month in the fridge. Seeded, five days in a covered container.",
-  "one_thing_to_learn": "Pomegranate is October's lime: something sharp to put against heavier food. Rich things need acid — lemon in the braise, cider vinegar in the shrub, pomegranate on the squash. Same move, different ingredient.",
-  "market_question": "Which of these is heaviest?"
+  "weekend_use": "Half a pomegranate's seeds in the October salad, next to the whole fish.",
+  "storage": "Whole, in the fridge for a month or more. Seeded, five days in a covered container.",
+  "one_thing_to_learn": "To seed one without a mess, score around the crown, pull the fruit apart into sections, and work the seeds loose in a bowl of water. The seeds sink and the white pith floats. Skim, drain, done.",
+  "market_question": "Which ones came off the tree most recently?"
 }

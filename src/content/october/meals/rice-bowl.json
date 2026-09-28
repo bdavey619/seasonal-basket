@@ -3,34 +3,34 @@
   "name": "Rice bowl",
   "display_name": "Rice bowl",
   "effort": "weekday",
-  "intro": "October's rice bowl is built on two things you made once: a tray of roasted sweet potato and a jar of salsa macha.",
+  "intro": "October's rice bowl is built on two things you made once: a tray of roasted kabocha and a jar of muhammara.",
   "keep": [
     "Sticky white rice",
-    "Protein of choice (beef, chicken, beans, or nothing)"
+    "Protein of choice (chicken, beef, beans, or nothing)"
   ],
   "season_anchor": [
-    "Roasted sweet potato",
-    "A spoonful of salsa macha, with its oil"
+    "Roasted kabocha wedges",
+    "A big spoonful of muhammara"
   ],
   "season_options": [
-    "Charred poblano strips",
-    "Roasted delicata",
+    "Arugula, a handful",
     "Pomegranate seeds",
-    "Lime"
+    "Toasted walnuts",
+    "Salted Greek yogurt"
   ],
   "variations": [
-    { "ingredients": "Sweet potato + salsa macha + pomegranate", "context": "The version you'll make most often. Three minutes if the tray is in the fridge." },
-    { "ingredients": "Ground beef + charred poblano + sweet potato", "context": "The last of the chiles, doing their job." },
-    { "ingredients": "Leftover braised chicken + white beans + lemon", "context": "The weekend's pot, Monday's bowl." }
+    { "ingredients": "Kabocha + muhammara + arugula", "context": "The version you'll make most often. Three minutes if the tray is in the fridge." },
+    { "ingredients": "Kabocha + yogurt + pomegranate", "context": "Cold and hot, sweet and sour. No protein needed." },
+    { "ingredients": "Chicken thighs + muhammara + arugula + walnuts", "context": "The filling one, for after a long day." }
   ],
   "works_well_with": [
+    "Chicken thighs",
     "Ground beef or turkey",
-    "Leftover braised chicken",
-    "Black or white beans",
+    "Chickpeas or white beans",
     "A fried egg"
   ],
-  "finish": "Something sharp, last — pomegranate or lime. October food is heavier than September's, and the squeeze matters more, not less.",
-  "linked_house_flavor": "salsa-macha",
-  "linked_field_notes": ["ancho-is-a-poblano", "pomegranate-underwater"],
-  "linked_ingredients": ["sweet-potatoes", "poblanos", "pomegranates", "delicata-squash"]
+  "finish": "Pomegranate last, over everything, so it stays cold and bright against the warm rice. If the bowl tastes flat, it wants salt or another spoonful of the jar.",
+  "linked_house_flavor": "muhammara",
+  "linked_field_notes": ["kabocha-cutting"],
+  "linked_ingredients": ["kabocha-squash", "arugula", "pomegranates", "new-walnuts"]
 }
