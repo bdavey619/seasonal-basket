@@ -1,11 +1,11 @@
 {
-  "_note": "Canonical editable source for the October edition. Run python3 src/build.py to regenerate docs/. October is the first edition built on the expanded model: basket → pairings → method → meals. It carries pairings, methods, bring_it_out, and progression, and leaves out the drink, ritual, notice, field notes, and house flavor — each of those sections is optional, and October's job is done without them. STAGED: \"status\" is \"upcoming\" until October 1. To publish, set it to \"published\" and rebuild.",
+  "_note": "This is the canonical editable source for the October edition. Run python3 src/build.py to regenerate docs/. editions/october/CONTENT.json is auto-generated from this file and the ingredient JSONs. STAGED: \"status\" is \"upcoming\" until October 1 — the homepage keeps leading with September and lists October under Next edition. To publish, set \"status\" to \"published\" and rebuild.",
   "month": "October",
   "location": "San Diego",
   "edition_number": 4,
   "status": "upcoming",
   "base_url": "https://bdavey.co/seasonal-basket",
-  "opening_note": "October in San Diego doesn't look like fall; some of the year's hottest days land this month. But the evenings shorten, the squash gets sweeter, the last poblanos are going, and at some point you'll want the oven on. This edition is about that moment.",
+  "opening_note": "October in San Diego doesn't look like fall. Some of the year's hottest days land this month. But the evenings shorten, the squash is fully cured, the last poblanos are drying into anchos, and the pomegranates are heavy. It's the first month worth turning the oven on for an hour.",
   "thesis": "Keep the meal. Change the season.",
   "palette": {
     "background": "#e8e1d3",
@@ -29,37 +29,43 @@
   ],
   "bring_home": {
     "heading": "This is what I'd bring home.",
-    "cost_note": "Around $25–35 for the produce. Proteins and pantry are separate.",
+    "cost_note": "Around $25–35 for the seasonal basket. Proteins and pantry basics are separate. The salsa macha wants a few dried chiles, a head of garlic, and a handful of peanuts and sesame.",
     "items": [
       {
         "slug": "delicata-squash",
         "name": "Delicata squash",
-        "qty": "3"
+        "qty": "3",
+        "note": "Fully cured now. Sweeter and cheaper than September's."
       },
       {
         "slug": "poblanos",
         "name": "The last poblanos",
-        "qty": "4–6"
+        "qty": "4–6",
+        "note": "Gone by mid-month. Char the extras and freeze them."
       },
       {
         "slug": "sweet-potatoes",
         "name": "Sweet potatoes",
-        "qty": "2 lbs"
+        "qty": "2 lbs",
+        "note": "New crop. The thing you cook when the week gets away from you."
       },
       {
         "slug": "apples",
         "name": "Late Julian apples",
-        "qty": "4–6"
+        "qty": "4–6",
+        "note": "Tarter now. This is when you cook them."
       },
       {
         "slug": "pomegranates",
         "name": "Pomegranates",
-        "qty": "2"
+        "qty": "2",
+        "note": "Buy the heavy ones. They keep for weeks."
       },
       {
         "slug": "fuyu-persimmons",
         "name": "Fuyu persimmons",
-        "qty": "3–4"
+        "qty": "3–4",
+        "note": "Late in the month. Eat them firm."
       }
     ]
   },
@@ -75,212 +81,40 @@
   "month_card": {
     "items": [
       "Squash",
-      "Rosemary",
-      "The heavy pot"
+      "Pomegranate",
+      "Ancho"
     ],
-    "sub": "Warm afternoons. The first nights you want the oven on."
+    "sub": "Warm afternoons and the first slow dinners."
   },
-  "pairings": {
-    "label": "Pairings",
-    "heading": "What to cook it with.",
-    "dek": "Meat isn't in season the way squash is. These are the proteins October's basket points toward — and one from the water that genuinely is.",
-    "proteins": [
-      {
-        "slug": "chicken-thighs",
-        "name": "Bone-in chicken thighs",
-        "buy": "for-the-week",
-        "why": "Boneless thighs are for the skillet; bone-in, skin-on are for the pot. The bone gives the liquid body, and the skin renders into the fat everything else cooks in.",
-        "with": [
-          "delicata-squash",
-          "poblanos",
-          "White beans",
-          "Rosemary",
-          "Lemon"
-        ],
-        "default_move": {
-          "headline": "Skin down. Leave it alone.",
-          "steps": [
-            "Pat dry",
-            "salt",
-            "skin down in a heavy pan",
-            "12 minutes untouched",
-            "flip",
-            "finish at 425°F"
-          ]
-        }
-      },
-      {
-        "slug": "pork-chops",
-        "name": "Thick-cut pork chops",
-        "buy": "for-the-week",
-        "why": "Apples, sage, and pork: the oldest fall pairing, and it holds up. Buy them an inch thick — thin chops overcook before they brown.",
-        "with": [
-          "apples",
-          "sweet-potatoes",
-          "Sage",
-          "Cider vinegar"
-        ],
-        "default_move": {
-          "headline": "Hot pan. Don't move it.",
-          "steps": [
-            "Salt an hour ahead",
-            "very hot pan",
-            "4 minutes a side",
-            "rest 5",
-            "apples into the same pan"
-          ]
-        }
-      },
-      {
-        "slug": "spiny-lobster",
-        "name": "California spiny lobster",
-        "buy": "if-you-see-it",
-        "why": "The one protein here that is literally in season: it opens off San Diego the first weekend of October. Eat it the way it's eaten an hour south, with beans, rice, and flour tortillas.",
-        "with": [
-          "Beans",
-          "Rice",
-          "Flour tortillas",
-          "Lime",
-          "poblanos"
-        ],
-        "default_move": {
-          "headline": "Split it. Broil it.",
-          "steps": [
-            "Split lengthwise",
-            "butter + garlic",
-            "flesh up under the broiler",
-            "6–8 minutes",
-            "lime"
-          ]
-        }
-      }
-    ],
-    "pantry_label": "The pantry that unlocks it",
-    "pantry": [
-      {
-        "name": "White beans",
-        "role": "Two cans turn a pan of chicken into dinner for four.",
-        "with": [
-          "Chicken thighs",
-          "delicata-squash",
-          "Rosemary"
-        ]
-      },
-      {
-        "name": "Stock or bouillon",
-        "role": "The braising liquid. Bouillon paste is fine; nobody will know.",
-        "with": [
-          "Chicken thighs",
-          "White beans"
-        ]
-      },
-      {
-        "name": "Rosemary and sage",
-        "role": "Hardy herbs go in early and cook. Summer's soft herbs went in last.",
-        "with": [
-          "delicata-squash",
-          "apples",
-          "Chicken thighs",
-          "Pork chops"
-        ]
-      },
-      {
-        "name": "Lemon",
-        "role": "The last step of a braise. Without it, the pot tastes heavy.",
-        "with": [
-          "Chicken thighs",
-          "delicata-squash",
-          "Salmon"
-        ]
-      },
-      {
-        "name": "Cider vinegar",
-        "role": "The pan sauce for pork, and the dressing for anything sweet.",
-        "with": [
-          "apples",
-          "sweet-potatoes",
-          "Pork chops"
-        ]
-      }
-    ]
-  },
-  "methods": {
-    "label": "Method",
-    "heading": "How October cooks.",
-    "dek": "Two patterns. One is new; one you already have. Both keep working long after October.",
-    "items": [
-      {
-        "slug": "braise",
-        "name": "Braise",
-        "origin": "New this month",
-        "line": "Brown something, then cook it slowly in a little liquid until it gives. The pot does most of the work.",
-        "steps": [
-          {
-            "step": "Sear",
-            "hint": "Brown the meat hard. Take it out."
-          },
-          {
-            "step": "Aromatics",
-            "hint": "Garlic, chile, herbs, in the fat left behind."
-          },
-          {
-            "step": "Deglaze",
-            "hint": "A splash of liquid. Scrape up the brown bits."
-          },
-          {
-            "step": "Liquid",
-            "hint": "Halfway up the meat, never over it."
-          },
-          {
-            "step": "Slow cook",
-            "hint": "Low oven, most of an hour."
-          },
-          {
-            "step": "Brighten",
-            "hint": "Lemon or vinegar at the end. Always."
-          }
-        ],
-        "note": "Stop after the first step and you have a pork chop. The sear is a method on its own.",
-        "works_on": [
-          "Chicken thighs",
-          "Pork shoulder",
-          "A pot of beans",
-          "Short ribs, later in the year"
-        ]
-      },
-      {
-        "slug": "roast",
-        "name": "Roast hot",
-        "origin": "From September",
-        "line": "September's lesson on delicata, now on most of the basket.",
-        "steps": [
-          "Cut thin or flat-faced",
-          "more oil than seems right",
-          "room between pieces",
-          "425°F",
-          "until the edges go dark, not golden"
-        ],
-        "compact": true
-      }
-    ]
-  },
-  "bring_it_out": {
-    "name": "The Dutch oven.",
-    "line": "Cooler evenings, winter squash, and cuts with the bone still in: the heavy pot earns its place back on the stove. Burner to oven to table, and it holds heat so evenly a braise more or less cooks itself.",
-    "uses": [
-      "The Sunday braise",
-      "A pot of beans from dry",
-      "Monday's soup, from Sunday's leftovers"
-    ],
-    "fallback": "No Dutch oven? Any heavy, lidded, oven-safe pot will do.",
-    "cta": "See it in the featured cook"
-  },
-  "meals_dek": "Keep what you already make. Add what's ripe.",
+  "house_flavor": "salsa-macha",
+  "field_notes_label": "Field Notes",
+  "field_notes": [
+    {
+      "slug": "ancho-is-a-poblano",
+      "name": "An ancho is a poblano that waited.",
+      "body": "Leave a poblano on the plant until it turns red, dry it in the sun, and it becomes an ancho — wrinkled, nearly black, and smelling faintly of raisins. The chile you charred in September and the one in this month's jar are the same pepper, a few weeks apart. That's the whole season in one ingredient."
+    },
+    {
+      "slug": "halfway-up",
+      "name": "Halfway up, never over.",
+      "body": "The one rule of a braise: after you brown the meat, the liquid comes about halfway up it, not over the top. What's under the surface goes soft and turns to stew; what's above it stays browned, and the skin crisps again in the oven. Drown it and you've made soup. Every braise you make this winter works the same way."
+    },
+    {
+      "slug": "pomegranate-underwater",
+      "name": "Seed a pomegranate underwater.",
+      "body": "Score around the crown, pull the fruit apart into sections, and hold them in a bowl of cold water while you push the seeds out with your thumbs. The seeds sink. The pith floats. Skim it, drain, and you have a cup of seeds and no red kitchen."
+    },
+    {
+      "slug": "october-fish-counter",
+      "name": "October at the fish counter.",
+      "body": "California spiny lobster season opens the first weekend of October, and for the first few weeks it is genuinely local, genuinely live, and worth one splurge. Ask for it split. Broil it with butter and garlic and eat it the way it's eaten an hour south: beans, rice, flour tortillas, lime. If it isn't there, the question from July still works: not 'Do you have salmon?' but 'What came in today?'"
+    }
+  ],
   "meal_transformations": [
     {
       "meal": "Rice bowl",
-      "change": "Ground beef, charred poblano strips, roasted sweet potato, pomegranate.",
-      "result": "Sweet, smoke, something sharp."
+      "change": "Roasted sweet potato, charred poblano, pomegranate, a spoonful of salsa macha.",
+      "result": "The jar does the work."
     },
     {
       "meal": "Pasta",
@@ -289,83 +123,24 @@
     },
     {
       "meal": "Tacos",
-      "change": "Roasted sweet potato and poblano. Pomegranate. Lime.",
-      "result": "October's vegetable taco."
+      "change": "Sweet potato and poblano, salsa macha, pomegranate, cotija.",
+      "result": "The vegetable taco that doesn't apologize."
     },
     {
-      "meal": "Salmon",
-      "change": "Delicata on the same sheet pan. Lemon over both.",
-      "result": "Same salmon, different month."
+      "meal": "Beans",
+      "change": "A spoonful of salsa macha and its oil. A squeeze of lime.",
+      "result": "Ten seconds. A different bowl."
     },
     {
-      "meal": "Pork chops",
-      "change": "Apple wedges into the pan after the sear. Sage. Cider vinegar.",
-      "result": "One pan, and it's fall."
-    },
-    {
-      "meal": "Leftovers",
-      "change": "Sunday's chicken and beans over rice or toast. The other half of the lemon.",
-      "result": "Monday's lunch is already made."
+      "meal": "Yogurt",
+      "change": "Pomegranate, sliced persimmon, honey.",
+      "result": "Breakfast finally tastes like the calendar."
     }
   ],
   "weekend_meal": {
-    "label": "The featured cook",
-    "menu_label": "Featured cook",
-    "cta": "Cook it this Sunday",
     "name": "Dutch-oven chicken with delicata and white beans.",
-    "intro": "The whole month in one pot, and the braise that teaches you the rest.",
-    "card_line": "Chicken thighs, delicata, white beans, poblano, rosemary, lemon",
-    "brings_together": [
-      {
-        "role": "Basket",
-        "items": [
-          "delicata-squash",
-          "poblanos"
-        ]
-      },
-      {
-        "role": "Protein",
-        "join": "+",
-        "items": [
-          {
-            "text": "Bone-in chicken thighs",
-            "anchor": "chicken-thighs"
-          }
-        ]
-      },
-      {
-        "role": "Pantry",
-        "join": "+",
-        "items": [
-          "White beans",
-          "Rosemary",
-          "Garlic",
-          "Stock",
-          "Lemon"
-        ]
-      },
-      {
-        "role": "Method",
-        "join": "→",
-        "items": [
-          {
-            "text": "Braise",
-            "anchor": "method-braise"
-          }
-        ]
-      },
-      {
-        "role": "In",
-        "join": "→",
-        "items": [
-          {
-            "text": "Dutch oven",
-            "anchor": "bring-it-out"
-          }
-        ]
-      }
-    ],
-    "time": "About an hour and a quarter, twenty minutes of it active. Serves four, with lunch left over.",
+    "intro": "One meal should feel like the reason you went shopping. In October, it's the first one that asks for the oven for an hour — and the reason to get the heavy pot back out.",
+    "card_line": "Bone-in chicken thighs, delicata, white beans, poblano, rosemary, lemon",
     "ingredients": [
       "6 bone-in, skin-on chicken thighs, about 2½ lbs",
       "1 delicata squash — halved, seeded, cut into 1-inch half-moons, skin on",
@@ -375,52 +150,55 @@
       "2 cans cannellini beans, drained and rinsed",
       "2 cups chicken stock, or 2 tsp bouillon in 2 cups hot water",
       "1 lemon",
-      "Olive oil, kosher salt, black pepper"
+      "Olive oil, kosher salt, black pepper",
+      "Salsa macha, for the table"
     ],
-    "ingredient_note": "Salt the chicken the night before, or an hour ahead, if you remember. If you don't, salt it right before. It still works.",
-    "steps": [
-      {
-        "stage": "Sear",
-        "text": "Heat the oven to 375°F. Pat the chicken dry and salt both sides. Set the Dutch oven over medium-high with a thin film of oil and lay the thighs in skin side down — in two batches if they crowd. Leave them alone for 8 to 10 minutes, until the skin is deep golden and lets go of the pot on its own. Turn them for two minutes, then move them to a plate. Pour off all but about two tablespoons of fat."
-      },
-      {
-        "stage": "Aromatics",
-        "text": "Turn the heat to medium. Add the poblano, garlic, and rosemary to the fat and stir for three or four minutes, until the chile softens and the kitchen smells like it."
-      },
-      {
-        "stage": "Deglaze",
-        "text": "Pour in a splash of the stock and scrape the bottom with a wooden spoon. The brown layer stuck to the pot is the most flavorful thing in it. It belongs in the sauce, not in the sink."
-      },
-      {
-        "stage": "Liquid",
-        "text": "Add the beans, the squash, and the rest of the stock. Season with salt and pepper. Nestle the chicken back in, skin side up. The liquid should come about halfway up the thighs, with the skin above it."
-      },
-      {
-        "stage": "Slow cook",
-        "text": "Into the oven, lid off, for 45 minutes. Below the surface everything turns to stew; above it, the skin crisps again. It's done when the squash is tender and the meat pulls from the bone."
-      },
-      {
-        "stage": "Brighten",
-        "text": "Zest the lemon over the pot, then squeeze in half of it. Taste the beans and salt them if they need it. Let it sit ten minutes. Serve from the pot, with bread for the liquid."
-      }
-    ],
-    "after": {
-      "heading": "The next day",
-      "body": "Pull the chicken off the bone and stir it back into the beans. Warm it with a splash of water, or eat it at room temperature over rice or toast with the other half of the lemon. It's better on Monday."
-    }
+    "ingredient_note": "Any heavy, lidded, oven-safe pot will do if you don't have a Dutch oven. Salt the chicken the night before if you remember; right before is fine if you don't.",
+    "method": "Heat the oven to 375°F. Pat the chicken dry and salt both sides. In the Dutch oven over medium-high, with a thin film of oil, lay the thighs skin side down and leave them alone for 8 to 10 minutes, until the skin is deep golden and lets go on its own. Turn them for two minutes, then set them aside and pour off all but two tablespoons of fat. Add the poblano, garlic, and rosemary and stir for three or four minutes. Pour in a splash of stock and scrape up everything stuck to the bottom — that's the flavor. Add the beans, squash, and the rest of the stock, season, and nestle the chicken back in skin side up, with the liquid about halfway up the thighs. Into the oven, lid off, for 45 minutes, until the squash is tender and the meat pulls from the bone. Zest the lemon over the pot and squeeze in half of it. Let it sit ten minutes. Salsa macha at the table. It's better the next day, pulled off the bone and eaten over rice."
   },
-  "progression": {
-    "menu_label": "By month's end",
-    "heading": "By the end of October, you'll know how to…",
-    "items": [
-      "Choose a winter squash and roast it until it's actually sweet",
-      "Cook bone-in chicken thighs without worrying about them",
-      "Build a braise, then run the same six steps on something else",
-      "Use a Dutch oven for what it's for",
-      "Put something sharp against something rich",
-      "Recognize a Fuyu, a heavy pomegranate, and a good poblano on sight"
+  "drink": {
+    "slug": "south-park-shrub",
+    "name": "South Park Shrub",
+    "intro": "One drink. Make the base once and it lasts the week.",
+    "card_line": "Pomegranate, cider vinegar, sugar, soda",
+    "keep": [
+      "Apple cider vinegar",
+      "Sugar",
+      "Sparkling water",
+      "Ice"
     ],
-    "carried": "Already yours: blistering (July), the covered bowl (August), the quick brine and the hot roast (September)."
+    "season_adds": [
+      "1 pomegranate, seeded",
+      "A thin slice of apple, optional"
+    ],
+    "method": "Press the seeds from one pomegranate through a strainer to get about half a cup of juice; save a spoonful of whole seeds. Stir the juice with two tablespoons of cider vinegar and two tablespoons of sugar until the sugar dissolves. That's the shrub — it keeps a week in the fridge. For a glass: two tablespoons over ice, topped with sparkling water, a few seeds on top. It should taste sharp first and sweet second.",
+    "try_another_way": [
+      {
+        "change": "Add a shot of mezcal",
+        "context": "If it's Friday."
+      },
+      {
+        "change": "Top with cold apple cider instead of soda",
+        "context": "When the evening actually turns cool."
+      },
+      {
+        "change": "Salt the rim with Tajín",
+        "context": "If you miss September."
+      },
+      {
+        "change": "A splash of shrub in plain seltzer",
+        "context": "In the afternoon, instead of anything sweeter."
+      }
+    ]
+  },
+  "local_ritual": {
+    "label": "San Diego ritual",
+    "name": "Walk out for the lobster opener.",
+    "description": "Lobster season opens at dusk on the first weekend of October, and the piers on Shelter Island fill with hoop nets and headlamps. You don't need to fish. Walk out after dark with something warm, watch the first nets come up, and notice that you wanted the jacket — the first night of the year that's true."
+  },
+  "one_thing_to_notice": {
+    "headline": "The corners on a pomegranate.",
+    "body": "An underripe pomegranate is round. As the seeds swell, they press out against the skin until the fruit goes slightly squared-off, with flat faces and soft ridges. The angular ones are the full ones. Once you see it, you'll stop picking the pretty round one."
   },
   "market_question": "What's just come in — and what's about to go?",
   "next_edition": {

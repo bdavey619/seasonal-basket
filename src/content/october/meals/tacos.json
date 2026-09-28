@@ -3,7 +3,7 @@
   "name": "Tacos",
   "display_name": "Tacos",
   "effort": "weekday",
-  "intro": "Roasted sweet potato and poblano make the October taco. Pomegranate does what salsa would.",
+  "intro": "Sweet potato, poblano, salsa macha, pomegranate. The vegetable taco that doesn't feel like the vegetable option.",
   "keep": [
     "Corn tortillas",
     "Protein of choice, or none",
@@ -12,34 +12,26 @@
   ],
   "season_anchor": [
     "Roasted sweet potato, cubed",
-    "Charred poblano strips"
+    "Salsa macha"
   ],
   "season_options": [
+    "Charred poblano strips",
     "Pomegranate seeds",
     "Apple slaw with cider vinegar",
-    "Salted Greek yogurt, instead of crema",
-    "Cilantro, if you still have it"
+    "Salted Greek yogurt, instead of crema"
   ],
   "variations": [
-    {
-      "ingredients": "Sweet potato + poblano + pomegranate + cotija",
-      "context": "The October taco. No meat, no compromise."
-    },
-    {
-      "ingredients": "Lobster + beans + lime",
-      "context": "If you saw it. Flour tortillas for this one."
-    }
+    { "ingredients": "Sweet potato + poblano + salsa macha + cotija", "context": "The October taco. Nothing here is optional." },
+    { "ingredients": "Beans + salsa macha + apple slaw", "context": "The one to make on a weeknight when nothing is defrosted." },
+    { "ingredients": "Lobster + beans + lime", "context": "If the fish counter had it. Flour tortillas for this one." }
   ],
   "works_well_with": [
     "Ground beef or turkey",
     "Black or pinto beans",
-    "Spiny lobster, in season from October"
+    "Spiny lobster, split and broiled"
   ],
   "finish": "Warm the tortillas over a flame or in a dry pan until they blister in spots, and stack them under a towel. Pomegranate goes on last, so it stays cold against the warm filling.",
-  "linked_ingredients": [
-    "sweet-potatoes",
-    "poblanos",
-    "pomegranates",
-    "apples"
-  ]
+  "linked_house_flavor": "salsa-macha",
+  "linked_field_notes": ["october-fish-counter"],
+  "linked_ingredients": ["sweet-potatoes", "poblanos", "pomegranates", "apples"]
 }

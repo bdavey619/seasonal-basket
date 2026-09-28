@@ -2,28 +2,31 @@
   "slug": "poblanos",
   "name": "The last poblanos",
   "month": "October",
-  "buy": "buy-now",
-  "default_move": {
-    "headline": "Char it. You already know how.",
-    "steps": ["Blacken over a flame", "cover 15 minutes", "slip off the skin", "tear into strips"]
-  },
-  "tile_uses": "The braise, rice bowls, tacos, the freezer",
-  "why_now": "Roasting chiles run from late August to about mid-October, then they're gone until next year. The ones still around this month are often blushing red, a little sweeter and sometimes a little hotter. Buy them now; they freeze better than almost anything.",
+  "tile_uses": "The weekend braise, rice bowls, tacos, the freezer",
+  "why_now": "Roasting chiles run from late August to about mid-October, then they're gone until next year. The ones still around this month are often blushing red — a little sweeter, sometimes a little hotter. Left longer, they become anchos, which is where this month's jar starts.",
   "how_to_choose": [
     "Glossy and heavy, with no wrinkles",
     "Flat-sided ones char more evenly",
-    "A red blush means riper — sweeter, and sometimes hotter"
+    "A red blush means riper — sweeter, and sometimes hotter",
+    "Skip anything soft at the shoulders"
   ],
   "buy_this_much": "4–6. Two go into the braise raw. Char the rest and freeze the strips for November.",
+  "price_note": "Still cheap for the first two weeks. After that, what's left is whatever didn't sell.",
   "pairs_with_month": ["delicata-squash", "sweet-potatoes", "pomegranates"],
-  "pairs_with_staples": ["ground beef or turkey", "chicken thighs", "beans", "eggs", "sticky white rice"],
-  "weekday_uses": [
-    "Sliced raw into the braise with the garlic",
-    "Charred strips in a ground-beef rice bowl",
-    "In tacos with roasted sweet potato",
-    "Chopped into scrambled eggs"
+  "pairs_with_staples": ["chicken thighs", "ground beef or turkey", "beans", "eggs", "sticky white rice"],
+  "flavor_paths": [
+    { "name": "Raw, cooked in fat", "description": "Sliced into strips, softened with garlic. Green and grassy. The braise." },
+    { "name": "Charred", "description": "September's move: blacken, steam, peel. Smoky strips for bowls and tacos." },
+    { "name": "Dried", "description": "As an ancho, fried into salsa macha. The same chile, a few weeks later." }
   ],
+  "weekday_uses": [
+    "Charred strips in a rice bowl with sweet potato",
+    "In tacos with sweet potato and salsa macha",
+    "Chopped into scrambled eggs",
+    "Frozen in strips for November"
+  ],
+  "weekend_use": "Sliced raw into the Dutch oven with garlic and rosemary, as the aromatic under the weekend braise.",
   "storage": "Raw, a week in the crisper. Charred and peeled, four days in the fridge — or freeze the strips flat in a bag and break off what you need.",
-  "one_thing_to_learn": "Raw poblano and charred poblano are two different vegetables. Sliced raw and cooked in fat, it's green and grassy, doing what a bell pepper does with more to say. Charred, it's smoky and soft. The braise wants the first. The rice bowl wants the second.",
+  "one_thing_to_learn": "Raw poblano and charred poblano are two different vegetables. Sliced raw and cooked in fat, it's green and grassy, doing what a bell pepper does with more to say. Charred, it's smoky and soft. The braise wants the first; the rice bowl wants the second.",
   "market_question": "How many more weeks of these?"
 }

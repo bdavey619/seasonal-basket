@@ -183,48 +183,6 @@ def display_name(slug, ingredients_data=None):
         return ingredients_data[slug].get("name", slug)
     return slug.replace("-", " ").capitalize()
 
-# ── Buying guidance and default moves ──────────────────────────────────────────
-
-# The four things worth knowing at a market stall, in the order they matter.
-# An ingredient or protein carries at most one, under the key "buy".
-BUY_TAGS = {
-    "buy-now":       "Buy now",          # short window; gone soon
-    "for-the-week":  "Buy for the week", # perishable; buy what you'll cook
-    "keeps-well":    "Keeps well",       # safe to buy extra
-    "if-you-see-it": "If you see it",    # opportunistic; don't go looking
-}
-
-def render_buy_tag(key, source=""):
-    if not key:
-        return ""
-    if key not in BUY_TAGS:
-        fail(f"Unknown buy tag '{key}' in {source}. Use one of: {', '.join(BUY_TAGS)}")
-    return f'<span class="buy-tag">{e(BUY_TAGS[key])}</span>'
-
-def render_move_steps(steps):
-    """A default move's steps as one line: Halve → seed → slice → roast."""
-    return '<span class="move-arrow"> → </span>'.join(
-        f'<span class="move-step">{e(s)}</span>' for s in steps)
-
-def render_ref_list(refs, ingredients_data, depth, ing_index_path, sep=" · ", edition_href=""):
-    """
-    A list of things something pairs with. A basket ingredient slug becomes a
-    link to its page; {"text", "anchor"} links to that section of the edition
-    page; anything else (a pantry item) is plain text. This is how the edition
-    draws relationships without explaining them.
-    """
-    base = ing_index_path.rstrip("/")
-    out = []
-    for r in refs:
-        if isinstance(r, dict):
-            out.append(f'<a href="{edition_href}#{e(r["anchor"])}">{e(r["text"])}</a>')
-        elif ingredients_data and r in ingredients_data:
-            href = rel(depth, f"{base}/{r}/")
-            out.append(f'<a href="{href}">{e(display_name(r, ingredients_data))}</a>')
-        else:
-            out.append(e(r))
-    return sep.join(out)
-
 # ── Meal transformations ───────────────────────────────────────────────────────
 
 def render_transformations(transformations, meal_hrefs=None, meals_by_name=None):
@@ -321,25 +279,13 @@ def render_bring_home(bring_home, ingredients_data, featured, depth, ing_index_p
         if slug and featured and slug not in featured:
             fail(f"bring_home item '{item['name']}' has slug '{slug}', "
                  f"which is not in featured_ingredients")
-        ing = ingredients_data.get(slug, {}) if slug else {}
-        tag_html = render_buy_tag(ing.get("buy"), f"{slug}.json")
-        move = ing.get("default_move")
-        if move:
-            # An ingredient with a default move shows it in place of the note
-            # and uses: what to do with it is the thing to carry out of the store.
-            detail_html = (f'<span class="bring-home-note bring-home-note--move">{e(move["headline"])}</span>\n'
-                           f'          <span class="bring-home-uses bring-home-move">{render_move_steps(move["steps"])}</span>')
-        else:
-            uses = ing.get("tile_uses", "")
-            detail_html = (f'<span class="bring-home-note">{e(item.get("note", ""))}</span>\n'
-                           + (f'          <span class="bring-home-uses">{e(uses)}</span>' if uses else ""))
-        name_html = (f'<span class="bring-home-name bring-home-name--tagged">'
-                     f'<span class="bring-home-label">{e(item["name"])}</span>{tag_html}</span>'
-                     if tag_html else f'<span class="bring-home-name">{e(item["name"])}</span>')
+        uses = ingredients_data.get(slug, {}).get("tile_uses", "") if slug else ""
+        uses_html = (f'<span class="bring-home-uses">{e(uses)}</span>' if uses else "")
         inner = (f"""
-          {name_html}
+          <span class="bring-home-name">{e(item['name'])}</span>
           <span class="bring-home-qty">{e(item['qty'])}</span>
-          {detail_html}""")
+          <span class="bring-home-note">{e(item['note'])}</span>
+          {uses_html}""")
         if slug:
             href = rel(depth, f"{base}/{slug}/")
             row_html.append(f'<a class="bring-home-row" href="{href}">{inner}\n        </a>')
@@ -700,44 +646,15 @@ def build_drink_page(edition, depth, canonical_url, edition_context):
 
 # ── Weekend meal page ──────────────────────────────────────────────────────────
 
-def build_weekend_page(edition, depth, canonical_url, edition_context, ingredients_data=None):
-    """
-    The weekend meal on its own page — the one meal worth slowing down for.
-    A month can label it differently (October calls it the featured cook), and
-    can write its method as staged steps. When it does, each stage is named
-    after the method pattern it demonstrates, so the recipe teaches the pattern
-    rather than only being followed.
-    """
+def build_weekend_page(edition, depth, canonical_url, edition_context):
+    """The weekend meal on its own page — the one meal worth slowing down for."""
     meal  = edition["weekend_meal"]
     month = edition_context["month"]
-    label = meal.get("label", "The weekend meal")
     edition_href = rel(depth, f"{month.lower()}/")
 
     ing_items = "".join(f"<li>{e(i)}</li>" for i in meal.get("ingredients", []))
     note = meal.get("ingredient_note", "")
     note_block = f'<p class="house-flavor-storage">{e(note)}</p>' if note else ""
-
-    chain = render_brings_together(meal.get("brings_together", []), ingredients_data,
-                                   depth, edition_context["ingredient_index_path"],
-                                   edition_href=edition_href)
-    time_line = f'<p class="cook-time">{e(meal["time"])}</p>' if meal.get("time") else ""
-
-    if meal.get("steps"):
-        stages = "".join(f"""
-            <li class="cook-stage">
-              <span class="pattern-step">{e(st['stage'])}</span>
-              <p>{e(st['text'])}</p>
-            </li>""" for st in meal["steps"])
-        method_html = f'<ol class="cook-stages">{stages}\n          </ol>'
-    else:
-        method_html = f'<p class="drink-method">{e(meal.get("method",""))}</p>'
-
-    after = meal.get("after")
-    after_block = f"""
-        <section aria-labelledby="after-heading">
-          <h2 id="after-heading">{e(after['heading'])}</h2>
-          <p class="drink-method">{e(after['body'])}</p>
-        </section>""" if after else ""
 
     body = f"""
     <div style="padding-top:28px">
@@ -745,9 +662,9 @@ def build_weekend_page(edition, depth, canonical_url, edition_context, ingredien
     </div>
 
     <div class="meal-header">
-      <div class="section-label">{e(label)} · {e(month)}</div>
+      <div class="section-label">The weekend meal · {e(month)}</div>
       <h1>{e(meal['name'])}</h1>
-      <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:680px">{e(meal['intro'])}</p>{chain}
+      <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:680px">{e(meal['intro'])}</p>
     </div>
 
     <div class="meal-body meal-body--solo">
@@ -760,10 +677,8 @@ def build_weekend_page(edition, depth, canonical_url, edition_context, ingredien
 
         <section aria-labelledby="do-heading">
           <h2 id="do-heading">Do</h2>
-          {time_line}
-          {method_html}
+          <p class="drink-method">{e(meal.get('method',''))}</p>
         </section>
-{after_block}
       </div>
     </div>"""
 
@@ -1042,7 +957,7 @@ def build_publication_home(edition, depth, canonical_url, edition_context, past_
     body = f"""
     <section class="pub-intro" aria-label="About Seasonal">
       <h1 class="pub-headline">Cook with the year.</h1>
-      <p class="pub-body">The grocery store offers everything, all the time. Each month, Seasonal narrows that down — the handful of ingredients worth buying while they're at their best, what they go with, and how to cook them.</p>
+      <p class="pub-body">The grocery store offers everything, all the time. Each month, Seasonal narrows that down — the handful of ingredients worth buying while they're at their best, one flavor that works across the week, one drink that captures the season.</p>
       <p class="pub-body">Your cooking stays exactly as it is. It starts to taste like the month.</p>
     </section>
 
@@ -1068,152 +983,6 @@ def build_publication_home(edition, depth, canonical_url, edition_context, past_
         page_class="page--home",
     )
 
-# ── Pairings, method, tool, progression (edition page) ─────────────────────────
-#
-# Optional sections. An edition that doesn't carry the field doesn't get the
-# section — September has none of them and renders exactly as it did. Together
-# they let a month answer "what should I be cooking?" rather than only "what
-# should I buy?": ingredients → what they pair with → how to cook them → meals.
-
-def render_pairings(pairings, ingredients_data, depth, ing_index_path):
-    """Proteins the basket points toward, and the few pantry things that unlock it."""
-    proteins = pairings.get("proteins", [])
-    pantry   = pairings.get("pantry", [])
-
-    protein_html = ""
-    if proteins:
-        cards = []
-        for p in proteins:
-            move = p.get("default_move")
-            move_html = f"""
-            <p class="protein-move"><span class="protein-move-head">{e(move['headline'])}</span>
-              <span class="protein-move-steps">{render_move_steps(move['steps'])}</span></p>""" if move else ""
-            cards.append(f"""
-          <div class="protein" id="{e(p['slug'])}">
-            <h3 class="protein-name">{e(p['name'])}{render_buy_tag(p.get('buy'), 'pairings.proteins')}</h3>
-            <p class="protein-why">{e(p['why'])}</p>
-            <p class="pairs-with"><span class="pairs-with-label">With</span> {render_ref_list(p.get('with', []), ingredients_data, depth, ing_index_path)}</p>{move_html}
-          </div>""")
-        protein_html = f"""
-        <div class="proteins">{"".join(cards)}
-        </div>"""
-
-    pantry_html = ""
-    if pantry:
-        rows = "".join(f"""
-          <li class="pantry-item">
-            <span class="pantry-name">{e(i['name'])}</span>
-            <span class="pantry-role">{e(i['role'])}</span>
-          </li>""" for i in pantry)
-        pantry_html = f"""
-        <div class="pantry">
-          <div class="meal-adds-sublabel">{e(pairings.get('pantry_label', 'From the pantry'))}</div>
-          <ul class="pantry-list">{rows}
-          </ul>
-        </div>"""
-
-    dek = pairings.get("dek", "")
-    return f"""
-        <div class="section-label">{e(pairings.get('label', 'Pairings'))}</div>
-        <h2 id="pairings-heading">{e(pairings['heading'])}</h2>
-        {f'<p class="section-dek">{e(dek)}</p>' if dek else ""}{protein_html}{pantry_html}"""
-
-
-def render_methods(methods):
-    """
-    Transferable patterns, not recipes. Each is a short chain of stages with a
-    few words under each — the same shape a reader can reuse on a different
-    ingredient next month.
-    """
-    blocks = []
-    for m in methods.get("items", []):
-        if m.get("compact"):
-            # A pattern the reader already has from an earlier month: one line,
-            # so the new pattern keeps the visual weight.
-            origin = f'<span class="method-origin">{e(m["origin"])}</span>' if m.get("origin") else ""
-            blocks.append(f"""
-        <div class="method method--compact" id="method-{e(m['slug'])}">
-          <h3 class="method-name">{e(m['name'])}{origin}</h3>
-          <p class="method-line">{e(m['line'])}</p>
-          <p class="default-move-steps">{render_move_steps(m['steps'])}</p>
-        </div>""")
-            continue
-        stages = "".join(f"""
-            <li class="pattern-stage">
-              <span class="pattern-step">{e(s['step'])}</span>
-              <span class="pattern-hint">{e(s['hint'])}</span>
-            </li>""" for s in m.get("steps", []))
-        origin = f'<span class="method-origin">{e(m["origin"])}</span>' if m.get("origin") else ""
-        note = f'<p class="method-note">{e(m["note"])}</p>' if m.get("note") else ""
-        uses = (f'<p class="pairs-with"><span class="pairs-with-label">Works on</span> '
-                f'{" · ".join(e(u) for u in m["works_on"])}</p>') if m.get("works_on") else ""
-        blocks.append(f"""
-        <div class="method" id="method-{e(m['slug'])}">
-          <h3 class="method-name">{e(m['name'])}{origin}</h3>
-          <p class="method-line">{e(m['line'])}</p>
-          <ol class="pattern">{stages}
-          </ol>
-          {note}
-          {uses}
-        </div>""")
-    dek = methods.get("dek", "")
-    return f"""
-        <div class="section-label">{e(methods.get('label', 'Method'))}</div>
-        <h2 id="method-heading">{e(methods['heading'])}</h2>
-        {f'<p class="section-dek">{e(dek)}</p>' if dek else ""}
-        <div class="methods">{"".join(blocks)}
-        </div>"""
-
-
-def render_bring_it_out(tool, weekend_href):
-    """The piece of equipment coming back into season. Restrained on purpose."""
-    uses = "".join(f"<li>{e(u)}</li>" for u in tool.get("uses", []))
-    fallback = f'<p class="tool-fallback">{e(tool["fallback"])}</p>' if tool.get("fallback") else ""
-    cta = (f'<a href="{weekend_href}" class="house-flavor-cta">→ {e(tool["cta"])}</a>'
-           if tool.get("cta") and weekend_href else "")
-    return f"""
-        <div class="section-label">Bring it out</div>
-        <h2 id="tool-heading">{e(tool['name'])}</h2>
-        <p>{e(tool['line'])}</p>
-        <ul class="house-flavor-card-uses">{uses}</ul>
-        {fallback}
-        {cta}"""
-
-
-def render_brings_together(groups, ingredients_data, depth, ing_index_path, edition_href=""):
-    """
-    The featured cook, drawn as the month in one line: what you bought, what it
-    went with, how it was cooked, and in what. Each group is joined to the one
-    before by "+" (it goes in the pot) or "→" (it's what happens to the pot).
-    """
-    if not groups:
-        return ""
-    parts = []
-    for i, g in enumerate(groups):
-        if i:
-            joiner = g.get("join", "+")
-            parts.append(f'<span class="chain-join" aria-hidden="true">{e(joiner)}</span>')
-        parts.append(f"""
-          <span class="chain-group">
-            <span class="chain-role">{e(g['role'])}</span>
-            <span class="chain-items">{'<span class="chain-sep">, </span>'.join(
-                f'<span class="chain-item">{render_ref_list([r], ingredients_data, depth, ing_index_path, edition_href=edition_href)}</span>'
-                for r in g['items'])}</span>
-          </span>""")
-    return f"""
-        <div class="chain" role="group" aria-label="What this meal brings together">{"".join(parts)}
-        </div>"""
-
-
-def render_progression(prog):
-    """What the month leaves you with. Understated: a list, not a scorecard."""
-    items = "".join(f"<li>{e(i)}</li>" for i in prog.get("items", []))
-    carried = f'<p class="progression-carried">{e(prog["carried"])}</p>' if prog.get("carried") else ""
-    return f"""
-        <h2 id="progression-heading">{e(prog['heading'])}</h2>
-        <ul class="checklist progression-list">{items}</ul>
-        {carried}"""
-
 # ── Edition page ───────────────────────────────────────────────────────────────
 
 def render_section_menu(entries):
@@ -1237,7 +1006,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
                        house_flavor2=None, edition_context=None, ingredients_data=None,
                        meals_by_name=None):
     require_fields(edition, ["month", "opening_note", "featured_ingredients",
-                              "bring_home", "meal_transformations"], "edition.json")
+                              "meal_transformations", "field_notes"], "edition.json")
 
     slug = edition["month"].lower()
     ing_index_path = edition_context["ingredient_index_path"]
@@ -1262,123 +1031,21 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
         <div class="sub">{e(month_card_sub)}</div>
       </aside>"""
 
+    # Running header. Section labels come from the edition so a month that
+    # renames Field Notes stays accurate.
+    jump_entries = [
+        ("basket", "Basket"), ("meals", "Meals"),
+        ("field-notes", edition.get("field_notes_label", "Field Notes")),
+        ("house-flavor", "House Flavor"), ("drink", "Drink"),
+        ("ritual", "Ritual"), ("weekend", "Weekend"), ("notice", "Notice"),
+    ]
+
+    drink        = edition["drink"]
+    weekend      = edition["weekend_meal"]
     basket_href      = rel(depth, ing_index_path)
     field_notes_href = rel(depth, f"{slug}/field-notes/")
-    drink            = edition.get("drink")
-    weekend          = edition.get("weekend_meal")
-    weekend_href     = rel(depth, f"{slug}/weekend/") if weekend else None
-    weekend_label    = (weekend or {}).get("label", "The weekend meal")
-
-    # Every section after the basket is optional. They render in one fixed
-    # order — ingredients, what they pair with, how to cook them, then meals —
-    # so a month only chooses what it carries, never where it goes. Each entry
-    # is (anchor, menu label, html); the section menu is built from the same
-    # list, so it can't point at a section the month left out.
-    sections = []
-
-    sections.append(("basket", "Basket", f"""
-      <article class="section col-12" id="basket" aria-labelledby="basket-heading">
-        <div class="section-label">The {e(month)} basket</div>
-        <h2 id="basket-heading">{e(edition['bring_home']['heading'])}</h2>
-        <div class="card card--dark">
-          {render_bring_home(edition['bring_home'], ingredients_data,
-                             edition.get('featured_ingredients'), depth, ing_index_path)}
-        </div>
-        <a href="{basket_href}" class="house-flavor-cta">→ All {len(edition['featured_ingredients'])} ingredients, in full</a>
-      </article>"""))
-
-    if edition.get("pairings"):
-        sections.append(("pairings", edition["pairings"].get("label", "Pairings"), f"""
-      <article class="section col-12" id="pairings" aria-labelledby="pairings-heading">
-        {render_pairings(edition['pairings'], ingredients_data, depth, ing_index_path)}
-      </article>"""))
-
-    if edition.get("methods"):
-        sections.append(("method", edition["methods"].get("label", "Method"), f"""
-      <article class="section col-12" id="method" aria-labelledby="method-heading">
-        {render_methods(edition['methods'])}
-      </article>"""))
-
-    if edition.get("bring_it_out"):
-        sections.append(("bring-it-out", "Bring it out", f"""
-      <aside class="section section--aside col-12" id="bring-it-out" aria-labelledby="tool-heading">
-        {render_bring_it_out(edition['bring_it_out'], weekend_href)}
-      </aside>"""))
-
-    sections.append(("meals", "Meals", f"""
-      <article class="section col-12" id="meals" aria-labelledby="transforms-heading">
-        <div class="section-label">The meals</div>
-        <h2 id="transforms-heading">Your usual meals, wearing {e(month)}.</h2>
-        <p class="section-dek">{e(edition.get('meals_dek', "Keep what you already make. Add what's ripe."))}</p>
-        <div class="transformations">
-          {render_transformations(edition['meal_transformations'], meal_hrefs, meals_by_name)}
-        </div>
-      </article>"""))
-
-    if edition.get("field_notes"):
-        fn_label = edition.get("field_notes_label", "Field Notes")
-        sections.append(("field-notes", fn_label, f"""
-      <article class="section col-12" id="field-notes" aria-labelledby="field-notes-heading">
-        <div class="section-label" id="field-notes-heading">{e(fn_label)}</div>
-        {render_field_note_index(edition['field_notes'], field_notes_href)}
-      </article>"""))
-
-    if house_flavor:
-        sections.append(("house-flavor", "House Flavor",
-                         render_house_flavor_card(house_flavor, depth, edition_context, flavor2=house_flavor2)))
-
-    if drink:
-        drink_href = rel(depth, f"{slug}/{drink['slug']}/")
-        sections.append(("drink", "Drink", f"""
-      <article class="section col-12" id="drink" aria-labelledby="drink-heading">
-        {render_linkout("The drink", drink['name'], drink['intro'],
-                        drink['card_line'], drink_href, "Make the drink", "drink-heading")}
-      </article>"""))
-
-    ritual = edition.get("local_ritual")
-    if ritual:
-        sections.append(("ritual", "Ritual", f"""
-      <aside class="section section--aside col-12" id="ritual" aria-label="{e(ritual['label'])}">
-        <div class="section-label">{e(ritual['label'])}</div>
-        <h2>{e(ritual['name'])}</h2>
-        <p>{e(ritual['description'])}</p>
-      </aside>"""))
-
-    if weekend:
-        chain = render_brings_together(weekend.get("brings_together", []),
-                                       ingredients_data, depth, ing_index_path)
-        cta = weekend.get("cta", "Make the weekend meal")
-        if chain:
-            weekend_inner = f"""
-        <div class="section-label">{e(weekend_label)}</div>
-        <h2 id="weekend-heading">{e(weekend['name'])}</h2>
-        <p class="section-dek">{e(weekend['intro'])}</p>{chain}
-        <a href="{weekend_href}" class="house-flavor-cta">→ {e(cta)}</a>"""
-        else:
-            weekend_inner = render_linkout(weekend_label, weekend['name'], weekend['intro'],
-                                           weekend['card_line'], weekend_href, cta, "weekend-heading")
-        sections.append(("weekend", weekend.get("menu_label", "Weekend"), f"""
-      <article class="section col-12" id="weekend" aria-labelledby="weekend-heading">
-        {weekend_inner}
-      </article>"""))
-
-    notice = edition.get("one_thing_to_notice")
-    if notice:
-        sections.append(("notice", "Notice", f"""
-      <aside class="section section--aside col-12" id="notice" aria-label="One thing to notice">
-        <div class="section-label">One thing to notice</div>
-        <h2>{e(notice['headline'])}</h2>
-        <p>{e(notice['body'])}</p>
-      </aside>"""))
-
-    if edition.get("progression"):
-        sections.append(("progression", edition["progression"].get("menu_label", "By month's end"), f"""
-      <aside class="section section--aside col-12 progression" id="progression" aria-labelledby="progression-heading">
-        {render_progression(edition['progression'])}
-      </aside>"""))
-
-    jump_entries = [(anchor, label) for anchor, label, _ in sections]
-    sections_html = "\n".join(html_ for _, _, html_ in sections)
+    drink_href   = rel(depth, f"{slug}/{drink['slug']}/")
+    weekend_href = rel(depth, f"{slug}/weekend/")
 
     body = f"""
     <section class="hero" aria-label="{e(month)} edition">
@@ -1392,7 +1059,53 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
 
 
     <div class="grid">
-{sections_html}
+      <article class="section col-12" id="basket" aria-labelledby="basket-heading">
+        <div class="section-label">The {e(month)} basket</div>
+        <h2 id="basket-heading">{e(edition['bring_home']['heading'])}</h2>
+        <div class="card card--dark">
+          {render_bring_home(edition['bring_home'], ingredients_data,
+                             edition.get('featured_ingredients'), depth, ing_index_path)}
+        </div>
+        <a href="{basket_href}" class="house-flavor-cta">→ All {len(edition['featured_ingredients'])} ingredients, in full</a>
+      </article>
+
+      <article class="section col-12" id="meals" aria-labelledby="transforms-heading">
+        <div class="section-label">The meals</div>
+        <h2 id="transforms-heading">Your usual meals, wearing {e(month)}.</h2>
+        <p class="section-dek">Keep what you already make. Add what's ripe.</p>
+        <div class="transformations">
+          {render_transformations(edition['meal_transformations'], meal_hrefs, meals_by_name)}
+        </div>
+      </article>
+
+      <article class="section col-12" id="field-notes" aria-labelledby="field-notes-heading">
+        <div class="section-label" id="field-notes-heading">{e(edition.get('field_notes_label', 'Field Notes'))}</div>
+        {render_field_note_index(edition['field_notes'], field_notes_href)}
+      </article>
+
+      {render_house_flavor_card(house_flavor, depth, edition_context, flavor2=house_flavor2)}
+
+      <article class="section col-12" id="drink" aria-labelledby="drink-heading">
+        {render_linkout("The drink", drink['name'], drink['intro'],
+                        drink['card_line'], drink_href, "Make the drink", "drink-heading")}
+      </article>
+
+      <aside class="section section--aside col-12" id="ritual" aria-label="{e(edition['local_ritual']['label'])}">
+        <div class="section-label">{e(edition['local_ritual']['label'])}</div>
+        <h2>{e(edition['local_ritual']['name'])}</h2>
+        <p>{e(edition['local_ritual']['description'])}</p>
+      </aside>
+
+      <article class="section col-12" id="weekend" aria-labelledby="weekend-heading">
+        {render_linkout("The weekend meal", weekend['name'], weekend['intro'],
+                        weekend['card_line'], weekend_href, "Make the weekend meal", "weekend-heading")}
+      </article>
+
+      <aside class="section section--aside col-12" id="notice" aria-label="One thing to notice">
+        <div class="section-label">One thing to notice</div>
+        <h2>{e(edition['one_thing_to_notice']['headline'])}</h2>
+        <p>{e(edition['one_thing_to_notice']['body'])}</p>
+      </aside>
     </div>"""
 
     return render_shell(
@@ -1423,7 +1136,7 @@ def build_ingredient_index(edition, ingredients_data, depth, canonical_url, edit
         tiles.append(f"""
     <a class="ingredient-index-tile" href="{href}">
       {illustration_slot(ing_slug)}
-      <strong>{e(name)}</strong>{render_buy_tag(ing.get("buy"), f"{ing_slug}.json")}
+      <strong>{e(name)}</strong>
       <span class="why">{e(why)}</span>
     </a>""")
 
@@ -1452,10 +1165,10 @@ def build_ingredient_index(edition, ingredients_data, depth, canonical_url, edit
 # ── Individual ingredient page ─────────────────────────────────────────────────
 
 def build_ingredient_page(ing, depth, canonical_url, edition_context, ingredients_data,
-                          house_flavor=None, edition=None):
+                          house_flavor=None):
     require_fields(ing, ["slug", "name", "why_now", "how_to_choose", "buy_this_much",
                           "pairs_with_month", "pairs_with_staples",
-                          "weekday_uses", "storage",
+                          "weekday_uses", "weekend_use", "storage",
                           "one_thing_to_learn"], f"{ing.get('slug')}.json")
 
     slug = ing["slug"]
@@ -1472,38 +1185,6 @@ def build_ingredient_page(ing, depth, canonical_url, edition_context, ingredient
 
     index_href = rel(depth, ing_index_path)
 
-    # The default move leads the page when there is one: it's the thing to
-    # remember at the stall, before any of the detail below it.
-    move = ing.get("default_move")
-    move_block = f"""
-        <section aria-labelledby="move-heading" class="default-move">
-          <h2 id="move-heading">The default move</h2>
-          <p class="default-move-head">{e(move['headline'])}</p>
-          <p class="default-move-steps">{render_move_steps(move['steps'])}</p>
-        </section>""" if move else ""
-
-    weekend_block = f"""
-        <section aria-labelledby="weekend-heading">
-          <h2 id="weekend-heading">On a weekend</h2>
-          <p>{e(ing['weekend_use'])}</p>
-        </section>""" if ing.get("weekend_use") else ""
-
-    # "Cook it with" is derived, not authored: every protein and pantry item in
-    # the edition that names this ingredient. One source of truth for each
-    # relationship, shown from both ends.
-    pairings = (edition or {}).get("pairings", {})
-    cook_with = [p["name"] for p in pairings.get("proteins", []) if slug in p.get("with", [])]
-    cook_with += [i["name"] for i in pairings.get("pantry", []) if slug in i.get("with", [])]
-    edition_href = rel(depth, f"{month.lower()}/#pairings")
-    cook_with_block = f"""
-        <section>
-          <h3>Cook it with</h3>
-          <p style="font-family:ui-sans-serif,system-ui,sans-serif;font-size:.9rem;color:var(--muted)">{", ".join(e(c) for c in cook_with)}</p>
-          <a href="{edition_href}" class="house-flavor-sidebar-link" style="font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem">→ Pairings</a>
-        </section>""" if cook_with else ""
-
-    tag = render_buy_tag(ing.get("buy"), f"{slug}.json")
-
     body = f"""
     <div style="padding-top:28px">
       <a href="{index_href}" class="back-link">← {e(month)} ingredients</a>
@@ -1511,13 +1192,13 @@ def build_ingredient_page(ing, depth, canonical_url, edition_context, ingredient
 
     <div class="ingredient-header">
       {illustration_slot(slug)}
-      <div class="section-label">{e(month)} · {e(location)}{tag}</div>
+      <div class="section-label">{e(month)} · {e(location)}</div>
       <h1>{e(ing['name'])}</h1>
       <p class="dek" style="font-size:clamp(1rem,2vw,1.45rem);max-width:680px">{e(ing['why_now'])}</p>
     </div>
 
     <div class="ingredient-body">
-      <div class="ingredient-main">{move_block}
+      <div class="ingredient-main">
         <section aria-labelledby="choose-heading">
           <h2 id="choose-heading">How to choose it</h2>
           <ul class="checklist">{choose_items}</ul>
@@ -1533,7 +1214,10 @@ def build_ingredient_page(ing, depth, canonical_url, edition_context, ingredient
           <ul class="checklist">{weekday_items}</ul>
         </section>
 
-{weekend_block}
+        <section aria-labelledby="weekend-heading">
+          <h2 id="weekend-heading">On a weekend</h2>
+          <p>{e(ing['weekend_use'])}</p>
+        </section>
 
         <section aria-labelledby="learn-heading">
           <h2 id="learn-heading">One thing worth learning</h2>
@@ -1545,7 +1229,7 @@ def build_ingredient_page(ing, depth, canonical_url, edition_context, ingredient
         <section>
           <h3>Good with this month</h3>
           <p style="font-family:ui-sans-serif,system-ui,sans-serif;font-size:.9rem;color:var(--muted)">{pairs_month}</p>
-        </section>{cook_with_block}
+        </section>
         <section>
           <h3>Good with your staples</h3>
           <p style="font-family:ui-sans-serif,system-ui,sans-serif;font-size:.9rem;color:var(--muted)">{pairs_staple}</p>
@@ -1778,9 +1462,7 @@ def build_edition(edition_dir_name):
 
     # Load edition JSON
     edition     = read_json(content_dir / "edition.json")
-    # guides.json is optional: the guide characters are a voice some months use.
-    guides_path = content_dir / "guides.json"
-    guides      = read_json(guides_path) if guides_path.exists() else {}
+    guides      = read_json(content_dir / "guides.json")
     guides_list = guides.get("guides", [])
     base_url    = edition.get("base_url", "").rstrip("/")
     month       = edition["month"]
@@ -1868,7 +1550,7 @@ def build_edition(edition_dir_name):
         ing_html = build_ingredient_page(
             ing, depth=3, canonical_url=ing_canonical,
             house_flavor=house_flavor, edition_context=edition_context,
-            ingredients_data=ingredients_data, edition=edition,
+            ingredients_data=ingredients_data,
         )
         write_page(SITE / ing_index_dir / slug / "index.html", ing_html)
 
@@ -1894,37 +1576,27 @@ def build_edition(edition_dir_name):
         write_page(SITE / edition_slug / hf_slug / "index.html", hf_html)
         hf_slugs_built.append(hf_slug)
 
-    # Drink, Field Notes, and weekend pages exist only when the month carries
-    # them. Their pages are the full versions of the edition-page blocks.
-    own_pages = []
-
     # Drink page — same hub-and-spoke pattern as meals and house flavors
-    if edition.get("drink"):
-        drink_slug = edition["drink"]["slug"]
-        drink_html = build_drink_page(
-            edition, depth=2, canonical_url=f"{base_url}/{edition_slug}/{drink_slug}/",
-            edition_context=edition_context,
-        )
-        write_page(SITE / edition_slug / drink_slug / "index.html", drink_html)
-        own_pages.append(drink_slug)
+    drink_slug = edition["drink"]["slug"]
+    drink_html = build_drink_page(
+        edition, depth=2, canonical_url=f"{base_url}/{edition_slug}/{drink_slug}/",
+        edition_context=edition_context,
+    )
+    write_page(SITE / edition_slug / drink_slug / "index.html", drink_html)
 
     # Field Notes page — fixed slug, one home for the whole section
-    if edition.get("field_notes"):
-        fn_html = build_field_notes_page(
-            edition, depth=2, canonical_url=f"{base_url}/{edition_slug}/field-notes/",
-            edition_context=edition_context,
-        )
-        write_page(SITE / edition_slug / "field-notes" / "index.html", fn_html)
-        own_pages.append("field-notes")
+    fn_html = build_field_notes_page(
+        edition, depth=2, canonical_url=f"{base_url}/{edition_slug}/field-notes/",
+        edition_context=edition_context,
+    )
+    write_page(SITE / edition_slug / "field-notes" / "index.html", fn_html)
 
-    # Weekend meal page — fixed slug so the link is stable across editions
-    if edition.get("weekend_meal"):
-        weekend_html = build_weekend_page(
-            edition, depth=2, canonical_url=f"{base_url}/{edition_slug}/weekend/",
-            edition_context=edition_context, ingredients_data=ingredients_data,
-        )
-        write_page(SITE / edition_slug / "weekend" / "index.html", weekend_html)
-        own_pages.append("weekend")
+    # Weekend meal page — fixed slug so the masthead link is stable across editions
+    weekend_html = build_weekend_page(
+        edition, depth=2, canonical_url=f"{base_url}/{edition_slug}/weekend/",
+        edition_context=edition_context,
+    )
+    write_page(SITE / edition_slug / "weekend" / "index.html", weekend_html)
 
     # Consolidated snapshot
     build_content_snapshot(edition, guides, ingredients_data)
@@ -1934,7 +1606,7 @@ def build_edition(edition_dir_name):
         edition_slug,
         ingredient_slugs=ingredient_slugs,
         meal_slugs=meal_slugs,
-        house_flavor_slugs=hf_slugs_built + own_pages,
+        house_flavor_slugs=hf_slugs_built + [drink_slug, "weekend", "field-notes"],
         ing_index_dir=str(ing_index_dir),
     )
 

@@ -14,7 +14,7 @@ After a year of reading Seasonal, a reader hasn't accumulated dozens of recipes.
 
 ## Current Status
 
-September is the current edition. October is written, built, and staged behind `"status": "upcoming"` — the homepage keeps leading with September and lists October under "Next edition" until October 1, when flipping that one field and rebuilding publishes it. July and August remain published and linked from the homepage archive. The architecture, voice, and product philosophy are established. The site is deployed at GitHub Pages from `/docs` on `main`, served at `https://bdavey.co/seasonal-basket/`.
+September is the current edition. October is written and built, but staged behind `"status": "upcoming"` — the homepage keeps leading with September and lists October under "Next edition" until October 1, when flipping that one field and rebuilding publishes it. July and August remain published and linked from the homepage archive. The architecture, voice, and product philosophy are established. The site is deployed at GitHub Pages from `/docs` on `main`, served at `https://bdavey.co/seasonal-basket/`.
 
 ## What We Know
 
@@ -133,19 +133,17 @@ The House Flavor is a single jar (escabeche), not two. Salsa verde is taught as 
 
 ## October — What the Edition Teaches
 
-October is the first edition built on the expanded model. The question it answers is no longer only "what should I buy?" but "what should I be cooking?" — so the page runs ingredients → pairings → method → meals.
+October follows September's blueprint exactly: basket, meals, Field Notes, one House Flavor, drink, ritual, weekend meal, one thing to notice.
 
-October teaches heat. San Diego doesn't look like fall (some of the year's hottest days land this month), but the evenings shorten and the oven comes back on. The one new technique is **the braise**, taught as six named stages — Sear, Aromatics, Deglaze, Liquid, Slow cook, Brighten — and demonstrated by the featured cook (Dutch-oven chicken with delicata and white beans), whose steps carry the same six names. September's hot roast is assumed and shown as a one-line callback. The Dutch oven is the Bring It Out tool.
+October teaches heat. San Diego doesn't look like fall — some of the year's hottest days land this month — but the evenings shorten and the oven comes back on. The basket: fully cured delicata, the last poblanos, new-crop sweet potatoes, late Julian apples (tarter, and now for cooking — September said don't bake them yet), pomegranates, and Fuyu persimmons late in the month.
 
-Proteins are chosen for how they fit the basket, not because meat is "in season": bone-in chicken thighs (the braise), thick pork chops (apples, sage, cider vinegar — and the sear on its own), and California spiny lobster, which genuinely opens off San Diego the first weekend of October.
+The one new technique is the braise, taught through the weekend meal (Dutch-oven chicken with delicata and white beans) and distilled into one Field Note: liquid halfway up, never over. Charring is assumed from July, August, and September.
 
-The quiet lesson under the whole month is *put something sharp against something rich*: lemon in the braise, cider vinegar in the pork pan, pomegranate on the squash.
-
-What October deliberately leaves out: no drink, no local ritual, no one-thing-to-notice, no Field Notes, no house jar. Every one of those sections is still available; October's job was done without them, and the pairings, method, and featured cook carry the weight they used to.
+The House Flavor is salsa macha — the poblano, dried into an ancho, fried, and kept. It's the callback the playbook anticipated: the chile from September's roaster, a few weeks later, in a jar. The quiet lesson under the month is putting something sharp against something rich: lemon in the braise, cider vinegar in the shrub, pomegranate on the squash.
 
 ## Next Milestone
 
-Begin the November edition on the same model. Poblanos will be gone; persimmons and pomegranates peak; the first citrus arrives. Decide whether November adds a method (a pot of beans from dry? a slow-roast?) or builds on the braise — and whether any tool is genuinely coming back into season. Don't add one for symmetry.
+Begin the November edition. Poblanos will be gone; persimmons and pomegranates peak; the first citrus arrives.
 
 ## Development Handoff Goal
 

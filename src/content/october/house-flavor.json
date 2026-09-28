@@ -1,0 +1,66 @@
+{
+  "slug": "salsa-macha",
+  "name": "Salsa macha",
+  "month": "october",
+  "intro": "One jar. The poblano, dried, fried, and kept.",
+  "card_uses": [
+    "Spoon it over roasted squash.",
+    "Stir it into beans, oil and all.",
+    "Put it on a fried egg.",
+    "Set it on the table next to anything braised."
+  ],
+  "ingredients": [
+    "1 cup neutral oil",
+    "6 garlic cloves, thinly sliced",
+    "⅓ cup roasted peanuts",
+    "2 tbsp sesame seeds",
+    "3 ancho chiles, stemmed, seeded, and torn into pieces",
+    "6–10 chiles de árbol, stemmed (fewer if you're careful)",
+    "1 tsp kosher salt",
+    "1 tsp sugar",
+    "1 tbsp apple cider vinegar"
+  ],
+  "method": "Put the oil, garlic, and peanuts in a small saucepan over medium-low heat. Cook gently, stirring now and then, until the garlic is pale gold and crisp, about eight minutes — not brown. Add the sesame seeds for one minute. Take the pan off the heat, then add the chiles and stir: the oil is hot enough to toast them without burning them, and burnt chiles are the one way to ruin this. Let it sit five minutes. Pour everything into a blender with the salt, sugar, and vinegar, and pulse a few times — it should stay chunky, like gravel in oil, not smooth. Cool completely, then jar it. The idea underneath is worth keeping: fry the aromatics gently, take it off the heat, and let the leftover heat toast the chiles. It works with any dried chile you find.",
+  "storage": {
+    "note": "Keep it in the fridge, with the solids under the oil. It's best in the first two weeks and good for a month. The oil firms up cold; let it sit out ten minutes before using. Always use a clean spoon.",
+    "flagged_for_review": true
+  },
+  "uses": [
+    {
+      "meal": "rice-bowl",
+      "label": "Rice bowl",
+      "action": "Spoon it on top.",
+      "context": "With some of the oil. Rice soaks it up, and the peanuts stay crunchy."
+    },
+    {
+      "meal": "tacos",
+      "label": "Tacos",
+      "action": "Instead of salsa.",
+      "context": "Sweet potato and poblano need something with crunch and heat. This is both."
+    },
+    {
+      "meal": null,
+      "label": "Beans",
+      "action": "Stir it in.",
+      "context": "A spoonful and its oil turns a can of beans into a bowl you'd order."
+    },
+    {
+      "meal": null,
+      "label": "The weekend braise",
+      "action": "Set it on the table.",
+      "context": "Rich, slow-cooked chicken wants something sharp and crunchy beside it. Let everyone add their own."
+    },
+    {
+      "meal": null,
+      "label": "Eggs",
+      "action": "Over the top.",
+      "context": "Fried egg, salsa macha, a tortilla. Breakfast is done."
+    }
+  ],
+  "linked_ingredients": [
+    "poblanos"
+  ],
+  "linked_field_notes": [
+    "ancho-is-a-poblano"
+  ]
+}

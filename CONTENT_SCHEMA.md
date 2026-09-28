@@ -31,59 +31,6 @@
 }
 ```
 
-## Optional edition sections (the expanded month)
-
-Every section after the basket is optional; the build renders only what an edition carries, always in this order: basket, pairings, method, bring it out, meals, field notes, house flavor, drink, ritual, weekend meal, notice, progression. See `src/content/october/edition.json` for a complete example.
-
-```json
-{
-  "pairings": {
-    "heading": "What to cook it with.",
-    "dek": "",
-    "proteins": [
-      {
-        "slug": "chicken-thighs",
-        "name": "Bone-in chicken thighs",
-        "buy": "for-the-week",
-        "why": "",
-        "with": ["delicata-squash", "White beans"],
-        "default_move": { "headline": "", "steps": [] }
-      }
-    ],
-    "pantry_label": "The pantry that unlocks it",
-    "pantry": [{ "name": "", "role": "", "with": [] }]
-  },
-  "methods": {
-    "heading": "How October cooks.",
-    "items": [
-      { "slug": "braise", "name": "Braise", "origin": "New this month", "line": "",
-        "steps": [{ "step": "Sear", "hint": "" }], "note": "", "works_on": [] },
-      { "slug": "roast", "name": "Roast hot", "origin": "From September", "line": "",
-        "compact": true, "steps": ["Cut thin", "425°F"] }
-    ]
-  },
-  "bring_it_out": { "name": "The Dutch oven.", "line": "", "uses": [], "fallback": "", "cta": "" },
-  "weekend_meal": {
-    "label": "The featured cook",
-    "menu_label": "Featured cook",
-    "cta": "Cook it this Sunday",
-    "brings_together": [
-      { "role": "Basket", "items": ["delicata-squash"] },
-      { "role": "Protein", "join": "+", "items": [{ "text": "Chicken thighs", "anchor": "chicken-thighs" }] },
-      { "role": "Method", "join": "→", "items": [{ "text": "Braise", "anchor": "method-braise" }] }
-    ],
-    "time": "",
-    "steps": [{ "stage": "Sear", "text": "" }],
-    "after": { "heading": "The next day", "body": "" }
-  },
-  "progression": { "heading": "By the end of October, you'll know how to…", "items": [], "carried": "" }
-}
-```
-
-In any `with` or `items` list, a basket ingredient slug links to that ingredient's page, `{text, anchor}` links to a section of the edition page, and anything else renders as plain text. Ingredient pages derive a "Cook it with" list from every protein and pantry item whose `with` names them — each relationship is written once.
-
-`buy` is one of `buy-now`, `for-the-week`, `keeps-well`, `if-you-see-it`. The build fails on anything else.
-
 ## Guide
 
 ```json
@@ -113,8 +60,6 @@ In any `with` or `items` list, a basket ingredient slug links to that ingredient
   "pairs_with_month": [],
   "pairs_with_staples": [],
   "flavor_paths": [],
-  "buy": "keeps-well",
-  "default_move": { "headline": "Don't peel it.", "steps": ["Halve", "seed", "slice", "olive oil + salt", "roast at 425°F"] },
   "weekday_uses": [],
   "weekend_use": "",
   "drink_use": "",

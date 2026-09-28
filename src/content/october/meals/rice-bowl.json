@@ -3,42 +3,34 @@
   "name": "Rice bowl",
   "display_name": "Rice bowl",
   "effort": "weekday",
-  "intro": "October's rice bowl is built from a tray of roasted sweet potato and the last charred poblanos. Something sharp goes on top.",
+  "intro": "October's rice bowl is built on two things you made once: a tray of roasted sweet potato and a jar of salsa macha.",
   "keep": [
     "Sticky white rice",
-    "Ground beef or turkey, or leftover braised chicken"
+    "Protein of choice (beef, chicken, beans, or nothing)"
   ],
   "season_anchor": [
     "Roasted sweet potato",
-    "Charred poblano strips"
+    "A spoonful of salsa macha, with its oil"
   ],
   "season_options": [
-    "Pomegranate seeds",
+    "Charred poblano strips",
     "Roasted delicata",
-    "Lime or lemon",
-    "Greek yogurt, salted"
+    "Pomegranate seeds",
+    "Lime"
   ],
   "variations": [
-    {
-      "ingredients": "Ground beef + poblano + sweet potato + pomegranate",
-      "context": "The one you'll make most. Sweet, smoke, something sharp."
-    },
-    {
-      "ingredients": "Braised chicken + white beans + lemon",
-      "context": "Sunday's pot, Monday's bowl."
-    }
+    { "ingredients": "Sweet potato + salsa macha + pomegranate", "context": "The version you'll make most often. Three minutes if the tray is in the fridge." },
+    { "ingredients": "Ground beef + charred poblano + sweet potato", "context": "The last of the chiles, doing their job." },
+    { "ingredients": "Leftover braised chicken + white beans + lemon", "context": "The weekend's pot, Monday's bowl." }
   ],
   "works_well_with": [
     "Ground beef or turkey",
     "Leftover braised chicken",
-    "A fried egg",
-    "White or black beans"
+    "Black or white beans",
+    "A fried egg"
   ],
-  "finish": "Something sharp, last, every time — pomegranate, lime, or lemon. October food is heavier than September's, and the squeeze matters more, not less.",
-  "linked_ingredients": [
-    "sweet-potatoes",
-    "poblanos",
-    "pomegranates",
-    "delicata-squash"
-  ]
+  "finish": "Something sharp, last — pomegranate or lime. October food is heavier than September's, and the squeeze matters more, not less.",
+  "linked_house_flavor": "salsa-macha",
+  "linked_field_notes": ["ancho-is-a-poblano", "pomegranate-underwater"],
+  "linked_ingredients": ["sweet-potatoes", "poblanos", "pomegranates", "delicata-squash"]
 }

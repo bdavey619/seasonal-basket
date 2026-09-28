@@ -31,20 +31,6 @@ Ingredient pages exist only when the ingredient is featured in that month.
 
 Editions do not expire. Past editions stay readable at their own URLs and are linked from the homepage archive.
 
-### The expanded month (from October)
-
-Seasonal's question has widened from *"What produce should I buy this month?"* to *"What should I be cooking this month?"* An edition can now carry the whole chain — **ingredients → pairings → method → meals** — through optional sections:
-
-- **Pairings** — two to four proteins the basket points toward (with the one seafood that is literally in season, when there is one), plus a short pantry list
-- **Method** — one new transferable pattern shown as stages (e.g. Sear → Aromatics → Deglaze → Liquid → Slow cook → Brighten), and callbacks to patterns from earlier months on one line
-- **Bring it out** — the piece of equipment coming back into season, only when one genuinely is
-- **The featured cook** — the weekend meal, drawn as the month in one line (basket + protein + pantry → method → tool), with its steps named after the method's stages
-- **By the end of the month** — what the reader now knows, and what they already had
-
-Every ingredient and protein can carry a **default move** (the one thing to do with it, as a short chain of steps) and a **buying tag**: *Buy now*, *Buy for the week*, *Keeps well*, *If you see it*.
-
-Every section after the basket is optional. A month carries what the season offers — October has no drink, ritual, or house jar — and sections always render in the same order.
-
 ## Core principle
 
 > Keep the meal. Change the season.
@@ -68,7 +54,8 @@ The user can continue eating simple staples such as rice, beans, chicken thighs,
 │   └── content/              # Canonical, hand-edited editorial source
 │       ├── july/
 │       ├── august/
-│       └── september/
+│       ├── september/
+│       └── october/
 │           ├── edition.json
 │           ├── guides.json
 │           ├── house-flavor*.json
@@ -96,7 +83,7 @@ python3 -m http.server --directory docs 8000
 
 ## Adding an edition
 
-1. Create `src/content/<month>/` with `edition.json`, `ingredients/`, and `meals/`. `guides.json` and `house-flavor*.json` are optional. See `CONTENT_SCHEMA.md` for every optional section and `src/content/october/` for a month that uses the expanded model.
+1. Create `src/content/<month>/` with `edition.json`, `guides.json`, at least one `house-flavor*.json`, plus `ingredients/` and `meals/`.
 2. Add `src/css/<month>.css` with that month's palette. Palette variables are the only values that change between editions — all layout and typography live in `base.css`.
 3. Set `edition_number` higher than every existing edition. The highest published number becomes the current edition on the homepage; everything below it moves into the archive automatically.
 4. Run the build.

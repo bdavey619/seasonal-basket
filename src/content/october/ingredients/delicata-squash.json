@@ -2,28 +2,31 @@
   "slug": "delicata-squash",
   "name": "Delicata squash",
   "month": "October",
-  "buy": "keeps-well",
-  "default_move": {
-    "headline": "Don't peel it.",
-    "steps": ["Halve", "seed", "slice", "olive oil + salt", "roast at 425°F"]
-  },
-  "tile_uses": "Roasted, the braise, pasta, beside salmon",
-  "why_now": "September brought the first ones. By October they've cured longer — more orange down in the grooves, sweeter inside — and they cost less. It's the squash in the Sunday braise, and the one worth keeping two of on the counter all month.",
+  "tile_uses": "Roasted, pasta, beside salmon, the weekend braise",
+  "why_now": "September brought the first ones. By October they've cured longer — more orange down in the grooves, sweeter inside — and they cost less. It's the squash in the weekend braise, and the one worth keeping two of on the counter all month.",
   "how_to_choose": [
     "Orange in the grooves between the green stripes means longer cured and sweeter",
-    "Heavy for its size and firm at both ends",
-    "A dry, intact stem",
-    "Small to medium; the big ones get watery"
+    "Firm all over, with no soft or wet spots at either end",
+    "Heavy for its size",
+    "A dry, intact stem still attached",
+    "Small to medium; the large ones get watery"
   ],
-  "buy_this_much": "3. Two for roasting through the week, one for the pot on Sunday.",
-  "pairs_with_month": ["apples", "pomegranates", "poblanos", "sweet-potatoes"],
-  "pairs_with_staples": ["salmon", "chicken thighs", "beans", "sticky white rice", "pasta"],
+  "buy_this_much": "3. Two for roasting through the week, one for the pot on the weekend.",
+  "price_note": "Cheaper than it was in September, and still sold by the piece — the medium ones are the better buy.",
+  "pairs_with_month": ["pomegranates", "apples", "poblanos", "sweet-potatoes"],
+  "pairs_with_staples": ["salmon", "chicken thighs", "beans", "sticky white rice", "Greek yogurt"],
+  "flavor_paths": [
+    { "name": "Roasted plain", "description": "Half-moons, oil, salt, 425°F. Still the version you'll make most." },
+    { "name": "With pomegranate", "description": "Roasted dark, seeds scattered on while it's hot. Sweet against sharp." },
+    { "name": "Braised", "description": "Cut thick and cooked in the pot with chicken and beans. It holds its shape." }
+  ],
   "weekday_uses": [
     "Roasted beside salmon on the same sheet pan",
     "Folded into pasta with butter browned with sage",
-    "Cold from the fridge in a rice bowl, with pomegranate",
-    "In the Dutch oven with chicken and white beans"
+    "Cold from the fridge in a rice bowl, with salsa macha",
+    "On yogurt with pomegranate and salt"
   ],
+  "weekend_use": "Cut into thick half-moons and braised with bone-in chicken thighs, white beans, poblano, and rosemary — the weekend meal.",
   "storage": "On the counter, out of the sun, for a month. It doesn't want the fridge. Once cut, wrap it and use it within four days.",
   "one_thing_to_learn": "Delicata holds its shape in a braise where butternut would collapse. The thin skin you don't peel is structure. For the pot, cut it thick — an inch — so it turns tender when the chicken does, not before.",
   "market_question": "Which of these has been curing longest?"

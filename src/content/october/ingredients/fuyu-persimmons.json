@@ -2,27 +2,30 @@
   "slug": "fuyu-persimmons",
   "name": "Fuyu persimmons",
   "month": "October",
-  "buy": "if-you-see-it",
-  "default_move": {
-    "headline": "Eat it firm, like an apple.",
-    "steps": ["Slice crosswise", "no need to peel", "salt + olive oil, or cheese"]
-  },
-  "tile_uses": "Sliced raw, with cheese, beside pork",
+  "tile_uses": "Sliced raw, with cheese, on yogurt",
   "why_now": "Fuyus come from North County groves, usually in the last weeks of the month — so don't go looking on the first. When they turn up, they're one of the best things in the store, and almost nobody knows what to do with them.",
   "how_to_choose": [
     "Squat and flat on top, shaped like a tomato — that's a Fuyu",
-    "Deep orange, firm but not rock hard",
+    "Deep orange, with no green near the stem",
+    "Firm but not rock hard",
     "Tall and acorn-shaped is a Hachiya: leave it until it's soft as jelly"
   ],
   "buy_this_much": "3–4, when you see them.",
+  "price_note": "First of the season costs more. By November they're everywhere and cheap.",
   "pairs_with_month": ["pomegranates", "apples"],
   "pairs_with_staples": ["Greek yogurt", "sourdough"],
+  "flavor_paths": [
+    { "name": "Firm and sliced", "description": "Crosswise into rounds, no peeling. Like an apple." },
+    { "name": "With salt", "description": "A little olive oil and flaky salt. Sweet against savory." },
+    { "name": "With cheese", "description": "Anywhere you'd put an apple." }
+  ],
   "weekday_uses": [
     "Sliced into rounds with pomegranate and a little salt",
     "With cheese, instead of an apple",
-    "Alongside pork chops",
-    "Diced over yogurt"
+    "Diced over yogurt",
+    "Eaten whole, over the sink"
   ],
+  "weekend_use": "Sliced thin, dressed with olive oil, salt, and pomegranate, on the table beside the braise.",
   "storage": "On the counter until they give very slightly, then the fridge for a week or two.",
   "one_thing_to_learn": "The two persimmons in the bin are not interchangeable. A firm Hachiya is so tannic it dries out your whole mouth; it has to go completely soft first. A Fuyu has no such problem and is good crisp. Learn the shape and you'll never make the mistake.",
   "market_question": "Are these Fuyu or Hachiya?"

@@ -3,7 +3,7 @@
   "name": "Pasta",
   "display_name": "Pasta",
   "effort": "weekday",
-  "intro": "Roast the delicata on Sunday and this is a ten-minute dinner any night after. Butter, sage, squash, lemon.",
+  "intro": "Roast the delicata once and this is a ten-minute dinner any night after. Butter, sage, squash, lemon.",
   "keep": [
     "Dried pasta — something short",
     "Butter",
@@ -17,27 +17,21 @@
   "season_options": [
     "Lemon zest",
     "White beans, warmed in the butter",
-    "Charred poblano strips",
+    "A spoonful of salsa macha",
     "Black pepper, a lot of it"
   ],
   "variations": [
-    {
-      "ingredients": "Delicata + brown butter + sage",
-      "context": "Melt the butter with the sage until it smells like toast, then fold in the squash."
-    },
-    {
-      "ingredients": "Delicata + white beans + lemon",
-      "context": "Heartier. The beans turn creamy in the pasta water."
-    }
+    { "ingredients": "Delicata + brown butter + sage", "context": "Melt the butter with the sage until it smells like toast, then fold in the squash." },
+    { "ingredients": "Delicata + white beans + lemon", "context": "Heartier. The beans turn creamy in the pasta water." },
+    { "ingredients": "Delicata + parmesan + salsa macha", "context": "Crunch and heat against the sweet. Stranger than it sounds, and better." }
   ],
   "works_well_with": [
     "Nothing at all",
     "Leftover chicken, pulled",
     "A fried egg on top"
   ],
-  "finish": "Save a mug of pasta water. Butter and parmesan need it to become a sauce rather than a coating. Lemon zest goes on off the heat.",
-  "linked_ingredients": [
-    "delicata-squash",
-    "poblanos"
-  ]
+  "finish": "Save a mug of pasta water — butter and parmesan need it to become a sauce rather than a coating. Lemon zest goes on off the heat.",
+  "linked_house_flavor": "salsa-macha",
+  "linked_field_notes": [],
+  "linked_ingredients": ["delicata-squash"]
 }
