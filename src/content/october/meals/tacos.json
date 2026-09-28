@@ -1,0 +1,45 @@
+{
+  "slug": "tacos",
+  "name": "Tacos",
+  "display_name": "Tacos",
+  "effort": "weekday",
+  "intro": "Roasted sweet potato and poblano make the October taco. Pomegranate does what salsa would.",
+  "keep": [
+    "Corn tortillas",
+    "Protein of choice, or none",
+    "Cotija or crumbled feta",
+    "Lime"
+  ],
+  "season_anchor": [
+    "Roasted sweet potato, cubed",
+    "Charred poblano strips"
+  ],
+  "season_options": [
+    "Pomegranate seeds",
+    "Apple slaw with cider vinegar",
+    "Salted Greek yogurt, instead of crema",
+    "Cilantro, if you still have it"
+  ],
+  "variations": [
+    {
+      "ingredients": "Sweet potato + poblano + pomegranate + cotija",
+      "context": "The October taco. No meat, no compromise."
+    },
+    {
+      "ingredients": "Lobster + beans + lime",
+      "context": "If you saw it. Flour tortillas for this one."
+    }
+  ],
+  "works_well_with": [
+    "Ground beef or turkey",
+    "Black or pinto beans",
+    "Spiny lobster, in season from October"
+  ],
+  "finish": "Warm the tortillas over a flame or in a dry pan until they blister in spots, and stack them under a towel. Pomegranate goes on last, so it stays cold against the warm filling.",
+  "linked_ingredients": [
+    "sweet-potatoes",
+    "poblanos",
+    "pomegranates",
+    "apples"
+  ]
+}

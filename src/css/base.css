@@ -1158,3 +1158,299 @@ footer {
     grid-column: 1;
   }
 }
+
+/* ─── Buying guidance ────────────────────────────────── */
+/* One small outlined label per ingredient or protein: Buy now, Buy for the
+   week, Keeps well, If you see it. Quiet enough to skim past, there when you
+   are standing at the stall. */
+.buy-tag {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 1px 6px 2px;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .6rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  vertical-align: .2em;
+  white-space: nowrap;
+  opacity: .75;
+  line-height: 1.4;
+}
+.card--dark .buy-tag { color: var(--accent); opacity: 1; }
+a.bring-home-row .bring-home-name .buy-tag { border-bottom-width: 1px; }
+.ingredient-index-tile .buy-tag { margin: 0 0 8px; color: var(--primary); }
+.ingredient-header .section-label .buy-tag { color: var(--primary); opacity: 1; }
+
+/* ─── Default moves ──────────────────────────────────── */
+.move-arrow { opacity: .5; }
+.bring-home-note--move { opacity: .9; font-size: .82rem; }
+.bring-home-row:has(.bring-home-move) { align-content: start; }
+/* With a tag beside it, the link underline moves onto the name alone. */
+a.bring-home-row .bring-home-name--tagged { border-bottom: none; padding-bottom: 0; }
+a.bring-home-row .bring-home-label {
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+}
+
+.default-move-head {
+  font-size: 1.35rem;
+  line-height: 1.25;
+  margin: 0 0 6px;
+}
+.default-move-steps {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .95rem;
+  color: #3d4842;
+}
+
+/* ─── Pairings ───────────────────────────────────────── */
+.proteins {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 32px;
+  margin-top: 6px;
+}
+.protein {
+  border-top: 1px solid var(--line);
+  padding: 18px 0 8px;
+  scroll-margin-top: 74px;
+}
+.protein-name { font-size: 1.25rem; margin: 0 0 8px; }
+.protein-name .buy-tag { color: var(--primary); }
+.protein-why {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .9rem;
+  color: #3d4842;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.pairs-with {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .85rem;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.pairs-with a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--primary);
+}
+.pairs-with a:hover { color: var(--primary); }
+.pairs-with-label {
+  font-size: .66rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  margin-right: 6px;
+}
+.protein-move {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .85rem;
+  color: #3d4842;
+  border-left: 2px solid var(--line);
+  padding-left: 12px;
+}
+.protein-move-head {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: .98rem;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+
+.pantry { margin-top: 30px; }
+.pantry-list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+.pantry-item {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 2px 20px;
+  align-items: baseline;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--line);
+}
+.pantry-name { font-size: 1.02rem; }
+.pantry-role {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .88rem;
+  color: #3d4842;
+}
+.pantry-item .pairs-with { margin: 0; }
+
+/* ─── Method ─────────────────────────────────────────── */
+.methods { display: grid; gap: 30px; margin-top: 6px; }
+.method { scroll-margin-top: 74px; }
+.method-name { font-size: 1.35rem; margin: 0 0 4px; }
+.method-origin {
+  margin-left: 12px;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  vertical-align: .25em;
+}
+.method-line {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .9rem;
+  color: var(--muted);
+  max-width: 62ch;
+  margin-bottom: 14px;
+}
+/* A pattern reads left to right along one rule, like a line on a map. */
+.pattern {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+}
+.pattern-stage {
+  position: relative;
+  border-top: 2px solid var(--primary);
+  padding: 10px 16px 4px 0;
+}
+.pattern-stage::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+.pattern-step {
+  display: block;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 4px;
+}
+.pattern-hint {
+  display: block;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .84rem;
+  line-height: 1.45;
+  color: #3d4842;
+}
+.method-note {
+  font-style: italic;
+  color: var(--ink);
+  max-width: 62ch;
+  margin-bottom: 8px;
+}
+.method .pairs-with { margin-bottom: 0; }
+
+/* ─── Bring it out ───────────────────────────────────── */
+.tool-fallback {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .85rem !important;
+  color: var(--muted) !important;
+  max-width: 62ch !important;
+}
+#bring-it-out .house-flavor-card-uses { max-width: 620px; margin-top: 14px; }
+
+/* ─── Brings together (the featured cook, in one line) ── */
+.chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 14px 18px;
+  margin: 6px 0 18px;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.chain-group { display: flex; flex-direction: column; gap: 4px; }
+.chain-role {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .64rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.chain-items { font-size: 1.08rem; line-height: 1.3; }
+.chain-item { display: block; }
+.chain-sep  { display: none; }
+.chain-items a {
+  text-decoration: none;
+  border-bottom: 1px solid var(--primary);
+}
+.chain-items a:hover { color: var(--primary); }
+.chain-join {
+  align-self: flex-start;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: 1.2rem;
+  color: var(--primary);
+  opacity: .8;
+  padding-top: 13px;
+  line-height: 1.3;
+}
+.meal-header .chain { margin-top: 26px; margin-bottom: 0; }
+
+/* ─── The featured cook, staged ──────────────────────── */
+.cook-time {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .85rem;
+  color: var(--muted);
+}
+.cook-stages { list-style: none; margin: 8px 0 0; padding: 0; }
+.cook-stage {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 4px 20px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+.cook-stage:first-child { border-top: none; padding-top: 4px; }
+.cook-stage .pattern-step { padding-top: 4px; }
+.cook-stage p {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .95rem;
+  line-height: 1.6;
+  color: #3d4842;
+  margin: 0;
+}
+
+/* ─── By the end of the month ────────────────────────── */
+.progression > h2 { max-width: 30ch; }
+.progression-list { max-width: 56ch; }
+.progression-carried {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .85rem !important;
+  color: var(--muted) !important;
+  margin-top: 18px;
+  max-width: 62ch !important;
+}
+
+@media (max-width: 860px) {
+  .proteins { grid-template-columns: minmax(0, 1fr); }
+  .pantry-item { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  /* The pattern turns from a line across the page to a line down it. */
+  .pattern { grid-auto-flow: row; grid-auto-columns: auto; border-left: 2px solid var(--primary); margin-left: 3px; }
+  .pattern-stage { border-top: none; padding: 6px 0 8px 18px; }
+  .pattern-stage::before { top: 11px; left: -5px; }
+  .chain { flex-direction: column; gap: 6px; }
+  .chain-group { flex-direction: row; align-items: baseline; gap: 12px; }
+  .chain-role { flex: 0 0 64px; }
+  .chain-item { display: inline; }
+  .chain-sep  { display: inline; }
+  .chain-join { padding: 0 0 0 76px; font-size: 1rem; line-height: 1; }
+  .cook-stage { grid-template-columns: minmax(0, 1fr); }
+}
+.method--compact .method-line { margin-bottom: 6px; }
+.meal-header .chain { border-bottom: none; padding-bottom: 0; }

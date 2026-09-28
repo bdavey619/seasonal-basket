@@ -1,0 +1,43 @@
+{
+  "slug": "pasta",
+  "name": "Pasta",
+  "display_name": "Pasta",
+  "effort": "weekday",
+  "intro": "Roast the delicata on Sunday and this is a ten-minute dinner any night after. Butter, sage, squash, lemon.",
+  "keep": [
+    "Dried pasta — something short",
+    "Butter",
+    "Parmesan",
+    "Salt"
+  ],
+  "season_anchor": [
+    "Roasted delicata half-moons",
+    "A few sage leaves"
+  ],
+  "season_options": [
+    "Lemon zest",
+    "White beans, warmed in the butter",
+    "Charred poblano strips",
+    "Black pepper, a lot of it"
+  ],
+  "variations": [
+    {
+      "ingredients": "Delicata + brown butter + sage",
+      "context": "Melt the butter with the sage until it smells like toast, then fold in the squash."
+    },
+    {
+      "ingredients": "Delicata + white beans + lemon",
+      "context": "Heartier. The beans turn creamy in the pasta water."
+    }
+  ],
+  "works_well_with": [
+    "Nothing at all",
+    "Leftover chicken, pulled",
+    "A fried egg on top"
+  ],
+  "finish": "Save a mug of pasta water. Butter and parmesan need it to become a sauce rather than a coating. Lemon zest goes on off the heat.",
+  "linked_ingredients": [
+    "delicata-squash",
+    "poblanos"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "sweet-potatoes",
+  "name": "Sweet potatoes",
+  "month": "October",
+  "buy": "keeps-well",
+  "default_move": {
+    "headline": "Cut side down. Don't flip it.",
+    "steps": ["Halve lengthwise", "oil + salt", "cut side down on the pan", "425°F", "35 minutes"]
+  },
+  "tile_uses": "Rice bowls, tacos, beside pork",
+  "why_now": "Most of California's sweet potatoes come out of the ground around Merced in September and October. The new crop is on the shelves now — at its cheapest, and not yet tired from months in storage.",
+  "how_to_choose": [
+    "Firm all over, with no soft ends and no sprouts",
+    "Medium and even in shape, so they cook at one speed",
+    "Orange-fleshed (garnet or jewel) for roasting"
+  ],
+  "buy_this_much": "2 lbs. They keep, so they're the thing you cook the week it gets away from you.",
+  "pairs_with_month": ["poblanos", "pomegranates", "apples"],
+  "pairs_with_staples": ["ground beef or turkey", "Greek yogurt", "beans", "sticky white rice"],
+  "weekday_uses": [
+    "Cut side down beside pork chops",
+    "Cubed and roasted into tacos with poblano and pomegranate",
+    "In a rice bowl with ground beef",
+    "Split open with yogurt, salt, and chile"
+  ],
+  "storage": "Somewhere cool and dark, not the fridge — cold turns the center hard and odd-tasting. They keep for weeks.",
+  "one_thing_to_learn": "Cut side down is the whole trick. The flat face sits on the hot pan and the sugars caramelize into a dark crust while the inside steams in its own skin. Flip it halfway and you lose the crust. Leave it alone.",
+  "market_question": "Is this the new crop?"
+}

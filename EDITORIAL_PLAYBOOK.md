@@ -62,6 +62,24 @@ Each edition is organized around the four pillars. These are editorial scaffoldi
 6. Drink + Local ritual
 7. Weekend meal + One thing to notice
 
+## The Expanded Month
+
+From October, each edition answers *"What should I be cooking this month?"* — not only *"What should I buy?"* Produce stays the foundation; the rest follows from it:
+
+```
+MONTH → INGREDIENTS → PAIRINGS → METHOD → MEALS
+```
+
+- **Proteins** are chosen because the basket points toward them, not because meat is "in season" — except seafood, where local seasonality is literal and worth naming. Over a year, the proteins should rotate through cuts, meats, and fish a reader wouldn't otherwise buy. Two to four per month.
+- **Pantry** is a handful of things that unlock the month, each tied to something else on the page. Never a checklist.
+- **Method** is a pattern with named stages, not a recipe. One new pattern a month at most; patterns from earlier months appear as one-line callbacks.
+- **Bring it out** appears only when a tool genuinely comes back into season. Tools span seasons; don't force one each month.
+- **The featured cook** is the one meal that uses the month's ingredients, protein, method, and tool together — its steps named after the method's stages, so cooking it teaches the pattern.
+- **By the end of the month** is understated: a short list, plus what the reader already had from earlier months. No scores, streaks, or badges.
+- Every ingredient and protein gets a **default move** — the one thing to do with it, short enough to remember at the stall — and, where useful, one buying tag.
+
+More comprehensive does not mean more content. A section that doesn't help answer "what should I be cooking?" should be left out for that month.
+
 ## The Weekday / Weekend Philosophy
 
 These are two different modes, and both belong in each edition.

@@ -1,9 +1,9 @@
 {
-  "_note": "This is the canonical editable source for the September edition. Run python3 src/build.py to regenerate docs/. editions/september/CONTENT.json is auto-generated from this file and the ingredient JSONs. STAGED: \"status\" is \"upcoming\" until September 1 — the homepage keeps leading with August and lists September under Next edition. To publish, set \"status\" to \"published\" and rebuild.",
+  "_note": "This is the canonical editable source for the September edition. Run python3 src/build.py to regenerate docs/. editions/september/CONTENT.json is auto-generated from this file and the ingredient JSONs.",
   "month": "September",
   "location": "San Diego",
   "edition_number": 3,
-  "status": "upcoming",
+  "status": "published",
   "base_url": "https://bdavey.co/seasonal-basket",
   "opening_note": "Two seasons share the table this month. Chiles are at their best and about to be gone. The first squash and the first apples arrive while it is still eighty degrees out. Buy from both sides. September is the only month that lets you.",
   "thesis": "Keep the meal. Change the season.",
@@ -208,6 +208,6 @@
   "market_question": "What's about to be gone?",
   "next_edition": {
     "month": "October",
-    "status": "Arriving soon."
+    "status": "Arriving October 1."
   }
 }

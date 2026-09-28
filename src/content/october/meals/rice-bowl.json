@@ -1,0 +1,44 @@
+{
+  "slug": "rice-bowl",
+  "name": "Rice bowl",
+  "display_name": "Rice bowl",
+  "effort": "weekday",
+  "intro": "October's rice bowl is built from a tray of roasted sweet potato and the last charred poblanos. Something sharp goes on top.",
+  "keep": [
+    "Sticky white rice",
+    "Ground beef or turkey, or leftover braised chicken"
+  ],
+  "season_anchor": [
+    "Roasted sweet potato",
+    "Charred poblano strips"
+  ],
+  "season_options": [
+    "Pomegranate seeds",
+    "Roasted delicata",
+    "Lime or lemon",
+    "Greek yogurt, salted"
+  ],
+  "variations": [
+    {
+      "ingredients": "Ground beef + poblano + sweet potato + pomegranate",
+      "context": "The one you'll make most. Sweet, smoke, something sharp."
+    },
+    {
+      "ingredients": "Braised chicken + white beans + lemon",
+      "context": "Sunday's pot, Monday's bowl."
+    }
+  ],
+  "works_well_with": [
+    "Ground beef or turkey",
+    "Leftover braised chicken",
+    "A fried egg",
+    "White or black beans"
+  ],
+  "finish": "Something sharp, last, every time — pomegranate, lime, or lemon. October food is heavier than September's, and the squeeze matters more, not less.",
+  "linked_ingredients": [
+    "sweet-potatoes",
+    "poblanos",
+    "pomegranates",
+    "delicata-squash"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "pomegranates",
+  "name": "Pomegranates",
+  "month": "October",
+  "buy": "keeps-well",
+  "default_move": {
+    "headline": "Seed it underwater.",
+    "steps": ["Score the crown", "pull into sections", "submerge in a bowl", "push out the seeds", "skim the pith"]
+  },
+  "tile_uses": "Over squash, rice bowls, tacos, slaw",
+  "why_now": "Southern California grows pomegranates, and they ripen in October and November. A heavy one bought now keeps for weeks and turns anything rich into something brighter.",
+  "how_to_choose": [
+    "Heavy for its size — weight is juice",
+    "Slightly angular, flat-sided shapes are the fullest",
+    "Taut, leathery skin; a dry crack is fine"
+  ],
+  "buy_this_much": "2. One pomegranate is about a cup of seeds, which is a week of scattering.",
+  "pairs_with_month": ["delicata-squash", "sweet-potatoes", "apples", "fuyu-persimmons"],
+  "pairs_with_staples": ["Greek yogurt", "ground beef or turkey", "sticky white rice"],
+  "weekday_uses": [
+    "Over roasted delicata, while it's still hot",
+    "On a ground-beef rice bowl",
+    "On sweet potato tacos",
+    "Over yogurt with honey"
+  ],
+  "storage": "Whole, a month in the fridge. Seeded, five days in a covered container.",
+  "one_thing_to_learn": "Pomegranate is October's lime: something sharp to put against heavier food. Rich things need acid — lemon in the braise, cider vinegar in the pork pan, pomegranate on the squash. Same move, different ingredient. Once you see it, you'll reach for it without thinking.",
+  "market_question": "Which of these is heaviest?"
+}
