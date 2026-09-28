@@ -2,7 +2,7 @@
   "slug": "pomegranates",
   "name": "Pomegranates",
   "month": "October",
-  "tile_uses": "Over squash, salads, yogurt, the muhammara",
+  "tile_uses": "Over squash, salads, yogurt, the drink",
   "why_now": "California grows nearly all of the country's pomegranates, and the harvest runs from late September into November. In October they're heavy, cheap by the piece, and sold everywhere from the farmers market to the corner store. By spring, the only ones left are imported.",
   "how_to_choose": [
     "Heavy for its size — weight is juice",
@@ -12,17 +12,36 @@
   ],
   "buy_this_much": "3. One pomegranate gives about a cup of seeds, which is a week of scattering.",
   "price_note": "Priced by the piece, so the heaviest one in the bin is the best deal.",
-  "pairs_with_month": ["kabocha-squash", "arugula", "new-walnuts", "asian-pears", "fresh-dates"],
-  "pairs_with_staples": ["Greek yogurt", "sticky white rice", "beans", "chicken thighs"],
+  "pairs_with_month": [
+    "kabocha-squash",
+    "arugula",
+    "asian-pears",
+    "fresh-dates"
+  ],
+  "pairs_with_staples": [
+    "Greek yogurt",
+    "sticky white rice",
+    "beans",
+    "chicken thighs"
+  ],
   "flavor_paths": [
-    { "name": "Scattered", "description": "Over anything roasted, rich, or beige. The default." },
-    { "name": "In the salad", "description": "With arugula, walnuts, and pear. The weekend." },
-    { "name": "Cooked down", "description": "Juice simmered to a syrup — homemade pomegranate molasses for the jar." }
+    {
+      "name": "Scattered",
+      "description": "Over anything roasted, rich, or beige. The default."
+    },
+    {
+      "name": "In the salad",
+      "description": "With arugula, pear, and dates. The weekend."
+    },
+    {
+      "name": "Pressed",
+      "description": "Juiced through a strainer, into the jamaica."
+    }
   ],
   "weekday_uses": [
     "Over roasted kabocha while it's hot",
     "On tacos in place of salsa",
-    "On yogurt with dates and walnuts",
+    "On yogurt with chopped dates",
     "In the rice bowl, for the crunch"
   ],
   "weekend_use": "Half a pomegranate's seeds in the October salad, next to the whole fish.",

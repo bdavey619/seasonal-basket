@@ -5,7 +5,7 @@
   "edition_number": 4,
   "status": "upcoming",
   "base_url": "https://bdavey.co/seasonal-basket",
-  "opening_note": "October is San Diego's second summer. Some years the hottest week lands now, when the wind turns and blows in from the desert. But the harvest has moved inland: new dates, new walnuts, heavy pomegranates, and a squash that will sit on your counter until Thanksgiving. For the first time since spring, you can shop for the month instead of the week.",
+  "opening_note": "October is San Diego's second summer. Some years the hottest week lands now, when the wind turns and blows in from the desert. But the harvest has moved inland: new dates, heavy pomegranates, the first guavas, and a squash that will sit on your counter until Thanksgiving. For the first time since spring, you can shop for the month instead of the week.",
   "thesis": "Keep the meal. Change the season.",
   "palette": {
     "background": "#e9e3d6",
@@ -23,13 +23,13 @@
     "kabocha-squash",
     "pomegranates",
     "fresh-dates",
-    "new-walnuts",
+    "guavas",
     "arugula",
     "asian-pears"
   ],
   "bring_home": {
     "heading": "This is what I'd bring home.",
-    "cost_note": "Around $30–40 for the seasonal basket, and half of it will still be good in three weeks. Proteins and pantry basics are separate. The muhammara wants two red bell peppers and a slice of stale bread.",
+    "cost_note": "Around $30–40 for the seasonal basket, and half of it will still be good in three weeks. Proteins and pantry basics are separate. The ajvar wants four red bell peppers and one eggplant.",
     "items": [
       {
         "slug": "kabocha-squash",
@@ -50,10 +50,10 @@
         "note": "Soft enough to dent. Last year's never are."
       },
       {
-        "slug": "new-walnuts",
-        "name": "New walnuts",
-        "qty": "1 lb",
-        "note": "Taste one first. It shouldn't be bitter."
+        "slug": "guavas",
+        "name": "Guavas",
+        "qty": "5–6",
+        "note": "Smell them before you see them. Buy the fragrant ones."
       },
       {
         "slug": "arugula",
@@ -82,11 +82,11 @@
     "items": [
       "Pomegranate",
       "Date",
-      "Walnut"
+      "Guava"
     ],
     "sub": "What the desert and the valley send down."
   },
-  "house_flavor": "muhammara",
+  "house_flavor": "ajvar",
   "field_notes_label": "Field Notes",
   "field_notes": [
     {
@@ -95,9 +95,9 @@
       "body": "Most dates in the store were picked last fall and have been sitting since. The ones picked this fall are softer, glossier, and taste like caramel instead of candy — squeeze the box and they give. If you ever see yellow dates still on the branch, those are Barhis, eaten crunchy and fresh for a few weeks and nowhere else. Buy a branch."
     },
     {
-      "slug": "taste-the-walnut",
-      "name": "Taste the walnut before you buy the bag.",
-      "body": "A walnut that tastes bitter or smells like paint has gone rancid; the oil in it turns quickly. A new one is sweet and a little milky. Buy a pound when the new crop comes in, keep what you won't use this week in the freezer, and toast them in a dry pan for three minutes before they go into anything."
+      "slug": "october-peppers",
+      "name": "October is when peppers go in jars.",
+      "body": "Across the Balkans, autumn is ajvar season: red peppers are at their cheapest, and whole families roast them by the crate and cook them down into a relish that lasts the winter. You don't need a crate. Four peppers and one eggplant make a jar. It's the same impulse behind everything in this basket — buy it while it's here, and make it keep."
     },
     {
       "slug": "kabocha-cutting",
@@ -113,12 +113,12 @@
   "meal_transformations": [
     {
       "meal": "Rice bowl",
-      "change": "Roasted kabocha, a spoonful of muhammara, arugula, pomegranate.",
+      "change": "Roasted kabocha, a spoonful of ajvar, arugula, pomegranate.",
       "result": "The jar does the work."
     },
     {
       "meal": "Pasta",
-      "change": "Arugula wilted in at the end, toasted walnuts, lemon, parmesan.",
+      "change": "Arugula wilted in at the end, lemon, parmesan, chile flakes.",
       "result": "Green again."
     },
     {
@@ -128,63 +128,65 @@
     },
     {
       "meal": "Beans",
-      "change": "Muhammara stirred in. Arugula on top.",
+      "change": "Ajvar stirred in. Arugula on top.",
       "result": "Ten seconds. A different bowl."
     },
     {
       "meal": "Yogurt",
-      "change": "Chopped new dates, toasted walnuts, pomegranate.",
+      "change": "Chopped new dates, pomegranate, a pinch of salt.",
       "result": "Sweet enough on its own."
     }
   ],
   "weekend_meal": {
     "name": "Whole roasted rockfish, and the October salad.",
-    "intro": "One meal should feel like the reason you went shopping. In October, it's a whole local fish and a salad that only works this month: the first mild arugula, new walnuts, pomegranate, and Asian pear.",
-    "card_line": "Whole rockfish, arugula, pomegranate, walnuts, Asian pear, muhammara",
+    "intro": "One meal should feel like the reason you went shopping. In October, it's a whole local fish and a salad that only works this month: the first mild arugula, Asian pear, pomegranate, and new dates.",
+    "card_line": "Whole rockfish, arugula, Asian pear, pomegranate, dates, ajvar",
     "ingredients": [
       "1 whole rockfish, 2–3 lbs, scaled and gutted",
-      "1 lemon, sliced thin",
+      "1 lemon, sliced thin, plus another for the salad",
       "Olive oil and kosher salt",
       "4 big handfuls of arugula",
       "1 Asian pear, sliced thin",
       "Seeds of half a pomegranate",
-      "½ cup new walnuts, toasted",
-      "Muhammara and good bread, for the table"
+      "4 new-crop dates, pitted and torn",
+      "A wedge of parmesan, for shaving",
+      "Ajvar and good bread, for the table"
     ],
     "ingredient_note": "No whole fish at your counter? Two pounds of rockfish fillets work too — roast them for ten to twelve minutes instead.",
-    "method": "Heat the oven to 450°F. Pat the fish dry inside and out and cut three shallow slashes on each side, down to the bone. Rub it all over with olive oil, salt it well, inside and out, and tuck the lemon slices into the cavity. Roast on a sheet pan for 20 to 25 minutes, until the flesh at the thickest part is opaque and pulls easily from the bone. While it roasts, toss the arugula, pear, pomegranate, and walnuts with olive oil, a squeeze of lemon, and salt — just before it goes to the table, not before. Bring the fish out whole. Lift the top fillet off with a spoon, pull out the spine, and serve the bottom fillet. Muhammara and bread on the side."
+    "method": "Heat the oven to 450°F. Pat the fish dry inside and out and cut three shallow slashes on each side, down to the bone. Rub it all over with olive oil, salt it well, inside and out, and tuck the lemon slices into the cavity. Roast on a sheet pan for 20 to 25 minutes, until the flesh at the thickest part is opaque and pulls easily from the bone. While it roasts, put the arugula, pear, pomegranate, and dates in a wide bowl, but don't dress them. At the table, add olive oil, a squeeze of lemon, and salt, toss, and shave parmesan over the top. Bring the fish out whole. Lift the top fillet off with a spoon, pull out the spine, and serve the bottom fillet. Ajvar and bread on the side."
   },
   "drink": {
-    "slug": "normal-heights-date-shake",
-    "name": "Normal Heights Date Shake",
-    "intro": "One drink. It's still hot, and the dates just came in.",
-    "card_line": "New dates, cold milk, vanilla ice cream, salt",
+    "slug": "barrio-logan-jamaica",
+    "name": "Barrio Logan Jamaica",
+    "intro": "One drink. It's still hot, and the pomegranates just came in.",
+    "card_line": "Hibiscus, pomegranate, lime, ice",
     "keep": [
-      "Cold milk",
-      "Vanilla ice cream",
-      "Ice",
-      "Flaky salt"
+      "Dried hibiscus flowers (flor de jamaica)",
+      "Sugar",
+      "Cold water",
+      "Ice"
     ],
     "season_adds": [
-      "5 new-crop Medjool dates, pitted"
+      "1 pomegranate, seeded",
+      "1 lime"
     ],
-    "method": "Tear the dates into pieces and let them sit in half a cup of the milk for ten minutes to soften. Blend with another half cup of milk, two big scoops of vanilla ice cream, a few ice cubes, and a pinch of salt until it's thick and nearly smooth — a few flecks of date are the point. Drink it with a straw, outside, on the hottest afternoon of the week. The desert has been making these for a hundred years.",
+    "method": "Cover a cup of dried hibiscus with four cups of cold water and leave it in the fridge overnight — cold-steeped, it comes out bright rather than bitter. Strain. Press the seeds from one pomegranate through a strainer and stir the juice in, with sugar to taste; start with a quarter cup and stop when it's tart-sweet, not sweet. Pour over ice with a squeeze of lime and a spoonful of whole seeds. The pitcher keeps four days.",
     "try_another_way": [
       {
-        "change": "Add a shot of cold espresso",
-        "context": "If it's the afternoon and you need it to count."
+        "change": "Top with sparkling water",
+        "context": "If you want it lighter and longer."
       },
       {
-        "change": "Greek yogurt and a frozen banana instead of ice cream",
-        "context": "If it's breakfast."
+        "change": "A thin slice of guava in the glass",
+        "context": "Late in the month, when the guavas are soft."
       },
       {
-        "change": "A spoonful of tahini",
-        "context": "If you want it less sweet and more interesting."
+        "change": "A splash of mezcal or tequila",
+        "context": "If it's Friday."
       },
       {
-        "change": "Oat milk",
-        "context": "Thicker than you'd expect, and good."
+        "change": "Tajín on the rim",
+        "context": "If you want it to taste like the corner stand."
       }
     ]
   },

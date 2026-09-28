@@ -5,7 +5,7 @@
   "edition_number": 4,
   "status": "upcoming",
   "base_url": "https://bdavey.co/seasonal-basket",
-  "opening_note": "October is San Diego's second summer. Some years the hottest week lands now, when the wind turns and blows in from the desert. But the harvest has moved inland: new dates, new walnuts, heavy pomegranates, and a squash that will sit on your counter until Thanksgiving. For the first time since spring, you can shop for the month instead of the week.",
+  "opening_note": "October is San Diego's second summer. Some years the hottest week lands now, when the wind turns and blows in from the desert. But the harvest has moved inland: new dates, heavy pomegranates, the first guavas, and a squash that will sit on your counter until Thanksgiving. For the first time since spring, you can shop for the month instead of the week.",
   "thesis": "Keep the meal. Change the season.",
   "palette": {
     "background": "#e9e3d6",
@@ -23,13 +23,13 @@
     "kabocha-squash",
     "pomegranates",
     "fresh-dates",
-    "new-walnuts",
+    "guavas",
     "arugula",
     "asian-pears"
   ],
   "bring_home": {
     "heading": "This is what I'd bring home.",
-    "cost_note": "Around $30–40 for the seasonal basket, and half of it will still be good in three weeks. Proteins and pantry basics are separate. The muhammara wants two red bell peppers and a slice of stale bread.",
+    "cost_note": "Around $30–40 for the seasonal basket, and half of it will still be good in three weeks. Proteins and pantry basics are separate. The ajvar wants four red bell peppers and one eggplant.",
     "items": [
       {
         "slug": "kabocha-squash",
@@ -50,10 +50,10 @@
         "note": "Soft enough to dent. Last year's never are."
       },
       {
-        "slug": "new-walnuts",
-        "name": "New walnuts",
-        "qty": "1 lb",
-        "note": "Taste one first. It shouldn't be bitter."
+        "slug": "guavas",
+        "name": "Guavas",
+        "qty": "5–6",
+        "note": "Smell them before you see them. Buy the fragrant ones."
       },
       {
         "slug": "arugula",
@@ -82,11 +82,11 @@
     "items": [
       "Pomegranate",
       "Date",
-      "Walnut"
+      "Guava"
     ],
     "sub": "What the desert and the valley send down."
   },
-  "house_flavor": "muhammara",
+  "house_flavor": "ajvar",
   "field_notes_label": "Field Notes",
   "field_notes": [
     {
@@ -95,9 +95,9 @@
       "body": "Most dates in the store were picked last fall and have been sitting since. The ones picked this fall are softer, glossier, and taste like caramel instead of candy — squeeze the box and they give. If you ever see yellow dates still on the branch, those are Barhis, eaten crunchy and fresh for a few weeks and nowhere else. Buy a branch."
     },
     {
-      "slug": "taste-the-walnut",
-      "name": "Taste the walnut before you buy the bag.",
-      "body": "A walnut that tastes bitter or smells like paint has gone rancid; the oil in it turns quickly. A new one is sweet and a little milky. Buy a pound when the new crop comes in, keep what you won't use this week in the freezer, and toast them in a dry pan for three minutes before they go into anything."
+      "slug": "october-peppers",
+      "name": "October is when peppers go in jars.",
+      "body": "Across the Balkans, autumn is ajvar season: red peppers are at their cheapest, and whole families roast them by the crate and cook them down into a relish that lasts the winter. You don't need a crate. Four peppers and one eggplant make a jar. It's the same impulse behind everything in this basket — buy it while it's here, and make it keep."
     },
     {
       "slug": "kabocha-cutting",
@@ -113,12 +113,12 @@
   "meal_transformations": [
     {
       "meal": "Rice bowl",
-      "change": "Roasted kabocha, a spoonful of muhammara, arugula, pomegranate.",
+      "change": "Roasted kabocha, a spoonful of ajvar, arugula, pomegranate.",
       "result": "The jar does the work."
     },
     {
       "meal": "Pasta",
-      "change": "Arugula wilted in at the end, toasted walnuts, lemon, parmesan.",
+      "change": "Arugula wilted in at the end, lemon, parmesan, chile flakes.",
       "result": "Green again."
     },
     {
@@ -128,63 +128,65 @@
     },
     {
       "meal": "Beans",
-      "change": "Muhammara stirred in. Arugula on top.",
+      "change": "Ajvar stirred in. Arugula on top.",
       "result": "Ten seconds. A different bowl."
     },
     {
       "meal": "Yogurt",
-      "change": "Chopped new dates, toasted walnuts, pomegranate.",
+      "change": "Chopped new dates, pomegranate, a pinch of salt.",
       "result": "Sweet enough on its own."
     }
   ],
   "weekend_meal": {
     "name": "Whole roasted rockfish, and the October salad.",
-    "intro": "One meal should feel like the reason you went shopping. In October, it's a whole local fish and a salad that only works this month: the first mild arugula, new walnuts, pomegranate, and Asian pear.",
-    "card_line": "Whole rockfish, arugula, pomegranate, walnuts, Asian pear, muhammara",
+    "intro": "One meal should feel like the reason you went shopping. In October, it's a whole local fish and a salad that only works this month: the first mild arugula, Asian pear, pomegranate, and new dates.",
+    "card_line": "Whole rockfish, arugula, Asian pear, pomegranate, dates, ajvar",
     "ingredients": [
       "1 whole rockfish, 2–3 lbs, scaled and gutted",
-      "1 lemon, sliced thin",
+      "1 lemon, sliced thin, plus another for the salad",
       "Olive oil and kosher salt",
       "4 big handfuls of arugula",
       "1 Asian pear, sliced thin",
       "Seeds of half a pomegranate",
-      "½ cup new walnuts, toasted",
-      "Muhammara and good bread, for the table"
+      "4 new-crop dates, pitted and torn",
+      "A wedge of parmesan, for shaving",
+      "Ajvar and good bread, for the table"
     ],
     "ingredient_note": "No whole fish at your counter? Two pounds of rockfish fillets work too — roast them for ten to twelve minutes instead.",
-    "method": "Heat the oven to 450°F. Pat the fish dry inside and out and cut three shallow slashes on each side, down to the bone. Rub it all over with olive oil, salt it well, inside and out, and tuck the lemon slices into the cavity. Roast on a sheet pan for 20 to 25 minutes, until the flesh at the thickest part is opaque and pulls easily from the bone. While it roasts, toss the arugula, pear, pomegranate, and walnuts with olive oil, a squeeze of lemon, and salt — just before it goes to the table, not before. Bring the fish out whole. Lift the top fillet off with a spoon, pull out the spine, and serve the bottom fillet. Muhammara and bread on the side."
+    "method": "Heat the oven to 450°F. Pat the fish dry inside and out and cut three shallow slashes on each side, down to the bone. Rub it all over with olive oil, salt it well, inside and out, and tuck the lemon slices into the cavity. Roast on a sheet pan for 20 to 25 minutes, until the flesh at the thickest part is opaque and pulls easily from the bone. While it roasts, put the arugula, pear, pomegranate, and dates in a wide bowl, but don't dress them. At the table, add olive oil, a squeeze of lemon, and salt, toss, and shave parmesan over the top. Bring the fish out whole. Lift the top fillet off with a spoon, pull out the spine, and serve the bottom fillet. Ajvar and bread on the side."
   },
   "drink": {
-    "slug": "normal-heights-date-shake",
-    "name": "Normal Heights Date Shake",
-    "intro": "One drink. It's still hot, and the dates just came in.",
-    "card_line": "New dates, cold milk, vanilla ice cream, salt",
+    "slug": "barrio-logan-jamaica",
+    "name": "Barrio Logan Jamaica",
+    "intro": "One drink. It's still hot, and the pomegranates just came in.",
+    "card_line": "Hibiscus, pomegranate, lime, ice",
     "keep": [
-      "Cold milk",
-      "Vanilla ice cream",
-      "Ice",
-      "Flaky salt"
+      "Dried hibiscus flowers (flor de jamaica)",
+      "Sugar",
+      "Cold water",
+      "Ice"
     ],
     "season_adds": [
-      "5 new-crop Medjool dates, pitted"
+      "1 pomegranate, seeded",
+      "1 lime"
     ],
-    "method": "Tear the dates into pieces and let them sit in half a cup of the milk for ten minutes to soften. Blend with another half cup of milk, two big scoops of vanilla ice cream, a few ice cubes, and a pinch of salt until it's thick and nearly smooth — a few flecks of date are the point. Drink it with a straw, outside, on the hottest afternoon of the week. The desert has been making these for a hundred years.",
+    "method": "Cover a cup of dried hibiscus with four cups of cold water and leave it in the fridge overnight — cold-steeped, it comes out bright rather than bitter. Strain. Press the seeds from one pomegranate through a strainer and stir the juice in, with sugar to taste; start with a quarter cup and stop when it's tart-sweet, not sweet. Pour over ice with a squeeze of lime and a spoonful of whole seeds. The pitcher keeps four days.",
     "try_another_way": [
       {
-        "change": "Add a shot of cold espresso",
-        "context": "If it's the afternoon and you need it to count."
+        "change": "Top with sparkling water",
+        "context": "If you want it lighter and longer."
       },
       {
-        "change": "Greek yogurt and a frozen banana instead of ice cream",
-        "context": "If it's breakfast."
+        "change": "A thin slice of guava in the glass",
+        "context": "Late in the month, when the guavas are soft."
       },
       {
-        "change": "A spoonful of tahini",
-        "context": "If you want it less sweet and more interesting."
+        "change": "A splash of mezcal or tequila",
+        "context": "If it's Friday."
       },
       {
-        "change": "Oat milk",
-        "context": "Thicker than you'd expect, and good."
+        "change": "Tajín on the rim",
+        "context": "If you want it to taste like the corner stand."
       }
     ]
   },
@@ -214,7 +216,7 @@
         "kabocha-squash",
         "pomegranates",
         "fresh-dates",
-        "new-walnuts",
+        "guavas",
         "arugula",
         "asian-pears"
       ],
@@ -222,10 +224,10 @@
         "kabocha-squash": "Ugliest thing on the table. Sweetest thing on the table.",
         "pomegranates": "Pick it up. If it surprises you, buy it.",
         "fresh-dates": "People think dates are a winter thing because that's when they notice them. This is when they're good.",
-        "new-walnuts": "Crack one open. If you have to think about whether it's bitter, it is.",
         "arugula": "Summer arugula bites you. This one's just saying hello.",
         "asian-pears": "They look expensive. Eat one and it makes sense.",
-        "edition": "October is the first month you can buy things that wait for you."
+        "edition": "October is the first month you can buy things that wait for you.",
+        "guavas": "Follow your nose. The good ones announce themselves."
       }
     }
   ],
@@ -235,7 +237,7 @@
       "name": "Kabocha squash",
       "month": "October",
       "tile_uses": "Rice bowls, tacos, roasted beside anything",
-      "why_now": "Kabocha is the squash that comes after the thin-skinned early ones — dense, dry, and sweeter than butternut, with a flavor somewhere near chestnut. It's picked now and actually improves after a few weeks on the counter, which makes it the first thing in the year you can buy in October and cook in November.",
+      "why_now": "Kabocha is the squash that comes after the thin-skinned early ones — dense, dry, and sweeter than butternut. It's picked now and actually improves after a few weeks on the counter, which makes it the first thing in the year you can buy in October and cook in November.",
       "how_to_choose": [
         "Dark green, dull rather than shiny — shine means it was picked early",
         "Heavy enough to surprise you",
@@ -248,7 +250,6 @@
       "pairs_with_month": [
         "pomegranates",
         "arugula",
-        "new-walnuts",
         "fresh-dates"
       ],
       "pairs_with_staples": [
@@ -264,7 +265,7 @@
           "description": "Skin on, oil, salt, 425°F until the edges char. The default."
         },
         {
-          "name": "With muhammara",
+          "name": "With ajvar",
           "description": "Hot wedges, a spoonful of the jar, arugula on top."
         },
         {
@@ -273,7 +274,7 @@
         }
       ],
       "weekday_uses": [
-        "Roasted wedges over rice with muhammara",
+        "Roasted wedges over rice with ajvar",
         "Cubed in tacos with black beans and cotija",
         "Next to salmon on the same sheet pan",
         "Cold, straight from the fridge, with salt"
@@ -287,7 +288,7 @@
       "slug": "pomegranates",
       "name": "Pomegranates",
       "month": "October",
-      "tile_uses": "Over squash, salads, yogurt, the muhammara",
+      "tile_uses": "Over squash, salads, yogurt, the drink",
       "why_now": "California grows nearly all of the country's pomegranates, and the harvest runs from late September into November. In October they're heavy, cheap by the piece, and sold everywhere from the farmers market to the corner store. By spring, the only ones left are imported.",
       "how_to_choose": [
         "Heavy for its size — weight is juice",
@@ -300,7 +301,6 @@
       "pairs_with_month": [
         "kabocha-squash",
         "arugula",
-        "new-walnuts",
         "asian-pears",
         "fresh-dates"
       ],
@@ -317,17 +317,17 @@
         },
         {
           "name": "In the salad",
-          "description": "With arugula, walnuts, and pear. The weekend."
+          "description": "With arugula, pear, and dates. The weekend."
         },
         {
-          "name": "Cooked down",
-          "description": "Juice simmered to a syrup — homemade pomegranate molasses for the jar."
+          "name": "Pressed",
+          "description": "Juiced through a strainer, into the jamaica."
         }
       ],
       "weekday_uses": [
         "Over roasted kabocha while it's hot",
         "On tacos in place of salsa",
-        "On yogurt with dates and walnuts",
+        "On yogurt with chopped dates",
         "In the rice bowl, for the crunch"
       ],
       "weekend_use": "Half a pomegranate's seeds in the October salad, next to the whole fish.",
@@ -339,7 +339,7 @@
       "slug": "fresh-dates",
       "name": "New-crop dates",
       "month": "October",
-      "tile_uses": "The drink, yogurt, a plate with cheese",
+      "tile_uses": "Yogurt, the salad, a plate with cheese",
       "why_now": "Nearly every Medjool in the country is grown in the desert two hours from here, in the Coachella and Bard valleys, and they're picked from late summer through October. The ones on shelves now are this year's — soft, glossy, and much better than the ones that have been sitting since last fall.",
       "how_to_choose": [
         "Plump and glossy, with skin that clings to the fruit",
@@ -351,7 +351,6 @@
       "buy_this_much": "1 lb. They last for months in the fridge, so this is more about having them than using them up.",
       "price_note": "Costco and Middle Eastern markets are often half the supermarket price for the same Medjools.",
       "pairs_with_month": [
-        "new-walnuts",
         "pomegranates",
         "arugula",
         "kabocha-squash"
@@ -363,81 +362,76 @@
       ],
       "flavor_paths": [
         {
-          "name": "Blended",
-          "description": "Into the date shake. The reason to buy them this week."
-        },
-        {
           "name": "With salt",
-          "description": "Split, a walnut half inside, a few flakes of salt. Dessert."
+          "description": "Split, a few flakes of salt. Dessert."
         },
         {
-          "name": "Chopped into savory",
+          "name": "With cheese",
+          "description": "A sharp cheese or queso fresco. Sweet against salty."
+        },
+        {
+          "name": "Torn into savory",
           "description": "Into the arugula salad, or over roasted squash. Sweetness where you don't expect it."
         }
       ],
       "weekday_uses": [
-        "Chopped over yogurt with walnuts",
-        "Split, stuffed with a walnut half, salted",
+        "Chopped over yogurt with pomegranate",
+        "Split and salted, after dinner",
         "Torn into the arugula salad",
-        "Blended into the drink"
+        "With a sharp cheese and a slice of Asian pear"
       ],
-      "weekend_use": "A small plate of dates, walnuts, and a sharp cheese after the fish.",
+      "weekend_use": "Torn into the October salad, and a small plate of dates, guava, and queso fresco after the fish.",
       "storage": "In the fridge in a closed container for up to six months, or the counter for a few weeks. Cold dates firm up; let them sit out before eating.",
       "one_thing_to_learn": "A date is a fresh fruit that happens to dry well, not a dried fruit. Growers let them cure on the palm in the desert heat, which is why they're soft and sticky rather than leathery. Once you've eaten a new-crop Medjool, you'll notice the difference in the ones that aren't.",
       "market_question": "Are these this year's?"
     },
-    "new-walnuts": {
-      "slug": "new-walnuts",
-      "name": "New walnuts",
+    "guavas": {
+      "slug": "guavas",
+      "name": "Guavas",
       "month": "October",
-      "tile_uses": "The muhammara, pasta, yogurt, the salad",
-      "why_now": "California grows almost every walnut sold in the United States, and the harvest runs from September into early November. Walnuts go rancid faster than most nuts, so the difference between this year's and last year's is not subtle: new ones are sweet and a little milky, with none of the bitterness people assume walnuts have.",
+      "tile_uses": "Raw with salt and chile, with queso fresco, the drink",
+      "why_now": "Guavas ripen in San Diego backyards from late summer into winter, and October is when they fill the bins at Mexican markets and farm stands. Pink-fleshed and fragrant, they're the most tropical thing in a fall basket — a reminder that fall here isn't New England.",
       "how_to_choose": [
-        "Pale gold halves; dark or gray ones are older",
-        "No oily, papery, or paint-like smell",
-        "Taste one if you can — it should be sweet",
-        "In-shell walnuts are heavy and don't rattle",
-        "Bulk bins that turn over fast beat bags that have sat"
+        "Smell first: a ripe guava is fragrant from a foot away",
+        "Pale yellow-green skin, turning from hard green",
+        "A slight give when pressed, like a ripe pear",
+        "Small brown marks are fine; soft, wet spots are not"
       ],
-      "buy_this_much": "1 lb of halves. A cup goes into the jar, the rest into everything else, and whatever is left into the freezer.",
-      "price_note": "Cheapest in the fall, right after harvest. In-shell costs less and keeps longer.",
+      "buy_this_much": "5–6. Some ripe now, some firmer for later in the week.",
+      "price_note": "Much cheaper at Mexican markets, where they're sold as guayaba.",
       "pairs_with_month": [
         "pomegranates",
-        "fresh-dates",
-        "arugula",
         "asian-pears",
-        "kabocha-squash"
+        "fresh-dates"
       ],
       "pairs_with_staples": [
         "Greek yogurt",
-        "sourdough",
-        "pasta",
-        "beans"
+        "sourdough"
       ],
       "flavor_paths": [
         {
-          "name": "Toasted",
-          "description": "Three minutes in a dry pan. Everything they go into is better for it."
+          "name": "With chile and lime",
+          "description": "Sliced, a squeeze of lime, salt, chile. The corner-stand way."
         },
         {
-          "name": "Ground",
-          "description": "Into muhammara, where they turn a pepper purée into something you can spread."
+          "name": "With cheese",
+          "description": "Queso fresco or a sharp white cheese. Sweet against salty, the classic pairing."
         },
         {
-          "name": "With something sweet",
-          "description": "Split dates, pear, or honey on yogurt."
+          "name": "On breakfast",
+          "description": "Sliced over yogurt with a little honey."
         }
       ],
       "weekday_uses": [
-        "Toasted and tossed into pasta with arugula and lemon",
-        "Over yogurt with dates and pomegranate",
-        "In the arugula salad",
-        "Ground into the muhammara"
+        "Sliced with lime, salt, and Tajín in the afternoon",
+        "With queso fresco and a tortilla",
+        "Over yogurt with pomegranate",
+        "A slice in the drink"
       ],
-      "weekend_use": "Toasted and scattered over the October salad, still warm.",
-      "storage": "In the fridge for a few months, or the freezer for a year. Never in the pantry — the oils turn in weeks at room temperature.",
-      "one_thing_to_learn": "Toast every nut before you use it. It takes three minutes in a dry pan over medium heat, shaking often, and it's done when you can smell it from across the kitchen. It changes a walnut from waxy to crisp and from mild to deep, and it's the step people skip most.",
-      "market_question": "When did these come in?"
+      "weekend_use": "Sliced on a plate with queso fresco and new dates, after the fish.",
+      "storage": "On the counter until they're fragrant and give slightly, then in the fridge for three or four days. Their smell travels — keep them in a closed bag.",
+      "one_thing_to_learn": "You eat all of a guava: the skin, the flesh, and the small hard seeds. Slice it into rounds and don't bother digging anything out. If the seeds bother you, halve it and scoop the smooth outer flesh, leaving the seedy center for the drink.",
+      "market_question": "Which ones are ready today?"
     },
     "arugula": {
       "slug": "arugula",
@@ -455,7 +449,6 @@
       "price_note": "Farmers market bunches are often cheaper per ounce than clamshells, and taste better.",
       "pairs_with_month": [
         "pomegranates",
-        "new-walnuts",
         "asian-pears",
         "kabocha-squash"
       ],
@@ -481,12 +474,12 @@
         }
       ],
       "weekday_uses": [
-        "Wilted into pasta with walnuts and lemon",
+        "Wilted into pasta with lemon and parmesan",
         "A handful over rice bowls",
-        "On beans with muhammara",
+        "On beans with ajvar",
         "On top of a fried egg on toast"
       ],
-      "weekend_use": "The base of the October salad: arugula, Asian pear, pomegranate, and walnuts, dressed at the last second.",
+      "weekend_use": "The base of the October salad: arugula, Asian pear, pomegranate, and torn dates, dressed at the last second.",
       "storage": "Unwashed, wrapped in a dry paper towel inside a bag, in the crisper. Three or four days. Wash it right before using.",
       "one_thing_to_learn": "Dress greens at the last possible moment. Salt pulls water out of leaves, and oil weighs them down, so a salad dressed ten minutes early is a wilted salad. Put everything in the bowl, carry it to the table, and toss it there.",
       "market_question": "When was this cut?"
@@ -508,7 +501,6 @@
       "price_note": "Expensive in a supermarket, often half that at Asian markets in Convoy.",
       "pairs_with_month": [
         "arugula",
-        "new-walnuts",
         "pomegranates",
         "fresh-dates"
       ],
@@ -523,7 +515,7 @@
         },
         {
           "name": "In the salad",
-          "description": "Thin slices with arugula, walnuts, and pomegranate."
+          "description": "Thin slices with arugula, pomegranate, and dates."
         },
         {
           "name": "With cheese",
@@ -533,7 +525,7 @@
       "weekday_uses": [
         "Sliced cold, in the afternoon",
         "Thin slices in the arugula salad",
-        "With sharp cheese and walnuts",
+        "With sharp cheese and a few dates",
         "Diced over yogurt"
       ],
       "weekend_use": "Sliced thin into the October salad, beside the whole fish.",

@@ -3,7 +3,7 @@
   "name": "Pasta",
   "display_name": "Pasta",
   "effort": "weekday",
-  "intro": "Arugula wilts into hot pasta in about five seconds. With toasted walnuts and lemon, it's the fastest dinner in this edition.",
+  "intro": "Arugula wilts into hot pasta in about five seconds. With lemon and a lot of parmesan, it's the fastest dinner in this edition.",
   "keep": [
     "Dried pasta — something short, or spaghetti",
     "Olive oil or butter",
@@ -12,18 +12,27 @@
   ],
   "season_anchor": [
     "2 big handfuls of arugula",
-    "A handful of toasted walnuts"
+    "1 lemon, zest and juice"
   ],
   "season_options": [
-    "Lemon, zest and juice",
-    "A spoonful of muhammara",
+    "A spoonful of ajvar",
     "Roasted kabocha, cubed",
-    "Chile flakes"
+    "Chile flakes",
+    "Toasted breadcrumbs, for crunch"
   ],
   "variations": [
-    { "ingredients": "Arugula + walnuts + lemon + parmesan", "context": "The base version. Toss the arugula in off the heat so it wilts without cooking." },
-    { "ingredients": "Muhammara + arugula", "context": "Loosen a few spoonfuls of the jar with pasta water. A red sauce that isn't tomato." },
-    { "ingredients": "Kabocha + walnuts + brown butter", "context": "Richer. The one that eats like a weekend." }
+    {
+      "ingredients": "Arugula + lemon + parmesan",
+      "context": "The base version. Toss the arugula in off the heat so it wilts without cooking."
+    },
+    {
+      "ingredients": "Ajvar + arugula",
+      "context": "Loosen a few spoonfuls of the jar with pasta water. A red sauce that isn't tomato."
+    },
+    {
+      "ingredients": "Kabocha + brown butter + breadcrumbs",
+      "context": "Richer. The one that eats like a weekend."
+    }
   ],
   "works_well_with": [
     "Nothing at all",
@@ -32,7 +41,10 @@
     "A fried egg"
   ],
   "finish": "Save a mug of pasta water before draining — parmesan and oil need it to become a sauce. Arugula goes in after the heat is off, then lemon, then more parmesan than seems right.",
-  "linked_house_flavor": "muhammara",
-  "linked_field_notes": ["taste-the-walnut"],
-  "linked_ingredients": ["arugula", "new-walnuts", "kabocha-squash"]
+  "linked_house_flavor": "ajvar",
+  "linked_field_notes": [],
+  "linked_ingredients": [
+    "arugula",
+    "kabocha-squash"
+  ]
 }

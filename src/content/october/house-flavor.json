@@ -1,8 +1,8 @@
 {
-  "slug": "muhammara",
-  "name": "Muhammara",
+  "slug": "ajvar",
+  "name": "Ajvar",
   "month": "october",
-  "intro": "One jar. Charred peppers, new walnuts, and pomegranate, made thick enough to spread.",
+  "intro": "One jar. Red peppers, charred and cooked down, the way autumn has always kept them.",
   "card_uses": [
     "Spoon it over a rice bowl.",
     "Stir it into beans.",
@@ -10,20 +10,18 @@
     "Put it next to anything roasted."
   ],
   "ingredients": [
-    "2 red bell peppers, charred, peeled, and seeded — or one 12-oz jar of roasted red peppers, drained",
-    "1 cup new walnuts, toasted",
-    "½ cup breadcrumbs, or one slice of stale sourdough, torn",
-    "1 garlic clove",
-    "2 tbsp pomegranate molasses — or ½ cup pomegranate juice, simmered down to 2 tbsp",
-    "1 tbsp lemon juice",
-    "1 tsp ground cumin",
-    "1 tsp Aleppo pepper, or ½ tsp red pepper flakes",
-    "½ tsp kosher salt",
-    "⅓ cup olive oil"
+    "4 red bell peppers",
+    "1 medium eggplant",
+    "2 garlic cloves, grated",
+    "⅓ cup olive oil",
+    "1 tbsp red wine vinegar or lemon juice",
+    "1 tsp kosher salt",
+    "½ tsp sugar",
+    "Chile flakes, to taste"
   ],
-  "method": "Toast the walnuts in a dry pan over medium heat, shaking often, until they smell toasty — about three minutes. Let them cool. Put everything except the olive oil in a food processor and pulse until it's a coarse paste. With the machine running, pour in the oil. Stop while there's still some texture; it should look like a thick, rough spread, not a smooth dip. Taste it: it should be sweet, sour, smoky, and a little hot, all at once. If it's flat, it wants more pomegranate molasses or salt. Charring the peppers is the same dry-flame move from July and August — October just adds nuts and puts it in a jar.",
+  "method": "Char the peppers and the whole eggplant on a gas burner, grill, or under the broiler, turning until they're black all over and the eggplant collapses — the same dry-flame move from July and August. Put the peppers in a covered bowl for fifteen minutes, then peel and seed them. Split the eggplant and scoop out the flesh. Chop both finely by hand, or pulse a few times; it should stay rough, not smooth. Warm the oil in a wide pan over medium-low, add everything else, and cook, stirring often, for 20 to 30 minutes, until the relish thickens, darkens, and the oil starts to separate at the edges. Taste: it should be sweet, smoky, and sharp. Spoon it into a jar and pour a thin layer of oil over the top. The idea underneath is the one worth keeping: char, peel, then cook it down slowly until the water is gone and the flavor is concentrated. That's how a vegetable becomes something that keeps.",
   "storage": {
-    "note": "Keeps a week in the refrigerator, with a thin layer of olive oil poured over the top. It thickens cold — let it sit out a few minutes, or loosen it with a spoonful of water.",
+    "note": "Keeps two weeks in the refrigerator under a thin layer of olive oil. Use a clean spoon, and top up the oil when you take some out.",
     "flagged_for_review": false
   },
   "uses": [
@@ -37,7 +35,7 @@
       "meal": "tacos",
       "label": "Tacos",
       "action": "Under everything else.",
-      "context": "A smear on the warm tortilla first, then kabocha and beans. It does what crema would, with more going on."
+      "context": "A smear on the warm tortilla first, then kabocha and beans. Smoky where salsa would be sharp."
     },
     {
       "meal": null,
@@ -49,20 +47,17 @@
       "meal": null,
       "label": "Chicken thighs",
       "action": "Spread it on after cooking.",
-      "context": "Roasted or grilled thighs with muhammara and arugula. That's dinner."
+      "context": "Roasted or grilled thighs with ajvar and arugula. That's dinner."
     },
     {
       "meal": null,
       "label": "Toast",
       "action": "Spread, then an egg.",
-      "context": "Sourdough, muhammara, a fried egg, a few arugula leaves."
+      "context": "Sourdough, ajvar, a fried egg, a few arugula leaves."
     }
   ],
-  "linked_ingredients": [
-    "new-walnuts",
-    "pomegranates"
-  ],
+  "linked_ingredients": [],
   "linked_field_notes": [
-    "taste-the-walnut"
+    "october-peppers"
   ]
 }

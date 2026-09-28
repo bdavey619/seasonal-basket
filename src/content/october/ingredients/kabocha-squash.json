@@ -3,7 +3,7 @@
   "name": "Kabocha squash",
   "month": "October",
   "tile_uses": "Rice bowls, tacos, roasted beside anything",
-  "why_now": "Kabocha is the squash that comes after the thin-skinned early ones — dense, dry, and sweeter than butternut, with a flavor somewhere near chestnut. It's picked now and actually improves after a few weeks on the counter, which makes it the first thing in the year you can buy in October and cook in November.",
+  "why_now": "Kabocha is the squash that comes after the thin-skinned early ones — dense, dry, and sweeter than butternut. It's picked now and actually improves after a few weeks on the counter, which makes it the first thing in the year you can buy in October and cook in November.",
   "how_to_choose": [
     "Dark green, dull rather than shiny — shine means it was picked early",
     "Heavy enough to surprise you",
@@ -13,15 +13,34 @@
   ],
   "buy_this_much": "1 large, about 3 lbs. That's two trays of roasted wedges — most of a week of bowls and tacos.",
   "price_note": "Usually sold by the pound. Cheaper at Asian and Mexican markets than at most supermarkets.",
-  "pairs_with_month": ["pomegranates", "arugula", "new-walnuts", "fresh-dates"],
-  "pairs_with_staples": ["sticky white rice", "beans", "Greek yogurt", "chicken thighs", "salmon"],
+  "pairs_with_month": [
+    "pomegranates",
+    "arugula",
+    "fresh-dates"
+  ],
+  "pairs_with_staples": [
+    "sticky white rice",
+    "beans",
+    "Greek yogurt",
+    "chicken thighs",
+    "salmon"
+  ],
   "flavor_paths": [
-    { "name": "Roasted wedges", "description": "Skin on, oil, salt, 425°F until the edges char. The default." },
-    { "name": "With muhammara", "description": "Hot wedges, a spoonful of the jar, arugula on top." },
-    { "name": "With yogurt", "description": "Salted yogurt underneath, pomegranate on top. Sweet, sour, cold, hot." }
+    {
+      "name": "Roasted wedges",
+      "description": "Skin on, oil, salt, 425°F until the edges char. The default."
+    },
+    {
+      "name": "With ajvar",
+      "description": "Hot wedges, a spoonful of the jar, arugula on top."
+    },
+    {
+      "name": "With yogurt",
+      "description": "Salted yogurt underneath, pomegranate on top. Sweet, sour, cold, hot."
+    }
   ],
   "weekday_uses": [
-    "Roasted wedges over rice with muhammara",
+    "Roasted wedges over rice with ajvar",
     "Cubed in tacos with black beans and cotija",
     "Next to salmon on the same sheet pan",
     "Cold, straight from the fridge, with salt"

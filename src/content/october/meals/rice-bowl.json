@@ -3,25 +3,34 @@
   "name": "Rice bowl",
   "display_name": "Rice bowl",
   "effort": "weekday",
-  "intro": "October's rice bowl is built on two things you made once: a tray of roasted kabocha and a jar of muhammara.",
+  "intro": "October's rice bowl is built on two things you made once: a tray of roasted kabocha and a jar of ajvar.",
   "keep": [
     "Sticky white rice",
     "Protein of choice (chicken, beef, beans, or nothing)"
   ],
   "season_anchor": [
     "Roasted kabocha wedges",
-    "A big spoonful of muhammara"
+    "A big spoonful of ajvar"
   ],
   "season_options": [
     "Arugula, a handful",
     "Pomegranate seeds",
-    "Toasted walnuts",
+    "Torn new dates",
     "Salted Greek yogurt"
   ],
   "variations": [
-    { "ingredients": "Kabocha + muhammara + arugula", "context": "The version you'll make most often. Three minutes if the tray is in the fridge." },
-    { "ingredients": "Kabocha + yogurt + pomegranate", "context": "Cold and hot, sweet and sour. No protein needed." },
-    { "ingredients": "Chicken thighs + muhammara + arugula + walnuts", "context": "The filling one, for after a long day." }
+    {
+      "ingredients": "Kabocha + ajvar + arugula",
+      "context": "The version you'll make most often. Three minutes if the tray is in the fridge."
+    },
+    {
+      "ingredients": "Kabocha + yogurt + pomegranate",
+      "context": "Cold and hot, sweet and sour. No protein needed."
+    },
+    {
+      "ingredients": "Chicken thighs + ajvar + arugula",
+      "context": "The filling one, for after a long day."
+    }
   ],
   "works_well_with": [
     "Chicken thighs",
@@ -30,7 +39,13 @@
     "A fried egg"
   ],
   "finish": "Pomegranate last, over everything, so it stays cold and bright against the warm rice. If the bowl tastes flat, it wants salt or another spoonful of the jar.",
-  "linked_house_flavor": "muhammara",
-  "linked_field_notes": ["kabocha-cutting"],
-  "linked_ingredients": ["kabocha-squash", "arugula", "pomegranates", "new-walnuts"]
+  "linked_house_flavor": "ajvar",
+  "linked_field_notes": [
+    "kabocha-cutting"
+  ],
+  "linked_ingredients": [
+    "kabocha-squash",
+    "arugula",
+    "pomegranates"
+  ]
 }

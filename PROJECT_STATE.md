@@ -135,9 +135,11 @@ The House Flavor is a single jar (escabeche), not two. Salsa verde is taught as 
 
 October follows September's blueprint exactly: basket, meals, Field Notes, one House Flavor, drink, ritual, weekend meal, one thing to notice.
 
-October answers the question September left open — heat or storage — with storage. San Diego's October is a second summer (the desert wind can make it hotter than August), but the harvest moves inland: new-crop Medjool dates from the Coachella and Bard valleys, new California walnuts, pomegranates, and kabocha, which improves for weeks on the counter. The shopping habit the edition teaches is buying for the month instead of the week. Arugula and Asian pears are the fresh half of the basket.
+October answers the question September left open — heat or storage — with storage. San Diego's October is a second summer (the desert wind can make it hotter than August), but the harvest moves inland: new-crop Medjool dates from the Coachella and Bard valleys, pomegranates, and kabocha, which improves for weeks on the counter. The shopping habit the edition teaches is buying for the month instead of the week. Arugula, Asian pears, and guavas are the fresh half of the basket.
 
-The House Flavor is muhammara: charred peppers (the dry-flame move from July and August, assumed rather than re-taught), new walnuts, and pomegranate molasses. The one new technique is small and permanent: toast every nut. The weekend meal is a whole roasted rockfish — the local fish that gets more reliable as the water cools — with a salad that only works this month: the first mild arugula, Asian pear, pomegranate, and new walnuts. The drink is a date shake, because it's still hot and the dates just came in.
+The House Flavor is ajvar: red peppers and eggplant, charred (the dry-flame move from July and August, assumed rather than re-taught) and cooked down into a relish that keeps — the one new technique is that slow cook-down, which is how a vegetable becomes something that lasts. The weekend meal is a whole roasted rockfish — the local fish that gets more reliable as the water cools — with a salad that only works this month: the first mild arugula, Asian pear, pomegranate, and new dates. The drink is cold-steeped jamaica with pomegranate, because it's still hot.
+
+October is nut-free throughout, sesame included. Keep it that way in future editions where possible, and never make a nut the load-bearing ingredient of a jar or weekend meal.
 
 ## Next Milestone
 

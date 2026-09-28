@@ -15,15 +15,24 @@
     "Pomegranate seeds"
   ],
   "season_options": [
-    "A smear of muhammara",
+    "A smear of ajvar",
     "Arugula, in place of lettuce",
-    "Toasted walnuts, chopped",
+    "Guava, diced small, with lime",
     "Salted yogurt, in place of crema"
   ],
   "variations": [
-    { "ingredients": "Kabocha + black beans + pomegranate + cotija", "context": "The October taco. The pomegranate is the salsa." },
-    { "ingredients": "Muhammara + kabocha + arugula", "context": "Smear the jar on the warm tortilla first." },
-    { "ingredients": "Rockfish + arugula + pomegranate + lime", "context": "If you bought fish. Flaked, pan-seared, three minutes a side." }
+    {
+      "ingredients": "Kabocha + black beans + pomegranate + cotija",
+      "context": "The October taco. The pomegranate is the salsa."
+    },
+    {
+      "ingredients": "Ajvar + kabocha + arugula",
+      "context": "Smear the jar on the warm tortilla first."
+    },
+    {
+      "ingredients": "Rockfish + arugula + pomegranate + lime",
+      "context": "If you bought fish. Flaked, pan-seared, three minutes a side."
+    }
   ],
   "works_well_with": [
     "Black or pinto beans",
@@ -31,7 +40,14 @@
     "Rockfish, pan-seared and flaked"
   ],
   "finish": "Warm the tortillas over a flame or in a dry pan until they blister in spots, and stack them under a towel. Pomegranate goes on last so it stays cold against the warm squash.",
-  "linked_house_flavor": "muhammara",
-  "linked_field_notes": ["kabocha-cutting", "october-fish-counter"],
-  "linked_ingredients": ["kabocha-squash", "pomegranates", "arugula"]
+  "linked_house_flavor": "ajvar",
+  "linked_field_notes": [
+    "kabocha-cutting",
+    "october-fish-counter"
+  ],
+  "linked_ingredients": [
+    "kabocha-squash",
+    "pomegranates",
+    "arugula"
+  ]
 }

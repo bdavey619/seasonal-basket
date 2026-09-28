@@ -8,15 +8,22 @@
       "philosophy": "A good market rewards patience.",
       "voice": "Direct, welcoming, practical. Has a strong opinion about which lap to buy on.",
       "notices": "What is at its peak this week versus what is being pushed. What the farmers themselves are eating.",
-      "assigned_ingredients": ["kabocha-squash", "pomegranates", "fresh-dates", "new-walnuts", "arugula", "asian-pears"],
+      "assigned_ingredients": [
+        "kabocha-squash",
+        "pomegranates",
+        "fresh-dates",
+        "guavas",
+        "arugula",
+        "asian-pears"
+      ],
       "quotes": {
         "kabocha-squash": "Ugliest thing on the table. Sweetest thing on the table.",
         "pomegranates": "Pick it up. If it surprises you, buy it.",
         "fresh-dates": "People think dates are a winter thing because that's when they notice them. This is when they're good.",
-        "new-walnuts": "Crack one open. If you have to think about whether it's bitter, it is.",
         "arugula": "Summer arugula bites you. This one's just saying hello.",
         "asian-pears": "They look expensive. Eat one and it makes sense.",
-        "edition": "October is the first month you can buy things that wait for you."
+        "edition": "October is the first month you can buy things that wait for you.",
+        "guavas": "Follow your nose. The good ones announce themselves."
       }
     }
   ]

@@ -13,17 +13,33 @@
   ],
   "buy_this_much": "3–4. Enough for the salad and a few afternoons.",
   "price_note": "Expensive in a supermarket, often half that at Asian markets in Convoy.",
-  "pairs_with_month": ["arugula", "new-walnuts", "pomegranates", "fresh-dates"],
-  "pairs_with_staples": ["Greek yogurt", "sourdough"],
+  "pairs_with_month": [
+    "arugula",
+    "pomegranates",
+    "fresh-dates"
+  ],
+  "pairs_with_staples": [
+    "Greek yogurt",
+    "sourdough"
+  ],
   "flavor_paths": [
-    { "name": "Sliced cold", "description": "Straight from the fridge. The default." },
-    { "name": "In the salad", "description": "Thin slices with arugula, walnuts, and pomegranate." },
-    { "name": "With cheese", "description": "Anywhere you'd use an apple. Juicier." }
+    {
+      "name": "Sliced cold",
+      "description": "Straight from the fridge. The default."
+    },
+    {
+      "name": "In the salad",
+      "description": "Thin slices with arugula, pomegranate, and dates."
+    },
+    {
+      "name": "With cheese",
+      "description": "Anywhere you'd use an apple. Juicier."
+    }
   ],
   "weekday_uses": [
     "Sliced cold, in the afternoon",
     "Thin slices in the arugula salad",
-    "With sharp cheese and walnuts",
+    "With sharp cheese and a few dates",
     "Diced over yogurt"
   ],
   "weekend_use": "Sliced thin into the October salad, beside the whole fish.",
