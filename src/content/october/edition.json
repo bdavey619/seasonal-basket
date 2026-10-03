@@ -1,9 +1,9 @@
 {
-  "_note": "This is the canonical editable source for the October edition. Run python3 src/build.py to regenerate docs/. editions/october/CONTENT.json is auto-generated from this file and the ingredient JSONs. STAGED: \"status\" is \"upcoming\" until October 1 — the homepage keeps leading with September and lists October under Next edition. To publish, set \"status\" to \"published\" and rebuild.",
+  "_note": "This is the canonical editable source for the October edition. Run python3 src/build.py to regenerate docs/. editions/october/CONTENT.json is auto-generated from this file and the ingredient JSONs.",
   "month": "October",
   "location": "San Diego",
   "edition_number": 4,
-  "status": "upcoming",
+  "status": "published",
   "base_url": "https://bdavey.co/seasonal-basket",
   "opening_note": "October is San Diego's second summer. Some years the hottest week lands now, when the wind blows in from the desert. But the harvest has moved inland — new dates, new sweet potatoes, heavy pomegranates, the last sweet peppers — and as the water cools, the local rockfish comes in. This is the month to buy a fish whole.",
   "thesis": "Keep the meal. Change the season.",

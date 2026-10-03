@@ -1,8 +1,8 @@
 # Seasonal
 
 **Working title:** Seasonal  
-**Current edition:** September — San Diego  
-**Next edition:** October — staged in the repository, live October 1  
+**Current edition:** October — San Diego  
+**Next edition:** November  
 **Published:** <https://bdavey.co/seasonal-basket/>
 
 Seasonal is a monthly field guide to what is worth eating, buying, making, and noticing right now.

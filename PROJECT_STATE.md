@@ -14,7 +14,7 @@ After a year of reading Seasonal, a reader hasn't accumulated dozens of recipes.
 
 ## Current Status
 
-September is the current edition. October is written and built, but staged behind `"status": "upcoming"` — the homepage keeps leading with September and lists October under "Next edition" until October 1, when flipping that one field and rebuilding publishes it. July and August remain published and linked from the homepage archive. The architecture, voice, and product philosophy are established. The site is deployed at GitHub Pages from `/docs` on `main`, served at `https://bdavey.co/seasonal-basket/`.
+October is the current edition. July, August, and September remain published and linked from the homepage archive; November is listed under "Next edition". The architecture, voice, and product philosophy are established. The site is deployed at GitHub Pages from `/docs` on `main`, served at `https://bdavey.co/seasonal-basket/`.
 
 ## What We Know
 
