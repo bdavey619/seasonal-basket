@@ -1,0 +1,34 @@
+{
+  "_note": "These are fictional recurring editorial characters who are part of Seasonal's voice. They are not real people and carry no real credentials, biographies, locations, employers, or factual claims about their lives. Each character represents a consistent way of noticing food and the season. Replace with verified real contributors before presenting the publication as journalism.",
+  "guides": [
+    {
+      "id": "jerome",
+      "name": "Jerome",
+      "role": "The market guide",
+      "philosophy": "A good market rewards patience.",
+      "voice": "Direct, welcoming, practical. Has a strong opinion about which lap to buy on.",
+      "notices": "What is at its peak this week versus what is being pushed. What the farmers themselves are eating.",
+      "assigned_ingredients": [
+        "kabocha-squash",
+        "red-bell-peppers",
+        "sweet-potatoes",
+        "arugula",
+        "pomegranates",
+        "fresh-dates",
+        "guavas",
+        "whole-rockfish"
+      ],
+      "quotes": {
+        "kabocha-squash": "Ugliest thing on the table. Sweetest thing on the table.",
+        "pomegranates": "Pick it up. If it surprises you, buy it.",
+        "fresh-dates": "People think dates are a winter thing because that's when they notice them. This is when they're good.",
+        "arugula": "Summer arugula bites you. This one's just saying hello.",
+        "edition": "October is the first month you can buy things that wait for you.",
+        "guavas": "Follow your nose. The good ones announce themselves.",
+        "red-bell-peppers": "Last good week for these. Buy for the jar, not just for dinner.",
+        "sweet-potatoes": "Nobody gets excited about a sweet potato. That's why they're a good deal.",
+        "whole-rockfish": "People walk right past the whole fish to buy the salmon. Best deal in the case."
+      }
+    }
+  ]
+}

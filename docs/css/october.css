@@ -1,0 +1,16 @@
+/* Seasonal — october.css
+   October palette variables. These are the only values that change between editions.
+   All layout, typography, and component styles live in base.css. */
+
+:root {
+  --bg:       #e9e3d6;
+  --paper:    #f8f5ee;
+  --primary:  #6b3a2a;   /* medjool date */
+  --secondary:#56673a;   /* arugula */
+  --accent:   #c2513e;   /* pomegranate */
+  --ink:      #24211d;
+  --muted:    #6c665a;
+  --line:     #d2c8b5;
+  --cream:    #eadfc9;   /* guava flesh */
+  --dark:     #2a2420;   /* dried hibiscus */
+}

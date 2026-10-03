@@ -1,0 +1,215 @@
+{
+  "_note": "This is the canonical editable source for the October edition. Run python3 src/build.py to regenerate docs/. editions/october/CONTENT.json is auto-generated from this file and the ingredient JSONs.",
+  "month": "October",
+  "location": "San Diego",
+  "edition_number": 4,
+  "status": "published",
+  "base_url": "https://bdavey.co/seasonal-basket",
+  "opening_note": "October is San Diego's second summer. Some years the hottest week lands now, when the wind blows in from the desert. But the harvest has moved inland — new dates, new sweet potatoes, heavy pomegranates, the last sweet peppers — and as the water cools, the local rockfish comes in. This is the month to buy a fish whole.",
+  "thesis": "Keep the meal. Change the season.",
+  "palette": {
+    "background": "#e9e3d6",
+    "paper": "#f8f5ee",
+    "primary": "#6b3a2a",
+    "secondary": "#56673a",
+    "accent": "#c2513e",
+    "ink": "#24211d",
+    "muted": "#6c665a",
+    "line": "#d2c8b5",
+    "cream": "#eadfc9",
+    "dark": "#2a2420"
+  },
+  "featured_ingredients": [
+    "kabocha-squash",
+    "red-bell-peppers",
+    "sweet-potatoes",
+    "arugula",
+    "pomegranates",
+    "fresh-dates",
+    "guavas",
+    "whole-rockfish"
+  ],
+  "bring_home": {
+    "heading": "This is what I'd bring home.",
+    "cost_note": "Around $35–45 for the produce and $20–30 for the fish. Pantry basics are separate. The ajvar also wants one eggplant.",
+    "items": [
+      {
+        "slug": "kabocha-squash",
+        "name": "Kabocha squash",
+        "qty": "1 large",
+        "note": "The sweetest squash there is. It keeps for months."
+      },
+      {
+        "slug": "red-bell-peppers",
+        "name": "Red bell peppers",
+        "qty": "6",
+        "note": "The last sweet ones. Four go into the jar."
+      },
+      {
+        "slug": "sweet-potatoes",
+        "name": "Sweet potatoes",
+        "qty": "2 lbs",
+        "note": "New crop. Dinner, when the week gets away from you."
+      },
+      {
+        "slug": "arugula",
+        "name": "Arugula",
+        "qty": "2 bunches",
+        "note": "The first greens since spring that aren't harsh."
+      },
+      {
+        "slug": "pomegranates",
+        "name": "Pomegranates",
+        "qty": "3",
+        "note": "Buy the heavy, lopsided ones."
+      },
+      {
+        "slug": "fresh-dates",
+        "name": "New-crop dates",
+        "qty": "1 lb",
+        "note": "Soft enough to dent. Last year's never are."
+      },
+      {
+        "slug": "guavas",
+        "name": "Guavas",
+        "qty": "5–6",
+        "note": "Smell them before you see them. Buy the fragrant ones."
+      },
+      {
+        "slug": "whole-rockfish",
+        "name": "Whole rockfish",
+        "qty": "1, 2–3 lbs",
+        "note": "The month's new cut. Ask them to scale and gut it."
+      }
+    ]
+  },
+  "staples": [
+    "Sticky white rice",
+    "Ground beef or turkey",
+    "Chicken thighs",
+    "Salmon",
+    "Beans",
+    "Sourdough",
+    "Greek yogurt"
+  ],
+  "month_card": {
+    "items": [
+      "Pomegranate",
+      "Rockfish",
+      "Date"
+    ],
+    "sub": "The desert, the valley, and the cooling water."
+  },
+  "house_flavor": "ajvar",
+  "field_notes_label": "Field Notes",
+  "field_notes": [
+    {
+      "slug": "fresh-dates",
+      "name": "A new date isn't dried fruit.",
+      "body": "Most dates in the store were picked last fall and have been sitting since. The ones picked this fall are softer, glossier, and taste like caramel instead of candy — squeeze the box and they give. If you ever see yellow dates still on the branch, those are Barhis, eaten crunchy and fresh for a few weeks and nowhere else. Buy a branch."
+    },
+    {
+      "slug": "october-peppers",
+      "name": "October is when peppers go in jars.",
+      "body": "Across the Balkans, autumn is ajvar season: red peppers are at their cheapest, and whole families roast them by the crate and cook them down into a relish that lasts the winter. You don't need a crate. Four peppers and one eggplant make a jar. It's the same impulse behind everything in this basket — buy it while it's here, and make it keep."
+    },
+    {
+      "slug": "kabocha-cutting",
+      "name": "Let the oven cut the kabocha.",
+      "body": "A kabocha is dense enough to be dangerous with a knife. Put it whole in a 400°F oven for ten minutes, or the microwave for three, and the skin softens enough to cut through safely. Don't peel it. Roasted, the skin goes tender and you eat all of it."
+    },
+    {
+      "slug": "on-the-bone",
+      "name": "Cook it on the bone.",
+      "body": "Fish and meat cooked on the bone are harder to overcook. The bone slows the heat, the skin holds in moisture, and the flesh next to the bone stays juicy. That's why a whole fish at 450°F is more forgiving than a fillet in a pan. Learn it on a fish this month; it's the same idea in a pot of bone-in chicken thighs once the evenings actually cool."
+    }
+  ],
+  "meal_transformations": [
+    {
+      "meal": "Rice bowl",
+      "change": "Roasted kabocha, a spoonful of ajvar, arugula, pomegranate.",
+      "result": "The jar does the work."
+    },
+    {
+      "meal": "Pasta",
+      "change": "Arugula wilted in at the end, lemon, parmesan, chile flakes.",
+      "result": "Green again."
+    },
+    {
+      "meal": "Tacos",
+      "change": "Roasted sweet potato, black beans, pomegranate, cotija, lime.",
+      "result": "Sweet, sharp, salty."
+    },
+    {
+      "meal": "Beans",
+      "change": "Ajvar stirred in. A baked sweet potato alongside.",
+      "result": "A whole dinner, no meat, no effort."
+    },
+    {
+      "meal": "Fish night",
+      "change": "Rockfish fillets instead of salmon. Pan-seared, ajvar, arugula.",
+      "result": "Same night, different fish."
+    }
+  ],
+  "weekend_meal": {
+    "name": "Whole roasted rockfish, and the October salad.",
+    "intro": "One meal should feel like the reason you went shopping. In October, it's the fish most people never buy: a whole local rockfish, roasted on the bone, with a salad that only works this month.",
+    "card_line": "Whole rockfish, arugula, pomegranate, dates, ajvar",
+    "ingredients": [
+      "1 whole rockfish, 2–3 lbs, scaled and gutted",
+      "1 lemon, sliced thin, plus another for the salad",
+      "Olive oil and kosher salt",
+      "4 big handfuls of arugula",
+      "Seeds of half a pomegranate",
+      "4 new-crop dates, pitted and torn",
+      "A wedge of parmesan, for shaving",
+      "Ajvar and good bread, for the table"
+    ],
+    "ingredient_note": "No whole fish at your counter? Two pounds of rockfish fillets work too — roast them for ten to twelve minutes instead.",
+    "method": "Heat the oven to 450°F. Pat the fish dry inside and out and cut three shallow slashes on each side, down to the bone. Rub it all over with olive oil, salt it well, inside and out, and tuck the lemon slices into the cavity. Roast on a sheet pan for 20 to 25 minutes, until the flesh at the thickest part is opaque and pulls easily from the bone. While it roasts, put the arugula, pomegranate, and dates in a wide bowl, but don't dress them. At the table, add olive oil, a squeeze of lemon, and salt, toss, and shave parmesan over the top. Bring the fish out whole. Lift the top fillet off with a spoon, pull out the spine, and serve the bottom fillet. Ajvar and bread on the side."
+  },
+  "drink": {
+    "slug": "barrio-logan-jamaica",
+    "name": "Barrio Logan Jamaica",
+    "intro": "One drink. It's still hot, and the pomegranates just came in.",
+    "card_line": "Hibiscus, pomegranate, lime, ice",
+    "keep": [
+      "Dried hibiscus flowers (flor de jamaica)",
+      "Sugar",
+      "Cold water",
+      "Ice"
+    ],
+    "season_adds": [
+      "1 pomegranate, seeded",
+      "1 lime"
+    ],
+    "method": "Cover a cup of dried hibiscus with four cups of cold water and leave it in the fridge overnight — cold-steeped, it comes out bright rather than bitter. Strain. Press the seeds from one pomegranate through a strainer and stir the juice in, with sugar to taste; start with a quarter cup and stop when it's tart-sweet, not sweet. Pour over ice with a squeeze of lime and a spoonful of whole seeds. The pitcher keeps four days.",
+    "try_another_way": [
+      {
+        "change": "Top with sparkling water",
+        "context": "If you want it lighter and longer."
+      },
+      {
+        "change": "A thin slice of guava in the glass",
+        "context": "Late in the month, when the guavas are soft."
+      },
+      {
+        "change": "A splash of mezcal or tequila",
+        "context": "If it's Friday."
+      },
+      {
+        "change": "Tajín on the rim",
+        "context": "If you want it to taste like the corner stand."
+      }
+    ]
+  },
+  "one_thing_to_notice": {
+    "headline": "A fresh fish looks back at you.",
+    "body": "At the counter, look at the eyes before anything else. Clear, bright, and slightly bulging means it came in recently; cloudy and sunken means it didn't. Then ask to see under the gill flap: bright red is fresh, brown is not. It takes five seconds and tells you more than any label."
+  },
+  "market_question": "What will this keep until?",
+  "next_edition": {
+    "month": "November",
+    "status": "Arriving November 1."
+  }
+}

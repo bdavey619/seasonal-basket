@@ -1,0 +1,53 @@
+{
+  "slug": "kabocha-squash",
+  "name": "Kabocha squash",
+  "month": "October",
+  "tile_uses": "Rice bowls, tacos, roasted beside anything",
+  "why_now": "Kabocha is the squash that comes after the thin-skinned early ones — dense, dry, and sweeter than butternut. It's picked now and actually improves after a few weeks on the counter, which makes it the first thing in the year you can buy in October and cook in November.",
+  "how_to_choose": [
+    "Dark green, dull rather than shiny — shine means it was picked early",
+    "Heavy enough to surprise you",
+    "A dry, corky stem",
+    "A pale orange patch on one side is fine; that's where it sat on the ground",
+    "No soft spots anywhere"
+  ],
+  "buy_this_much": "1 large, about 3 lbs. That's two trays of roasted wedges — most of a week of bowls and tacos.",
+  "price_note": "Usually sold by the pound. Cheaper at Asian and Mexican markets than at most supermarkets.",
+  "pairs_with_month": [
+    "pomegranates",
+    "arugula",
+    "red-bell-peppers",
+    "fresh-dates"
+  ],
+  "pairs_with_staples": [
+    "sticky white rice",
+    "beans",
+    "Greek yogurt",
+    "chicken thighs",
+    "salmon"
+  ],
+  "flavor_paths": [
+    {
+      "name": "Roasted wedges",
+      "description": "Skin on, oil, salt, 425°F until the edges char. The default."
+    },
+    {
+      "name": "With ajvar",
+      "description": "Hot wedges, a spoonful of the jar, arugula on top."
+    },
+    {
+      "name": "With yogurt",
+      "description": "Salted yogurt underneath, pomegranate on top. Sweet, sour, cold, hot."
+    }
+  ],
+  "weekday_uses": [
+    "Roasted wedges over rice with ajvar",
+    "Cubed in tacos with black beans and cotija",
+    "Next to salmon on the same sheet pan",
+    "Cold, straight from the fridge, with salt"
+  ],
+  "weekend_use": "A tray of dark-roasted wedges on the table beside the whole fish, for anyone who wants something warm next to the salad.",
+  "storage": "Whole, somewhere cool and dry for up to two months — it gets sweeter over the first few weeks. Once cut, wrap it and refrigerate; use within five days.",
+  "one_thing_to_learn": "Kabocha is drier than other squash, which is why it roasts so well: there's less water to steam off before the sugars can brown. That's also why it can taste chalky if undercooked. Roast it until a knife slides in with no resistance at all, then give it five more minutes.",
+  "market_question": "How long ago was this picked?"
+}

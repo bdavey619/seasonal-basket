@@ -1,0 +1,53 @@
+{
+  "slug": "red-bell-peppers",
+  "name": "Red bell peppers",
+  "month": "October",
+  "tile_uses": "The ajvar, eggs, rice bowls, raw with salt",
+  "why_now": "A red pepper is a green pepper that was left on the plant long enough to ripen, and by the end of the season that's most of what's left. Early fall is when California's red peppers are sweetest and often cheapest. By November they'll be shipped from farther away and priced like it.",
+  "how_to_choose": [
+    "Glossy, firm, and heavy for their size",
+    "Deep, even red, with no green shoulders",
+    "Thick walls — press gently; they shouldn't flex",
+    "A green, fresh-looking stem",
+    "Blocky, four-lobed peppers char more evenly than twisted ones"
+  ],
+  "buy_this_much": "6. Four for the jar, two for the week.",
+  "price_note": "Loose peppers by the pound are almost always cheaper than the packaged three-color bags.",
+  "pairs_with_month": [
+    "kabocha-squash",
+    "sweet-potatoes",
+    "arugula",
+    "whole-rockfish"
+  ],
+  "pairs_with_staples": [
+    "eggs",
+    "chicken thighs",
+    "ground beef or turkey",
+    "beans",
+    "sticky white rice"
+  ],
+  "flavor_paths": [
+    {
+      "name": "Charred and cooked down",
+      "description": "Into the ajvar. The reason to buy six."
+    },
+    {
+      "name": "Raw",
+      "description": "Sliced thick, with salt. As sweet as any fruit in the basket."
+    },
+    {
+      "name": "Softened in oil",
+      "description": "Strips cooked slowly with garlic until they slump. Into eggs, onto bowls."
+    }
+  ],
+  "weekday_uses": [
+    "Charred and cooked down into the ajvar",
+    "Strips softened in olive oil, folded into scrambled eggs",
+    "Sliced raw into a rice bowl for crunch",
+    "Softened with garlic under chicken thighs"
+  ],
+  "weekend_use": "Charred on Saturday, cooked down into a jar of ajvar that carries the week.",
+  "storage": "Unwashed in the crisper for a week to ten days. Charred and peeled, four days in the fridge, or freeze the strips flat.",
+  "one_thing_to_learn": "Green, yellow, and red bell peppers are mostly the same plant at different stages. Red ones have spent the longest ripening, which is why they're sweetest and cost more most of the year. The end of the season is when that extra time is cheap.",
+  "market_question": "Are these the last of the local ones?"
+}

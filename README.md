@@ -1,8 +1,8 @@
 # Seasonal
 
 **Working title:** Seasonal  
-**Current edition:** August — San Diego  
-**Next edition:** September — staged in the repository, live September 1  
+**Current edition:** October — San Diego  
+**Next edition:** November  
 **Published:** <https://bdavey.co/seasonal-basket/>
 
 Seasonal is a monthly field guide to what is worth eating, buying, making, and noticing right now.
@@ -22,7 +22,8 @@ Each monthly edition includes:
 - Meal transformations — your usual meals, wearing the month
 - Field Notes — short pieces, each a secret worth knowing
 - At least one House Flavor: a make-once jar that improves meals all week
-- One weekend meal
+- One weekend meal — where the month's new cut and method are taught
+- The month's cut — one protein in the basket, chosen to expand the repertoire past the staples
 - One seasonal drink
 - One thing to notice
 - An ingredient page for every ingredient in the basket
@@ -54,7 +55,8 @@ The user can continue eating simple staples such as rice, beans, chicken thighs,
 │   └── content/              # Canonical, hand-edited editorial source
 │       ├── july/
 │       ├── august/
-│       └── september/
+│       ├── september/
+│       └── october/
 │           ├── edition.json
 │           ├── guides.json
 │           ├── house-flavor*.json
