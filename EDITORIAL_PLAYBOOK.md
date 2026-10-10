@@ -6,7 +6,7 @@ Do these in order. Each step depends on the one before; the reasons behind each 
 
 1. **Read the weather and the season — honestly.** Research what is actually ripe in Southern California this month, and what the weather really is (San Diego's October is a second summer, not New England's fall). Decide what the month teaches: heat or restraint, fresh or storage.
 2. **Choose the basket from one store.** Six to eight seasonal ingredients, mostly vegetables, every one reliably available at a well-stocked supermarket. Include whatever the month's jar is made from. If it's only at a specialty market, leave it out.
-3. **Choose three or four proteins.** For each candidate, answer four questions:
+3. **Choose the proteins — as many as the meals call for, with no fixed limit.** For each candidate, answer four questions:
    - *Category:* does it fill a gap? Aim for different kinds — fish, poultry, red meat, pork — not one animal on repeat.
    - *Rotation:* did it lead last month? Check the protein log; if so, pick another.
    - *Pairing:* what does it want from this basket, and what general principle does that teach (sharp against mild, fat that bastes, sweet and sour against rich, lean meat gets its richness from the finish)? Each protein should teach a different one.
@@ -103,9 +103,9 @@ Formats accumulate like techniques. After a year, the reader should have a dozen
 
 "Keep the meal. Change the season." still holds for the staples. Read it as: keep it simple, and let the season change the shape of the meal as well as what's in it.
 
-## Three or Four Proteins, Rotating
+## Proteins: As Many as the Meals Call For, Rotating
 
-Readers buy three or four proteins a week, so every edition names three or four, and every meal format is written around a specific one — never "protein of choice."
+There is no fixed number of proteins. An edition names as many as its meals naturally call for — usually three or four, sometimes more — and every meal format is written around a specific one, never "protein of choice." Never drop a protein that belongs with the month's ingredients just to hit a count; a small one like prosciutto with figs earns its place the same way a main one does.
 
 - **One is the month's cut**, the new one the weekend meal teaches. It also returns in one weekday meal.
 - **The rest suit that month's formats**, chosen across categories (fish, poultry, red meat, pork) so the week isn't one animal on repeat.

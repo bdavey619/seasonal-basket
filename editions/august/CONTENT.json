@@ -31,7 +31,7 @@
   ],
   "bring_home": {
     "heading": "This is what I'd bring home.",
-    "cost_note": "Around $35–50 for the produce and $45–60 for the three proteins, all from one well-stocked supermarket. Everything in this edition is on these lines — nothing else to buy.",
+    "cost_note": "Around $35–50 for the produce and $50–65 for the proteins, all from one well-stocked supermarket. Everything in this edition is on these lines — nothing else to buy.",
     "items": [
       {
         "slug": "figs",
@@ -102,6 +102,12 @@
         "qty": "2 lbs",
         "why": "All dark meat and skin, drumsticks can take the hottest, longest roast — and the peppers and eggplant collapse in their fat.",
         "uses": "The sheet pan, a rice bowl, lunches"
+      },
+      {
+        "name": "Prosciutto",
+        "qty": "4 oz",
+        "why": "Salty, cured pork wants something sweet and soft against it — a ripe fig, torn burrata. The salt makes the fruit taste sweeter.",
+        "uses": "Fig toast, the charred plate"
       }
     ],
     "also_buy": [
@@ -291,6 +297,23 @@
         ]
       },
       {
+        "name": "Prosciutto",
+        "best_with": [
+          "sweet",
+          "fresh"
+        ],
+        "ways": [
+          {
+            "label": "Fig toast",
+            "meal": "fig-toast"
+          },
+          {
+            "label": "Charred plate with burrata",
+            "meal": "charred-plate"
+          }
+        ]
+      },
+      {
         "name": "No meat tonight",
         "best_with": [
           "sweet",
@@ -411,7 +434,7 @@
         },
         {
           "name": "On toast",
-          "description": "With burrata, honey, and flaky salt."
+          "description": "With burrata and honey — or prosciutto, for salt against sweet."
         },
         {
           "name": "Sweet",
@@ -419,7 +442,7 @@
         }
       ],
       "weekday_uses": [
-        "On fig toast with burrata and honey",
+        "On fig toast with burrata, honey, or prosciutto",
         "Halved on Greek yogurt in the morning",
         "Eaten ripe, over the sink"
       ],

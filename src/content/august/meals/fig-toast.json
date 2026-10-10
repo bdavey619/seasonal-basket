@@ -13,6 +13,7 @@
   ],
   "season_options": [
     "Burrata",
+    "Prosciutto",
     "Leftover pork chop, sliced thin",
     "Nectarine",
     "Basil"
@@ -23,8 +24,8 @@
       "context": "The default. Burrata, figs, honey, salt."
     },
     {
-      "ingredients": "Pork chop · sweet",
-      "context": "Thin slices of leftover chop under the figs."
+      "ingredients": "Prosciutto · sweet",
+      "context": "Prosciutto torn over the burrata and figs. The old August weekend plate, on toast."
     },
     {
       "ingredients": "Burrata · hot",

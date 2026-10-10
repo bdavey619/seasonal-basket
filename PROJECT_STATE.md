@@ -137,10 +137,10 @@ The House Flavor is a single jar (escabeche), not two. Salsa verde is taught as 
 
 ## July–September, Reworked
 
-The three summer editions were rebuilt on the October framework after publication: same produce baskets, jars, and drinks, plus one-store closed shopping lists, three proteins each with pairing lines, protein-first meals with four flavors, a weekend meal that teaches the month's cut, a method Field Note in place of the fish-counter note, and no local ritual.
+The three summer editions were rebuilt on the October framework after publication: same produce baskets, jars, and drinks, plus one-store closed shopping lists, proteins with pairing lines, protein-first meals with four flavors, a weekend meal that teaches the month's cut, a method Field Note in place of the fish-counter note, and no local ritual.
 
 - **July:** wild salmon slow-roasted beside tomatoes and burrata; skirt steak; shrimp. Meals: tomato plate, tacos, rice bowl, hot-pan dinner, tomato toast.
-- **August:** thick pork chops salted early and seared, with charred nectarines; halibut; chicken drumsticks. Meals: charred plate, sheet pan, pasta, rice bowl, fig toast.
+- **August:** thick pork chops salted early and seared, with charred nectarines; halibut; chicken drumsticks; prosciutto with figs and burrata. Meals: charred plate, sheet pan, pasta, rice bowl, fig toast.
 - **September:** chile-rubbed mahi-mahi in tortillas; ground beef picadillo; chicken thighs simmered in salsa verde. Meals: tacos, stuffed roasted chiles (the old weekend meal, now a weekday format), salsa verde simmer, rice bowl, sheet pan.
 
 The original versions are in git history before this change.
@@ -168,7 +168,7 @@ Which proteins each edition led with. No protein leads two months in a row; eggs
 | Month | Proteins |
 |---|---|
 | July | Wild salmon (the cut), skirt steak, shrimp |
-| August | Thick pork chops (the cut), halibut, chicken drumsticks |
+| August | Thick pork chops (the cut), halibut, chicken drumsticks, prosciutto |
 | September | Mahi-mahi (the cut), ground beef, boneless chicken thighs |
 | October | Rockfish (the cut), chicken sausage, pork tenderloin, ground lamb |
 

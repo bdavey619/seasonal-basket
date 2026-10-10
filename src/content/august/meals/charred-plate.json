@@ -16,7 +16,8 @@
     "Nectarine halves",
     "Charred pepper sauce",
     "Basil",
-    "Burrata"
+    "Burrata",
+    "Prosciutto"
   ],
   "variations": [
     {
@@ -28,8 +29,8 @@
       "context": "Seared halibut, jalapeño and lime over the top."
     },
     {
-      "ingredients": "Burrata · smoky",
-      "context": "No meat. Charred vegetables around torn burrata, pepper sauce."
+      "ingredients": "Burrata + prosciutto · smoky",
+      "context": "Charred vegetables around torn burrata and prosciutto, pepper sauce. Or just the burrata, for a no-meat night."
     }
   ],
   "works_well_with": [
