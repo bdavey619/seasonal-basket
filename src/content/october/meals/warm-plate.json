@@ -1,0 +1,51 @@
+{
+  "slug": "warm-plate",
+  "name": "Warm plate",
+  "display_name": "Warm plate",
+  "effort": "weekday",
+  "intro": "Something warm, something cold, something sharp, on one plate. For the October nights that are still too hot for anything heavy.",
+  "keep": [
+    "Rice, warm or leftover",
+    "Olive oil, lemon, salt"
+  ],
+  "season_anchor": [
+    "Roasted kabocha",
+    "Arugula, a big handful"
+  ],
+  "season_options": [
+    "Pomegranate seeds",
+    "Torn Medjool dates",
+    "Crumbled feta",
+    "Salted Greek yogurt underneath"
+  ],
+  "variations": [
+    {
+      "ingredients": "Kabocha + arugula + pomegranate + feta",
+      "context": "The default. Five minutes if the squash is already roasted."
+    },
+    {
+      "ingredients": "Kabocha + yogurt + dates",
+      "context": "Sweeter and softer. Yogurt goes under the squash, not over."
+    },
+    {
+      "ingredients": "Rockfish + arugula + lemon",
+      "context": "Midweek fish, seared, on the same plate."
+    }
+  ],
+  "works_well_with": [
+    "Black beans",
+    "A fried egg",
+    "Leftover rockfish"
+  ],
+  "finish": "Build it in layers so it stays distinct: rice, then the warm squash, then the cold arugula, then everything sharp scattered over the top. Dress it with olive oil, lemon, and salt only once it's on the plate.",
+  "linked_house_flavor": "ajvar",
+  "linked_field_notes": [
+    "fresh-dates"
+  ],
+  "linked_ingredients": [
+    "kabocha-squash",
+    "arugula",
+    "pomegranates",
+    "fresh-dates"
+  ]
+}

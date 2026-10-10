@@ -1,0 +1,52 @@
+{
+  "slug": "sheet-pan-dinner",
+  "name": "Sheet-pan dinner",
+  "display_name": "Sheet-pan dinner",
+  "effort": "weekday",
+  "intro": "One vegetable, one fish, one pan, a hot oven, and the jar after. The shape you'll make most this month.",
+  "keep": [
+    "A sheet pan",
+    "Olive oil and salt",
+    "Lemon"
+  ],
+  "season_anchor": [
+    "Kabocha wedges, or sweet potato in cubes",
+    "Red pepper strips",
+    "Rockfish fillets, for the last ten minutes"
+  ],
+  "season_options": [
+    "A spoonful of ajvar",
+    "Arugula, on top",
+    "Pomegranate seeds"
+  ],
+  "variations": [
+    {
+      "ingredients": "Kabocha + peppers + rockfish + ajvar",
+      "context": "The October version. Squash goes in first; fish joins it for the last ten minutes."
+    },
+    {
+      "ingredients": "Sweet potato + peppers + rockfish + lemon",
+      "context": "When the kabocha's gone. Same timing."
+    },
+    {
+      "ingredients": "Kabocha + peppers + a fried egg",
+      "context": "No fish this week. The egg goes on at the table."
+    }
+  ],
+  "works_well_with": [
+    "Rice",
+    "Black beans",
+    "Salted Greek yogurt"
+  ],
+  "finish": "Heat the oven to 425°F. Squash and peppers go in first, oiled and salted, with room between the pieces, for about twenty minutes. Then push them aside, lay the fish in the gap, salt it, and give it ten more. Ajvar and a squeeze of lemon over everything at the table.",
+  "linked_house_flavor": "ajvar",
+  "linked_field_notes": [
+    "kabocha-cutting"
+  ],
+  "linked_ingredients": [
+    "kabocha-squash",
+    "red-bell-peppers",
+    "sweet-potatoes",
+    "rockfish"
+  ]
+}

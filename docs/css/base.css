@@ -1158,3 +1158,20 @@ footer {
     grid-column: 1;
   }
 }
+
+/* The rest of the shopping list, inside the basket card. */
+.bring-home-extra {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .82rem;
+  margin: 14px 0 0;
+  opacity: .85;
+}
+.bring-home-extra + .bring-home-extra { margin-top: 6px; }
+.bring-home-extra-label {
+  font-size: .66rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-right: 8px;
+}
