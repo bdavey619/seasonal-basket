@@ -3,7 +3,7 @@
   "name": "Sheet-pan dinner",
   "display_name": "Sheet-pan dinner",
   "effort": "weekday",
-  "intro": "One vegetable, one fish, one pan, a hot oven, and the jar after. The shape you'll make most this month.",
+  "intro": "One vegetable, one protein, one pan, a hot oven, and the jar after. The shape you'll make most this month.",
   "keep": [
     "A sheet pan",
     "Olive oil and salt",
@@ -12,7 +12,7 @@
   "season_anchor": [
     "Kabocha wedges, or sweet potato in cubes",
     "Red pepper strips",
-    "Rockfish fillets, for the last ten minutes"
+    "Chicken sausage, whole links"
   ],
   "season_options": [
     "A spoonful of ajvar",
@@ -21,16 +21,16 @@
   ],
   "variations": [
     {
-      "ingredients": "Kabocha + peppers + rockfish + ajvar",
-      "context": "The October version. Squash goes in first; fish joins it for the last ten minutes."
+      "ingredients": "Chicken sausage + kabocha + peppers + ajvar",
+      "context": "The October version. Everything goes in together."
     },
     {
-      "ingredients": "Sweet potato + peppers + rockfish + lemon",
-      "context": "When the kabocha's gone. Same timing."
+      "ingredients": "Chicken sausage + sweet potato + peppers + lemon",
+      "context": "When the kabocha's gone. Same pan, same timing."
     },
     {
       "ingredients": "Kabocha + peppers + a fried egg",
-      "context": "No fish this week. The egg goes on at the table."
+      "context": "The sausage is gone. The egg goes on at the table."
     }
   ],
   "works_well_with": [
@@ -38,7 +38,7 @@
     "Black beans",
     "Salted Greek yogurt"
   ],
-  "finish": "Heat the oven to 425°F. Squash and peppers go in first, oiled and salted, with room between the pieces, for about twenty minutes. Then push them aside, lay the fish in the gap, salt it, and give it ten more. Ajvar and a squeeze of lemon over everything at the table.",
+  "finish": "Heat the oven to 425°F. Squash, peppers, and sausage go on one pan together, oiled and salted, with room between the pieces. Roast about 30 minutes, turning the sausages once, until they're browned and the squash edges are dark. Ajvar and a squeeze of lemon over everything at the table.",
   "linked_house_flavor": "ajvar",
   "linked_field_notes": [
     "kabocha-cutting"
@@ -46,7 +46,6 @@
   "linked_ingredients": [
     "kabocha-squash",
     "red-bell-peppers",
-    "sweet-potatoes",
-    "rockfish"
+    "sweet-potatoes"
   ]
 }

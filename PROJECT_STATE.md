@@ -143,9 +143,20 @@ October answers the question September left open — heat or storage — with st
 
 **The cut** is rockfish fillets: local, more reliable as the water cools, cheaper than salmon. **The method** is the sear — dry fish, hot pan, hands off — taught by the weekend meal (seared rockfish with brown butter, roasted kabocha, and an arugula, pomegranate, and date salad) and named in the Field Note that points ahead to November's braise. **No new tool.**
 
+**The proteins** are three, one per kind of night: rockfish (the cut — weekend meal and midweek fish tacos), chicken sausage (sheet-pan dinner), and ground lamb (the warm plate). Eggs carry toast for dinner; black beans carry the baked sweet potato.
+
 The House Flavor is ajvar, made from peppers alone. The drink is cold-steeped hibiscus with pomegranate. One thing to notice is how to read a fresh fillet. No local ritual.
 
 October is nut-free throughout, sesame included. Keep it that way where possible, and never make a nut the load-bearing ingredient of a jar or weekend meal.
+
+## Protein Log
+
+Which proteins each edition led with. No protein leads two months in a row; eggs and beans don't count.
+
+| Month | Proteins |
+|---|---|
+| July–September | Chicken thighs, ground beef or turkey, salmon — the staples, every month. The reason this log exists. |
+| October | Rockfish (the cut), chicken sausage, ground lamb |
 
 ## The Year's Cuts, Methods, and Tools (draft)
 
@@ -163,7 +174,7 @@ Each month should build on the last: the sear (October) is the first step of the
 
 ## Next Milestone
 
-Begin the November edition: bone-in chicken thighs, braising, and the Dutch oven, if the weather has actually turned. Persimmons and pomegranates peak; the first citrus arrives.
+Begin the November edition: bone-in chicken thighs, braising, and the Dutch oven, if the weather has actually turned. Pick two or three other proteins that don't repeat October's — check the protein log. Persimmons and pomegranates peak; the first citrus arrives.
 
 ## Development Handoff Goal
 

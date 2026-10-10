@@ -3,43 +3,45 @@
   "name": "Warm plate",
   "display_name": "Warm plate",
   "effort": "weekday",
-  "intro": "Something warm, something cold, something sharp, on one plate. For the October nights that are still too hot for anything heavy.",
+  "intro": "Something warm, something cold, something sharp, on one plate. Ground lamb makes it dinner; the rest makes it October.",
   "keep": [
     "Rice, warm or leftover",
+    "Greek yogurt, salted",
     "Olive oil, lemon, salt"
   ],
   "season_anchor": [
-    "Roasted kabocha",
-    "Arugula, a big handful"
+    "Ground lamb, browned with garlic and chile flakes",
+    "Roasted kabocha"
   ],
   "season_options": [
     "Pomegranate seeds",
     "Torn Medjool dates",
-    "Crumbled feta",
-    "Salted Greek yogurt underneath"
+    "Arugula, a handful",
+    "Crumbled feta"
   ],
   "variations": [
     {
-      "ingredients": "Kabocha + arugula + pomegranate + feta",
-      "context": "The default. Five minutes if the squash is already roasted."
+      "ingredients": "Lamb + kabocha + yogurt + pomegranate",
+      "context": "The default. Yogurt under everything, pomegranate over it."
     },
     {
-      "ingredients": "Kabocha + yogurt + dates",
-      "context": "Sweeter and softer. Yogurt goes under the squash, not over."
+      "ingredients": "Lamb + dates + arugula + lemon",
+      "context": "Sweeter, with something green. The dates warm through in the pan."
     },
     {
-      "ingredients": "Rockfish + arugula + lemon",
-      "context": "Midweek fish, seared, on the same plate."
+      "ingredients": "Kabocha + arugula + feta + pomegranate",
+      "context": "No lamb left. Still a whole plate."
     }
   ],
   "works_well_with": [
+    "Rice",
     "Black beans",
-    "A fried egg",
-    "Leftover rockfish"
+    "A fried egg"
   ],
-  "finish": "Build it in layers so it stays distinct: rice, then the warm squash, then the cold arugula, then everything sharp scattered over the top. Dress it with olive oil, lemon, and salt only once it's on the plate.",
+  "finish": "Brown the lamb hard in a dry pan — let it sit until it crusts before you break it up — then add a grated garlic clove and a pinch of chile flakes for the last minute. Build the plate in layers: salted yogurt, rice, warm squash and lamb, then everything sharp on top.",
   "linked_house_flavor": "ajvar",
   "linked_field_notes": [
+    "dry-hot-hands-off",
     "fresh-dates"
   ],
   "linked_ingredients": [

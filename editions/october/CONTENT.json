@@ -71,7 +71,7 @@
         "slug": "rockfish",
         "name": "Rockfish fillets",
         "qty": "1 lb, twice",
-        "note": "The month's new fish. Buy it for the weekend, and again midweek."
+        "note": "The month's new fish. Buy it for the weekend, and again for midweek tacos."
       }
     ],
     "also_buy": [
@@ -95,7 +95,11 @@
       "chile flakes",
       "salt"
     ],
-    "cost_note": "Around $30–40 for the produce and $20–30 for the fish, all from one well-stocked supermarket. Everything in this edition is on these three lines — nothing else to buy."
+    "cost_note": "Around $30–40 for the produce and $45–55 for the three proteins, all from one well-stocked supermarket. Everything in this edition is on these lines — nothing else to buy.",
+    "proteins": [
+      "1 lb chicken sausage",
+      "1 lb ground lamb"
+    ]
   },
   "staples": [
     "Sticky white rice",
@@ -141,13 +145,13 @@
   "meal_transformations": [
     {
       "meal": "Sheet-pan dinner",
-      "change": "Kabocha, red peppers, and rockfish on one pan. Ajvar after.",
+      "change": "Chicken sausage, kabocha, and red peppers on one pan. Ajvar after.",
       "result": "One pan, thirty minutes."
     },
     {
       "meal": "Warm plate",
-      "change": "Roasted squash over rice, arugula, pomegranate, torn dates, feta.",
-      "result": "Hot and cold on one plate."
+      "change": "Ground lamb with garlic and chile, over rice with roasted squash, yogurt, pomegranate, dates.",
+      "result": "Hot and cold, rich and sharp."
     },
     {
       "meal": "Fish tacos",
@@ -229,7 +233,7 @@
     "status": "Arriving November 1."
   },
   "meals_heading": "Five meals for October.",
-  "meals_dek": "Simple shapes, each one made more than once. All of them come out of the basket.",
+  "meals_dek": "Simple shapes, each one made more than once, each with its own protein. All of them come out of the basket.",
   "guides": [
     {
       "id": "jerome",
@@ -302,8 +306,8 @@
         }
       ],
       "weekday_uses": [
-        "On the sheet pan with peppers and rockfish",
-        "Over rice for the warm plate",
+        "On the sheet pan with chicken sausage and peppers",
+        "On the warm plate with ground lamb and yogurt",
         "Cold from the fridge, with salt and a squeeze of lemon",
         "With salted yogurt and pomegranate"
       ],
@@ -354,7 +358,7 @@
       ],
       "weekday_uses": [
         "Charred and cooked down into the ajvar",
-        "In strips on the sheet pan with kabocha and fish",
+        "In strips on the sheet pan with sausage and squash",
         "Sliced raw, with salt, while dinner cooks",
         "Softened in olive oil and folded into scrambled eggs"
       ],
@@ -404,7 +408,7 @@
       ],
       "weekday_uses": [
         "Baked whole, split, with salted yogurt, black beans, and ajvar",
-        "Cubed on the sheet pan instead of kabocha",
+        "Cubed on the sheet pan with sausage instead of kabocha",
         "Under a fried egg, with arugula",
         "Leftover, cold, with a squeeze of lime"
       ],
@@ -507,7 +511,7 @@
         }
       ],
       "weekday_uses": [
-        "Over the warm plate",
+        "Over the warm plate with lamb and yogurt",
         "On fish tacos, in place of salsa",
         "Over a baked sweet potato",
         "On Greek yogurt with chopped dates, for breakfast"
@@ -555,7 +559,7 @@
         }
       ],
       "weekday_uses": [
-        "Torn over the warm plate",
+        "Torn over the warm plate with lamb",
         "Chopped over Greek yogurt with pomegranate",
         "Split and salted, after dinner",
         "With a little feta, as dessert"
@@ -569,7 +573,7 @@
       "slug": "rockfish",
       "name": "Rockfish fillets",
       "month": "October",
-      "tile_uses": "The weekend meal, fish tacos, the sheet pan",
+      "tile_uses": "The weekend meal, midweek fish tacos",
       "why_now": "Rockfish is the local fish that gets more reliable as the water cools in fall: dozens of species, all mild and firm, and usually cheaper than salmon. It's sold at most fish counters in Southern California, sometimes as rock cod or Pacific snapper. This is the month to buy it instead of the usual.",
       "how_to_choose": [
         "Glossy and slightly translucent, not dull or dry",
@@ -597,16 +601,15 @@
           "description": "Hot pan, hands off, brown butter. The weekend meal."
         },
         {
-          "name": "Roasted",
-          "description": "On the sheet pan for the last ten minutes, with squash and peppers."
-        },
-        {
           "name": "Flaked",
           "description": "Into tacos with arugula, pomegranate, and lime."
+        },
+        {
+          "name": "Over rice",
+          "description": "Seared, with arugula and lemon. A five-minute dinner."
         }
       ],
       "weekday_uses": [
-        "On the sheet pan for the last ten minutes, with ajvar after",
         "Seared and flaked into fish tacos",
         "Seared over rice with arugula and lemon",
         "Leftovers, cold, on toast with lemon and olive oil"

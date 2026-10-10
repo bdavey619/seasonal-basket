@@ -298,7 +298,8 @@ def render_bring_home(bring_home, ingredients_data, featured, depth, ing_index_p
     # surprise: what else to buy this month, and what's assumed at home.
     extra = "".join(
         f'<p class="bring-home-extra"><span class="bring-home-extra-label">{e(label)}</span> {e(", ".join(items))}</p>'
-        for label, items in (("Also buy", bring_home.get("also_buy")),
+        for label, items in (("Other proteins", bring_home.get("proteins")),
+                             ("Also buy", bring_home.get("also_buy")),
                              ("From your kitchen", bring_home.get("pantry")))
         if items)
     return f"""

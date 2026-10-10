@@ -77,6 +77,16 @@ Formats accumulate like techniques. After a year, the reader should have a dozen
 
 "Keep the meal. Change the season." still holds for the staples. Read it as: keep it simple, and let the season change the shape of the meal as well as what's in it.
 
+## Three or Four Proteins, Rotating
+
+Readers buy three or four proteins a week, so every edition names three or four, and every meal format is written around a specific one — never "protein of choice."
+
+- **One is the month's cut**, the new one the weekend meal teaches. It also returns in one weekday meal.
+- **The rest suit that month's formats**, chosen across categories (fish, poultry, red meat, pork) so the week isn't one animal on repeat.
+- **No protein leads two months in a row.** Check the protein log in `PROJECT_STATE.md` before choosing, and add the month to it when the edition is done.
+- **Eggs and beans don't count.** They're kitchen staples that carry the lighter nights.
+- The non-cut proteins go on the basket card's "Other proteins" line, with quantities, so the shopping list stays closed.
+
 ## The Month's Cut, Method, and Tool
 
 Produce isn't the only thing that's seasonal. How people cook changes through the year too: summer is raw, grilled, and fast; cooler months bring back bone-in cuts, long cooking, and the heavy pot. Every edition answers three questions — what's ripe, what it's cooked with, and how it's cooked — but only the first gets the page's full weight. The other two ride on sections that already exist:

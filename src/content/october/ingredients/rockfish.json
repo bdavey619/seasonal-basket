@@ -2,7 +2,7 @@
   "slug": "rockfish",
   "name": "Rockfish fillets",
   "month": "October",
-  "tile_uses": "The weekend meal, fish tacos, the sheet pan",
+  "tile_uses": "The weekend meal, midweek fish tacos",
   "why_now": "Rockfish is the local fish that gets more reliable as the water cools in fall: dozens of species, all mild and firm, and usually cheaper than salmon. It's sold at most fish counters in Southern California, sometimes as rock cod or Pacific snapper. This is the month to buy it instead of the usual.",
   "how_to_choose": [
     "Glossy and slightly translucent, not dull or dry",
@@ -30,16 +30,15 @@
       "description": "Hot pan, hands off, brown butter. The weekend meal."
     },
     {
-      "name": "Roasted",
-      "description": "On the sheet pan for the last ten minutes, with squash and peppers."
-    },
-    {
       "name": "Flaked",
       "description": "Into tacos with arugula, pomegranate, and lime."
+    },
+    {
+      "name": "Over rice",
+      "description": "Seared, with arugula and lemon. A five-minute dinner."
     }
   ],
   "weekday_uses": [
-    "On the sheet pan for the last ten minutes, with ajvar after",
     "Seared and flaked into fish tacos",
     "Seared over rice with arugula and lemon",
     "Leftovers, cold, on toast with lemon and olive oil"
