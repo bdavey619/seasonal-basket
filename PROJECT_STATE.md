@@ -53,6 +53,10 @@ October is the current edition. July, August, and September remain published and
 
 **Design:** timeless, not trendy. No advertising. No infinite scroll. No trend language. The color palette changes by month, derived from the basket.
 
+## Who the Editions Feed
+
+One active cook with a big appetite, cooking dinner every night and eating leftovers for lunch most days. Quantities are written for that, at roughly 8 oz of raw protein per meal, and the basket card says so.
+
 ## User Staples
 
 - Sticky white rice
@@ -143,7 +147,7 @@ October answers the question September left open — heat or storage — with st
 
 **The cut** is rockfish fillets: local, more reliable as the water cools, cheaper than salmon. **The method** is the sear — dry fish, hot pan, hands off — taught by the weekend meal (seared rockfish with brown butter, roasted kabocha, and an arugula, pomegranate, and date salad) and named in the Field Note that points ahead to November's braise. **No new tool.**
 
-**The proteins** are three, one per kind of night: rockfish (the cut — weekend meal and midweek fish tacos), chicken sausage (sheet-pan dinner), and ground lamb (the warm plate). Eggs carry toast for dinner; black beans carry the baked sweet potato.
+**The proteins** are three, one per kind of night, each with its pairing line on the basket card: rockfish, 2 lbs (the cut — weekend meal, fish tacos; *a mild fish needs something peppery and sharp*), chicken sausage, 2 lbs (sheet-pan dinner; *its fat bastes the vegetables*), and ground lamb, 1½ lbs (the warm plate; *rich meat wants sweet and sour*). Eggs carry toast for dinner; black beans carry the baked sweet potato.
 
 The House Flavor is ajvar, made from peppers alone. The drink is cold-steeped hibiscus with pomegranate. One thing to notice is how to read a fresh fillet. No local ritual.
 

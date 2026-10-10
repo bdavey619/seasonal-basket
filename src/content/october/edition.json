@@ -66,12 +66,6 @@
         "name": "Medjool dates",
         "qty": "1 lb",
         "note": "Soft enough to dent. Those are the new ones."
-      },
-      {
-        "slug": "rockfish",
-        "name": "Rockfish fillets",
-        "qty": "1 lb, twice",
-        "note": "The month's new fish. Buy it for the weekend, and again for midweek tacos."
       }
     ],
     "also_buy": [
@@ -95,11 +89,29 @@
       "chile flakes",
       "salt"
     ],
-    "cost_note": "Around $30–40 for the produce and $45–55 for the three proteins, all from one well-stocked supermarket. Everything in this edition is on these lines — nothing else to buy.",
+    "cost_note": "Around $30–40 for the produce and $55–70 for the proteins, all from one well-stocked supermarket. Everything in this edition is on these lines — nothing else to buy.",
     "proteins": [
-      "1 lb chicken sausage",
-      "1 lb ground lamb"
-    ]
+      {
+        "slug": "rockfish",
+        "name": "Rockfish fillets",
+        "qty": "2 lbs, in two trips",
+        "why": "A mild fish needs something peppery and something sharp — arugula and pomegranate — or it tastes of nothing.",
+        "uses": "Weekend meal, fish tacos, two lunches"
+      },
+      {
+        "name": "Chicken sausage",
+        "qty": "2 lbs",
+        "why": "Its fat runs out onto the hot pan and bastes the squash and peppers as they roast. The pan seasons itself.",
+        "uses": "Sheet-pan dinner, three lunches"
+      },
+      {
+        "name": "Ground lamb",
+        "qty": "1½ lbs",
+        "why": "Rich, slightly gamey meat wants sweet and sour against it — dates and pomegranate. Same logic as pork with apples.",
+        "uses": "The warm plate, twice, and a lunch"
+      }
+    ],
+    "feeds": "Feeds one big appetite for a week: every dinner, and lunch from the leftovers most days."
   },
   "staples": [
     "Sticky white rice",
@@ -185,7 +197,7 @@
       "A little feta, crumbled",
       "Ajvar, for the table"
     ],
-    "ingredient_note": "Everything here is on the shopping list. If the counter is out of rockfish, any firm white fillet works the same way.",
+    "ingredient_note": "Everything here is on the shopping list. A pound of fish is dinner tonight and lunch tomorrow. If the counter is out of rockfish, any firm white fillet works the same way.",
     "method": "Heat the oven to 425°F. Toss the kabocha wedges with olive oil and salt and roast for 30 to 35 minutes, until the edges are dark and a knife slides through. Meanwhile, salt the fish and leave it on a plate for fifteen minutes, then pat it completely dry. Heat a heavy skillet over medium-high with a thin film of oil until it shimmers. Lay the fillets in, away from you, and don't touch them for three or four minutes, until the edges turn opaque and the fish releases from the pan on its own. Flip, add the butter, and tilt the pan, spooning the foaming butter over the fish for a minute or two until it smells nutty and turns golden brown. Squeeze in half the lemon. Put the arugula, pomegranate, dates, and feta in a bowl and dress it at the table with olive oil, the rest of the lemon, and salt. Serve the fish over the kabocha with the brown butter spooned on top, the salad beside it, and ajvar on the table."
   },
   "drink": {

@@ -85,7 +85,10 @@ Readers buy three or four proteins a week, so every edition names three or four,
 - **The rest suit that month's formats**, chosen across categories (fish, poultry, red meat, pork) so the week isn't one animal on repeat.
 - **No protein leads two months in a row.** Check the protein log in `PROJECT_STATE.md` before choosing, and add the month to it when the edition is done.
 - **Eggs and beans don't count.** They're kitchen staples that carry the lighter nights.
-- The non-cut proteins go on the basket card's "Other proteins" line, with quantities, so the shopping list stays closed.
+- **Every protein carries one line on why it pairs with the basket.** This is the lesson, not decoration — the reader should finish it thinking "huh, that's why." Name the principle, not just the match: *fat that bastes*, *sweet and sour against rich*, *something sharp against something mild*. Those principles transfer to next month's proteins; the specific pairings don't.
+- All proteins go in the basket card's "Proteins" block: amount, which meals and lunches it covers, and the pairing line. The month's cut links to its ingredient page.
+
+**Portions.** Quantities are written for one active cook with a big appetite, cooking dinner every night and eating leftovers for lunch most days. The basket card states this in its "feeds" line. Plan roughly 8 oz of raw protein per meal, and cook the sheet-pan and skillet proteins in batches big enough to leave lunches.
 
 ## The Month's Cut, Method, and Tool
 
