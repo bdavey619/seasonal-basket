@@ -273,29 +273,51 @@ def render_bring_home(bring_home, ingredients_data, featured, depth, ing_index_p
     featured = set(featured or [])
     base = ing_index_path.rstrip("/")
 
-    row_html = []
-    for item in bring_home.get("items", []):
+    def row(item, note, uses):
         slug = item.get("slug")
         if slug and featured and slug not in featured:
             fail(f"bring_home item '{item['name']}' has slug '{slug}', "
                  f"which is not in featured_ingredients")
-        uses = ingredients_data.get(slug, {}).get("tile_uses", "") if slug else ""
         uses_html = (f'<span class="bring-home-uses">{e(uses)}</span>' if uses else "")
         inner = (f"""
           <span class="bring-home-name">{e(item['name'])}</span>
           <span class="bring-home-qty">{e(item['qty'])}</span>
-          <span class="bring-home-note">{e(item['note'])}</span>
+          <span class="bring-home-note">{e(note)}</span>
           {uses_html}""")
         if slug:
             href = rel(depth, f"{base}/{slug}/")
-            row_html.append(f'<a class="bring-home-row" href="{href}">{inner}\n        </a>')
-        else:
-            # An item with no slug has no ingredient page to link to.
-            row_html.append(f'<div class="bring-home-row">{inner}\n        </div>')
-    rows = "".join(row_html)
+            return f'<a class="bring-home-row" href="{href}">{inner}\n        </a>'
+        # An item with no slug has no ingredient page to link to.
+        return f'<div class="bring-home-row">{inner}\n        </div>'
+
+    rows = "".join(
+        row(item, item['note'],
+            ingredients_data.get(item.get("slug"), {}).get("tile_uses", "") if item.get("slug") else "")
+        for item in bring_home.get("items", []))
+
+    # Proteins get their own rows: how much, which meals, and — in place of a
+    # shopping note — one line on why it pairs with this basket. That line is
+    # the lesson; the combinations are what readers wouldn't think of alone.
+    proteins = bring_home.get("proteins") or []
+    protein_html = ""
+    if proteins:
+        protein_rows = "".join(row(pr, pr["why"], pr.get("uses", "")) for pr in proteins)
+        protein_html = f"""
+<p class="bring-home-group">Proteins</p>
+<div class="bring-home-list">{protein_rows}</div>"""
+
+    feeds = bring_home.get("feeds")
+    feeds_html = f'<p class="bring-home-feeds">{e(feeds)}</p>' if feeds else ""
     cost = e(bring_home.get("cost_note", ""))
-    return f"""
-<div class="bring-home-list">{rows}</div>
+    # The rest of the shopping list, so nothing a meal calls for comes as a
+    # surprise: what else to buy this month, and what's assumed at home.
+    extra = "".join(
+        f'<p class="bring-home-extra"><span class="bring-home-extra-label">{e(label)}</span> {e(", ".join(items))}</p>'
+        for label, items in (("Also buy", bring_home.get("also_buy")),
+                             ("From your kitchen", bring_home.get("pantry")))
+        if items)
+    return f"""{feeds_html}
+<div class="bring-home-list">{rows}</div>{protein_html}{extra}
 {f'<p class="bring-home-cost">{cost}</p>' if cost else ""}"""
 
 # ── Confidence score ───────────────────────────────────────────────────────────
@@ -1053,6 +1075,9 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
 
     drink        = edition["drink"]
     weekend      = edition["weekend_meal"]
+    # Written unescaped by default so earlier editions render byte-for-byte as before.
+    edition_meals_dek = (e(edition["meals_dek"]) if edition.get("meals_dek")
+                         else "Keep what you already make. Add what's ripe.")
     basket_href      = rel(depth, ing_index_path)
     field_notes_href = rel(depth, f"{slug}/field-notes/")
     drink_href   = rel(depth, f"{slug}/{drink['slug']}/")
@@ -1082,8 +1107,8 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
 
       <article class="section col-12" id="meals" aria-labelledby="transforms-heading">
         <div class="section-label">The meals</div>
-        <h2 id="transforms-heading">Your usual meals, wearing {e(month)}.</h2>
-        <p class="section-dek">Keep what you already make. Add what's ripe.</p>
+        <h2 id="transforms-heading">{e(edition.get('meals_heading', f'Your usual meals, wearing {month}.'))}</h2>
+        <p class="section-dek">{edition_meals_dek}</p>
         <div class="transformations">
           {render_transformations(edition['meal_transformations'], meal_hrefs, meals_by_name)}
         </div>

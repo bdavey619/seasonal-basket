@@ -53,6 +53,10 @@ October is the current edition. July, August, and September remain published and
 
 **Design:** timeless, not trendy. No advertising. No infinite scroll. No trend language. The color palette changes by month, derived from the basket.
 
+## Who the Editions Feed
+
+One active cook with a big appetite, cooking dinner every night and eating leftovers for lunch most days. Quantities are written for that, at roughly 8 oz of raw protein per meal, and the basket card says so.
+
 ## User Staples
 
 - Sticky white rice
@@ -133,15 +137,30 @@ The House Flavor is a single jar (escabeche), not two. Salsa verde is taught as 
 
 ## October — What the Edition Teaches
 
-October follows September's blueprint with one section removed and one idea added. It is the first edition built on the cut / method / tool model in `EDITORIAL_PLAYBOOK.md`.
+October follows September's blueprint with three changes in how editions are built, all now in `EDITORIAL_PLAYBOOK.md`: one store and one closed shopping list; meal formats that change with the season; and the month's cut and method.
 
-October answers the question September left open — heat or storage — with storage. San Diego's October is a second summer, but the harvest moves inland: new-crop Medjool dates, new-crop sweet potatoes, pomegranates, and kabocha, which improves for weeks on the counter. Red bell peppers (the jar's base), arugula, and guavas are the fresh side.
+October answers the question September left open — heat or storage — with storage. San Diego's October is a second summer, but the harvest moves inland: Medjool dates, new-crop sweet potatoes, pomegranates, and kabocha, which improves for weeks on the counter. Red bell peppers (the jar's base) and arugula are the fresh side. Every basket item is available at one well-stocked supermarket; guavas and whole fish were cut because they weren't.
 
-**The cut** is whole rockfish: local, more reliable as the water cools, cheaper than salmon, and a fish most readers have never bought whole. **The method** is cooking on the bone at high heat, taught by the weekend meal (whole roasted rockfish with an arugula, pomegranate, and date salad) and named in the Field Note "Cook it on the bone." **No new tool** — nothing is naturally coming back into use in a warm October. Rockfish fillets replace salmon for one weekday meal ("Fish night").
+**The shopping list** is the basket plus "Also buy" (lemons, limes, corn tortillas, feta, hibiscus tea) and "From your kitchen" (rice, black beans, sourdough, Greek yogurt, eggs, butter, olive oil, garlic, red wine vinegar, sugar, chile flakes, salt). Nothing else is mentioned anywhere in the edition.
 
-The House Flavor is ajvar: red peppers and eggplant, charred (assumed from July and August) and cooked down into a relish that keeps. The drink is cold-steeped jamaica with pomegranate. One thing to notice is how to read a fresh fish. The local ritual is left out: the month's place-note wasn't about cooking, and the section is now optional in the build.
+**The meals** are five formats: sheet-pan dinner, warm plate, fish tacos, toast for dinner, and baked sweet potato. Rice bowl and pasta are retired for the month.
+
+**The cut** is rockfish fillets: local, more reliable as the water cools, cheaper than salmon. **The method** is the sear — dry fish, hot pan, hands off — taught by the weekend meal (seared rockfish with brown butter, roasted kabocha, and an arugula, pomegranate, and date salad) and named in the Field Note that points ahead to November's braise. **No new tool.**
+
+**The proteins** are three, one per kind of night, each with its pairing line on the basket card: rockfish, 2 lbs (the cut — weekend meal, fish tacos; *a mild fish needs something peppery and sharp*), chicken sausage, 2 lbs (sheet-pan dinner; *its fat bastes the vegetables*), and ground lamb, 1½ lbs (the warm plate; *rich meat wants sweet and sour*). Eggs carry toast for dinner; black beans carry the baked sweet potato.
+
+The House Flavor is ajvar, made from peppers alone. The drink is cold-steeped hibiscus with pomegranate. One thing to notice is how to read a fresh fillet. No local ritual.
 
 October is nut-free throughout, sesame included. Keep it that way where possible, and never make a nut the load-bearing ingredient of a jar or weekend meal.
+
+## Protein Log
+
+Which proteins each edition led with. No protein leads two months in a row; eggs and beans don't count.
+
+| Month | Proteins |
+|---|---|
+| July–September | Chicken thighs, ground beef or turkey, salmon — the staples, every month. The reason this log exists. |
+| October | Rockfish (the cut), chicken sausage, ground lamb |
 
 ## The Year's Cuts, Methods, and Tools (draft)
 
@@ -149,17 +168,17 @@ A working plan, not a commitment. Confirm each month against real San Diego weat
 
 | Month | Cut | Method | Tool | Why then |
 |---|---|---|---|---|
-| October | Whole rockfish | Cooking on the bone, high heat | — | Still warm; rockfish more reliable as the water cools |
+| October | Rockfish fillets | The sear | — | Still warm; rockfish more reliable as the water cools |
 | November | Bone-in, skin-on chicken thighs | Braising | Dutch oven | The first reliably cool evenings |
 | December | Pork shoulder | Slow roasting | Dutch oven or roasting pan | Coldest month; long oven time welcome |
 | January | Whole chicken | Roasting + pan sauce | Cast iron or roasting pan | Pairs with citrus season |
 | February | Spot prawns | Fast, in the shell | Cast iron | Local trap season reopens |
 
-Each month should build on the last: on-the-bone (October) → braise (November) → slow roast (December).
+Each month should build on the last: the sear (October) is the first step of the braise (November), which leads to the slow roast (December).
 
 ## Next Milestone
 
-Begin the November edition: bone-in chicken thighs, braising, and the Dutch oven, if the weather has actually turned. Persimmons and pomegranates peak; the first citrus arrives.
+Begin the November edition: bone-in chicken thighs, braising, and the Dutch oven, if the weather has actually turned. Pick two or three other proteins that don't repeat October's — check the protein log. Persimmons and pomegranates peak; the first citrus arrives.
 
 ## Development Handoff Goal
 

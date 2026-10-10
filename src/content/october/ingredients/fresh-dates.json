@@ -1,51 +1,48 @@
 {
   "slug": "fresh-dates",
-  "name": "New-crop dates",
+  "name": "Medjool dates",
   "month": "October",
-  "tile_uses": "Yogurt, the salad, a plate with cheese",
-  "why_now": "Nearly every Medjool in the country is grown in the desert two hours from here, in the Coachella and Bard valleys, and they're picked from late summer through October. The ones on shelves now are this year's — soft, glossy, and much better than the ones that have been sitting since last fall.",
+  "tile_uses": "The warm plate, the salad, breakfast",
+  "why_now": "Nearly every Medjool in the country is grown in the desert two hours from here, in the Coachella and Bard valleys, and they're picked from late summer through October. The ones arriving now are this year's — soft, glossy, and much better than the ones that have been sitting since last fall.",
   "how_to_choose": [
     "Plump and glossy, with skin that clings to the fruit",
     "Soft enough to dent with a thumb",
     "No crystallized sugar on the surface — that's age",
-    "A packed-on date printed on the box, if there is one",
-    "Yellow dates still on the branch are Barhi: crunchy and fresh, and only around for a few weeks"
+    "If they're sold in a clear container, squeeze it; it should give"
   ],
   "buy_this_much": "1 lb. They last for months in the fridge, so this is more about having them than using them up.",
-  "price_note": "Costco and Middle Eastern markets are often half the supermarket price for the same Medjools.",
+  "price_note": "Bulk bins are usually cheaper than the boxed ones, and you can see what you're getting.",
   "pairs_with_month": [
     "pomegranates",
     "arugula",
-    "kabocha-squash",
-    "guavas"
+    "kabocha-squash"
   ],
   "pairs_with_staples": [
     "Greek yogurt",
-    "sourdough",
-    "chicken thighs"
+    "sourdough"
   ],
   "flavor_paths": [
+    {
+      "name": "Torn into savory",
+      "description": "Over roasted squash or into the salad. Sweetness where you don't expect it."
+    },
     {
       "name": "With salt",
       "description": "Split, a few flakes of salt. Dessert."
     },
     {
-      "name": "With cheese",
-      "description": "A sharp cheese or queso fresco. Sweet against salty."
-    },
-    {
-      "name": "Torn into savory",
-      "description": "Into the arugula salad, or over roasted squash. Sweetness where you don't expect it."
+      "name": "With feta",
+      "description": "Sweet against salty, on a plate after dinner."
     }
   ],
   "weekday_uses": [
-    "Chopped over yogurt with pomegranate",
+    "Torn over the warm plate with lamb",
+    "Chopped over Greek yogurt with pomegranate",
     "Split and salted, after dinner",
-    "Torn into the arugula salad",
-    "With a sharp cheese and a slice of guava"
+    "With a little feta, as dessert"
   ],
-  "weekend_use": "Torn into the October salad, and a small plate of dates, guava, and queso fresco after the fish.",
+  "weekend_use": "Torn into the October salad, beside the seared fish.",
   "storage": "In the fridge in a closed container for up to six months, or the counter for a few weeks. Cold dates firm up; let them sit out before eating.",
   "one_thing_to_learn": "A date is a fresh fruit that happens to dry well, not a dried fruit. Growers let them cure on the palm in the desert heat, which is why they're soft and sticky rather than leathery. Once you've eaten a new-crop Medjool, you'll notice the difference in the ones that aren't.",
-  "market_question": "Are these this year's?"
+  "market_question": "When did these come in?"
 }

@@ -2,29 +2,29 @@
   "slug": "arugula",
   "name": "Arugula",
   "month": "October",
-  "tile_uses": "The salad, pasta, rice bowls, on top of anything",
+  "tile_uses": "The warm plate, tacos, toast, the salad",
   "why_now": "Arugula is a cool-weather green. In summer heat it bolts and turns harsh; planted in September, it's ready in October with a gentler, peppery bite. It's the first green in months that tastes like it wanted to grow.",
   "how_to_choose": [
-    "Bunches with small leaves are milder than big, deeply lobed ones",
+    "Small leaves are milder than big, deeply lobed ones",
     "Perky leaves with no yellowing",
-    "No wet or slimy leaves at the bottom of the bag",
-    "Bunched arugula from a market usually tastes more of itself than the washed clamshells"
+    "No wet or slimy leaves at the bottom of the bag or bunch",
+    "Bunches usually taste more of themselves than washed clamshells"
   ],
-  "buy_this_much": "2 bunches, or one big bag. Buy it twice a week if you can — it doesn't keep like the rest of this basket.",
-  "price_note": "Farmers market bunches are often cheaper per ounce than clamshells, and taste better.",
+  "buy_this_much": "2 bunches, or one big bag. It doesn't keep like the rest of the basket — use it first.",
+  "price_note": "Bunches are often cheaper per ounce than clamshells.",
   "pairs_with_month": [
     "pomegranates",
     "kabocha-squash",
     "sweet-potatoes",
     "red-bell-peppers",
-    "whole-rockfish"
+    "fresh-dates",
+    "rockfish"
   ],
   "pairs_with_staples": [
-    "pasta",
-    "sticky white rice",
-    "beans",
+    "rice",
     "eggs",
-    "salmon"
+    "sourdough",
+    "black beans"
   ],
   "flavor_paths": [
     {
@@ -32,22 +32,22 @@
       "description": "Olive oil, lemon, salt, right before eating. The default."
     },
     {
-      "name": "Wilted",
-      "description": "Tossed into hot pasta off the heat. It collapses in seconds."
+      "name": "As a topping",
+      "description": "A handful on anything warm, undressed. It wilts just enough."
     },
     {
-      "name": "As a topping",
-      "description": "A handful on anything warm, undressed."
+      "name": "In the salad",
+      "description": "With pomegranate, dates, and feta. The weekend."
     }
   ],
   "weekday_uses": [
-    "Wilted into pasta with lemon and parmesan",
-    "A handful over rice bowls",
-    "On beans with ajvar",
-    "On top of a fried egg on toast"
+    "On the warm plate over roasted squash and rice",
+    "In fish tacos in place of lettuce",
+    "On top of toast with ajvar and an egg",
+    "Beside a baked sweet potato, dressed with lemon"
   ],
-  "weekend_use": "The base of the October salad: arugula, pomegranate, and torn dates, dressed at the last second.",
+  "weekend_use": "The base of the October salad: arugula, pomegranate, torn dates, and feta, dressed at the last second.",
   "storage": "Unwashed, wrapped in a dry paper towel inside a bag, in the crisper. Three or four days. Wash it right before using.",
   "one_thing_to_learn": "Dress greens at the last possible moment. Salt pulls water out of leaves, and oil weighs them down, so a salad dressed ten minutes early is a wilted salad. Put everything in the bowl, carry it to the table, and toss it there.",
-  "market_question": "When was this cut?"
+  "market_question": "When did this come in?"
 }

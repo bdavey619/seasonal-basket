@@ -1,0 +1,50 @@
+{
+  "slug": "rockfish",
+  "name": "Rockfish fillets",
+  "month": "October",
+  "tile_uses": "The weekend meal, midweek fish tacos",
+  "why_now": "Rockfish is the local fish that gets more reliable as the water cools in fall: dozens of species, all mild and firm, and usually cheaper than salmon. It's sold at most fish counters in Southern California, sometimes as rock cod or Pacific snapper. This is the month to buy it instead of the usual.",
+  "how_to_choose": [
+    "Glossy and slightly translucent, not dull or dry",
+    "No gaps opening between the layers of flesh",
+    "Firm enough to spring back when pressed",
+    "It should smell like the ocean, not like fish",
+    "Thicker fillets sear better than thin tail pieces"
+  ],
+  "buy_this_much": "1 lb at a time, twice a week: once for the weekend, once for midweek tacos. A pound is a big dinner and the next day's lunch. Fish is best within a day of buying.",
+  "price_note": "Usually well below salmon per pound. If the counter is out, any firm white fillet — cod, halibut — works in every meal here.",
+  "pairs_with_month": [
+    "arugula",
+    "pomegranates",
+    "red-bell-peppers",
+    "kabocha-squash"
+  ],
+  "pairs_with_staples": [
+    "rice",
+    "black beans",
+    "Greek yogurt"
+  ],
+  "flavor_paths": [
+    {
+      "name": "Seared",
+      "description": "Hot pan, hands off, brown butter. The weekend meal."
+    },
+    {
+      "name": "Flaked",
+      "description": "Into tacos with arugula, pomegranate, and lime."
+    },
+    {
+      "name": "Over rice",
+      "description": "Seared, with arugula and lemon. A five-minute dinner."
+    }
+  ],
+  "weekday_uses": [
+    "Seared and flaked into fish tacos",
+    "Seared over rice with arugula and lemon",
+    "Leftovers, cold, on toast with lemon and olive oil"
+  ],
+  "weekend_use": "Seared hard and finished in brown butter, over roasted kabocha. The weekend meal.",
+  "storage": "Cook it the day you buy it, or the next. Keep it in the coldest part of the fridge, on a plate, loosely covered.",
+  "one_thing_to_learn": "Rockfish cooks fast and forgives little, so it's the right fish to learn the sear on. It's done when the flesh turns opaque all the way through and flakes when you press it with a fork — usually three or four minutes on the first side and one or two on the second. When in doubt, take it off; it keeps cooking on the plate.",
+  "market_question": "What came in today?"
+}

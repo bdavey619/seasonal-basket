@@ -62,6 +62,34 @@ Each edition is organized around the four pillars. These are editorial scaffoldi
 6. Drink + Local ritual
 7. Weekend meal + One thing to notice
 
+## One Store, One List
+
+Two rules for every edition, from October on:
+
+- **Everything in the basket comes from one store.** A normal, well-stocked supermarket is the reference (Whole Foods, in practice). If an ingredient is only reliable at a specialty market, it doesn't go in the basket — save it for a month that is deliberately about that store. When a fish or cut may be out, name the substitute that works in every meal.
+- **The shopping list is closed.** Every ingredient the edition mentions — in meals, the jar, the drink, the weekend meal, the ingredient pages — is either in the basket, on the "Also buy" line, or on the "From your kitchen" line, all shown in the basket card. No optional extras that aren't on a list (no "a splash of mezcal," no "if you have cotija"). Pick one cheese, one citrus, one tortilla, and use them everywhere. Before publishing, read every page against those three lines.
+
+## Meal Formats Change With the Season
+
+The repeatable meals are formats, not fixed dishes: a shape with slots (one vegetable, one protein, one pan, a hot oven, the jar after). Each month chooses three to five formats that suit its weather and basket, and each format gets made more than once within the month. A familiar format can carry over when it still fits; none is permanent. Rice bowl, pasta, and tacos were July's through September's — October replaced them with a sheet-pan dinner, a warm plate, fish tacos, toast for dinner, and a baked sweet potato.
+
+Formats accumulate like techniques. After a year, the reader should have a dozen meal shapes they cook without looking anything up.
+
+"Keep the meal. Change the season." still holds for the staples. Read it as: keep it simple, and let the season change the shape of the meal as well as what's in it.
+
+## Three or Four Proteins, Rotating
+
+Readers buy three or four proteins a week, so every edition names three or four, and every meal format is written around a specific one — never "protein of choice."
+
+- **One is the month's cut**, the new one the weekend meal teaches. It also returns in one weekday meal.
+- **The rest suit that month's formats**, chosen across categories (fish, poultry, red meat, pork) so the week isn't one animal on repeat.
+- **No protein leads two months in a row.** Check the protein log in `PROJECT_STATE.md` before choosing, and add the month to it when the edition is done.
+- **Eggs and beans don't count.** They're kitchen staples that carry the lighter nights.
+- **Every protein carries one line on why it pairs with the basket.** This is the lesson, not decoration — the reader should finish it thinking "huh, that's why." Name the principle, not just the match: *fat that bastes*, *sweet and sour against rich*, *something sharp against something mild*. Those principles transfer to next month's proteins; the specific pairings don't.
+- All proteins go in the basket card's "Proteins" block: amount, which meals and lunches it covers, and the pairing line. The month's cut links to its ingredient page.
+
+**Portions.** Quantities are written for one active cook with a big appetite, cooking dinner every night and eating leftovers for lunch most days. The basket card states this in its "feeds" line. Plan roughly 8 oz of raw protein per meal, and cook the sheet-pan and skillet proteins in batches big enough to leave lunches.
+
 ## The Month's Cut, Method, and Tool
 
 Produce isn't the only thing that's seasonal. How people cook changes through the year too: summer is raw, grilled, and fast; cooler months bring back bone-in cuts, long cooking, and the heavy pot. Every edition answers three questions — what's ripe, what it's cooked with, and how it's cooked — but only the first gets the page's full weight. The other two ride on sections that already exist:

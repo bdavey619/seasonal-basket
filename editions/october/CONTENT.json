@@ -5,7 +5,7 @@
   "edition_number": 4,
   "status": "published",
   "base_url": "https://bdavey.co/seasonal-basket",
-  "opening_note": "October is San Diego's second summer. Some years the hottest week lands now, when the wind blows in from the desert. But the harvest has moved inland — new dates, new sweet potatoes, heavy pomegranates, the last sweet peppers — and as the water cools, the local rockfish comes in. This is the month to buy a fish whole.",
+  "opening_note": "October is San Diego's second summer. Some years the hottest week lands now, when the wind blows in from the desert. But the harvest has moved inland — new dates, new sweet potatoes, heavy pomegranates, the last sweet peppers — and as the water cools, the local rockfish comes in. Everything below comes from one store, and it all keeps you cooking through the week.",
   "thesis": "Keep the meal. Change the season.",
   "palette": {
     "background": "#e9e3d6",
@@ -26,12 +26,10 @@
     "arugula",
     "pomegranates",
     "fresh-dates",
-    "guavas",
-    "whole-rockfish"
+    "rockfish"
   ],
   "bring_home": {
     "heading": "This is what I'd bring home.",
-    "cost_note": "Around $35–45 for the produce and $20–30 for the fish. Pantry basics are separate. The ajvar also wants one eggplant.",
     "items": [
       {
         "slug": "kabocha-squash",
@@ -48,7 +46,7 @@
       {
         "slug": "sweet-potatoes",
         "name": "Sweet potatoes",
-        "qty": "2 lbs",
+        "qty": "4 medium",
         "note": "New crop. Dinner, when the week gets away from you."
       },
       {
@@ -65,23 +63,55 @@
       },
       {
         "slug": "fresh-dates",
-        "name": "New-crop dates",
+        "name": "Medjool dates",
         "qty": "1 lb",
-        "note": "Soft enough to dent. Last year's never are."
-      },
-      {
-        "slug": "guavas",
-        "name": "Guavas",
-        "qty": "5–6",
-        "note": "Smell them before you see them. Buy the fragrant ones."
-      },
-      {
-        "slug": "whole-rockfish",
-        "name": "Whole rockfish",
-        "qty": "1, 2–3 lbs",
-        "note": "The month's new cut. Ask them to scale and gut it."
+        "note": "Soft enough to dent. Those are the new ones."
       }
-    ]
+    ],
+    "also_buy": [
+      "2 lemons",
+      "2 limes",
+      "corn tortillas",
+      "a block of feta",
+      "hibiscus tea"
+    ],
+    "pantry": [
+      "rice",
+      "black beans",
+      "sourdough",
+      "Greek yogurt",
+      "eggs",
+      "butter",
+      "olive oil",
+      "garlic",
+      "red wine vinegar",
+      "sugar",
+      "chile flakes",
+      "salt"
+    ],
+    "cost_note": "Around $30–40 for the produce and $55–70 for the proteins, all from one well-stocked supermarket. Everything in this edition is on these lines — nothing else to buy.",
+    "proteins": [
+      {
+        "slug": "rockfish",
+        "name": "Rockfish fillets",
+        "qty": "2 lbs, in two trips",
+        "why": "A mild fish needs something peppery and something sharp — arugula and pomegranate — or it tastes of nothing.",
+        "uses": "Weekend meal, fish tacos, two lunches"
+      },
+      {
+        "name": "Chicken sausage",
+        "qty": "2 lbs",
+        "why": "Its fat runs out onto the hot pan and bastes the squash and peppers as they roast. The pan seasons itself.",
+        "uses": "Sheet-pan dinner, three lunches"
+      },
+      {
+        "name": "Ground lamb",
+        "qty": "1½ lbs",
+        "why": "Rich, slightly gamey meat wants sweet and sour against it — dates and pomegranate. Same logic as pork with apples.",
+        "uses": "The warm plate, twice, and a lunch"
+      }
+    ],
+    "feeds": "Feeds one big appetite for a week: every dinner, and lunch from the leftovers most days."
   },
   "staples": [
     "Sticky white rice",
@@ -106,12 +136,12 @@
     {
       "slug": "fresh-dates",
       "name": "A new date isn't dried fruit.",
-      "body": "Most dates in the store were picked last fall and have been sitting since. The ones picked this fall are softer, glossier, and taste like caramel instead of candy — squeeze the box and they give. If you ever see yellow dates still on the branch, those are Barhis, eaten crunchy and fresh for a few weeks and nowhere else. Buy a branch."
+      "body": "Most dates sit in storage for months. This fall's are softer, glossier, and taste like caramel instead of candy — squeeze the container and they give. If they're firm, dry, or have sugar crystals on the skin, they're last year's. The fresh ones are worth looking for in the bin you already shop."
     },
     {
       "slug": "october-peppers",
       "name": "October is when peppers go in jars.",
-      "body": "Across the Balkans, autumn is ajvar season: red peppers are at their cheapest, and whole families roast them by the crate and cook them down into a relish that lasts the winter. You don't need a crate. Four peppers and one eggplant make a jar. It's the same impulse behind everything in this basket — buy it while it's here, and make it keep."
+      "body": "Across the Balkans, autumn is ajvar season: red peppers are at their cheapest, and families roast them by the crate and cook them down into a relish that lasts into winter. You don't need a crate. Four peppers make a jar. It's the same impulse behind everything in this basket — buy it while it's here, and make it keep."
     },
     {
       "slug": "kabocha-cutting",
@@ -119,54 +149,56 @@
       "body": "A kabocha is dense enough to be dangerous with a knife. Put it whole in a 400°F oven for ten minutes, or the microwave for three, and the skin softens enough to cut through safely. Don't peel it. Roasted, the skin goes tender and you eat all of it."
     },
     {
-      "slug": "on-the-bone",
-      "name": "Cook it on the bone.",
-      "body": "Fish and meat cooked on the bone are harder to overcook. The bone slows the heat, the skin holds in moisture, and the flesh next to the bone stays juicy. That's why a whole fish at 450°F is more forgiving than a fillet in a pan. Learn it on a fish this month; it's the same idea in a pot of bone-in chicken thighs once the evenings actually cool."
+      "slug": "dry-hot-hands-off",
+      "name": "Dry fish, hot pan, hands off.",
+      "body": "Fish sticks when it's wet or when you move it too soon. Pat it dry, salt it, heat the pan until the oil shimmers, lay the fillet down away from you, and leave it alone for three minutes. When it's ready, it lets go of the pan on its own. That's also the first step of every braise — you'll use it on bone-in chicken thighs once the evenings cool."
     }
   ],
   "meal_transformations": [
     {
-      "meal": "Rice bowl",
-      "change": "Roasted kabocha, a spoonful of ajvar, arugula, pomegranate.",
-      "result": "The jar does the work."
+      "meal": "Sheet-pan dinner",
+      "change": "Chicken sausage, kabocha, and red peppers on one pan. Ajvar after.",
+      "result": "One pan, thirty minutes."
     },
     {
-      "meal": "Pasta",
-      "change": "Arugula wilted in at the end, lemon, parmesan, chile flakes.",
-      "result": "Green again."
+      "meal": "Warm plate",
+      "change": "Ground lamb with garlic and chile, over rice with roasted squash, yogurt, pomegranate, dates.",
+      "result": "Hot and cold, rich and sharp."
     },
     {
-      "meal": "Tacos",
-      "change": "Roasted sweet potato, black beans, pomegranate, cotija, lime.",
-      "result": "Sweet, sharp, salty."
+      "meal": "Fish tacos",
+      "change": "Seared rockfish, arugula, pomegranate, salted yogurt, lime.",
+      "result": "San Diego's taco, October's way."
     },
     {
-      "meal": "Beans",
-      "change": "Ajvar stirred in. A baked sweet potato alongside.",
-      "result": "A whole dinner, no meat, no effort."
+      "meal": "Toast for dinner",
+      "change": "Sourdough, ajvar, a fried egg, arugula.",
+      "result": "Five minutes. It still counts."
     },
     {
-      "meal": "Fish night",
-      "change": "Rockfish fillets instead of salmon. Pan-seared, ajvar, arugula.",
-      "result": "Same night, different fish."
+      "meal": "Baked sweet potato",
+      "change": "Split open. Salted yogurt, black beans, ajvar.",
+      "result": "The potato is the whole dinner."
     }
   ],
   "weekend_meal": {
-    "name": "Whole roasted rockfish, and the October salad.",
-    "intro": "One meal should feel like the reason you went shopping. In October, it's the fish most people never buy: a whole local rockfish, roasted on the bone, with a salad that only works this month.",
-    "card_line": "Whole rockfish, arugula, pomegranate, dates, ajvar",
+    "name": "Seared rockfish, brown butter, and the October salad.",
+    "intro": "One meal should feel like the reason you went shopping. In October, it's a fish most people walk past, seared hard in a hot pan and finished in brown butter — the one cooking lesson this month is built around.",
+    "card_line": "Rockfish, roasted kabocha, brown butter, arugula, pomegranate, dates",
     "ingredients": [
-      "1 whole rockfish, 2–3 lbs, scaled and gutted",
-      "1 lemon, sliced thin, plus another for the salad",
-      "Olive oil and kosher salt",
-      "4 big handfuls of arugula",
+      "1 lb rockfish fillets",
+      "Half a kabocha squash, cut into wedges",
+      "3 tbsp butter",
+      "1 lemon",
+      "Olive oil and salt",
+      "4 handfuls of arugula",
       "Seeds of half a pomegranate",
-      "4 new-crop dates, pitted and torn",
-      "A wedge of parmesan, for shaving",
-      "Ajvar and good bread, for the table"
+      "4 Medjool dates, pitted and torn",
+      "A little feta, crumbled",
+      "Ajvar, for the table"
     ],
-    "ingredient_note": "No whole fish at your counter? Two pounds of rockfish fillets work too — roast them for ten to twelve minutes instead.",
-    "method": "Heat the oven to 450°F. Pat the fish dry inside and out and cut three shallow slashes on each side, down to the bone. Rub it all over with olive oil, salt it well, inside and out, and tuck the lemon slices into the cavity. Roast on a sheet pan for 20 to 25 minutes, until the flesh at the thickest part is opaque and pulls easily from the bone. While it roasts, put the arugula, pomegranate, and dates in a wide bowl, but don't dress them. At the table, add olive oil, a squeeze of lemon, and salt, toss, and shave parmesan over the top. Bring the fish out whole. Lift the top fillet off with a spoon, pull out the spine, and serve the bottom fillet. Ajvar and bread on the side."
+    "ingredient_note": "Everything here is on the shopping list. A pound of fish is dinner tonight and lunch tomorrow. If the counter is out of rockfish, any firm white fillet works the same way.",
+    "method": "Heat the oven to 425°F. Toss the kabocha wedges with olive oil and salt and roast for 30 to 35 minutes, until the edges are dark and a knife slides through. Meanwhile, salt the fish and leave it on a plate for fifteen minutes, then pat it completely dry. Heat a heavy skillet over medium-high with a thin film of oil until it shimmers. Lay the fillets in, away from you, and don't touch them for three or four minutes, until the edges turn opaque and the fish releases from the pan on its own. Flip, add the butter, and tilt the pan, spooning the foaming butter over the fish for a minute or two until it smells nutty and turns golden brown. Squeeze in half the lemon. Put the arugula, pomegranate, dates, and feta in a bowl and dress it at the table with olive oil, the rest of the lemon, and salt. Serve the fish over the kabocha with the brown butter spooned on top, the salad beside it, and ajvar on the table."
   },
   "drink": {
     "slug": "barrio-logan-jamaica",
@@ -174,44 +206,46 @@
     "intro": "One drink. It's still hot, and the pomegranates just came in.",
     "card_line": "Hibiscus, pomegranate, lime, ice",
     "keep": [
-      "Dried hibiscus flowers (flor de jamaica)",
       "Sugar",
       "Cold water",
       "Ice"
     ],
     "season_adds": [
-      "1 pomegranate, seeded",
+      "8 hibiscus tea bags",
+      "1 pomegranate",
       "1 lime"
     ],
-    "method": "Cover a cup of dried hibiscus with four cups of cold water and leave it in the fridge overnight — cold-steeped, it comes out bright rather than bitter. Strain. Press the seeds from one pomegranate through a strainer and stir the juice in, with sugar to taste; start with a quarter cup and stop when it's tart-sweet, not sweet. Pour over ice with a squeeze of lime and a spoonful of whole seeds. The pitcher keeps four days.",
+    "method": "Put the tea bags in four cups of cold water and leave them in the fridge overnight — cold-steeped, hibiscus comes out bright rather than bitter. Take out the bags. Press the seeds from one pomegranate through a strainer and stir the juice in, with sugar to taste; start with a quarter cup and stop when it's tart-sweet, not sweet. Pour over ice with a squeeze of lime and a spoonful of whole seeds. The pitcher keeps four days.",
     "try_another_way": [
       {
-        "change": "Top with sparkling water",
-        "context": "If you want it lighter and longer."
+        "change": "Half jamaica, half cold water",
+        "context": "Lighter, for the hottest afternoons."
       },
       {
-        "change": "A thin slice of guava in the glass",
-        "context": "Late in the month, when the guavas are soft."
+        "change": "Lemon instead of lime",
+        "context": "Softer and a little rounder."
       },
       {
-        "change": "A splash of mezcal or tequila",
-        "context": "If it's Friday."
+        "change": "Freeze some into ice cubes",
+        "context": "So the last glass isn't watered down."
       },
       {
-        "change": "Tajín on the rim",
-        "context": "If you want it to taste like the corner stand."
+        "change": "Less sugar, more seeds",
+        "context": "If you want it closer to tart."
       }
     ]
   },
   "one_thing_to_notice": {
-    "headline": "A fresh fish looks back at you.",
-    "body": "At the counter, look at the eyes before anything else. Clear, bright, and slightly bulging means it came in recently; cloudy and sunken means it didn't. Then ask to see under the gill flap: bright red is fresh, brown is not. It takes five seconds and tells you more than any label."
+    "headline": "A fresh fillet is glossy.",
+    "body": "At the fish counter, look before you ask. Fresh fish is glossy and slightly translucent, with no gaps opening between the layers of flesh. Dull, dry, or separating means it's been sitting. Ask to smell it; it should smell like the ocean and nothing else. It takes five seconds and tells you more than any label."
   },
   "market_question": "What will this keep until?",
   "next_edition": {
     "month": "November",
     "status": "Arriving November 1."
   },
+  "meals_heading": "Five meals for October.",
+  "meals_dek": "Simple shapes, each one made more than once, each with its own protein. All of them come out of the basket.",
   "guides": [
     {
       "id": "jerome",
@@ -227,8 +261,7 @@
         "arugula",
         "pomegranates",
         "fresh-dates",
-        "guavas",
-        "whole-rockfish"
+        "rockfish"
       ],
       "quotes": {
         "kabocha-squash": "Ugliest thing on the table. Sweetest thing on the table.",
@@ -236,10 +269,9 @@
         "fresh-dates": "People think dates are a winter thing because that's when they notice them. This is when they're good.",
         "arugula": "Summer arugula bites you. This one's just saying hello.",
         "edition": "October is the first month you can buy things that wait for you.",
-        "guavas": "Follow your nose. The good ones announce themselves.",
         "red-bell-peppers": "Last good week for these. Buy for the jar, not just for dinner.",
         "sweet-potatoes": "Nobody gets excited about a sweet potato. That's why they're a good deal.",
-        "whole-rockfish": "People walk right past the whole fish to buy the salmon. Best deal in the case."
+        "rockfish": "People walk right past the rockfish to buy the salmon. Best deal in the case."
       }
     }
   ],
@@ -248,7 +280,7 @@
       "slug": "kabocha-squash",
       "name": "Kabocha squash",
       "month": "October",
-      "tile_uses": "Rice bowls, tacos, roasted beside anything",
+      "tile_uses": "Sheet-pan dinner, the warm plate, the weekend",
       "why_now": "Kabocha is the squash that comes after the thin-skinned early ones — dense, dry, and sweeter than butternut. It's picked now and actually improves after a few weeks on the counter, which makes it the first thing in the year you can buy in October and cook in November.",
       "how_to_choose": [
         "Dark green, dull rather than shiny — shine means it was picked early",
@@ -257,20 +289,19 @@
         "A pale orange patch on one side is fine; that's where it sat on the ground",
         "No soft spots anywhere"
       ],
-      "buy_this_much": "1 large, about 3 lbs. That's two trays of roasted wedges — most of a week of bowls and tacos.",
-      "price_note": "Usually sold by the pound. Cheaper at Asian and Mexican markets than at most supermarkets.",
+      "buy_this_much": "1 large, about 3 lbs. Half goes to the weekend, half to the week.",
+      "price_note": "Sold by the pound. Usually the cheapest squash per serving in the store, because almost none of it is water.",
       "pairs_with_month": [
         "pomegranates",
         "arugula",
         "red-bell-peppers",
-        "fresh-dates"
+        "fresh-dates",
+        "rockfish"
       ],
       "pairs_with_staples": [
-        "sticky white rice",
-        "beans",
+        "rice",
         "Greek yogurt",
-        "chicken thighs",
-        "salmon"
+        "black beans"
       ],
       "flavor_paths": [
         {
@@ -287,22 +318,22 @@
         }
       ],
       "weekday_uses": [
-        "Roasted wedges over rice with ajvar",
-        "Cubed in tacos with black beans and cotija",
-        "Next to salmon on the same sheet pan",
-        "Cold, straight from the fridge, with salt"
+        "On the sheet pan with chicken sausage and peppers",
+        "On the warm plate with ground lamb and yogurt",
+        "Cold from the fridge, with salt and a squeeze of lemon",
+        "With salted yogurt and pomegranate"
       ],
-      "weekend_use": "A tray of dark-roasted wedges on the table beside the whole fish, for anyone who wants something warm next to the salad.",
+      "weekend_use": "Roasted in wedges, under the seared rockfish and brown butter.",
       "storage": "Whole, somewhere cool and dry for up to two months — it gets sweeter over the first few weeks. Once cut, wrap it and refrigerate; use within five days.",
-      "one_thing_to_learn": "Kabocha is drier than other squash, which is why it roasts so well: there's less water to steam off before the sugars can brown. That's also why it can taste chalky if undercooked. Roast it until a knife slides in with no resistance at all, then give it five more minutes.",
-      "market_question": "How long ago was this picked?"
+      "one_thing_to_learn": "Kabocha is drier than other squash, which is why it roasts so well: there's less water to steam off before the sugars can brown. It's also why it can taste chalky if undercooked. Roast it until a knife slides in with no resistance at all, then give it five more minutes.",
+      "market_question": "Do you have one that's been sitting a few weeks?"
     },
     "red-bell-peppers": {
       "slug": "red-bell-peppers",
       "name": "Red bell peppers",
       "month": "October",
-      "tile_uses": "The ajvar, eggs, rice bowls, raw with salt",
-      "why_now": "A red pepper is a green pepper that was left on the plant long enough to ripen, and by the end of the season that's most of what's left. Early fall is when California's red peppers are sweetest and often cheapest. By November they'll be shipped from farther away and priced like it.",
+      "tile_uses": "The ajvar, the sheet pan, raw with salt",
+      "why_now": "A red pepper is a green pepper left on the plant long enough to ripen, and by the end of the season that's most of what's left. Early fall is when California's red peppers are sweetest and often cheapest. By November they'll be shipped from farther away and priced like it.",
       "how_to_choose": [
         "Glossy, firm, and heavy for their size",
         "Deep, even red, with no green shoulders",
@@ -310,20 +341,18 @@
         "A green, fresh-looking stem",
         "Blocky, four-lobed peppers char more evenly than twisted ones"
       ],
-      "buy_this_much": "6. Four for the jar, two for the week.",
-      "price_note": "Loose peppers by the pound are almost always cheaper than the packaged three-color bags.",
+      "buy_this_much": "6. Four for the jar, two for the sheet pan.",
+      "price_note": "Loose peppers by the pound are almost always cheaper than the packaged bags.",
       "pairs_with_month": [
         "kabocha-squash",
         "sweet-potatoes",
         "arugula",
-        "whole-rockfish"
+        "rockfish"
       ],
       "pairs_with_staples": [
         "eggs",
-        "chicken thighs",
-        "ground beef or turkey",
-        "beans",
-        "sticky white rice"
+        "black beans",
+        "rice"
       ],
       "flavor_paths": [
         {
@@ -331,30 +360,30 @@
           "description": "Into the ajvar. The reason to buy six."
         },
         {
-          "name": "Raw",
-          "description": "Sliced thick, with salt. As sweet as any fruit in the basket."
+          "name": "Roasted in strips",
+          "description": "On the sheet pan, until the edges blacken."
         },
         {
-          "name": "Softened in oil",
-          "description": "Strips cooked slowly with garlic until they slump. Into eggs, onto bowls."
+          "name": "Raw",
+          "description": "Sliced thick, with salt. As sweet as any fruit in the basket."
         }
       ],
       "weekday_uses": [
         "Charred and cooked down into the ajvar",
-        "Strips softened in olive oil, folded into scrambled eggs",
-        "Sliced raw into a rice bowl for crunch",
-        "Softened with garlic under chicken thighs"
+        "In strips on the sheet pan with sausage and squash",
+        "Sliced raw, with salt, while dinner cooks",
+        "Softened in olive oil and folded into scrambled eggs"
       ],
       "weekend_use": "Charred on Saturday, cooked down into a jar of ajvar that carries the week.",
-      "storage": "Unwashed in the crisper for a week to ten days. Charred and peeled, four days in the fridge, or freeze the strips flat.",
+      "storage": "Unwashed in the crisper for a week to ten days. Charred and peeled, four days in the fridge.",
       "one_thing_to_learn": "Green, yellow, and red bell peppers are mostly the same plant at different stages. Red ones have spent the longest ripening, which is why they're sweetest and cost more most of the year. The end of the season is when that extra time is cheap.",
-      "market_question": "Are these the last of the local ones?"
+      "market_question": "Are these the last of the California ones?"
     },
     "sweet-potatoes": {
       "slug": "sweet-potatoes",
       "name": "Sweet potatoes",
       "month": "October",
-      "tile_uses": "Tacos, rice bowls, a weeknight dinner on their own",
+      "tile_uses": "Baked as dinner, on the sheet pan",
       "why_now": "California's sweet potatoes are dug in September and October, most of them in the Central Valley around Merced, then stored through the winter. The new crop is on shelves now. It's the basket's filling one: a starch that keeps for weeks and makes a dinner on its own.",
       "how_to_choose": [
         "Firm from end to end, with no soft or wet tips",
@@ -362,8 +391,8 @@
         "Medium and evenly shaped, so they cook at one speed",
         "Orange-fleshed (garnet or jewel) for roasting"
       ],
-      "buy_this_much": "2 lbs, about four medium. They keep, so they're the dinner you make when the week gets away from you.",
-      "price_note": "Cheap now, and cheaper still by the loose pound than in bags.",
+      "buy_this_much": "4 medium. Two baked dinners for two, or one dinner and a sheet pan.",
+      "price_note": "Cheap now, and cheaper loose by the pound than in bags.",
       "pairs_with_month": [
         "red-bell-peppers",
         "pomegranates",
@@ -373,17 +402,16 @@
       "pairs_with_staples": [
         "black beans",
         "Greek yogurt",
-        "ground beef or turkey",
         "eggs"
       ],
       "flavor_paths": [
         {
-          "name": "Roasted in cubes",
-          "description": "Small, oiled, 425°F until the edges char. For tacos and bowls."
+          "name": "Baked whole",
+          "description": "An hour at 400°F until the skin puffs. Split, filled, done."
         },
         {
-          "name": "Baked whole",
-          "description": "Split open, salted yogurt, ajvar. A whole dinner in one potato."
+          "name": "Roasted in cubes",
+          "description": "On the sheet pan in place of the kabocha."
         },
         {
           "name": "With something sharp",
@@ -391,43 +419,43 @@
         }
       ],
       "weekday_uses": [
-        "Roasted cubes in tacos with black beans and cotija",
-        "Baked whole, split, with yogurt and a spoonful of ajvar",
-        "In a rice bowl, in place of the kabocha",
-        "Roasted cubes under a fried egg"
+        "Baked whole, split, with salted yogurt, black beans, and ajvar",
+        "Cubed on the sheet pan with sausage instead of kabocha",
+        "Under a fried egg, with arugula",
+        "Leftover, cold, with a squeeze of lime"
       ],
-      "weekend_use": "A tray of roasted cubes beside the fish, for anyone who wants something warm and filling.",
+      "weekend_use": "Bake two extra while the oven's on for the weekend meal. They're Monday's dinner.",
       "storage": "Somewhere cool and dark, not the fridge — cold makes the centers hard and off-tasting. They keep three weeks or more.",
-      "one_thing_to_learn": "A baked sweet potato is done well after it's merely soft. Keep going — an hour at 400°F — until the skin puffs away from the flesh and syrup starts to bead out and caramelize on the pan. That's the starch turning to sugar, and it's the difference between a vegetable and a meal.",
+      "one_thing_to_learn": "A baked sweet potato is done well after it's merely soft. Keep going — an hour at 400°F — until the skin puffs away from the flesh and syrup starts to bead out and caramelize on the pan. That's the starch turning to sugar, and it's the difference between a side and a meal.",
       "market_question": "Is this the new crop?"
     },
     "arugula": {
       "slug": "arugula",
       "name": "Arugula",
       "month": "October",
-      "tile_uses": "The salad, pasta, rice bowls, on top of anything",
+      "tile_uses": "The warm plate, tacos, toast, the salad",
       "why_now": "Arugula is a cool-weather green. In summer heat it bolts and turns harsh; planted in September, it's ready in October with a gentler, peppery bite. It's the first green in months that tastes like it wanted to grow.",
       "how_to_choose": [
-        "Bunches with small leaves are milder than big, deeply lobed ones",
+        "Small leaves are milder than big, deeply lobed ones",
         "Perky leaves with no yellowing",
-        "No wet or slimy leaves at the bottom of the bag",
-        "Bunched arugula from a market usually tastes more of itself than the washed clamshells"
+        "No wet or slimy leaves at the bottom of the bag or bunch",
+        "Bunches usually taste more of themselves than washed clamshells"
       ],
-      "buy_this_much": "2 bunches, or one big bag. Buy it twice a week if you can — it doesn't keep like the rest of this basket.",
-      "price_note": "Farmers market bunches are often cheaper per ounce than clamshells, and taste better.",
+      "buy_this_much": "2 bunches, or one big bag. It doesn't keep like the rest of the basket — use it first.",
+      "price_note": "Bunches are often cheaper per ounce than clamshells.",
       "pairs_with_month": [
         "pomegranates",
         "kabocha-squash",
         "sweet-potatoes",
         "red-bell-peppers",
-        "whole-rockfish"
+        "fresh-dates",
+        "rockfish"
       ],
       "pairs_with_staples": [
-        "pasta",
-        "sticky white rice",
-        "beans",
+        "rice",
         "eggs",
-        "salmon"
+        "sourdough",
+        "black beans"
       ],
       "flavor_paths": [
         {
@@ -435,52 +463,50 @@
           "description": "Olive oil, lemon, salt, right before eating. The default."
         },
         {
-          "name": "Wilted",
-          "description": "Tossed into hot pasta off the heat. It collapses in seconds."
+          "name": "As a topping",
+          "description": "A handful on anything warm, undressed. It wilts just enough."
         },
         {
-          "name": "As a topping",
-          "description": "A handful on anything warm, undressed."
+          "name": "In the salad",
+          "description": "With pomegranate, dates, and feta. The weekend."
         }
       ],
       "weekday_uses": [
-        "Wilted into pasta with lemon and parmesan",
-        "A handful over rice bowls",
-        "On beans with ajvar",
-        "On top of a fried egg on toast"
+        "On the warm plate over roasted squash and rice",
+        "In fish tacos in place of lettuce",
+        "On top of toast with ajvar and an egg",
+        "Beside a baked sweet potato, dressed with lemon"
       ],
-      "weekend_use": "The base of the October salad: arugula, pomegranate, and torn dates, dressed at the last second.",
+      "weekend_use": "The base of the October salad: arugula, pomegranate, torn dates, and feta, dressed at the last second.",
       "storage": "Unwashed, wrapped in a dry paper towel inside a bag, in the crisper. Three or four days. Wash it right before using.",
       "one_thing_to_learn": "Dress greens at the last possible moment. Salt pulls water out of leaves, and oil weighs them down, so a salad dressed ten minutes early is a wilted salad. Put everything in the bowl, carry it to the table, and toss it there.",
-      "market_question": "When was this cut?"
+      "market_question": "When did this come in?"
     },
     "pomegranates": {
       "slug": "pomegranates",
       "name": "Pomegranates",
       "month": "October",
-      "tile_uses": "Over squash, salads, yogurt, the drink",
-      "why_now": "California grows nearly all of the country's pomegranates, and the harvest runs from late September into November. In October they're heavy, cheap by the piece, and sold everywhere from the farmers market to the corner store. By spring, the only ones left are imported.",
+      "tile_uses": "The warm plate, tacos, the drink, the salad",
+      "why_now": "California grows nearly all of the country's pomegranates, and the harvest runs from late September into November. In October they're heavy, cheap by the piece, and in every produce section. By spring, the only ones left are imported.",
       "how_to_choose": [
         "Heavy for its size — weight is juice",
         "Angular and a little lopsided, with flat faces; round ones aren't full yet",
         "Deep red, leathery skin",
         "A small dry crack is fine; a soft or damp spot is not"
       ],
-      "buy_this_much": "3. One pomegranate gives about a cup of seeds, which is a week of scattering.",
+      "buy_this_much": "3. One for the drink, two for scattering. One pomegranate gives about a cup of seeds.",
       "price_note": "Priced by the piece, so the heaviest one in the bin is the best deal.",
       "pairs_with_month": [
         "kabocha-squash",
         "sweet-potatoes",
         "arugula",
         "fresh-dates",
-        "guavas",
-        "whole-rockfish"
+        "rockfish"
       ],
       "pairs_with_staples": [
         "Greek yogurt",
-        "sticky white rice",
-        "beans",
-        "chicken thighs"
+        "rice",
+        "black beans"
       ],
       "flavor_paths": [
         {
@@ -489,7 +515,7 @@
         },
         {
           "name": "In the salad",
-          "description": "With arugula and dates. The weekend."
+          "description": "With arugula, dates, and feta. The weekend."
         },
         {
           "name": "Pressed",
@@ -497,165 +523,113 @@
         }
       ],
       "weekday_uses": [
-        "Over roasted kabocha while it's hot",
-        "On sweet potato tacos in place of salsa",
-        "On yogurt with chopped dates",
-        "In the rice bowl, for the crunch"
+        "Over the warm plate with lamb and yogurt",
+        "On fish tacos, in place of salsa",
+        "Over a baked sweet potato",
+        "On Greek yogurt with chopped dates, for breakfast"
       ],
-      "weekend_use": "Half a pomegranate's seeds in the October salad, next to the whole fish.",
+      "weekend_use": "Half a pomegranate's seeds in the October salad, beside the seared fish.",
       "storage": "Whole, in the fridge for a month or more. Seeded, five days in a covered container.",
       "one_thing_to_learn": "To seed one without a mess, score around the crown, pull the fruit apart into sections, and work the seeds loose in a bowl of water. The seeds sink and the white pith floats. Skim, drain, done.",
-      "market_question": "Which ones came off the tree most recently?"
+      "market_question": "Which of these is heaviest?"
     },
     "fresh-dates": {
       "slug": "fresh-dates",
-      "name": "New-crop dates",
+      "name": "Medjool dates",
       "month": "October",
-      "tile_uses": "Yogurt, the salad, a plate with cheese",
-      "why_now": "Nearly every Medjool in the country is grown in the desert two hours from here, in the Coachella and Bard valleys, and they're picked from late summer through October. The ones on shelves now are this year's — soft, glossy, and much better than the ones that have been sitting since last fall.",
+      "tile_uses": "The warm plate, the salad, breakfast",
+      "why_now": "Nearly every Medjool in the country is grown in the desert two hours from here, in the Coachella and Bard valleys, and they're picked from late summer through October. The ones arriving now are this year's — soft, glossy, and much better than the ones that have been sitting since last fall.",
       "how_to_choose": [
         "Plump and glossy, with skin that clings to the fruit",
         "Soft enough to dent with a thumb",
         "No crystallized sugar on the surface — that's age",
-        "A packed-on date printed on the box, if there is one",
-        "Yellow dates still on the branch are Barhi: crunchy and fresh, and only around for a few weeks"
+        "If they're sold in a clear container, squeeze it; it should give"
       ],
       "buy_this_much": "1 lb. They last for months in the fridge, so this is more about having them than using them up.",
-      "price_note": "Costco and Middle Eastern markets are often half the supermarket price for the same Medjools.",
+      "price_note": "Bulk bins are usually cheaper than the boxed ones, and you can see what you're getting.",
       "pairs_with_month": [
         "pomegranates",
         "arugula",
-        "kabocha-squash",
-        "guavas"
+        "kabocha-squash"
       ],
       "pairs_with_staples": [
         "Greek yogurt",
-        "sourdough",
-        "chicken thighs"
+        "sourdough"
       ],
       "flavor_paths": [
+        {
+          "name": "Torn into savory",
+          "description": "Over roasted squash or into the salad. Sweetness where you don't expect it."
+        },
         {
           "name": "With salt",
           "description": "Split, a few flakes of salt. Dessert."
         },
         {
-          "name": "With cheese",
-          "description": "A sharp cheese or queso fresco. Sweet against salty."
-        },
-        {
-          "name": "Torn into savory",
-          "description": "Into the arugula salad, or over roasted squash. Sweetness where you don't expect it."
+          "name": "With feta",
+          "description": "Sweet against salty, on a plate after dinner."
         }
       ],
       "weekday_uses": [
-        "Chopped over yogurt with pomegranate",
+        "Torn over the warm plate with lamb",
+        "Chopped over Greek yogurt with pomegranate",
         "Split and salted, after dinner",
-        "Torn into the arugula salad",
-        "With a sharp cheese and a slice of guava"
+        "With a little feta, as dessert"
       ],
-      "weekend_use": "Torn into the October salad, and a small plate of dates, guava, and queso fresco after the fish.",
+      "weekend_use": "Torn into the October salad, beside the seared fish.",
       "storage": "In the fridge in a closed container for up to six months, or the counter for a few weeks. Cold dates firm up; let them sit out before eating.",
       "one_thing_to_learn": "A date is a fresh fruit that happens to dry well, not a dried fruit. Growers let them cure on the palm in the desert heat, which is why they're soft and sticky rather than leathery. Once you've eaten a new-crop Medjool, you'll notice the difference in the ones that aren't.",
-      "market_question": "Are these this year's?"
+      "market_question": "When did these come in?"
     },
-    "guavas": {
-      "slug": "guavas",
-      "name": "Guavas",
+    "rockfish": {
+      "slug": "rockfish",
+      "name": "Rockfish fillets",
       "month": "October",
-      "tile_uses": "Raw with salt and chile, with queso fresco, the drink",
-      "why_now": "Guavas ripen in San Diego backyards from late summer into winter, and October is when they fill the bins at Mexican markets and farm stands. Pink-fleshed and fragrant, they're the most tropical thing in a fall basket — a reminder that fall here isn't New England.",
+      "tile_uses": "The weekend meal, midweek fish tacos",
+      "why_now": "Rockfish is the local fish that gets more reliable as the water cools in fall: dozens of species, all mild and firm, and usually cheaper than salmon. It's sold at most fish counters in Southern California, sometimes as rock cod or Pacific snapper. This is the month to buy it instead of the usual.",
       "how_to_choose": [
-        "Smell first: a ripe guava is fragrant from a foot away",
-        "Pale yellow-green skin, turning from hard green",
-        "A slight give when pressed, like a ripe pear",
-        "Small brown marks are fine; soft, wet spots are not"
-      ],
-      "buy_this_much": "5–6. Some ripe now, some firmer for later in the week.",
-      "price_note": "Much cheaper at Mexican markets, where they're sold as guayaba.",
-      "pairs_with_month": [
-        "pomegranates",
-        "fresh-dates"
-      ],
-      "pairs_with_staples": [
-        "Greek yogurt",
-        "sourdough"
-      ],
-      "flavor_paths": [
-        {
-          "name": "With chile and lime",
-          "description": "Sliced, a squeeze of lime, salt, chile. The corner-stand way."
-        },
-        {
-          "name": "With cheese",
-          "description": "Queso fresco or a sharp white cheese. Sweet against salty, the classic pairing."
-        },
-        {
-          "name": "On breakfast",
-          "description": "Sliced over yogurt with a little honey."
-        }
-      ],
-      "weekday_uses": [
-        "Sliced with lime, salt, and Tajín in the afternoon",
-        "With queso fresco and a tortilla",
-        "Over yogurt with pomegranate",
-        "A slice in the drink"
-      ],
-      "weekend_use": "Sliced on a plate with queso fresco and new dates, after the fish.",
-      "storage": "On the counter until they're fragrant and give slightly, then in the fridge for three or four days. Their smell travels — keep them in a closed bag.",
-      "one_thing_to_learn": "You eat all of a guava: the skin, the flesh, and the small hard seeds. Slice it into rounds and don't bother digging anything out. If the seeds bother you, halve it and scoop the smooth outer flesh, leaving the seedy center for the drink.",
-      "market_question": "Which ones are ready today?"
-    },
-    "whole-rockfish": {
-      "slug": "whole-rockfish",
-      "name": "Whole rockfish",
-      "month": "October",
-      "tile_uses": "The weekend meal, fish tacos, a weeknight instead of salmon",
-      "why_now": "Rockfish is the local fish that gets more reliable as the water cools in fall: dozens of species, all mild and firm, and usually cheaper than anything flown in. Bought whole, it's the easiest good fish dinner there is — and the one most people have never cooked. This is the month to swap it in for salmon.",
-      "how_to_choose": [
-        "Clear, bright, slightly bulging eyes; cloudy or sunken means it's been sitting",
-        "Bright red gills under the flap; brown means old",
-        "Firm flesh that springs back when pressed",
+        "Glossy and slightly translucent, not dull or dry",
+        "No gaps opening between the layers of flesh",
+        "Firm enough to spring back when pressed",
         "It should smell like the ocean, not like fish",
-        "Ask the counter to scale and gut it — they will, and it takes them two minutes"
+        "Thicker fillets sear better than thin tail pieces"
       ],
-      "buy_this_much": "One fish, 2–3 lbs, feeds two or three. For a weeknight, 1 lb of fillets feeds two.",
-      "price_note": "Usually $6–10 a pound whole, less than salmon fillets. Asian markets and the harbor's weekend fish market sell it whole; supermarkets more often sell fillets, sometimes labeled rock cod or Pacific snapper.",
+      "buy_this_much": "1 lb at a time, twice a week: once for the weekend, once for midweek tacos. A pound is a big dinner and the next day's lunch. Fish is best within a day of buying.",
+      "price_note": "Usually well below salmon per pound. If the counter is out, any firm white fillet — cod, halibut — works in every meal here.",
       "pairs_with_month": [
         "arugula",
         "pomegranates",
         "red-bell-peppers",
-        "sweet-potatoes"
+        "kabocha-squash"
       ],
       "pairs_with_staples": [
-        "corn tortillas",
-        "sticky white rice",
+        "rice",
         "black beans",
-        "sourdough"
+        "Greek yogurt"
       ],
       "flavor_paths": [
         {
-          "name": "Whole, roasted hot",
-          "description": "Slashed, salted, lemon inside, 450°F. The weekend meal."
-        },
-        {
-          "name": "Fillets, pan-seared",
-          "description": "Skin side down, three minutes a side. A weeknight in place of salmon."
+          "name": "Seared",
+          "description": "Hot pan, hands off, brown butter. The weekend meal."
         },
         {
           "name": "Flaked",
           "description": "Into tacos with arugula, pomegranate, and lime."
+        },
+        {
+          "name": "Over rice",
+          "description": "Seared, with arugula and lemon. A five-minute dinner."
         }
       ],
       "weekday_uses": [
-        "Fillets pan-seared, over rice, with a spoonful of ajvar",
-        "Flaked into tacos with arugula and pomegranate",
-        "Leftovers from the whole fish, cold, with lemon and olive oil on toast",
-        "In place of salmon in anything you already make"
+        "Seared and flaked into fish tacos",
+        "Seared over rice with arugula and lemon",
+        "Leftovers, cold, on toast with lemon and olive oil"
       ],
-      "weekend_use": "Roasted whole at 450°F with lemon, beside the October salad. The weekend meal.",
-      "storage": "Cook it the day you buy it, or the next. Keep it in the coldest part of the fridge on a plate, loosely covered, ideally over a bag of ice.",
-      "one_thing_to_learn": "A whole fish is more forgiving than a fillet. The bone slows the heat and the skin holds in moisture, so the window between done and overdone is minutes, not seconds. To check, push a thin knife into the thickest part near the spine: if the flesh is opaque and pulls away from the bone, it's done.",
-      "market_question": "What came in today, and can you clean it for me?"
+      "weekend_use": "Seared hard and finished in brown butter, over roasted kabocha. The weekend meal.",
+      "storage": "Cook it the day you buy it, or the next. Keep it in the coldest part of the fridge, on a plate, loosely covered.",
+      "one_thing_to_learn": "Rockfish cooks fast and forgives little, so it's the right fish to learn the sear on. It's done when the flesh turns opaque all the way through and flakes when you press it with a fork — usually three or four minutes on the first side and one or two on the second. When in doubt, take it off; it keeps cooking on the plate.",
+      "market_question": "What came in today?"
     }
   }
 }

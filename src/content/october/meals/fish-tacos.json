@@ -1,0 +1,51 @@
+{
+  "slug": "fish-tacos",
+  "name": "Fish tacos",
+  "display_name": "Fish tacos",
+  "effort": "weekday",
+  "intro": "San Diego's taco, made with this month's fish. Seared, not fried, and finished in the time it takes to warm the tortillas.",
+  "keep": [
+    "Corn tortillas",
+    "Greek yogurt, salted",
+    "Lime"
+  ],
+  "season_anchor": [
+    "Seared rockfish, flaked",
+    "Arugula, in place of lettuce"
+  ],
+  "season_options": [
+    "Pomegranate seeds",
+    "A smear of ajvar",
+    "Crumbled feta",
+    "Black beans"
+  ],
+  "variations": [
+    {
+      "ingredients": "Rockfish + arugula + pomegranate + yogurt",
+      "context": "The October fish taco. The pomegranate is the salsa."
+    },
+    {
+      "ingredients": "Rockfish + ajvar + feta + lime",
+      "context": "Smokier. Smear the jar on the tortilla first."
+    },
+    {
+      "ingredients": "Black beans + sweet potato + pomegranate",
+      "context": "No fish this week. Same tortillas, same finish."
+    }
+  ],
+  "works_well_with": [
+    "Black beans",
+    "Rice",
+    "Lime, a lot of it"
+  ],
+  "finish": "Warm the tortillas in a dry pan until they blister in spots, and stack them under a towel. Two per taco. Pomegranate and lime go on last, so they stay cold and bright against the warm fish.",
+  "linked_house_flavor": "ajvar",
+  "linked_field_notes": [
+    "dry-hot-hands-off"
+  ],
+  "linked_ingredients": [
+    "rockfish",
+    "arugula",
+    "pomegranates"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "warm-plate",
+  "name": "Warm plate",
+  "display_name": "Warm plate",
+  "effort": "weekday",
+  "intro": "Something warm, something cold, something sharp, on one plate. Ground lamb makes it dinner; the rest makes it October.",
+  "keep": [
+    "Rice, warm or leftover",
+    "Greek yogurt, salted",
+    "Olive oil, lemon, salt"
+  ],
+  "season_anchor": [
+    "Ground lamb, browned with garlic and chile flakes",
+    "Roasted kabocha"
+  ],
+  "season_options": [
+    "Pomegranate seeds",
+    "Torn Medjool dates",
+    "Arugula, a handful",
+    "Crumbled feta"
+  ],
+  "variations": [
+    {
+      "ingredients": "Lamb + kabocha + yogurt + pomegranate",
+      "context": "The default. Yogurt under everything, pomegranate over it."
+    },
+    {
+      "ingredients": "Lamb + dates + arugula + lemon",
+      "context": "Sweeter, with something green. The dates warm through in the pan."
+    },
+    {
+      "ingredients": "Kabocha + arugula + feta + pomegranate",
+      "context": "No lamb left. Still a whole plate."
+    }
+  ],
+  "works_well_with": [
+    "Rice",
+    "Black beans",
+    "A fried egg"
+  ],
+  "finish": "Brown all the lamb at once, hard, in a dry pan — let it sit until it crusts before you break it up — then add a grated garlic clove and a pinch of chile flakes for the last minute. Half goes on tonight's plate; the rest keeps four days for a second plate and a lunch. Build each plate in layers: salted yogurt, rice, warm squash and lamb, then everything sharp on top.",
+  "linked_house_flavor": "ajvar",
+  "linked_field_notes": [
+    "dry-hot-hands-off",
+    "fresh-dates"
+  ],
+  "linked_ingredients": [
+    "kabocha-squash",
+    "arugula",
+    "pomegranates",
+    "fresh-dates"
+  ]
+}

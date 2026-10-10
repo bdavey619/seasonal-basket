@@ -2,7 +2,7 @@
   "slug": "sweet-potatoes",
   "name": "Sweet potatoes",
   "month": "October",
-  "tile_uses": "Tacos, rice bowls, a weeknight dinner on their own",
+  "tile_uses": "Baked as dinner, on the sheet pan",
   "why_now": "California's sweet potatoes are dug in September and October, most of them in the Central Valley around Merced, then stored through the winter. The new crop is on shelves now. It's the basket's filling one: a starch that keeps for weeks and makes a dinner on its own.",
   "how_to_choose": [
     "Firm from end to end, with no soft or wet tips",
@@ -10,8 +10,8 @@
     "Medium and evenly shaped, so they cook at one speed",
     "Orange-fleshed (garnet or jewel) for roasting"
   ],
-  "buy_this_much": "2 lbs, about four medium. They keep, so they're the dinner you make when the week gets away from you.",
-  "price_note": "Cheap now, and cheaper still by the loose pound than in bags.",
+  "buy_this_much": "4 medium. Two baked dinners for two, or one dinner and a sheet pan.",
+  "price_note": "Cheap now, and cheaper loose by the pound than in bags.",
   "pairs_with_month": [
     "red-bell-peppers",
     "pomegranates",
@@ -21,17 +21,16 @@
   "pairs_with_staples": [
     "black beans",
     "Greek yogurt",
-    "ground beef or turkey",
     "eggs"
   ],
   "flavor_paths": [
     {
-      "name": "Roasted in cubes",
-      "description": "Small, oiled, 425°F until the edges char. For tacos and bowls."
+      "name": "Baked whole",
+      "description": "An hour at 400°F until the skin puffs. Split, filled, done."
     },
     {
-      "name": "Baked whole",
-      "description": "Split open, salted yogurt, ajvar. A whole dinner in one potato."
+      "name": "Roasted in cubes",
+      "description": "On the sheet pan in place of the kabocha."
     },
     {
       "name": "With something sharp",
@@ -39,13 +38,13 @@
     }
   ],
   "weekday_uses": [
-    "Roasted cubes in tacos with black beans and cotija",
-    "Baked whole, split, with yogurt and a spoonful of ajvar",
-    "In a rice bowl, in place of the kabocha",
-    "Roasted cubes under a fried egg"
+    "Baked whole, split, with salted yogurt, black beans, and ajvar",
+    "Cubed on the sheet pan with sausage instead of kabocha",
+    "Under a fried egg, with arugula",
+    "Leftover, cold, with a squeeze of lime"
   ],
-  "weekend_use": "A tray of roasted cubes beside the fish, for anyone who wants something warm and filling.",
+  "weekend_use": "Bake two extra while the oven's on for the weekend meal. They're Monday's dinner.",
   "storage": "Somewhere cool and dark, not the fridge — cold makes the centers hard and off-tasting. They keep three weeks or more.",
-  "one_thing_to_learn": "A baked sweet potato is done well after it's merely soft. Keep going — an hour at 400°F — until the skin puffs away from the flesh and syrup starts to bead out and caramelize on the pan. That's the starch turning to sugar, and it's the difference between a vegetable and a meal.",
+  "one_thing_to_learn": "A baked sweet potato is done well after it's merely soft. Keep going — an hour at 400°F — until the skin puffs away from the flesh and syrup starts to bead out and caramelize on the pan. That's the starch turning to sugar, and it's the difference between a side and a meal.",
   "market_question": "Is this the new crop?"
 }
