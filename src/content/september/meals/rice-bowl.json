@@ -4,39 +4,10 @@
   "display_name": "Rice bowl",
   "effort": "weekday",
   "intro": "September's rice bowl is built on two things you made once: a tray of roasted chiles and a jar of escabeche.",
-  "keep": [
-    "Rice",
-    "Salt"
-  ],
-  "season_anchor": [
-    "Roasted chile strips",
-    "A spoonful of escabeche, with a little brine"
-  ],
-  "season_options": [
-    "Delicata, roasted in half-moons",
-    "Salsa verde",
-    "Cilantro",
-    "Lime"
-  ],
-  "variations": [
-    {
-      "ingredients": "Mahi-mahi · pickled",
-      "context": "Leftover fish, escabeche, cilantro."
-    },
-    {
-      "ingredients": "Ground beef · sweet and crisp",
-      "context": "Picadillo with apple slaw on top."
-    },
-    {
-      "ingredients": "Chicken thighs · green",
-      "context": "Salsa verde chicken, spooned over with its sauce."
-    }
-  ],
   "works_well_with": [
     "A fried egg",
     "Black beans"
   ],
-  "finish": "Lime last, over everything, and more cilantro than looks reasonable. If the bowl tastes flat, it is almost never missing salt — it is missing the squeeze.",
   "linked_house_flavor": "escabeche",
   "linked_field_notes": [
     "chile-roasting-season",
@@ -47,5 +18,56 @@
     "delicata-squash",
     "cilantro",
     "limes"
-  ]
+  ],
+  "time": "10 minutes with cooked rice",
+  "yield": "Dinner or lunch for one",
+  "proteins": [
+    {
+      "name": "Mahi-mahi, leftover",
+      "amount": "A big piece",
+      "timing": "Flaked, cold or barely warmed."
+    },
+    {
+      "name": "Ground beef picadillo, leftover",
+      "amount": "A big spoonful",
+      "timing": "Warmed in a pan, 2–3 minutes."
+    },
+    {
+      "name": "Salsa verde chicken",
+      "amount": "A big spoonful",
+      "timing": "Warmed in its sauce."
+    }
+  ],
+  "flavors": [
+    "pickled",
+    "sweet-crisp",
+    "green"
+  ],
+  "needs": [
+    "About 1½ cups cooked rice",
+    "Roasted chile strips",
+    "Roasted delicata half-moons, if you have them",
+    "Cilantro",
+    "1 lime"
+  ],
+  "steps": [
+    {
+      "cue": "If needed",
+      "text": "Cook the rice if you need to."
+    },
+    {
+      "text": "Warm your protein."
+    },
+    {
+      "text": "Rice, chile strips, delicata, protein."
+    },
+    {
+      "cue": "Finish",
+      "text": "Your flavor on top."
+    },
+    {
+      "text": "Lime last, and more cilantro than looks reasonable. If it tastes flat, it's missing the squeeze, not salt."
+    }
+  ],
+  "leftovers": "Pack it as tomorrow's lunch, with the flavor on the side."
 }

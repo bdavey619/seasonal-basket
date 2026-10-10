@@ -4,38 +4,10 @@
   "display_name": "Hot-pan dinner",
   "effort": "weekday",
   "intro": "One very hot pan: sear the protein, then char corn and peaches in what's left. Ten minutes, and the pan does the cooking.",
-  "keep": [
-    "A cast-iron or heavy skillet",
-    "Olive oil and flaky salt"
-  ],
-  "season_anchor": [
-    "Sweet corn, cut into short lengths or kernels",
-    "Peaches, halved"
-  ],
-  "season_options": [
-    "Limes",
-    "Basil",
-    "Charred tomato salsa"
-  ],
-  "variations": [
-    {
-      "ingredients": "Skirt steak · smoky",
-      "context": "Steak first, rested while the corn and peaches char. Salsa at the table."
-    },
-    {
-      "ingredients": "Shrimp · sweet and sharp",
-      "context": "Shrimp for two minutes, then the peaches. Lime over everything."
-    },
-    {
-      "ingredients": "Shrimp · bright",
-      "context": "Basil and a spoonful of vinaigrette over the shrimp and corn."
-    }
-  ],
   "works_well_with": [
     "Rice",
     "Toasted sourdough"
   ],
-  "finish": "Heat the pan until it smokes. Sear the protein first and set it aside. Then the corn and peach halves, cut side down, until they char in spots — two or three minutes. Everything goes on one plate with the juices from the resting meat.",
   "linked_house_flavor": "charred-tomato-salsa",
   "linked_field_notes": [
     "flaky-salt-goes-on-last"
@@ -44,5 +16,57 @@
     "sweet-corn",
     "peaches",
     "basil"
-  ]
+  ],
+  "time": "15 minutes",
+  "yield": "Dinner for one",
+  "proteins": [
+    {
+      "name": "Skirt steak",
+      "amount": "¾ lb",
+      "timing": "Seared first, 2–3 minutes a side, then rested while the corn and peaches char."
+    },
+    {
+      "name": "Shrimp",
+      "amount": "½ lb",
+      "timing": "Seared first, 1–2 minutes a side."
+    }
+  ],
+  "flavors": [
+    "smoky",
+    "sweet-sharp",
+    "bright"
+  ],
+  "needs": [
+    "2 ears of corn, kernels cut off",
+    "2 peaches, halved and pitted",
+    "Olive oil",
+    "Flaky salt",
+    "A few basil leaves"
+  ],
+  "steps": [
+    {
+      "cue": "High",
+      "text": "Heat a cast-iron or heavy skillet until it smokes."
+    },
+    {
+      "cue": "Sear",
+      "text": "Salt your protein and sear it with a little oil — don't move it. Steak: 2–3 minutes a side. Shrimp: 1–2. Move it to a plate; steak rests."
+    },
+    {
+      "cue": "2–3 min",
+      "text": "Peach halves into the same pan, cut side down, until they char."
+    },
+    {
+      "cue": "3 min",
+      "text": "Corn kernels in next, until they blacken in spots. Salt them."
+    },
+    {
+      "text": "Everything on one plate, with the juices from the resting meat. Slice the steak across the grain."
+    },
+    {
+      "cue": "Finish",
+      "text": "Your flavor, basil torn over, flaky salt."
+    }
+  ],
+  "leftovers": "Leftover steak or shrimp is tomorrow's tacos or rice bowl."
 }

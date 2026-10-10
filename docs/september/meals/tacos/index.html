@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://bdavey.co/seasonal-basket/september/meals/tacos/" />
   <!-- Favicon placeholder: replace with actual favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
-  <link rel="stylesheet" href="../../../css/base.css?v=5c24a8a8" />
+  <link rel="stylesheet" href="../../../css/base.css?v=1c24c76a" />
   <link rel="stylesheet" href="../../../css/september.css?v=2ab70c4a" />
 </head>
 <body>
@@ -32,81 +32,100 @@
       <a href="../../../september/#meals" class="back-link">← September&#x27;s meals</a>
     </div>
 
-    <div class="meal-header">
-      <div class="section-label">September · weekday</div>
+    <div class="meal-header cook-header">
+      <div class="section-label">September · weeknight</div>
       <h1>Tacos</h1>
       <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:680px">Corn tortillas, a protein, and September&#x27;s jars. The meal this month does best.</p>
+      <p class="cook-meta">15 minutes with cooked protein · Dinner for one, about 6 tacos</p>
+      <button type="button" class="cook-wake" hidden>Keep screen on while cooking</button>
     </div>
 
-    <div class="meal-body">
-      <div class="meal-main">
-        <section aria-labelledby="keep-heading">
-          <h2 id="keep-heading">Keep</h2>
-          <ul class="checklist"><li>Corn tortillas</li><li>Limes</li></ul>
-        </section>
+    <div class="cook-card">
+      <section aria-labelledby="protein-heading" class="cook-section">
+        <h2 id="protein-heading"><span class="cook-num">1</span> Pick a protein</h2>
+        <ul class="cook-choices">
+          <li class="cook-choice">
+            <span class="cook-choice-name">Mahi-mahi</span>
+            <span class="cook-choice-amount">½ lb</span>
+            <span class="cook-choice-note">Seared 3–4 minutes without moving, flipped, 2–3 more. Flaked in the pan.</span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Chicken thighs, from the salsa verde pot</span>
+            <span class="cook-choice-amount">A big spoonful</span>
+            <span class="cook-choice-note">Shredded, warmed in its sauce.</span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Ground beef picadillo, leftover</span>
+            <span class="cook-choice-amount">A big spoonful</span>
+            <span class="cook-choice-note">Warmed in a pan, 2–3 minutes.</span>
+          </li>
+        </ul>
+      </section>
 
-        <section aria-labelledby="adds-heading">
-          <h2 id="adds-heading">September adds</h2>
-          
-      <div class="meal-adds-group">
-        <div class="meal-adds-sublabel">Start with</div>
-        <ul class="checklist"><li>Roasted chile strips</li><li>Salsa verde</li></ul>
-      </div>
-      <div class="meal-adds-group">
-        <div class="meal-adds-sublabel">Choose from</div>
-        <ul class="checklist"><li>Escabeche</li><li>Apple slaw with lime and cilantro</li><li>Monterey jack</li><li>Cilantro, a lot of it</li></ul>
-      </div>
-        </section>
+      <section aria-labelledby="flavor-heading" class="cook-section">
+        <h2 id="flavor-heading"><span class="cook-num">2</span> Pick a flavor</h2>
+        <ul class="cook-choices">
+          <li class="cook-choice">
+            <span class="cook-choice-name">Green</span>
+            <span class="cook-choice-amount">Salsa verde + cilantro</span>
+            <span class="cook-choice-note">A spoonful of salsa verde, cilantro leaves torn over the top. </span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Pickled</span>
+            <span class="cook-choice-amount">Escabeche + a little brine</span>
+            <span class="cook-choice-note">A spoonful of the jar with its brine. Crunch and acid. <a class="cook-jar-link" href="../../../september/escabeche/">How to make the escabeche →</a></span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Sweet and crisp</span>
+            <span class="cook-choice-amount">Apple + lime + cilantro</span>
+            <span class="cook-choice-note">Shredded apple tossed with lime, salt, and cilantro. A slaw in thirty seconds. </span>
+          </li>
+        </ul>
+      </section>
 
-        <section aria-labelledby="variations-heading">
-          <h2 id="variations-heading">Variations</h2>
-          <div class="meal-variations">
-            
-    <div class="meal-variation">
-      <span class="meal-variation-ingredients">Mahi-mahi · green</span>
-      <span class="meal-variation-context">Leftover chile-rubbed fish, salsa verde, cilantro.</span>
+      <section aria-labelledby="needs-heading" class="cook-section">
+        <h2 id="needs-heading">You'll need</h2>
+        <ul class="checklist"><li>12 corn tortillas — two per taco</li><li>2 roasted chiles, in strips</li><li>Cilantro</li><li>1 lime</li><li>Oil and salt</li></ul>
+        <p class="cook-hint">Plus your protein and your flavor.</p>
+      </section>
+
+      <section aria-labelledby="steps-heading" class="cook-section">
+        <h2 id="steps-heading">Make it</h2>
+        <p class="cook-hint">Tap a step when it's done.</p>
+        <ol class="cook-steps">
+          <li class="cook-step"><span class="cook-cue">Tortillas</span><span class="cook-step-text">Warm the tortillas directly over a flame or in a dry pan until they blister in spots. Stack them under a towel.</span></li>
+          <li class="cook-step"><span class="cook-cue">Protein</span><span class="cook-step-text">Cook or warm your protein. Mahi: salt it, pat it dry, sear without moving until it lets go of the pan, then flip.</span></li>
+          <li class="cook-step"><span class="cook-step-text">Two tortillas, protein, chile strips.</span></li>
+          <li class="cook-step"><span class="cook-cue">Finish</span><span class="cook-step-text">Your flavor, cilantro, and lime last.</span></li>
+        </ol>
+      </section>
+      
+        <section aria-labelledby="leftovers-heading" class="cook-section">
+          <h2 id="leftovers-heading">Leftovers</h2>
+          <p class="cook-leftovers">Leftover fish or chicken goes into tomorrow&#x27;s rice bowl.</p>
+        </section>
     </div>
 
-    <div class="meal-variation">
-      <span class="meal-variation-ingredients">Chicken thighs · green</span>
-      <span class="meal-variation-context">Shredded from the salsa verde pot.</span>
-    </div>
-
-    <div class="meal-variation">
-      <span class="meal-variation-ingredients">Ground beef · pickled</span>
-      <span class="meal-variation-context">Picadillo with escabeche piled on.</span>
-    </div>
-          </div>
-        </section>
-
-        <section aria-labelledby="finish-heading">
-          <h2 id="finish-heading">Finish</h2>
-          <p style="font-family:ui-sans-serif,system-ui,sans-serif;font-size:.97rem;color:#3d4842;line-height:1.6">Warm the tortillas directly over a flame or in a dry pan until they blister in spots, and stack them under a towel. Two per taco. That is not excess, it is structural.</p>
-        </section>
-      </div>
-
-      <aside class="meal-sidebar">
-        <section>
-          <h3>Works well with</h3>
-          <ul class="checklist"><li>Black beans</li><li>Rice</li></ul>
-        </section>
-        
-    <section>
-      <h3>From Field Notes</h3>
-      <ul class="meal-field-notes-list"><li class="meal-field-note-title"><a href="../../../september/field-notes/#salsa-verde-no-recipe" class="house-flavor-sidebar-link">Salsa verde without a recipe.</a></li><li class="meal-field-note-title"><a href="../../../september/field-notes/#chile-roasting-season" class="house-flavor-sidebar-link">The parking lot smells like September.</a></li></ul>
-    </section>
-        
-    <section>
-      <h3>House Flavor</h3>
-      <ul class="meal-field-notes-list">
-        <li class="meal-field-note-title">
-          <a href="../../../september/escabeche/" class="house-flavor-sidebar-link">Escabeche</a>
-        </li>
-      </ul>
-    </section>
-        
-      </aside>
-    </div>
+    <script>
+      // Progressive enhancement for cooking with a phone: tap a step to mark
+      // it done, and keep the screen awake where the browser allows it.
+      document.querySelectorAll('.cook-step').forEach(function (li) {
+        li.addEventListener('click', function () { li.classList.toggle('is-done'); });
+      });
+      (function () {
+        var btn = document.querySelector('.cook-wake');
+        if (!btn || !('wakeLock' in navigator)) return;
+        var lock = null;
+        btn.hidden = false;
+        btn.addEventListener('click', function () {
+          if (lock) { lock.release(); lock = null; btn.textContent = 'Keep screen on while cooking'; btn.classList.remove('is-on'); return; }
+          navigator.wakeLock.request('screen').then(function (l) {
+            lock = l; btn.textContent = 'Screen will stay on'; btn.classList.add('is-on');
+            l.addEventListener('release', function () { lock = null; btn.textContent = 'Keep screen on while cooking'; btn.classList.remove('is-on'); });
+          }).catch(function () {});
+        });
+      })();
+    </script>
   </main>
   <footer>
     <div>Seasonal · Know what now tastes like.</div>

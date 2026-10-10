@@ -4,38 +4,10 @@
   "display_name": "Tomato toast",
   "effort": "weekday",
   "intro": "Thick sourdough, a ripe tomato, olive oil, salt. In July, that's dinner — add an egg if you want it to be.",
-  "keep": [
-    "Sourdough, thick slices",
-    "Olive oil and flaky salt"
-  ],
-  "season_anchor": [
-    "Ripe tomatoes"
-  ],
-  "season_options": [
-    "A fried egg",
-    "Burrata",
-    "Basil",
-    "Tomato herb vinaigrette"
-  ],
-  "variations": [
-    {
-      "ingredients": "Fried egg · bright",
-      "context": "The default. Tomato, egg, a spoonful of vinaigrette."
-    },
-    {
-      "ingredients": "Burrata · bright",
-      "context": "Torn burrata under the tomato, basil over it."
-    },
-    {
-      "ingredients": "Fried egg · smoky",
-      "context": "Charred salsa instead of fresh tomato."
-    }
-  ],
   "works_well_with": [
     "A cucumber and mint salad",
     "A peach, after"
   ],
-  "finish": "Toast the bread in a skillet with olive oil until it's crisp. Rub the cut side of a garlic clove over it while it's hot, then pile on the tomato, salt it, and eat it standing up if you want.",
   "linked_house_flavor": "tomato-herb-vinaigrette",
   "linked_field_notes": [
     "flaky-salt-goes-on-last"
@@ -43,5 +15,52 @@
   "linked_ingredients": [
     "heirloom-tomatoes",
     "basil"
-  ]
+  ],
+  "time": "10 minutes",
+  "yield": "Dinner for one",
+  "proteins": [
+    {
+      "name": "Fried eggs",
+      "amount": "2",
+      "timing": "Cooked in the same pan after the toast, about 3 minutes."
+    },
+    {
+      "name": "Burrata",
+      "amount": "½ ball",
+      "timing": "Torn over the hot toast. Nothing to cook."
+    }
+  ],
+  "flavors": [
+    "bright",
+    "smoky",
+    "cool"
+  ],
+  "needs": [
+    "2 thick slices of sourdough",
+    "1–2 ripe tomatoes",
+    "2 tbsp olive oil",
+    "1 garlic clove, halved",
+    "Flaky salt"
+  ],
+  "steps": [
+    {
+      "cue": "2–3 min a side",
+      "text": "Heat the oil in a skillet and toast the bread, pressing it down, until golden and crisp."
+    },
+    {
+      "text": "Rub the cut garlic over the hot toast."
+    },
+    {
+      "cue": "3 min",
+      "text": "Eggs: crack them into the same pan and cook until the whites set. Burrata: tear it over the toast now."
+    },
+    {
+      "text": "Slice the tomato, lay it on, and salt it."
+    },
+    {
+      "cue": "Finish",
+      "text": "Your flavor on top, then the egg if you made one."
+    }
+  ],
+  "leftovers": "Toast doesn't keep. Make it fresh."
 }

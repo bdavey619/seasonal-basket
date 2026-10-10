@@ -4,39 +4,10 @@
   "display_name": "Simmered in salsa verde",
   "effort": "weekday",
   "intro": "A pot of salsa verde and something simmered in it until the sauce thickens. Chicken thighs on Sunday, eggs on Wednesday.",
-  "keep": [
-    "A wide pan with a lid",
-    "Salt"
-  ],
-  "season_anchor": [
-    "Salsa verde, a full batch",
-    "Boneless chicken thighs, or eggs"
-  ],
-  "season_options": [
-    "Cilantro",
-    "Limes",
-    "Monterey jack",
-    "Black beans"
-  ],
-  "variations": [
-    {
-      "ingredients": "Chicken thighs · green",
-      "context": "The default. Simmered 25 minutes, shredded in the sauce."
-    },
-    {
-      "ingredients": "Chicken thighs · smoky",
-      "context": "Chile strips stirred in for the last five minutes."
-    },
-    {
-      "ingredients": "Eggs · green",
-      "context": "No meat. Eggs cracked into the simmering sauce, covered until set."
-    }
-  ],
   "works_well_with": [
     "Rice",
     "Corn tortillas"
   ],
-  "finish": "Bring the salsa verde to a simmer in a wide pan. For chicken, add the salted thighs, cover, and simmer gently for about 25 minutes until they shred easily — then shred them right in the sauce. For eggs, make four hollows in the simmering sauce, crack an egg into each, cover, and cook four or five minutes until the whites set.",
   "linked_house_flavor": "escabeche",
   "linked_field_notes": [
     "salsa-verde-no-recipe"
@@ -45,5 +16,51 @@
     "tomatillos",
     "cilantro",
     "limes"
-  ]
+  ],
+  "time": "40 minutes for chicken, 15 for eggs",
+  "yield": "Chicken: dinner and three lunches. Eggs: dinner for one.",
+  "proteins": [
+    {
+      "name": "Boneless chicken thighs",
+      "amount": "1½ lbs",
+      "timing": "Simmered covered in the salsa, about 25 minutes, then shredded in the sauce."
+    },
+    {
+      "name": "Eggs",
+      "amount": "4",
+      "timing": "No meat. Cracked into hollows in the simmering sauce, covered 4–5 minutes."
+    }
+  ],
+  "flavors": [
+    "green",
+    "smoky",
+    "pickled"
+  ],
+  "needs": [
+    "Salsa verde, a full batch: 1 lb tomatillos, 1 roasted chile, a handful of cilantro, juice of 1 lime, salt",
+    "Salt"
+  ],
+  "steps": [
+    {
+      "cue": "If needed",
+      "text": "No salsa verde yet? Boil the husked tomatillos 5 minutes until olive-green, then blend with the chile, cilantro, lime, and salt."
+    },
+    {
+      "cue": "Simmer",
+      "text": "Bring the salsa verde to a simmer in a wide pan with a lid."
+    },
+    {
+      "cue": "25 min",
+      "text": "Chicken: add the salted thighs, cover, and simmer gently until they shred easily. Shred them right in the sauce."
+    },
+    {
+      "cue": "4–5 min",
+      "text": "Eggs: make four hollows in the sauce, crack an egg into each, and cover until the whites set."
+    },
+    {
+      "cue": "Finish",
+      "text": "Your flavor on top."
+    }
+  ],
+  "leftovers": "The chicken keeps four days in its sauce. It's tacos and rice bowls all week."
 }

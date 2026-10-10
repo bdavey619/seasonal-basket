@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://bdavey.co/seasonal-basket/august/meals/charred-plate/" />
   <!-- Favicon placeholder: replace with actual favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
-  <link rel="stylesheet" href="../../../css/base.css?v=5c24a8a8" />
+  <link rel="stylesheet" href="../../../css/base.css?v=1c24c76a" />
   <link rel="stylesheet" href="../../../css/august.css?v=697f165f" />
 </head>
 <body>
@@ -32,81 +32,101 @@
       <a href="../../../august/#meals" class="back-link">← August&#x27;s meals</a>
     </div>
 
-    <div class="meal-header">
-      <div class="section-label">August · weekday</div>
+    <div class="meal-header cook-header">
+      <div class="section-label">August · weeknight</div>
       <h1>Charred plate</h1>
       <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:680px">One hot pan, one protein, and whatever&#x27;s charred beside it. Peppers, zucchini, a nectarine. August&#x27;s ten-minute dinner.</p>
+      <p class="cook-meta">15 minutes · Dinner for one</p>
+      <button type="button" class="cook-wake" hidden>Keep screen on while cooking</button>
     </div>
 
-    <div class="meal-body">
-      <div class="meal-main">
-        <section aria-labelledby="keep-heading">
-          <h2 id="keep-heading">Keep</h2>
-          <ul class="checklist"><li>A cast-iron or heavy skillet</li><li>Olive oil and flaky salt</li></ul>
-        </section>
+    <div class="cook-card">
+      <section aria-labelledby="protein-heading" class="cook-section">
+        <h2 id="protein-heading"><span class="cook-num">1</span> Pick a protein</h2>
+        <ul class="cook-choices">
+          <li class="cook-choice">
+            <span class="cook-choice-name">Pork chop, leftover</span>
+            <span class="cook-choice-amount">1, sliced</span>
+            <span class="cook-choice-note">Warmed in the hot pan, 2 minutes.</span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Halibut</span>
+            <span class="cook-choice-amount">½ lb</span>
+            <span class="cook-choice-note">Seared 3–4 minutes without moving, flipped, 1–2 more.</span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Burrata and prosciutto</span>
+            <span class="cook-choice-amount">½ ball, 2 slices</span>
+            <span class="cook-choice-note">Torn over the plate. Nothing to cook. Burrata alone for a no-meat night.</span>
+          </li>
+        </ul>
+      </section>
 
-        <section aria-labelledby="adds-heading">
-          <h2 id="adds-heading">August adds</h2>
-          
-      <div class="meal-adds-group">
-        <div class="meal-adds-sublabel">Start with</div>
-        <ul class="checklist"><li>Red bell peppers, in strips</li><li>Zucchini, in thick coins</li></ul>
-      </div>
-      <div class="meal-adds-group">
-        <div class="meal-adds-sublabel">Choose from</div>
-        <ul class="checklist"><li>Nectarine halves</li><li>Charred pepper sauce</li><li>Basil</li><li>Burrata</li><li>Prosciutto</li></ul>
-      </div>
-        </section>
+      <section aria-labelledby="flavor-heading" class="cook-section">
+        <h2 id="flavor-heading"><span class="cook-num">2</span> Pick a flavor</h2>
+        <ul class="cook-choices">
+          <li class="cook-choice">
+            <span class="cook-choice-name">Sweet</span>
+            <span class="cook-choice-amount">Nectarine or fig + flaky salt</span>
+            <span class="cook-choice-note">Sliced ripe fruit, olive oil, flaky salt. Next to anything charred. </span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Hot</span>
+            <span class="cook-choice-amount">Jalapeño + lime + flaky salt</span>
+            <span class="cook-choice-note">Jalapeño shaved thin, lime squeezed hard, flaky salt. </span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Smoky</span>
+            <span class="cook-choice-amount">Charred pepper sauce + lime</span>
+            <span class="cook-choice-note">A spoonful of the jar, lime squeezed over. <a class="cook-jar-link" href="../../../august/charred-pepper-sauce/">How to make the charred pepper sauce →</a></span>
+          </li>
+        </ul>
+      </section>
 
-        <section aria-labelledby="variations-heading">
-          <h2 id="variations-heading">Variations</h2>
-          <div class="meal-variations">
-            
-    <div class="meal-variation">
-      <span class="meal-variation-ingredients">Pork chop · sweet</span>
-      <span class="meal-variation-context">Leftover chop, sliced and warmed, charred nectarine on the side.</span>
+      <section aria-labelledby="needs-heading" class="cook-section">
+        <h2 id="needs-heading">You'll need</h2>
+        <ul class="checklist"><li>1 red bell pepper, in strips</li><li>1 zucchini, in thick coins</li><li>1 nectarine, halved</li><li>Olive oil</li><li>Flaky salt</li></ul>
+        <p class="cook-hint">Plus your protein and your flavor.</p>
+      </section>
+
+      <section aria-labelledby="steps-heading" class="cook-section">
+        <h2 id="steps-heading">Make it</h2>
+        <p class="cook-hint">Tap a step when it's done.</p>
+        <ol class="cook-steps">
+          <li class="cook-step"><span class="cook-cue">High</span><span class="cook-step-text">Heat a cast-iron or heavy skillet until it smokes.</span></li>
+          <li class="cook-step"><span class="cook-cue">5–6 min</span><span class="cook-step-text">Oil and salt the pepper and zucchini, lay them in one layer, and don&#x27;t move them until they blacken in spots. Flip once.</span></li>
+          <li class="cook-step"><span class="cook-cue">2 min</span><span class="cook-step-text">Nectarine halves in, cut side down, until they char. Move everything to the plate.</span></li>
+          <li class="cook-step"><span class="cook-cue">Protein</span><span class="cook-step-text">Cook or warm your protein in the same pan. Halibut: lay it in away from you and leave it until it lets go of the pan, then flip.</span></li>
+          <li class="cook-step"><span class="cook-cue">Finish</span><span class="cook-step-text">Your flavor over the top, and flaky salt.</span></li>
+        </ol>
+      </section>
+      
+        <section aria-labelledby="leftovers-heading" class="cook-section">
+          <h2 id="leftovers-heading">Leftovers</h2>
+          <p class="cook-leftovers">Leftover charred vegetables go into tomorrow&#x27;s rice bowl.</p>
+        </section>
     </div>
 
-    <div class="meal-variation">
-      <span class="meal-variation-ingredients">Halibut · hot</span>
-      <span class="meal-variation-context">Seared halibut, jalapeño and lime over the top.</span>
-    </div>
-
-    <div class="meal-variation">
-      <span class="meal-variation-ingredients">Burrata + prosciutto · smoky</span>
-      <span class="meal-variation-context">Charred vegetables around torn burrata and prosciutto, pepper sauce. Or just the burrata, for a no-meat night.</span>
-    </div>
-          </div>
-        </section>
-
-        <section aria-labelledby="finish-heading">
-          <h2 id="finish-heading">Finish</h2>
-          <p style="font-family:ui-sans-serif,system-ui,sans-serif;font-size:.97rem;color:#3d4842;line-height:1.6">Heat the pan until it smokes. Char the vegetables first in a single layer, without moving them, until they blacken in spots. Move them to the plate, then sear or warm the protein in the same pan.</p>
-        </section>
-      </div>
-
-      <aside class="meal-sidebar">
-        <section>
-          <h3>Works well with</h3>
-          <ul class="checklist"><li>Sourdough</li><li>Rice</li></ul>
-        </section>
-        
-    <section>
-      <h3>From Field Notes</h3>
-      <ul class="meal-field-notes-list"><li class="meal-field-note-title"><a href="../../../august/field-notes/#charring-a-pepper" class="house-flavor-sidebar-link">Charring a pepper</a></li><li class="meal-field-note-title"><a href="../../../august/field-notes/#eggplant-myth" class="house-flavor-sidebar-link">You don&#x27;t need to salt eggplant.</a></li></ul>
-    </section>
-        
-    <section>
-      <h3>House Flavor</h3>
-      <ul class="meal-field-notes-list">
-        <li class="meal-field-note-title">
-          <a href="../../../august/charred-pepper-sauce/" class="house-flavor-sidebar-link">Charred Pepper Sauce</a>
-        </li>
-      </ul>
-    </section>
-        
-      </aside>
-    </div>
+    <script>
+      // Progressive enhancement for cooking with a phone: tap a step to mark
+      // it done, and keep the screen awake where the browser allows it.
+      document.querySelectorAll('.cook-step').forEach(function (li) {
+        li.addEventListener('click', function () { li.classList.toggle('is-done'); });
+      });
+      (function () {
+        var btn = document.querySelector('.cook-wake');
+        if (!btn || !('wakeLock' in navigator)) return;
+        var lock = null;
+        btn.hidden = false;
+        btn.addEventListener('click', function () {
+          if (lock) { lock.release(); lock = null; btn.textContent = 'Keep screen on while cooking'; btn.classList.remove('is-on'); return; }
+          navigator.wakeLock.request('screen').then(function (l) {
+            lock = l; btn.textContent = 'Screen will stay on'; btn.classList.add('is-on');
+            l.addEventListener('release', function () { lock = null; btn.textContent = 'Keep screen on while cooking'; btn.classList.remove('is-on'); });
+          }).catch(function () {});
+        });
+      })();
+    </script>
   </main>
   <footer>
     <div>Seasonal · Know what now tastes like.</div>

@@ -4,39 +4,10 @@
   "display_name": "Tomato plate",
   "effort": "weekday",
   "intro": "Thick slices of the best tomatoes of the year, something cool beside them, and a protein on top. The meal July does best.",
-  "keep": [
-    "Olive oil",
-    "Flaky salt and black pepper"
-  ],
-  "season_anchor": [
-    "Ripe tomatoes, sliced thick",
-    "Persian cucumbers"
-  ],
-  "season_options": [
-    "Basil and mint",
-    "Tomato herb vinaigrette",
-    "Salted Greek yogurt",
-    "Sliced peach"
-  ],
-  "variations": [
-    {
-      "ingredients": "Wild salmon · cool",
-      "context": "Leftover salmon in big flakes, cucumber yogurt, mint."
-    },
-    {
-      "ingredients": "Shrimp · bright",
-      "context": "Quickly seared shrimp, vinaigrette, basil."
-    },
-    {
-      "ingredients": "Burrata · bright",
-      "context": "No meat. Torn burrata, vinaigrette, basil, sourdough."
-    }
-  ],
   "works_well_with": [
     "Toasted sourdough",
     "Black beans"
   ],
-  "finish": "Salt the tomatoes first and let them sit while you get everything else ready — five minutes draws out their juice, which becomes the dressing. Flaky salt again at the very end.",
   "linked_house_flavor": "tomato-herb-vinaigrette",
   "linked_field_notes": [
     "flaky-salt-goes-on-last",
@@ -47,5 +18,57 @@
     "persian-cucumbers",
     "basil",
     "mint"
-  ]
+  ],
+  "time": "15 minutes",
+  "yield": "Dinner for one",
+  "proteins": [
+    {
+      "name": "Wild salmon, leftover",
+      "amount": "A big piece",
+      "timing": "Broken into flakes, cold or barely warmed. Nothing to cook."
+    },
+    {
+      "name": "Shrimp",
+      "amount": "½ lb",
+      "timing": "Seared in a smoking-hot pan, 1–2 minutes a side."
+    },
+    {
+      "name": "Burrata",
+      "amount": "½ ball",
+      "timing": "No meat. Torn over the tomatoes. Nothing to cook."
+    }
+  ],
+  "flavors": [
+    "cool",
+    "bright",
+    "sweet-sharp"
+  ],
+  "needs": [
+    "2 large ripe tomatoes",
+    "1 Persian cucumber",
+    "A small handful of basil and mint",
+    "Olive oil",
+    "Flaky salt and black pepper"
+  ],
+  "steps": [
+    {
+      "cue": "5 min",
+      "text": "Slice the tomatoes thick, lay them on the plate, and salt them. Their juice becomes the dressing."
+    },
+    {
+      "cue": "1–2 min a side",
+      "text": "Shrimp: heat a pan until it smokes, add a little oil and the shrimp, and cook until pink. Salmon or burrata: nothing to cook."
+    },
+    {
+      "text": "Slice the cucumber and tuck it around the tomatoes. Add your protein."
+    },
+    {
+      "cue": "Finish",
+      "text": "Your flavor over the top, then the herbs, torn."
+    },
+    {
+      "text": "Olive oil, flaky salt, and black pepper last."
+    }
+  ],
+  "leftovers": "It doesn't keep — tomatoes go mealy in the fridge. Make it fresh."
 }

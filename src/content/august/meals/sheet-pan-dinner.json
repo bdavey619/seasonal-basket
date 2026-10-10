@@ -4,40 +4,10 @@
   "display_name": "Sheet-pan dinner",
   "effort": "weekday",
   "intro": "Drumsticks, eggplant, peppers, and cherry tomatoes on one pan. The oven does everything, and the vegetables cook in the chicken's fat.",
-  "keep": [
-    "A sheet pan",
-    "Olive oil and salt"
-  ],
-  "season_anchor": [
-    "Chicken drumsticks",
-    "Eggplant, in big chunks",
-    "Red bell peppers"
-  ],
-  "season_options": [
-    "Cherry tomatoes",
-    "Zucchini",
-    "Charred pepper sauce",
-    "Jalapeño"
-  ],
-  "variations": [
-    {
-      "ingredients": "Drumsticks · smoky",
-      "context": "The default. Pepper sauce and lime at the table."
-    },
-    {
-      "ingredients": "Drumsticks · hot",
-      "context": "Shaved jalapeño and lime over everything."
-    },
-    {
-      "ingredients": "Eggs · fresh",
-      "context": "No meat. Vegetables roasted alone, eggs cracked into the pan for the last six minutes, basil."
-    }
-  ],
   "works_well_with": [
     "Rice",
     "Sourdough"
   ],
-  "finish": "Heat the oven to 425°F. Salt the drumsticks and spread everything on the pan with room between the pieces. Roast 40 to 45 minutes, turning the drumsticks once, until the skin is crisp and the eggplant has collapsed. Leftover meat comes off the bone easily for a rice bowl.",
   "linked_house_flavor": "charred-pepper-sauce",
   "linked_field_notes": [
     "eggplant-myth"
@@ -46,5 +16,53 @@
     "eggplant",
     "bell-peppers",
     "cherry-tomatoes"
-  ]
+  ],
+  "time": "About an hour, most of it in the oven",
+  "yield": "Dinner tonight, two lunches",
+  "proteins": [
+    {
+      "name": "Chicken drumsticks",
+      "amount": "2 lbs",
+      "timing": "On the pan from the start, 40–45 minutes, turned once. Done when the skin is crisp and the juices run clear."
+    },
+    {
+      "name": "Eggs",
+      "amount": "3",
+      "timing": "No meat. Cracked into gaps on the pan for the last 6 minutes."
+    }
+  ],
+  "flavors": [
+    "smoky",
+    "hot",
+    "fresh"
+  ],
+  "needs": [
+    "1 large eggplant, in big chunks",
+    "2 red bell peppers, in strips",
+    "1 pint cherry tomatoes",
+    "3 tbsp olive oil",
+    "Salt"
+  ],
+  "steps": [
+    {
+      "cue": "425°F",
+      "text": "Heat the oven."
+    },
+    {
+      "text": "Toss the vegetables and the salted drumsticks with the olive oil. Spread everything on a sheet pan with room between the pieces."
+    },
+    {
+      "cue": "20 min",
+      "text": "Roast, then turn the drumsticks."
+    },
+    {
+      "cue": "20–25 min more",
+      "text": "Roast until the skin is crisp and the eggplant has collapsed. Eggs: crack them into gaps on the pan for the last 6 minutes."
+    },
+    {
+      "cue": "Finish",
+      "text": "Your flavor at the table."
+    }
+  ],
+  "leftovers": "Pull the leftover meat off the bone while it's warm. It's two rice bowls."
 }

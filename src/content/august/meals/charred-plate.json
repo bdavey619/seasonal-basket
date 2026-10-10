@@ -4,40 +4,10 @@
   "display_name": "Charred plate",
   "effort": "weekday",
   "intro": "One hot pan, one protein, and whatever's charred beside it. Peppers, zucchini, a nectarine. August's ten-minute dinner.",
-  "keep": [
-    "A cast-iron or heavy skillet",
-    "Olive oil and flaky salt"
-  ],
-  "season_anchor": [
-    "Red bell peppers, in strips",
-    "Zucchini, in thick coins"
-  ],
-  "season_options": [
-    "Nectarine halves",
-    "Charred pepper sauce",
-    "Basil",
-    "Burrata",
-    "Prosciutto"
-  ],
-  "variations": [
-    {
-      "ingredients": "Pork chop · sweet",
-      "context": "Leftover chop, sliced and warmed, charred nectarine on the side."
-    },
-    {
-      "ingredients": "Halibut · hot",
-      "context": "Seared halibut, jalapeño and lime over the top."
-    },
-    {
-      "ingredients": "Burrata + prosciutto · smoky",
-      "context": "Charred vegetables around torn burrata and prosciutto, pepper sauce. Or just the burrata, for a no-meat night."
-    }
-  ],
   "works_well_with": [
     "Sourdough",
     "Rice"
   ],
-  "finish": "Heat the pan until it smokes. Char the vegetables first in a single layer, without moving them, until they blacken in spots. Move them to the plate, then sear or warm the protein in the same pan.",
   "linked_house_flavor": "charred-pepper-sauce",
   "linked_field_notes": [
     "charring-a-pepper",
@@ -47,5 +17,59 @@
     "bell-peppers",
     "zucchini",
     "nectarines"
-  ]
+  ],
+  "time": "15 minutes",
+  "yield": "Dinner for one",
+  "proteins": [
+    {
+      "name": "Pork chop, leftover",
+      "amount": "1, sliced",
+      "timing": "Warmed in the hot pan, 2 minutes."
+    },
+    {
+      "name": "Halibut",
+      "amount": "½ lb",
+      "timing": "Seared 3–4 minutes without moving, flipped, 1–2 more."
+    },
+    {
+      "name": "Burrata and prosciutto",
+      "amount": "½ ball, 2 slices",
+      "timing": "Torn over the plate. Nothing to cook. Burrata alone for a no-meat night."
+    }
+  ],
+  "flavors": [
+    "sweet",
+    "hot",
+    "smoky"
+  ],
+  "needs": [
+    "1 red bell pepper, in strips",
+    "1 zucchini, in thick coins",
+    "1 nectarine, halved",
+    "Olive oil",
+    "Flaky salt"
+  ],
+  "steps": [
+    {
+      "cue": "High",
+      "text": "Heat a cast-iron or heavy skillet until it smokes."
+    },
+    {
+      "cue": "5–6 min",
+      "text": "Oil and salt the pepper and zucchini, lay them in one layer, and don't move them until they blacken in spots. Flip once."
+    },
+    {
+      "cue": "2 min",
+      "text": "Nectarine halves in, cut side down, until they char. Move everything to the plate."
+    },
+    {
+      "cue": "Protein",
+      "text": "Cook or warm your protein in the same pan. Halibut: lay it in away from you and leave it until it lets go of the pan, then flip."
+    },
+    {
+      "cue": "Finish",
+      "text": "Your flavor over the top, and flaky salt."
+    }
+  ],
+  "leftovers": "Leftover charred vegetables go into tomorrow's rice bowl."
 }

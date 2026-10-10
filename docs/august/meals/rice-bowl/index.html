@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://bdavey.co/seasonal-basket/august/meals/rice-bowl/" />
   <!-- Favicon placeholder: replace with actual favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
-  <link rel="stylesheet" href="../../../css/base.css?v=5c24a8a8" />
+  <link rel="stylesheet" href="../../../css/base.css?v=1c24c76a" />
   <link rel="stylesheet" href="../../../css/august.css?v=697f165f" />
 </head>
 <body>
@@ -32,81 +32,101 @@
       <a href="../../../august/#meals" class="back-link">← August&#x27;s meals</a>
     </div>
 
-    <div class="meal-header">
-      <div class="section-label">August · weekday</div>
+    <div class="meal-header cook-header">
+      <div class="section-label">August · weeknight</div>
       <h1>Rice bowl</h1>
       <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:680px">Rice, a protein, and the month&#x27;s peppers and zucchini. Where the week&#x27;s leftovers go for lunch.</p>
+      <p class="cook-meta">10 minutes with cooked rice · Dinner or lunch for one</p>
+      <button type="button" class="cook-wake" hidden>Keep screen on while cooking</button>
     </div>
 
-    <div class="meal-body">
-      <div class="meal-main">
-        <section aria-labelledby="keep-heading">
-          <h2 id="keep-heading">Keep</h2>
-          <ul class="checklist"><li>Rice</li><li>Olive oil and salt</li></ul>
-        </section>
+    <div class="cook-card">
+      <section aria-labelledby="protein-heading" class="cook-section">
+        <h2 id="protein-heading"><span class="cook-num">1</span> Pick a protein</h2>
+        <ul class="cook-choices">
+          <li class="cook-choice">
+            <span class="cook-choice-name">Chicken drumsticks, leftover</span>
+            <span class="cook-choice-amount">Meat from 2–3</span>
+            <span class="cook-choice-note">Pulled from the bone, warmed in a pan, 2 minutes.</span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Halibut</span>
+            <span class="cook-choice-amount">½ lb</span>
+            <span class="cook-choice-note">Seared 3–4 minutes, flipped, 1–2 more.</span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Pork chop, leftover</span>
+            <span class="cook-choice-amount">1, sliced</span>
+            <span class="cook-choice-note">Warmed in a hot pan, 1 minute.</span>
+          </li>
+        </ul>
+      </section>
 
-        <section aria-labelledby="adds-heading">
-          <h2 id="adds-heading">August adds</h2>
-          
-      <div class="meal-adds-group">
-        <div class="meal-adds-sublabel">Start with</div>
-        <ul class="checklist"><li>Red bell pepper strips, roasted or raw</li><li>Cherry tomatoes, halved</li></ul>
-      </div>
-      <div class="meal-adds-group">
-        <div class="meal-adds-sublabel">Choose from</div>
-        <ul class="checklist"><li>Zucchini, quickly sautéed</li><li>Charred pepper sauce</li><li>Basil</li><li>Jalapeño</li></ul>
-      </div>
-        </section>
+      <section aria-labelledby="flavor-heading" class="cook-section">
+        <h2 id="flavor-heading"><span class="cook-num">2</span> Pick a flavor</h2>
+        <ul class="cook-choices">
+          <li class="cook-choice">
+            <span class="cook-choice-name">Smoky</span>
+            <span class="cook-choice-amount">Charred pepper sauce + lime</span>
+            <span class="cook-choice-note">A spoonful of the jar, lime squeezed over. <a class="cook-jar-link" href="../../../august/charred-pepper-sauce/">How to make the charred pepper sauce →</a></span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Fresh</span>
+            <span class="cook-choice-amount">Burst tomatoes + basil</span>
+            <span class="cook-choice-note">Cherry tomatoes split in hot olive oil, basil torn in off the heat. </span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Hot</span>
+            <span class="cook-choice-amount">Jalapeño + lime + flaky salt</span>
+            <span class="cook-choice-note">Jalapeño shaved thin, lime squeezed hard, flaky salt. </span>
+          </li>
+        </ul>
+      </section>
 
-        <section aria-labelledby="variations-heading">
-          <h2 id="variations-heading">Variations</h2>
-          <div class="meal-variations">
-            
-    <div class="meal-variation">
-      <span class="meal-variation-ingredients">Drumsticks · smoky</span>
-      <span class="meal-variation-context">Leftover meat pulled from the bone, pepper sauce.</span>
+      <section aria-labelledby="needs-heading" class="cook-section">
+        <h2 id="needs-heading">You'll need</h2>
+        <ul class="checklist"><li>About 1½ cups cooked rice</li><li>1 red bell pepper, in strips</li><li>½ zucchini, in half-moons</li><li>A handful of cherry tomatoes, halved</li><li>Basil</li><li>Olive oil and salt</li></ul>
+        <p class="cook-hint">Plus your protein and your flavor.</p>
+      </section>
+
+      <section aria-labelledby="steps-heading" class="cook-section">
+        <h2 id="steps-heading">Make it</h2>
+        <p class="cook-hint">Tap a step when it's done.</p>
+        <ol class="cook-steps">
+          <li class="cook-step"><span class="cook-cue">If needed</span><span class="cook-step-text">Cook the rice if you need to.</span></li>
+          <li class="cook-step"><span class="cook-cue">4–5 min</span><span class="cook-step-text">Sauté the pepper and zucchini in a hot pan with oil until golden at the edges. Salt them.</span></li>
+          <li class="cook-step"><span class="cook-step-text">Warm or cook your protein.</span></li>
+          <li class="cook-step"><span class="cook-step-text">Rice, vegetables, protein, tomatoes.</span></li>
+          <li class="cook-step"><span class="cook-cue">Finish</span><span class="cook-step-text">Your flavor on top, basil torn over.</span></li>
+        </ol>
+      </section>
+      
+        <section aria-labelledby="leftovers-heading" class="cook-section">
+          <h2 id="leftovers-heading">Leftovers</h2>
+          <p class="cook-leftovers">Pack it as tomorrow&#x27;s lunch, with the flavor on the side.</p>
+        </section>
     </div>
 
-    <div class="meal-variation">
-      <span class="meal-variation-ingredients">Halibut · fresh</span>
-      <span class="meal-variation-context">Seared halibut, burst tomatoes, basil.</span>
-    </div>
-
-    <div class="meal-variation">
-      <span class="meal-variation-ingredients">Pork chop · hot</span>
-      <span class="meal-variation-context">Sliced leftover chop, jalapeño, lime.</span>
-    </div>
-          </div>
-        </section>
-
-        <section aria-labelledby="finish-heading">
-          <h2 id="finish-heading">Finish</h2>
-          <p style="font-family:ui-sans-serif,system-ui,sans-serif;font-size:.97rem;color:#3d4842;line-height:1.6">A generous spoonful of the pepper sauce on top, left to pool rather than mixed in. Basil and lime at the end.</p>
-        </section>
-      </div>
-
-      <aside class="meal-sidebar">
-        <section>
-          <h3>Works well with</h3>
-          <ul class="checklist"><li>A fried egg</li><li>Greek yogurt, salted</li></ul>
-        </section>
-        
-    <section>
-      <h3>From Field Notes</h3>
-      <ul class="meal-field-notes-list"><li class="meal-field-note-title"><a href="../../../august/field-notes/#charring-a-pepper" class="house-flavor-sidebar-link">Charring a pepper</a></li></ul>
-    </section>
-        
-    <section>
-      <h3>House Flavor</h3>
-      <ul class="meal-field-notes-list">
-        <li class="meal-field-note-title">
-          <a href="../../../august/charred-pepper-sauce/" class="house-flavor-sidebar-link">Charred Pepper Sauce</a>
-        </li>
-      </ul>
-    </section>
-        
-      </aside>
-    </div>
+    <script>
+      // Progressive enhancement for cooking with a phone: tap a step to mark
+      // it done, and keep the screen awake where the browser allows it.
+      document.querySelectorAll('.cook-step').forEach(function (li) {
+        li.addEventListener('click', function () { li.classList.toggle('is-done'); });
+      });
+      (function () {
+        var btn = document.querySelector('.cook-wake');
+        if (!btn || !('wakeLock' in navigator)) return;
+        var lock = null;
+        btn.hidden = false;
+        btn.addEventListener('click', function () {
+          if (lock) { lock.release(); lock = null; btn.textContent = 'Keep screen on while cooking'; btn.classList.remove('is-on'); return; }
+          navigator.wakeLock.request('screen').then(function (l) {
+            lock = l; btn.textContent = 'Screen will stay on'; btn.classList.add('is-on');
+            l.addEventListener('release', function () { lock = null; btn.textContent = 'Keep screen on while cooking'; btn.classList.remove('is-on'); });
+          }).catch(function () {});
+        });
+      })();
+    </script>
   </main>
   <footer>
     <div>Seasonal · Know what now tastes like.</div>

@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://bdavey.co/seasonal-basket/july/meals/tacos/" />
   <!-- Favicon placeholder: replace with actual favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
-  <link rel="stylesheet" href="../../../css/base.css?v=5c24a8a8" />
+  <link rel="stylesheet" href="../../../css/base.css?v=1c24c76a" />
   <link rel="stylesheet" href="../../../css/july.css?v=647ebcf9" />
 </head>
 <body>
@@ -32,81 +32,101 @@
       <a href="../../../july/#meals" class="back-link">← July&#x27;s meals</a>
     </div>
 
-    <div class="meal-header">
-      <div class="section-label">July · weekday</div>
+    <div class="meal-header cook-header">
+      <div class="section-label">July · weeknight</div>
       <h1>Tacos</h1>
       <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:680px">Charred salsa, corn, and lime on warm tortillas. Skirt steak, shrimp, or beans — the tortilla doesn&#x27;t mind.</p>
+      <p class="cook-meta">20 minutes · Dinner for one, about 6 tacos</p>
+      <button type="button" class="cook-wake" hidden>Keep screen on while cooking</button>
     </div>
 
-    <div class="meal-body">
-      <div class="meal-main">
-        <section aria-labelledby="keep-heading">
-          <h2 id="keep-heading">Keep</h2>
-          <ul class="checklist"><li>Corn tortillas</li><li>Limes</li></ul>
-        </section>
+    <div class="cook-card">
+      <section aria-labelledby="protein-heading" class="cook-section">
+        <h2 id="protein-heading"><span class="cook-num">1</span> Pick a protein</h2>
+        <ul class="cook-choices">
+          <li class="cook-choice">
+            <span class="cook-choice-name">Skirt steak</span>
+            <span class="cook-choice-amount">¾ lb</span>
+            <span class="cook-choice-note">Seared 2–3 minutes a side in a smoking pan, rested 5, sliced thin across the grain.</span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Shrimp</span>
+            <span class="cook-choice-amount">½ lb</span>
+            <span class="cook-choice-note">Seared 1–2 minutes a side.</span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Black beans</span>
+            <span class="cook-choice-amount">1 can, drained</span>
+            <span class="cook-choice-note">No meat. Warmed in a small pan, 5 minutes.</span>
+          </li>
+        </ul>
+      </section>
 
-        <section aria-labelledby="adds-heading">
-          <h2 id="adds-heading">July adds</h2>
-          
-      <div class="meal-adds-group">
-        <div class="meal-adds-sublabel">Start with</div>
-        <ul class="checklist"><li>Charred tomato salsa</li><li>Sweet corn, cut from the cob</li></ul>
-      </div>
-      <div class="meal-adds-group">
-        <div class="meal-adds-sublabel">Choose from</div>
-        <ul class="checklist"><li>Persian cucumber, diced</li><li>Sliced peach</li><li>Salted Greek yogurt</li></ul>
-      </div>
-        </section>
+      <section aria-labelledby="flavor-heading" class="cook-section">
+        <h2 id="flavor-heading"><span class="cook-num">2</span> Pick a flavor</h2>
+        <ul class="cook-choices">
+          <li class="cook-choice">
+            <span class="cook-choice-name">Smoky</span>
+            <span class="cook-choice-amount">Charred tomato salsa + lime</span>
+            <span class="cook-choice-note">A spoonful of the salsa, lime squeezed over. <a class="cook-jar-link" href="../../../july/charred-tomato-salsa/">How to make the charred tomato salsa →</a></span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Sweet and sharp</span>
+            <span class="cook-choice-amount">Peach + lime + flaky salt</span>
+            <span class="cook-choice-note">Sliced ripe peach, lime, salt. A few rings of jalapeño if you want heat. </span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Cool</span>
+            <span class="cook-choice-amount">Greek yogurt + cucumber + mint</span>
+            <span class="cook-choice-note">Grated cucumber stirred into salted yogurt, mint torn in. </span>
+          </li>
+        </ul>
+      </section>
 
-        <section aria-labelledby="variations-heading">
-          <h2 id="variations-heading">Variations</h2>
-          <div class="meal-variations">
-            
-    <div class="meal-variation">
-      <span class="meal-variation-ingredients">Skirt steak · smoky</span>
-      <span class="meal-variation-context">The default. Seared hard, sliced thin across the grain, charred salsa.</span>
+      <section aria-labelledby="needs-heading" class="cook-section">
+        <h2 id="needs-heading">You'll need</h2>
+        <ul class="checklist"><li>12 corn tortillas — two per taco</li><li>1 ear of corn, kernels cut off</li><li>1 lime</li><li>Olive oil and salt</li></ul>
+        <p class="cook-hint">Plus your protein and your flavor.</p>
+      </section>
+
+      <section aria-labelledby="steps-heading" class="cook-section">
+        <h2 id="steps-heading">Make it</h2>
+        <p class="cook-hint">Tap a step when it's done.</p>
+        <ol class="cook-steps">
+          <li class="cook-step"><span class="cook-cue">Tortillas</span><span class="cook-step-text">Warm the tortillas in a dry pan until they blister in spots. Stack them under a towel.</span></li>
+          <li class="cook-step"><span class="cook-cue">3 min</span><span class="cook-step-text">Char the corn kernels in the same dry pan until they blacken in spots. Salt them.</span></li>
+          <li class="cook-step"><span class="cook-cue">2–3 min a side</span><span class="cook-step-text">Steak: salt it, sear in a smoking pan with a little oil, and don&#x27;t move it. Shrimp: 1–2 minutes a side. Beans: warm through.</span></li>
+          <li class="cook-step"><span class="cook-cue">Rest 5 min</span><span class="cook-step-text">Steak: rest it 5 minutes, then slice thin across the grain — that&#x27;s what makes skirt steak tender.</span></li>
+          <li class="cook-step"><span class="cook-cue">Finish</span><span class="cook-step-text">Two tortillas, protein, corn, then your flavor. Lime last.</span></li>
+        </ol>
+      </section>
+      
+        <section aria-labelledby="leftovers-heading" class="cook-section">
+          <h2 id="leftovers-heading">Leftovers</h2>
+          <p class="cook-leftovers">Leftover steak goes into tomorrow&#x27;s rice bowl.</p>
+        </section>
     </div>
 
-    <div class="meal-variation">
-      <span class="meal-variation-ingredients">Shrimp · sweet and sharp</span>
-      <span class="meal-variation-context">Seared shrimp, peach and lime, a little jalapeño.</span>
-    </div>
-
-    <div class="meal-variation">
-      <span class="meal-variation-ingredients">Black beans · smoky</span>
-      <span class="meal-variation-context">No meat. Warm beans, corn, salsa, lime.</span>
-    </div>
-          </div>
-        </section>
-
-        <section aria-labelledby="finish-heading">
-          <h2 id="finish-heading">Finish</h2>
-          <p style="font-family:ui-sans-serif,system-ui,sans-serif;font-size:.97rem;color:#3d4842;line-height:1.6">Warm the tortillas in a dry pan until they blister in spots, two per taco. Sear the steak in a smoking-hot pan, two or three minutes a side, rest it five, and slice across the grain — that&#x27;s what makes skirt steak tender.</p>
-        </section>
-      </div>
-
-      <aside class="meal-sidebar">
-        <section>
-          <h3>Works well with</h3>
-          <ul class="checklist"><li>Black beans</li><li>Rice</li></ul>
-        </section>
-        
-    <section>
-      <h3>From Field Notes</h3>
-      <ul class="meal-field-notes-list"><li class="meal-field-note-title"><a href="../../../july/field-notes/#flaky-salt-goes-on-last" class="house-flavor-sidebar-link">Flaky salt goes on last</a></li></ul>
-    </section>
-        
-    <section>
-      <h3>House Flavor</h3>
-      <ul class="meal-field-notes-list">
-        <li class="meal-field-note-title">
-          <a href="../../../july/charred-tomato-salsa/" class="house-flavor-sidebar-link">Charred Tomato Salsa</a>
-        </li>
-      </ul>
-    </section>
-        
-      </aside>
-    </div>
+    <script>
+      // Progressive enhancement for cooking with a phone: tap a step to mark
+      // it done, and keep the screen awake where the browser allows it.
+      document.querySelectorAll('.cook-step').forEach(function (li) {
+        li.addEventListener('click', function () { li.classList.toggle('is-done'); });
+      });
+      (function () {
+        var btn = document.querySelector('.cook-wake');
+        if (!btn || !('wakeLock' in navigator)) return;
+        var lock = null;
+        btn.hidden = false;
+        btn.addEventListener('click', function () {
+          if (lock) { lock.release(); lock = null; btn.textContent = 'Keep screen on while cooking'; btn.classList.remove('is-on'); return; }
+          navigator.wakeLock.request('screen').then(function (l) {
+            lock = l; btn.textContent = 'Screen will stay on'; btn.classList.add('is-on');
+            l.addEventListener('release', function () { lock = null; btn.textContent = 'Keep screen on while cooking'; btn.classList.remove('is-on'); });
+          }).catch(function () {});
+        });
+      })();
+    </script>
   </main>
   <footer>
     <div>Seasonal · Know what now tastes like.</div>
