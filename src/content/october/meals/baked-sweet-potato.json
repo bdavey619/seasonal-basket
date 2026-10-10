@@ -1,0 +1,49 @@
+{
+  "slug": "baked-sweet-potato",
+  "name": "Baked sweet potato",
+  "display_name": "Baked sweet potato",
+  "effort": "weekday",
+  "intro": "Bake it until the skin puffs and the sugars run, split it, and fill it. The potato is the whole dinner.",
+  "keep": [
+    "Salted Greek yogurt",
+    "Olive oil and salt"
+  ],
+  "season_anchor": [
+    "Sweet potatoes, one or two per person",
+    "Black beans, or whatever's left from the week"
+  ],
+  "season_options": [
+    "Ajvar",
+    "Torn Medjool dates",
+    "Crumbled feta",
+    "Pomegranate seeds",
+    "Chile flakes",
+    "Lime"
+  ],
+  "variations": [
+    {
+      "ingredients": "Smoky: black beans + ajvar + yogurt",
+      "context": "The default. Warm the beans with a spoonful of the jar."
+    },
+    {
+      "ingredients": "Sweet and salty: dates + feta + chile",
+      "context": "Torn dates melt into the hot potato; feta and chile keep it from being dessert."
+    },
+    {
+      "ingredients": "Leftovers: lamb or sausage + yogurt + pomegranate",
+      "context": "Whatever protein is left from the week, warmed and spooned in."
+    }
+  ],
+  "works_well_with": [
+    "Arugula with lemon",
+    "A fried egg"
+  ],
+  "finish": "Bake at 400°F for about an hour, on a sheet pan, until the skin puffs away from the flesh and syrup beads out and caramelizes. Split it lengthwise, push the ends in so it opens, salt the inside, and fill it. Bake extra — they reheat well and they're tomorrow's hash.",
+  "linked_house_flavor": "ajvar",
+  "linked_field_notes": [],
+  "linked_ingredients": [
+    "sweet-potatoes",
+    "fresh-dates",
+    "pomegranates"
+  ]
+}

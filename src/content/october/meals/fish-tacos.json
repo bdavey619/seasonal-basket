@@ -6,7 +6,6 @@
   "intro": "San Diego's taco, made with this month's fish. Seared, not fried, and finished in the time it takes to warm the tortillas.",
   "keep": [
     "Corn tortillas",
-    "Greek yogurt, salted",
     "Lime"
   ],
   "season_anchor": [
@@ -14,23 +13,24 @@
     "Arugula, in place of lettuce"
   ],
   "season_options": [
+    "Salted Greek yogurt",
     "Pomegranate seeds",
-    "A smear of ajvar",
+    "Ajvar",
     "Crumbled feta",
-    "Black beans"
+    "Chile flakes and garlic"
   ],
   "variations": [
     {
-      "ingredients": "Rockfish + arugula + pomegranate + yogurt",
-      "context": "The October fish taco. The pomegranate is the salsa."
+      "ingredients": "Sharp: pomegranate + salted yogurt + lime",
+      "context": "The default. The pomegranate is the salsa."
     },
     {
-      "ingredients": "Rockfish + ajvar + feta + lime",
-      "context": "Smokier. Smear the jar on the tortilla first."
+      "ingredients": "Smoky: ajvar + feta",
+      "context": "Smear the jar on the warm tortilla first, fish on top, feta last."
     },
     {
-      "ingredients": "Black beans + sweet potato + pomegranate",
-      "context": "No fish this week. Same tortillas, same finish."
+      "ingredients": "Hot: chile-garlic oil + lime + arugula",
+      "context": "Spoon warm chile oil over the fish. More lime than seems right."
     }
   ],
   "works_well_with": [
@@ -38,7 +38,7 @@
     "Rice",
     "Lime, a lot of it"
   ],
-  "finish": "Warm the tortillas in a dry pan until they blister in spots, and stack them under a towel. Two per taco. Pomegranate and lime go on last, so they stay cold and bright against the warm fish.",
+  "finish": "Warm the tortillas in a dry pan until they blister in spots, and stack them under a towel. Two per taco. Sear the fish the same way as the weekend — dry, hot pan, hands off — then flake it straight into the tortillas.",
   "linked_house_flavor": "ajvar",
   "linked_field_notes": [
     "dry-hot-hands-off"

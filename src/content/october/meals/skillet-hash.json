@@ -1,0 +1,52 @@
+{
+  "slug": "skillet-hash",
+  "name": "Skillet hash",
+  "display_name": "Skillet hash",
+  "effort": "weekday",
+  "intro": "The week's leftovers, crisped in one pan with an egg cracked on top. It's a different dinner made from things you've already cooked.",
+  "keep": [
+    "A heavy skillet",
+    "Eggs",
+    "Olive oil and salt"
+  ],
+  "season_anchor": [
+    "Sweet potato or kabocha, cubed — raw or leftover",
+    "Red pepper, diced"
+  ],
+  "season_options": [
+    "Leftover sausage, sliced",
+    "Leftover lamb",
+    "Ajvar",
+    "Crumbled feta",
+    "Chile flakes",
+    "Arugula"
+  ],
+  "variations": [
+    {
+      "ingredients": "Sausage + peppers + ajvar",
+      "context": "The default. Sliced leftover sausage, crisped with everything else."
+    },
+    {
+      "ingredients": "Lamb + yogurt + pomegranate",
+      "context": "Leftover lamb in the pan for the last minute; yogurt and seeds at the table."
+    },
+    {
+      "ingredients": "No meat: feta + chile + arugula",
+      "context": "Two eggs instead of one, feta crumbled over, greens on the side."
+    }
+  ],
+  "works_well_with": [
+    "Toast",
+    "Arugula with lemon"
+  ],
+  "finish": "Heat a heavy skillet with a good film of olive oil. Add the cubed squash or sweet potato in one layer and leave it alone until the bottom browns, about five minutes — the same hands-off rule as the fish. Stir, add the pepper and any leftover meat, and cook until everything is crisp at the edges. Make a hollow, crack in an egg, cover the pan for two or three minutes until the white sets.",
+  "linked_house_flavor": "ajvar",
+  "linked_field_notes": [
+    "dry-hot-hands-off"
+  ],
+  "linked_ingredients": [
+    "sweet-potatoes",
+    "kabocha-squash",
+    "red-bell-peppers"
+  ]
+}

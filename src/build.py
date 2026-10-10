@@ -185,7 +185,7 @@ def display_name(slug, ingredients_data=None):
 
 # ── Meal transformations ───────────────────────────────────────────────────────
 
-def render_transformations(transformations, meal_hrefs=None, meals_by_name=None):
+def render_transformations(transformations, meal_hrefs=None, meals_by_name=None, compact=False):
     """
     The meals section. Each transformation is the month's default version of a
     meal; the variations beneath it are the other ways to combine the basket for
@@ -208,10 +208,16 @@ def render_transformations(transformations, meal_hrefs=None, meals_by_name=None)
         variations = (meals_by_name.get(meal_name) or {}).get("variations", [])
         var_html = ""
         if variations:
+            # Compact editions list the directions only; the explanations
+            # live on each meal's own page.
+            def when(v):
+                if compact:
+                    return ""
+                return f"""
+          <span class="meal-way-when">{e(v['context'])}</span>"""
             items = "".join(f"""
         <li class="meal-way">
-          <span class="meal-way-combo">{e(v['ingredients'])}</span>
-          <span class="meal-way-when">{e(v['context'])}</span>
+          <span class="meal-way-combo">{e(v['ingredients'])}</span>{when(v)}
         </li>""" for v in variations)
             more = f'<a class="meal-way-more" href="{e(href)}">All of it →</a>' if href else ""
             var_html = f"""
@@ -1110,7 +1116,8 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
         <h2 id="transforms-heading">{e(edition.get('meals_heading', f'Your usual meals, wearing {month}.'))}</h2>
         <p class="section-dek">{edition_meals_dek}</p>
         <div class="transformations">
-          {render_transformations(edition['meal_transformations'], meal_hrefs, meals_by_name)}
+          {render_transformations(edition['meal_transformations'], meal_hrefs, meals_by_name,
+                                  compact=edition.get('meal_ways_compact', False))}
         </div>
       </article>
 
@@ -1314,7 +1321,7 @@ def build_meal_page(meal, edition, depth, canonical_url, edition_context, house_
 
     body = f"""
     <div style="padding-top:28px">
-      <a href="{meals_back_href}" class="back-link">← Your usual meals</a>
+      <a href="{meals_back_href}" class="back-link">← {e(edition.get('meals_back_label', 'Your usual meals'))}</a>
     </div>
 
     <div class="meal-header">

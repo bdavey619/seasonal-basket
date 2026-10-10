@@ -1,0 +1,48 @@
+{
+  "slug": "toast-for-dinner",
+  "name": "Toast for dinner",
+  "display_name": "Toast for dinner",
+  "effort": "weekday",
+  "intro": "Thick sourdough, toasted hard in olive oil, with something good on top. Five minutes, and it still counts as dinner.",
+  "keep": [
+    "Sourdough, thick slices",
+    "Olive oil and salt"
+  ],
+  "season_anchor": [
+    "Arugula",
+    "Something from the week: an egg, the lamb, or the fish"
+  ],
+  "season_options": [
+    "Ajvar",
+    "Salted Greek yogurt",
+    "Pomegranate seeds",
+    "Lemon",
+    "Crumbled feta"
+  ],
+  "variations": [
+    {
+      "ingredients": "Smoky: ajvar + fried egg + arugula",
+      "context": "The default. Jar spread thick, egg on top, yolk running."
+    },
+    {
+      "ingredients": "Lamb: yogurt + leftover lamb + pomegranate",
+      "context": "Warm the lamb in the pan first. Yogurt goes down before it."
+    },
+    {
+      "ingredients": "Fish: flaked rockfish + arugula + lemon",
+      "context": "Cold leftover fish, olive oil, lemon, salt. Lunch, too."
+    }
+  ],
+  "works_well_with": [
+    "A second egg",
+    "Arugula dressed with lemon"
+  ],
+  "finish": "Toast the bread in a skillet with a slick of olive oil, pressing it down, until it's golden and crisp on both sides — much better than a toaster. Build it while the bread is hot. Two slices is dinner.",
+  "linked_house_flavor": "ajvar",
+  "linked_field_notes": [],
+  "linked_ingredients": [
+    "arugula",
+    "pomegranates",
+    "rockfish"
+  ]
+}

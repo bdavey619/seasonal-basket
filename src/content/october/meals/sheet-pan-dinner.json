@@ -3,42 +3,43 @@
   "name": "Sheet-pan dinner",
   "display_name": "Sheet-pan dinner",
   "effort": "weekday",
-  "intro": "One vegetable, one protein, one pan, a hot oven, and the jar after. The shape you'll make most this month.",
+  "intro": "One vegetable, one protein, one pan, a hot oven. What goes on at the end decides which dinner it is.",
   "keep": [
     "A sheet pan",
-    "Olive oil and salt",
-    "Lemon"
+    "Olive oil and salt"
   ],
   "season_anchor": [
+    "Chicken sausage, whole links",
     "Kabocha wedges, or sweet potato in cubes",
-    "Red pepper strips",
-    "Chicken sausage, whole links"
+    "Red pepper strips"
   ],
   "season_options": [
-    "A spoonful of ajvar",
-    "Arugula, on top",
-    "Pomegranate seeds"
+    "Ajvar",
+    "Salted Greek yogurt",
+    "Pomegranate seeds",
+    "Lemon or lime",
+    "Chile flakes and garlic"
   ],
   "variations": [
     {
-      "ingredients": "Chicken sausage + kabocha + peppers + ajvar",
-      "context": "The October version. Everything goes in together."
+      "ingredients": "Smoky: ajvar + lemon",
+      "context": "The default. A spoonful of the jar over everything, lemon squeezed on top."
     },
     {
-      "ingredients": "Chicken sausage + sweet potato + peppers + lemon",
-      "context": "When the kabocha's gone. Same pan, same timing."
+      "ingredients": "Cool and sharp: salted yogurt + pomegranate",
+      "context": "Yogurt spread on the plate first, the hot pan tipped onto it, seeds over the top."
     },
     {
-      "ingredients": "Kabocha + peppers + a fried egg",
-      "context": "The sausage is gone. The egg goes on at the table."
+      "ingredients": "Bright and hot: lime + chile + garlic",
+      "context": "Warm olive oil with a grated garlic clove and chile flakes for a minute, then pour it over with lime."
     }
   ],
   "works_well_with": [
     "Rice",
     "Black beans",
-    "Salted Greek yogurt"
+    "Arugula, a handful on top"
   ],
-  "finish": "Heat the oven to 425°F. Squash, peppers, and all two pounds of sausage go on one pan together — use two pans if they crowd — oiled and salted, with room between the pieces. Roast about 30 minutes, turning the sausages once, until they're browned and the squash edges are dark. Eat what you want tonight; the rest is three lunches. Ajvar and a squeeze of lemon at the table.",
+  "finish": "Heat the oven to 425°F. Squash, peppers, and all two pounds of sausage go on one pan together — use two pans if they crowd — oiled and salted, with room between the pieces. Roast about 30 minutes, turning the sausages once, until they're browned and the squash edges are dark. Eat what you want tonight; the rest is lunches and the skillet hash. Finish each plate in one of the three directions.",
   "linked_house_flavor": "ajvar",
   "linked_field_notes": [
     "kabocha-cutting"
@@ -46,6 +47,7 @@
   "linked_ingredients": [
     "kabocha-squash",
     "red-bell-peppers",
-    "sweet-potatoes"
+    "sweet-potatoes",
+    "pomegranates"
   ]
 }

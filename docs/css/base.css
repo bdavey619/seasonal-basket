@@ -763,7 +763,7 @@ a.bring-home-row:hover .bring-home-name { color: var(--accent); }
 .meal-variations { margin-top: 10px; }
 .meal-variation {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
   gap: 16px;
   padding: 11px 0;
   border-bottom: 1px solid var(--line);
@@ -781,7 +781,6 @@ a.bring-home-row:hover .bring-home-name { color: var(--accent); }
   color: var(--muted);
   font-style: italic;
   text-align: right;
-  white-space: nowrap;
 }
 
 /* Field note excerpts in meal sidebar */

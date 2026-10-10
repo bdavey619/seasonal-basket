@@ -143,7 +143,7 @@ October answers the question September left open — heat or storage — with st
 
 **The shopping list** is the basket plus "Also buy" (lemons, limes, corn tortillas, feta, hibiscus tea) and "From your kitchen" (rice, black beans, sourdough, Greek yogurt, eggs, butter, olive oil, garlic, red wine vinegar, sugar, chile flakes, salt). Nothing else is mentioned anywhere in the edition.
 
-**The meals** are five formats: sheet-pan dinner, warm plate, fish tacos, toast for dinner, and baked sweet potato. Rice bowl and pasta are retired for the month.
+**The meals** are six formats, each with three flavor directions: sheet-pan dinner, warm plate, fish tacos, toast for dinner, baked sweet potato, and skillet hash (the leftovers format). Rice bowl and pasta are retired for the month.
 
 **The cut** is rockfish fillets: local, more reliable as the water cools, cheaper than salmon. **The method** is the sear — dry fish, hot pan, hands off — taught by the weekend meal (seared rockfish with brown butter, roasted kabocha, and an arugula, pomegranate, and date salad) and named in the Field Note that points ahead to November's braise. **No new tool.**
 

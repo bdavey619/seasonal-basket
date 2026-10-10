@@ -73,6 +73,10 @@ Two rules for every edition, from October on:
 
 The repeatable meals are formats, not fixed dishes: a shape with slots (one vegetable, one protein, one pan, a hot oven, the jar after). Each month chooses three to five formats that suit its weather and basket, and each format gets made more than once within the month. A familiar format can carry over when it still fits; none is permanent. Rice bowl, pasta, and tacos were July's through September's — October replaced them with a sheet-pan dinner, a warm plate, fish tacos, toast for dinner, and a baked sweet potato.
 
+**Every format has three directions**, and they change the flavor, not just the protein: smoky (the jar), cool and sharp (yogurt and fruit), bright and hot (citrus and chile oil), sweet and salty, and so on — all from the same shopping list. Swapping sausage for chicken is not a direction. Six formats with three directions each is about eighteen distinct dinners from one list. Include at least one leftovers format (October's skillet hash) so the week's cooking turns into a different dinner instead of the same one reheated.
+
+On the edition page, set `meal_ways_compact` so the directions show without their explanations; the explanations live on each meal's page.
+
 Formats accumulate like techniques. After a year, the reader should have a dozen meal shapes they cook without looking anything up.
 
 "Keep the meal. Change the season." still holds for the staples. Read it as: keep it simple, and let the season change the shape of the meal as well as what's in it.
