@@ -1,0 +1,51 @@
+{
+  "slug": "tomato-plate",
+  "name": "Tomato plate",
+  "display_name": "Tomato plate",
+  "effort": "weekday",
+  "intro": "Thick slices of the best tomatoes of the year, something cool beside them, and a protein on top. The meal July does best.",
+  "keep": [
+    "Olive oil",
+    "Flaky salt and black pepper"
+  ],
+  "season_anchor": [
+    "Ripe tomatoes, sliced thick",
+    "Persian cucumbers"
+  ],
+  "season_options": [
+    "Basil and mint",
+    "Tomato herb vinaigrette",
+    "Salted Greek yogurt",
+    "Sliced peach"
+  ],
+  "variations": [
+    {
+      "ingredients": "Wild salmon · cool",
+      "context": "Leftover salmon in big flakes, cucumber yogurt, mint."
+    },
+    {
+      "ingredients": "Shrimp · bright",
+      "context": "Quickly seared shrimp, vinaigrette, basil."
+    },
+    {
+      "ingredients": "Burrata · bright",
+      "context": "No meat. Torn burrata, vinaigrette, basil, sourdough."
+    }
+  ],
+  "works_well_with": [
+    "Toasted sourdough",
+    "Black beans"
+  ],
+  "finish": "Salt the tomatoes first and let them sit while you get everything else ready — five minutes draws out their juice, which becomes the dressing. Flaky salt again at the very end.",
+  "linked_house_flavor": "tomato-herb-vinaigrette",
+  "linked_field_notes": [
+    "flaky-salt-goes-on-last",
+    "add-herbs-after-the-heat"
+  ],
+  "linked_ingredients": [
+    "heirloom-tomatoes",
+    "persian-cucumbers",
+    "basil",
+    "mint"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "sheet-pan-dinner",
+  "name": "Sheet-pan dinner",
+  "display_name": "Sheet-pan dinner",
+  "effort": "weekday",
+  "intro": "Delicata half-moons and chile strips on one pan, with chicken thighs or black beans. The first fall dinner, while it's still warm out.",
+  "keep": [
+    "A sheet pan",
+    "Olive oil and salt"
+  ],
+  "season_anchor": [
+    "Delicata squash, in half-moons",
+    "Roasted chile strips"
+  ],
+  "season_options": [
+    "Boneless chicken thighs",
+    "Black beans",
+    "Escabeche",
+    "Cilantro and lime"
+  ],
+  "variations": [
+    {
+      "ingredients": "Chicken thighs · smoky",
+      "context": "Thighs roasted with the squash, chile strips and lime at the end."
+    },
+    {
+      "ingredients": "Chicken thighs · pickled",
+      "context": "Escabeche and its brine spooned over the hot pan."
+    },
+    {
+      "ingredients": "Black beans · smoky",
+      "context": "No meat. Beans warmed on the pan for the last ten minutes, chile strips, lime."
+    }
+  ],
+  "works_well_with": [
+    "Rice",
+    "Corn tortillas"
+  ],
+  "finish": "Heat the oven to 425°F. Delicata and salted chicken thighs go on the pan with room between the pieces, oiled and salted. Roast 25 to 30 minutes until the squash edges go dark and the chicken is browned. Chile strips go on for the last five minutes.",
+  "linked_house_flavor": "escabeche",
+  "linked_field_notes": [
+    "delicata-skin"
+  ],
+  "linked_ingredients": [
+    "delicata-squash",
+    "roasting-chiles",
+    "limes"
+  ]
+}

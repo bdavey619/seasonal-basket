@@ -1,7 +1,7 @@
 {
   "slug": "mint",
   "name": "Mint",
-  "tile_uses": "The drink, cucumbers, yogurt",
+  "tile_uses": "Cucumber yogurt, the spritz, rice bowls",
   "month": "July",
   "guide_id": "diane",
   "why_now": "Mint is cooling by nature and perfect in summer heat. A few leaves change the temperature of a dish or a drink entirely.",
@@ -13,20 +13,38 @@
   ],
   "buy_this_much": "One bunch. It goes further than you think.",
   "price_note": "One of the least expensive things in this basket — usually $1–2 a bunch at any grocery store.",
-  "pairs_with_month": ["persian-cucumbers", "peaches", "cherries", "blackberries"],
-  "pairs_with_staples": ["greek yogurt", "salmon", "chicken thighs", "sticky rice"],
+  "pairs_with_month": [
+    "persian-cucumbers",
+    "peaches",
+    "cherries",
+    "blackberries"
+  ],
+  "pairs_with_staples": [
+    "Greek yogurt",
+    "rice",
+    "honey"
+  ],
   "flavor_paths": [
-    { "name": "Cucumber-mint", "description": "Lime, salt, mint. The simplest summer side." },
-    { "name": "Fruit and mint", "description": "Peaches, cherries, or blackberries with a few leaves and honey." },
-    { "name": "Spritz", "description": "Slapped and dropped into the Hillcrest Spritz." }
+    {
+      "name": "Cucumber-mint",
+      "description": "Lime, salt, mint. The simplest summer side."
+    },
+    {
+      "name": "In yogurt",
+      "description": "Torn into cucumber yogurt for salmon."
+    },
+    {
+      "name": "In the drink",
+      "description": "Slapped and dropped into the Hillcrest Spritz."
+    }
   ],
   "weekday_uses": [
-    "Cucumber and mint side salad",
-    "Torn over yogurt with fruit",
-    "Added to a salmon rice bowl",
-    "Stirred into sparkling water with lime"
+    "Torn into cucumber yogurt",
+    "Over a salmon rice bowl",
+    "In the Hillcrest Spritz",
+    "With peaches and honey"
   ],
-  "weekend_use": "In the Hillcrest Spritz. Or over a peach and blackberry plate with honey.",
+  "weekend_use": "Over the cucumbers beside the salmon, and in the spritz.",
   "storage": "Keep in water at room temperature or wrapped loosely in a damp paper towel in the refrigerator. Use within five days.",
   "one_thing_to_learn": "Slapping a mint leaf between your palms before using it releases the oils without bruising the leaf. It is worth doing.",
   "market_question": "What variety is this?"

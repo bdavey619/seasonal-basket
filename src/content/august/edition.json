@@ -4,7 +4,7 @@
   "location": "San Diego",
   "edition_number": 2,
   "base_url": "https://bdavey.co/seasonal-basket",
-  "opening_note": "Peppers reach their sweetest now. Figs don't wait. Nectarines need almost nothing. The basket changes. The meals stay. Your kitchen starts to taste like August.",
+  "opening_note": "Peppers reach their sweetest now. Figs don't wait. Nectarines need almost nothing — and they're the reason to buy a thick pork chop this month.",
   "thesis": "Keep the meal. Change the season.",
   "palette": {
     "background": "#ede8df",
@@ -26,20 +26,109 @@
     "jalapenos",
     "zucchini",
     "basil",
-    "nectarines"
+    "nectarines",
+    "pork-chops"
   ],
   "bring_home": {
     "heading": "This is what I'd bring home.",
-    "cost_note": "Around $35–50 for the seasonal basket. Proteins and pantry basics are separate.",
+    "cost_note": "Around $35–50 for the produce and $50–65 for the proteins, all from one well-stocked supermarket. Everything in this edition is on these lines — nothing else to buy.",
     "items": [
-      { "slug": "figs", "name": "Ripe figs", "qty": "1 pint", "note": "Buy them ripe. Plan to eat within two days." },
-      { "slug": "bell-peppers", "name": "Red bell peppers", "qty": "3–4", "note": "The house flavor starts here." },
-      { "slug": "eggplant", "name": "Eggplant", "qty": "1 large or 2 small", "note": "Roasts into something completely different." },
-      { "slug": "cherry-tomatoes", "name": "Cherry tomatoes", "qty": "1 pint", "note": "Still abundant. Still worth it." },
-      { "slug": "jalapenos", "name": "Jalapeños", "qty": "3–4", "note": "The sauce needs two. Keep the rest." },
-      { "slug": "zucchini", "name": "Zucchini", "qty": "3–4 medium", "note": "They carry the week without asking much." },
-      { "slug": "basil", "name": "Basil", "qty": "1 bunch", "note": "Same as last month. Buy a pot if you can." },
-      { "slug": "nectarines", "name": "Nectarines", "qty": "4–5", "note": "The peach's quieter cousin. Almost as good." }
+      {
+        "slug": "figs",
+        "name": "Ripe figs",
+        "qty": "1 pint",
+        "note": "Buy them ripe. Plan to eat within two days."
+      },
+      {
+        "slug": "bell-peppers",
+        "name": "Red bell peppers",
+        "qty": "3–4",
+        "note": "The house flavor starts here."
+      },
+      {
+        "slug": "eggplant",
+        "name": "Eggplant",
+        "qty": "1 large or 2 small",
+        "note": "Roasts into something completely different."
+      },
+      {
+        "slug": "cherry-tomatoes",
+        "name": "Cherry tomatoes",
+        "qty": "2 pints",
+        "note": "Still abundant. Still worth it."
+      },
+      {
+        "slug": "jalapenos",
+        "name": "Jalapeños",
+        "qty": "3–4",
+        "note": "The sauce needs two. Keep the rest."
+      },
+      {
+        "slug": "zucchini",
+        "name": "Zucchini",
+        "qty": "3–4 medium",
+        "note": "They carry the week without asking much."
+      },
+      {
+        "slug": "basil",
+        "name": "Basil",
+        "qty": "1 bunch",
+        "note": "Same as last month. Buy a pot if you can."
+      },
+      {
+        "slug": "nectarines",
+        "name": "Nectarines",
+        "qty": "4–5",
+        "note": "The peach's quieter cousin. Almost as good."
+      }
+    ],
+    "feeds": "Feeds one big appetite for a week: every dinner, and lunch from the leftovers most days.",
+    "proteins": [
+      {
+        "slug": "pork-chops",
+        "name": "Thick pork chops",
+        "qty": "2, bone-in, 1¼ inches",
+        "why": "Pork loves stone fruit: the sweetness and acid of a charred nectarine cut through the fat at the bone. Salted early, it stays juicy.",
+        "uses": "The weekend meal, the charred plate, fig toast"
+      },
+      {
+        "name": "Halibut",
+        "qty": "1 lb",
+        "why": "Lean, delicate fish wants something juicy and acidic cooked around it — burst cherry tomatoes, not a heavy sauce.",
+        "uses": "Pasta, a rice bowl, the charred plate"
+      },
+      {
+        "name": "Chicken drumsticks",
+        "qty": "2 lbs",
+        "why": "All dark meat and skin, drumsticks can take the hottest, longest roast — and the peppers and eggplant collapse in their fat.",
+        "uses": "The sheet pan, a rice bowl, lunches"
+      },
+      {
+        "name": "Prosciutto",
+        "qty": "4 oz",
+        "why": "Salty, cured pork wants something sweet and soft against it — a ripe fig, torn burrata. The salt makes the fruit taste sweeter.",
+        "uses": "Fig toast, the charred plate"
+      }
+    ],
+    "also_buy": [
+      "2 limes",
+      "1 ball burrata",
+      "sherry vinegar",
+      "a wedge of watermelon",
+      "sparkling water"
+    ],
+    "pantry": [
+      "pasta",
+      "rice",
+      "sourdough",
+      "Greek yogurt",
+      "eggs",
+      "olive oil",
+      "garlic",
+      "honey",
+      "flaky salt",
+      "salt",
+      "black pepper"
     ]
   },
   "staples": [
@@ -52,7 +141,11 @@
     "Greek yogurt"
   ],
   "month_card": {
-    "items": ["Fig", "Pepper", "Eggplant"],
+    "items": [
+      "Fig",
+      "Pepper",
+      "Eggplant"
+    ],
     "sub": "Deep, ripe, and barely needing heat."
   },
   "house_flavor": "charred-pepper-sauce",
@@ -74,53 +167,26 @@
       "body": "Salting was right for older varieties, which were genuinely bitter. Modern cultivars have had that bred out. What actually matters is high heat. A crowded pan steams; a hot, uncrowded pan chars. Give it room, leave it alone, and it becomes something worth eating."
     },
     {
-      "slug": "august-fish-counter",
-      "name": "August at the fish counter.",
-      "body": "Yellowtail is still running. White sea bass is having its best weeks. Pacific swordfish shows up at some counters. The question from last month still applies: not 'Do you have salmon?' but 'What came in today?' In August, the honest answer is often better than what you planned."
-    }
-  ],
-  "meal_transformations": [
-    {
-      "meal": "Rice bowl",
-      "change": "Roasted peppers, zucchini, cherry tomatoes, torn basil.",
-      "result": "The pepper does the work."
-    },
-    {
-      "meal": "Pasta",
-      "change": "Cherry tomatoes burst in olive oil. Basil after the heat.",
-      "result": "Still no jar. Still August."
-    },
-    {
-      "meal": "Tacos",
-      "change": "Peppers, jalapeño, cherry tomato, cotija, lime.",
-      "result": "Brighter than it has any right to be."
-    },
-    {
-      "meal": "Yogurt",
-      "change": "Sliced figs or nectarines, a little honey.",
-      "result": "Breakfast becomes the moment."
-    },
-    {
-      "meal": "Chicken",
-      "change": "Zucchini, peppers, charred pepper sauce alongside.",
-      "result": "The sauce is why you made extra."
+      "slug": "salt-early-rest-after",
+      "name": "Salt it early, rest it after.",
+      "body": "Salt a thick pork chop at least an hour before it cooks — overnight, uncovered in the fridge, is better. The salt pulls moisture out, then draws it back in seasoned, and the surface dries enough to brown. After cooking, let it rest five minutes before cutting. The juices settle back into the meat instead of running onto the board. Two steps that cost nothing and work on every thick cut you'll ever cook."
     }
   ],
   "weekend_meal": {
-    "name": "Fig, prosciutto, burrata, and arugula.",
-    "intro": "One meal should feel like the reason you went shopping. In August, this is it.",
-    "card_line": "Figs, burrata, prosciutto, arugula",
+    "name": "Thick pork chops, charred nectarines, and pepper sauce.",
+    "intro": "One meal should feel like the reason you went shopping. In August, it's a thick pork chop salted early, seared hard, and rested — with nectarines charred in the same pan.",
+    "card_line": "Thick pork chops, nectarines, charred pepper sauce, basil",
     "ingredients": [
-      "6–8 ripe figs, halved",
-      "1 ball burrata",
-      "4 slices prosciutto",
-      "A handful of arugula",
+      "2 thick bone-in pork chops",
+      "2 nectarines, halved and pitted",
+      "Charred pepper sauce",
+      "Basil",
       "Olive oil",
-      "Flaky salt and black pepper",
-      "Optional: a drizzle of honey or aged balsamic"
+      "Salt and flaky salt",
+      "Black pepper"
     ],
-    "ingredient_note": "If figs aren't at their peak, nectarines work. The dish follows the same logic — ripe fruit, good cheese, salt, oil.",
-    "method": "Arrange figs, torn burrata, and prosciutto on a plate. Scatter arugula. Drizzle with olive oil, flaky salt, black pepper. Add honey or balsamic if you have it. Eat with bread."
+    "ingredient_note": "Everything here is on the shopping list. Cook both chops; the second is tomorrow's charred plate or fig toast.",
+    "method": "At least an hour ahead — overnight is better — salt the chops well on all sides and leave them uncovered in the fridge. Take them out twenty minutes before cooking and pat them dry. Heat a heavy skillet over medium-high with a thin film of oil until it shimmers. Sear the chops 4 to 5 minutes a side without moving them, then stand them on their fat edge for a minute to render it. They're done when the center is just blushing pink near the bone (140°F if you have a thermometer). Rest them five minutes. While they rest, put the nectarine halves cut side down in the same pan for two or three minutes until they char. Plate the chops with the nectarines, a spoonful of pepper sauce, torn basil, flaky salt, and black pepper."
   },
   "drink": {
     "slug": "north-park-cooler",
@@ -143,8 +209,8 @@
         "context": "If you want heat with the sweet."
       },
       {
-        "change": "Swap basil for mint",
-        "context": "If there's mint left from the week."
+        "change": "A squeeze more lime",
+        "context": "If the watermelon is very sweet."
       },
       {
         "change": "Use nectarine juice instead of watermelon",
@@ -156,11 +222,6 @@
       }
     ]
   },
-  "local_ritual": {
-    "label": "San Diego ritual",
-    "name": "Go to the market without a list.",
-    "description": "August at a San Diego farmers market is worth giving yourself a slow hour. Walk the whole thing once before buying anything. Let what looks best decide the week."
-  },
   "one_thing_to_notice": {
     "headline": "The color of a ripe fig.",
     "body": "A ripe fig darkens all the way to deep purple-black and sometimes splits at the base. Look for a small bead of sweetness near the stem. That's the one to buy."
@@ -169,5 +230,136 @@
   "next_edition": {
     "month": "September",
     "status": "Arriving September 1."
-  }
+  },
+  "meals_heading": "What do you feel like tonight?",
+  "meals_dek": "Start with the protein, pick a way to cook it, then a flavor. Every combination comes out of the same shopping list.",
+  "meals_back_label": "August's meals",
+  "tonight": {
+    "flavors_label": "August's four flavors",
+    "options": [
+      {
+        "name": "Pork chops",
+        "best_with": [
+          "sweet",
+          "smoky"
+        ],
+        "ways": [
+          {
+            "label": "Seared, charred nectarines",
+            "meal": "weekend"
+          },
+          {
+            "label": "Charred plate",
+            "meal": "charred-plate"
+          },
+          {
+            "label": "On fig toast",
+            "meal": "fig-toast"
+          }
+        ]
+      },
+      {
+        "name": "Halibut",
+        "best_with": [
+          "fresh",
+          "hot"
+        ],
+        "ways": [
+          {
+            "label": "Pasta",
+            "meal": "pasta"
+          },
+          {
+            "label": "Rice bowl",
+            "meal": "rice-bowl"
+          },
+          {
+            "label": "Charred plate",
+            "meal": "charred-plate"
+          }
+        ]
+      },
+      {
+        "name": "Chicken drumsticks",
+        "best_with": [
+          "smoky",
+          "hot"
+        ],
+        "ways": [
+          {
+            "label": "Sheet pan",
+            "meal": "sheet-pan-dinner"
+          },
+          {
+            "label": "Rice bowl",
+            "meal": "rice-bowl"
+          }
+        ]
+      },
+      {
+        "name": "Prosciutto",
+        "best_with": [
+          "sweet",
+          "fresh"
+        ],
+        "ways": [
+          {
+            "label": "Fig toast",
+            "meal": "fig-toast"
+          },
+          {
+            "label": "Charred plate with burrata",
+            "meal": "charred-plate"
+          }
+        ]
+      },
+      {
+        "name": "No meat tonight",
+        "best_with": [
+          "sweet",
+          "fresh"
+        ],
+        "ways": [
+          {
+            "label": "Fig toast",
+            "meal": "fig-toast"
+          },
+          {
+            "label": "Pasta",
+            "meal": "pasta"
+          },
+          {
+            "label": "Sheet pan with eggs",
+            "meal": "sheet-pan-dinner"
+          }
+        ]
+      }
+    ]
+  },
+  "flavors": [
+    {
+      "slug": "smoky",
+      "name": "Smoky",
+      "what": "Charred pepper sauce + lime",
+      "how": "A spoonful of the jar, lime squeezed over."
+    },
+    {
+      "slug": "fresh",
+      "name": "Fresh",
+      "what": "Burst tomatoes + basil",
+      "how": "Cherry tomatoes split in hot olive oil, basil torn in off the heat."
+    },
+    {
+      "slug": "hot",
+      "name": "Hot",
+      "what": "Jalapeño + lime + flaky salt",
+      "how": "Jalapeño shaved thin, lime squeezed hard, flaky salt."
+    },
+    {
+      "slug": "sweet",
+      "name": "Sweet",
+      "what": "Nectarine or fig + flaky salt",
+      "how": "Sliced ripe fruit, olive oil, flaky salt. Next to anything charred."
+    }
+  ]
 }

@@ -5,7 +5,7 @@
   "edition_number": 3,
   "status": "published",
   "base_url": "https://bdavey.co/seasonal-basket",
-  "opening_note": "Two seasons share the table this month. Chiles are at their best and about to be gone. The first squash and the first apples arrive while it is still eighty degrees out. Buy from both sides. September is the only month that lets you.",
+  "opening_note": "Two seasons share the table this month. Chiles are at their best and about to be gone. The first squash and the first apples arrive while it is still eighty degrees out — and in a warm year, mahi-mahi is running off the coast. Buy from both sides. September is the only month that lets you.",
   "thesis": "Keep the meal. Change the season.",
   "palette": {
     "background": "#e9e4d6",
@@ -26,16 +26,17 @@
     "limes",
     "delicata-squash",
     "apples",
-    "grapes"
+    "grapes",
+    "mahi-mahi"
   ],
   "bring_home": {
     "heading": "This is what I'd bring home.",
-    "cost_note": "Around $30–45 for the seasonal basket. Proteins and pantry basics are separate, and the escabeche wants two carrots and half an onion you probably already have.",
+    "cost_note": "Around $30–45 for the produce and $45–60 for the three proteins, all from one well-stocked supermarket. Everything in this edition is on these lines — nothing else to buy.",
     "items": [
       {
         "slug": "roasting-chiles",
         "name": "Roasting chiles",
-        "qty": "6–8 poblano or Anaheim",
+        "qty": "8 poblano or Anaheim",
         "note": "Buy more than you think. They shrink by half."
       },
       {
@@ -64,9 +65,9 @@
       },
       {
         "slug": "apples",
-        "name": "Julian apples",
+        "name": "Apples",
         "qty": "4–5",
-        "note": "Eat them raw. Don't bake them yet."
+        "note": "Eat them raw. Julian's, if your store has them."
       },
       {
         "slug": "grapes",
@@ -74,6 +75,51 @@
         "qty": "1–2 lbs",
         "note": "Peak. Keep them cold and eat them cold."
       }
+    ],
+    "feeds": "Feeds one big appetite for a week: every dinner, and lunch from the leftovers most days.",
+    "proteins": [
+      {
+        "slug": "mahi-mahi",
+        "name": "Mahi-mahi fillets",
+        "qty": "1½ lbs",
+        "why": "Mahi is firm and mild, so it can take a bold rub — roasted chile, garlic, lime — and a hot pan, and still taste like the fish.",
+        "uses": "The weekend meal, tacos, a rice bowl"
+      },
+      {
+        "name": "Ground beef",
+        "qty": "1 lb",
+        "why": "Rich ground beef wants something sweet and something sharp cooked into it — diced apple and roasted chile turn it into picadillo.",
+        "uses": "Stuffed chiles, a rice bowl, tacos"
+      },
+      {
+        "name": "Boneless chicken thighs",
+        "qty": "1½ lbs",
+        "why": "Simmered in tart salsa verde, the acid tenderizes the thighs and their fat rounds out the sauce. Neither is as good alone.",
+        "uses": "Simmered in salsa verde, tacos, the sheet pan"
+      }
+    ],
+    "also_buy": [
+      "2 carrots",
+      "1 white onion",
+      "corn tortillas",
+      "8 oz Monterey jack",
+      "1 can whole tomatoes"
+    ],
+    "pantry": [
+      "rice",
+      "black beans",
+      "eggs",
+      "Greek yogurt",
+      "olive oil",
+      "neutral oil",
+      "garlic",
+      "white or apple cider vinegar",
+      "sugar",
+      "salt",
+      "black peppercorns",
+      "bay leaves",
+      "dried oregano",
+      "honey"
     ]
   },
   "staples": [
@@ -112,54 +158,29 @@
       "body": "The skin is thin enough to eat, which is the entire reason to buy this squash instead of a butternut. Halve it lengthwise, scoop the seeds, cut into half-moons, toss with oil and salt, roast hot until the edges go dark. No peeler, no cleaver, no wrestling."
     },
     {
-      "slug": "september-fish-counter",
-      "name": "September at the fish counter.",
-      "body": "In a warm year, dorado shows up off San Diego in late summer and stays into the fall. Yellowtail is still around. The question hasn't changed since July: not 'Do you have salmon?' but 'What came in today?' In September the counter often knows something you didn't plan for."
-    }
-  ],
-  "meal_transformations": [
-    {
-      "meal": "Rice bowl",
-      "change": "Roasted chile strips, delicata half-moons, cilantro, a spoonful of escabeche.",
-      "result": "The jar does the work."
-    },
-    {
-      "meal": "Pasta",
-      "change": "Blended poblano and cream. Cilantro and lime after the heat.",
-      "result": "Green, and not from basil."
-    },
-    {
-      "meal": "Tacos",
-      "change": "Chile strips, salsa verde, cilantro, lime, escabeche.",
-      "result": "The taqueria taco, at home."
-    },
-    {
-      "meal": "Beans",
-      "change": "A spoonful of escabeche and its brine. Cilantro.",
-      "result": "Ten seconds. A different bowl."
-    },
-    {
-      "meal": "Yogurt",
-      "change": "Grated apple, cold grapes, honey.",
-      "result": "Breakfast turns cooler before the weather does."
+      "slug": "paint-then-char",
+      "name": "Paint it, then char it.",
+      "body": "A wet paste — roasted chile, garlic, lime, oil, salt — clings to firm fish and chars in a hot pan into a crust that seasons every bite. It's how fish is grilled up and down the Baja coast. Fifteen minutes in the paste is enough. It works the same way on chicken thighs."
     }
   ],
   "weekend_meal": {
-    "name": "Chiles rellenos, the plain way.",
-    "intro": "One meal should feel like the reason you went shopping. In September, it's the one you can only make while the chiles are here.",
-    "card_line": "Poblanos, jack cheese, tomato broth",
+    "name": "Chile-rubbed mahi-mahi, salsa verde, and warm tortillas.",
+    "intro": "One meal should feel like the reason you went shopping. In September, it's firm local fish painted with roasted chile and charred in a hot pan — the way it's done down the Baja coast.",
+    "card_line": "Mahi-mahi, roasted poblano, salsa verde, tortillas, escabeche",
     "ingredients": [
-      "6 large poblano chiles",
-      "8 oz Monterey jack or Oaxaca cheese, cut into batons",
-      "1 can whole tomatoes, or 4 ripe tomatoes",
-      "½ white onion",
-      "1 garlic clove",
-      "Olive oil",
-      "Salt",
-      "Cilantro and lime, to finish"
+      "1½ lbs mahi-mahi fillets",
+      "1 roasted, peeled poblano",
+      "2 garlic cloves",
+      "2 limes",
+      "Olive oil and salt",
+      "Salsa verde",
+      "Corn tortillas",
+      "Cilantro",
+      "Escabeche, for the table",
+      "1 apple, for a quick slaw"
     ],
-    "ingredient_note": "The traditional version is battered in whipped egg and fried. It's worth doing once, and it is not what this is. Roasted, stuffed, and baked gets you most of the way there on a Sunday afternoon.",
-    "method": "Char the poblanos on all sides — burner, grill, or dry pan. Steam them covered for fifteen minutes, then slip off the skins, keeping the chiles whole. Cut one slit down each side and pull out the seeds. Blend tomatoes, onion, and garlic; simmer in a little oil with salt until it darkens slightly, about twenty minutes. Tuck cheese into each chile, set them in a baking dish, and bake at 425°F until the cheese gives, about fifteen minutes. Spoon the broth around them, not over them. Cilantro and lime at the table."
+    "ingredient_note": "Everything here is on the shopping list. The leftover fish is tomorrow's tacos or rice bowl.",
+    "method": "Blend the roasted poblano with the garlic, the juice of one lime, two tablespoons of olive oil, and a good pinch of salt into a thick paste. Pat the fish dry, coat it all over with the paste, and leave it fifteen minutes. Heat a heavy skillet over medium-high with a film of oil until it shimmers. Lay the fish in and don't move it for three or four minutes, until the paste chars and the fish releases; flip and cook two or three minutes more, until it's opaque all the way through. Shred the apple and toss it with lime, salt, and cilantro. Warm the tortillas in a dry pan. Flake the fish into the tortillas at the table with salsa verde, the apple slaw, escabeche, and more lime."
   },
   "drink": {
     "slug": "golden-hill-agua-fresca",
@@ -179,12 +200,12 @@
     "method": "Blend the grapes with a cup of cold water for about fifteen seconds — no longer, or the seeds and skins turn it bitter. Pour through a fine-mesh strainer, pressing gently. Add another cup of cold water, the juice of half a lime, and a pinch of salt. Taste: it should be barely sweet. Pour over ice with a lime wedge.",
     "try_another_way": [
       {
-        "change": "Salt the rim with Tajín",
-        "context": "If you want it to taste like the corner stand."
+        "change": "Freeze some grapes for ice",
+        "context": "So the last glass isn't watered down."
       },
       {
-        "change": "Top with sparkling water",
-        "context": "If you want it lighter and longer."
+        "change": "Half agua fresca, half cold water",
+        "context": "Lighter, for the hottest afternoons."
       },
       {
         "change": "Blend in half an apple",
@@ -196,11 +217,6 @@
       }
     ]
   },
-  "local_ritual": {
-    "label": "San Diego ritual",
-    "name": "Drive up to Julian.",
-    "description": "An hour inland and four thousand feet up, the apples come in while the coast is still in shorts. Go on a weekday if you can. Buy more than you meant to, eat one in the car, and notice that it is genuinely cooler up there — the first cool air of the year most San Diegans get."
-  },
   "one_thing_to_notice": {
     "headline": "The stripes on a delicata.",
     "body": "A delicata's green stripes deepen toward orange as it cures. Pale ones were picked recently and taste closer to summer squash. The ones with real orange down in the grooves have had time, and they're sweeter. Both are worth eating. They're just not the same squash."
@@ -210,6 +226,124 @@
     "month": "October",
     "status": "Arriving October 1."
   },
+  "meals_heading": "What do you feel like tonight?",
+  "meals_dek": "Start with the protein, pick a way to cook it, then a flavor. Every combination comes out of the same shopping list.",
+  "meals_back_label": "September's meals",
+  "tonight": {
+    "flavors_label": "September's four flavors",
+    "options": [
+      {
+        "name": "Mahi-mahi",
+        "best_with": [
+          "green",
+          "pickled"
+        ],
+        "ways": [
+          {
+            "label": "Chile-rubbed, in tortillas",
+            "meal": "weekend"
+          },
+          {
+            "label": "Tacos",
+            "meal": "tacos"
+          },
+          {
+            "label": "Rice bowl",
+            "meal": "rice-bowl"
+          }
+        ]
+      },
+      {
+        "name": "Ground beef",
+        "best_with": [
+          "sweet-crisp",
+          "pickled"
+        ],
+        "ways": [
+          {
+            "label": "Stuffed chiles",
+            "meal": "stuffed-chiles"
+          },
+          {
+            "label": "Rice bowl",
+            "meal": "rice-bowl"
+          },
+          {
+            "label": "Tacos",
+            "meal": "tacos"
+          }
+        ]
+      },
+      {
+        "name": "Chicken thighs",
+        "best_with": [
+          "green",
+          "smoky"
+        ],
+        "ways": [
+          {
+            "label": "Simmered in salsa verde",
+            "meal": "salsa-verde-simmer"
+          },
+          {
+            "label": "Tacos",
+            "meal": "tacos"
+          },
+          {
+            "label": "Sheet pan",
+            "meal": "sheet-pan-dinner"
+          }
+        ]
+      },
+      {
+        "name": "No meat tonight",
+        "best_with": [
+          "smoky",
+          "green"
+        ],
+        "ways": [
+          {
+            "label": "Cheese-stuffed chiles",
+            "meal": "stuffed-chiles"
+          },
+          {
+            "label": "Eggs in salsa verde",
+            "meal": "salsa-verde-simmer"
+          },
+          {
+            "label": "Delicata and black beans",
+            "meal": "sheet-pan-dinner"
+          }
+        ]
+      }
+    ]
+  },
+  "flavors": [
+    {
+      "slug": "green",
+      "name": "Green",
+      "what": "Salsa verde + cilantro",
+      "how": "A spoonful of salsa verde, cilantro leaves torn over the top."
+    },
+    {
+      "slug": "pickled",
+      "name": "Pickled",
+      "what": "Escabeche + a little brine",
+      "how": "A spoonful of the jar with its brine. Crunch and acid."
+    },
+    {
+      "slug": "smoky",
+      "name": "Smoky",
+      "what": "Charred chile strips + lime",
+      "how": "Strips of roasted chile, lime squeezed over."
+    },
+    {
+      "slug": "sweet-crisp",
+      "name": "Sweet and crisp",
+      "what": "Apple + lime + cilantro",
+      "how": "Shredded apple tossed with lime, salt, and cilantro. A slaw in thirty seconds."
+    }
+  ],
   "guides": [
     {
       "id": "jerome",
@@ -257,7 +391,7 @@
       "slug": "roasting-chiles",
       "name": "Roasting chiles",
       "month": "September",
-      "tile_uses": "Rice bowls, tacos, pasta, the weekend meal",
+      "tile_uses": "Stuffed chiles, tacos, the weekend fish",
       "why_now": "Poblanos, Anaheims, and Hatch chiles come in together in late August and are gone by mid-October. This is the short window when they are everywhere, cheap, and often being roasted in a drum outside the market. Nothing else in the year replaces them.",
       "how_to_choose": [
         "Firm, glossy, and heavy for their size",
@@ -275,33 +409,31 @@
         "delicata-squash"
       ],
       "pairs_with_staples": [
-        "chicken thighs",
-        "ground beef or turkey",
-        "beans",
         "eggs",
-        "sticky white rice"
+        "rice",
+        "black beans"
       ],
       "flavor_paths": [
         {
           "name": "Rajas",
-          "description": "Roasted, peeled, torn into strips. The default. Into everything all week."
-        },
-        {
-          "name": "Creamed",
-          "description": "Blended with cream or Greek yogurt into a sauce for pasta or chicken."
+          "description": "Roasted, peeled, torn into strips. The smoky flavor."
         },
         {
           "name": "Stuffed",
-          "description": "Whole poblanos, cheese, a simple tomato broth. The weekend meal."
+          "description": "Whole poblanos with picadillo or jack, in tomato broth."
+        },
+        {
+          "name": "As a paste",
+          "description": "Blended with garlic, lime, and oil for the fish."
         }
       ],
       "weekday_uses": [
-        "Strips folded into a rice bowl",
-        "Strips in tacos with escabeche and lime",
-        "Blended with cream for pasta",
-        "Chopped into scrambled eggs"
+        "Stuffed with picadillo or cheese",
+        "Strips in tacos and rice bowls",
+        "Blended into the paste for the fish",
+        "On the sheet pan with delicata"
       ],
-      "weekend_use": "Chiles rellenos: charred, peeled, stuffed with jack cheese, baked, and set in a simple tomato broth.",
+      "weekend_use": "Blended with garlic and lime into the paste for the chile-rubbed mahi-mahi.",
       "storage": "Whole and raw, a week in the crisper. Roasted and peeled, four days in the fridge in a covered container, or freeze them in strips — they freeze better than almost any other vegetable in this basket.",
       "one_thing_to_learn": "Charring a chile is not about cooking it. It is about destroying the skin, which is thin, papery, and unpleasant to eat, so that what is underneath can be. That is also why the covered fifteen minutes after charring matters more than the char itself: the trapped steam separates skin from flesh. Skip the steam and you will spend ten minutes scraping. Do it, and the skin slips off in sheets.",
       "market_question": "Are these Hatch, or grown here? And how hot is this batch?"
@@ -310,7 +442,7 @@
       "slug": "tomatillos",
       "name": "Tomatillos",
       "month": "September",
-      "tile_uses": "Salsa verde, tacos, rice bowls, chicken",
+      "tile_uses": "Salsa verde, the simmer, tacos",
       "why_now": "Tomatillos run from midsummer into October and are at their best right now — heavy, tight in the husk, and tart in a way that no other ingredient in the basket is. They are also the cheapest sauce you can make from scratch.",
       "how_to_choose": [
         "The husk should be tight and papery, not shriveled or loose",
@@ -327,11 +459,9 @@
         "limes"
       ],
       "pairs_with_staples": [
-        "chicken thighs",
-        "beans",
-        "ground beef or turkey",
         "eggs",
-        "sticky white rice"
+        "rice",
+        "black beans"
       ],
       "flavor_paths": [
         {
@@ -348,12 +478,12 @@
         }
       ],
       "weekday_uses": [
-        "Salsa verde on rice bowls",
-        "Salsa verde on tacos",
-        "Simmered with chicken thighs until the sauce thickens",
-        "Spooned over fried eggs"
+        "Salsa verde for tacos",
+        "A pot of salsa verde for simmering chicken",
+        "Eggs poached in salsa verde",
+        "Spooned over a rice bowl"
       ],
-      "weekend_use": "Simmer a pot of chicken thighs in salsa verde for an hour and shred them. It is the easiest thing in this edition and it feeds you for days.",
+      "weekend_use": "As salsa verde, on the table with the chile-rubbed fish.",
       "storage": "Leave the husks on and keep them in a paper bag in the crisper — two weeks, easily. Husked, they go sticky and soft faster. Blended salsa keeps five days.",
       "one_thing_to_learn": "Tomatillos are not unripe tomatoes. They are a different plant, related to the ground cherry, and the sourness is structural rather than a sign that you got there too early. That means you cannot fix a tomatillo by waiting. What you can do is decide how much of that sharpness you want: raw keeps all of it, boiling rounds it off, charring trades some of it for smoke.",
       "market_question": "Were these picked this week? And do you cook yours or use them raw?"
@@ -362,7 +492,7 @@
       "slug": "cilantro",
       "name": "Cilantro",
       "month": "September",
-      "tile_uses": "Salsa verde, tacos, rice bowls, beans",
+      "tile_uses": "Salsa verde, slaw, everything",
       "why_now": "Cilantro is a cool-weather herb. It bolts and turns bitter in July heat, and it comes back as the nights start to drop. September is the handoff: basil is on its way out, cilantro is on its way in, and this month's basket is built around the second one.",
       "how_to_choose": [
         "Deep green leaves with no yellowing at the edges",
@@ -379,11 +509,9 @@
         "limes"
       ],
       "pairs_with_staples": [
-        "beans",
-        "sticky white rice",
-        "chicken thighs",
-        "salmon",
-        "Greek yogurt"
+        "rice",
+        "eggs",
+        "black beans"
       ],
       "flavor_paths": [
         {
@@ -392,20 +520,20 @@
         },
         {
           "name": "Torn on top",
-          "description": "Leaves only, after the heat. Tacos, bowls, beans, eggs."
+          "description": "Leaves only, after the heat. The green flavor."
         },
         {
-          "name": "Stirred into yogurt",
-          "description": "Chopped fine with lime and salt. A cold sauce for anything charred."
+          "name": "In the slaw",
+          "description": "With shredded apple and lime."
         }
       ],
       "weekday_uses": [
         "Blended into salsa verde, stems included",
-        "Torn over rice bowls at the table",
-        "Stirred through a pot of beans off the heat",
-        "Chopped into yogurt with lime for a cold sauce"
+        "Torn over tacos and rice bowls",
+        "Tossed into apple slaw with lime",
+        "Over eggs in salsa verde"
       ],
-      "weekend_use": "Scattered over the chiles rellenos with a lime wedge — the only green thing on the plate, and it should be a lot of it.",
+      "weekend_use": "In the apple slaw and over the fish tacos — the only green thing on the plate, and it should be a lot of it.",
       "storage": "Trim the stem ends, stand the bunch in an inch of water like flowers, and put a bag loosely over the top in the fridge. Ten days instead of three. Change the water when you think of it.",
       "one_thing_to_learn": "The stems are not scraps. They carry more of the flavor than the leaves and none of the fragility, which is why they belong in anything blended or simmered while the leaves belong on top at the last second. Learning to split the bunch — stems into the blender, leaves into a bowl for later — is the whole technique, and it applies to parsley the same way.",
       "market_question": "Was this cut this morning? Do you have any with the roots still on?"
@@ -414,7 +542,7 @@
       "slug": "limes",
       "name": "Limes",
       "month": "September",
-      "tile_uses": "Salsa verde, tacos, the drink, everything",
+      "tile_uses": "Everything, at the end",
       "why_now": "California limes are harvested from late summer through winter, and early fall is when they are heaviest with juice and cheapest at the register. Every other ingredient in this basket is sharpened by one. In September a lime is not a garnish — it is a seasoning you buy by the bag.",
       "how_to_choose": [
         "Heavy for its size — that is juice",
@@ -432,11 +560,8 @@
         "grapes"
       ],
       "pairs_with_staples": [
-        "beans",
-        "sticky white rice",
-        "salmon",
-        "chicken thighs",
-        "Greek yogurt"
+        "rice",
+        "black beans"
       ],
       "flavor_paths": [
         {
@@ -455,10 +580,10 @@
       "weekday_uses": [
         "Squeezed over tacos and rice bowls",
         "Into salsa verde at the end, to taste",
-        "Whisked with olive oil and salt as a two-ingredient dressing",
-        "Over cut fruit with a pinch of salt and chile"
+        "In the paste for the fish",
+        "In the apple slaw"
       ],
-      "weekend_use": "Wedges on the table with the chiles rellenos. The broth is rich and the lime is what keeps you eating.",
+      "weekend_use": "In the chile paste, in the slaw, and in wedges on the table.",
       "storage": "Loose in the crisper drawer, not on the counter — two to three weeks cold versus one week warm. Juice keeps five days in a jar, or freeze it in an ice cube tray.",
       "one_thing_to_learn": "Acid is a seasoning, and it does a job salt cannot. When a bowl of beans or a pot of salsa tastes finished but somehow flat, the missing thing is almost never more salt — it is a squeeze of lime. Learn to reach for that first, and half the food you cook gets better without a single new ingredient.",
       "market_question": "Are these Persian or key limes? Which ones are juicier right now?"
@@ -467,7 +592,7 @@
       "slug": "delicata-squash",
       "name": "Delicata squash",
       "month": "September",
-      "tile_uses": "Rice bowls, tacos, roasting alongside chicken",
+      "tile_uses": "The sheet pan, rice bowls",
       "why_now": "The first winter squash of the year shows up at the end of September, and delicata is the one worth buying while it is still hot outside. It is smaller, sweeter, and faster than the squash that comes in November, and unlike them, you do not have to peel it.",
       "how_to_choose": [
         "Cream-colored with green stripes — orange in the grooves means longer cured and sweeter",
@@ -485,11 +610,9 @@
         "limes"
       ],
       "pairs_with_staples": [
-        "sticky white rice",
-        "chicken thighs",
-        "beans",
-        "Greek yogurt",
-        "ground beef or turkey"
+        "rice",
+        "black beans",
+        "Greek yogurt"
       ],
       "flavor_paths": [
         {
@@ -498,20 +621,20 @@
         },
         {
           "name": "Roasted with chile",
-          "description": "Tossed with chile strips at the end. Sweet against smoke."
+          "description": "Chile strips tossed in at the end. Sweet against smoke."
         },
         {
-          "name": "Charred and dressed",
-          "description": "Roasted hard, then hit with lime and cilantro while still hot."
+          "name": "Pickled",
+          "description": "Roasted hard, then hit with escabeche brine while still hot."
         }
       ],
       "weekday_uses": [
-        "Roasted half-moons over rice",
-        "Folded into a taco with chile strips and escabeche",
-        "Roasted on the same sheet pan as chicken thighs",
-        "Cold from the fridge, on yogurt with salt and lime"
+        "On the sheet pan with chicken thighs",
+        "Roasted half-moons over a rice bowl",
+        "With black beans and chile strips",
+        "Cold from the fridge, with lime and salt"
       ],
-      "weekend_use": "A whole tray roasted dark alongside chicken, with the escabeche jar on the table. Almost no work, and it makes the kitchen smell like the season changed.",
+      "weekend_use": "A tray roasted dark beside the fish tacos, if you want something warm.",
       "storage": "On the counter, out of the sun, for a month — it does not need the fridge and does better without it. Once cut, wrap and refrigerate, and use within four days.",
       "one_thing_to_learn": "Winter squash is sweeter than it looks, and the way to find that out is heat and space. Cut it thin, oil it well, spread it out with room between the pieces, and roast it at 425°F or higher until the edges go genuinely dark — not golden, dark. Crowd the pan and it steams into something soft and bland. It is the same lesson eggplant taught in August, on a different vegetable.",
       "market_question": "How long has this been cured? Do you have any with more orange in the stripes?"
@@ -520,7 +643,7 @@
       "slug": "apples",
       "name": "Julian apples",
       "month": "September",
-      "tile_uses": "Raw, slaw on tacos, yogurt, cheese",
+      "tile_uses": "Slaw, picadillo, breakfast",
       "why_now": "Julian is an hour inland and four thousand feet up, and its apples come down the mountain starting in September. A local apple picked this week and eaten raw is a completely different fruit from one that has been in cold storage since last fall — crisper, sharper, and more fragrant.",
       "how_to_choose": [
         "Firm all over, with no give when you press near the stem",
@@ -539,9 +662,7 @@
       ],
       "pairs_with_staples": [
         "Greek yogurt",
-        "sourdough",
-        "chicken thighs",
-        "ground beef or turkey"
+        "honey"
       ],
       "flavor_paths": [
         {
@@ -550,20 +671,20 @@
         },
         {
           "name": "Shredded",
-          "description": "Into a slaw with lime and cilantro. On tacos, it is a revelation."
+          "description": "Into a slaw with lime and cilantro. The sweet-and-crisp flavor."
         },
         {
-          "name": "With something salty",
-          "description": "Sharp cheddar, or a sandwich. Sweetness against salt."
+          "name": "Cooked into picadillo",
+          "description": "Diced into ground beef with roasted chile. Sweet against rich."
         }
       ],
       "weekday_uses": [
-        "Grated over yogurt with honey",
-        "Shredded into a quick lime-and-cilantro slaw for tacos",
-        "Sliced with cheddar and sourdough for lunch",
+        "Diced into picadillo",
+        "Shredded into slaw with lime and cilantro",
+        "Grated over Greek yogurt with honey",
         "Eaten whole, cold, in the afternoon"
       ],
-      "weekend_use": "A slaw of shredded apple, cabbage, lime, salt, and a lot of cilantro, on the table next to anything you charred.",
+      "weekend_use": "Shredded into a lime-and-cilantro slaw for the fish tacos.",
       "storage": "Refrigerate them. A cold apple keeps for a month and stays crisp; a counter apple goes mealy in a week. Keep them away from anything that absorbs smells.",
       "one_thing_to_learn": "Apples are one of the few things in the produce aisle where nothing is truly out of season — but almost everything is out of harvest. Most of the year you are eating fruit that has been held in controlled cold storage for months, which is impressive and also why supermarket apples taste the same in March as in December. September and October are the weeks when you can taste the difference, and the only way to notice it is to eat one raw.",
       "market_question": "What came down from the mountain this week?"
@@ -572,7 +693,7 @@
       "slug": "grapes",
       "name": "Table grapes",
       "month": "September",
-      "tile_uses": "The drink, yogurt, cheese, eaten cold",
+      "tile_uses": "The drink, breakfast, dessert",
       "why_now": "California table grapes peak from late August through October, and September is when the good ones get cheap. This is the one thing in the basket that asks nothing of you — no technique, no recipe, no heat. Buy them, keep them cold, eat them.",
       "how_to_choose": [
         "Green stems, not brown and brittle — that is the freshness tell, not the fruit",
@@ -589,8 +710,7 @@
       ],
       "pairs_with_staples": [
         "Greek yogurt",
-        "sourdough",
-        "chicken thighs"
+        "honey"
       ],
       "flavor_paths": [
         {
@@ -602,20 +722,68 @@
           "description": "Into agua fresca with lime and a pinch of salt."
         },
         {
-          "name": "With salt and cheese",
-          "description": "Alongside something sharp on a board. Sweet against salty and cold."
+          "name": "Frozen",
+          "description": "On a tray in the freezer. Eaten like candy."
         }
       ],
       "weekday_uses": [
         "Cold, by the handful",
-        "Halved over yogurt with honey",
+        "Halved over Greek yogurt with honey",
         "Blended into the agua fresca",
         "Frozen on a tray and eaten like candy"
       ],
-      "weekend_use": "On a board with sharp cheese, sourdough, and the apples — twenty minutes of assembly for people who came over.",
+      "weekend_use": "A bowl of cold grapes after the fish tacos.",
       "storage": "Unwashed, in their bag, in the coldest part of the fridge. Rinse only what you are about to eat; washed grapes turn soft in a day.",
       "one_thing_to_learn": "Grapes do not ripen after they are picked. Unlike the peaches and figs of the last two editions, a hard, sour grape stays a hard, sour grape on your counter forever, which is why the stem tells you more than the fruit does. Green, flexible stems mean the bunch came off the vine recently. Brown, dry, brittle stems mean weeks in a cooler, no matter how good the grapes still look.",
       "market_question": "Which variety is sweetest right now?"
+    },
+    "mahi-mahi": {
+      "slug": "mahi-mahi",
+      "name": "Mahi-mahi",
+      "month": "September",
+      "tile_uses": "The weekend meal, tacos, rice bowls",
+      "why_now": "Mahi-mahi — dorado — is a warm-water fish, and in a warm year it runs off San Diego in late summer and into the fall. It's firm, mild, and sold at most fish counters, often previously frozen. Either way, this is the month it belongs to.",
+      "how_to_choose": [
+        "Firm, pinkish to off-white flesh",
+        "Moist and glossy, with no gaps between the layers",
+        "No dark, dull edges",
+        "It should smell like the ocean, nothing else"
+      ],
+      "buy_this_much": "1½ lbs. The weekend meal, plus tacos or a rice bowl the next day.",
+      "price_note": "Previously frozen mahi is often as good as fresh and usually cheaper. If the counter is out, any firm white fillet works.",
+      "pairs_with_month": [
+        "roasting-chiles",
+        "tomatillos",
+        "limes",
+        "cilantro"
+      ],
+      "pairs_with_staples": [
+        "rice",
+        "black beans"
+      ],
+      "flavor_paths": [
+        {
+          "name": "Chile-rubbed",
+          "description": "Painted with roasted chile paste, charred in a hot pan. The weekend meal."
+        },
+        {
+          "name": "Green",
+          "description": "Flaked into tortillas with salsa verde."
+        },
+        {
+          "name": "Pickled",
+          "description": "Over rice with escabeche and its brine."
+        }
+      ],
+      "weekday_uses": [
+        "Flaked into tacos with salsa verde",
+        "Over a rice bowl with escabeche",
+        "Cold, the next day, with lime and salt"
+      ],
+      "weekend_use": "Chile-rubbed, charred, and flaked into warm tortillas. The weekend meal.",
+      "storage": "Cook it the day you buy it, or the next. Thaw previously frozen fish in the fridge, not on the counter.",
+      "one_thing_to_learn": "Firm fish like mahi can take a marinade or a paste; delicate fish like sole can't. The firmer the flesh, the more seasoning it can carry and the hotter the pan it can handle.",
+      "market_question": "Was this frozen, and when did it come in?"
     }
   }
 }

@@ -1,0 +1,49 @@
+{
+  "slug": "fig-toast",
+  "name": "Fig toast",
+  "display_name": "Fig toast",
+  "effort": "weekday",
+  "intro": "Thick sourdough, torn burrata, ripe figs, honey, flaky salt. The best five-minute dinner of the summer.",
+  "keep": [
+    "Sourdough, thick slices",
+    "Olive oil, honey, flaky salt"
+  ],
+  "season_anchor": [
+    "Ripe figs, halved"
+  ],
+  "season_options": [
+    "Burrata",
+    "Prosciutto",
+    "Leftover pork chop, sliced thin",
+    "Nectarine",
+    "Basil"
+  ],
+  "variations": [
+    {
+      "ingredients": "Burrata · sweet",
+      "context": "The default. Burrata, figs, honey, salt."
+    },
+    {
+      "ingredients": "Prosciutto · sweet",
+      "context": "Prosciutto torn over the burrata and figs. The old August weekend plate, on toast."
+    },
+    {
+      "ingredients": "Burrata · hot",
+      "context": "A few rings of jalapeño over the figs. Strange and very good."
+    }
+  ],
+  "works_well_with": [
+    "A peeled nectarine",
+    "Black pepper"
+  ],
+  "finish": "Toast the bread in a skillet with olive oil until crisp. Tear the burrata over it while it's hot so it starts to soften, then the figs, a thread of honey, and flaky salt.",
+  "linked_house_flavor": "charred-pepper-sauce",
+  "linked_field_notes": [
+    "figs-and-time"
+  ],
+  "linked_ingredients": [
+    "figs",
+    "nectarines",
+    "basil"
+  ]
+}

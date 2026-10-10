@@ -1,7 +1,7 @@
 {
   "slug": "sweet-corn",
   "name": "Sweet corn",
-  "tile_uses": "Rice bowls, tacos, chicken",
+  "tile_uses": "Tacos, the hot-pan dinner, rice bowls",
   "month": "July",
   "guide_id": "jerome",
   "why_now": "Corn sugars convert to starch quickly after picking. July corn eaten within a day or two of harvest is a different ingredient from corn that has traveled for a week. Grocery stores turn over fast in summer — the corn on the shelf right now is likely good.",
@@ -13,19 +13,38 @@
   ],
   "price_note": "One of the least expensive vegetables of summer. Widely available at any grocery store in July and often on sale.",
   "buy_this_much": "2–3 ears for one person mid-week, another 1–2 for the weekend",
-  "pairs_with_month": ["heirloom-tomatoes", "basil", "persian-cucumbers", "peaches"],
-  "pairs_with_staples": ["ground beef or turkey", "chicken thighs", "beans", "sticky rice"],
+  "pairs_with_month": [
+    "heirloom-tomatoes",
+    "basil",
+    "persian-cucumbers",
+    "peaches"
+  ],
+  "pairs_with_staples": [
+    "rice",
+    "black beans",
+    "eggs"
+  ],
   "flavor_paths": [
-    { "name": "Bright Taco", "description": "Lime, taco seasoning, tomato, beans, cilantro." },
-    { "name": "Italian Summer", "description": "Basil, olive oil, garlic. Good off the cob into a bowl." },
-    { "name": "Chili-crisp bowl", "description": "Sesame, chili crisp, and a little soy over rice." }
+    {
+      "name": "Charred",
+      "description": "In a smoking pan until it blackens in spots."
+    },
+    {
+      "name": "Raw",
+      "description": "Cut from the cob into a rice bowl. Sweet enough as is."
+    },
+    {
+      "name": "With lime",
+      "description": "Kernels, lime, flaky salt, a little jalapeño."
+    }
   ],
   "weekday_uses": [
-    "Cut off the cob into a rice bowl",
-    "Added to taco bowls with beans and tomato",
-    "Quick corn and tomato salad with basil"
+    "Charred in the hot pan",
+    "Kernels in tacos with salsa",
+    "Raw over a rice bowl",
+    "With black beans and lime"
   ],
-  "weekend_use": "Corn salad alongside grilled chicken thighs and peaches.",
+  "weekend_use": "Charred and cut from the cob, beside the salmon if you want something warm.",
   "storage": "Keep husked corn refrigerated and use within two days. Husked is fine for a day, unhusked is better if waiting.",
   "one_thing_to_learn": "Fresh corn is good raw. Shaved directly off the cob into a salad, it has a sweetness that disappears quickly with heat.",
   "market_question": "When did these come in?"

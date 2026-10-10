@@ -4,9 +4,9 @@
   "month": "august",
   "intro": "One jar. A week of flavor.",
   "card_uses": [
-    "Spoon it over a rice bowl.",
-    "Drizzle alongside chicken or fish.",
-    "Stir into scrambled eggs.",
+    "Spoon it beside a pork chop.",
+    "Drizzle it over drumsticks.",
+    "Stir it into a rice bowl.",
     "Thin it for pasta."
   ],
   "ingredients": [
@@ -27,33 +27,39 @@
       "meal": "rice-bowl",
       "label": "Rice bowl",
       "action": "Spoon it.",
-      "context": "A generous spoonful on top. Let it pool slightly rather than mixing it in."
+      "context": "A generous spoonful on top. Let it pool rather than mixing it in."
     },
     {
-      "meal": null,
-      "label": "Chicken thighs",
+      "meal": "sheet-pan-dinner",
+      "label": "Sheet-pan dinner",
       "action": "Serve alongside.",
-      "context": "Spoon it next to the chicken rather than over it. Let the diner decide how much."
+      "context": "Spoon it next to the drumsticks rather than over them."
     },
     {
-      "meal": null,
-      "label": "Eggs",
-      "action": "Stir it in.",
-      "context": "Add a spoonful to scrambled eggs in the last 30 seconds. Or spoon it over fried eggs."
+      "meal": "charred-plate",
+      "label": "Charred plate",
+      "action": "A spoonful beside.",
+      "context": "It's the smoky flavor, and it's good with everything on the plate."
     },
     {
       "meal": "pasta",
       "label": "Pasta",
       "action": "Thin it.",
-      "context": "Stir in a little olive oil or pasta water. Toss with warm pasta off the heat."
+      "context": "Stir in a little olive oil or pasta water. Toss off the heat."
     },
     {
       "meal": null,
-      "label": "White beans",
-      "action": "Let it sit.",
-      "context": "Spoon over beans and give them a few minutes. They absorb it slowly."
+      "label": "Eggs",
+      "action": "Stir it in.",
+      "context": "A spoonful in scrambled eggs in the last 30 seconds."
     }
   ],
-  "linked_ingredients": ["bell-peppers", "jalapenos"],
-  "linked_field_notes": ["charring-a-pepper", "eggplant-myth"]
+  "linked_ingredients": [
+    "bell-peppers",
+    "jalapenos"
+  ],
+  "linked_field_notes": [
+    "charring-a-pepper",
+    "eggplant-myth"
+  ]
 }

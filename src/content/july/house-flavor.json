@@ -4,9 +4,9 @@
   "month": "july",
   "intro": "One jar. A week of flavor.",
   "card_uses": [
-    "Spoon it over a rice bowl.",
-    "Thin it for fish or chicken.",
-    "Fold it into warm pasta.",
+    "Spoon it over the tomato plate.",
+    "Thin it for salmon.",
+    "Spread it on tomato toast.",
     "Let white beans sit in it."
   ],
   "ingredients": [
@@ -23,36 +23,42 @@
   },
   "uses": [
     {
+      "meal": "tomato-plate",
+      "label": "Tomato plate",
+      "action": "Spoon it over.",
+      "context": "Keep the tomato chunks visible. It's the bright flavor."
+    },
+    {
       "meal": "rice-bowl",
       "label": "Rice bowl",
-      "action": "Spoon it.",
-      "context": "Keep the tomato chunks visible. The texture belongs on top."
+      "action": "Spoon it on top.",
+      "context": "Over sliced steak or salmon, with cucumber."
     },
     {
       "meal": null,
-      "label": "Salmon or chicken",
+      "label": "Wild salmon",
       "action": "Thin it.",
-      "context": "Stir in a little more olive oil or vinegar. It should drizzle rather than sit."
+      "context": "Stir in a little more olive oil so it drizzles rather than sits."
     },
     {
-      "meal": null,
-      "label": "Burrata or sourdough",
+      "meal": "tomato-toast",
+      "label": "Tomato toast",
       "action": "Leave it rustic.",
-      "context": "Use it as-is with larger tomato pieces. Spoon generously and let it pool."
-    },
-    {
-      "meal": "pasta",
-      "label": "Pasta",
-      "action": "Fold it in.",
-      "context": "Add after the heat is off. Toss until the pasta is coated, then let it rest for a minute."
+      "context": "Spoon it on thick, with burrata or an egg."
     },
     {
       "meal": null,
-      "label": "White beans",
+      "label": "Black beans",
       "action": "Let it sit.",
-      "context": "Spoon over beans and give them a few minutes before eating. They absorb the vinegar and oil as they sit."
+      "context": "Spoon over beans and give them a few minutes. They absorb the vinegar and oil."
     }
   ],
-  "linked_ingredients": ["heirloom-tomatoes"],
-  "linked_field_notes": ["sherry-vinegar", "add-herbs-after-the-heat", "flaky-salt-goes-on-last"]
+  "linked_ingredients": [
+    "heirloom-tomatoes"
+  ],
+  "linked_field_notes": [
+    "sherry-vinegar",
+    "add-herbs-after-the-heat",
+    "flaky-salt-goes-on-last"
+  ]
 }

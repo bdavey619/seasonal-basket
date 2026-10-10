@@ -1,0 +1,47 @@
+{
+  "slug": "stuffed-chiles",
+  "name": "Stuffed roasted chiles",
+  "display_name": "Stuffed roasted chiles",
+  "effort": "weekday",
+  "intro": "Charred poblanos, stuffed and baked in a simple tomato broth. Picadillo on a weeknight, jack cheese when there's no meat.",
+  "keep": [
+    "A baking dish",
+    "Olive oil and salt"
+  ],
+  "season_anchor": [
+    "4 roasted, peeled poblanos",
+    "Picadillo (ground beef, diced apple, chile), or Monterey jack"
+  ],
+  "season_options": [
+    "Canned whole tomatoes, blended with a little onion and garlic",
+    "Cilantro and lime"
+  ],
+  "variations": [
+    {
+      "ingredients": "Ground beef · sweet and crisp",
+      "context": "Picadillo inside, apple slaw on the side."
+    },
+    {
+      "ingredients": "Monterey jack · smoky",
+      "context": "No meat. Cheese inside, chile strips and lime over the broth."
+    },
+    {
+      "ingredients": "Ground beef · pickled",
+      "context": "Picadillo, with escabeche at the table."
+    }
+  ],
+  "works_well_with": [
+    "Rice",
+    "Black beans"
+  ],
+  "finish": "For the picadillo, brown the beef hard, then add a little diced onion, one diced apple, a chopped roasted chile, salt, and a splash of the blended tomatoes, and cook until thick. Slit each roasted poblano down one side, pull out the seeds, and stuff it. Spoon the blended tomatoes into a baking dish, set the chiles in it, and bake at 425°F for 15 minutes.",
+  "linked_house_flavor": "escabeche",
+  "linked_field_notes": [
+    "chile-roasting-season"
+  ],
+  "linked_ingredients": [
+    "roasting-chiles",
+    "apples",
+    "cilantro"
+  ]
+}

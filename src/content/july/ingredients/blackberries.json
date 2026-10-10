@@ -1,7 +1,7 @@
 {
   "slug": "blackberries",
   "name": "Blackberries",
-  "tile_uses": "Yogurt, breakfast, dessert",
+  "tile_uses": "Breakfast, after dinner",
   "month": "July",
   "guide_id": "diane",
   "why_now": "Wild and cultivated blackberries both peak in July in Southern California. They are deeply flavored, slightly tart, and good with almost nothing added.",
@@ -13,19 +13,35 @@
   ],
   "buy_this_much": "One pint. Use within two or three days.",
   "price_note": "Peak season often brings the price down noticeably compared to off-season. Worth picking up when they look good — they're typically among the more affordable berry options in July.",
-  "pairs_with_month": ["mint", "peaches", "cherries"],
-  "pairs_with_staples": ["greek yogurt", "sourdough"],
+  "pairs_with_month": [
+    "mint",
+    "peaches",
+    "cherries"
+  ],
+  "pairs_with_staples": [
+    "Greek yogurt",
+    "honey"
+  ],
   "flavor_paths": [
-    { "name": "Breakfast", "description": "Over Greek yogurt with mint and honey." },
-    { "name": "Dessert", "description": "With a little cream or over good vanilla ice cream." },
-    { "name": "Salad", "description": "In a green salad with peaches and a light vinaigrette." }
+    {
+      "name": "Breakfast",
+      "description": "Over Greek yogurt with mint and honey."
+    },
+    {
+      "name": "After dinner",
+      "description": "With sliced peach and a little honey."
+    },
+    {
+      "name": "As they are",
+      "description": "Cold, by the handful."
+    }
   ],
   "weekday_uses": [
-    "Greek yogurt topping in the morning",
-    "Eaten as a snack",
-    "Added to a fruit plate with peaches and mint"
+    "Over Greek yogurt with honey",
+    "With sliced peaches after dinner",
+    "Eaten as a snack"
   ],
-  "weekend_use": "Fruit plate with peaches, mint, and honey as a light dessert.",
+  "weekend_use": "With peaches, mint, and honey as a light dessert.",
   "storage": "Refrigerate unwashed and use within two to three days. Wash only just before eating.",
   "one_thing_to_learn": "Blackberries are fragile. They do not improve with time. Buy them close to when you will eat them and treat the container gently.",
   "market_question": "How ripe are these right now?"

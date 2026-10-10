@@ -4,7 +4,7 @@
   "location": "San Diego",
   "edition_number": 1,
   "base_url": "https://bdavey.co/seasonal-basket",
-  "opening_note": "Tomatoes deserve the center of the plate. Cucumbers make everything cooler. Peaches need almost nothing. Your usual meals can stay simple. Now they taste like July.",
+  "opening_note": "Tomatoes deserve the center of the plate. Cucumbers make everything cooler. Peaches need almost nothing. And wild salmon is in season — the one month to buy it, and to cook it gently.",
   "thesis": "Keep the meal. Change the season.",
   "palette": {
     "background": "#f5efe4",
@@ -26,20 +26,105 @@
     "basil",
     "mint",
     "cherries",
-    "blackberries"
+    "blackberries",
+    "wild-salmon"
   ],
   "bring_home": {
     "heading": "This is what I'd bring home.",
-    "cost_note": "Around $30–45 for the seasonal basket. Proteins and pantry basics are separate.",
+    "cost_note": "Around $30–45 for the produce and $55–70 for the three proteins, all from one well-stocked supermarket. Everything in this edition is on these lines — nothing else to buy.",
     "items": [
-      { "slug": "heirloom-tomatoes", "name": "Ripe tomatoes", "qty": "4–5", "note": "The week revolves around these." },
-      { "slug": "persian-cucumbers", "name": "Persian cucumbers", "qty": "1 bag", "note": "They'll last all week." },
-      { "slug": "peaches", "name": "Peaches", "qty": "3–4", "note": "Buy the ones that smell ready." },
-      { "slug": "sweet-corn", "name": "Sweet corn", "qty": "3–4 ears", "note": "Frozen works if that's what's there." },
-      { "slug": "basil", "name": "Basil", "qty": "1 bunch", "note": "A potted plant lasts longer." },
-      { "slug": "mint", "name": "Mint", "qty": "1 small bunch", "note": "For the drink and the cucumbers." },
-      { "slug": "cherries", "name": "Cherries", "qty": "1 lb", "note": "Skip if expensive. The window comes back." },
-      { "slug": "blackberries", "name": "Blackberries", "qty": "1 pint", "note": "Eat within two days of buying." }
+      {
+        "slug": "heirloom-tomatoes",
+        "name": "Ripe tomatoes",
+        "qty": "6–8",
+        "note": "The week revolves around these."
+      },
+      {
+        "slug": "persian-cucumbers",
+        "name": "Persian cucumbers",
+        "qty": "1 bag",
+        "note": "They'll last all week."
+      },
+      {
+        "slug": "peaches",
+        "name": "Peaches",
+        "qty": "3–4",
+        "note": "Buy the ones that smell ready."
+      },
+      {
+        "slug": "sweet-corn",
+        "name": "Sweet corn",
+        "qty": "3–4 ears",
+        "note": "Frozen works if that's what's there."
+      },
+      {
+        "slug": "basil",
+        "name": "Basil",
+        "qty": "1 bunch",
+        "note": "A potted plant lasts longer."
+      },
+      {
+        "slug": "mint",
+        "name": "Mint",
+        "qty": "1 small bunch",
+        "note": "For the drink and the cucumbers."
+      },
+      {
+        "slug": "cherries",
+        "name": "Cherries",
+        "qty": "1 lb",
+        "note": "Skip if expensive. The window comes back."
+      },
+      {
+        "slug": "blackberries",
+        "name": "Blackberries",
+        "qty": "1 pint",
+        "note": "Eat within two days of buying."
+      }
+    ],
+    "feeds": "Feeds one big appetite for a week: every dinner, and lunch from the leftovers most days.",
+    "proteins": [
+      {
+        "slug": "wild-salmon",
+        "name": "Wild salmon",
+        "qty": "1½ lbs",
+        "why": "Rich, oily fish wants something cool and sharp against it — cucumber, mint, a raw tomato — not something heavier.",
+        "uses": "The weekend meal, the tomato plate, a rice bowl"
+      },
+      {
+        "name": "Skirt steak",
+        "qty": "1½ lbs",
+        "why": "Beefy, charred meat wants acid and freshness at the end. Charred salsa and a squeeze of lime do what a steak sauce would, lighter.",
+        "uses": "Tacos, the hot-pan dinner, lunches"
+      },
+      {
+        "name": "Shrimp",
+        "qty": "1 lb, frozen is fine",
+        "why": "Shrimp is sweet and cooks in two minutes, so it wants something sweeter and something sharp beside it — corn and peach, with lime.",
+        "uses": "The hot-pan dinner, tacos, the tomato plate"
+      }
+    ],
+    "also_buy": [
+      "3 limes",
+      "1 white onion",
+      "1 jalapeño",
+      "corn tortillas",
+      "1 ball burrata",
+      "sherry vinegar",
+      "tart cherry juice",
+      "sparkling water"
+    ],
+    "pantry": [
+      "rice",
+      "black beans",
+      "sourdough",
+      "Greek yogurt",
+      "eggs",
+      "olive oil",
+      "garlic",
+      "honey",
+      "flaky salt",
+      "black pepper"
     ]
   },
   "staples": [
@@ -52,7 +137,11 @@
     "Greek yogurt"
   ],
   "month_card": {
-    "items": ["Tomato", "Cucumber", "Peach"],
+    "items": [
+      "Tomato",
+      "Cucumber",
+      "Peach"
+    ],
     "sub": "Fresh, bright, and barely cooked."
   },
   "house_flavor": "tomato-herb-vinaigrette",
@@ -76,52 +165,27 @@
       "body": "The fragrance is gone within seconds of hitting a hot pan. Add basil and mint after the heat is off, or right before the plate reaches the table. The smell will tell you something changed."
     },
     {
-      "slug": "ask-whats-freshest",
-      "name": "Ask what's freshest.",
-      "body": "The best question at a fish counter isn't 'Do you have halibut?' It's 'What came in today?' In July around San Diego, that often means yellowtail, white sea bass, or local albacore — fish that rarely make it to a standard grocery shelf. Fish at its best needs almost nothing. Let what's there decide what you're making."
-    }
-  ],
-  "meal_transformations": [
-    {
-      "meal": "Rice bowl",
-      "change": "Tomatoes, cucumber, basil on top.",
-      "result": "It tastes like you planned it."
-    },
-    {
-      "meal": "Pasta",
-      "change": "Tomatoes, basil, olive oil. No jar.",
-      "result": "July does the work."
-    },
-    {
-      "meal": "Tacos",
-      "change": "Corn, tomato, cucumber, lime.",
-      "result": "Brighter than any jar."
-    },
-    {
-      "meal": "Yogurt",
-      "change": "Peaches or blackberries, nothing else.",
-      "result": "Breakfast earns its keep."
-    },
-    {
-      "meal": "Chicken",
-      "change": "Corn, cotija, and peach alongside.",
-      "result": "The side becomes the reason."
+      "slug": "low-heat-salmon",
+      "name": "Low heat for rich fish.",
+      "body": "A fatty fish like salmon is at its best cooked gently: a 275°F oven for about twenty minutes, until it just flakes and a few white beads appear at the edges. The fat stays inside, the flesh turns silky, and the window for overcooking is wide. It's the opposite of how most people cook salmon — and the reason it tastes better."
     }
   ],
   "weekend_meal": {
-    "name": "Tomato, burrata, basil, and sourdough.",
-    "intro": "One meal should feel like the reason you went shopping. This is July’s.",
-    "card_line": "Tomatoes, burrata, basil, sourdough",
+    "name": "Slow-roasted salmon, tomatoes, and burrata.",
+    "intro": "One meal should feel like the reason you went shopping. In July, it's wild salmon cooked so gently it turns silky, next to the best tomatoes of the year — the one cooking lesson this month is built around.",
+    "card_line": "Wild salmon, ripe tomatoes, burrata, basil, sourdough",
     "ingredients": [
-      "2 ripe tomatoes",
-      "1 ball burrata or fresh mozzarella",
+      "1½ lbs wild salmon, in one piece",
+      "3 ripe tomatoes",
+      "1 ball burrata",
       "Basil",
+      "Tomato herb vinaigrette",
       "Olive oil",
       "Flaky salt and black pepper",
       "Toasted sourdough"
     ],
-    "ingredient_note": "Burrata is richer and more indulgent. Fresh mozzarella is a reliable everyday alternative at about half the price — Trader Joe’s and Whole Foods both carry it.",
-    "method": "Slice the tomatoes thickly. Tear open the cheese. Add basil, olive oil, salt, and pepper. Use warm sourdough to drag through everything left on the plate."
+    "ingredient_note": "Everything here is on the shopping list. Wild Pacific salmon — king, sockeye, or coho — is in season through summer. Farmed works with the same timing. What's left is tomorrow's tomato plate.",
+    "method": "Heat the oven to 275°F. Set the salmon on an oiled sheet pan, rub it with olive oil, and salt it. Roast for 18 to 25 minutes, depending on thickness, until it flakes when pressed and a few white beads appear at the edges — it will look barely done, and that's right. While it roasts, slice the tomatoes thick, salt them, and set the burrata beside them. Spoon the vinaigrette over the tomatoes, tear basil over everything, and add black pepper. Break the salmon into large pieces at the table. Sourdough for dragging through what's left on the plate."
   },
   "drink": {
     "slug": "hillcrest-spritz",
@@ -157,11 +221,6 @@
       }
     ]
   },
-  "local_ritual": {
-    "label": "San Diego ritual",
-    "name": "Take dinner outside.",
-    "description": "Pack tomatoes, bread, fruit, and something cold to drink. Eat near the water while the light is still hanging around."
-  },
   "one_thing_to_notice": {
     "headline": "The smell of a tomato vine.",
     "body": "Smell near the stem before you cut it. That green scent is easy to miss, and it's one of the best parts of a July tomato."
@@ -170,5 +229,123 @@
   "next_edition": {
     "month": "August",
     "status": "Arriving soon."
-  }
+  },
+  "meals_heading": "What do you feel like tonight?",
+  "meals_dek": "Start with the protein, pick a way to cook it, then a flavor. Every combination comes out of the same shopping list.",
+  "meals_back_label": "July's meals",
+  "tonight": {
+    "flavors_label": "July's four flavors",
+    "options": [
+      {
+        "name": "Wild salmon",
+        "best_with": [
+          "cool",
+          "bright"
+        ],
+        "ways": [
+          {
+            "label": "Slow-roasted, with burrata",
+            "meal": "weekend"
+          },
+          {
+            "label": "Tomato plate",
+            "meal": "tomato-plate"
+          },
+          {
+            "label": "Rice bowl",
+            "meal": "rice-bowl"
+          }
+        ]
+      },
+      {
+        "name": "Skirt steak",
+        "best_with": [
+          "smoky",
+          "bright"
+        ],
+        "ways": [
+          {
+            "label": "Tacos",
+            "meal": "tacos"
+          },
+          {
+            "label": "Hot-pan dinner",
+            "meal": "hot-pan-dinner"
+          },
+          {
+            "label": "Rice bowl",
+            "meal": "rice-bowl"
+          }
+        ]
+      },
+      {
+        "name": "Shrimp",
+        "best_with": [
+          "sweet-sharp",
+          "smoky"
+        ],
+        "ways": [
+          {
+            "label": "Hot-pan dinner",
+            "meal": "hot-pan-dinner"
+          },
+          {
+            "label": "Tacos",
+            "meal": "tacos"
+          },
+          {
+            "label": "Tomato plate",
+            "meal": "tomato-plate"
+          }
+        ]
+      },
+      {
+        "name": "No meat tonight",
+        "best_with": [
+          "bright",
+          "cool"
+        ],
+        "ways": [
+          {
+            "label": "Tomato toast",
+            "meal": "tomato-toast"
+          },
+          {
+            "label": "Tomato plate with burrata",
+            "meal": "tomato-plate"
+          },
+          {
+            "label": "Bean tacos",
+            "meal": "tacos"
+          }
+        ]
+      }
+    ]
+  },
+  "flavors": [
+    {
+      "slug": "bright",
+      "name": "Bright",
+      "what": "Tomato vinaigrette + basil",
+      "how": "Spoon the jar over, tear basil on top, flaky salt last."
+    },
+    {
+      "slug": "smoky",
+      "name": "Smoky",
+      "what": "Charred tomato salsa + lime",
+      "how": "A spoonful of the salsa, lime squeezed over."
+    },
+    {
+      "slug": "cool",
+      "name": "Cool",
+      "what": "Greek yogurt + cucumber + mint",
+      "how": "Grated cucumber stirred into salted yogurt, mint torn in."
+    },
+    {
+      "slug": "sweet-sharp",
+      "name": "Sweet and sharp",
+      "what": "Peach + lime + flaky salt",
+      "how": "Sliced ripe peach, lime, salt. A few rings of jalapeño if you want heat."
+    }
+  ]
 }

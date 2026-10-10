@@ -2,7 +2,7 @@
   "slug": "delicata-squash",
   "name": "Delicata squash",
   "month": "September",
-  "tile_uses": "Rice bowls, tacos, roasting alongside chicken",
+  "tile_uses": "The sheet pan, rice bowls",
   "why_now": "The first winter squash of the year shows up at the end of September, and delicata is the one worth buying while it is still hot outside. It is smaller, sweeter, and faster than the squash that comes in November, and unlike them, you do not have to peel it.",
   "how_to_choose": [
     "Cream-colored with green stripes — orange in the grooves means longer cured and sweeter",
@@ -13,20 +13,38 @@
   ],
   "buy_this_much": "2 squash. That is two dinners' worth of roasted half-moons, or one dinner and a week of rice bowl additions.",
   "price_note": "Usually sold by the piece rather than by weight, which makes the medium ones the better buy. Early-season squash costs a little more than it will in November.",
-  "pairs_with_month": ["roasting-chiles", "cilantro", "apples", "limes"],
-  "pairs_with_staples": ["sticky white rice", "chicken thighs", "beans", "Greek yogurt", "ground beef or turkey"],
+  "pairs_with_month": [
+    "roasting-chiles",
+    "cilantro",
+    "apples",
+    "limes"
+  ],
+  "pairs_with_staples": [
+    "rice",
+    "black beans",
+    "Greek yogurt"
+  ],
   "flavor_paths": [
-    { "name": "Roasted plain", "description": "Half-moons, oil, salt, hot oven. The version you will actually make." },
-    { "name": "Roasted with chile", "description": "Tossed with chile strips at the end. Sweet against smoke." },
-    { "name": "Charred and dressed", "description": "Roasted hard, then hit with lime and cilantro while still hot." }
+    {
+      "name": "Roasted plain",
+      "description": "Half-moons, oil, salt, hot oven. The version you will actually make."
+    },
+    {
+      "name": "Roasted with chile",
+      "description": "Chile strips tossed in at the end. Sweet against smoke."
+    },
+    {
+      "name": "Pickled",
+      "description": "Roasted hard, then hit with escabeche brine while still hot."
+    }
   ],
   "weekday_uses": [
-    "Roasted half-moons over rice",
-    "Folded into a taco with chile strips and escabeche",
-    "Roasted on the same sheet pan as chicken thighs",
-    "Cold from the fridge, on yogurt with salt and lime"
+    "On the sheet pan with chicken thighs",
+    "Roasted half-moons over a rice bowl",
+    "With black beans and chile strips",
+    "Cold from the fridge, with lime and salt"
   ],
-  "weekend_use": "A whole tray roasted dark alongside chicken, with the escabeche jar on the table. Almost no work, and it makes the kitchen smell like the season changed.",
+  "weekend_use": "A tray roasted dark beside the fish tacos, if you want something warm.",
   "storage": "On the counter, out of the sun, for a month — it does not need the fridge and does better without it. Once cut, wrap and refrigerate, and use within four days.",
   "one_thing_to_learn": "Winter squash is sweeter than it looks, and the way to find that out is heat and space. Cut it thin, oil it well, spread it out with room between the pieces, and roast it at 425°F or higher until the edges go genuinely dark — not golden, dark. Crowd the pan and it steams into something soft and bland. It is the same lesson eggplant taught in August, on a different vegetable.",
   "market_question": "How long has this been cured? Do you have any with more orange in the stripes?"

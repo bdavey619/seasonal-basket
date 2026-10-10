@@ -1,7 +1,7 @@
 {
   "slug": "peaches",
   "name": "Peaches",
-  "tile_uses": "Yogurt, chicken, snacks, dessert",
+  "tile_uses": "The hot-pan dinner, tacos, after dinner",
   "month": "July",
   "guide_id": "adela",
   "why_now": "Southern California stone fruit peaks through July. The combination of warm days and cool nights produces fruit with real sugar and real fragrance. This is the short window.",
@@ -13,19 +13,37 @@
   ],
   "buy_this_much": "4–5 peaches for one person for the week. They do not all need to be eaten at once.",
   "price_note": "Stone fruit is most abundant and affordable in July. Peak season tends to bring prices down across most grocery stores, and peaches are often featured on sale.",
-  "pairs_with_month": ["mint", "blackberries", "sweet-corn", "basil"],
-  "pairs_with_staples": ["greek yogurt", "chicken thighs", "salmon"],
+  "pairs_with_month": [
+    "mint",
+    "blackberries",
+    "sweet-corn",
+    "basil"
+  ],
+  "pairs_with_staples": [
+    "Greek yogurt",
+    "honey"
+  ],
   "flavor_paths": [
-    { "name": "Nearly nothing", "description": "A ripe peach over the sink. Salt if you want it." },
-    { "name": "Mint + honey", "description": "Sliced with fresh mint and a little honey. Breakfast or dessert." },
-    { "name": "Savory", "description": "Grilled or sliced alongside chicken. A little lime, a little heat." }
+    {
+      "name": "Nearly nothing",
+      "description": "A ripe peach over the sink. Salt if you want it."
+    },
+    {
+      "name": "Charred",
+      "description": "Halved, cut side down in a hot pan, beside steak or shrimp."
+    },
+    {
+      "name": "Sweet and sharp",
+      "description": "Sliced with lime and flaky salt."
+    }
   ],
   "weekday_uses": [
-    "Sliced on Greek yogurt in the morning",
-    "Added to a salad with chicken or salmon",
-    "Eaten as a snack, ripe"
+    "Charred in the hot pan beside shrimp or steak",
+    "Sliced into shrimp tacos with lime",
+    "On Greek yogurt with honey",
+    "Eaten ripe, as dessert"
   ],
-  "weekend_use": "Grilled peaches alongside chicken thighs with corn salad.",
+  "weekend_use": "Sliced with mint and honey after the salmon.",
   "storage": "Counter until ripe. Eat within a day or two of peak ripeness. Do not refrigerate until fully ripe, and use quickly after.",
   "one_thing_to_learn": "A peach ripens from the inside out. A soft shoulder near the stem means it is ready. A hard peach left on the counter will soften but will not improve the way tree-ripened fruit does.",
   "market_question": "Which variety is ripest today?"

@@ -7,7 +7,7 @@
     "Spoon it over a rice bowl.",
     "Pile it on tacos.",
     "Stir it into beans, brine and all.",
-    "Eat it next to anything rich."
+    "Set it next to the stuffed chiles."
   ],
   "ingredients": [
     "2 Anaheim chiles or 4 jalapeños, cut into rounds",
@@ -40,22 +40,22 @@
       "context": "This is the jar that makes a home taco taste like it came from somewhere. Go heavier than feels right."
     },
     {
+      "meal": "stuffed-chiles",
+      "label": "Stuffed chiles",
+      "action": "Serve alongside.",
+      "context": "Something crisp and sharp next to something rich and baked."
+    },
+    {
+      "meal": "sheet-pan-dinner",
+      "label": "Sheet-pan dinner",
+      "action": "Spoon the brine over.",
+      "context": "Over the hot squash and chicken, straight from the oven."
+    },
+    {
       "meal": null,
-      "label": "Beans",
+      "label": "Black beans",
       "action": "Stir in the brine.",
       "context": "A spoonful of brine into a pot of beans does what a squeeze of vinegar does, with more going on."
-    },
-    {
-      "meal": null,
-      "label": "Chicken thighs",
-      "action": "Serve alongside.",
-      "context": "Something crisp and sharp next to something rich and browned. That's the whole idea."
-    },
-    {
-      "meal": null,
-      "label": "A sandwich",
-      "action": "Chop it fine.",
-      "context": "Chopped escabeche does the job of pickles, mustard, and hot sauce at once."
     }
   ],
   "linked_ingredients": [

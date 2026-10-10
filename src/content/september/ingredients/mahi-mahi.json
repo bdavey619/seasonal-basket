@@ -1,0 +1,48 @@
+{
+  "slug": "mahi-mahi",
+  "name": "Mahi-mahi",
+  "month": "September",
+  "tile_uses": "The weekend meal, tacos, rice bowls",
+  "why_now": "Mahi-mahi — dorado — is a warm-water fish, and in a warm year it runs off San Diego in late summer and into the fall. It's firm, mild, and sold at most fish counters, often previously frozen. Either way, this is the month it belongs to.",
+  "how_to_choose": [
+    "Firm, pinkish to off-white flesh",
+    "Moist and glossy, with no gaps between the layers",
+    "No dark, dull edges",
+    "It should smell like the ocean, nothing else"
+  ],
+  "buy_this_much": "1½ lbs. The weekend meal, plus tacos or a rice bowl the next day.",
+  "price_note": "Previously frozen mahi is often as good as fresh and usually cheaper. If the counter is out, any firm white fillet works.",
+  "pairs_with_month": [
+    "roasting-chiles",
+    "tomatillos",
+    "limes",
+    "cilantro"
+  ],
+  "pairs_with_staples": [
+    "rice",
+    "black beans"
+  ],
+  "flavor_paths": [
+    {
+      "name": "Chile-rubbed",
+      "description": "Painted with roasted chile paste, charred in a hot pan. The weekend meal."
+    },
+    {
+      "name": "Green",
+      "description": "Flaked into tortillas with salsa verde."
+    },
+    {
+      "name": "Pickled",
+      "description": "Over rice with escabeche and its brine."
+    }
+  ],
+  "weekday_uses": [
+    "Flaked into tacos with salsa verde",
+    "Over a rice bowl with escabeche",
+    "Cold, the next day, with lime and salt"
+  ],
+  "weekend_use": "Chile-rubbed, charred, and flaked into warm tortillas. The weekend meal.",
+  "storage": "Cook it the day you buy it, or the next. Thaw previously frozen fish in the fridge, not on the counter.",
+  "one_thing_to_learn": "Firm fish like mahi can take a marinade or a paste; delicate fish like sole can't. The firmer the flesh, the more seasoning it can carry and the hotter the pan it can handle.",
+  "market_question": "Was this frozen, and when did it come in?"
+}
