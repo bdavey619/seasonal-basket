@@ -1,0 +1,49 @@
+{
+  "slug": "salsa-verde-simmer",
+  "name": "Simmered in salsa verde",
+  "display_name": "Simmered in salsa verde",
+  "effort": "weekday",
+  "intro": "A pot of salsa verde and something simmered in it until the sauce thickens. Chicken thighs on Sunday, eggs on Wednesday.",
+  "keep": [
+    "A wide pan with a lid",
+    "Salt"
+  ],
+  "season_anchor": [
+    "Salsa verde, a full batch",
+    "Boneless chicken thighs, or eggs"
+  ],
+  "season_options": [
+    "Cilantro",
+    "Limes",
+    "Monterey jack",
+    "Black beans"
+  ],
+  "variations": [
+    {
+      "ingredients": "Chicken thighs · green",
+      "context": "The default. Simmered 25 minutes, shredded in the sauce."
+    },
+    {
+      "ingredients": "Chicken thighs · smoky",
+      "context": "Chile strips stirred in for the last five minutes."
+    },
+    {
+      "ingredients": "Eggs · green",
+      "context": "No meat. Eggs cracked into the simmering sauce, covered until set."
+    }
+  ],
+  "works_well_with": [
+    "Rice",
+    "Corn tortillas"
+  ],
+  "finish": "Bring the salsa verde to a simmer in a wide pan. For chicken, add the salted thighs, cover, and simmer gently for about 25 minutes until they shred easily — then shred them right in the sauce. For eggs, make four hollows in the simmering sauce, crack an egg into each, cover, and cook four or five minutes until the whites set.",
+  "linked_house_flavor": "escabeche",
+  "linked_field_notes": [
+    "salsa-verde-no-recipe"
+  ],
+  "linked_ingredients": [
+    "tomatillos",
+    "cilantro",
+    "limes"
+  ]
+}

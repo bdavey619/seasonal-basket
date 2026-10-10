@@ -5,7 +5,7 @@
   "edition_number": 3,
   "status": "published",
   "base_url": "https://bdavey.co/seasonal-basket",
-  "opening_note": "Two seasons share the table this month. Chiles are at their best and about to be gone. The first squash and the first apples arrive while it is still eighty degrees out. Buy from both sides. September is the only month that lets you.",
+  "opening_note": "Two seasons share the table this month. Chiles are at their best and about to be gone. The first squash and the first apples arrive while it is still eighty degrees out — and in a warm year, mahi-mahi is running off the coast. Buy from both sides. September is the only month that lets you.",
   "thesis": "Keep the meal. Change the season.",
   "palette": {
     "background": "#e9e4d6",
@@ -26,16 +26,17 @@
     "limes",
     "delicata-squash",
     "apples",
-    "grapes"
+    "grapes",
+    "mahi-mahi"
   ],
   "bring_home": {
     "heading": "This is what I'd bring home.",
-    "cost_note": "Around $30–45 for the seasonal basket. Proteins and pantry basics are separate, and the escabeche wants two carrots and half an onion you probably already have.",
+    "cost_note": "Around $30–45 for the produce and $45–60 for the three proteins, all from one well-stocked supermarket. Everything in this edition is on these lines — nothing else to buy.",
     "items": [
       {
         "slug": "roasting-chiles",
         "name": "Roasting chiles",
-        "qty": "6–8 poblano or Anaheim",
+        "qty": "8 poblano or Anaheim",
         "note": "Buy more than you think. They shrink by half."
       },
       {
@@ -64,9 +65,9 @@
       },
       {
         "slug": "apples",
-        "name": "Julian apples",
+        "name": "Apples",
         "qty": "4–5",
-        "note": "Eat them raw. Don't bake them yet."
+        "note": "Eat them raw. Julian's, if your store has them."
       },
       {
         "slug": "grapes",
@@ -74,6 +75,51 @@
         "qty": "1–2 lbs",
         "note": "Peak. Keep them cold and eat them cold."
       }
+    ],
+    "feeds": "Feeds one big appetite for a week: every dinner, and lunch from the leftovers most days.",
+    "proteins": [
+      {
+        "slug": "mahi-mahi",
+        "name": "Mahi-mahi fillets",
+        "qty": "1½ lbs",
+        "why": "Mahi is firm and mild, so it can take a bold rub — roasted chile, garlic, lime — and a hot pan, and still taste like the fish.",
+        "uses": "The weekend meal, tacos, a rice bowl"
+      },
+      {
+        "name": "Ground beef",
+        "qty": "1 lb",
+        "why": "Rich ground beef wants something sweet and something sharp cooked into it — diced apple and roasted chile turn it into picadillo.",
+        "uses": "Stuffed chiles, a rice bowl, tacos"
+      },
+      {
+        "name": "Boneless chicken thighs",
+        "qty": "1½ lbs",
+        "why": "Simmered in tart salsa verde, the acid tenderizes the thighs and their fat rounds out the sauce. Neither is as good alone.",
+        "uses": "Simmered in salsa verde, tacos, the sheet pan"
+      }
+    ],
+    "also_buy": [
+      "2 carrots",
+      "1 white onion",
+      "corn tortillas",
+      "8 oz Monterey jack",
+      "1 can whole tomatoes"
+    ],
+    "pantry": [
+      "rice",
+      "black beans",
+      "eggs",
+      "Greek yogurt",
+      "olive oil",
+      "neutral oil",
+      "garlic",
+      "white or apple cider vinegar",
+      "sugar",
+      "salt",
+      "black peppercorns",
+      "bay leaves",
+      "dried oregano",
+      "honey"
     ]
   },
   "staples": [
@@ -112,54 +158,29 @@
       "body": "The skin is thin enough to eat, which is the entire reason to buy this squash instead of a butternut. Halve it lengthwise, scoop the seeds, cut into half-moons, toss with oil and salt, roast hot until the edges go dark. No peeler, no cleaver, no wrestling."
     },
     {
-      "slug": "september-fish-counter",
-      "name": "September at the fish counter.",
-      "body": "In a warm year, dorado shows up off San Diego in late summer and stays into the fall. Yellowtail is still around. The question hasn't changed since July: not 'Do you have salmon?' but 'What came in today?' In September the counter often knows something you didn't plan for."
-    }
-  ],
-  "meal_transformations": [
-    {
-      "meal": "Rice bowl",
-      "change": "Roasted chile strips, delicata half-moons, cilantro, a spoonful of escabeche.",
-      "result": "The jar does the work."
-    },
-    {
-      "meal": "Pasta",
-      "change": "Blended poblano and cream. Cilantro and lime after the heat.",
-      "result": "Green, and not from basil."
-    },
-    {
-      "meal": "Tacos",
-      "change": "Chile strips, salsa verde, cilantro, lime, escabeche.",
-      "result": "The taqueria taco, at home."
-    },
-    {
-      "meal": "Beans",
-      "change": "A spoonful of escabeche and its brine. Cilantro.",
-      "result": "Ten seconds. A different bowl."
-    },
-    {
-      "meal": "Yogurt",
-      "change": "Grated apple, cold grapes, honey.",
-      "result": "Breakfast turns cooler before the weather does."
+      "slug": "paint-then-char",
+      "name": "Paint it, then char it.",
+      "body": "A wet paste — roasted chile, garlic, lime, oil, salt — clings to firm fish and chars in a hot pan into a crust that seasons every bite. It's how fish is grilled up and down the Baja coast. Fifteen minutes in the paste is enough. It works the same way on chicken thighs."
     }
   ],
   "weekend_meal": {
-    "name": "Chiles rellenos, the plain way.",
-    "intro": "One meal should feel like the reason you went shopping. In September, it's the one you can only make while the chiles are here.",
-    "card_line": "Poblanos, jack cheese, tomato broth",
+    "name": "Chile-rubbed mahi-mahi, salsa verde, and warm tortillas.",
+    "intro": "One meal should feel like the reason you went shopping. In September, it's firm local fish painted with roasted chile and charred in a hot pan — the way it's done down the Baja coast.",
+    "card_line": "Mahi-mahi, roasted poblano, salsa verde, tortillas, escabeche",
     "ingredients": [
-      "6 large poblano chiles",
-      "8 oz Monterey jack or Oaxaca cheese, cut into batons",
-      "1 can whole tomatoes, or 4 ripe tomatoes",
-      "½ white onion",
-      "1 garlic clove",
-      "Olive oil",
-      "Salt",
-      "Cilantro and lime, to finish"
+      "1½ lbs mahi-mahi fillets",
+      "1 roasted, peeled poblano",
+      "2 garlic cloves",
+      "2 limes",
+      "Olive oil and salt",
+      "Salsa verde",
+      "Corn tortillas",
+      "Cilantro",
+      "Escabeche, for the table",
+      "1 apple, for a quick slaw"
     ],
-    "ingredient_note": "The traditional version is battered in whipped egg and fried. It's worth doing once, and it is not what this is. Roasted, stuffed, and baked gets you most of the way there on a Sunday afternoon.",
-    "method": "Char the poblanos on all sides — burner, grill, or dry pan. Steam them covered for fifteen minutes, then slip off the skins, keeping the chiles whole. Cut one slit down each side and pull out the seeds. Blend tomatoes, onion, and garlic; simmer in a little oil with salt until it darkens slightly, about twenty minutes. Tuck cheese into each chile, set them in a baking dish, and bake at 425°F until the cheese gives, about fifteen minutes. Spoon the broth around them, not over them. Cilantro and lime at the table."
+    "ingredient_note": "Everything here is on the shopping list. The leftover fish is tomorrow's tacos or rice bowl.",
+    "method": "Blend the roasted poblano with the garlic, the juice of one lime, two tablespoons of olive oil, and a good pinch of salt into a thick paste. Pat the fish dry, coat it all over with the paste, and leave it fifteen minutes. Heat a heavy skillet over medium-high with a film of oil until it shimmers. Lay the fish in and don't move it for three or four minutes, until the paste chars and the fish releases; flip and cook two or three minutes more, until it's opaque all the way through. Shred the apple and toss it with lime, salt, and cilantro. Warm the tortillas in a dry pan. Flake the fish into the tortillas at the table with salsa verde, the apple slaw, escabeche, and more lime."
   },
   "drink": {
     "slug": "golden-hill-agua-fresca",
@@ -179,12 +200,12 @@
     "method": "Blend the grapes with a cup of cold water for about fifteen seconds — no longer, or the seeds and skins turn it bitter. Pour through a fine-mesh strainer, pressing gently. Add another cup of cold water, the juice of half a lime, and a pinch of salt. Taste: it should be barely sweet. Pour over ice with a lime wedge.",
     "try_another_way": [
       {
-        "change": "Salt the rim with Tajín",
-        "context": "If you want it to taste like the corner stand."
+        "change": "Freeze some grapes for ice",
+        "context": "So the last glass isn't watered down."
       },
       {
-        "change": "Top with sparkling water",
-        "context": "If you want it lighter and longer."
+        "change": "Half agua fresca, half cold water",
+        "context": "Lighter, for the hottest afternoons."
       },
       {
         "change": "Blend in half an apple",
@@ -196,11 +217,6 @@
       }
     ]
   },
-  "local_ritual": {
-    "label": "San Diego ritual",
-    "name": "Drive up to Julian.",
-    "description": "An hour inland and four thousand feet up, the apples come in while the coast is still in shorts. Go on a weekday if you can. Buy more than you meant to, eat one in the car, and notice that it is genuinely cooler up there — the first cool air of the year most San Diegans get."
-  },
   "one_thing_to_notice": {
     "headline": "The stripes on a delicata.",
     "body": "A delicata's green stripes deepen toward orange as it cures. Pale ones were picked recently and taste closer to summer squash. The ones with real orange down in the grooves have had time, and they're sweeter. Both are worth eating. They're just not the same squash."
@@ -209,5 +225,123 @@
   "next_edition": {
     "month": "October",
     "status": "Arriving October 1."
-  }
+  },
+  "meals_heading": "What do you feel like tonight?",
+  "meals_dek": "Start with the protein, pick a way to cook it, then a flavor. Every combination comes out of the same shopping list.",
+  "meals_back_label": "September's meals",
+  "tonight": {
+    "flavors_label": "September's four flavors",
+    "options": [
+      {
+        "name": "Mahi-mahi",
+        "best_with": [
+          "green",
+          "pickled"
+        ],
+        "ways": [
+          {
+            "label": "Chile-rubbed, in tortillas",
+            "meal": "weekend"
+          },
+          {
+            "label": "Tacos",
+            "meal": "tacos"
+          },
+          {
+            "label": "Rice bowl",
+            "meal": "rice-bowl"
+          }
+        ]
+      },
+      {
+        "name": "Ground beef",
+        "best_with": [
+          "sweet-crisp",
+          "pickled"
+        ],
+        "ways": [
+          {
+            "label": "Stuffed chiles",
+            "meal": "stuffed-chiles"
+          },
+          {
+            "label": "Rice bowl",
+            "meal": "rice-bowl"
+          },
+          {
+            "label": "Tacos",
+            "meal": "tacos"
+          }
+        ]
+      },
+      {
+        "name": "Chicken thighs",
+        "best_with": [
+          "green",
+          "smoky"
+        ],
+        "ways": [
+          {
+            "label": "Simmered in salsa verde",
+            "meal": "salsa-verde-simmer"
+          },
+          {
+            "label": "Tacos",
+            "meal": "tacos"
+          },
+          {
+            "label": "Sheet pan",
+            "meal": "sheet-pan-dinner"
+          }
+        ]
+      },
+      {
+        "name": "No meat tonight",
+        "best_with": [
+          "smoky",
+          "green"
+        ],
+        "ways": [
+          {
+            "label": "Cheese-stuffed chiles",
+            "meal": "stuffed-chiles"
+          },
+          {
+            "label": "Eggs in salsa verde",
+            "meal": "salsa-verde-simmer"
+          },
+          {
+            "label": "Delicata and black beans",
+            "meal": "sheet-pan-dinner"
+          }
+        ]
+      }
+    ]
+  },
+  "flavors": [
+    {
+      "slug": "green",
+      "name": "Green",
+      "what": "Salsa verde + cilantro",
+      "how": "A spoonful of salsa verde, cilantro leaves torn over the top."
+    },
+    {
+      "slug": "pickled",
+      "name": "Pickled",
+      "what": "Escabeche + a little brine",
+      "how": "A spoonful of the jar with its brine. Crunch and acid."
+    },
+    {
+      "slug": "smoky",
+      "name": "Smoky",
+      "what": "Charred chile strips + lime",
+      "how": "Strips of roasted chile, lime squeezed over."
+    },
+    {
+      "slug": "sweet-crisp",
+      "name": "Sweet and crisp",
+      "what": "Apple + lime + cilantro",
+      "how": "Shredded apple tossed with lime, salt, and cilantro. A slaw in thirty seconds."
+    }
+  ]
 }

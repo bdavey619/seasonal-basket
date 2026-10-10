@@ -1,0 +1,50 @@
+{
+  "slug": "sheet-pan-dinner",
+  "name": "Sheet-pan dinner",
+  "display_name": "Sheet-pan dinner",
+  "effort": "weekday",
+  "intro": "Drumsticks, eggplant, peppers, and cherry tomatoes on one pan. The oven does everything, and the vegetables cook in the chicken's fat.",
+  "keep": [
+    "A sheet pan",
+    "Olive oil and salt"
+  ],
+  "season_anchor": [
+    "Chicken drumsticks",
+    "Eggplant, in big chunks",
+    "Red bell peppers"
+  ],
+  "season_options": [
+    "Cherry tomatoes",
+    "Zucchini",
+    "Charred pepper sauce",
+    "Jalapeño"
+  ],
+  "variations": [
+    {
+      "ingredients": "Drumsticks · smoky",
+      "context": "The default. Pepper sauce and lime at the table."
+    },
+    {
+      "ingredients": "Drumsticks · hot",
+      "context": "Shaved jalapeño and lime over everything."
+    },
+    {
+      "ingredients": "Eggs · fresh",
+      "context": "No meat. Vegetables roasted alone, eggs cracked into the pan for the last six minutes, basil."
+    }
+  ],
+  "works_well_with": [
+    "Rice",
+    "Sourdough"
+  ],
+  "finish": "Heat the oven to 425°F. Salt the drumsticks and spread everything on the pan with room between the pieces. Roast 40 to 45 minutes, turning the drumsticks once, until the skin is crisp and the eggplant has collapsed. Leftover meat comes off the bone easily for a rice bowl.",
+  "linked_house_flavor": "charred-pepper-sauce",
+  "linked_field_notes": [
+    "eggplant-myth"
+  ],
+  "linked_ingredients": [
+    "eggplant",
+    "bell-peppers",
+    "cherry-tomatoes"
+  ]
+}

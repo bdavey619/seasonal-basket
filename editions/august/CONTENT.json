@@ -4,7 +4,7 @@
   "location": "San Diego",
   "edition_number": 2,
   "base_url": "https://bdavey.co/seasonal-basket",
-  "opening_note": "Peppers reach their sweetest now. Figs don't wait. Nectarines need almost nothing. The basket changes. The meals stay. Your kitchen starts to taste like August.",
+  "opening_note": "Peppers reach their sweetest now. Figs don't wait. Nectarines need almost nothing — and they're the reason to buy a thick pork chop this month.",
   "thesis": "Keep the meal. Change the season.",
   "palette": {
     "background": "#ede8df",
@@ -26,11 +26,12 @@
     "jalapenos",
     "zucchini",
     "basil",
-    "nectarines"
+    "nectarines",
+    "pork-chops"
   ],
   "bring_home": {
     "heading": "This is what I'd bring home.",
-    "cost_note": "Around $35–50 for the seasonal basket. Proteins and pantry basics are separate.",
+    "cost_note": "Around $35–50 for the produce and $45–60 for the three proteins, all from one well-stocked supermarket. Everything in this edition is on these lines — nothing else to buy.",
     "items": [
       {
         "slug": "figs",
@@ -53,7 +54,7 @@
       {
         "slug": "cherry-tomatoes",
         "name": "Cherry tomatoes",
-        "qty": "1 pint",
+        "qty": "2 pints",
         "note": "Still abundant. Still worth it."
       },
       {
@@ -80,6 +81,48 @@
         "qty": "4–5",
         "note": "The peach's quieter cousin. Almost as good."
       }
+    ],
+    "feeds": "Feeds one big appetite for a week: every dinner, and lunch from the leftovers most days.",
+    "proteins": [
+      {
+        "slug": "pork-chops",
+        "name": "Thick pork chops",
+        "qty": "2, bone-in, 1¼ inches",
+        "why": "Pork loves stone fruit: the sweetness and acid of a charred nectarine cut through the fat at the bone. Salted early, it stays juicy.",
+        "uses": "The weekend meal, the charred plate, fig toast"
+      },
+      {
+        "name": "Halibut",
+        "qty": "1 lb",
+        "why": "Lean, delicate fish wants something juicy and acidic cooked around it — burst cherry tomatoes, not a heavy sauce.",
+        "uses": "Pasta, a rice bowl, the charred plate"
+      },
+      {
+        "name": "Chicken drumsticks",
+        "qty": "2 lbs",
+        "why": "All dark meat and skin, drumsticks can take the hottest, longest roast — and the peppers and eggplant collapse in their fat.",
+        "uses": "The sheet pan, a rice bowl, lunches"
+      }
+    ],
+    "also_buy": [
+      "2 limes",
+      "1 ball burrata",
+      "sherry vinegar",
+      "a wedge of watermelon",
+      "sparkling water"
+    ],
+    "pantry": [
+      "pasta",
+      "rice",
+      "sourdough",
+      "Greek yogurt",
+      "eggs",
+      "olive oil",
+      "garlic",
+      "honey",
+      "flaky salt",
+      "salt",
+      "black pepper"
     ]
   },
   "staples": [
@@ -118,53 +161,26 @@
       "body": "Salting was right for older varieties, which were genuinely bitter. Modern cultivars have had that bred out. What actually matters is high heat. A crowded pan steams; a hot, uncrowded pan chars. Give it room, leave it alone, and it becomes something worth eating."
     },
     {
-      "slug": "august-fish-counter",
-      "name": "August at the fish counter.",
-      "body": "Yellowtail is still running. White sea bass is having its best weeks. Pacific swordfish shows up at some counters. The question from last month still applies: not 'Do you have salmon?' but 'What came in today?' In August, the honest answer is often better than what you planned."
-    }
-  ],
-  "meal_transformations": [
-    {
-      "meal": "Rice bowl",
-      "change": "Roasted peppers, zucchini, cherry tomatoes, torn basil.",
-      "result": "The pepper does the work."
-    },
-    {
-      "meal": "Pasta",
-      "change": "Cherry tomatoes burst in olive oil. Basil after the heat.",
-      "result": "Still no jar. Still August."
-    },
-    {
-      "meal": "Tacos",
-      "change": "Peppers, jalapeño, cherry tomato, cotija, lime.",
-      "result": "Brighter than it has any right to be."
-    },
-    {
-      "meal": "Yogurt",
-      "change": "Sliced figs or nectarines, a little honey.",
-      "result": "Breakfast becomes the moment."
-    },
-    {
-      "meal": "Chicken",
-      "change": "Zucchini, peppers, charred pepper sauce alongside.",
-      "result": "The sauce is why you made extra."
+      "slug": "salt-early-rest-after",
+      "name": "Salt it early, rest it after.",
+      "body": "Salt a thick pork chop at least an hour before it cooks — overnight, uncovered in the fridge, is better. The salt pulls moisture out, then draws it back in seasoned, and the surface dries enough to brown. After cooking, let it rest five minutes before cutting. The juices settle back into the meat instead of running onto the board. Two steps that cost nothing and work on every thick cut you'll ever cook."
     }
   ],
   "weekend_meal": {
-    "name": "Fig, prosciutto, burrata, and arugula.",
-    "intro": "One meal should feel like the reason you went shopping. In August, this is it.",
-    "card_line": "Figs, burrata, prosciutto, arugula",
+    "name": "Thick pork chops, charred nectarines, and pepper sauce.",
+    "intro": "One meal should feel like the reason you went shopping. In August, it's a thick pork chop salted early, seared hard, and rested — with nectarines charred in the same pan.",
+    "card_line": "Thick pork chops, nectarines, charred pepper sauce, basil",
     "ingredients": [
-      "6–8 ripe figs, halved",
-      "1 ball burrata",
-      "4 slices prosciutto",
-      "A handful of arugula",
+      "2 thick bone-in pork chops",
+      "2 nectarines, halved and pitted",
+      "Charred pepper sauce",
+      "Basil",
       "Olive oil",
-      "Flaky salt and black pepper",
-      "Optional: a drizzle of honey or aged balsamic"
+      "Salt and flaky salt",
+      "Black pepper"
     ],
-    "ingredient_note": "If figs aren't at their peak, nectarines work. The dish follows the same logic — ripe fruit, good cheese, salt, oil.",
-    "method": "Arrange figs, torn burrata, and prosciutto on a plate. Scatter arugula. Drizzle with olive oil, flaky salt, black pepper. Add honey or balsamic if you have it. Eat with bread."
+    "ingredient_note": "Everything here is on the shopping list. Cook both chops; the second is tomorrow's charred plate or fig toast.",
+    "method": "At least an hour ahead — overnight is better — salt the chops well on all sides and leave them uncovered in the fridge. Take them out twenty minutes before cooking and pat them dry. Heat a heavy skillet over medium-high with a thin film of oil until it shimmers. Sear the chops 4 to 5 minutes a side without moving them, then stand them on their fat edge for a minute to render it. They're done when the center is just blushing pink near the bone (140°F if you have a thermometer). Rest them five minutes. While they rest, put the nectarine halves cut side down in the same pan for two or three minutes until they char. Plate the chops with the nectarines, a spoonful of pepper sauce, torn basil, flaky salt, and black pepper."
   },
   "drink": {
     "slug": "north-park-cooler",
@@ -187,8 +203,8 @@
         "context": "If you want heat with the sweet."
       },
       {
-        "change": "Swap basil for mint",
-        "context": "If there's mint left from the week."
+        "change": "A squeeze more lime",
+        "context": "If the watermelon is very sweet."
       },
       {
         "change": "Use nectarine juice instead of watermelon",
@@ -200,11 +216,6 @@
       }
     ]
   },
-  "local_ritual": {
-    "label": "San Diego ritual",
-    "name": "Go to the market without a list.",
-    "description": "August at a San Diego farmers market is worth giving yourself a slow hour. Walk the whole thing once before buying anything. Let what looks best decide the week."
-  },
   "one_thing_to_notice": {
     "headline": "The color of a ripe fig.",
     "body": "A ripe fig darkens all the way to deep purple-black and sometimes splits at the base. Look for a small bead of sweetness near the stem. That's the one to buy."
@@ -214,6 +225,120 @@
     "month": "September",
     "status": "Arriving September 1."
   },
+  "meals_heading": "What do you feel like tonight?",
+  "meals_dek": "Start with the protein, pick a way to cook it, then a flavor. Every combination comes out of the same shopping list.",
+  "meals_back_label": "August's meals",
+  "tonight": {
+    "flavors_label": "August's four flavors",
+    "options": [
+      {
+        "name": "Pork chops",
+        "best_with": [
+          "sweet",
+          "smoky"
+        ],
+        "ways": [
+          {
+            "label": "Seared, charred nectarines",
+            "meal": "weekend"
+          },
+          {
+            "label": "Charred plate",
+            "meal": "charred-plate"
+          },
+          {
+            "label": "On fig toast",
+            "meal": "fig-toast"
+          }
+        ]
+      },
+      {
+        "name": "Halibut",
+        "best_with": [
+          "fresh",
+          "hot"
+        ],
+        "ways": [
+          {
+            "label": "Pasta",
+            "meal": "pasta"
+          },
+          {
+            "label": "Rice bowl",
+            "meal": "rice-bowl"
+          },
+          {
+            "label": "Charred plate",
+            "meal": "charred-plate"
+          }
+        ]
+      },
+      {
+        "name": "Chicken drumsticks",
+        "best_with": [
+          "smoky",
+          "hot"
+        ],
+        "ways": [
+          {
+            "label": "Sheet pan",
+            "meal": "sheet-pan-dinner"
+          },
+          {
+            "label": "Rice bowl",
+            "meal": "rice-bowl"
+          }
+        ]
+      },
+      {
+        "name": "No meat tonight",
+        "best_with": [
+          "sweet",
+          "fresh"
+        ],
+        "ways": [
+          {
+            "label": "Fig toast",
+            "meal": "fig-toast"
+          },
+          {
+            "label": "Pasta",
+            "meal": "pasta"
+          },
+          {
+            "label": "Sheet pan with eggs",
+            "meal": "sheet-pan-dinner"
+          }
+        ]
+      }
+    ]
+  },
+  "flavors": [
+    {
+      "slug": "smoky",
+      "name": "Smoky",
+      "what": "Charred pepper sauce + lime",
+      "how": "A spoonful of the jar, lime squeezed over."
+    },
+    {
+      "slug": "fresh",
+      "name": "Fresh",
+      "what": "Burst tomatoes + basil",
+      "how": "Cherry tomatoes split in hot olive oil, basil torn in off the heat."
+    },
+    {
+      "slug": "hot",
+      "name": "Hot",
+      "what": "Jalapeño + lime + flaky salt",
+      "how": "Jalapeño shaved thin, lime squeezed hard, flaky salt."
+    },
+    {
+      "slug": "sweet",
+      "name": "Sweet",
+      "what": "Nectarine or fig + flaky salt",
+      "how": "Sliced ripe fruit, olive oil, flaky salt. Next to anything charred."
+    }
+  ],
   "guides": [
     {
       "id": "adela",
@@ -259,7 +384,7 @@
       "slug": "figs",
       "name": "Figs",
       "month": "August",
-      "tile_uses": "Yogurt, cheese plates, weekend meal",
+      "tile_uses": "Fig toast, breakfast",
       "why_now": "Mission figs peak in late July through August. The window is short — often just two or three weeks of genuinely perfect fruit. What you find now was picked ripe and won't be available like this again until next year.",
       "how_to_choose": [
         "Deep purple to almost black — that's ripe, not overripe",
@@ -275,10 +400,9 @@
         "nectarines"
       ],
       "pairs_with_staples": [
+        "sourdough",
         "Greek yogurt",
-        "burrata",
-        "prosciutto",
-        "sourdough"
+        "honey"
       ],
       "flavor_paths": [
         {
@@ -286,20 +410,20 @@
           "description": "Halved and eaten as they are. Salt if you want it."
         },
         {
-          "name": "Sweet",
-          "description": "Sliced on yogurt with a little honey. That's breakfast."
+          "name": "On toast",
+          "description": "With burrata, honey, and flaky salt."
         },
         {
-          "name": "Savory",
-          "description": "With prosciutto, burrata, and arugula. The weekend plate."
+          "name": "Sweet",
+          "description": "On yogurt with a little honey. That's breakfast."
         }
       ],
       "weekday_uses": [
+        "On fig toast with burrata and honey",
         "Halved on Greek yogurt in the morning",
-        "Eaten as a snack, ripe, over the sink",
-        "Sliced alongside cheese and crackers"
+        "Eaten ripe, over the sink"
       ],
-      "weekend_use": "The weekend plate: halved figs, torn burrata, prosciutto, arugula, olive oil, and flaky salt. Eat with bread.",
+      "weekend_use": "Halved beside the pork chops if the nectarines run out.",
       "storage": "Counter for a day, two at most. Refrigerate only if necessary and use immediately after. Do not buy them expecting them to keep.",
       "one_thing_to_learn": "A fig ripens from the outside in, not the inside out. The color tells you something. Black-purple with a soft give near the base is ready. A hard, pale fig won't ripen meaningfully on the counter — it will soften but not sweeten the way a tree-ripened one does.",
       "market_question": "Which variety is this? Are these mission figs?"
@@ -308,7 +432,7 @@
       "slug": "bell-peppers",
       "name": "Bell peppers",
       "month": "August",
-      "tile_uses": "Rice bowls, tacos, house flavor, chicken",
+      "tile_uses": "The jar, the sheet pan, the charred plate",
       "why_now": "Red and yellow bell peppers are fully ripened green peppers — and August is when they arrive in abundance. The color change takes weeks on the plant, which is why they cost more and why they taste completely different. The bitterness is gone. What's left is sweet, thick, and worth roasting.",
       "how_to_choose": [
         "Fully red or fully yellow — no green patches",
@@ -326,31 +450,31 @@
         "zucchini"
       ],
       "pairs_with_staples": [
-        "chicken thighs",
-        "salmon",
+        "rice",
         "eggs",
-        "white beans"
+        "pasta"
       ],
       "flavor_paths": [
         {
           "name": "Charred",
-          "description": "The house flavor. Blistered in a dry pan, steamed, peeled, blended with garlic, oil, and sherry vinegar."
+          "description": "The jar: blistered, steamed, peeled, blended with garlic, oil, and sherry vinegar."
+        },
+        {
+          "name": "Roasted",
+          "description": "On the sheet pan until they collapse."
         },
         {
           "name": "Raw",
-          "description": "Sliced thin in a taco or rice bowl. The sweetness holds without cooking."
-        },
-        {
-          "name": "Roasted whole",
-          "description": "In the oven at high heat. Collapse into softness, serve alongside chicken or fold into pasta."
+          "description": "Sliced thin in a rice bowl. Sweet without cooking."
         }
       ],
       "weekday_uses": [
-        "Sliced raw into tacos or rice bowls",
-        "Roasted and added to a rice bowl or pasta",
-        "Used as the base for the charred pepper sauce"
+        "Charred into the pepper sauce",
+        "On the sheet pan with drumsticks",
+        "Charred in strips for the charred plate",
+        "Raw in a rice bowl"
       ],
-      "weekend_use": "Roasted whole alongside chicken thighs. Tear them open over the plate.",
+      "weekend_use": "As the pepper sauce, spooned beside the pork chops.",
       "storage": "Refrigerator crisper. Up to a week before roasting; a few days once roasted.",
       "one_thing_to_learn": "A fully red bell pepper and a green bell pepper are the same vegetable at different points of ripeness. The green one was picked early. Weeks more on the plant produce the color, the sweetness, and the complete absence of that grassy bitterness. This is also why charring works so well on red peppers — there's actual sugar to caramelize.",
       "market_question": "Are these fully ripened on the plant, or ripened in transit?"
@@ -359,7 +483,7 @@
       "slug": "eggplant",
       "name": "Eggplant",
       "month": "August",
-      "tile_uses": "House flavor base, rice bowls, pasta, sides",
+      "tile_uses": "The sheet pan, the charred plate",
       "why_now": "Eggplant peaks in late summer — August is when Southern California farms produce them in abundance. The flesh is less bitter than in off-season months, and the skin is thinner. What arrives now roasts into something deeply savory with minimal effort.",
       "how_to_choose": [
         "Firm with no soft spots — a soft eggplant will be bitter and seedy",
@@ -376,9 +500,8 @@
         "jalapenos"
       ],
       "pairs_with_staples": [
-        "chicken thighs",
-        "white beans",
-        "eggs",
+        "rice",
+        "pasta",
         "Greek yogurt"
       ],
       "flavor_paths": [
@@ -396,11 +519,11 @@
         }
       ],
       "weekday_uses": [
-        "Roasted in chunks and added to a rice bowl",
-        "Pan-fried thick slices alongside chicken or fish",
-        "Folded into pasta with cherry tomatoes and basil"
+        "Roasted in chunks on the sheet pan",
+        "Charred in the hot pan for the charred plate",
+        "Folded into pasta with burst tomatoes"
       ],
-      "weekend_use": "Charred whole over flame or under the broiler, flesh scooped out and mixed with olive oil, garlic, and lemon. Serve with bread.",
+      "weekend_use": "Charred whole under the broiler, the flesh scooped out with olive oil, garlic, and salt, beside the pork chops.",
       "storage": "Counter for a day or two, then refrigerator. Don't buy it more than three or four days before you plan to use it.",
       "one_thing_to_learn": "You don't need to salt modern eggplant. The salting-and-draining method was developed for older, bitter varieties. Current cultivars have had the bitterness bred out. What actually matters is heat — a crowded pan steams and makes it soggy. Give the pieces room, use a hot pan, and leave them alone until they release and color.",
       "market_question": "What variety is this? Italian or Japanese?"
@@ -409,7 +532,7 @@
       "slug": "cherry-tomatoes",
       "name": "Cherry tomatoes",
       "month": "August",
-      "tile_uses": "Pasta, tacos, rice bowls, snacking",
+      "tile_uses": "Pasta, the sheet pan, rice bowls",
       "why_now": "Cherry tomatoes are still running strong in August and can be exceptional — concentrated flavor, thin skins that burst easily. Where July favored big heirlooms for slicing and eating raw, August is when cherry tomatoes hit their stride, especially the sungold and mixed varieties.",
       "how_to_choose": [
         "Firm but not hard — should give slightly when pressed",
@@ -428,30 +551,30 @@
       ],
       "pairs_with_staples": [
         "pasta",
-        "chicken thighs",
-        "white beans",
+        "rice",
         "eggs"
       ],
       "flavor_paths": [
         {
           "name": "Burst in oil",
-          "description": "In a hot pan with olive oil until they split. The pasta sauce that doesn't need a jar."
-        },
-        {
-          "name": "Raw",
-          "description": "Halved in a taco or rice bowl. Their acidity does the seasoning."
+          "description": "In a hot pan until they split. The fresh flavor, and the pasta sauce."
         },
         {
           "name": "Roasted",
-          "description": "In the oven at high heat until collapsed and slightly caramelized. Different from burst — sweeter, more concentrated."
+          "description": "On the sheet pan until slumped and sweet."
+        },
+        {
+          "name": "Raw",
+          "description": "Halved. Their acidity does the seasoning."
         }
       ],
       "weekday_uses": [
-        "Burst in olive oil and tossed with pasta",
-        "Halved raw in tacos or rice bowls",
-        "Eaten as a snack, straight from the container"
+        "Burst in olive oil for pasta",
+        "Roasted on the sheet pan",
+        "Halved over a rice bowl",
+        "Eaten from the container"
       ],
-      "weekend_use": "Roasted slowly at lower heat until they collapse and concentrate. Spoon over burrata or add to a grain salad.",
+      "weekend_use": "A handful burst in the pork pan after the nectarines, if you want more sauce.",
       "storage": "Counter at room temperature, away from direct sunlight. Do not refrigerate — cold ruins the texture and flavor. Use within three or four days.",
       "one_thing_to_learn": "Bursting cherry tomatoes in a hot pan is one of the most reliable weekday techniques. The key is patience — add them to a hot pan with olive oil, don't stir, and let them blister and split on their own. The skin will tighten, then burst, releasing liquid that becomes the sauce. Stir once they've started to collapse. Add garlic and basil after the heat is off.",
       "market_question": "Do you have sungolds? What's the sweetest variety this week?"
@@ -460,7 +583,7 @@
       "slug": "jalapenos",
       "name": "Jalapeños",
       "month": "August",
-      "tile_uses": "Tacos, eggs, house flavor, everything",
+      "tile_uses": "The hot flavor, the jar, the drink",
       "why_now": "Jalapeños are peak summer, and in August the heat and color variation is at its widest. Green jalapeños are grassier; red jalapeños (fully ripened) are fruitier and a little hotter. The house flavor this month uses them alongside peppers — but they earn their place in almost every savory dish on the table.",
       "how_to_choose": [
         "Firm and glossy, no soft spots",
@@ -477,31 +600,30 @@
         "zucchini"
       ],
       "pairs_with_staples": [
-        "chicken thighs",
-        "eggs",
-        "white beans",
-        "beans"
+        "rice",
+        "eggs"
       ],
       "flavor_paths": [
         {
           "name": "Charred into the sauce",
-          "description": "The house flavor: charred alongside red peppers, blended smooth."
+          "description": "The jar: charred alongside red peppers, blended smooth."
         },
         {
-          "name": "Raw, sliced thin",
-          "description": "In tacos, rice bowls, or the drink. The raw crunch is different from the cooked version."
+          "name": "Raw, shaved thin",
+          "description": "With lime and flaky salt. The hot flavor."
         },
         {
-          "name": "Quick-pickled",
-          "description": "Sliced into rings with vinegar, sugar, and salt. Ready in an hour, good for a week."
+          "name": "In the drink",
+          "description": "A few rounds in the cooler."
         }
       ],
       "weekday_uses": [
-        "Sliced thin into tacos or rice bowls",
-        "A few rounds dropped into the drink",
-        "Diced and stirred into scrambled eggs"
+        "Shaved thin over halibut or drumsticks",
+        "Charred into the pepper sauce",
+        "A few rings in the drink",
+        "Over fig toast, if you're curious"
       ],
-      "weekend_use": "Quick-pickled jalapeño rings. Slice thin, cover with equal parts white vinegar and water, a pinch of sugar and salt, a garlic clove. Ready in an hour. Good on almost everything for the rest of the week.",
+      "weekend_use": "Charred alongside the peppers for the sauce.",
       "storage": "Refrigerator crisper, up to two weeks. They dry out on the counter.",
       "one_thing_to_learn": "Heat level in jalapeños varies seed to seed and plant to plant — you can't know from appearance alone. Taste a small piece before adding them to a dish. The seeds and membranes hold most of the heat; removing them makes the pepper significantly milder while keeping the flavor.",
       "market_question": "Are these mild or hot this week?"
@@ -510,7 +632,7 @@
       "slug": "zucchini",
       "name": "Zucchini",
       "month": "August",
-      "tile_uses": "Rice bowls, pasta, chicken, sides",
+      "tile_uses": "The charred plate, rice bowls",
       "why_now": "Zucchini is abundantly available through August and at its best when small to medium sized — the larger ones that appear later in the season can be watery. Right now they're quick to cook, mild enough to take on other flavors, and cheap enough to use without planning precisely.",
       "how_to_choose": [
         "Small to medium — 6 to 8 inches is ideal; larger ones are often seedy and watery",
@@ -528,31 +650,30 @@
         "jalapenos"
       ],
       "pairs_with_staples": [
-        "chicken thighs",
+        "rice",
         "pasta",
-        "eggs",
-        "white beans"
+        "eggs"
       ],
       "flavor_paths": [
         {
-          "name": "Sautéed high and fast",
-          "description": "In a hot pan with olive oil until golden on the edges. Basil at the end."
+          "name": "Charred",
+          "description": "In a smoking pan until the edges blacken."
         },
         {
-          "name": "Roasted",
-          "description": "Cut into half-moons, high heat, until the edges caramelize. Goes into rice bowls or pasta."
+          "name": "Sautéed fast",
+          "description": "Golden at the edges, basil at the end."
         },
         {
           "name": "Shaved raw",
-          "description": "With a peeler or mandoline into thin ribbons. Dressed with olive oil and lemon. A different vegetable entirely."
+          "description": "Ribbons with olive oil, lime, and flaky salt."
         }
       ],
       "weekday_uses": [
-        "Sautéed and added to a rice bowl with peppers and basil",
-        "Roasted alongside chicken",
-        "Folded into pasta with cherry tomatoes"
+        "Charred in coins for the charred plate",
+        "Sautéed fast for a rice bowl",
+        "On the sheet pan with drumsticks"
       ],
-      "weekend_use": "Shaved raw into thin ribbons, dressed simply with olive oil, lemon, and flaky salt. Serve alongside grilled chicken or fish.",
+      "weekend_use": "Shaved raw into ribbons with olive oil, lime, and flaky salt, beside the pork chops.",
       "storage": "Refrigerator crisper, up to a week. Don't wash before storing.",
       "one_thing_to_learn": "Zucchini releases a lot of water. To avoid a soggy pan, don't crowd them — cook in a single layer with space between pieces, and don't stir too often. High heat and patience are the technique. Once the water has cooked off, what's left will actually brown.",
       "market_question": "Do you have any smaller zucchini? Or yellow squash?"
@@ -561,7 +682,7 @@
       "slug": "basil",
       "name": "Basil",
       "month": "August",
-      "tile_uses": "Peppers, tomatoes, pasta, the drink",
+      "tile_uses": "Pasta, the drink, the weekend",
       "why_now": "Basil is at peak abundance in August — warm nights and hot days produce the most fragrant leaves of the year. If you kept a potted plant from July, it's probably thriving. This is the month to use it generously.",
       "how_to_choose": [
         "Bright, vivid green — yellow or black-edged leaves are past their best",
@@ -580,30 +701,30 @@
       ],
       "pairs_with_staples": [
         "pasta",
-        "chicken thighs",
-        "eggs",
-        "white beans"
+        "rice",
+        "sourdough"
       ],
       "flavor_paths": [
         {
           "name": "Raw, torn",
-          "description": "Over pasta, rice bowls, or salads. The fragrance is the point."
+          "description": "Over burst tomatoes. The fresh flavor."
         },
         {
           "name": "Into the drink",
-          "description": "A few leaves slapped between the palms and dropped into the cooler. Different from mint, warmer."
+          "description": "A few leaves slapped between the palms and dropped into the cooler."
         },
         {
           "name": "Blended",
-          "description": "A rough paste with olive oil and garlic. Not quite pesto — no pine nuts or cheese necessary."
+          "description": "A rough paste with olive oil, garlic, and salt."
         }
       ],
       "weekday_uses": [
-        "Torn over pasta at the end, after the heat is off",
-        "Dropped into the North Park Cooler",
-        "Scattered over a rice bowl with peppers and cherry tomatoes"
+        "Torn over pasta after the heat",
+        "In the North Park Cooler",
+        "Over a rice bowl",
+        "On fig toast"
       ],
-      "weekend_use": "A rough basil oil: blend a handful of leaves with olive oil, a garlic clove, and salt. Spoon over burrata, chicken, or fish.",
+      "weekend_use": "Torn over the pork chops and nectarines.",
       "storage": "Keep at room temperature in a glass of water like flowers — never in the refrigerator. Cut the stems every few days. Lasts up to a week this way.",
       "one_thing_to_learn": "Basil blackens from the cold, not from age. Refrigerator storage turns it black overnight. Keep it on the counter in water, and it will outlast basil stored in the fridge by several days. The fragrance concentrates if you let it sit somewhere warm.",
       "market_question": "Is this Italian basil or Thai basil? Do you have lemon basil?"
@@ -612,7 +733,7 @@
       "slug": "nectarines",
       "name": "Nectarines",
       "month": "August",
-      "tile_uses": "Yogurt, breakfast, snacks, the plate",
+      "tile_uses": "The weekend meal, breakfast",
       "why_now": "Nectarines are peaches without the fuzz, and in August they often hit their stride when peach season begins to wind down. The flavor is similar — sweet, aromatic, deeply summery — but the skin is thinner and doesn't need peeling. This is the last good stone fruit window before fall.",
       "how_to_choose": [
         "Fragrant at the stem end — this is the most reliable test",
@@ -628,32 +749,79 @@
       ],
       "pairs_with_staples": [
         "Greek yogurt",
-        "chicken thighs",
-        "prosciutto"
+        "honey"
       ],
       "flavor_paths": [
         {
+          "name": "Charred",
+          "description": "Cut side down in a hot pan for two minutes. With pork."
+        },
+        {
           "name": "Nearly nothing",
-          "description": "Sliced and eaten as they are. A pinch of flaky salt if you want to push it."
+          "description": "Sliced, flaky salt. The sweet flavor."
         },
         {
           "name": "With yogurt",
-          "description": "Sliced on Greek yogurt in the morning, maybe a little honey. That's it."
-        },
-        {
-          "name": "On the plate",
-          "description": "Alongside burrata when figs aren't enough or aren't available."
+          "description": "On Greek yogurt with a little honey."
         }
       ],
       "weekday_uses": [
+        "Charred in the pan beside a pork chop",
         "Sliced on Greek yogurt in the morning",
-        "Eaten as a snack, ripe",
-        "Sliced alongside the weekend cheese plate"
+        "Eaten ripe, with flaky salt"
       ],
-      "weekend_use": "Alongside the fig and burrata plate — or in place of figs if they weren't available. The combination of ripe stone fruit, good cheese, and cured meat holds up in either direction.",
+      "weekend_use": "Halved and charred in the pork pan. The weekend meal.",
       "storage": "Counter until ripe. Eat within a day or two of peak ripeness. Do not refrigerate until fully ripe, and use quickly after.",
       "one_thing_to_learn": "Nectarines and peaches are genetically almost identical — the difference is a single gene that determines whether the skin is fuzzy or smooth. Their flavor profiles and peak windows are nearly the same. If you're buying from a farmers market, ask which variety the grower would eat today. They usually know exactly which ones are ready.",
       "market_question": "Which variety is ripest right now?"
+    },
+    "pork-chops": {
+      "slug": "pork-chops",
+      "name": "Thick pork chops",
+      "month": "August",
+      "tile_uses": "The weekend meal, the charred plate, fig toast",
+      "why_now": "Pork isn't more in season in August — but stone fruit is, and pork with ripe, charred fruit is one of the oldest pairings there is. A thick chop also cooks in ten minutes, which is the right amount of time to spend at a hot stove in August.",
+      "how_to_choose": [
+        "Bone-in and at least an inch thick — thin chops overcook before they brown",
+        "Pink to light red, not gray",
+        "A good band of white fat along the edge",
+        "Firm and dry on the surface, not sitting in liquid"
+      ],
+      "buy_this_much": "2 chops. One for the weekend meal, one for later in the week.",
+      "price_note": "Ask the butcher counter to cut them thick if the case only has thin ones. They will.",
+      "pairs_with_month": [
+        "nectarines",
+        "figs",
+        "bell-peppers",
+        "basil"
+      ],
+      "pairs_with_staples": [
+        "rice",
+        "sourdough"
+      ],
+      "flavor_paths": [
+        {
+          "name": "Seared",
+          "description": "Salted early, hot pan, rested. The weekend meal."
+        },
+        {
+          "name": "Sweet",
+          "description": "With charred nectarine or fig."
+        },
+        {
+          "name": "Smoky",
+          "description": "With the charred pepper sauce."
+        }
+      ],
+      "weekday_uses": [
+        "Sliced and warmed for the charred plate",
+        "Thin slices on fig toast",
+        "Over a rice bowl with jalapeño and lime"
+      ],
+      "weekend_use": "Salted early, seared hard, rested, with nectarines charred in the same pan. The weekend meal.",
+      "storage": "Cook within two days of buying. Salted and uncovered in the fridge, they're better on day two than day one.",
+      "one_thing_to_learn": "Modern pork is safe and juiciest at 140–145°F — slightly pink at the center. Most people cook it to 160°F out of habit, which is why they think pork chops are dry.",
+      "market_question": "Can you cut these an inch and a quarter thick?"
     }
   }
 }

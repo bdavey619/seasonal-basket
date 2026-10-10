@@ -3,35 +3,48 @@
   "name": "Rice bowl",
   "display_name": "Rice bowl",
   "effort": "weekday",
-  "intro": "Everything in the July basket belongs on top of rice.",
+  "intro": "Rice, a protein, and the cool, crunchy things July does well. The bowl that carries leftovers into lunch.",
   "keep": [
     "Rice",
-    "Your usual protein"
+    "Olive oil and flaky salt"
   ],
   "season_anchor": [
+    "Persian cucumber, sliced thin",
     "Ripe tomato, chopped"
   ],
   "season_options": [
-    "Persian cucumber, sliced",
-    "Fresh basil",
-    "Sweet corn"
+    "Sweet corn",
+    "Mint and basil",
+    "Tomato herb vinaigrette",
+    "Salted Greek yogurt"
   ],
   "variations": [
-    { "ingredients": "Tomato + basil", "context": "Start here." },
-    { "ingredients": "Tomato + cucumber", "context": "If dinner just needs to be easy." },
-    { "ingredients": "Tomato + corn + lime", "context": "If you picked up sweet corn." },
-    { "ingredients": "Tomato + avocado", "context": "If you have half an avocado left." }
+    {
+      "ingredients": "Wild salmon · cool",
+      "context": "Flaked salmon, cucumber yogurt, mint."
+    },
+    {
+      "ingredients": "Skirt steak · bright",
+      "context": "Sliced leftover steak, tomato, vinaigrette."
+    },
+    {
+      "ingredients": "Skirt steak · smoky",
+      "context": "Charred salsa and corn instead."
+    }
   ],
   "works_well_with": [
-    "Ground beef",
-    "Ground turkey",
-    "Chicken thighs",
-    "Salmon",
-    "Beans"
+    "A fried egg",
+    "Black beans"
   ],
-  "finish": "Flaky salt on the tomatoes last. Tear basil over the top — don't let it near the heat.",
+  "finish": "Let the rice cool a little before building the bowl — July food is better warm than hot. Herbs go on last, after everything else.",
   "linked_house_flavor": "tomato-herb-vinaigrette",
-  "linked_drink": "hillcrest-spritz",
-  "linked_field_notes": ["flaky-salt-goes-on-last", "add-herbs-after-the-heat"],
-  "linked_ingredients": ["heirloom-tomatoes", "persian-cucumbers", "basil", "sweet-corn"]
+  "linked_field_notes": [
+    "add-herbs-after-the-heat"
+  ],
+  "linked_ingredients": [
+    "persian-cucumbers",
+    "heirloom-tomatoes",
+    "sweet-corn",
+    "mint"
+  ]
 }

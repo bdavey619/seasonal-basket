@@ -135,6 +135,16 @@ The restraint half of the edition is the fruit. Apples and grapes are bought to 
 
 The House Flavor is a single jar (escabeche), not two. Salsa verde is taught as judgment rather than as a second jar — a Field Note with no fixed ratio — because the season offered it and the North Star did not call for another recipe.
 
+## July–September, Reworked
+
+The three summer editions were rebuilt on the October framework after publication: same produce baskets, jars, and drinks, plus one-store closed shopping lists, three proteins each with pairing lines, protein-first meals with four flavors, a weekend meal that teaches the month's cut, a method Field Note in place of the fish-counter note, and no local ritual.
+
+- **July:** wild salmon slow-roasted beside tomatoes and burrata; skirt steak; shrimp. Meals: tomato plate, tacos, rice bowl, hot-pan dinner, tomato toast.
+- **August:** thick pork chops salted early and seared, with charred nectarines; halibut; chicken drumsticks. Meals: charred plate, sheet pan, pasta, rice bowl, fig toast.
+- **September:** chile-rubbed mahi-mahi in tortillas; ground beef picadillo; chicken thighs simmered in salsa verde. Meals: tacos, stuffed roasted chiles (the old weekend meal, now a weekday format), salsa verde simmer, rice bowl, sheet pan.
+
+The original versions are in git history before this change.
+
 ## October — What the Edition Teaches
 
 October follows September's blueprint with three changes in how editions are built, all now in `EDITORIAL_PLAYBOOK.md`: one store and one closed shopping list; meal formats that change with the season; and the month's cut and method.
@@ -153,11 +163,13 @@ October is nut-free throughout, sesame included. Keep it that way where possible
 
 ## Protein Log
 
-Which proteins each edition led with. No protein leads two months in a row; eggs and beans don't count.
+Which proteins each edition led with. No protein leads two months in a row; eggs and beans don't count. July through September were first published on the staples (chicken thighs, ground beef or turkey, salmon) every month, then reworked onto this framework.
 
 | Month | Proteins |
 |---|---|
-| July–September | Chicken thighs, ground beef or turkey, salmon — the staples, every month. The reason this log exists. |
+| July | Wild salmon (the cut), skirt steak, shrimp |
+| August | Thick pork chops (the cut), halibut, chicken drumsticks |
+| September | Mahi-mahi (the cut), ground beef, boneless chicken thighs |
 | October | Rockfish (the cut), chicken sausage, pork tenderloin, ground lamb |
 
 ## The Year's Cuts, Methods, and Tools (draft)
@@ -166,13 +178,16 @@ A working plan, not a commitment. Confirm each month against real San Diego weat
 
 | Month | Cut | Method | Tool | Why then |
 |---|---|---|---|---|
+| July | Wild salmon | Slow-roasting at low heat | — | Wild Pacific salmon is in season; a low oven suits a month of barely cooking |
+| August | Thick bone-in pork chops | Salt early, sear, rest | Cast-iron skillet | Stone fruit is peak; a ten-minute cook suits the heat |
+| September | Mahi-mahi | A chile paste, charred in a hot pan | — | Warm-water fish runs late summer; chile season |
 | October | Rockfish fillets | The sear | — | Still warm; rockfish more reliable as the water cools |
 | November | Bone-in, skin-on chicken thighs | Braising | Dutch oven | The first reliably cool evenings |
 | December | Pork shoulder | Slow roasting | Dutch oven or roasting pan | Coldest month; long oven time welcome |
 | January | Whole chicken | Roasting + pan sauce | Cast iron or roasting pan | Pairs with citrus season |
 | February | Spot prawns | Fast, in the shell | Cast iron | Local trap season reopens |
 
-Each month should build on the last: the sear (October) is the first step of the braise (November), which leads to the slow roast (December).
+Each month should build on the last: gentle heat (July), salt-and-rest (August), and the paste-and-char (September) lead to the sear (October) is the first step of the braise (November), which leads to the slow roast (December).
 
 ## Next Milestone
 

@@ -3,31 +3,47 @@
   "name": "Pasta",
   "display_name": "Pasta",
   "effort": "weekday",
-  "intro": "Cherry tomatoes burst in olive oil. August does the work again.",
+  "intro": "Cherry tomatoes burst in olive oil until they become the sauce. Halibut flaked in, or nothing at all.",
   "keep": [
     "Pasta",
-    "Olive oil and garlic"
+    "Olive oil and garlic",
+    "Salt"
   ],
   "season_anchor": [
     "Cherry tomatoes, left whole"
   ],
   "season_options": [
-    "Fresh basil",
-    "Roasted bell pepper strips",
-    "A thin slice of jalapeño"
+    "Basil",
+    "Halibut",
+    "Jalapeño, sliced thin",
+    "Charred pepper sauce"
   ],
   "variations": [
-    { "ingredients": "Cherry tomatoes + basil", "context": "The simplest version. The tomatoes are the sauce." },
-    { "ingredients": "Cherry tomatoes + roasted pepper + basil", "context": "If you have leftover roasted peppers, fold them in." },
-    { "ingredients": "Cherry tomatoes + jalapeño + cotija", "context": "If you want heat and something salty at the end." }
+    {
+      "ingredients": "Halibut · fresh",
+      "context": "Seared halibut flaked in at the end, basil."
+    },
+    {
+      "ingredients": "No meat · fresh",
+      "context": "The default. Burst tomatoes and basil, nothing else."
+    },
+    {
+      "ingredients": "Halibut · hot",
+      "context": "Jalapeño and lime instead of basil."
+    }
   ],
   "works_well_with": [
-    "Chicken thighs",
-    "White beans",
-    "No added protein"
+    "Burrata, torn over",
+    "Nothing at all"
   ],
-  "finish": "Let the tomatoes sit in a hot pan with olive oil, undisturbed, until they start to burst — about 4 minutes. Then press gently and let the liquid reduce. Add garlic after, basil last, always after the heat is off.",
+  "finish": "Heat olive oil and a sliced garlic clove in a wide pan, add the whole cherry tomatoes, and cook until they split and slump, pressing a few to release their juice. Toss with the pasta and a splash of pasta water. Basil goes in after the heat is off.",
   "linked_house_flavor": "charred-pepper-sauce",
-  "linked_field_notes": ["eggplant-myth"],
-  "linked_ingredients": ["cherry-tomatoes", "basil", "bell-peppers"]
+  "linked_field_notes": [
+    "eggplant-myth"
+  ],
+  "linked_ingredients": [
+    "cherry-tomatoes",
+    "basil",
+    "jalapenos"
+  ]
 }

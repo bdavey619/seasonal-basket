@@ -1,0 +1,49 @@
+{
+  "slug": "wild-salmon",
+  "name": "Wild salmon",
+  "month": "July",
+  "tile_uses": "The weekend meal, the tomato plate, rice bowls",
+  "why_now": "Wild Pacific salmon — king, sockeye, coho — is caught from late spring through summer, and July is when it's at its best and most available. Most of the year, salmon is farmed and the same every week. This is the month it's a seasonal fish.",
+  "how_to_choose": [
+    "Deep, even color — sockeye is the reddest, king the richest",
+    "Moist and glossy, with no gaps between the layers",
+    "It should smell like the ocean, nothing else",
+    "A thicker center cut roasts more evenly than a tail piece"
+  ],
+  "buy_this_much": "1½ lbs, in one piece. The weekend meal, plus a tomato plate or rice bowl for lunch.",
+  "price_note": "Wild costs more than farmed. In July, the difference is worth it at least once.",
+  "pairs_with_month": [
+    "persian-cucumbers",
+    "mint",
+    "heirloom-tomatoes",
+    "basil"
+  ],
+  "pairs_with_staples": [
+    "rice",
+    "Greek yogurt",
+    "sourdough"
+  ],
+  "flavor_paths": [
+    {
+      "name": "Slow-roasted",
+      "description": "275°F, twenty minutes, until it just flakes. The weekend meal."
+    },
+    {
+      "name": "Cool",
+      "description": "Flaked over cucumber yogurt with mint."
+    },
+    {
+      "name": "Bright",
+      "description": "With tomato vinaigrette and basil."
+    }
+  ],
+  "weekday_uses": [
+    "Flaked onto the tomato plate",
+    "Over a rice bowl with cucumber yogurt",
+    "Cold, the next day, with lime and flaky salt"
+  ],
+  "weekend_use": "Slow-roasted at 275°F, beside tomatoes and burrata. The weekend meal.",
+  "storage": "Cook it the day you buy it, or the next. Leftovers keep two days in the fridge and are good cold.",
+  "one_thing_to_learn": "Salmon is done earlier than you think. The white beads that rise to the surface are proteins being squeezed out; a few means it's perfect, a lot means it's dry. Low heat gives you time to see them.",
+  "market_question": "Is this wild or farmed, and which kind?"
+}

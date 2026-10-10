@@ -1,7 +1,7 @@
 {
   "slug": "cherries",
   "name": "Cherries",
-  "tile_uses": "Snacking, yogurt, the drink",
+  "tile_uses": "After dinner, breakfast, the drink",
   "month": "July",
   "guide_id": "adela",
   "why_now": "California cherry season runs through July. The window is short. Buy them when they are dark and firm and eat them without much ceremony.",
@@ -13,19 +13,35 @@
   ],
   "buy_this_much": "A generous pound. They disappear faster than expected.",
   "price_note": "Still a splurge compared to most things in the basket, but July is when the price drops from its winter peak. The season is short — worth it.",
-  "pairs_with_month": ["mint", "peaches", "blackberries"],
-  "pairs_with_staples": ["greek yogurt", "sourdough"],
+  "pairs_with_month": [
+    "mint",
+    "peaches",
+    "blackberries"
+  ],
+  "pairs_with_staples": [
+    "Greek yogurt",
+    "honey"
+  ],
   "flavor_paths": [
-    { "name": "As they are", "description": "A bowl of cherries, cold, after dinner." },
-    { "name": "With yogurt", "description": "Halved over Greek yogurt in the morning. That is the whole thing." },
-    { "name": "In the drink", "description": "Tart cherry juice becomes the Hillcrest Spritz." }
+    {
+      "name": "As they are",
+      "description": "A bowl of cherries, cold, after dinner."
+    },
+    {
+      "name": "With yogurt",
+      "description": "Halved over Greek yogurt in the morning."
+    },
+    {
+      "name": "In the drink",
+      "description": "Alongside tart cherry juice in the spritz."
+    }
   ],
   "weekday_uses": [
-    "Eaten as a snack",
+    "Eaten cold, after dinner",
     "Halved over Greek yogurt",
-    "As the base for cherry juice in the Hillcrest Spritz"
+    "A few dropped into the spritz"
   ],
-  "weekend_use": "A plate of cherries alongside the weekend meal. No preparation needed.",
+  "weekend_use": "A bowl of cold cherries after the salmon. No preparation needed.",
   "storage": "Refrigerate and eat within three to four days. Leave stems on until eating.",
   "one_thing_to_learn": "Tart cherry juice is a useful pantry item through July — it keeps longer than fresh cherries and makes the Hillcrest Spritz more reliable on short notice.",
   "market_question": "Which variety is ripest right now?"

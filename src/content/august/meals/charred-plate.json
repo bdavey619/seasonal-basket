@@ -1,0 +1,50 @@
+{
+  "slug": "charred-plate",
+  "name": "Charred plate",
+  "display_name": "Charred plate",
+  "effort": "weekday",
+  "intro": "One hot pan, one protein, and whatever's charred beside it. Peppers, zucchini, a nectarine. August's ten-minute dinner.",
+  "keep": [
+    "A cast-iron or heavy skillet",
+    "Olive oil and flaky salt"
+  ],
+  "season_anchor": [
+    "Red bell peppers, in strips",
+    "Zucchini, in thick coins"
+  ],
+  "season_options": [
+    "Nectarine halves",
+    "Charred pepper sauce",
+    "Basil",
+    "Burrata"
+  ],
+  "variations": [
+    {
+      "ingredients": "Pork chop · sweet",
+      "context": "Leftover chop, sliced and warmed, charred nectarine on the side."
+    },
+    {
+      "ingredients": "Halibut · hot",
+      "context": "Seared halibut, jalapeño and lime over the top."
+    },
+    {
+      "ingredients": "Burrata · smoky",
+      "context": "No meat. Charred vegetables around torn burrata, pepper sauce."
+    }
+  ],
+  "works_well_with": [
+    "Sourdough",
+    "Rice"
+  ],
+  "finish": "Heat the pan until it smokes. Char the vegetables first in a single layer, without moving them, until they blacken in spots. Move them to the plate, then sear or warm the protein in the same pan.",
+  "linked_house_flavor": "charred-pepper-sauce",
+  "linked_field_notes": [
+    "charring-a-pepper",
+    "eggplant-myth"
+  ],
+  "linked_ingredients": [
+    "bell-peppers",
+    "zucchini",
+    "nectarines"
+  ]
+}

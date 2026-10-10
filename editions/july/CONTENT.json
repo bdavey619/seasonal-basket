@@ -4,7 +4,7 @@
   "location": "San Diego",
   "edition_number": 1,
   "base_url": "https://bdavey.co/seasonal-basket",
-  "opening_note": "Tomatoes deserve the center of the plate. Cucumbers make everything cooler. Peaches need almost nothing. Your usual meals can stay simple. Now they taste like July.",
+  "opening_note": "Tomatoes deserve the center of the plate. Cucumbers make everything cooler. Peaches need almost nothing. And wild salmon is in season — the one month to buy it, and to cook it gently.",
   "thesis": "Keep the meal. Change the season.",
   "palette": {
     "background": "#f5efe4",
@@ -26,16 +26,17 @@
     "basil",
     "mint",
     "cherries",
-    "blackberries"
+    "blackberries",
+    "wild-salmon"
   ],
   "bring_home": {
     "heading": "This is what I'd bring home.",
-    "cost_note": "Around $30–45 for the seasonal basket. Proteins and pantry basics are separate.",
+    "cost_note": "Around $30–45 for the produce and $55–70 for the three proteins, all from one well-stocked supermarket. Everything in this edition is on these lines — nothing else to buy.",
     "items": [
       {
         "slug": "heirloom-tomatoes",
         "name": "Ripe tomatoes",
-        "qty": "4–5",
+        "qty": "6–8",
         "note": "The week revolves around these."
       },
       {
@@ -80,6 +81,50 @@
         "qty": "1 pint",
         "note": "Eat within two days of buying."
       }
+    ],
+    "feeds": "Feeds one big appetite for a week: every dinner, and lunch from the leftovers most days.",
+    "proteins": [
+      {
+        "slug": "wild-salmon",
+        "name": "Wild salmon",
+        "qty": "1½ lbs",
+        "why": "Rich, oily fish wants something cool and sharp against it — cucumber, mint, a raw tomato — not something heavier.",
+        "uses": "The weekend meal, the tomato plate, a rice bowl"
+      },
+      {
+        "name": "Skirt steak",
+        "qty": "1½ lbs",
+        "why": "Beefy, charred meat wants acid and freshness at the end. Charred salsa and a squeeze of lime do what a steak sauce would, lighter.",
+        "uses": "Tacos, the hot-pan dinner, lunches"
+      },
+      {
+        "name": "Shrimp",
+        "qty": "1 lb, frozen is fine",
+        "why": "Shrimp is sweet and cooks in two minutes, so it wants something sweeter and something sharp beside it — corn and peach, with lime.",
+        "uses": "The hot-pan dinner, tacos, the tomato plate"
+      }
+    ],
+    "also_buy": [
+      "3 limes",
+      "1 white onion",
+      "1 jalapeño",
+      "corn tortillas",
+      "1 ball burrata",
+      "sherry vinegar",
+      "tart cherry juice",
+      "sparkling water"
+    ],
+    "pantry": [
+      "rice",
+      "black beans",
+      "sourdough",
+      "Greek yogurt",
+      "eggs",
+      "olive oil",
+      "garlic",
+      "honey",
+      "flaky salt",
+      "black pepper"
     ]
   },
   "staples": [
@@ -120,52 +165,27 @@
       "body": "The fragrance is gone within seconds of hitting a hot pan. Add basil and mint after the heat is off, or right before the plate reaches the table. The smell will tell you something changed."
     },
     {
-      "slug": "ask-whats-freshest",
-      "name": "Ask what's freshest.",
-      "body": "The best question at a fish counter isn't 'Do you have halibut?' It's 'What came in today?' In July around San Diego, that often means yellowtail, white sea bass, or local albacore — fish that rarely make it to a standard grocery shelf. Fish at its best needs almost nothing. Let what's there decide what you're making."
-    }
-  ],
-  "meal_transformations": [
-    {
-      "meal": "Rice bowl",
-      "change": "Tomatoes, cucumber, basil on top.",
-      "result": "It tastes like you planned it."
-    },
-    {
-      "meal": "Pasta",
-      "change": "Tomatoes, basil, olive oil. No jar.",
-      "result": "July does the work."
-    },
-    {
-      "meal": "Tacos",
-      "change": "Corn, tomato, cucumber, lime.",
-      "result": "Brighter than any jar."
-    },
-    {
-      "meal": "Yogurt",
-      "change": "Peaches or blackberries, nothing else.",
-      "result": "Breakfast earns its keep."
-    },
-    {
-      "meal": "Chicken",
-      "change": "Corn, cotija, and peach alongside.",
-      "result": "The side becomes the reason."
+      "slug": "low-heat-salmon",
+      "name": "Low heat for rich fish.",
+      "body": "A fatty fish like salmon is at its best cooked gently: a 275°F oven for about twenty minutes, until it just flakes and a few white beads appear at the edges. The fat stays inside, the flesh turns silky, and the window for overcooking is wide. It's the opposite of how most people cook salmon — and the reason it tastes better."
     }
   ],
   "weekend_meal": {
-    "name": "Tomato, burrata, basil, and sourdough.",
-    "intro": "One meal should feel like the reason you went shopping. This is July’s.",
-    "card_line": "Tomatoes, burrata, basil, sourdough",
+    "name": "Slow-roasted salmon, tomatoes, and burrata.",
+    "intro": "One meal should feel like the reason you went shopping. In July, it's wild salmon cooked so gently it turns silky, next to the best tomatoes of the year — the one cooking lesson this month is built around.",
+    "card_line": "Wild salmon, ripe tomatoes, burrata, basil, sourdough",
     "ingredients": [
-      "2 ripe tomatoes",
-      "1 ball burrata or fresh mozzarella",
+      "1½ lbs wild salmon, in one piece",
+      "3 ripe tomatoes",
+      "1 ball burrata",
       "Basil",
+      "Tomato herb vinaigrette",
       "Olive oil",
       "Flaky salt and black pepper",
       "Toasted sourdough"
     ],
-    "ingredient_note": "Burrata is richer and more indulgent. Fresh mozzarella is a reliable everyday alternative at about half the price — Trader Joe’s and Whole Foods both carry it.",
-    "method": "Slice the tomatoes thickly. Tear open the cheese. Add basil, olive oil, salt, and pepper. Use warm sourdough to drag through everything left on the plate."
+    "ingredient_note": "Everything here is on the shopping list. Wild Pacific salmon — king, sockeye, or coho — is in season through summer. Farmed works with the same timing. What's left is tomorrow's tomato plate.",
+    "method": "Heat the oven to 275°F. Set the salmon on an oiled sheet pan, rub it with olive oil, and salt it. Roast for 18 to 25 minutes, depending on thickness, until it flakes when pressed and a few white beads appear at the edges — it will look barely done, and that's right. While it roasts, slice the tomatoes thick, salt them, and set the burrata beside them. Spoon the vinaigrette over the tomatoes, tear basil over everything, and add black pepper. Break the salmon into large pieces at the table. Sourdough for dragging through what's left on the plate."
   },
   "drink": {
     "slug": "hillcrest-spritz",
@@ -201,11 +221,6 @@
       }
     ]
   },
-  "local_ritual": {
-    "label": "San Diego ritual",
-    "name": "Take dinner outside.",
-    "description": "Pack tomatoes, bread, fruit, and something cold to drink. Eat near the water while the light is still hanging around."
-  },
   "one_thing_to_notice": {
     "headline": "The smell of a tomato vine.",
     "body": "Smell near the stem before you cut it. That green scent is easy to miss, and it's one of the best parts of a July tomato."
@@ -215,6 +230,124 @@
     "month": "August",
     "status": "Arriving soon."
   },
+  "meals_heading": "What do you feel like tonight?",
+  "meals_dek": "Start with the protein, pick a way to cook it, then a flavor. Every combination comes out of the same shopping list.",
+  "meals_back_label": "July's meals",
+  "tonight": {
+    "flavors_label": "July's four flavors",
+    "options": [
+      {
+        "name": "Wild salmon",
+        "best_with": [
+          "cool",
+          "bright"
+        ],
+        "ways": [
+          {
+            "label": "Slow-roasted, with burrata",
+            "meal": "weekend"
+          },
+          {
+            "label": "Tomato plate",
+            "meal": "tomato-plate"
+          },
+          {
+            "label": "Rice bowl",
+            "meal": "rice-bowl"
+          }
+        ]
+      },
+      {
+        "name": "Skirt steak",
+        "best_with": [
+          "smoky",
+          "bright"
+        ],
+        "ways": [
+          {
+            "label": "Tacos",
+            "meal": "tacos"
+          },
+          {
+            "label": "Hot-pan dinner",
+            "meal": "hot-pan-dinner"
+          },
+          {
+            "label": "Rice bowl",
+            "meal": "rice-bowl"
+          }
+        ]
+      },
+      {
+        "name": "Shrimp",
+        "best_with": [
+          "sweet-sharp",
+          "smoky"
+        ],
+        "ways": [
+          {
+            "label": "Hot-pan dinner",
+            "meal": "hot-pan-dinner"
+          },
+          {
+            "label": "Tacos",
+            "meal": "tacos"
+          },
+          {
+            "label": "Tomato plate",
+            "meal": "tomato-plate"
+          }
+        ]
+      },
+      {
+        "name": "No meat tonight",
+        "best_with": [
+          "bright",
+          "cool"
+        ],
+        "ways": [
+          {
+            "label": "Tomato toast",
+            "meal": "tomato-toast"
+          },
+          {
+            "label": "Tomato plate with burrata",
+            "meal": "tomato-plate"
+          },
+          {
+            "label": "Bean tacos",
+            "meal": "tacos"
+          }
+        ]
+      }
+    ]
+  },
+  "flavors": [
+    {
+      "slug": "bright",
+      "name": "Bright",
+      "what": "Tomato vinaigrette + basil",
+      "how": "Spoon the jar over, tear basil on top, flaky salt last."
+    },
+    {
+      "slug": "smoky",
+      "name": "Smoky",
+      "what": "Charred tomato salsa + lime",
+      "how": "A spoonful of the salsa, lime squeezed over."
+    },
+    {
+      "slug": "cool",
+      "name": "Cool",
+      "what": "Greek yogurt + cucumber + mint",
+      "how": "Grated cucumber stirred into salted yogurt, mint torn in."
+    },
+    {
+      "slug": "sweet-sharp",
+      "name": "Sweet and sharp",
+      "what": "Peach + lime + flaky salt",
+      "how": "Sliced ripe peach, lime, salt. A few rings of jalapeño if you want heat."
+    }
+  ],
   "guides": [
     {
       "id": "rosa",
@@ -289,7 +422,7 @@
     "heirloom-tomatoes": {
       "slug": "heirloom-tomatoes",
       "name": "Heirloom tomatoes",
-      "tile_uses": "Pasta, rice bowls, tacos, weekend plate",
+      "tile_uses": "The tomato plate, toast, both jars, the weekend",
       "month": "July",
       "guide_id": "rosa",
       "why_now": "July is peak tomato season in Southern California. Any ripe tomato — heirloom or not — is at its best right now. The heat concentrates sugars across every variety. Heirlooms are worth it if you see good ones, but a ripe vine tomato from Trader Joe's or Whole Foods will do the same work.",
@@ -309,33 +442,32 @@
         "peaches"
       ],
       "pairs_with_staples": [
-        "chicken thighs",
-        "ground beef or turkey",
-        "salmon",
-        "beans",
-        "sourdough"
+        "sourdough",
+        "eggs",
+        "rice",
+        "black beans"
       ],
       "flavor_paths": [
         {
-          "name": "Italian Summer",
-          "description": "Olive oil, basil, garlic, black pepper, flaky salt."
+          "name": "Raw and salted",
+          "description": "Sliced thick, salted, left five minutes. The default."
         },
         {
-          "name": "Bright Taco",
-          "description": "Lime, cilantro, corn, cucumber, a little heat."
+          "name": "Charred",
+          "description": "Blistered in a dry pan for the salsa."
         },
         {
-          "name": "Simple Toast",
-          "description": "Sourdough, olive oil, salt. The tomato does the rest."
+          "name": "In the jar",
+          "description": "Chopped into the vinaigrette with sherry vinegar."
         }
       ],
       "weekday_uses": [
-        "Rice bowl topping with basil",
-        "Chicken thigh salad with cucumber",
-        "Pasta sauce with garlic and olive oil",
-        "Toast with salt and olive oil"
+        "Sliced thick for the tomato plate",
+        "On tomato toast with an egg",
+        "Charred into salsa for tacos",
+        "Chopped into a rice bowl"
       ],
-      "weekend_use": "Thick slices with burrata or fresh mozzarella, basil, olive oil, and sourdough for dragging. Burrata is richer; fresh mozzarella is half the price and nearly as good.",
+      "weekend_use": "Sliced thick beside slow-roasted salmon and burrata, with the vinaigrette spooned over.",
       "storage": "Counter only. Never refrigerate. Use within four or five days.",
       "one_thing_to_learn": "Smell the stem end before you buy. A tomato that smells like a tomato at the store will taste like one at home.",
       "market_question": "Which variety is ripest right now?"
@@ -343,7 +475,7 @@
     "persian-cucumbers": {
       "slug": "persian-cucumbers",
       "name": "Persian cucumbers",
-      "tile_uses": "Rice bowls, tacos, salads",
+      "tile_uses": "The tomato plate, rice bowls, cucumber yogurt",
       "month": "July",
       "guide_id": "jerome",
       "why_now": "Small, seedless, and thin-skinned, Persian cucumbers are at their crispest in summer. They need no peeling and almost no preparation.",
@@ -362,33 +494,31 @@
         "sweet-corn"
       ],
       "pairs_with_staples": [
-        "salmon",
-        "chicken thighs",
-        "beans",
-        "sticky rice",
-        "greek yogurt"
+        "Greek yogurt",
+        "rice",
+        "sourdough"
       ],
       "flavor_paths": [
         {
           "name": "Lime + mint",
-          "description": "Lime juice, flaky salt, fresh mint. Cool and bright."
+          "description": "Sliced, lime, flaky salt, mint. Cool and bright."
         },
         {
-          "name": "Yogurt + garlic",
-          "description": "Greek yogurt, garlic, a little olive oil. Works as a side or a sauce."
+          "name": "In yogurt",
+          "description": "Grated into salted Greek yogurt with mint. The cool flavor."
         },
         {
-          "name": "Chili crisp + sesame",
-          "description": "Soy, sesame, chili crisp. Good on rice bowls and noodles."
+          "name": "Raw and crunchy",
+          "description": "Sliced thin over a rice bowl."
         }
       ],
       "weekday_uses": [
-        "Rice bowl topping, sliced thin",
-        "Quick salad with tomato and basil",
-        "Side with salmon and mint",
-        "Wrap filling with chicken and yogurt"
+        "Sliced beside the tomato plate",
+        "Thin over a rice bowl",
+        "Grated into yogurt for salmon",
+        "Diced into tacos"
       ],
-      "weekend_use": "Smashed cucumber salad with sesame, chili crisp, and scallion.",
+      "weekend_use": "Sliced with mint and lime beside the slow-roasted salmon.",
       "storage": "Refrigerate in a loose bag. Use within one week. Best used early in the week.",
       "one_thing_to_learn": "Salt briefly before dressing and let the water draw out for a few minutes. The cucumber becomes more concentrated and holds its crunch longer.",
       "market_question": "How fresh are these?"
@@ -396,7 +526,7 @@
     "peaches": {
       "slug": "peaches",
       "name": "Peaches",
-      "tile_uses": "Yogurt, chicken, snacks, dessert",
+      "tile_uses": "The hot-pan dinner, tacos, after dinner",
       "month": "July",
       "guide_id": "adela",
       "why_now": "Southern California stone fruit peaks through July. The combination of warm days and cool nights produces fruit with real sugar and real fragrance. This is the short window.",
@@ -415,9 +545,8 @@
         "basil"
       ],
       "pairs_with_staples": [
-        "greek yogurt",
-        "chicken thighs",
-        "salmon"
+        "Greek yogurt",
+        "honey"
       ],
       "flavor_paths": [
         {
@@ -425,20 +554,21 @@
           "description": "A ripe peach over the sink. Salt if you want it."
         },
         {
-          "name": "Mint + honey",
-          "description": "Sliced with fresh mint and a little honey. Breakfast or dessert."
+          "name": "Charred",
+          "description": "Halved, cut side down in a hot pan, beside steak or shrimp."
         },
         {
-          "name": "Savory",
-          "description": "Grilled or sliced alongside chicken. A little lime, a little heat."
+          "name": "Sweet and sharp",
+          "description": "Sliced with lime and flaky salt."
         }
       ],
       "weekday_uses": [
-        "Sliced on Greek yogurt in the morning",
-        "Added to a salad with chicken or salmon",
-        "Eaten as a snack, ripe"
+        "Charred in the hot pan beside shrimp or steak",
+        "Sliced into shrimp tacos with lime",
+        "On Greek yogurt with honey",
+        "Eaten ripe, as dessert"
       ],
-      "weekend_use": "Grilled peaches alongside chicken thighs with corn salad.",
+      "weekend_use": "Sliced with mint and honey after the salmon.",
       "storage": "Counter until ripe. Eat within a day or two of peak ripeness. Do not refrigerate until fully ripe, and use quickly after.",
       "one_thing_to_learn": "A peach ripens from the inside out. A soft shoulder near the stem means it is ready. A hard peach left on the counter will soften but will not improve the way tree-ripened fruit does.",
       "market_question": "Which variety is ripest today?"
@@ -446,7 +576,7 @@
     "sweet-corn": {
       "slug": "sweet-corn",
       "name": "Sweet corn",
-      "tile_uses": "Rice bowls, tacos, chicken",
+      "tile_uses": "Tacos, the hot-pan dinner, rice bowls",
       "month": "July",
       "guide_id": "jerome",
       "why_now": "Corn sugars convert to starch quickly after picking. July corn eaten within a day or two of harvest is a different ingredient from corn that has traveled for a week. Grocery stores turn over fast in summer — the corn on the shelf right now is likely good.",
@@ -465,31 +595,31 @@
         "peaches"
       ],
       "pairs_with_staples": [
-        "ground beef or turkey",
-        "chicken thighs",
-        "beans",
-        "sticky rice"
+        "rice",
+        "black beans",
+        "eggs"
       ],
       "flavor_paths": [
         {
-          "name": "Bright Taco",
-          "description": "Lime, taco seasoning, tomato, beans, cilantro."
+          "name": "Charred",
+          "description": "In a smoking pan until it blackens in spots."
         },
         {
-          "name": "Italian Summer",
-          "description": "Basil, olive oil, garlic. Good off the cob into a bowl."
+          "name": "Raw",
+          "description": "Cut from the cob into a rice bowl. Sweet enough as is."
         },
         {
-          "name": "Chili-crisp bowl",
-          "description": "Sesame, chili crisp, and a little soy over rice."
+          "name": "With lime",
+          "description": "Kernels, lime, flaky salt, a little jalapeño."
         }
       ],
       "weekday_uses": [
-        "Cut off the cob into a rice bowl",
-        "Added to taco bowls with beans and tomato",
-        "Quick corn and tomato salad with basil"
+        "Charred in the hot pan",
+        "Kernels in tacos with salsa",
+        "Raw over a rice bowl",
+        "With black beans and lime"
       ],
-      "weekend_use": "Corn salad alongside grilled chicken thighs and peaches.",
+      "weekend_use": "Charred and cut from the cob, beside the salmon if you want something warm.",
       "storage": "Keep husked corn refrigerated and use within two days. Husked is fine for a day, unhusked is better if waiting.",
       "one_thing_to_learn": "Fresh corn is good raw. Shaved directly off the cob into a salad, it has a sweetness that disappears quickly with heat.",
       "market_question": "When did these come in?"
@@ -497,7 +627,7 @@
     "basil": {
       "slug": "basil",
       "name": "Basil",
-      "tile_uses": "Tomatoes, pasta, rice bowls, weekend plate",
+      "tile_uses": "The tomato plate, toast, the vinaigrette",
       "month": "July",
       "guide_id": "diane",
       "why_now": "Basil is at its most fragrant in warm weather. July heat brings out the volatile oils. The best basil right now smells like summer itself.",
@@ -517,33 +647,30 @@
         "peaches"
       ],
       "pairs_with_staples": [
-        "chicken thighs",
-        "ground beef or turkey",
-        "salmon",
-        "beans",
-        "sourdough"
+        "sourdough",
+        "eggs"
       ],
       "flavor_paths": [
         {
-          "name": "Italian Summer",
-          "description": "Tomato, garlic, olive oil. Torn over anything warm."
+          "name": "Torn, raw",
+          "description": "Over tomatoes, after the heat. The fragrance is the point."
         },
         {
-          "name": "Fresh bowl",
-          "description": "Rice, protein, cucumber, tomato. Basil finishes it."
+          "name": "With peach",
+          "description": "A few leaves with a peach and flaky salt. Unexpected and very good."
         },
         {
-          "name": "With stone fruit",
-          "description": "A few leaves with peach and a little salt. Unexpected and very good."
+          "name": "In the drink",
+          "description": "In place of mint in the spritz."
         }
       ],
       "weekday_uses": [
-        "Torn over rice bowls",
-        "Added to tomato and cucumber salads",
-        "Stirred into pasta with olive oil and garlic",
-        "Layered on a tomato toast"
+        "Torn over the tomato plate",
+        "On tomato toast",
+        "Over shrimp and corn from the hot pan",
+        "In the spritz, instead of mint"
       ],
-      "weekend_use": "Torn generously over tomatoes with good olive oil. This is where burrata or fresh mozzarella belongs — burrata if you want something richer, fresh mozzarella if you want something simpler.",
+      "weekend_use": "Torn over the tomatoes and burrata, generously.",
       "storage": "Keep at room temperature with stems in water, like flowers. Do not refrigerate. Use within three or four days.",
       "one_thing_to_learn": "Tear basil instead of chopping when it will be served fresh. The knife bruises it and darkens it quickly. Torn leaves hold their color and fragrance longer.",
       "market_question": "How fresh is this?"
@@ -551,7 +678,7 @@
     "mint": {
       "slug": "mint",
       "name": "Mint",
-      "tile_uses": "The drink, cucumbers, yogurt",
+      "tile_uses": "Cucumber yogurt, the spritz, rice bowls",
       "month": "July",
       "guide_id": "diane",
       "why_now": "Mint is cooling by nature and perfect in summer heat. A few leaves change the temperature of a dish or a drink entirely.",
@@ -570,10 +697,9 @@
         "blackberries"
       ],
       "pairs_with_staples": [
-        "greek yogurt",
-        "salmon",
-        "chicken thighs",
-        "sticky rice"
+        "Greek yogurt",
+        "rice",
+        "honey"
       ],
       "flavor_paths": [
         {
@@ -581,21 +707,21 @@
           "description": "Lime, salt, mint. The simplest summer side."
         },
         {
-          "name": "Fruit and mint",
-          "description": "Peaches, cherries, or blackberries with a few leaves and honey."
+          "name": "In yogurt",
+          "description": "Torn into cucumber yogurt for salmon."
         },
         {
-          "name": "Spritz",
+          "name": "In the drink",
           "description": "Slapped and dropped into the Hillcrest Spritz."
         }
       ],
       "weekday_uses": [
-        "Cucumber and mint side salad",
-        "Torn over yogurt with fruit",
-        "Added to a salmon rice bowl",
-        "Stirred into sparkling water with lime"
+        "Torn into cucumber yogurt",
+        "Over a salmon rice bowl",
+        "In the Hillcrest Spritz",
+        "With peaches and honey"
       ],
-      "weekend_use": "In the Hillcrest Spritz. Or over a peach and blackberry plate with honey.",
+      "weekend_use": "Over the cucumbers beside the salmon, and in the spritz.",
       "storage": "Keep in water at room temperature or wrapped loosely in a damp paper towel in the refrigerator. Use within five days.",
       "one_thing_to_learn": "Slapping a mint leaf between your palms before using it releases the oils without bruising the leaf. It is worth doing.",
       "market_question": "What variety is this?"
@@ -603,7 +729,7 @@
     "cherries": {
       "slug": "cherries",
       "name": "Cherries",
-      "tile_uses": "Snacking, yogurt, the drink",
+      "tile_uses": "After dinner, breakfast, the drink",
       "month": "July",
       "guide_id": "adela",
       "why_now": "California cherry season runs through July. The window is short. Buy them when they are dark and firm and eat them without much ceremony.",
@@ -621,8 +747,8 @@
         "blackberries"
       ],
       "pairs_with_staples": [
-        "greek yogurt",
-        "sourdough"
+        "Greek yogurt",
+        "honey"
       ],
       "flavor_paths": [
         {
@@ -631,19 +757,19 @@
         },
         {
           "name": "With yogurt",
-          "description": "Halved over Greek yogurt in the morning. That is the whole thing."
+          "description": "Halved over Greek yogurt in the morning."
         },
         {
           "name": "In the drink",
-          "description": "Tart cherry juice becomes the Hillcrest Spritz."
+          "description": "Alongside tart cherry juice in the spritz."
         }
       ],
       "weekday_uses": [
-        "Eaten as a snack",
+        "Eaten cold, after dinner",
         "Halved over Greek yogurt",
-        "As the base for cherry juice in the Hillcrest Spritz"
+        "A few dropped into the spritz"
       ],
-      "weekend_use": "A plate of cherries alongside the weekend meal. No preparation needed.",
+      "weekend_use": "A bowl of cold cherries after the salmon. No preparation needed.",
       "storage": "Refrigerate and eat within three to four days. Leave stems on until eating.",
       "one_thing_to_learn": "Tart cherry juice is a useful pantry item through July — it keeps longer than fresh cherries and makes the Hillcrest Spritz more reliable on short notice.",
       "market_question": "Which variety is ripest right now?"
@@ -651,7 +777,7 @@
     "blackberries": {
       "slug": "blackberries",
       "name": "Blackberries",
-      "tile_uses": "Yogurt, breakfast, dessert",
+      "tile_uses": "Breakfast, after dinner",
       "month": "July",
       "guide_id": "diane",
       "why_now": "Wild and cultivated blackberries both peak in July in Southern California. They are deeply flavored, slightly tart, and good with almost nothing added.",
@@ -669,8 +795,8 @@
         "cherries"
       ],
       "pairs_with_staples": [
-        "greek yogurt",
-        "sourdough"
+        "Greek yogurt",
+        "honey"
       ],
       "flavor_paths": [
         {
@@ -678,23 +804,72 @@
           "description": "Over Greek yogurt with mint and honey."
         },
         {
-          "name": "Dessert",
-          "description": "With a little cream or over good vanilla ice cream."
+          "name": "After dinner",
+          "description": "With sliced peach and a little honey."
         },
         {
-          "name": "Salad",
-          "description": "In a green salad with peaches and a light vinaigrette."
+          "name": "As they are",
+          "description": "Cold, by the handful."
         }
       ],
       "weekday_uses": [
-        "Greek yogurt topping in the morning",
-        "Eaten as a snack",
-        "Added to a fruit plate with peaches and mint"
+        "Over Greek yogurt with honey",
+        "With sliced peaches after dinner",
+        "Eaten as a snack"
       ],
-      "weekend_use": "Fruit plate with peaches, mint, and honey as a light dessert.",
+      "weekend_use": "With peaches, mint, and honey as a light dessert.",
       "storage": "Refrigerate unwashed and use within two to three days. Wash only just before eating.",
       "one_thing_to_learn": "Blackberries are fragile. They do not improve with time. Buy them close to when you will eat them and treat the container gently.",
       "market_question": "How ripe are these right now?"
+    },
+    "wild-salmon": {
+      "slug": "wild-salmon",
+      "name": "Wild salmon",
+      "month": "July",
+      "tile_uses": "The weekend meal, the tomato plate, rice bowls",
+      "why_now": "Wild Pacific salmon — king, sockeye, coho — is caught from late spring through summer, and July is when it's at its best and most available. Most of the year, salmon is farmed and the same every week. This is the month it's a seasonal fish.",
+      "how_to_choose": [
+        "Deep, even color — sockeye is the reddest, king the richest",
+        "Moist and glossy, with no gaps between the layers",
+        "It should smell like the ocean, nothing else",
+        "A thicker center cut roasts more evenly than a tail piece"
+      ],
+      "buy_this_much": "1½ lbs, in one piece. The weekend meal, plus a tomato plate or rice bowl for lunch.",
+      "price_note": "Wild costs more than farmed. In July, the difference is worth it at least once.",
+      "pairs_with_month": [
+        "persian-cucumbers",
+        "mint",
+        "heirloom-tomatoes",
+        "basil"
+      ],
+      "pairs_with_staples": [
+        "rice",
+        "Greek yogurt",
+        "sourdough"
+      ],
+      "flavor_paths": [
+        {
+          "name": "Slow-roasted",
+          "description": "275°F, twenty minutes, until it just flakes. The weekend meal."
+        },
+        {
+          "name": "Cool",
+          "description": "Flaked over cucumber yogurt with mint."
+        },
+        {
+          "name": "Bright",
+          "description": "With tomato vinaigrette and basil."
+        }
+      ],
+      "weekday_uses": [
+        "Flaked onto the tomato plate",
+        "Over a rice bowl with cucumber yogurt",
+        "Cold, the next day, with lime and flaky salt"
+      ],
+      "weekend_use": "Slow-roasted at 275°F, beside tomatoes and burrata. The weekend meal.",
+      "storage": "Cook it the day you buy it, or the next. Leftovers keep two days in the fridge and are good cold.",
+      "one_thing_to_learn": "Salmon is done earlier than you think. The white beads that rise to the surface are proteins being squeezed out; a few means it's perfect, a lot means it's dry. Low heat gives you time to see them.",
+      "market_question": "Is this wild or farmed, and which kind?"
     }
   }
 }

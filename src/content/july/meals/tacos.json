@@ -1,34 +1,49 @@
 {
   "slug": "tacos",
   "name": "Tacos",
-  "display_name": "Tacos + taco bowl",
+  "display_name": "Tacos",
   "effort": "weekday",
-  "intro": "A ripe July tomato, chopped, is better than store salsa.",
+  "intro": "Charred salsa, corn, and lime on warm tortillas. Skirt steak, shrimp, or beans — the tortilla doesn't mind.",
   "keep": [
-    "Tortillas or rice",
-    "Taco-seasoned protein"
+    "Corn tortillas",
+    "Limes"
   ],
   "season_anchor": [
-    "Ripe tomato, roughly chopped"
+    "Charred tomato salsa",
+    "Sweet corn, cut from the cob"
   ],
   "season_options": [
-    "Sweet corn",
-    "Persian cucumber, diced"
+    "Persian cucumber, diced",
+    "Sliced peach",
+    "Salted Greek yogurt"
   ],
   "variations": [
-    { "ingredients": "Tomato + lime", "context": "Start here." },
-    { "ingredients": "Tomato + corn + lime", "context": "If you picked up corn." },
-    { "ingredients": "Tomato + cucumber + avocado", "context": "If it's been a hot week." },
-    { "ingredients": "Tomato + corn + cheese + hot sauce", "context": "If you're cooking for two." }
+    {
+      "ingredients": "Skirt steak · smoky",
+      "context": "The default. Seared hard, sliced thin across the grain, charred salsa."
+    },
+    {
+      "ingredients": "Shrimp · sweet and sharp",
+      "context": "Seared shrimp, peach and lime, a little jalapeño."
+    },
+    {
+      "ingredients": "Black beans · smoky",
+      "context": "No meat. Warm beans, corn, salsa, lime."
+    }
   ],
   "works_well_with": [
-    "Ground beef",
-    "Ground turkey",
-    "Chicken thighs",
-    "Beans"
+    "Black beans",
+    "Rice"
   ],
-  "finish": "Squeeze lime over everything.",
-  "linked_drink": "hillcrest-spritz",
-  "linked_field_notes": [],
-  "linked_ingredients": ["heirloom-tomatoes", "sweet-corn", "persian-cucumbers"]
+  "finish": "Warm the tortillas in a dry pan until they blister in spots, two per taco. Sear the steak in a smoking-hot pan, two or three minutes a side, rest it five, and slice across the grain — that's what makes skirt steak tender.",
+  "linked_house_flavor": "charred-tomato-salsa",
+  "linked_field_notes": [
+    "flaky-salt-goes-on-last"
+  ],
+  "linked_ingredients": [
+    "sweet-corn",
+    "heirloom-tomatoes",
+    "persian-cucumbers",
+    "peaches"
+  ]
 }

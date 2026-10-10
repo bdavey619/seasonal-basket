@@ -1,0 +1,48 @@
+{
+  "slug": "pork-chops",
+  "name": "Thick pork chops",
+  "month": "August",
+  "tile_uses": "The weekend meal, the charred plate, fig toast",
+  "why_now": "Pork isn't more in season in August — but stone fruit is, and pork with ripe, charred fruit is one of the oldest pairings there is. A thick chop also cooks in ten minutes, which is the right amount of time to spend at a hot stove in August.",
+  "how_to_choose": [
+    "Bone-in and at least an inch thick — thin chops overcook before they brown",
+    "Pink to light red, not gray",
+    "A good band of white fat along the edge",
+    "Firm and dry on the surface, not sitting in liquid"
+  ],
+  "buy_this_much": "2 chops. One for the weekend meal, one for later in the week.",
+  "price_note": "Ask the butcher counter to cut them thick if the case only has thin ones. They will.",
+  "pairs_with_month": [
+    "nectarines",
+    "figs",
+    "bell-peppers",
+    "basil"
+  ],
+  "pairs_with_staples": [
+    "rice",
+    "sourdough"
+  ],
+  "flavor_paths": [
+    {
+      "name": "Seared",
+      "description": "Salted early, hot pan, rested. The weekend meal."
+    },
+    {
+      "name": "Sweet",
+      "description": "With charred nectarine or fig."
+    },
+    {
+      "name": "Smoky",
+      "description": "With the charred pepper sauce."
+    }
+  ],
+  "weekday_uses": [
+    "Sliced and warmed for the charred plate",
+    "Thin slices on fig toast",
+    "Over a rice bowl with jalapeño and lime"
+  ],
+  "weekend_use": "Salted early, seared hard, rested, with nectarines charred in the same pan. The weekend meal.",
+  "storage": "Cook within two days of buying. Salted and uncovered in the fridge, they're better on day two than day one.",
+  "one_thing_to_learn": "Modern pork is safe and juiciest at 140–145°F — slightly pink at the center. Most people cook it to 160°F out of habit, which is why they think pork chops are dry.",
+  "market_question": "Can you cut these an inch and a quarter thick?"
+}

@@ -1,7 +1,7 @@
 {
   "slug": "basil",
   "name": "Basil",
-  "tile_uses": "Tomatoes, pasta, rice bowls, weekend plate",
+  "tile_uses": "The tomato plate, toast, the vinaigrette",
   "month": "July",
   "guide_id": "diane",
   "why_now": "Basil is at its most fragrant in warm weather. July heat brings out the volatile oils. The best basil right now smells like summer itself.",
@@ -14,20 +14,37 @@
   "buy_this_much": "One or two good bunches. It moves through a week faster than you expect.",
   "buying_note": "Using basil all month? A small potted plant may last longer than a cut bunch and lets you take only what you need. A cut bunch works well when you only need it once or twice.",
   "price_note": "Usually inexpensive — one of the least costly things in the basket.",
-  "pairs_with_month": ["heirloom-tomatoes", "persian-cucumbers", "sweet-corn", "peaches"],
-  "pairs_with_staples": ["chicken thighs", "ground beef or turkey", "salmon", "beans", "sourdough"],
+  "pairs_with_month": [
+    "heirloom-tomatoes",
+    "persian-cucumbers",
+    "sweet-corn",
+    "peaches"
+  ],
+  "pairs_with_staples": [
+    "sourdough",
+    "eggs"
+  ],
   "flavor_paths": [
-    { "name": "Italian Summer", "description": "Tomato, garlic, olive oil. Torn over anything warm." },
-    { "name": "Fresh bowl", "description": "Rice, protein, cucumber, tomato. Basil finishes it." },
-    { "name": "With stone fruit", "description": "A few leaves with peach and a little salt. Unexpected and very good." }
+    {
+      "name": "Torn, raw",
+      "description": "Over tomatoes, after the heat. The fragrance is the point."
+    },
+    {
+      "name": "With peach",
+      "description": "A few leaves with a peach and flaky salt. Unexpected and very good."
+    },
+    {
+      "name": "In the drink",
+      "description": "In place of mint in the spritz."
+    }
   ],
   "weekday_uses": [
-    "Torn over rice bowls",
-    "Added to tomato and cucumber salads",
-    "Stirred into pasta with olive oil and garlic",
-    "Layered on a tomato toast"
+    "Torn over the tomato plate",
+    "On tomato toast",
+    "Over shrimp and corn from the hot pan",
+    "In the spritz, instead of mint"
   ],
-  "weekend_use": "Torn generously over tomatoes with good olive oil. This is where burrata or fresh mozzarella belongs — burrata if you want something richer, fresh mozzarella if you want something simpler.",
+  "weekend_use": "Torn over the tomatoes and burrata, generously.",
   "storage": "Keep at room temperature with stems in water, like flowers. Do not refrigerate. Use within three or four days.",
   "one_thing_to_learn": "Tear basil instead of chopping when it will be served fresh. The knife bruises it and darkens it quickly. Torn leaves hold their color and fragrance longer.",
   "market_question": "How fresh is this?"

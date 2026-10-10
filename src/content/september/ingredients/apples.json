@@ -2,7 +2,7 @@
   "slug": "apples",
   "name": "Julian apples",
   "month": "September",
-  "tile_uses": "Raw, slaw on tacos, yogurt, cheese",
+  "tile_uses": "Slaw, picadillo, breakfast",
   "why_now": "Julian is an hour inland and four thousand feet up, and its apples come down the mountain starting in September. A local apple picked this week and eaten raw is a completely different fruit from one that has been in cold storage since last fall — crisper, sharper, and more fragrant.",
   "how_to_choose": [
     "Firm all over, with no give when you press near the stem",
@@ -13,20 +13,37 @@
   ],
   "buy_this_much": "4–5 for the week, and buy more than that if you actually drive up. They keep.",
   "price_note": "Mountain apples cost more than the bin at the grocery store, and for the first few weeks of the season they are worth it. By November, the difference narrows.",
-  "pairs_with_month": ["delicata-squash", "grapes", "limes", "cilantro"],
-  "pairs_with_staples": ["Greek yogurt", "sourdough", "chicken thighs", "ground beef or turkey"],
+  "pairs_with_month": [
+    "delicata-squash",
+    "grapes",
+    "limes",
+    "cilantro"
+  ],
+  "pairs_with_staples": [
+    "Greek yogurt",
+    "honey"
+  ],
   "flavor_paths": [
-    { "name": "Raw and cold", "description": "Sliced, salted if you like. This is where most of them should go." },
-    { "name": "Shredded", "description": "Into a slaw with lime and cilantro. On tacos, it is a revelation." },
-    { "name": "With something salty", "description": "Sharp cheddar, or a sandwich. Sweetness against salt." }
+    {
+      "name": "Raw and cold",
+      "description": "Sliced, salted if you like. This is where most of them should go."
+    },
+    {
+      "name": "Shredded",
+      "description": "Into a slaw with lime and cilantro. The sweet-and-crisp flavor."
+    },
+    {
+      "name": "Cooked into picadillo",
+      "description": "Diced into ground beef with roasted chile. Sweet against rich."
+    }
   ],
   "weekday_uses": [
-    "Grated over yogurt with honey",
-    "Shredded into a quick lime-and-cilantro slaw for tacos",
-    "Sliced with cheddar and sourdough for lunch",
+    "Diced into picadillo",
+    "Shredded into slaw with lime and cilantro",
+    "Grated over Greek yogurt with honey",
     "Eaten whole, cold, in the afternoon"
   ],
-  "weekend_use": "A slaw of shredded apple, cabbage, lime, salt, and a lot of cilantro, on the table next to anything you charred.",
+  "weekend_use": "Shredded into a lime-and-cilantro slaw for the fish tacos.",
   "storage": "Refrigerate them. A cold apple keeps for a month and stays crisp; a counter apple goes mealy in a week. Keep them away from anything that absorbs smells.",
   "one_thing_to_learn": "Apples are one of the few things in the produce aisle where nothing is truly out of season — but almost everything is out of harvest. Most of the year you are eating fruit that has been held in controlled cold storage for months, which is impressive and also why supermarket apples taste the same in March as in December. September and October are the weeks when you can taste the difference, and the only way to notice it is to eat one raw.",
   "market_question": "What came down from the mountain this week?"

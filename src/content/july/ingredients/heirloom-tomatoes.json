@@ -1,7 +1,7 @@
 {
   "slug": "heirloom-tomatoes",
   "name": "Heirloom tomatoes",
-  "tile_uses": "Pasta, rice bowls, tacos, weekend plate",
+  "tile_uses": "The tomato plate, toast, both jars, the weekend",
   "month": "July",
   "guide_id": "rosa",
   "why_now": "July is peak tomato season in Southern California. Any ripe tomato — heirloom or not — is at its best right now. The heat concentrates sugars across every variety. Heirlooms are worth it if you see good ones, but a ripe vine tomato from Trader Joe's or Whole Foods will do the same work.",
@@ -14,20 +14,39 @@
   ],
   "buy_this_much": "4–6 medium tomatoes for one person for the week",
   "price_note": "Vine and roma tomatoes are among the most affordable options year-round — and July is when they're actually worth buying. Heirlooms cost more but aren't required.",
-  "pairs_with_month": ["basil", "persian-cucumbers", "sweet-corn", "peaches"],
-  "pairs_with_staples": ["chicken thighs", "ground beef or turkey", "salmon", "beans", "sourdough"],
+  "pairs_with_month": [
+    "basil",
+    "persian-cucumbers",
+    "sweet-corn",
+    "peaches"
+  ],
+  "pairs_with_staples": [
+    "sourdough",
+    "eggs",
+    "rice",
+    "black beans"
+  ],
   "flavor_paths": [
-    { "name": "Italian Summer", "description": "Olive oil, basil, garlic, black pepper, flaky salt." },
-    { "name": "Bright Taco", "description": "Lime, cilantro, corn, cucumber, a little heat." },
-    { "name": "Simple Toast", "description": "Sourdough, olive oil, salt. The tomato does the rest." }
+    {
+      "name": "Raw and salted",
+      "description": "Sliced thick, salted, left five minutes. The default."
+    },
+    {
+      "name": "Charred",
+      "description": "Blistered in a dry pan for the salsa."
+    },
+    {
+      "name": "In the jar",
+      "description": "Chopped into the vinaigrette with sherry vinegar."
+    }
   ],
   "weekday_uses": [
-    "Rice bowl topping with basil",
-    "Chicken thigh salad with cucumber",
-    "Pasta sauce with garlic and olive oil",
-    "Toast with salt and olive oil"
+    "Sliced thick for the tomato plate",
+    "On tomato toast with an egg",
+    "Charred into salsa for tacos",
+    "Chopped into a rice bowl"
   ],
-  "weekend_use": "Thick slices with burrata or fresh mozzarella, basil, olive oil, and sourdough for dragging. Burrata is richer; fresh mozzarella is half the price and nearly as good.",
+  "weekend_use": "Sliced thick beside slow-roasted salmon and burrata, with the vinaigrette spooned over.",
   "storage": "Counter only. Never refrigerate. Use within four or five days.",
   "one_thing_to_learn": "Smell the stem end before you buy. A tomato that smells like a tomato at the store will taste like one at home.",
   "market_question": "Which variety is ripest right now?"

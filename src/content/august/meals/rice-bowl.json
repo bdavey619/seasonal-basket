@@ -3,33 +3,47 @@
   "name": "Rice bowl",
   "display_name": "Rice bowl",
   "effort": "weekday",
-  "intro": "August turns a rice bowl into something you'd actually plan for.",
+  "intro": "Rice, a protein, and the month's peppers and zucchini. Where the week's leftovers go for lunch.",
   "keep": [
-    "Sticky white rice",
-    "Protein of choice (chicken, salmon, or nothing)"
+    "Rice",
+    "Olive oil and salt"
   ],
   "season_anchor": [
-    "Roasted or sautéed bell pepper strips",
+    "Red bell pepper strips, roasted or raw",
     "Cherry tomatoes, halved"
   ],
   "season_options": [
     "Zucchini, quickly sautéed",
-    "A spoonful of charred pepper sauce",
-    "Fresh basil, torn"
+    "Charred pepper sauce",
+    "Basil",
+    "Jalapeño"
   ],
   "variations": [
-    { "ingredients": "Peppers + cherry tomatoes + basil", "context": "The version you'll make most often." },
-    { "ingredients": "Peppers + zucchini + charred pepper sauce", "context": "If you made the house flavor. Worth it." },
-    { "ingredients": "Cherry tomatoes + jalapeño + cotija", "context": "If you want something closer to the taco bowl direction." }
+    {
+      "ingredients": "Drumsticks · smoky",
+      "context": "Leftover meat pulled from the bone, pepper sauce."
+    },
+    {
+      "ingredients": "Halibut · fresh",
+      "context": "Seared halibut, burst tomatoes, basil."
+    },
+    {
+      "ingredients": "Pork chop · hot",
+      "context": "Sliced leftover chop, jalapeño, lime."
+    }
   ],
   "works_well_with": [
-    "Chicken thighs",
-    "Salmon",
-    "A soft-cooked egg",
-    "No added protein"
+    "A fried egg",
+    "Greek yogurt, salted"
   ],
-  "finish": "Warm the bowl before assembling if you have a minute. Tear basil over the top after plating — don't add it while anything is still hot.",
+  "finish": "A generous spoonful of the pepper sauce on top, left to pool rather than mixed in. Basil and lime at the end.",
   "linked_house_flavor": "charred-pepper-sauce",
-  "linked_field_notes": ["charring-a-pepper"],
-  "linked_ingredients": ["bell-peppers", "cherry-tomatoes", "basil"]
+  "linked_field_notes": [
+    "charring-a-pepper"
+  ],
+  "linked_ingredients": [
+    "bell-peppers",
+    "cherry-tomatoes",
+    "zucchini"
+  ]
 }

@@ -1,0 +1,48 @@
+{
+  "slug": "hot-pan-dinner",
+  "name": "Hot-pan dinner",
+  "display_name": "Hot-pan dinner",
+  "effort": "weekday",
+  "intro": "One very hot pan: sear the protein, then char corn and peaches in what's left. Ten minutes, and the pan does the cooking.",
+  "keep": [
+    "A cast-iron or heavy skillet",
+    "Olive oil and flaky salt"
+  ],
+  "season_anchor": [
+    "Sweet corn, cut into short lengths or kernels",
+    "Peaches, halved"
+  ],
+  "season_options": [
+    "Limes",
+    "Basil",
+    "Charred tomato salsa"
+  ],
+  "variations": [
+    {
+      "ingredients": "Skirt steak · smoky",
+      "context": "Steak first, rested while the corn and peaches char. Salsa at the table."
+    },
+    {
+      "ingredients": "Shrimp · sweet and sharp",
+      "context": "Shrimp for two minutes, then the peaches. Lime over everything."
+    },
+    {
+      "ingredients": "Shrimp · bright",
+      "context": "Basil and a spoonful of vinaigrette over the shrimp and corn."
+    }
+  ],
+  "works_well_with": [
+    "Rice",
+    "Toasted sourdough"
+  ],
+  "finish": "Heat the pan until it smokes. Sear the protein first and set it aside. Then the corn and peach halves, cut side down, until they char in spots — two or three minutes. Everything goes on one plate with the juices from the resting meat.",
+  "linked_house_flavor": "charred-tomato-salsa",
+  "linked_field_notes": [
+    "flaky-salt-goes-on-last"
+  ],
+  "linked_ingredients": [
+    "sweet-corn",
+    "peaches",
+    "basil"
+  ]
+}

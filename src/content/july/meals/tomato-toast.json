@@ -1,0 +1,47 @@
+{
+  "slug": "tomato-toast",
+  "name": "Tomato toast",
+  "display_name": "Tomato toast",
+  "effort": "weekday",
+  "intro": "Thick sourdough, a ripe tomato, olive oil, salt. In July, that's dinner — add an egg if you want it to be.",
+  "keep": [
+    "Sourdough, thick slices",
+    "Olive oil and flaky salt"
+  ],
+  "season_anchor": [
+    "Ripe tomatoes"
+  ],
+  "season_options": [
+    "A fried egg",
+    "Burrata",
+    "Basil",
+    "Tomato herb vinaigrette"
+  ],
+  "variations": [
+    {
+      "ingredients": "Fried egg · bright",
+      "context": "The default. Tomato, egg, a spoonful of vinaigrette."
+    },
+    {
+      "ingredients": "Burrata · bright",
+      "context": "Torn burrata under the tomato, basil over it."
+    },
+    {
+      "ingredients": "Fried egg · smoky",
+      "context": "Charred salsa instead of fresh tomato."
+    }
+  ],
+  "works_well_with": [
+    "A cucumber and mint salad",
+    "A peach, after"
+  ],
+  "finish": "Toast the bread in a skillet with olive oil until it's crisp. Rub the cut side of a garlic clove over it while it's hot, then pile on the tomato, salt it, and eat it standing up if you want.",
+  "linked_house_flavor": "tomato-herb-vinaigrette",
+  "linked_field_notes": [
+    "flaky-salt-goes-on-last"
+  ],
+  "linked_ingredients": [
+    "heirloom-tomatoes",
+    "basil"
+  ]
+}
