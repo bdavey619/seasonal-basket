@@ -89,26 +89,32 @@
       "chile flakes",
       "salt"
     ],
-    "cost_note": "Around $30–40 for the produce and $55–70 for the proteins, all from one well-stocked supermarket. Everything in this edition is on these lines — nothing else to buy.",
+    "cost_note": "Around $30–40 for the produce and $55–70 for the four proteins, all from one well-stocked supermarket. Everything in this edition is on these lines — nothing else to buy.",
     "proteins": [
       {
         "slug": "rockfish",
         "name": "Rockfish fillets",
         "qty": "2 lbs, in two trips",
         "why": "A mild fish needs something peppery and something sharp — arugula and pomegranate — or it tastes of nothing.",
-        "uses": "Weekend meal, fish tacos, toast, lunches"
+        "uses": "The weekend meal, fish tacos, toast"
       },
       {
         "name": "Chicken sausage",
-        "qty": "2 lbs",
+        "qty": "1 lb",
         "why": "Its fat runs out onto the hot pan and bastes the squash and peppers as they roast. The pan seasons itself.",
-        "uses": "Sheet-pan dinner, the hash, lunches"
+        "uses": "Sheet pan, the hash, a sweet potato"
+      },
+      {
+        "name": "Pork tenderloin",
+        "qty": "1, about 1¼ lbs",
+        "why": "Lean meat has no fat to protect it. Pull it while it's still blushing pink and add the richness at the end — ajvar's oil, or brown butter.",
+        "uses": "Sheet pan, the warm plate, the hash"
       },
       {
         "name": "Ground lamb",
-        "qty": "1½ lbs",
-        "why": "Rich, slightly gamey meat wants sweet and sour against it — dates and pomegranate. Same logic as pork with apples.",
-        "uses": "The warm plate, toast, the hash"
+        "qty": "1 lb",
+        "why": "Rich, slightly gamey meat wants sweet and sour against it — dates and pomegranate. It's the reason lamb and mint is a classic.",
+        "uses": "The warm plate, toast, a sweet potato"
       }
     ],
     "feeds": "Feeds one big appetite for a week: every dinner, and lunch from the leftovers most days."
@@ -152,38 +158,6 @@
       "slug": "dry-hot-hands-off",
       "name": "Dry fish, hot pan, hands off.",
       "body": "Fish sticks when it's wet or when you move it too soon. Pat it dry, salt it, heat the pan until the oil shimmers, lay the fillet down away from you, and leave it alone for three minutes. When it's ready, it lets go of the pan on its own. That's also the first step of every braise — you'll use it on bone-in chicken thighs once the evenings cool."
-    }
-  ],
-  "meal_transformations": [
-    {
-      "meal": "Sheet-pan dinner",
-      "change": "Chicken sausage, kabocha, and red peppers on one pan.",
-      "result": "One pan, thirty minutes."
-    },
-    {
-      "meal": "Warm plate",
-      "change": "Ground lamb over rice with roasted squash, finished warm and cold.",
-      "result": "Hot and cold, rich and sharp."
-    },
-    {
-      "meal": "Fish tacos",
-      "change": "Seared rockfish, arugula, warm tortillas.",
-      "result": "San Diego's taco, October's way."
-    },
-    {
-      "meal": "Toast for dinner",
-      "change": "Thick sourdough, crisped in olive oil, with something from the week on top.",
-      "result": "Five minutes. It still counts."
-    },
-    {
-      "meal": "Baked sweet potato",
-      "change": "Baked until the sugars run, split, and filled.",
-      "result": "The potato is the whole dinner."
-    },
-    {
-      "meal": "Skillet hash",
-      "change": "The week's leftovers, crisped in one pan, an egg on top.",
-      "result": "A new dinner from old ones."
     }
   ],
   "weekend_meal": {
@@ -249,10 +223,145 @@
     "month": "November",
     "status": "Arriving November 1."
   },
-  "meals_heading": "Six meals for October.",
-  "meals_dek": "Simple shapes, each with its own protein and three ways to finish it — the same groceries, different dinners.",
-  "meal_ways_compact": true,
+  "meals_heading": "What do you feel like tonight?",
+  "meals_dek": "Start with the protein, pick a way to cook it, then a flavor. Every combination comes out of the same shopping list.",
   "meals_back_label": "October's meals",
+  "tonight": {
+    "flavors_label": "October's four flavors",
+    "options": [
+      {
+        "name": "Rockfish",
+        "best_with": [
+          "cool-sharp",
+          "bright-hot"
+        ],
+        "ways": [
+          {
+            "label": "Seared, brown butter",
+            "meal": "weekend"
+          },
+          {
+            "label": "Fish tacos",
+            "meal": "fish-tacos"
+          },
+          {
+            "label": "On toast",
+            "meal": "toast-for-dinner"
+          }
+        ]
+      },
+      {
+        "name": "Chicken sausage",
+        "best_with": [
+          "smoky",
+          "bright-hot"
+        ],
+        "ways": [
+          {
+            "label": "Sheet pan",
+            "meal": "sheet-pan-dinner"
+          },
+          {
+            "label": "Skillet hash",
+            "meal": "skillet-hash"
+          },
+          {
+            "label": "In a sweet potato",
+            "meal": "baked-sweet-potato"
+          }
+        ]
+      },
+      {
+        "name": "Pork tenderloin",
+        "best_with": [
+          "sweet-salty",
+          "smoky"
+        ],
+        "ways": [
+          {
+            "label": "Sheet pan",
+            "meal": "sheet-pan-dinner"
+          },
+          {
+            "label": "Warm plate",
+            "meal": "warm-plate"
+          },
+          {
+            "label": "Skillet hash",
+            "meal": "skillet-hash"
+          }
+        ]
+      },
+      {
+        "name": "Ground lamb",
+        "best_with": [
+          "sweet-salty",
+          "cool-sharp"
+        ],
+        "ways": [
+          {
+            "label": "Warm plate",
+            "meal": "warm-plate"
+          },
+          {
+            "label": "On toast",
+            "meal": "toast-for-dinner"
+          },
+          {
+            "label": "In a sweet potato",
+            "meal": "baked-sweet-potato"
+          }
+        ]
+      },
+      {
+        "name": "No meat tonight",
+        "best_with": [
+          "smoky",
+          "sweet-salty"
+        ],
+        "ways": [
+          {
+            "label": "Egg on toast",
+            "meal": "toast-for-dinner"
+          },
+          {
+            "label": "Sweet potato and beans",
+            "meal": "baked-sweet-potato"
+          },
+          {
+            "label": "Hash with eggs",
+            "meal": "skillet-hash"
+          }
+        ]
+      }
+    ]
+  },
+  "flavors": [
+    {
+      "slug": "smoky",
+      "name": "Smoky",
+      "what": "Ajvar + lemon",
+      "how": "A spoonful of the jar and its oil, lemon squeezed over everything."
+    },
+    {
+      "slug": "cool-sharp",
+      "name": "Cool and sharp",
+      "what": "Salted yogurt + pomegranate",
+      "how": "Yogurt on the plate first, the hot food on top, seeds over it all."
+    },
+    {
+      "slug": "bright-hot",
+      "name": "Bright and hot",
+      "what": "Chile-garlic oil + lime",
+      "how": "Warm olive oil with a grated garlic clove and chile flakes for one minute. Pour it over; squeeze lime hard."
+    },
+    {
+      "slug": "sweet-salty",
+      "name": "Sweet and salty",
+      "what": "Dates + feta",
+      "how": "Torn dates and crumbled feta, a pinch of chile so it isn't dessert."
+    }
+  ],
   "guides": [
     {
       "id": "jerome",

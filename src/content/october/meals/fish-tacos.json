@@ -21,16 +21,16 @@
   ],
   "variations": [
     {
-      "ingredients": "Sharp: pomegranate + salted yogurt + lime",
-      "context": "The default. The pomegranate is the salsa."
+      "ingredients": "Rockfish · cool and sharp",
+      "context": "The default. Salted yogurt and pomegranate. The pomegranate is the salsa."
     },
     {
-      "ingredients": "Smoky: ajvar + feta",
-      "context": "Smear the jar on the warm tortilla first, fish on top, feta last."
+      "ingredients": "Rockfish · bright and hot",
+      "context": "Chile-garlic oil over the fish, lime squeezed hard, arugula."
     },
     {
-      "ingredients": "Hot: chile-garlic oil + lime + arugula",
-      "context": "Spoon warm chile oil over the fish. More lime than seems right."
+      "ingredients": "Rockfish · smoky",
+      "context": "Smear ajvar on the warm tortilla first, fish on top, feta last."
     }
   ],
   "works_well_with": [

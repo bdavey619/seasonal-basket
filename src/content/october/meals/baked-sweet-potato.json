@@ -10,7 +10,7 @@
   ],
   "season_anchor": [
     "Sweet potatoes, one or two per person",
-    "Black beans, or whatever's left from the week"
+    "Black beans, or leftover sausage or lamb"
   ],
   "season_options": [
     "Ajvar",
@@ -22,16 +22,16 @@
   ],
   "variations": [
     {
-      "ingredients": "Smoky: black beans + ajvar + yogurt",
-      "context": "The default. Warm the beans with a spoonful of the jar."
+      "ingredients": "Black beans · smoky",
+      "context": "The default. Warm the beans with a spoonful of ajvar."
     },
     {
-      "ingredients": "Sweet and salty: dates + feta + chile",
+      "ingredients": "No meat · sweet and salty",
       "context": "Torn dates melt into the hot potato; feta and chile keep it from being dessert."
     },
     {
-      "ingredients": "Leftovers: lamb or sausage + yogurt + pomegranate",
-      "context": "Whatever protein is left from the week, warmed and spooned in."
+      "ingredients": "Lamb or sausage · cool and sharp",
+      "context": "Whatever's left from the week, with yogurt and pomegranate."
     }
   ],
   "works_well_with": [

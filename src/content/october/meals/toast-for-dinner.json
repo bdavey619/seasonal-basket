@@ -21,16 +21,16 @@
   ],
   "variations": [
     {
-      "ingredients": "Smoky: ajvar + fried egg + arugula",
-      "context": "The default. Jar spread thick, egg on top, yolk running."
+      "ingredients": "Fried egg · smoky",
+      "context": "The default. Ajvar spread thick, egg on top, yolk running."
     },
     {
-      "ingredients": "Lamb: yogurt + leftover lamb + pomegranate",
-      "context": "Warm the lamb in the pan first. Yogurt goes down before it."
+      "ingredients": "Ground lamb · cool and sharp",
+      "context": "Yogurt on the toast, warm lamb, pomegranate over it."
     },
     {
-      "ingredients": "Fish: flaked rockfish + arugula + lemon",
-      "context": "Cold leftover fish, olive oil, lemon, salt. Lunch, too."
+      "ingredients": "Rockfish · bright and hot",
+      "context": "Flaked leftover fish, arugula, chile-garlic oil, lime."
     }
   ],
   "works_well_with": [

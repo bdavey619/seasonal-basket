@@ -1190,3 +1190,69 @@ footer {
   margin: 22px 0 2px;
 }
 .card--dark .bring-home-group { color: var(--accent); }
+
+/* ─── Protein-first meals ────────────────────────────── */
+/* One row per protein: the name, the ways to cook it (links to meal pages),
+   and the flavors it's best with (links to the list below). */
+.tonight { margin-top: 18px; border-top: 1px solid var(--line); }
+.tonight-row {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 4px 20px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+.tonight-name { font-size: 1.08rem; color: var(--ink); }
+.tonight-ways {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .93rem;
+  color: #3d4842;
+}
+.tonight-ways a, .tonight-best a, .flavor-row a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--primary);
+}
+.tonight-ways a:hover, .tonight-best a:hover { color: var(--primary); }
+.tonight-sep { color: var(--muted); }
+.tonight-best {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .85rem;
+  color: var(--muted);
+  text-align: right;
+}
+.pairs-label {
+  font-size: .66rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  margin-right: 6px;
+}
+.flavors-label { margin-top: 30px !important; }
+.flavors { list-style: none; margin: 8px 0 0; padding: 0; border-top: 1px solid var(--line); }
+.flavor-row {
+  display: grid;
+  grid-template-columns: 170px minmax(0, .7fr) minmax(0, 1.3fr);
+  gap: 2px 20px;
+  align-items: baseline;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 74px;
+}
+.flavor-name { font-size: 1.02rem; }
+.flavor-what {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .9rem;
+  color: var(--ink);
+}
+.flavor-how {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .85rem;
+  color: var(--muted);
+}
+.flavor-row:target { background: var(--paper); }
+@media (max-width: 860px) {
+  .tonight-row, .flavor-row { grid-template-columns: minmax(0, 1fr); gap: 3px; }
+  .tonight-best { text-align: left; }
+}

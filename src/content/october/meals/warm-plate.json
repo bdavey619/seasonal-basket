@@ -3,13 +3,13 @@
   "name": "Warm plate",
   "display_name": "Warm plate",
   "effort": "weekday",
-  "intro": "Something warm, something cold, something sharp, on one plate. Ground lamb makes it dinner; the finish makes it different each time.",
+  "intro": "Something warm, something cold, something sharp, on one plate. Ground lamb or sliced pork makes it dinner; the flavor makes it different each time.",
   "keep": [
     "Rice, warm or leftover",
     "Olive oil and salt"
   ],
   "season_anchor": [
-    "Ground lamb, browned with garlic and chile flakes",
+    "Ground lamb, browned with garlic and chile flakes — or leftover pork tenderloin, sliced",
     "Roasted kabocha"
   ],
   "season_options": [
@@ -23,16 +23,16 @@
   ],
   "variations": [
     {
-      "ingredients": "Sweet and sour: yogurt + pomegranate + dates",
-      "context": "The default. Yogurt under everything, pomegranate and dates over it."
+      "ingredients": "Ground lamb · sweet and salty",
+      "context": "The default. Dates and feta over the lamb, yogurt underneath."
     },
     {
-      "ingredients": "Smoky: ajvar + feta + arugula",
-      "context": "A spoonful of the jar on the lamb, feta crumbled over, greens on the side."
+      "ingredients": "Ground lamb · cool and sharp",
+      "context": "Salted yogurt under everything, pomegranate over it."
     },
     {
-      "ingredients": "Green and bright: arugula + lemon + chile oil",
-      "context": "A big pile of greens, lemon squeezed hard, warm chile-garlic oil over the lamb."
+      "ingredients": "Pork tenderloin · smoky",
+      "context": "Leftover slices warmed in the pan, ajvar spooned over."
     }
   ],
   "works_well_with": [

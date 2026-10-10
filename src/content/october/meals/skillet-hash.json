@@ -14,25 +14,25 @@
     "Red pepper, diced"
   ],
   "season_options": [
-    "Leftover sausage, sliced",
-    "Leftover lamb",
+    "Leftover sausage or pork tenderloin, sliced",
     "Ajvar",
     "Crumbled feta",
+    "Torn Medjool dates",
     "Chile flakes",
     "Arugula"
   ],
   "variations": [
     {
-      "ingredients": "Sausage + peppers + ajvar",
-      "context": "The default. Sliced leftover sausage, crisped with everything else."
+      "ingredients": "Chicken sausage · smoky",
+      "context": "The default. Sliced sausage crisped with everything, ajvar at the table."
     },
     {
-      "ingredients": "Lamb + yogurt + pomegranate",
-      "context": "Leftover lamb in the pan for the last minute; yogurt and seeds at the table."
+      "ingredients": "Pork tenderloin · sweet and salty",
+      "context": "Leftover pork in for the last minute, dates and feta on top."
     },
     {
-      "ingredients": "No meat: feta + chile + arugula",
-      "context": "Two eggs instead of one, feta crumbled over, greens on the side."
+      "ingredients": "Eggs only · bright and hot",
+      "context": "Two eggs instead of one, chile-garlic oil over the top."
     }
   ],
   "works_well_with": [

@@ -3,13 +3,13 @@
   "name": "Sheet-pan dinner",
   "display_name": "Sheet-pan dinner",
   "effort": "weekday",
-  "intro": "One vegetable, one protein, one pan, a hot oven. What goes on at the end decides which dinner it is.",
+  "intro": "One vegetable, one protein, one pan, a hot oven. Sausage or pork tenderloin both work; the flavor you finish with decides which dinner it is.",
   "keep": [
     "A sheet pan",
     "Olive oil and salt"
   ],
   "season_anchor": [
-    "Chicken sausage, whole links",
+    "Chicken sausage, or a whole pork tenderloin",
     "Kabocha wedges, or sweet potato in cubes",
     "Red pepper strips"
   ],
@@ -22,16 +22,16 @@
   ],
   "variations": [
     {
-      "ingredients": "Smoky: ajvar + lemon",
-      "context": "The default. A spoonful of the jar over everything, lemon squeezed on top."
+      "ingredients": "Chicken sausage · smoky",
+      "context": "The default. Ajvar and lemon over everything."
     },
     {
-      "ingredients": "Cool and sharp: salted yogurt + pomegranate",
-      "context": "Yogurt spread on the plate first, the hot pan tipped onto it, seeds over the top."
+      "ingredients": "Pork tenderloin · sweet and salty",
+      "context": "Sliced thick over the squash, torn dates and feta on top."
     },
     {
-      "ingredients": "Bright and hot: lime + chile + garlic",
-      "context": "Warm olive oil with a grated garlic clove and chile flakes for a minute, then pour it over with lime."
+      "ingredients": "Chicken sausage · bright and hot",
+      "context": "Chile-garlic oil poured over at the table, lime squeezed hard."
     }
   ],
   "works_well_with": [
@@ -39,7 +39,7 @@
     "Black beans",
     "Arugula, a handful on top"
   ],
-  "finish": "Heat the oven to 425°F. Squash, peppers, and all two pounds of sausage go on one pan together — use two pans if they crowd — oiled and salted, with room between the pieces. Roast about 30 minutes, turning the sausages once, until they're browned and the squash edges are dark. Eat what you want tonight; the rest is lunches and the skillet hash. Finish each plate in one of the three directions.",
+  "finish": "Heat the oven to 425°F. Squash and peppers go on the pan first, oiled and salted, with room between the pieces. Sausage goes in with them for about 30 minutes, turned once. A pork tenderloin, salted and oiled, joins the pan for the last 20 to 25 minutes — take it out when the center is still blushing pink (145°F if you have a thermometer) and let it rest five minutes before slicing. Finish with one of October's flavors.",
   "linked_house_flavor": "ajvar",
   "linked_field_notes": [
     "kabocha-cutting"

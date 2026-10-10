@@ -75,7 +75,9 @@ The repeatable meals are formats, not fixed dishes: a shape with slots (one vege
 
 **Every format has three directions**, and they change the flavor, not just the protein: smoky (the jar), cool and sharp (yogurt and fruit), bright and hot (citrus and chile oil), sweet and salty, and so on — all from the same shopping list. Swapping sausage for chicken is not a direction. Six formats with three directions each is about eighteen distinct dinners from one list. Include at least one leftovers format (October's skillet hash) so the week's cooking turns into a different dinner instead of the same one reheated.
 
-On the edition page, set `meal_ways_compact` so the directions show without their explanations; the explanations live on each meal's page.
+**The meals section follows how people decide: protein, then method, then flavor.** It opens with "What do you feel like tonight?" — one row per protein (plus a no-meat row), each listing two or three ways to cook it (links to the meal pages) and the flavors it's best with. Below it, the month's three or four flavors are defined once — a name, what it is, how to do it — instead of being repeated inside every meal. Meal pages stay as the how-to, and their variations are written as protein · flavor pairings. Every meal page must be reachable from at least one protein; the build checks.
+
+Flavors accumulate like techniques: a reader who has followed Seasonal for a year should have a dozen ways to finish a plate that they reach for without thinking. (Editions without a `tonight` block fall back to the older meal list, and can set `meal_ways_compact` to hide the explanations there.)
 
 Formats accumulate like techniques. After a year, the reader should have a dozen meal shapes they cook without looking anything up.
 
