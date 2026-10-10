@@ -1,5 +1,25 @@
 # Seasonal — Editorial Playbook
 
+## Building an Edition, Step by Step
+
+Do these in order. Each step depends on the one before; the reasons behind each live in the sections below.
+
+1. **Read the weather and the season — honestly.** Research what is actually ripe in Southern California this month, and what the weather really is (San Diego's October is a second summer, not New England's fall). Decide what the month teaches: heat or restraint, fresh or storage.
+2. **Choose the basket from one store.** Six to eight seasonal ingredients, mostly vegetables, every one reliably available at a well-stocked supermarket. Include whatever the month's jar is made from. If it's only at a specialty market, leave it out.
+3. **Choose three or four proteins.** For each candidate, answer four questions:
+   - *Category:* does it fill a gap? Aim for different kinds — fish, poultry, red meat, pork — not one animal on repeat.
+   - *Rotation:* did it lead last month? Check the protein log; if so, pick another.
+   - *Pairing:* what does it want from this basket, and what general principle does that teach (sharp against mild, fat that bastes, sweet and sour against rich, lean meat gets its richness from the finish)? Each protein should teach a different one.
+   - *Cut and weather:* which cut suits the month's weather? Quick, lean cuts when it's warm; long-cooked cuts when it's cool. Seafood seasonality is literal — name it. Meat seasonality usually isn't — say so, and choose the cut for the weather.
+   One of the proteins is the month's cut: the new one the weekend meal teaches.
+4. **Choose the method and, only if one is genuinely coming back into use, a tool.** The method is taught by the weekend meal and named in one Field Note that points to next month.
+5. **Choose the meal formats.** Five or six simple shapes that suit the weather, including one leftovers format. Every protein must have two or three formats it works in; every format must be reachable from at least one protein.
+6. **Choose three or four flavors.** Each is two or three things from the shopping list, defined once (what it is, how to do it). Give each protein its two best flavors, following from its pairing line.
+7. **Write the shopping list and close it.** Basket, proteins (with amounts, meals, and pairing line), "Also buy," and "From your kitchen." Pick one cheese, one citrus, one tortilla. Then read every page — meals, jar, drink, weekend meal, ingredient pages — and remove or list anything not on those lines.
+8. **Set the quantities.** One active cook with a big appetite, dinner every night, leftovers for lunch most days: roughly 8 oz of raw protein per meal. State it in the basket card's "feeds" line.
+9. **Write the rest of the edition.** Field Notes, the jar, the drink, one thing to notice. Leave out any section that isn't about cooking this month.
+10. **Check and record.** Build (it verifies pages, links, and that every meal is reachable). Check the page at phone and desktop width. Add the month to the protein log and update the year plan in `PROJECT_STATE.md`.
+
 ## Product Vision
 
 Seasonal is not a recipe publication. It is a monthly companion for people who already know how to cook.

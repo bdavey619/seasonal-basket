@@ -84,6 +84,8 @@ python3 -m http.server --directory docs 8000
 
 ## Adding an edition
 
+The editorial steps — what to choose, in what order, and why — are in **Building an Edition, Step by Step** at the top of `EDITORIAL_PLAYBOOK.md`. The technical steps:
+
 1. Create `src/content/<month>/` with `edition.json`, `guides.json`, at least one `house-flavor*.json`, plus `ingredients/` and `meals/`.
 2. Add `src/css/<month>.css` with that month's palette. Palette variables are the only values that change between editions — all layout and typography live in `base.css`.
 3. Set `edition_number` higher than every existing edition. The highest published number becomes the current edition on the homepage; everything below it moves into the archive automatically.
