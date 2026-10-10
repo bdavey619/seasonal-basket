@@ -112,15 +112,29 @@
       (function () {
         var btn = document.querySelector('.cook-wake');
         if (!btn || !('wakeLock' in navigator)) return;
-        var lock = null;
+        // `wanted` is the reader's choice; `lock` is the browser's current
+        // lock. The browser drops the lock whenever the page is hidden (a
+        // timer app, a message), so if the reader still wants it, take it
+        // back as soon as they return.
+        var lock = null, wanted = false;
         btn.hidden = false;
-        btn.addEventListener('click', function () {
-          if (lock) { lock.release(); lock = null; btn.textContent = 'Keep screen on while cooking'; btn.classList.remove('is-on'); return; }
+        function show() {
+          btn.textContent = wanted ? 'Screen will stay on' : 'Keep screen on while cooking';
+          btn.classList.toggle('is-on', wanted);
+        }
+        function acquire() {
+          if (lock || !wanted || document.visibilityState !== 'visible') return;
           navigator.wakeLock.request('screen').then(function (l) {
-            lock = l; btn.textContent = 'Screen will stay on'; btn.classList.add('is-on');
-            l.addEventListener('release', function () { lock = null; btn.textContent = 'Keep screen on while cooking'; btn.classList.remove('is-on'); });
-          }).catch(function () {});
+            lock = l;
+            l.addEventListener('release', function () { lock = null; });
+          }).catch(function () { wanted = false; show(); });
+        }
+        btn.addEventListener('click', function () {
+          wanted = !wanted;
+          if (wanted) { acquire(); } else if (lock) { lock.release(); lock = null; }
+          show();
         });
+        document.addEventListener('visibilitychange', acquire);
       })();
     </script>
   </main>
