@@ -1256,3 +1256,132 @@ footer {
   .tonight-row, .flavor-row { grid-template-columns: minmax(0, 1fr); gap: 3px; }
   .tonight-best { text-align: left; }
 }
+
+/* ─── Cook card (meal pages with steps) ──────────────── */
+/* A meal page laid out for the stove: choices first, one list, then
+   numbered steps that lead with their time or temperature. */
+.cook-meta {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .9rem;
+  color: var(--muted);
+  margin: 14px 0 0;
+}
+.cook-wake {
+  margin-top: 14px;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .82rem;
+  color: var(--primary);
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+.cook-wake.is-on { background: var(--paper); border-color: var(--primary); }
+.cook-card { max-width: 680px; margin-top: 32px; }
+.cook-section { margin-bottom: 34px; border-top: 1px solid var(--line); padding-top: 20px; }
+.cook-section:first-child { border-top: none; padding-top: 0; }
+.cook-num {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .62em;
+  font-weight: 700;
+  vertical-align: .3em;
+  margin-right: 8px;
+}
+.cook-choices { list-style: none; margin: 10px 0 0; padding: 0; }
+.cook-choice {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2px 16px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--line);
+}
+.cook-choice:last-child { border-bottom: none; }
+.cook-choice-name { font-size: 1.05rem; color: var(--ink); }
+.cook-choice-amount {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .88rem;
+  color: var(--ink);
+  text-align: right;
+}
+.cook-choice-note {
+  grid-column: 1 / -1;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .88rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.cook-hint {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .8rem;
+  color: var(--muted);
+  margin: 8px 0 0;
+}
+.cook-steps { list-style: none; counter-reset: step; margin: 12px 0 0; padding: 0; }
+.cook-step {
+  counter-increment: step;
+  position: relative;
+  padding: 14px 0 14px 44px;
+  border-bottom: 1px solid var(--line);
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--ink);
+  cursor: pointer;
+  transition: opacity .15s;
+}
+.cook-step:last-child { border-bottom: none; }
+.cook-step::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border: 1.5px solid var(--primary);
+  border-radius: 50%;
+  color: var(--primary);
+  font-size: .85rem;
+  font-weight: 700;
+}
+.cook-cue {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 1px 7px;
+  border-radius: 3px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  color: var(--primary);
+  white-space: nowrap;
+}
+.cook-step.is-done { opacity: .4; }
+.cook-step.is-done::before { content: "✓"; background: var(--primary); color: #fff; }
+.cook-leftovers {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .95rem;
+  color: #3d4842;
+}
+.cook-also {
+  max-width: 680px;
+  margin-top: 8px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0 32px;
+}
+.cook-also h3 { font-size: 1rem; margin-bottom: 8px; }
+.cook-also section { margin-bottom: 18px; }

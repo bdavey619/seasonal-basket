@@ -3,43 +3,12 @@
   "name": "Sheet-pan dinner",
   "display_name": "Sheet-pan dinner",
   "effort": "weekday",
-  "intro": "One vegetable, one protein, one pan, a hot oven. Sausage or pork tenderloin both work; the flavor you finish with decides which dinner it is.",
-  "keep": [
-    "A sheet pan",
-    "Olive oil and salt"
-  ],
-  "season_anchor": [
-    "Chicken sausage, or a whole pork tenderloin",
-    "Kabocha wedges, or sweet potato in cubes",
-    "Red pepper strips"
-  ],
-  "season_options": [
-    "Ajvar",
-    "Salted Greek yogurt",
-    "Pomegranate seeds",
-    "Lemon or lime",
-    "Chile flakes and garlic"
-  ],
-  "variations": [
-    {
-      "ingredients": "Chicken sausage · smoky",
-      "context": "The default. Ajvar and lemon over everything."
-    },
-    {
-      "ingredients": "Pork tenderloin · sweet and salty",
-      "context": "Sliced thick over the squash, torn dates and feta on top."
-    },
-    {
-      "ingredients": "Chicken sausage · bright and hot",
-      "context": "Chile-garlic oil poured over at the table, lime squeezed hard."
-    }
-  ],
+  "intro": "One vegetable, one protein, one pan, a hot oven. The flavor you finish with decides which dinner it is.",
   "works_well_with": [
     "Rice",
     "Black beans",
     "Arugula, a handful on top"
   ],
-  "finish": "Heat the oven to 425°F. Squash and peppers go on the pan first, oiled and salted, with room between the pieces. Sausage goes in with them for about 30 minutes, turned once. A pork tenderloin, salted and oiled, joins the pan for the last 20 to 25 minutes — take it out when the center is still blushing pink (145°F if you have a thermometer) and let it rest five minutes before slicing. Finish with one of October's flavors.",
   "linked_house_flavor": "ajvar",
   "linked_field_notes": [
     "kabocha-cutting"
@@ -49,5 +18,56 @@
     "red-bell-peppers",
     "sweet-potatoes",
     "pomegranates"
-  ]
+  ],
+  "time": "About 40 minutes, most of it in the oven",
+  "yield": "Dinner tonight, two lunches",
+  "proteins": [
+    {
+      "name": "Chicken sausage",
+      "amount": "1 lb, 4–5 links",
+      "timing": "On the pan with the vegetables from the start. About 30 minutes, turned once."
+    },
+    {
+      "name": "Pork tenderloin",
+      "amount": "1, about 1¼ lbs",
+      "timing": "Joins the pan after 10 minutes. Out when the center is just pink (145°F), 20–25 minutes. Rest 5 minutes before slicing."
+    }
+  ],
+  "flavors": [
+    "smoky",
+    "sweet-salty",
+    "bright-hot"
+  ],
+  "needs": [
+    "½ kabocha, in 1-inch wedges — or 2 sweet potatoes, cubed",
+    "2 red bell peppers, in thick strips",
+    "2 tbsp olive oil",
+    "Salt"
+  ],
+  "steps": [
+    {
+      "cue": "425°F",
+      "text": "Heat the oven. If the kabocha is too hard to cut, put it in whole for 10 minutes first."
+    },
+    {
+      "text": "Toss the squash and peppers with the olive oil and a big pinch of salt. Spread them on a sheet pan with room between the pieces — use two pans if they touch."
+    },
+    {
+      "cue": "Start",
+      "text": "Sausage: add the links to the pan now. Pork: rub the tenderloin with oil and salt and set it aside."
+    },
+    {
+      "cue": "10 min",
+      "text": "Roast. Pork: add the tenderloin to the pan when the time's up."
+    },
+    {
+      "cue": "20 min more",
+      "text": "Roast until the squash edges are dark and the sausage is browned — turn it once. Pork is ready when the center is just pink; rest it 5 minutes, then slice thick."
+    },
+    {
+      "cue": "Finish",
+      "text": "Plate it and finish with your flavor."
+    }
+  ],
+  "leftovers": "Pack two lunches before you sit down: squash, peppers, and sliced protein over rice. Add the flavor when you eat it."
 }

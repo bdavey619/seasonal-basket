@@ -3,46 +3,64 @@
   "name": "Toast for dinner",
   "display_name": "Toast for dinner",
   "effort": "weekday",
-  "intro": "Thick sourdough, toasted hard in olive oil, with something good on top. Five minutes, and it still counts as dinner.",
-  "keep": [
-    "Sourdough, thick slices",
-    "Olive oil and salt"
-  ],
-  "season_anchor": [
-    "Arugula",
-    "Something from the week: an egg, the lamb, or the fish"
-  ],
-  "season_options": [
-    "Ajvar",
-    "Salted Greek yogurt",
-    "Pomegranate seeds",
-    "Lemon",
-    "Crumbled feta"
-  ],
-  "variations": [
-    {
-      "ingredients": "Fried egg · smoky",
-      "context": "The default. Ajvar spread thick, egg on top, yolk running."
-    },
-    {
-      "ingredients": "Ground lamb · cool and sharp",
-      "context": "Yogurt on the toast, warm lamb, pomegranate over it."
-    },
-    {
-      "ingredients": "Rockfish · bright and hot",
-      "context": "Flaked leftover fish, arugula, chile-garlic oil, lime."
-    }
-  ],
+  "intro": "Thick sourdough, crisped in olive oil, with something good on top. Ten minutes, and it still counts as dinner.",
   "works_well_with": [
     "A second egg",
     "Arugula dressed with lemon"
   ],
-  "finish": "Toast the bread in a skillet with a slick of olive oil, pressing it down, until it's golden and crisp on both sides — much better than a toaster. Build it while the bread is hot. Two slices is dinner.",
   "linked_house_flavor": "ajvar",
   "linked_field_notes": [],
   "linked_ingredients": [
     "arugula",
     "pomegranates",
     "rockfish"
-  ]
+  ],
+  "time": "10 minutes",
+  "yield": "Dinner for one",
+  "proteins": [
+    {
+      "name": "Fried eggs",
+      "amount": "2",
+      "timing": "Cooked in the same pan after the toast, about 3 minutes."
+    },
+    {
+      "name": "Ground lamb, leftover",
+      "amount": "A big spoonful",
+      "timing": "Warmed in the pan, 2 minutes."
+    },
+    {
+      "name": "Rockfish, leftover",
+      "amount": "A few pieces",
+      "timing": "Flaked cold. Nothing to cook."
+    }
+  ],
+  "flavors": [
+    "smoky",
+    "cool-sharp",
+    "bright-hot"
+  ],
+  "needs": [
+    "2 thick slices of sourdough",
+    "2 tbsp olive oil",
+    "A handful of arugula",
+    "Flaky salt"
+  ],
+  "steps": [
+    {
+      "cue": "2–3 min a side",
+      "text": "Heat the olive oil in a skillet. Lay the bread in and press it down. Toast until golden and crisp on both sides."
+    },
+    {
+      "cue": "3 min",
+      "text": "Eggs: crack them into the same pan and cook until the whites set. Lamb: warm it through. Fish: nothing to cook."
+    },
+    {
+      "cue": "Finish",
+      "text": "Spread your flavor on the hot toast first, then the protein, then the arugula."
+    },
+    {
+      "text": "Flaky salt over the top. Eat it right away."
+    }
+  ],
+  "leftovers": "Toast doesn't keep. Make it fresh."
 }

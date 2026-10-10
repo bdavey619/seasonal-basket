@@ -4,41 +4,11 @@
   "display_name": "Fish tacos",
   "effort": "weekday",
   "intro": "San Diego's taco, made with this month's fish. Seared, not fried, and finished in the time it takes to warm the tortillas.",
-  "keep": [
-    "Corn tortillas",
-    "Lime"
-  ],
-  "season_anchor": [
-    "Seared rockfish, flaked",
-    "Arugula, in place of lettuce"
-  ],
-  "season_options": [
-    "Salted Greek yogurt",
-    "Pomegranate seeds",
-    "Ajvar",
-    "Crumbled feta",
-    "Chile flakes and garlic"
-  ],
-  "variations": [
-    {
-      "ingredients": "Rockfish · cool and sharp",
-      "context": "The default. Salted yogurt and pomegranate. The pomegranate is the salsa."
-    },
-    {
-      "ingredients": "Rockfish · bright and hot",
-      "context": "Chile-garlic oil over the fish, lime squeezed hard, arugula."
-    },
-    {
-      "ingredients": "Rockfish · smoky",
-      "context": "Smear ajvar on the warm tortilla first, fish on top, feta last."
-    }
-  ],
   "works_well_with": [
     "Black beans",
     "Rice",
     "Lime, a lot of it"
   ],
-  "finish": "Warm the tortillas in a dry pan until they blister in spots, and stack them under a towel. Two per taco. Sear the fish the same way as the weekend — dry, hot pan, hands off — then flake it straight into the tortillas.",
   "linked_house_flavor": "ajvar",
   "linked_field_notes": [
     "dry-hot-hands-off"
@@ -47,5 +17,51 @@
     "rockfish",
     "arugula",
     "pomegranates"
-  ]
+  ],
+  "time": "15 minutes",
+  "yield": "Dinner for one, about 6 tacos",
+  "proteins": [
+    {
+      "name": "Rockfish",
+      "amount": "1 lb fillets",
+      "timing": "Seared 3–4 minutes without moving, flipped, 1–2 minutes more. Flaked in the pan."
+    }
+  ],
+  "flavors": [
+    "cool-sharp",
+    "bright-hot",
+    "smoky"
+  ],
+  "needs": [
+    "12 corn tortillas — two per taco",
+    "2 handfuls of arugula",
+    "1 lime",
+    "Olive oil and salt"
+  ],
+  "steps": [
+    {
+      "cue": "10 min",
+      "text": "Salt the fish and leave it on a plate. Pat it completely dry right before it goes in the pan."
+    },
+    {
+      "cue": "Tortillas",
+      "text": "Warm the tortillas in a dry pan until they blister in spots. Stack them under a towel."
+    },
+    {
+      "cue": "Med-high",
+      "text": "Heat a thin film of oil in a heavy skillet until it shimmers. Lay the fish in, away from you."
+    },
+    {
+      "cue": "3–4 min",
+      "text": "Don't touch it. It's ready to flip when it lets go of the pan on its own. Flip, then 1–2 minutes more until it's opaque all the way through."
+    },
+    {
+      "text": "Flake the fish in the pan with a fork."
+    },
+    {
+      "cue": "Finish",
+      "text": "Two tortillas, fish, arugula, then your flavor. Lime last."
+    }
+  ],
+  "leftovers": "Leftover fish is good cold the next day, on toast with lemon and olive oil."
 }

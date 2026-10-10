@@ -3,44 +3,12 @@
   "name": "Warm plate",
   "display_name": "Warm plate",
   "effort": "weekday",
-  "intro": "Something warm, something cold, something sharp, on one plate. Ground lamb or sliced pork makes it dinner; the flavor makes it different each time.",
-  "keep": [
-    "Rice, warm or leftover",
-    "Olive oil and salt"
-  ],
-  "season_anchor": [
-    "Ground lamb, browned with garlic and chile flakes — or leftover pork tenderloin, sliced",
-    "Roasted kabocha"
-  ],
-  "season_options": [
-    "Salted Greek yogurt",
-    "Pomegranate seeds",
-    "Torn Medjool dates",
-    "Arugula",
-    "Ajvar",
-    "Crumbled feta",
-    "Lemon"
-  ],
-  "variations": [
-    {
-      "ingredients": "Ground lamb · sweet and salty",
-      "context": "The default. Dates and feta over the lamb, yogurt underneath."
-    },
-    {
-      "ingredients": "Ground lamb · cool and sharp",
-      "context": "Salted yogurt under everything, pomegranate over it."
-    },
-    {
-      "ingredients": "Pork tenderloin · smoky",
-      "context": "Leftover slices warmed in the pan, ajvar spooned over."
-    }
-  ],
+  "intro": "Something warm, something cold, something sharp, on one plate. Lamb or leftover pork makes it dinner; the flavor makes it different each time.",
   "works_well_with": [
     "Rice",
     "Black beans",
     "A fried egg"
   ],
-  "finish": "Brown all the lamb at once, hard, in a dry pan — let it sit until it crusts before you break it up — then add a grated garlic clove and a pinch of chile flakes for the last minute. Half goes on tonight's plate; the rest keeps four days for a second plate, toast, or the hash. Build each plate in layers: rice, warm squash and lamb, then the finish on top.",
   "linked_house_flavor": "ajvar",
   "linked_field_notes": [
     "dry-hot-hands-off",
@@ -51,5 +19,58 @@
     "arugula",
     "pomegranates",
     "fresh-dates"
-  ]
+  ],
+  "time": "20 minutes if the squash is already roasted, 45 if not",
+  "yield": "Dinner, plus a second plate or two lunches",
+  "proteins": [
+    {
+      "name": "Ground lamb",
+      "amount": "1 lb",
+      "timing": "Browned hard in a dry pan, 8–10 minutes. Half tonight, half keeps four days."
+    },
+    {
+      "name": "Pork tenderloin, leftover",
+      "amount": "A few slices",
+      "timing": "Warmed in the pan, 2 minutes."
+    }
+  ],
+  "flavors": [
+    "sweet-salty",
+    "cool-sharp",
+    "smoky"
+  ],
+  "needs": [
+    "Rice, about 1 cup cooked per plate — leftover is fine",
+    "Roasted kabocha, about ¼ squash per plate",
+    "1 garlic clove, grated",
+    "A pinch of chile flakes",
+    "Arugula, a handful per plate",
+    "Salt"
+  ],
+  "steps": [
+    {
+      "cue": "If needed",
+      "text": "No roasted squash yet? Wedges, olive oil, salt, 425°F, 30–35 minutes. Start the rice."
+    },
+    {
+      "cue": "4 min",
+      "text": "Lamb: put it in a dry skillet over medium-high, press it flat, and leave it alone until it crusts underneath. Pork: warm the slices 2 minutes and skip to step 4."
+    },
+    {
+      "cue": "4–5 min",
+      "text": "Break the lamb up and cook until browned all over."
+    },
+    {
+      "cue": "1 min",
+      "text": "Add the garlic and chile flakes for the last minute. Salt it."
+    },
+    {
+      "text": "Build the plate in layers: rice, warm squash and protein, arugula on the side."
+    },
+    {
+      "cue": "Finish",
+      "text": "Add your flavor on top."
+    }
+  ],
+  "leftovers": "Half the lamb keeps four days in the fridge. It's a second plate, toast for dinner, or the filling for a baked sweet potato."
 }

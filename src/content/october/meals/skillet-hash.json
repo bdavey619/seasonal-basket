@@ -3,43 +3,11 @@
   "name": "Skillet hash",
   "display_name": "Skillet hash",
   "effort": "weekday",
-  "intro": "The week's leftovers, crisped in one pan with an egg cracked on top. It's a different dinner made from things you've already cooked.",
-  "keep": [
-    "A heavy skillet",
-    "Eggs",
-    "Olive oil and salt"
-  ],
-  "season_anchor": [
-    "Sweet potato or kabocha, cubed — raw or leftover",
-    "Red pepper, diced"
-  ],
-  "season_options": [
-    "Leftover sausage or pork tenderloin, sliced",
-    "Ajvar",
-    "Crumbled feta",
-    "Torn Medjool dates",
-    "Chile flakes",
-    "Arugula"
-  ],
-  "variations": [
-    {
-      "ingredients": "Chicken sausage · smoky",
-      "context": "The default. Sliced sausage crisped with everything, ajvar at the table."
-    },
-    {
-      "ingredients": "Pork tenderloin · sweet and salty",
-      "context": "Leftover pork in for the last minute, dates and feta on top."
-    },
-    {
-      "ingredients": "Eggs only · bright and hot",
-      "context": "Two eggs instead of one, chile-garlic oil over the top."
-    }
-  ],
+  "intro": "The week's leftovers, crisped in one pan with an egg cracked on top. A different dinner made from things you've already cooked.",
   "works_well_with": [
     "Toast",
     "Arugula with lemon"
   ],
-  "finish": "Heat a heavy skillet with a good film of olive oil. Add the cubed squash or sweet potato in one layer and leave it alone until the bottom browns, about five minutes — the same hands-off rule as the fish. Stir, add the pepper and any leftover meat, and cook until everything is crisp at the edges. Make a hollow, crack in an egg, cover the pan for two or three minutes until the white sets.",
   "linked_house_flavor": "ajvar",
   "linked_field_notes": [
     "dry-hot-hands-off"
@@ -48,5 +16,59 @@
     "sweet-potatoes",
     "kabocha-squash",
     "red-bell-peppers"
-  ]
+  ],
+  "time": "20 minutes",
+  "yield": "Dinner for one",
+  "proteins": [
+    {
+      "name": "Chicken sausage, leftover",
+      "amount": "2 links, sliced",
+      "timing": "In with the pepper, about 5 minutes."
+    },
+    {
+      "name": "Pork tenderloin, leftover",
+      "amount": "A few slices, diced",
+      "timing": "In for the last 2 minutes."
+    },
+    {
+      "name": "Eggs only",
+      "amount": "2 extra eggs",
+      "timing": "No meat — four eggs in the pan instead of two."
+    }
+  ],
+  "flavors": [
+    "smoky",
+    "sweet-salty",
+    "bright-hot"
+  ],
+  "needs": [
+    "1 sweet potato or a few kabocha wedges, in ½-inch cubes — raw or leftover",
+    "1 red bell pepper, diced",
+    "2 eggs",
+    "2 tbsp olive oil",
+    "Salt"
+  ],
+  "steps": [
+    {
+      "cue": "Med-high",
+      "text": "Heat the oil in a heavy skillet until it shimmers."
+    },
+    {
+      "cue": "5–10 min",
+      "text": "Add the cubes in one layer and leave them alone until the bottoms brown. Leftover cubes need about 5 minutes; raw ones need 10, stirred once halfway."
+    },
+    {
+      "cue": "5 min",
+      "text": "Stir, then add the pepper and your protein. Cook until everything crisps at the edges."
+    },
+    {
+      "cue": "2–3 min",
+      "text": "Make hollows in the hash, crack in the eggs, and cover the pan until the whites set."
+    },
+    {
+      "cue": "Finish",
+      "text": "Your flavor on top, and a pinch of salt."
+    }
+  ],
+  "leftovers": "Eat it from the pan. It's already made from leftovers."
 }

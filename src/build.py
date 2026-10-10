@@ -1351,7 +1351,149 @@ def build_ingredient_page(ing, depth, canonical_url, edition_context, ingredient
 
 # ── Individual meal page ───────────────────────────────────────────────────────
 
+def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_flavor=None):
+    """
+    A meal page laid out for the stove, in the order you work: pick a
+    protein (with its amount and timing), pick a flavor (with the full
+    how-to, so you never go back to the edition page), gather one list,
+    then follow numbered steps that lead with their time or temperature.
+    Used when a meal carries `steps`; older meals keep the original page.
+    """
+    month = edition_context["month"]
+    back_label = edition.get("meals_back_label", "Your usual meals")
+    meals_back_href = rel(depth, f"{month.lower()}/#meals")
+    flavors_by_slug = {f["slug"]: f for f in edition.get("flavors", [])}
+
+    meta = " · ".join(e(x) for x in [meal.get("time"), meal.get("yield")] if x)
+
+    protein_rows = "".join(f"""
+          <li class="cook-choice">
+            <span class="cook-choice-name">{e(p['name'])}</span>
+            <span class="cook-choice-amount">{e(p['amount'])}</span>
+            <span class="cook-choice-note">{e(p['timing'])}</span>
+          </li>""" for p in meal.get("proteins", []))
+
+    flavor_rows = []
+    for fs in meal.get("flavors", []):
+        f = flavors_by_slug.get(fs)
+        if not f:
+            fail(f"{meal['slug']}.json names unknown flavor '{fs}'")
+        flavor_rows.append(f"""
+          <li class="cook-choice">
+            <span class="cook-choice-name">{e(f['name'])}</span>
+            <span class="cook-choice-amount">{e(f['what'])}</span>
+            <span class="cook-choice-note">{e(f['how'])}</span>
+          </li>""")
+
+    needs = "".join(f"<li>{e(n)}</li>" for n in meal.get("needs", []))
+    steps = "".join(
+        f"""
+          <li class="cook-step"><span class="cook-cue">{e(st['cue'])}</span><span class="cook-step-text">{e(st['text'])}</span></li>"""
+        if st.get("cue") else
+        f"""
+          <li class="cook-step"><span class="cook-step-text">{e(st['text'])}</span></li>"""
+        for st in meal["steps"])
+    leftovers = (f"""
+        <section aria-labelledby="leftovers-heading" class="cook-section">
+          <h2 id="leftovers-heading">Leftovers</h2>
+          <p class="cook-leftovers">{e(meal['leftovers'])}</p>
+        </section>""") if meal.get("leftovers") else ""
+
+    notes_by_slug = {n["slug"]: n for n in edition.get("field_notes", []) if "slug" in n}
+    fn_href = rel(depth, f"{month.lower()}/field-notes/")
+    linked_notes = render_linked_note_titles(meal.get("linked_field_notes", []), notes_by_slug, fn_href)
+    linked_hf_slug = meal.get("linked_house_flavor")
+    flavor_link = (render_house_flavor_link(house_flavor, depth, edition_slug=month.lower())
+                   if linked_hf_slug and house_flavor and linked_hf_slug == house_flavor.get("slug") else "")
+    works = "".join(f"<li>{e(w)}</li>" for w in meal.get("works_well_with", []))
+    works_block = f"""
+    <section>
+      <h3>Good alongside</h3>
+      <ul class="checklist">{works}</ul>
+    </section>""" if works else ""
+
+    body = f"""
+    <div style="padding-top:28px">
+      <a href="{meals_back_href}" class="back-link">← {e(back_label)}</a>
+    </div>
+
+    <div class="meal-header cook-header">
+      <div class="section-label">{e(month)} · weeknight</div>
+      <h1>{e(meal.get('display_name', meal['name']))}</h1>
+      <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:680px">{e(meal['intro'])}</p>
+      {f'<p class="cook-meta">{meta}</p>' if meta else ""}
+      <button type="button" class="cook-wake" hidden>Keep screen on while cooking</button>
+    </div>
+
+    <div class="cook-card">
+      <section aria-labelledby="protein-heading" class="cook-section">
+        <h2 id="protein-heading"><span class="cook-num">1</span> Pick a protein</h2>
+        <ul class="cook-choices">{protein_rows}
+        </ul>
+      </section>
+
+      <section aria-labelledby="flavor-heading" class="cook-section">
+        <h2 id="flavor-heading"><span class="cook-num">2</span> Pick a flavor</h2>
+        <ul class="cook-choices">{"".join(flavor_rows)}
+        </ul>
+      </section>
+
+      <section aria-labelledby="needs-heading" class="cook-section">
+        <h2 id="needs-heading">You'll need</h2>
+        <ul class="checklist">{needs}</ul>
+        <p class="cook-hint">Plus your protein and your flavor.</p>
+      </section>
+
+      <section aria-labelledby="steps-heading" class="cook-section">
+        <h2 id="steps-heading">Make it</h2>
+        <p class="cook-hint">Tap a step when it's done.</p>
+        <ol class="cook-steps">{steps}
+        </ol>
+      </section>
+      {leftovers}
+    </div>
+
+    <aside class="cook-also">
+      {works_block}
+      {linked_notes}
+      {flavor_link}
+    </aside>
+
+    <script>
+      // Progressive enhancement for cooking with a phone: tap a step to mark
+      // it done, and keep the screen awake where the browser allows it.
+      document.querySelectorAll('.cook-step').forEach(function (li) {{
+        li.addEventListener('click', function () {{ li.classList.toggle('is-done'); }});
+      }});
+      (function () {{
+        var btn = document.querySelector('.cook-wake');
+        if (!btn || !('wakeLock' in navigator)) return;
+        var lock = null;
+        btn.hidden = false;
+        btn.addEventListener('click', function () {{
+          if (lock) {{ lock.release(); lock = null; btn.textContent = 'Keep screen on while cooking'; btn.classList.remove('is-on'); return; }}
+          navigator.wakeLock.request('screen').then(function (l) {{
+            lock = l; btn.textContent = 'Screen will stay on'; btn.classList.add('is-on');
+            l.addEventListener('release', function () {{ lock = null; btn.textContent = 'Keep screen on while cooking'; btn.classList.remove('is-on'); }});
+          }}).catch(function () {{}});
+        }});
+      }})();
+    </script>"""
+
+    return render_shell(
+        title=f"{meal.get('display_name', meal['name'])} — {month} — Seasonal",
+        description=meal["intro"],
+        canonical_url=canonical_url,
+        css_depth=depth,
+        body=body,
+        edition_context=edition_context,
+        page_class="page--meal",
+    )
+
+
 def build_meal_page(meal, edition, depth, canonical_url, edition_context, house_flavor=None):
+    if meal.get("steps"):
+        return build_cook_card(meal, edition, depth, canonical_url, edition_context, house_flavor)
     require_fields(meal, ["slug", "name", "intro", "keep",
                            "variations", "works_well_with", "finish"], f"{meal.get('slug')}.json")
 
