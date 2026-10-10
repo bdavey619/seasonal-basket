@@ -143,11 +143,9 @@ October answers the question September left open — heat or storage — with st
 
 **The shopping list** is the basket plus "Also buy" (lemons, limes, corn tortillas, feta, hibiscus tea) and "From your kitchen" (rice, black beans, sourdough, Greek yogurt, eggs, butter, olive oil, garlic, red wine vinegar, sugar, chile flakes, salt). Nothing else is mentioned anywhere in the edition.
 
-**The meals** are five formats: sheet-pan dinner, warm plate, fish tacos, toast for dinner, and baked sweet potato. Rice bowl and pasta are retired for the month.
+**The meals** are organized protein-first: "What do you feel like tonight?" lists rockfish, chicken sausage, pork tenderloin, ground lamb, and a no-meat night, each with three ways to cook it, drawn from six meal formats (sheet-pan dinner, warm plate, fish tacos, toast for dinner, baked sweet potato, skillet hash). October's four flavors are defined once below: smoky (ajvar + lemon), cool and sharp (salted yogurt + pomegranate), bright and hot (chile-garlic oil + lime), and sweet and salty (dates + feta).
 
-**The cut** is rockfish fillets: local, more reliable as the water cools, cheaper than salmon. **The method** is the sear — dry fish, hot pan, hands off — taught by the weekend meal (seared rockfish with brown butter, roasted kabocha, and an arugula, pomegranate, and date salad) and named in the Field Note that points ahead to November's braise. **No new tool.**
-
-**The proteins** are three, one per kind of night, each with its pairing line on the basket card: rockfish, 2 lbs (the cut — weekend meal, fish tacos; *a mild fish needs something peppery and sharp*), chicken sausage, 2 lbs (sheet-pan dinner; *its fat bastes the vegetables*), and ground lamb, 1½ lbs (the warm plate; *rich meat wants sweet and sour*). Eggs carry toast for dinner; black beans carry the baked sweet potato.
+**The proteins** are four, each with its pairing line on the basket card: rockfish, 2 lbs in two trips (the cut; *a mild fish needs something peppery and sharp*), chicken sausage, 1 lb (*its fat bastes the vegetables*), pork tenderloin, about 1¼ lbs (*lean meat gets its richness from the finish*), and ground lamb, 1 lb (*rich meat wants sweet and sour*). Eggs and black beans carry the no-meat nights.
 
 The House Flavor is ajvar, made from peppers alone. The drink is cold-steeped hibiscus with pomegranate. One thing to notice is how to read a fresh fillet. No local ritual.
 
@@ -160,7 +158,7 @@ Which proteins each edition led with. No protein leads two months in a row; eggs
 | Month | Proteins |
 |---|---|
 | July–September | Chicken thighs, ground beef or turkey, salmon — the staples, every month. The reason this log exists. |
-| October | Rockfish (the cut), chicken sausage, ground lamb |
+| October | Rockfish (the cut), chicken sausage, pork tenderloin, ground lamb |
 
 ## The Year's Cuts, Methods, and Tools (draft)
 

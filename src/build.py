@@ -185,7 +185,7 @@ def display_name(slug, ingredients_data=None):
 
 # ── Meal transformations ───────────────────────────────────────────────────────
 
-def render_transformations(transformations, meal_hrefs=None, meals_by_name=None):
+def render_transformations(transformations, meal_hrefs=None, meals_by_name=None, compact=False):
     """
     The meals section. Each transformation is the month's default version of a
     meal; the variations beneath it are the other ways to combine the basket for
@@ -208,10 +208,16 @@ def render_transformations(transformations, meal_hrefs=None, meals_by_name=None)
         variations = (meals_by_name.get(meal_name) or {}).get("variations", [])
         var_html = ""
         if variations:
+            # Compact editions list the directions only; the explanations
+            # live on each meal's own page.
+            def when(v):
+                if compact:
+                    return ""
+                return f"""
+          <span class="meal-way-when">{e(v['context'])}</span>"""
             items = "".join(f"""
         <li class="meal-way">
-          <span class="meal-way-combo">{e(v['ingredients'])}</span>
-          <span class="meal-way-when">{e(v['context'])}</span>
+          <span class="meal-way-combo">{e(v['ingredients'])}</span>{when(v)}
         </li>""" for v in variations)
             more = f'<a class="meal-way-more" href="{e(href)}">All of it →</a>' if href else ""
             var_html = f"""
@@ -229,6 +235,58 @@ def render_transformations(transformations, meal_hrefs=None, meals_by_name=None)
       </div>{var_html}
     </div>""")
     return "\n".join(rows)
+
+# ── Protein-first meals ────────────────────────────────────────────────────────
+
+def render_tonight(tonight, flavors, edition_slug, depth, meal_slugs):
+    """
+    The meals section in the order people actually decide: which protein do I
+    feel like, how will I cook it, and what will it taste like. Each protein
+    row links to the meal pages (the how-to) and to the month's flavors, which
+    are defined once below instead of repeated inside every meal.
+    """
+    flavors_by_slug = {f["slug"]: f for f in flavors}
+
+    def way_link(w):
+        target = w["meal"]
+        if target == "weekend":
+            href = rel(depth, f"{edition_slug}/weekend/")
+        else:
+            if target not in meal_slugs:
+                fail(f"tonight: way '{w['label']}' points to unknown meal '{target}'")
+            href = rel(depth, f"{edition_slug}/meals/{target}/")
+        return f'<a href="{href}">{e(w["label"])}</a>'
+
+    rows = []
+    for opt in tonight["options"]:
+        ways = '<span class="tonight-sep"> · </span>'.join(way_link(w) for w in opt["ways"])
+        best = []
+        for fs in opt.get("best_with", []):
+            if fs not in flavors_by_slug:
+                fail(f"tonight: '{opt['name']}' names unknown flavor '{fs}'")
+            best.append(f'<a href="#flavor-{e(fs)}">{e(flavors_by_slug[fs]["name"])}</a>')
+        best_html = (f'<span class="tonight-best"><span class="pairs-label">Best</span> '
+                     f'{" · ".join(best)}</span>') if best else ""
+        rows.append(f"""
+        <div class="tonight-row">
+          <span class="tonight-name">{e(opt['name'])}</span>
+          <span class="tonight-ways">{ways}</span>
+          {best_html}
+        </div>""")
+
+    flavor_rows = "".join(f"""
+        <li class="flavor-row" id="flavor-{e(f['slug'])}">
+          <span class="flavor-name">{e(f['name'])}</span>
+          <span class="flavor-what">{e(f['what'])}</span>
+          <span class="flavor-how">{e(f['how'])}</span>
+        </li>""" for f in flavors)
+
+    return f"""
+        <div class="tonight">{"".join(rows)}
+        </div>
+        <div class="meal-adds-sublabel flavors-label">{e(tonight.get('flavors_label', 'The flavors'))}</div>
+        <ul class="flavors">{flavor_rows}
+        </ul>"""
 
 # ── Week buckets ───────────────────────────────────────────────────────────────
 
@@ -1026,9 +1084,11 @@ def render_section_menu(entries):
 
 def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_flavor=None,
                        house_flavor2=None, edition_context=None, ingredients_data=None,
-                       meals_by_name=None):
+                       meals_by_name=None, meals_by_slug=None):
     require_fields(edition, ["month", "opening_note", "featured_ingredients",
-                              "meal_transformations", "field_notes"], "edition.json")
+                              "field_notes"], "edition.json")
+    if not (edition.get("meal_transformations") or edition.get("tonight")):
+        fail("edition.json needs either meal_transformations or tonight")
 
     slug = edition["month"].lower()
     ing_index_path = edition_context["ingredient_index_path"]
@@ -1075,6 +1135,14 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
 
     drink        = edition["drink"]
     weekend      = edition["weekend_meal"]
+    if edition.get("tonight"):
+        meals_body = render_tonight(edition["tonight"], edition.get("flavors", []), slug,
+                                    depth, set(meals_by_slug or {}))
+    else:
+        meals_body = f"""<div class="transformations">
+          {render_transformations(edition['meal_transformations'], meal_hrefs, meals_by_name,
+                                  compact=edition.get('meal_ways_compact', False))}
+        </div>"""
     # Written unescaped by default so earlier editions render byte-for-byte as before.
     edition_meals_dek = (e(edition["meals_dek"]) if edition.get("meals_dek")
                          else "Keep what you already make. Add what's ripe.")
@@ -1109,9 +1177,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
         <div class="section-label">The meals</div>
         <h2 id="transforms-heading">{e(edition.get('meals_heading', f'Your usual meals, wearing {month}.'))}</h2>
         <p class="section-dek">{edition_meals_dek}</p>
-        <div class="transformations">
-          {render_transformations(edition['meal_transformations'], meal_hrefs, meals_by_name)}
-        </div>
+        {meals_body}
       </article>
 
       <article class="section col-12" id="field-notes" aria-labelledby="field-notes-heading">
@@ -1314,7 +1380,7 @@ def build_meal_page(meal, edition, depth, canonical_url, edition_context, house_
 
     body = f"""
     <div style="padding-top:28px">
-      <a href="{meals_back_href}" class="back-link">← Your usual meals</a>
+      <a href="{meals_back_href}" class="back-link">← {e(edition.get('meals_back_label', 'Your usual meals'))}</a>
     </div>
 
     <div class="meal-header">
@@ -1557,7 +1623,7 @@ def build_edition(edition_dir_name):
     # Edition page
     edition_html = build_edition_page(
         edition, depth=1, canonical_url=edition_canonical,
-        meal_hrefs=meal_hrefs_at(1), meals_by_name=meals_by_name,
+        meal_hrefs=meal_hrefs_at(1), meals_by_name=meals_by_name, meals_by_slug=meals_data,
         house_flavor=house_flavor, house_flavor2=house_flavor2,
         edition_context=edition_context,
         ingredients_data=ingredients_data,

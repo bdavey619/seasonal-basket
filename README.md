@@ -19,7 +19,7 @@ Each monthly edition includes:
 
 - A short opening note
 - The seasonal basket — six to eight ingredients worth organizing a week around
-- Meal formats — three to five simple meal shapes that suit the month, each made more than once
+- Meal formats — a handful of simple meal shapes that suit the month, each with three ways to finish it
 - Field Notes — short pieces, each a secret worth knowing
 - At least one House Flavor: a make-once jar that improves meals all week
 - One weekend meal — where the month's new cut and method are taught
@@ -83,6 +83,8 @@ python3 -m http.server --directory docs 8000
 ```
 
 ## Adding an edition
+
+The editorial steps — what to choose, in what order, and why — are in **Building an Edition, Step by Step** at the top of `EDITORIAL_PLAYBOOK.md`. The technical steps:
 
 1. Create `src/content/<month>/` with `edition.json`, `guides.json`, at least one `house-flavor*.json`, plus `ingredients/` and `meals/`.
 2. Add `src/css/<month>.css` with that month's palette. Palette variables are the only values that change between editions — all layout and typography live in `base.css`.
