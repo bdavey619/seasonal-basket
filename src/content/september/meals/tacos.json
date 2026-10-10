@@ -4,39 +4,10 @@
   "display_name": "Tacos",
   "effort": "weekday",
   "intro": "Corn tortillas, a protein, and September's jars. The meal this month does best.",
-  "keep": [
-    "Corn tortillas",
-    "Limes"
-  ],
-  "season_anchor": [
-    "Roasted chile strips",
-    "Salsa verde"
-  ],
-  "season_options": [
-    "Escabeche",
-    "Apple slaw with lime and cilantro",
-    "Monterey jack",
-    "Cilantro, a lot of it"
-  ],
-  "variations": [
-    {
-      "ingredients": "Mahi-mahi · green",
-      "context": "Leftover chile-rubbed fish, salsa verde, cilantro."
-    },
-    {
-      "ingredients": "Chicken thighs · green",
-      "context": "Shredded from the salsa verde pot."
-    },
-    {
-      "ingredients": "Ground beef · pickled",
-      "context": "Picadillo with escabeche piled on."
-    }
-  ],
   "works_well_with": [
     "Black beans",
     "Rice"
   ],
-  "finish": "Warm the tortillas directly over a flame or in a dry pan until they blister in spots, and stack them under a towel. Two per taco. That is not excess, it is structural.",
   "linked_house_flavor": "escabeche",
   "linked_field_notes": [
     "salsa-verde-no-recipe",
@@ -47,5 +18,54 @@
     "tomatillos",
     "cilantro",
     "limes"
-  ]
+  ],
+  "time": "15 minutes with cooked protein",
+  "yield": "Dinner for one, about 6 tacos",
+  "proteins": [
+    {
+      "name": "Mahi-mahi",
+      "amount": "½ lb",
+      "timing": "Seared 3–4 minutes without moving, flipped, 2–3 more. Flaked in the pan."
+    },
+    {
+      "name": "Chicken thighs, from the salsa verde pot",
+      "amount": "A big spoonful",
+      "timing": "Shredded, warmed in its sauce."
+    },
+    {
+      "name": "Ground beef picadillo, leftover",
+      "amount": "A big spoonful",
+      "timing": "Warmed in a pan, 2–3 minutes."
+    }
+  ],
+  "flavors": [
+    "green",
+    "pickled",
+    "sweet-crisp"
+  ],
+  "needs": [
+    "12 corn tortillas — two per taco",
+    "2 roasted chiles, in strips",
+    "Cilantro",
+    "1 lime",
+    "Oil and salt"
+  ],
+  "steps": [
+    {
+      "cue": "Tortillas",
+      "text": "Warm the tortillas directly over a flame or in a dry pan until they blister in spots. Stack them under a towel."
+    },
+    {
+      "cue": "Protein",
+      "text": "Cook or warm your protein. Mahi: salt it, pat it dry, sear without moving until it lets go of the pan, then flip."
+    },
+    {
+      "text": "Two tortillas, protein, chile strips."
+    },
+    {
+      "cue": "Finish",
+      "text": "Your flavor, cilantro, and lime last."
+    }
+  ],
+  "leftovers": "Leftover fish or chicken goes into tomorrow's rice bowl."
 }

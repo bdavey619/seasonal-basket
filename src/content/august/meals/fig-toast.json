@@ -4,39 +4,10 @@
   "display_name": "Fig toast",
   "effort": "weekday",
   "intro": "Thick sourdough, torn burrata, ripe figs, honey, flaky salt. The best five-minute dinner of the summer.",
-  "keep": [
-    "Sourdough, thick slices",
-    "Olive oil, honey, flaky salt"
-  ],
-  "season_anchor": [
-    "Ripe figs, halved"
-  ],
-  "season_options": [
-    "Burrata",
-    "Prosciutto",
-    "Leftover pork chop, sliced thin",
-    "Nectarine",
-    "Basil"
-  ],
-  "variations": [
-    {
-      "ingredients": "Burrata · sweet",
-      "context": "The default. Burrata, figs, honey, salt."
-    },
-    {
-      "ingredients": "Prosciutto · sweet",
-      "context": "Prosciutto torn over the burrata and figs. The old August weekend plate, on toast."
-    },
-    {
-      "ingredients": "Burrata · hot",
-      "context": "A few rings of jalapeño over the figs. Strange and very good."
-    }
-  ],
   "works_well_with": [
     "A peeled nectarine",
     "Black pepper"
   ],
-  "finish": "Toast the bread in a skillet with olive oil until crisp. Tear the burrata over it while it's hot so it starts to soften, then the figs, a thread of honey, and flaky salt.",
   "linked_house_flavor": "charred-pepper-sauce",
   "linked_field_notes": [
     "figs-and-time"
@@ -45,5 +16,52 @@
     "figs",
     "nectarines",
     "basil"
-  ]
+  ],
+  "time": "10 minutes",
+  "yield": "Dinner for one",
+  "proteins": [
+    {
+      "name": "Burrata",
+      "amount": "½ ball",
+      "timing": "Torn over the hot toast so it starts to soften."
+    },
+    {
+      "name": "Prosciutto",
+      "amount": "2–3 slices",
+      "timing": "Draped over the burrata and figs. Nothing to cook."
+    },
+    {
+      "name": "Pork chop, leftover",
+      "amount": "A few thin slices",
+      "timing": "Under the figs, cold or barely warmed."
+    }
+  ],
+  "flavors": [
+    "sweet",
+    "hot"
+  ],
+  "needs": [
+    "2 thick slices of sourdough",
+    "4–5 ripe figs, halved",
+    "2 tbsp olive oil",
+    "Honey",
+    "Flaky salt"
+  ],
+  "steps": [
+    {
+      "cue": "2–3 min a side",
+      "text": "Heat the oil in a skillet and toast the bread, pressing it down, until golden and crisp."
+    },
+    {
+      "text": "While it's hot, tear the burrata over it, then add any other protein."
+    },
+    {
+      "text": "The figs, cut side up."
+    },
+    {
+      "cue": "Finish",
+      "text": "A thread of honey, your flavor, and flaky salt."
+    }
+  ],
+  "leftovers": "Toast doesn't keep. Make it fresh."
 }

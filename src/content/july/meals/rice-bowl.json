@@ -4,39 +4,10 @@
   "display_name": "Rice bowl",
   "effort": "weekday",
   "intro": "Rice, a protein, and the cool, crunchy things July does well. The bowl that carries leftovers into lunch.",
-  "keep": [
-    "Rice",
-    "Olive oil and flaky salt"
-  ],
-  "season_anchor": [
-    "Persian cucumber, sliced thin",
-    "Ripe tomato, chopped"
-  ],
-  "season_options": [
-    "Sweet corn",
-    "Mint and basil",
-    "Tomato herb vinaigrette",
-    "Salted Greek yogurt"
-  ],
-  "variations": [
-    {
-      "ingredients": "Wild salmon · cool",
-      "context": "Flaked salmon, cucumber yogurt, mint."
-    },
-    {
-      "ingredients": "Skirt steak · bright",
-      "context": "Sliced leftover steak, tomato, vinaigrette."
-    },
-    {
-      "ingredients": "Skirt steak · smoky",
-      "context": "Charred salsa and corn instead."
-    }
-  ],
   "works_well_with": [
     "A fried egg",
     "Black beans"
   ],
-  "finish": "Let the rice cool a little before building the bowl — July food is better warm than hot. Herbs go on last, after everything else.",
   "linked_house_flavor": "tomato-herb-vinaigrette",
   "linked_field_notes": [
     "add-herbs-after-the-heat"
@@ -46,5 +17,57 @@
     "heirloom-tomatoes",
     "sweet-corn",
     "mint"
-  ]
+  ],
+  "time": "10 minutes with cooked rice",
+  "yield": "Dinner or lunch for one",
+  "proteins": [
+    {
+      "name": "Wild salmon, leftover",
+      "amount": "A big piece",
+      "timing": "Flaked, cold or barely warmed."
+    },
+    {
+      "name": "Skirt steak, leftover",
+      "amount": "A few slices",
+      "timing": "Warmed in a hot pan, 1 minute."
+    },
+    {
+      "name": "Shrimp",
+      "amount": "½ lb",
+      "timing": "Seared 1–2 minutes a side."
+    }
+  ],
+  "flavors": [
+    "cool",
+    "bright",
+    "smoky"
+  ],
+  "needs": [
+    "About 1½ cups cooked rice",
+    "1 Persian cucumber, sliced thin",
+    "1 ripe tomato, chopped",
+    "Kernels from ½ ear of corn, raw",
+    "Mint and basil",
+    "Salt"
+  ],
+  "steps": [
+    {
+      "cue": "If needed",
+      "text": "Cook the rice if you need to, and let it cool a little — July food is better warm than hot."
+    },
+    {
+      "text": "Warm or cook your protein."
+    },
+    {
+      "text": "Rice in the bowl, then the cucumber, tomato, and corn, then the protein."
+    },
+    {
+      "cue": "Finish",
+      "text": "Your flavor on top."
+    },
+    {
+      "text": "Herbs last, torn over everything."
+    }
+  ],
+  "leftovers": "Pack it as tomorrow's lunch, with the flavor in a separate container."
 }

@@ -1385,3 +1385,11 @@ footer {
 }
 .cook-also h3 { font-size: 1rem; margin-bottom: 8px; }
 .cook-also section { margin-bottom: 18px; }
+.cook-jar-link {
+  display: inline-block;
+  margin-left: 4px;
+  color: var(--primary);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.cook-jar-link:hover { text-decoration: underline; }

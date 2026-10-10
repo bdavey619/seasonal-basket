@@ -1351,7 +1351,7 @@ def build_ingredient_page(ing, depth, canonical_url, edition_context, ingredient
 
 # ── Individual meal page ───────────────────────────────────────────────────────
 
-def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_flavor=None):
+def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_flavors=None):
     """
     A meal page laid out for the stove, in the order you work: pick a
     protein (with its amount and timing), pick a flavor (with the full
@@ -1373,6 +1373,18 @@ def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_
             <span class="cook-choice-note">{e(p['timing'])}</span>
           </li>""" for p in meal.get("proteins", []))
 
+    # A flavor built on one of the month's jars links to the jar's recipe
+    # right where you choose it — the one cross-reference worth having while
+    # you cook.
+    jars = [h for h in (house_flavors or []) if h]
+    def jar_link(f):
+        what = f["what"].lower()
+        for h in jars:
+            if h["name"].lower() in what or h["name"].lower().split()[-1] in what:
+                href = rel(depth, f"{month.lower()}/{h['slug']}/")
+                return f'<a class="cook-jar-link" href="{href}">How to make the {e(h["name"].lower())} →</a>'
+        return ""
+
     flavor_rows = []
     for fs in meal.get("flavors", []):
         f = flavors_by_slug.get(fs)
@@ -1382,7 +1394,7 @@ def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_
           <li class="cook-choice">
             <span class="cook-choice-name">{e(f['name'])}</span>
             <span class="cook-choice-amount">{e(f['what'])}</span>
-            <span class="cook-choice-note">{e(f['how'])}</span>
+            <span class="cook-choice-note">{e(f['how'])} {jar_link(f)}</span>
           </li>""")
 
     needs = "".join(f"<li>{e(n)}</li>" for n in meal.get("needs", []))
@@ -1398,19 +1410,6 @@ def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_
           <h2 id="leftovers-heading">Leftovers</h2>
           <p class="cook-leftovers">{e(meal['leftovers'])}</p>
         </section>""") if meal.get("leftovers") else ""
-
-    notes_by_slug = {n["slug"]: n for n in edition.get("field_notes", []) if "slug" in n}
-    fn_href = rel(depth, f"{month.lower()}/field-notes/")
-    linked_notes = render_linked_note_titles(meal.get("linked_field_notes", []), notes_by_slug, fn_href)
-    linked_hf_slug = meal.get("linked_house_flavor")
-    flavor_link = (render_house_flavor_link(house_flavor, depth, edition_slug=month.lower())
-                   if linked_hf_slug and house_flavor and linked_hf_slug == house_flavor.get("slug") else "")
-    works = "".join(f"<li>{e(w)}</li>" for w in meal.get("works_well_with", []))
-    works_block = f"""
-    <section>
-      <h3>Good alongside</h3>
-      <ul class="checklist">{works}</ul>
-    </section>""" if works else ""
 
     body = f"""
     <div style="padding-top:28px">
@@ -1453,12 +1452,6 @@ def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_
       {leftovers}
     </div>
 
-    <aside class="cook-also">
-      {works_block}
-      {linked_notes}
-      {flavor_link}
-    </aside>
-
     <script>
       // Progressive enhancement for cooking with a phone: tap a step to mark
       // it done, and keep the screen awake where the browser allows it.
@@ -1491,9 +1484,10 @@ def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_
     )
 
 
-def build_meal_page(meal, edition, depth, canonical_url, edition_context, house_flavor=None):
+def build_meal_page(meal, edition, depth, canonical_url, edition_context, house_flavor=None,
+                    house_flavors=None):
     if meal.get("steps"):
-        return build_cook_card(meal, edition, depth, canonical_url, edition_context, house_flavor)
+        return build_cook_card(meal, edition, depth, canonical_url, edition_context, house_flavors)
     require_fields(meal, ["slug", "name", "intro", "keep",
                            "variations", "works_well_with", "finish"], f"{meal.get('slug')}.json")
 
@@ -1799,6 +1793,7 @@ def build_edition(edition_dir_name):
         meal_html = build_meal_page(
             meal, edition, depth=3, canonical_url=meal_canonical,
             house_flavor=house_flavor, edition_context=edition_context,
+            house_flavors=house_flavors,
         )
         write_page(SITE / edition_slug / "meals" / slug / "index.html", meal_html)
 

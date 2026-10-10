@@ -4,39 +4,10 @@
   "display_name": "Rice bowl",
   "effort": "weekday",
   "intro": "Rice, a protein, and the month's peppers and zucchini. Where the week's leftovers go for lunch.",
-  "keep": [
-    "Rice",
-    "Olive oil and salt"
-  ],
-  "season_anchor": [
-    "Red bell pepper strips, roasted or raw",
-    "Cherry tomatoes, halved"
-  ],
-  "season_options": [
-    "Zucchini, quickly sautéed",
-    "Charred pepper sauce",
-    "Basil",
-    "Jalapeño"
-  ],
-  "variations": [
-    {
-      "ingredients": "Drumsticks · smoky",
-      "context": "Leftover meat pulled from the bone, pepper sauce."
-    },
-    {
-      "ingredients": "Halibut · fresh",
-      "context": "Seared halibut, burst tomatoes, basil."
-    },
-    {
-      "ingredients": "Pork chop · hot",
-      "context": "Sliced leftover chop, jalapeño, lime."
-    }
-  ],
   "works_well_with": [
     "A fried egg",
     "Greek yogurt, salted"
   ],
-  "finish": "A generous spoonful of the pepper sauce on top, left to pool rather than mixed in. Basil and lime at the end.",
   "linked_house_flavor": "charred-pepper-sauce",
   "linked_field_notes": [
     "charring-a-pepper"
@@ -45,5 +16,58 @@
     "bell-peppers",
     "cherry-tomatoes",
     "zucchini"
-  ]
+  ],
+  "time": "10 minutes with cooked rice",
+  "yield": "Dinner or lunch for one",
+  "proteins": [
+    {
+      "name": "Chicken drumsticks, leftover",
+      "amount": "Meat from 2–3",
+      "timing": "Pulled from the bone, warmed in a pan, 2 minutes."
+    },
+    {
+      "name": "Halibut",
+      "amount": "½ lb",
+      "timing": "Seared 3–4 minutes, flipped, 1–2 more."
+    },
+    {
+      "name": "Pork chop, leftover",
+      "amount": "1, sliced",
+      "timing": "Warmed in a hot pan, 1 minute."
+    }
+  ],
+  "flavors": [
+    "smoky",
+    "fresh",
+    "hot"
+  ],
+  "needs": [
+    "About 1½ cups cooked rice",
+    "1 red bell pepper, in strips",
+    "½ zucchini, in half-moons",
+    "A handful of cherry tomatoes, halved",
+    "Basil",
+    "Olive oil and salt"
+  ],
+  "steps": [
+    {
+      "cue": "If needed",
+      "text": "Cook the rice if you need to."
+    },
+    {
+      "cue": "4–5 min",
+      "text": "Sauté the pepper and zucchini in a hot pan with oil until golden at the edges. Salt them."
+    },
+    {
+      "text": "Warm or cook your protein."
+    },
+    {
+      "text": "Rice, vegetables, protein, tomatoes."
+    },
+    {
+      "cue": "Finish",
+      "text": "Your flavor on top, basil torn over."
+    }
+  ],
+  "leftovers": "Pack it as tomorrow's lunch, with the flavor on the side."
 }

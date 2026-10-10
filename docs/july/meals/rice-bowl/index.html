@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://bdavey.co/seasonal-basket/july/meals/rice-bowl/" />
   <!-- Favicon placeholder: replace with actual favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
-  <link rel="stylesheet" href="../../../css/base.css?v=59235a07" />
+  <link rel="stylesheet" href="../../../css/base.css?v=1c24c76a" />
   <link rel="stylesheet" href="../../../css/july.css?v=647ebcf9" />
 </head>
 <body>
@@ -32,73 +32,101 @@
       <a href="../../../july/#meals" class="back-link">← July&#x27;s meals</a>
     </div>
 
-    <div class="meal-header">
-      <div class="section-label">July · weekday</div>
+    <div class="meal-header cook-header">
+      <div class="section-label">July · weeknight</div>
       <h1>Rice bowl</h1>
       <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:680px">Rice, a protein, and the cool, crunchy things July does well. The bowl that carries leftovers into lunch.</p>
+      <p class="cook-meta">10 minutes with cooked rice · Dinner or lunch for one</p>
+      <button type="button" class="cook-wake" hidden>Keep screen on while cooking</button>
     </div>
 
-    <div class="meal-body">
-      <div class="meal-main">
-        <section aria-labelledby="keep-heading">
-          <h2 id="keep-heading">Keep</h2>
-          <ul class="checklist"><li>Rice</li><li>Olive oil and flaky salt</li></ul>
-        </section>
+    <div class="cook-card">
+      <section aria-labelledby="protein-heading" class="cook-section">
+        <h2 id="protein-heading"><span class="cook-num">1</span> Pick a protein</h2>
+        <ul class="cook-choices">
+          <li class="cook-choice">
+            <span class="cook-choice-name">Wild salmon, leftover</span>
+            <span class="cook-choice-amount">A big piece</span>
+            <span class="cook-choice-note">Flaked, cold or barely warmed.</span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Skirt steak, leftover</span>
+            <span class="cook-choice-amount">A few slices</span>
+            <span class="cook-choice-note">Warmed in a hot pan, 1 minute.</span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Shrimp</span>
+            <span class="cook-choice-amount">½ lb</span>
+            <span class="cook-choice-note">Seared 1–2 minutes a side.</span>
+          </li>
+        </ul>
+      </section>
 
-        <section aria-labelledby="adds-heading">
-          <h2 id="adds-heading">July adds</h2>
-          
-      <div class="meal-adds-group">
-        <div class="meal-adds-sublabel">Start with</div>
-        <ul class="checklist"><li>Persian cucumber, sliced thin</li><li>Ripe tomato, chopped</li></ul>
-      </div>
-      <div class="meal-adds-group">
-        <div class="meal-adds-sublabel">Choose from</div>
-        <ul class="checklist"><li>Sweet corn</li><li>Mint and basil</li><li>Tomato herb vinaigrette</li><li>Salted Greek yogurt</li></ul>
-      </div>
-        </section>
+      <section aria-labelledby="flavor-heading" class="cook-section">
+        <h2 id="flavor-heading"><span class="cook-num">2</span> Pick a flavor</h2>
+        <ul class="cook-choices">
+          <li class="cook-choice">
+            <span class="cook-choice-name">Cool</span>
+            <span class="cook-choice-amount">Greek yogurt + cucumber + mint</span>
+            <span class="cook-choice-note">Grated cucumber stirred into salted yogurt, mint torn in. </span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Bright</span>
+            <span class="cook-choice-amount">Tomato vinaigrette + basil</span>
+            <span class="cook-choice-note">Spoon the jar over, tear basil on top, flaky salt last. <a class="cook-jar-link" href="../../../july/tomato-herb-vinaigrette/">How to make the tomato herb vinaigrette →</a></span>
+          </li>
+          <li class="cook-choice">
+            <span class="cook-choice-name">Smoky</span>
+            <span class="cook-choice-amount">Charred tomato salsa + lime</span>
+            <span class="cook-choice-note">A spoonful of the salsa, lime squeezed over. <a class="cook-jar-link" href="../../../july/charred-tomato-salsa/">How to make the charred tomato salsa →</a></span>
+          </li>
+        </ul>
+      </section>
 
-        <section aria-labelledby="variations-heading">
-          <h2 id="variations-heading">Variations</h2>
-          <div class="meal-variations">
-            
-    <div class="meal-variation">
-      <span class="meal-variation-ingredients">Wild salmon · cool</span>
-      <span class="meal-variation-context">Flaked salmon, cucumber yogurt, mint.</span>
+      <section aria-labelledby="needs-heading" class="cook-section">
+        <h2 id="needs-heading">You'll need</h2>
+        <ul class="checklist"><li>About 1½ cups cooked rice</li><li>1 Persian cucumber, sliced thin</li><li>1 ripe tomato, chopped</li><li>Kernels from ½ ear of corn, raw</li><li>Mint and basil</li><li>Salt</li></ul>
+        <p class="cook-hint">Plus your protein and your flavor.</p>
+      </section>
+
+      <section aria-labelledby="steps-heading" class="cook-section">
+        <h2 id="steps-heading">Make it</h2>
+        <p class="cook-hint">Tap a step when it's done.</p>
+        <ol class="cook-steps">
+          <li class="cook-step"><span class="cook-cue">If needed</span><span class="cook-step-text">Cook the rice if you need to, and let it cool a little — July food is better warm than hot.</span></li>
+          <li class="cook-step"><span class="cook-step-text">Warm or cook your protein.</span></li>
+          <li class="cook-step"><span class="cook-step-text">Rice in the bowl, then the cucumber, tomato, and corn, then the protein.</span></li>
+          <li class="cook-step"><span class="cook-cue">Finish</span><span class="cook-step-text">Your flavor on top.</span></li>
+          <li class="cook-step"><span class="cook-step-text">Herbs last, torn over everything.</span></li>
+        </ol>
+      </section>
+      
+        <section aria-labelledby="leftovers-heading" class="cook-section">
+          <h2 id="leftovers-heading">Leftovers</h2>
+          <p class="cook-leftovers">Pack it as tomorrow&#x27;s lunch, with the flavor in a separate container.</p>
+        </section>
     </div>
 
-    <div class="meal-variation">
-      <span class="meal-variation-ingredients">Skirt steak · bright</span>
-      <span class="meal-variation-context">Sliced leftover steak, tomato, vinaigrette.</span>
-    </div>
-
-    <div class="meal-variation">
-      <span class="meal-variation-ingredients">Skirt steak · smoky</span>
-      <span class="meal-variation-context">Charred salsa and corn instead.</span>
-    </div>
-          </div>
-        </section>
-
-        <section aria-labelledby="finish-heading">
-          <h2 id="finish-heading">Finish</h2>
-          <p style="font-family:ui-sans-serif,system-ui,sans-serif;font-size:.97rem;color:#3d4842;line-height:1.6">Let the rice cool a little before building the bowl — July food is better warm than hot. Herbs go on last, after everything else.</p>
-        </section>
-      </div>
-
-      <aside class="meal-sidebar">
-        <section>
-          <h3>Works well with</h3>
-          <ul class="checklist"><li>A fried egg</li><li>Black beans</li></ul>
-        </section>
-        
-    <section>
-      <h3>From Field Notes</h3>
-      <ul class="meal-field-notes-list"><li class="meal-field-note-title"><a href="../../../july/field-notes/#add-herbs-after-the-heat" class="house-flavor-sidebar-link">Add herbs after the heat</a></li></ul>
-    </section>
-        
-        
-      </aside>
-    </div>
+    <script>
+      // Progressive enhancement for cooking with a phone: tap a step to mark
+      // it done, and keep the screen awake where the browser allows it.
+      document.querySelectorAll('.cook-step').forEach(function (li) {
+        li.addEventListener('click', function () { li.classList.toggle('is-done'); });
+      });
+      (function () {
+        var btn = document.querySelector('.cook-wake');
+        if (!btn || !('wakeLock' in navigator)) return;
+        var lock = null;
+        btn.hidden = false;
+        btn.addEventListener('click', function () {
+          if (lock) { lock.release(); lock = null; btn.textContent = 'Keep screen on while cooking'; btn.classList.remove('is-on'); return; }
+          navigator.wakeLock.request('screen').then(function (l) {
+            lock = l; btn.textContent = 'Screen will stay on'; btn.classList.add('is-on');
+            l.addEventListener('release', function () { lock = null; btn.textContent = 'Keep screen on while cooking'; btn.classList.remove('is-on'); });
+          }).catch(function () {});
+        });
+      })();
+    </script>
   </main>
   <footer>
     <div>Seasonal · Know what now tastes like.</div>
