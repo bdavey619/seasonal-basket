@@ -4,10 +4,10 @@
   "month": "october",
   "intro": "One jar. Red peppers, charred and cooked down, the way autumn has always kept them.",
   "card_uses": [
-    "Spoon it over a sheet-pan dinner.",
-    "Spread it on toast under an egg.",
+    "Pile it beside roasted sausages.",
+    "Spread it thick under fried eggs.",
     "Stir it into black beans.",
-    "Put it on the table next to fish."
+    "Smear it on a tortilla before the fish."
   ],
   "ingredients": [
     "4 red bell peppers",
@@ -25,34 +25,34 @@
   },
   "uses": [
     {
-      "meal": "sheet-pan-dinner",
-      "label": "Sheet-pan dinner",
-      "action": "A spoonful over everything.",
-      "context": "Sausage, roasted squash, and peppers need one sharp, smoky thing on top. This is it."
+      "meal": "sausages-peppers-ajvar",
+      "label": "Sausages and peppers",
+      "action": "A big spoonful beside.",
+      "context": "The way it's eaten across the Balkans: next to anything grilled or roasted and rich."
     },
     {
-      "meal": "fish-tacos",
-      "label": "Fish tacos",
-      "action": "A smear on the tortilla.",
-      "context": "Under the fish, before the yogurt. Smoky where salsa would be sharp."
+      "meal": "ajvar-egg-toast",
+      "label": "Ajvar toast",
+      "action": "Spread it thick.",
+      "context": "Under two runny eggs, the yolk turns it into a sauce."
     },
     {
-      "meal": null,
-      "label": "Toast for dinner",
-      "action": "Spread, then an egg.",
-      "context": "Sourdough, ajvar, a fried egg, a few arugula leaves."
+      "meal": "sweet-potatoes-black-beans",
+      "label": "Baked sweet potatoes",
+      "action": "Stir it into the beans.",
+      "context": "A spoonful warmed with the beans, another on top."
     },
     {
-      "meal": null,
-      "label": "Baked sweet potato",
-      "action": "Into the middle.",
-      "context": "With salted yogurt and black beans, it's the whole dinner."
+      "meal": "rockfish-tacos",
+      "label": "Rockfish tacos",
+      "action": "Smear the tortilla first.",
+      "context": "For a smoky taco instead of a cool one."
     },
     {
-      "meal": null,
-      "label": "Black beans",
-      "action": "Stir it in.",
-      "context": "A spoonful turns a can of beans red, smoky, and finished."
+      "meal": "seared-rockfish-brown-butter",
+      "label": "The weekend dish",
+      "action": "On the table.",
+      "context": "For anyone who wants smoke against the brown butter."
     }
   ],
   "linked_ingredients": [

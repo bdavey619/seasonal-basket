@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sausages, peppers, and ajvar — October — Seasonal</title>
+  <meta name="description" content="Sausages roasted on one pan with squash and sweet peppers until everything browns in their fat — served the Balkan way, with a pile of ajvar on the side and bread to drag through it." />
+  <link rel="canonical" href="https://bdavey.co/seasonal-basket/october/meals/sausages-peppers-ajvar/" />
+  <!-- Social preview -->
+  <meta property="og:title" content="Sausages, peppers, and ajvar — October — Seasonal" />
+  <meta property="og:description" content="Sausages roasted on one pan with squash and sweet peppers until everything browns in their fat — served the Balkan way, with a pile of ajvar on the side and bread to drag through it." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bdavey.co/seasonal-basket/october/meals/sausages-peppers-ajvar/" />
+  <!-- Favicon placeholder: replace with actual favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+  <link rel="stylesheet" href="../../../css/base.css?v=1d3cbbf5" />
+  <link rel="stylesheet" href="../../../css/october.css?v=6df0b4dd" />
+</head>
+<body>
+<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+<div class="page page--meal">
+  <header class="masthead">
+    <!-- Wordmark plus, on the edition page only, a collapsed section menu.
+         There is no page-level nav: its links duplicated these under
+         near-identical labels while pointing at pages rather than sections. -->
+    <a href="../../../" class="brand">Seasonal</a>
+    
+  </header>
+  <main id="main">
+
+    <div style="padding-top:28px">
+      <a href="../../../october/#meals" class="back-link">← October&#x27;s meals</a>
+    </div>
+
+    <div class="meal-header cook-header">
+      <div class="section-label">October · weeknight</div>
+      <h1>Sausages, peppers, and ajvar</h1>
+      <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:680px">Sausages roasted on one pan with squash and sweet peppers until everything browns in their fat — served the Balkan way, with a pile of ajvar on the side and bread to drag through it.</p>
+      <p class="cook-meta">40 minutes, most of it in the oven · Dinner tonight and two lunches</p>
+      <button type="button" class="cook-wake" hidden>Keep screen on while cooking</button>
+    </div>
+
+    <div class="cook-card">
+      <section aria-labelledby="needs-heading" class="cook-section">
+        <h2 id="needs-heading">You'll need</h2>
+        <ul class="checklist"><li>1 lb chicken sausage, 4–5 links</li><li>½ kabocha, in 1-inch wedges</li><li>2 red bell peppers, in thick strips</li><li>Ajvar, a few big spoonfuls</li><li>1 lemon</li><li>2 tbsp olive oil</li><li>Salt</li><li>Sourdough, to serve</li></ul>
+        
+      </section>
+
+      <section aria-labelledby="steps-heading" class="cook-section">
+        <h2 id="steps-heading">Make it</h2>
+        <p class="cook-hint">Tap a step when it's done.</p>
+        <ol class="cook-steps">
+          <li class="cook-step"><span class="cook-cue">425°F</span><span class="cook-step-text">Heat the oven. If the kabocha is too hard to cut, put it in whole for 10 minutes first.</span></li>
+          <li class="cook-step"><span class="cook-step-text">Toss the squash and peppers with the olive oil and a big pinch of salt and spread them on a sheet pan with room between the pieces. Add the sausages.</span></li>
+          <li class="cook-step"><span class="cook-cue">30 min</span><span class="cook-step-text">Roast, turning the sausages once, until they&#x27;re browned and the squash edges are dark.</span></li>
+          <li class="cook-step"><span class="cook-cue">Last 5 min</span><span class="cook-step-text">Toast the sourdough in a skillet with a little oil while the pan finishes.</span></li>
+          <li class="cook-step"><span class="cook-cue">Finish</span><span class="cook-step-text">Everything on the plate, a big spoonful of ajvar beside it, lemon squeezed over the vegetables.</span></li>
+        </ol>
+      </section>
+      
+        <section aria-labelledby="leftovers-heading" class="cook-section">
+          <h2 id="leftovers-heading">Leftovers</h2>
+          <p class="cook-leftovers">Pack two lunches before you sit down: sliced sausage, squash, and peppers over rice, ajvar on the side.</p>
+        </section>
+        <section aria-labelledby="how-heading" class="cook-section cook-how">
+          <h2 id="how-heading">How it works</h2>
+          <p class="cook-how-text">Sausage brings its own fat, and on a hot sheet pan that fat runs out and roasts the vegetables around it — the pan seasons itself. Ajvar is what&#x27;s served with grilled sausages across the Balkans: smoky, sweet, a little sharp, exactly what cuts the richness.</p>
+          <h3 class="cook-swaps-title">Make it your own</h3><ul class="checklist"><li>Any sausage works — pork, lamb, or chicken.</li><li>Sweet potato instead of kabocha, same timing.</li><li>No ajvar made yet? Lemon, olive oil, and a pinch of chile flakes over the top.</li></ul>
+        </section>
+    </div>
+
+    <script>
+      // Progressive enhancement for cooking with a phone: tap a step to mark
+      // it done, and keep the screen awake where the browser allows it.
+      document.querySelectorAll('.cook-step').forEach(function (li) {
+        li.addEventListener('click', function () { li.classList.toggle('is-done'); });
+      });
+      (function () {
+        var btn = document.querySelector('.cook-wake');
+        if (!btn || !('wakeLock' in navigator)) return;
+        // `wanted` is the reader's choice; `lock` is the browser's current
+        // lock. The browser drops the lock whenever the page is hidden (a
+        // timer app, a message), so if the reader still wants it, take it
+        // back as soon as they return.
+        var lock = null, wanted = false;
+        btn.hidden = false;
+        function show() {
+          btn.textContent = wanted ? 'Screen will stay on' : 'Keep screen on while cooking';
+          btn.classList.toggle('is-on', wanted);
+        }
+        function acquire() {
+          if (lock || !wanted || document.visibilityState !== 'visible') return;
+          navigator.wakeLock.request('screen').then(function (l) {
+            lock = l;
+            l.addEventListener('release', function () { lock = null; });
+          }).catch(function () { wanted = false; show(); });
+        }
+        btn.addEventListener('click', function () {
+          wanted = !wanted;
+          if (wanted) { acquire(); } else if (lock) { lock.release(); lock = null; }
+          show();
+        });
+        document.addEventListener('visibilitychange', acquire);
+      })();
+    </script>
+  </main>
+  <footer>
+    <div>Seasonal · Know what now tastes like.</div>
+    <div>San Diego · October · Edition 004</div>
+  </footer>
+</div>
+<!-- Progressive enhancement only: the section menu is a native <details> and
+     works without this. It closes the menu after you pick a section, which
+     CSS alone cannot do. -->
+<script>
+  document.querySelectorAll('.sections-menu a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      a.closest('details').open = false;
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+{
+  "slug": "sausages-peppers-ajvar",
+  "name": "Chicken sausages, peppers, and kabocha with ajvar",
+  "display_name": "Sausages, peppers, and ajvar",
+  "kind": "Weeknight",
+  "time": "40 minutes, most of it in the oven",
+  "time_short": "40 min",
+  "yield": "Dinner tonight and two lunches",
+  "intro": "Sausages roasted on one pan with squash and sweet peppers until everything browns in their fat — served the Balkan way, with a pile of ajvar on the side and bread to drag through it.",
+  "needs": [
+    "1 lb chicken sausage, 4–5 links",
+    "½ kabocha, in 1-inch wedges",
+    "2 red bell peppers, in thick strips",
+    "Ajvar, a few big spoonfuls",
+    "1 lemon",
+    "2 tbsp olive oil",
+    "Salt",
+    "Sourdough, to serve"
+  ],
+  "steps": [
+    {
+      "cue": "425°F",
+      "text": "Heat the oven. If the kabocha is too hard to cut, put it in whole for 10 minutes first."
+    },
+    {
+      "text": "Toss the squash and peppers with the olive oil and a big pinch of salt and spread them on a sheet pan with room between the pieces. Add the sausages."
+    },
+    {
+      "cue": "30 min",
+      "text": "Roast, turning the sausages once, until they're browned and the squash edges are dark."
+    },
+    {
+      "cue": "Last 5 min",
+      "text": "Toast the sourdough in a skillet with a little oil while the pan finishes."
+    },
+    {
+      "cue": "Finish",
+      "text": "Everything on the plate, a big spoonful of ajvar beside it, lemon squeezed over the vegetables."
+    }
+  ],
+  "how_it_works": "Sausage brings its own fat, and on a hot sheet pan that fat runs out and roasts the vegetables around it — the pan seasons itself. Ajvar is what's served with grilled sausages across the Balkans: smoky, sweet, a little sharp, exactly what cuts the richness.",
+  "swaps": [
+    "Any sausage works — pork, lamb, or chicken.",
+    "Sweet potato instead of kabocha, same timing.",
+    "No ajvar made yet? Lemon, olive oil, and a pinch of chile flakes over the top."
+  ],
+  "leftovers": "Pack two lunches before you sit down: sliced sausage, squash, and peppers over rice, ajvar on the side.",
+  "linked_house_flavor": "ajvar",
+  "linked_field_notes": [
+    "kabocha-cutting",
+    "october-peppers"
+  ],
+  "linked_ingredients": [
+    "kabocha-squash",
+    "red-bell-peppers"
+  ]
+}

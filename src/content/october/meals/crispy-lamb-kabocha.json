@@ -1,0 +1,65 @@
+{
+  "slug": "crispy-lamb-kabocha",
+  "name": "Crispy lamb over yogurt with kabocha, pomegranate, and dates",
+  "display_name": "Crispy lamb over yogurt",
+  "kind": "Weeknight",
+  "time": "35 minutes, or 15 if the squash is already roasted",
+  "time_short": "35 min",
+  "yield": "Dinner tonight and a second plate",
+  "intro": "Lamb browned until it crackles, spooned hot over cold salted yogurt, with sweet roasted squash, dates, and pomegranate. Rich, sour, sweet, and crisp in every forkful.",
+  "needs": [
+    "1 lb ground lamb",
+    "½ kabocha, in 1-inch wedges",
+    "1 cup Greek yogurt",
+    "1 garlic clove, grated",
+    "Chile flakes",
+    "Seeds of ½ pomegranate",
+    "4 Medjool dates, pitted and torn",
+    "A big handful of arugula",
+    "½ lemon",
+    "Olive oil and salt",
+    "Rice or toasted sourdough, to serve"
+  ],
+  "steps": [
+    {
+      "cue": "425°F · 30 min",
+      "text": "Heat the oven. Toss the kabocha with oil and salt and roast until the edges are dark and a knife slides through."
+    },
+    {
+      "text": "Stir a big pinch of salt and a squeeze of lemon into the yogurt. Spread half of it on a plate."
+    },
+    {
+      "cue": "4–5 min",
+      "text": "Put the lamb in a dry skillet over medium-high, press it flat, and don't touch it until it crusts underneath."
+    },
+    {
+      "cue": "4–5 min",
+      "text": "Break it up and keep cooking until it's browned all over and crackling at the edges."
+    },
+    {
+      "cue": "1 min",
+      "text": "Add the garlic, a pinch of chile flakes, and salt for the last minute, and stir the dates in to warm them."
+    },
+    {
+      "cue": "Finish",
+      "text": "Squash on the yogurt, lamb over it, pomegranate and arugula on top, lemon squeezed over everything."
+    }
+  ],
+  "how_it_works": "Rich meat wants something sour and something sweet against it. Here the yogurt and pomegranate cut the fat, and the dates and squash round it out. Browning the lamb hard — flat in the pan, left alone — turns its fat into crisp edges, which is most of the flavor.",
+  "swaps": [
+    "No lamb? Ground beef works the same way, or leftover pork tenderloin, sliced and warmed.",
+    "No dates? Double the pomegranate.",
+    "No roasted squash? Serve it over rice and let the yogurt carry it."
+  ],
+  "leftovers": "Half the lamb keeps four days. Tomorrow it's toast for dinner, or the filling for a baked sweet potato.",
+  "linked_house_flavor": "ajvar",
+  "linked_field_notes": [
+    "fresh-dates"
+  ],
+  "linked_ingredients": [
+    "kabocha-squash",
+    "pomegranates",
+    "fresh-dates",
+    "arugula"
+  ]
+}

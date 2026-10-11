@@ -95,26 +95,22 @@
         "slug": "rockfish",
         "name": "Rockfish fillets",
         "qty": "2 lbs, in two trips",
-        "why": "A mild fish needs something peppery and something sharp — arugula and pomegranate — or it tastes of nothing.",
-        "uses": "The weekend meal, fish tacos, toast"
+        "uses": "The tacos, the weekend dish"
       },
       {
         "name": "Chicken sausage",
         "qty": "1 lb",
-        "why": "Its fat runs out onto the hot pan and bastes the squash and peppers as they roast. The pan seasons itself.",
-        "uses": "Sheet pan, the hash, a sweet potato"
+        "uses": "Sausages and peppers with ajvar, two lunches"
       },
       {
         "name": "Pork tenderloin",
         "qty": "1, about 1¼ lbs",
-        "why": "Lean meat has no fat to protect it. Pull it while it's still blushing pink and add the richness at the end — ajvar's oil, or brown butter.",
-        "uses": "Sheet pan, the warm plate, the hash"
+        "uses": "With date-feta relish, two lunches"
       },
       {
         "name": "Ground lamb",
         "qty": "1 lb",
-        "why": "Rich, slightly gamey meat wants sweet and sour against it — dates and pomegranate. It's the reason lamb and mint is a classic.",
-        "uses": "The warm plate, toast, a sweet potato"
+        "uses": "Crispy lamb over yogurt, a second plate"
       }
     ],
     "feeds": "Feeds one big appetite for a week: every dinner, and lunch from the leftovers most days."
@@ -160,25 +156,6 @@
       "body": "Fish sticks when it's wet or when you move it too soon. Pat it dry, salt it, heat the pan until the oil shimmers, lay the fillet down away from you, and leave it alone for three minutes. When it's ready, it lets go of the pan on its own. That's also the first step of every braise — you'll use it on bone-in chicken thighs once the evenings cool."
     }
   ],
-  "weekend_meal": {
-    "name": "Seared rockfish, brown butter, and the October salad.",
-    "intro": "One meal should feel like the reason you went shopping. In October, it's a fish most people walk past, seared hard in a hot pan and finished in brown butter — the one cooking lesson this month is built around.",
-    "card_line": "Rockfish, roasted kabocha, brown butter, arugula, pomegranate, dates",
-    "ingredients": [
-      "1 lb rockfish fillets",
-      "Half a kabocha squash, cut into wedges",
-      "3 tbsp butter",
-      "1 lemon",
-      "Olive oil and salt",
-      "4 handfuls of arugula",
-      "Seeds of half a pomegranate",
-      "4 Medjool dates, pitted and torn",
-      "A little feta, crumbled",
-      "Ajvar, for the table"
-    ],
-    "ingredient_note": "Everything here is on the shopping list. A pound of fish is dinner tonight and lunch tomorrow. If the counter is out of rockfish, any firm white fillet works the same way.",
-    "method": "Heat the oven to 425°F. Toss the kabocha wedges with olive oil and salt and roast for 30 to 35 minutes, until the edges are dark and a knife slides through. Meanwhile, salt the fish and leave it on a plate for fifteen minutes, then pat it completely dry. Heat a heavy skillet over medium-high with a thin film of oil until it shimmers. Lay the fillets in, away from you, and don't touch them for three or four minutes, until the edges turn opaque and the fish releases from the pan on its own. Flip, add the butter, and tilt the pan, spooning the foaming butter over the fish for a minute or two until it smells nutty and turns golden brown. Squeeze in half the lemon. Put the arugula, pomegranate, dates, and feta in a bowl and dress it at the table with olive oil, the rest of the lemon, and salt. Serve the fish over the kabocha with the brown butter spooned on top, the salad beside it, and ajvar on the table."
-  },
   "drink": {
     "slug": "barrio-logan-jamaica",
     "name": "Barrio Logan Jamaica",
@@ -223,114 +200,111 @@
     "month": "November",
     "status": "Arriving November 1."
   },
-  "meals_heading": "What do you feel like tonight?",
-  "meals_dek": "Start with the protein, pick a way to cook it, then a flavor. Every combination comes out of the same shopping list.",
+  "meals_heading": "Seven things to cook in October.",
+  "meals_dek": "Specific dishes, chosen for this month's basket. Each one ends by explaining how it works — so the next time, you won't need it.",
   "meals_back_label": "October's meals",
   "tonight": {
+    "heading": "Or cook by instinct",
+    "dek": "When something's already in the fridge: what it wants, a few ways to cook it, and the flavors that suit it.",
     "flavors_label": "October's four flavors",
     "options": [
       {
         "name": "Rockfish",
+        "why": "A mild fish needs something peppery and something sharp, or it tastes of nothing.",
         "best_with": [
           "cool-sharp",
           "bright-hot"
         ],
-        "ways": [
+        "moves": [
           {
-            "label": "Seared, brown butter",
-            "meal": "weekend"
+            "text": "Dry it, sear it hands-off, and flake it into warm tortillas with something cold and sharp.",
+            "dish": "rockfish-tacos",
+            "dish_label": "The tacos"
           },
           {
-            "label": "Fish tacos",
-            "meal": "fish-tacos"
+            "text": "Sear it and finish it in brown butter and lemon, over roasted squash.",
+            "dish": "seared-rockfish-brown-butter",
+            "dish_label": "The weekend dish"
           },
           {
-            "label": "On toast",
-            "meal": "toast-for-dinner"
+            "text": "Leftovers: flake it cold onto oiled toast with arugula and lemon."
           }
         ]
       },
       {
         "name": "Chicken sausage",
+        "why": "It brings its own fat — let that fat cook the vegetables.",
         "best_with": [
           "smoky",
           "bright-hot"
         ],
-        "ways": [
+        "moves": [
           {
-            "label": "Sheet pan",
-            "meal": "sheet-pan-dinner"
+            "text": "Roast it on one hot pan with squash and peppers, then add something smoky.",
+            "dish": "sausages-peppers-ajvar",
+            "dish_label": "With ajvar"
           },
           {
-            "label": "Skillet hash",
-            "meal": "skillet-hash"
-          },
-          {
-            "label": "In a sweet potato",
-            "meal": "baked-sweet-potato"
+            "text": "Leftovers: slice it into a skillet with cubed sweet potato until it all crisps, and crack an egg on top."
           }
         ]
       },
       {
         "name": "Pork tenderloin",
+        "why": "Lean meat gets its richness from the finish, not the pan.",
         "best_with": [
           "sweet-salty",
           "smoky"
         ],
-        "ways": [
+        "moves": [
           {
-            "label": "Sheet pan",
-            "meal": "sheet-pan-dinner"
+            "text": "Roast it hot, pull it while it's pink, and cover it in something sweet, salty, and oily.",
+            "dish": "pork-tenderloin-date-relish",
+            "dish_label": "With date-feta relish"
           },
           {
-            "label": "Warm plate",
-            "meal": "warm-plate"
-          },
-          {
-            "label": "Skillet hash",
-            "meal": "skillet-hash"
+            "text": "Leftovers: slice it thin over rice with ajvar and arugula."
           }
         ]
       },
       {
         "name": "Ground lamb",
+        "why": "Rich, slightly gamey meat wants sweet and sour against it.",
         "best_with": [
           "sweet-salty",
           "cool-sharp"
         ],
-        "ways": [
+        "moves": [
           {
-            "label": "Warm plate",
-            "meal": "warm-plate"
+            "text": "Brown it hard until it crusts, and spoon it over cold salted yogurt with fruit.",
+            "dish": "crispy-lamb-kabocha",
+            "dish_label": "Over yogurt"
           },
           {
-            "label": "On toast",
-            "meal": "toast-for-dinner"
-          },
-          {
-            "label": "In a sweet potato",
-            "meal": "baked-sweet-potato"
+            "text": "Pile it into a split baked sweet potato with feta and dates."
           }
         ]
       },
       {
-        "name": "No meat tonight",
+        "name": "Eggs and beans",
+        "why": "The cheapest dinners want the most flavor — the jar's smoke and something cool.",
         "best_with": [
           "smoky",
           "sweet-salty"
         ],
-        "ways": [
+        "moves": [
           {
-            "label": "Egg on toast",
-            "meal": "toast-for-dinner"
+            "text": "Crisp sourdough in olive oil, spread the jar thick, and top it with runny eggs.",
+            "dish": "ajvar-egg-toast",
+            "dish_label": "The toast"
           },
           {
-            "label": "Sweet potato and beans",
-            "meal": "baked-sweet-potato"
+            "text": "Bake sweet potatoes until the sugar runs and fill them with warm beans.",
+            "dish": "sweet-potatoes-black-beans",
+            "dish_label": "The sweet potatoes"
           },
           {
-            "label": "Hash with eggs",
-            "meal": "skillet-hash"
+            "text": "Cube any leftover squash or potato, crisp it in a skillet, and crack eggs into the pan."
           }
         ]
       }
@@ -360,6 +334,36 @@
       "name": "Sweet and salty",
       "what": "Dates + feta",
       "how": "Torn dates and crumbled feta, a pinch of chile so it isn't dessert."
+    }
+  ],
+  "dishes": [
+    {
+      "slug": "crispy-lamb-kabocha",
+      "line": "Rich, sour, sweet, and crisp in every forkful."
+    },
+    {
+      "slug": "pork-tenderloin-date-relish",
+      "line": "Lean pork pulled while pink; the relish brings the richness."
+    },
+    {
+      "slug": "sausages-peppers-ajvar",
+      "line": "One pan, sausage fat roasting the vegetables. Ajvar on the side."
+    },
+    {
+      "slug": "rockfish-tacos",
+      "line": "Seared fish, cold lime yogurt, pomegranate for salsa."
+    },
+    {
+      "slug": "ajvar-egg-toast",
+      "line": "Ten minutes. The jar turns two eggs into dinner."
+    },
+    {
+      "slug": "sweet-potatoes-black-beans",
+      "line": "Baked until the sugar runs, then smoke and something cool."
+    },
+    {
+      "slug": "seared-rockfish-brown-butter",
+      "line": "October's lesson: a hard sear and brown butter."
     }
   ]
 }
