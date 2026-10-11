@@ -217,17 +217,20 @@
         ],
         "moves": [
           {
+            "lead": "Tacos",
             "text": "Dry it, sear it hands-off, and flake it into warm tortillas with something cold and sharp.",
             "dish": "rockfish-tacos",
             "dish_label": "The tacos"
           },
           {
+            "lead": "Brown butter",
             "text": "Sear it and finish it in brown butter and lemon, over roasted squash.",
             "dish": "seared-rockfish-brown-butter",
             "dish_label": "The weekend dish"
           },
           {
-            "text": "Leftovers: flake it cold onto oiled toast with arugula and lemon."
+            "lead": "Leftovers",
+            "text": "Flake it cold onto oiled toast with arugula and lemon."
           }
         ]
       },
@@ -240,12 +243,14 @@
         ],
         "moves": [
           {
+            "lead": "One pan",
             "text": "Roast it on one hot pan with squash and peppers, then add something smoky.",
             "dish": "sausages-peppers-ajvar",
             "dish_label": "With ajvar"
           },
           {
-            "text": "Leftovers: slice it into a skillet with cubed sweet potato until it all crisps, and crack an egg on top."
+            "lead": "Leftovers",
+            "text": "Slice it into a skillet with cubed sweet potato until it all crisps, and crack an egg on top."
           }
         ]
       },
@@ -258,12 +263,14 @@
         ],
         "moves": [
           {
+            "lead": "Roast",
             "text": "Roast it hot, pull it while it's pink, and cover it in something sweet, salty, and oily.",
             "dish": "pork-tenderloin-date-relish",
             "dish_label": "With date-feta relish"
           },
           {
-            "text": "Leftovers: slice it thin over rice with ajvar and arugula."
+            "lead": "Leftovers",
+            "text": "Slice it thin over rice with ajvar and arugula."
           }
         ]
       },
@@ -276,11 +283,13 @@
         ],
         "moves": [
           {
+            "lead": "Crisp",
             "text": "Brown it hard until it crusts, and spoon it over cold salted yogurt with fruit.",
             "dish": "crispy-lamb-kabocha",
             "dish_label": "Over yogurt"
           },
           {
+            "lead": "Stuffed",
             "text": "Pile it into a split baked sweet potato with feta and dates."
           }
         ]
@@ -294,16 +303,19 @@
         ],
         "moves": [
           {
+            "lead": "Toast",
             "text": "Crisp sourdough in olive oil, spread the jar thick, and top it with runny eggs.",
             "dish": "ajvar-egg-toast",
             "dish_label": "The toast"
           },
           {
+            "lead": "Baked",
             "text": "Bake sweet potatoes until the sugar runs and fill them with warm beans.",
             "dish": "sweet-potatoes-black-beans",
             "dish_label": "The sweet potatoes"
           },
           {
+            "lead": "Hash",
             "text": "Cube any leftover squash or potato, crisp it in a skillet, and crack eggs into the pan."
           }
         ]
@@ -339,31 +351,72 @@
   "dishes": [
     {
       "slug": "crispy-lamb-kabocha",
-      "line": "Rich, sour, sweet, and crisp in every forkful."
+      "line": "Rich, sour, sweet, and crisp in every forkful.",
+      "plate": [
+        "#d9822b",
+        "#f4efe4",
+        "#7a4a32",
+        "#b8283a"
+      ]
     },
     {
       "slug": "pork-tenderloin-date-relish",
-      "line": "Lean pork pulled while pink; the relish brings the richness."
+      "line": "Lean pork pulled while pink; the relish brings the richness.",
+      "plate": [
+        "#c9652e",
+        "#e2ad98",
+        "#5e3324",
+        "#f6f3ea"
+      ]
     },
     {
       "slug": "sausages-peppers-ajvar",
-      "line": "One pan, sausage fat roasting the vegetables. Ajvar on the side."
+      "line": "One pan, sausage fat roasting the vegetables. Ajvar on the side.",
+      "plate": [
+        "#c43a2c",
+        "#d9822b",
+        "#8a5a3c"
+      ]
     },
     {
       "slug": "rockfish-tacos",
-      "line": "Seared fish, cold lime yogurt, pomegranate for salsa."
+      "line": "Seared fish, cold lime yogurt, pomegranate for salsa.",
+      "plate": [
+        "#e6cf98",
+        "#f3eee4",
+        "#b8283a",
+        "#8fae3e"
+      ]
     },
     {
       "slug": "ajvar-egg-toast",
-      "line": "Ten minutes. The jar turns two eggs into dinner."
+      "line": "Ten minutes. The jar turns two eggs into dinner.",
+      "plate": [
+        "#c89a5a",
+        "#fbf8f1",
+        "#f2b632",
+        "#56673a"
+      ]
     },
     {
       "slug": "sweet-potatoes-black-beans",
-      "line": "Baked until the sugar runs, then smoke and something cool."
+      "line": "Baked until the sugar runs, then smoke and something cool.",
+      "plate": [
+        "#c9652e",
+        "#2b2622",
+        "#f4efe4",
+        "#8fae3e"
+      ]
     },
     {
       "slug": "seared-rockfish-brown-butter",
-      "line": "October's lesson: a hard sear and brown butter."
+      "line": "October's lesson: a hard sear and brown butter.",
+      "plate": [
+        "#f3eee4",
+        "#a8743a",
+        "#d9822b",
+        "#56673a"
+      ]
     }
   ],
   "redirects": {

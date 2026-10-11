@@ -99,6 +99,8 @@ The meals section has two halves that teach each other.
 
 A great dish inspires you to cook; its "How it works" teaches you to cook it without the page. The instinct rows point back to a dish that shows each idea in practice.
 
+**On the page.** In editions built around dishes, the meals section comes first and the basket follows; links under the opening note jump to each, since most visits are "what should I cook?" and the shopping list is a once-a-week stop. Each dish row carries a picture: a plate drawn from 2–5 colors of its main ingredients (`plate` in the edition's `dishes`), replaced by a real photo (`photo`, a path under the edition's `images/`) once the dish has been cooked and shot. Instinct rows open from a single line — the protein and its pairing reason — and each move starts with a one- or two-word `lead` ("Tacos.", "Leftovers.") so the list scans.
+
 **Retiring a page.** Once an edition is live, its URLs may be bookmarked. When a page is removed or renamed, add the old path to the edition's `redirects` (old path → replacement, relative to the edition) so the build leaves a forwarding page behind.
 
 ## Meal Formats Change With the Season
