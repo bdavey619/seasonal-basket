@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rockfish tacos — October — Seasonal</title>
+  <meta name="description" content="Mild local rockfish seared hard and flaked into warm tortillas with peppery arugula, cold lime yogurt, and pomegranate that bursts like salsa." />
+  <link rel="canonical" href="https://bdavey.co/seasonal-basket/october/meals/rockfish-tacos/" />
+  <!-- Social preview -->
+  <meta property="og:title" content="Rockfish tacos — October — Seasonal" />
+  <meta property="og:description" content="Mild local rockfish seared hard and flaked into warm tortillas with peppery arugula, cold lime yogurt, and pomegranate that bursts like salsa." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bdavey.co/seasonal-basket/october/meals/rockfish-tacos/" />
+  <!-- Favicon placeholder: replace with actual favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+  <link rel="stylesheet" href="../../../css/base.css?v=1d3cbbf5" />
+  <link rel="stylesheet" href="../../../css/october.css?v=6df0b4dd" />
+</head>
+<body>
+<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+<div class="page page--meal">
+  <header class="masthead">
+    <!-- Wordmark plus, on the edition page only, a collapsed section menu.
+         There is no page-level nav: its links duplicated these under
+         near-identical labels while pointing at pages rather than sections. -->
+    <a href="../../../" class="brand">Seasonal</a>
+    
+  </header>
+  <main id="main">
+
+    <div style="padding-top:28px">
+      <a href="../../../october/#meals" class="back-link">← October&#x27;s meals</a>
+    </div>
+
+    <div class="meal-header cook-header">
+      <div class="section-label">October · weeknight</div>
+      <h1>Rockfish tacos</h1>
+      <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:680px">Mild local rockfish seared hard and flaked into warm tortillas with peppery arugula, cold lime yogurt, and pomegranate that bursts like salsa.</p>
+      <p class="cook-meta">20 minutes · Dinner for one, about six tacos</p>
+      <button type="button" class="cook-wake" hidden>Keep screen on while cooking</button>
+    </div>
+
+    <div class="cook-card">
+      <section aria-labelledby="needs-heading" class="cook-section">
+        <h2 id="needs-heading">You'll need</h2>
+        <ul class="checklist"><li>1 lb rockfish fillets</li><li>12 corn tortillas — two per taco</li><li>½ cup Greek yogurt</li><li>1 lime</li><li>Seeds of ½ pomegranate</li><li>2 handfuls of arugula</li><li>Olive oil and salt</li></ul>
+        
+      </section>
+
+      <section aria-labelledby="steps-heading" class="cook-section">
+        <h2 id="steps-heading">Make it</h2>
+        <p class="cook-hint">Tap a step when it's done.</p>
+        <ol class="cook-steps">
+          <li class="cook-step"><span class="cook-cue">10 min</span><span class="cook-step-text">Salt the fish and leave it on a plate. Pat it completely dry right before it goes in the pan.</span></li>
+          <li class="cook-step"><span class="cook-step-text">Stir the zest of the lime, half its juice, and a pinch of salt into the yogurt.</span></li>
+          <li class="cook-step"><span class="cook-cue">Tortillas</span><span class="cook-step-text">Warm the tortillas in a dry pan until they blister in spots. Stack them under a towel.</span></li>
+          <li class="cook-step"><span class="cook-cue">3–4 min</span><span class="cook-step-text">Heat a thin film of oil in a heavy skillet until it shimmers. Lay the fish in, away from you, and don&#x27;t touch it until it lets go of the pan on its own.</span></li>
+          <li class="cook-step"><span class="cook-cue">1–2 min</span><span class="cook-step-text">Flip, cook until opaque all the way through, then flake it in the pan with a fork.</span></li>
+          <li class="cook-step"><span class="cook-cue">Finish</span><span class="cook-step-text">Two tortillas, fish, arugula, a spoonful of lime yogurt, pomegranate on top, the rest of the lime squeezed over.</span></li>
+        </ol>
+      </section>
+      
+        <section aria-labelledby="leftovers-heading" class="cook-section">
+          <h2 id="leftovers-heading">Leftovers</h2>
+          <p class="cook-leftovers">Leftover fish is good cold the next day, on toast with lemon and olive oil.</p>
+        </section>
+        <section aria-labelledby="how-heading" class="cook-section cook-how">
+          <h2 id="how-heading">How it works</h2>
+          <p class="cook-how-text">A mild fish tastes of very little on its own, so everything around it is sharp, cold, or peppery: lime, yogurt, pomegranate, arugula. The sear is the technique — dry fish, hot pan, hands off — and it works on any firm fillet.</p>
+          <h3 class="cook-swaps-title">Make it your own</h3><ul class="checklist"><li>Any firm white fish — cod or halibut — works the same way.</li><li>For heat, warm olive oil with garlic and chile flakes and spoon it over instead of the yogurt.</li><li>Smear ajvar on the tortillas first for smoke.</li></ul>
+        </section>
+    </div>
+
+    <script>
+      // Progressive enhancement for cooking with a phone: tap a step to mark
+      // it done, and keep the screen awake where the browser allows it.
+      document.querySelectorAll('.cook-step').forEach(function (li) {
+        li.addEventListener('click', function () { li.classList.toggle('is-done'); });
+      });
+      (function () {
+        var btn = document.querySelector('.cook-wake');
+        if (!btn || !('wakeLock' in navigator)) return;
+        // `wanted` is the reader's choice; `lock` is the browser's current
+        // lock. The browser drops the lock whenever the page is hidden (a
+        // timer app, a message), so if the reader still wants it, take it
+        // back as soon as they return.
+        var lock = null, wanted = false;
+        btn.hidden = false;
+        function show() {
+          btn.textContent = wanted ? 'Screen will stay on' : 'Keep screen on while cooking';
+          btn.classList.toggle('is-on', wanted);
+        }
+        function acquire() {
+          if (lock || !wanted || document.visibilityState !== 'visible') return;
+          navigator.wakeLock.request('screen').then(function (l) {
+            lock = l;
+            l.addEventListener('release', function () { lock = null; });
+          }).catch(function () { wanted = false; show(); });
+        }
+        btn.addEventListener('click', function () {
+          wanted = !wanted;
+          if (wanted) { acquire(); } else if (lock) { lock.release(); lock = null; }
+          show();
+        });
+        document.addEventListener('visibilitychange', acquire);
+      })();
+    </script>
+  </main>
+  <footer>
+    <div>Seasonal · Know what now tastes like.</div>
+    <div>San Diego · October · Edition 004</div>
+  </footer>
+</div>
+<!-- Progressive enhancement only: the section menu is a native <details> and
+     works without this. It closes the menu after you pick a section, which
+     CSS alone cannot do. -->
+<script>
+  document.querySelectorAll('.sections-menu a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      a.closest('details').open = false;
+    });
+  });
+</script>
+</body>
+</html>

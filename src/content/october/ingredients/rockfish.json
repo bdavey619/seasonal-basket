@@ -2,7 +2,7 @@
   "slug": "rockfish",
   "name": "Rockfish fillets",
   "month": "October",
-  "tile_uses": "The weekend meal, midweek fish tacos",
+  "tile_uses": "The tacos, the weekend dish",
   "why_now": "Rockfish is the local fish that gets more reliable as the water cools in fall: dozens of species, all mild and firm, and usually cheaper than salmon. It's sold at most fish counters in Southern California, sometimes as rock cod or Pacific snapper. This is the month to buy it instead of the usual.",
   "how_to_choose": [
     "Glossy and slightly translucent, not dull or dry",
@@ -27,7 +27,7 @@
   "flavor_paths": [
     {
       "name": "Seared",
-      "description": "Hot pan, hands off, brown butter. The weekend meal."
+      "description": "Hot pan, hands off, brown butter. The weekend dish."
     },
     {
       "name": "Flaked",
@@ -39,11 +39,11 @@
     }
   ],
   "weekday_uses": [
-    "Seared and flaked into fish tacos",
-    "Seared over rice with arugula and lemon",
+    "Seared and flaked into tacos with lime yogurt",
+    "Seared with brown butter, the weekend dish",
     "Leftovers, cold, on toast with lemon and olive oil"
   ],
-  "weekend_use": "Seared hard and finished in brown butter, over roasted kabocha. The weekend meal.",
+  "weekend_use": "Seared hard and finished in brown butter, over roasted kabocha. The weekend dish.",
   "storage": "Cook it the day you buy it, or the next. Keep it in the coldest part of the fridge, on a plate, loosely covered.",
   "one_thing_to_learn": "Rockfish cooks fast and forgives little, so it's the right fish to learn the sear on. It's done when the flesh turns opaque all the way through and flakes when you press it with a fork — usually three or four minutes on the first side and one or two on the second. When in doubt, take it off; it keeps cooking on the plate.",
   "market_question": "What came in today?"

@@ -1,0 +1,70 @@
+{
+  "slug": "seared-rockfish-brown-butter",
+  "name": "Seared rockfish, brown butter, and the October salad",
+  "display_name": "Seared rockfish, brown butter",
+  "kind": "Weekend",
+  "time": "About 45 minutes",
+  "time_short": "45 min",
+  "yield": "Dinner, and lunch tomorrow",
+  "intro": "A fish most people walk past, seared hard and finished in brown butter, over roasted kabocha, with a salad of arugula, pomegranate, dates, and feta that only works this month.",
+  "needs": [
+    "1 lb rockfish fillets",
+    "½ kabocha, in wedges",
+    "3 tbsp butter",
+    "1 lemon",
+    "4 handfuls of arugula",
+    "Seeds of ½ pomegranate",
+    "4 Medjool dates, pitted and torn",
+    "A little feta, crumbled",
+    "Olive oil and salt",
+    "Ajvar, for the table"
+  ],
+  "steps": [
+    {
+      "cue": "425°F · 30–35 min",
+      "text": "Heat the oven. Toss the kabocha with oil and salt and roast until the edges are dark and a knife slides through."
+    },
+    {
+      "cue": "15 min",
+      "text": "Salt the fish and leave it on a plate, then pat it completely dry."
+    },
+    {
+      "cue": "Med-high",
+      "text": "Heat a heavy skillet over medium-high with a thin film of oil until it shimmers. Lay the fillets in, away from you."
+    },
+    {
+      "cue": "3–4 min",
+      "text": "Don't touch them. They're ready to flip when the edges turn opaque and the fish lets go of the pan on its own."
+    },
+    {
+      "cue": "1–2 min",
+      "text": "Flip, add the butter, and tilt the pan, spooning the foaming butter over the fish until it smells nutty and turns golden brown. Squeeze in half the lemon."
+    },
+    {
+      "text": "Put the arugula, pomegranate, dates, and feta in a bowl. Dress it at the table with olive oil, the rest of the lemon, and salt."
+    },
+    {
+      "cue": "Finish",
+      "text": "Fish over the kabocha, brown butter spooned on top, the salad beside it, ajvar on the table."
+    }
+  ],
+  "how_it_works": "The sear is October's lesson: dry fish, a hot pan, and hands off until it lets go on its own — that's how a crust forms instead of sticking. Brown butter is the reward: butter cooked until its milk solids toast, which gives a mild fish everything it lacks.",
+  "swaps": [
+    "Any firm white fillet — cod or halibut — works the same way.",
+    "Sweet potato instead of kabocha.",
+    "Skip the brown butter; finish with warm chile-garlic oil and lime instead."
+  ],
+  "leftovers": "Leftover fish is tomorrow's tacos.",
+  "linked_house_flavor": "ajvar",
+  "linked_field_notes": [
+    "dry-hot-hands-off",
+    "kabocha-cutting"
+  ],
+  "linked_ingredients": [
+    "rockfish",
+    "kabocha-squash",
+    "arugula",
+    "pomegranates",
+    "fresh-dates"
+  ]
+}

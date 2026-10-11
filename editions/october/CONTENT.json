@@ -95,26 +95,22 @@
         "slug": "rockfish",
         "name": "Rockfish fillets",
         "qty": "2 lbs, in two trips",
-        "why": "A mild fish needs something peppery and something sharp — arugula and pomegranate — or it tastes of nothing.",
-        "uses": "The weekend meal, fish tacos, toast"
+        "uses": "The tacos, the weekend dish"
       },
       {
         "name": "Chicken sausage",
         "qty": "1 lb",
-        "why": "Its fat runs out onto the hot pan and bastes the squash and peppers as they roast. The pan seasons itself.",
-        "uses": "Sheet pan, the hash, a sweet potato"
+        "uses": "Sausages and peppers with ajvar, two lunches"
       },
       {
         "name": "Pork tenderloin",
         "qty": "1, about 1¼ lbs",
-        "why": "Lean meat has no fat to protect it. Pull it while it's still blushing pink and add the richness at the end — ajvar's oil, or brown butter.",
-        "uses": "Sheet pan, the warm plate, the hash"
+        "uses": "With date-feta relish, two lunches"
       },
       {
         "name": "Ground lamb",
         "qty": "1 lb",
-        "why": "Rich, slightly gamey meat wants sweet and sour against it — dates and pomegranate. It's the reason lamb and mint is a classic.",
-        "uses": "The warm plate, toast, a sweet potato"
+        "uses": "Crispy lamb over yogurt, a second plate"
       }
     ],
     "feeds": "Feeds one big appetite for a week: every dinner, and lunch from the leftovers most days."
@@ -160,25 +156,6 @@
       "body": "Fish sticks when it's wet or when you move it too soon. Pat it dry, salt it, heat the pan until the oil shimmers, lay the fillet down away from you, and leave it alone for three minutes. When it's ready, it lets go of the pan on its own. That's also the first step of every braise — you'll use it on bone-in chicken thighs once the evenings cool."
     }
   ],
-  "weekend_meal": {
-    "name": "Seared rockfish, brown butter, and the October salad.",
-    "intro": "One meal should feel like the reason you went shopping. In October, it's a fish most people walk past, seared hard in a hot pan and finished in brown butter — the one cooking lesson this month is built around.",
-    "card_line": "Rockfish, roasted kabocha, brown butter, arugula, pomegranate, dates",
-    "ingredients": [
-      "1 lb rockfish fillets",
-      "Half a kabocha squash, cut into wedges",
-      "3 tbsp butter",
-      "1 lemon",
-      "Olive oil and salt",
-      "4 handfuls of arugula",
-      "Seeds of half a pomegranate",
-      "4 Medjool dates, pitted and torn",
-      "A little feta, crumbled",
-      "Ajvar, for the table"
-    ],
-    "ingredient_note": "Everything here is on the shopping list. A pound of fish is dinner tonight and lunch tomorrow. If the counter is out of rockfish, any firm white fillet works the same way.",
-    "method": "Heat the oven to 425°F. Toss the kabocha wedges with olive oil and salt and roast for 30 to 35 minutes, until the edges are dark and a knife slides through. Meanwhile, salt the fish and leave it on a plate for fifteen minutes, then pat it completely dry. Heat a heavy skillet over medium-high with a thin film of oil until it shimmers. Lay the fillets in, away from you, and don't touch them for three or four minutes, until the edges turn opaque and the fish releases from the pan on its own. Flip, add the butter, and tilt the pan, spooning the foaming butter over the fish for a minute or two until it smells nutty and turns golden brown. Squeeze in half the lemon. Put the arugula, pomegranate, dates, and feta in a bowl and dress it at the table with olive oil, the rest of the lemon, and salt. Serve the fish over the kabocha with the brown butter spooned on top, the salad beside it, and ajvar on the table."
-  },
   "drink": {
     "slug": "barrio-logan-jamaica",
     "name": "Barrio Logan Jamaica",
@@ -223,114 +200,111 @@
     "month": "November",
     "status": "Arriving November 1."
   },
-  "meals_heading": "What do you feel like tonight?",
-  "meals_dek": "Start with the protein, pick a way to cook it, then a flavor. Every combination comes out of the same shopping list.",
+  "meals_heading": "Seven things to cook in October.",
+  "meals_dek": "Specific dishes, chosen for this month's basket. Each one ends by explaining how it works — so the next time, you won't need it.",
   "meals_back_label": "October's meals",
   "tonight": {
+    "heading": "Or cook by instinct",
+    "dek": "When something's already in the fridge: what it wants, a few ways to cook it, and the flavors that suit it.",
     "flavors_label": "October's four flavors",
     "options": [
       {
         "name": "Rockfish",
+        "why": "A mild fish needs something peppery and something sharp, or it tastes of nothing.",
         "best_with": [
           "cool-sharp",
           "bright-hot"
         ],
-        "ways": [
+        "moves": [
           {
-            "label": "Seared, brown butter",
-            "meal": "weekend"
+            "text": "Dry it, sear it hands-off, and flake it into warm tortillas with something cold and sharp.",
+            "dish": "rockfish-tacos",
+            "dish_label": "The tacos"
           },
           {
-            "label": "Fish tacos",
-            "meal": "fish-tacos"
+            "text": "Sear it and finish it in brown butter and lemon, over roasted squash.",
+            "dish": "seared-rockfish-brown-butter",
+            "dish_label": "The weekend dish"
           },
           {
-            "label": "On toast",
-            "meal": "toast-for-dinner"
+            "text": "Leftovers: flake it cold onto oiled toast with arugula and lemon."
           }
         ]
       },
       {
         "name": "Chicken sausage",
+        "why": "It brings its own fat — let that fat cook the vegetables.",
         "best_with": [
           "smoky",
           "bright-hot"
         ],
-        "ways": [
+        "moves": [
           {
-            "label": "Sheet pan",
-            "meal": "sheet-pan-dinner"
+            "text": "Roast it on one hot pan with squash and peppers, then add something smoky.",
+            "dish": "sausages-peppers-ajvar",
+            "dish_label": "With ajvar"
           },
           {
-            "label": "Skillet hash",
-            "meal": "skillet-hash"
-          },
-          {
-            "label": "In a sweet potato",
-            "meal": "baked-sweet-potato"
+            "text": "Leftovers: slice it into a skillet with cubed sweet potato until it all crisps, and crack an egg on top."
           }
         ]
       },
       {
         "name": "Pork tenderloin",
+        "why": "Lean meat gets its richness from the finish, not the pan.",
         "best_with": [
           "sweet-salty",
           "smoky"
         ],
-        "ways": [
+        "moves": [
           {
-            "label": "Sheet pan",
-            "meal": "sheet-pan-dinner"
+            "text": "Roast it hot, pull it while it's pink, and cover it in something sweet, salty, and oily.",
+            "dish": "pork-tenderloin-date-relish",
+            "dish_label": "With date-feta relish"
           },
           {
-            "label": "Warm plate",
-            "meal": "warm-plate"
-          },
-          {
-            "label": "Skillet hash",
-            "meal": "skillet-hash"
+            "text": "Leftovers: slice it thin over rice with ajvar and arugula."
           }
         ]
       },
       {
         "name": "Ground lamb",
+        "why": "Rich, slightly gamey meat wants sweet and sour against it.",
         "best_with": [
           "sweet-salty",
           "cool-sharp"
         ],
-        "ways": [
+        "moves": [
           {
-            "label": "Warm plate",
-            "meal": "warm-plate"
+            "text": "Brown it hard until it crusts, and spoon it over cold salted yogurt with fruit.",
+            "dish": "crispy-lamb-kabocha",
+            "dish_label": "Over yogurt"
           },
           {
-            "label": "On toast",
-            "meal": "toast-for-dinner"
-          },
-          {
-            "label": "In a sweet potato",
-            "meal": "baked-sweet-potato"
+            "text": "Pile it into a split baked sweet potato with feta and dates."
           }
         ]
       },
       {
-        "name": "No meat tonight",
+        "name": "Eggs and beans",
+        "why": "The cheapest dinners want the most flavor — the jar's smoke and something cool.",
         "best_with": [
           "smoky",
           "sweet-salty"
         ],
-        "ways": [
+        "moves": [
           {
-            "label": "Egg on toast",
-            "meal": "toast-for-dinner"
+            "text": "Crisp sourdough in olive oil, spread the jar thick, and top it with runny eggs.",
+            "dish": "ajvar-egg-toast",
+            "dish_label": "The toast"
           },
           {
-            "label": "Sweet potato and beans",
-            "meal": "baked-sweet-potato"
+            "text": "Bake sweet potatoes until the sugar runs and fill them with warm beans.",
+            "dish": "sweet-potatoes-black-beans",
+            "dish_label": "The sweet potatoes"
           },
           {
-            "label": "Hash with eggs",
-            "meal": "skillet-hash"
+            "text": "Cube any leftover squash or potato, crisp it in a skillet, and crack eggs into the pan."
           }
         ]
       }
@@ -362,6 +336,45 @@
       "how": "Torn dates and crumbled feta, a pinch of chile so it isn't dessert."
     }
   ],
+  "dishes": [
+    {
+      "slug": "crispy-lamb-kabocha",
+      "line": "Rich, sour, sweet, and crisp in every forkful."
+    },
+    {
+      "slug": "pork-tenderloin-date-relish",
+      "line": "Lean pork pulled while pink; the relish brings the richness."
+    },
+    {
+      "slug": "sausages-peppers-ajvar",
+      "line": "One pan, sausage fat roasting the vegetables. Ajvar on the side."
+    },
+    {
+      "slug": "rockfish-tacos",
+      "line": "Seared fish, cold lime yogurt, pomegranate for salsa."
+    },
+    {
+      "slug": "ajvar-egg-toast",
+      "line": "Ten minutes. The jar turns two eggs into dinner."
+    },
+    {
+      "slug": "sweet-potatoes-black-beans",
+      "line": "Baked until the sugar runs, then smoke and something cool."
+    },
+    {
+      "slug": "seared-rockfish-brown-butter",
+      "line": "October's lesson: a hard sear and brown butter."
+    }
+  ],
+  "redirects": {
+    "weekend": "meals/seared-rockfish-brown-butter/",
+    "meals/warm-plate": "meals/crispy-lamb-kabocha/",
+    "meals/sheet-pan-dinner": "meals/sausages-peppers-ajvar/",
+    "meals/fish-tacos": "meals/rockfish-tacos/",
+    "meals/toast-for-dinner": "meals/ajvar-egg-toast/",
+    "meals/baked-sweet-potato": "meals/sweet-potatoes-black-beans/",
+    "meals/skillet-hash": "#meals"
+  },
   "guides": [
     {
       "id": "jerome",
@@ -396,7 +409,7 @@
       "slug": "kabocha-squash",
       "name": "Kabocha squash",
       "month": "October",
-      "tile_uses": "Sheet-pan dinner, the warm plate, the weekend",
+      "tile_uses": "Crispy lamb, sausages and peppers, the weekend dish",
       "why_now": "Kabocha is the squash that comes after the thin-skinned early ones — dense, dry, and sweeter than butternut. It's picked now and actually improves after a few weeks on the counter, which makes it the first thing in the year you can buy in October and cook in November.",
       "how_to_choose": [
         "Dark green, dull rather than shiny — shine means it was picked early",
@@ -434,10 +447,10 @@
         }
       ],
       "weekday_uses": [
-        "On the sheet pan with chicken sausage and peppers",
-        "On the warm plate with ground lamb and yogurt",
-        "Cold from the fridge, with salt and a squeeze of lemon",
-        "Leftover wedges, cubed into the skillet hash"
+        "Roasted in wedges under crispy lamb and yogurt",
+        "On one pan with sausages and peppers",
+        "Under seared rockfish and brown butter",
+        "Cold from the fridge, with salt and a squeeze of lemon"
       ],
       "weekend_use": "Roasted in wedges, under the seared rockfish and brown butter.",
       "storage": "Whole, somewhere cool and dry for up to two months — it gets sweeter over the first few weeks. Once cut, wrap it and refrigerate; use within five days.",
@@ -448,7 +461,7 @@
       "slug": "red-bell-peppers",
       "name": "Red bell peppers",
       "month": "October",
-      "tile_uses": "The ajvar, the sheet pan, raw with salt",
+      "tile_uses": "The ajvar, sausages and peppers, roast pork",
       "why_now": "A red pepper is a green pepper left on the plant long enough to ripen, and by the end of the season that's most of what's left. Early fall is when California's red peppers are sweetest and often cheapest. By November they'll be shipped from farther away and priced like it.",
       "how_to_choose": [
         "Glossy, firm, and heavy for their size",
@@ -486,9 +499,9 @@
       ],
       "weekday_uses": [
         "Charred and cooked down into the ajvar",
-        "In strips on the sheet pan with sausage and squash",
-        "Sliced raw, with salt, while dinner cooks",
-        "Diced into the skillet hash"
+        "Roasted on one pan with sausages and kabocha",
+        "Roasted with sweet potatoes beside the pork",
+        "Sliced raw, with salt, while dinner cooks"
       ],
       "weekend_use": "Charred on Saturday, cooked down into a jar of ajvar that carries the week.",
       "storage": "Unwashed in the crisper for a week to ten days. Charred and peeled, four days in the fridge.",
@@ -499,7 +512,7 @@
       "slug": "sweet-potatoes",
       "name": "Sweet potatoes",
       "month": "October",
-      "tile_uses": "Baked as dinner, the skillet hash, the sheet pan",
+      "tile_uses": "Baked with black beans, roast pork",
       "why_now": "California's sweet potatoes are dug in September and October, most of them in the Central Valley around Merced, then stored through the winter. The new crop is on shelves now. It's the basket's filling one: a starch that keeps for weeks and makes a dinner on its own.",
       "how_to_choose": [
         "Firm from end to end, with no soft or wet tips",
@@ -535,12 +548,12 @@
         }
       ],
       "weekday_uses": [
-        "Baked whole, split, with salted yogurt, black beans, and ajvar",
-        "Cubed on the sheet pan with sausage instead of kabocha",
-        "Under a fried egg, with arugula",
-        "Cubed and crisped in the skillet hash, with an egg on top"
+        "Baked until the sugar runs, filled with beans and ajvar",
+        "Cubed and roasted beside pork tenderloin",
+        "Leftover, cubed, crisped in a skillet with an egg",
+        "Cold, with a squeeze of lime"
       ],
-      "weekend_use": "Bake two extra while the oven's on for the weekend meal. They're Monday's dinner.",
+      "weekend_use": "Bake two extra while the oven's on for the weekend dish. They're Monday's dinner.",
       "storage": "Somewhere cool and dark, not the fridge — cold makes the centers hard and off-tasting. They keep three weeks or more.",
       "one_thing_to_learn": "A baked sweet potato is done well after it's merely soft. Keep going — an hour at 400°F — until the skin puffs away from the flesh and syrup starts to bead out and caramelize on the pan. That's the starch turning to sugar, and it's the difference between a side and a meal.",
       "market_question": "Is this the new crop?"
@@ -549,7 +562,7 @@
       "slug": "arugula",
       "name": "Arugula",
       "month": "October",
-      "tile_uses": "The warm plate, tacos, toast, the salad",
+      "tile_uses": "The tacos, the toast, the October salad",
       "why_now": "Arugula is a cool-weather green. In summer heat it bolts and turns harsh; planted in September, it's ready in October with a gentler, peppery bite. It's the first green in months that tastes like it wanted to grow.",
       "how_to_choose": [
         "Small leaves are milder than big, deeply lobed ones",
@@ -588,10 +601,10 @@
         }
       ],
       "weekday_uses": [
-        "On the warm plate over roasted squash and rice",
-        "In fish tacos in place of lettuce",
-        "On top of toast with ajvar and an egg",
-        "Beside a baked sweet potato, dressed with lemon"
+        "In rockfish tacos in place of lettuce",
+        "Dressed with lemon on ajvar toast",
+        "Under roast pork and its relish",
+        "On top of crispy lamb and yogurt"
       ],
       "weekend_use": "The base of the October salad: arugula, pomegranate, torn dates, and feta, dressed at the last second.",
       "storage": "Unwashed, wrapped in a dry paper towel inside a bag, in the crisper. Three or four days. Wash it right before using.",
@@ -602,7 +615,7 @@
       "slug": "pomegranates",
       "name": "Pomegranates",
       "month": "October",
-      "tile_uses": "The warm plate, tacos, the drink, the salad",
+      "tile_uses": "Crispy lamb, the tacos, the drink, the salad",
       "why_now": "California grows nearly all of the country's pomegranates, and the harvest runs from late September into November. In October they're heavy, cheap by the piece, and in every produce section. By spring, the only ones left are imported.",
       "how_to_choose": [
         "Heavy for its size — weight is juice",
@@ -639,9 +652,9 @@
         }
       ],
       "weekday_uses": [
-        "Over the warm plate with lamb and yogurt",
-        "On fish tacos, in place of salsa",
-        "Over a baked sweet potato",
+        "Over crispy lamb and yogurt",
+        "On rockfish tacos, in place of salsa",
+        "In the October salad with dates and feta",
         "On Greek yogurt with chopped dates, for breakfast"
       ],
       "weekend_use": "Half a pomegranate's seeds in the October salad, beside the seared fish.",
@@ -653,7 +666,7 @@
       "slug": "fresh-dates",
       "name": "Medjool dates",
       "month": "October",
-      "tile_uses": "The warm plate, the salad, breakfast",
+      "tile_uses": "Crispy lamb, the pork relish, the salad",
       "why_now": "Nearly every Medjool in the country is grown in the desert two hours from here, in the Coachella and Bard valleys, and they're picked from late summer through October. The ones arriving now are this year's — soft, glossy, and much better than the ones that have been sitting since last fall.",
       "how_to_choose": [
         "Plump and glossy, with skin that clings to the fruit",
@@ -687,10 +700,10 @@
         }
       ],
       "weekday_uses": [
-        "Torn over the warm plate with lamb",
-        "Chopped over Greek yogurt with pomegranate",
-        "Split and salted, after dinner",
-        "With a little feta, as dessert"
+        "Warmed with crispy lamb",
+        "Chopped into the date-feta relish for pork",
+        "Torn into the October salad",
+        "Split and salted, after dinner"
       ],
       "weekend_use": "Torn into the October salad, beside the seared fish.",
       "storage": "In the fridge in a closed container for up to six months, or the counter for a few weeks. Cold dates firm up; let them sit out before eating.",
@@ -701,7 +714,7 @@
       "slug": "rockfish",
       "name": "Rockfish fillets",
       "month": "October",
-      "tile_uses": "The weekend meal, midweek fish tacos",
+      "tile_uses": "The tacos, the weekend dish",
       "why_now": "Rockfish is the local fish that gets more reliable as the water cools in fall: dozens of species, all mild and firm, and usually cheaper than salmon. It's sold at most fish counters in Southern California, sometimes as rock cod or Pacific snapper. This is the month to buy it instead of the usual.",
       "how_to_choose": [
         "Glossy and slightly translucent, not dull or dry",
@@ -726,7 +739,7 @@
       "flavor_paths": [
         {
           "name": "Seared",
-          "description": "Hot pan, hands off, brown butter. The weekend meal."
+          "description": "Hot pan, hands off, brown butter. The weekend dish."
         },
         {
           "name": "Flaked",
@@ -738,11 +751,11 @@
         }
       ],
       "weekday_uses": [
-        "Seared and flaked into fish tacos",
-        "Seared over rice with arugula and lemon",
+        "Seared and flaked into tacos with lime yogurt",
+        "Seared with brown butter, the weekend dish",
         "Leftovers, cold, on toast with lemon and olive oil"
       ],
-      "weekend_use": "Seared hard and finished in brown butter, over roasted kabocha. The weekend meal.",
+      "weekend_use": "Seared hard and finished in brown butter, over roasted kabocha. The weekend dish.",
       "storage": "Cook it the day you buy it, or the next. Keep it in the coldest part of the fridge, on a plate, loosely covered.",
       "one_thing_to_learn": "Rockfish cooks fast and forgives little, so it's the right fish to learn the sear on. It's done when the flesh turns opaque all the way through and flakes when you press it with a fork — usually three or four minutes on the first side and one or two on the second. When in doubt, take it off; it keeps cooking on the plate.",
       "market_question": "What came in today?"

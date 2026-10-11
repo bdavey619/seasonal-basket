@@ -1,0 +1,53 @@
+{
+  "slug": "ajvar-egg-toast",
+  "name": "Ajvar toast with fried eggs and arugula",
+  "display_name": "Ajvar toast with eggs",
+  "kind": "Meatless",
+  "time": "10 minutes",
+  "time_short": "10 min",
+  "yield": "Dinner for one",
+  "intro": "Sourdough fried crisp in olive oil, spread thick with smoky ajvar, topped with two runny eggs and a pile of lemony arugula. The jar does the work.",
+  "needs": [
+    "2 thick slices of sourdough",
+    "Ajvar, 2–3 big spoonfuls",
+    "2 eggs",
+    "A handful of arugula",
+    "½ lemon",
+    "Olive oil and flaky salt"
+  ],
+  "steps": [
+    {
+      "cue": "2–3 min a side",
+      "text": "Heat 2 tbsp olive oil in a skillet. Lay the bread in, press it down, and toast until golden and crisp on both sides."
+    },
+    {
+      "cue": "3 min",
+      "text": "Crack the eggs into the same pan and cook until the whites set and the yolks are still runny."
+    },
+    {
+      "text": "Spread the ajvar thick on the hot toast."
+    },
+    {
+      "text": "Toss the arugula with lemon, olive oil, and a pinch of salt."
+    },
+    {
+      "cue": "Finish",
+      "text": "Egg on each toast, arugula over it, flaky salt."
+    }
+  ],
+  "how_it_works": "A great jar turns two eggs into dinner. Ajvar is smoky and sweet, the runny yolk turns it into a sauce, and lemony arugula keeps it from feeling heavy. Any thick, flavorful spread works the same way — this is a template for every month's jar.",
+  "swaps": [
+    "Leftover lamb or flaked rockfish on top instead of the eggs.",
+    "A spoonful of salted yogurt under the ajvar for something cool.",
+    "Crumble feta over the top."
+  ],
+  "leftovers": "Toast doesn't keep. Make it fresh.",
+  "linked_house_flavor": "ajvar",
+  "linked_field_notes": [
+    "october-peppers"
+  ],
+  "linked_ingredients": [
+    "arugula",
+    "red-bell-peppers"
+  ]
+}

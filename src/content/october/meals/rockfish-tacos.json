@@ -1,0 +1,60 @@
+{
+  "slug": "rockfish-tacos",
+  "name": "Rockfish tacos with pomegranate and lime yogurt",
+  "display_name": "Rockfish tacos",
+  "kind": "Weeknight",
+  "time": "20 minutes",
+  "time_short": "20 min",
+  "yield": "Dinner for one, about six tacos",
+  "intro": "Mild local rockfish seared hard and flaked into warm tortillas with peppery arugula, cold lime yogurt, and pomegranate that bursts like salsa.",
+  "needs": [
+    "1 lb rockfish fillets",
+    "12 corn tortillas — two per taco",
+    "½ cup Greek yogurt",
+    "1 lime",
+    "Seeds of ½ pomegranate",
+    "2 handfuls of arugula",
+    "Olive oil and salt"
+  ],
+  "steps": [
+    {
+      "cue": "10 min",
+      "text": "Salt the fish and leave it on a plate. Pat it completely dry right before it goes in the pan."
+    },
+    {
+      "text": "Stir the zest of the lime, half its juice, and a pinch of salt into the yogurt."
+    },
+    {
+      "cue": "Tortillas",
+      "text": "Warm the tortillas in a dry pan until they blister in spots. Stack them under a towel."
+    },
+    {
+      "cue": "3–4 min",
+      "text": "Heat a thin film of oil in a heavy skillet until it shimmers. Lay the fish in, away from you, and don't touch it until it lets go of the pan on its own."
+    },
+    {
+      "cue": "1–2 min",
+      "text": "Flip, cook until opaque all the way through, then flake it in the pan with a fork."
+    },
+    {
+      "cue": "Finish",
+      "text": "Two tortillas, fish, arugula, a spoonful of lime yogurt, pomegranate on top, the rest of the lime squeezed over."
+    }
+  ],
+  "how_it_works": "A mild fish tastes of very little on its own, so everything around it is sharp, cold, or peppery: lime, yogurt, pomegranate, arugula. The sear is the technique — dry fish, hot pan, hands off — and it works on any firm fillet.",
+  "swaps": [
+    "Any firm white fish — cod or halibut — works the same way.",
+    "For heat, warm olive oil with garlic and chile flakes and spoon it over instead of the yogurt.",
+    "Smear ajvar on the tortillas first for smoke."
+  ],
+  "leftovers": "Leftover fish is good cold the next day, on toast with lemon and olive oil.",
+  "linked_house_flavor": "ajvar",
+  "linked_field_notes": [
+    "dry-hot-hands-off"
+  ],
+  "linked_ingredients": [
+    "rockfish",
+    "pomegranates",
+    "arugula"
+  ]
+}

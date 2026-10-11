@@ -13,7 +13,7 @@ Do these in order. Each step depends on the one before; the reasons behind each 
    - *Cut and weather:* which cut suits the month's weather? Quick, lean cuts when it's warm; long-cooked cuts when it's cool. Seafood seasonality is literal — name it. Meat seasonality usually isn't — say so, and choose the cut for the weather.
    One of the proteins is the month's cut: the new one the weekend meal teaches.
 4. **Choose the method and, only if one is genuinely coming back into use, a tool.** The method is taught by the weekend meal and named in one Field Note that points to next month.
-5. **Choose the meal formats.** Five or six simple shapes that suit the weather, including one leftovers format. Every protein must have two or three formats it works in; every format must be reachable from at least one protein.
+5. **Choose the dishes.** Six or seven specific dishes that suit the weather and the basket, including the weekend dish and at least one meatless one. Then write the instinct rows from them: each protein's pairing line and two or three moves, linking the moves the dishes demonstrate. Every dish must be linked from the edition page; the build checks.
 6. **Choose three or four flavors.** Each is two or three things from the shopping list, defined once (what it is, how to do it). Give each protein its two best flavors, following from its pairing line.
 7. **Write the shopping list and close it.** Basket, proteins (with amounts, meals, and pairing line), "Also buy," and "From your kitchen." Pick one cheese, one citrus, one tortilla. Then read every page — meals, jar, drink, weekend meal, ingredient pages — and remove or list anything not on those lines.
 8. **Set the quantities.** One active cook with a big appetite, dinner every night, leftovers for lunch most days: roughly 8 oz of raw protein per meal. State it in the basket card's "feeds" line.
@@ -88,6 +88,18 @@ Two rules for every edition, from October on:
 
 - **Everything in the basket comes from one store.** A normal, well-stocked supermarket is the reference (Whole Foods, in practice). If an ingredient is only reliable at a specialty market, it doesn't go in the basket — save it for a month that is deliberately about that store. When a fish or cut may be out, name the substitute that works in every meal.
 - **The shopping list is closed.** Every ingredient the edition mentions — in meals, the jar, the drink, the weekend meal, the ingredient pages — is either in the basket, on the "Also buy" line, or on the "From your kitchen" line, all shown in the basket card. No optional extras that aren't on a list (no "a splash of mezcal," no "if you have cotija"). Pick one cheese, one citrus, one tortilla, and use them everywhere. Before publishing, read every page against those three lines.
+
+## Dishes First, Instinct Underneath
+
+The meals section has two halves that teach each other.
+
+**The month's dishes (inspiration).** Six or seven specific, named dishes — mostly weeknight, at least one meatless, and the weekend dish, which is where the month's cut and method are taught (there is no separate weekend section). Each commits to one protein, one method, one flavor, and the month's produce, and has a name that lets you picture the plate: "Crispy lamb over yogurt with kabocha, pomegranate, and dates," not "Warm plate." Choose them by hand for culinary sense and real precedent; never generate them from every combination the data allows. Each dish page is a cooking card that ends with **How it works** (the formula and the why, in two or three sentences) and **Make it your own** (two or three intentional swaps).
+
+**Cook by instinct (intuition).** One row per protein (plus eggs and beans): its pairing line, two or three one-sentence moves — method, flavor, produce — and the flavors it's best with. Where a move is what a dish is built on, it links to that dish. Leftover moves live here too ("cube it, crisp it, crack an egg on top"); they don't need pages.
+
+A great dish inspires you to cook; its "How it works" teaches you to cook it without the page. The instinct rows point back to a dish that shows each idea in practice.
+
+**Retiring a page.** Once an edition is live, its URLs may be bookmarked. When a page is removed or renamed, add the old path to the edition's `redirects` (old path → replacement, relative to the edition) so the build leaves a forwarding page behind.
 
 ## Meal Formats Change With the Season
 

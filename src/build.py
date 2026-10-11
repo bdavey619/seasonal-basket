@@ -257,6 +257,57 @@ def render_tonight(tonight, flavors, edition_slug, depth, meal_slugs):
             href = rel(depth, f"{edition_slug}/meals/{target}/")
         return f'<a href="{href}">{e(w["label"])}</a>'
 
+    def best_links(opt):
+        out = []
+        for fs in opt.get("best_with", []):
+            if fs not in flavors_by_slug:
+                fail(f"tonight: '{opt['name']}' names unknown flavor '{fs}'")
+            out.append(f'<a href="#flavor-{e(fs)}">{e(flavors_by_slug[fs]["name"])}</a>')
+        return out
+
+    # Editions that carry `moves` get the instinct layout: each protein's
+    # pairing line, then a few one-sentence moves (method + flavor + produce),
+    # each linking to the dish that demonstrates it.
+    if any("moves" in opt for opt in tonight["options"]):
+        rows = []
+        for opt in tonight["options"]:
+            moves = []
+            for mv in opt["moves"]:
+                link = ""
+                if mv.get("dish"):
+                    if mv["dish"] not in meal_slugs:
+                        fail(f"tonight: move for '{opt['name']}' points to unknown dish '{mv['dish']}'")
+                    dish_href = rel(depth, f"{edition_slug}/meals/{mv['dish']}/")
+                    link = (f' <a class="instinct-dish" href="{dish_href}">'
+                            f'{e(mv["dish_label"])} →</a>')
+                moves.append(f'<li>{e(mv["text"])}{link}</li>')
+            best = best_links(opt)
+            best_html = (f'<p class="instinct-best"><span class="pairs-label">Best with</span> '
+                         f'{" · ".join(best)}</p>') if best else ""
+            rows.append(f"""
+        <div class="instinct-row">
+          <h3 class="instinct-name">{e(opt['name'])}</h3>
+          <p class="instinct-why">{e(opt['why'])}</p>
+          <ul class="instinct-moves">{"".join(moves)}</ul>
+          {best_html}
+        </div>""")
+        flavor_rows = "".join(f"""
+        <li class="flavor-row" id="flavor-{e(f['slug'])}">
+          <span class="flavor-name">{e(f['name'])}</span>
+          <span class="flavor-what">{e(f['what'])}</span>
+          <span class="flavor-how">{e(f['how'])}</span>
+        </li>""" for f in flavors)
+        return f"""
+        <div class="instinct-head">
+          <h2 class="instinct-title" id="instinct-heading">{e(tonight.get('heading', 'Or cook by instinct'))}</h2>
+          <p class="section-dek">{e(tonight.get('dek', ''))}</p>
+        </div>
+        <div class="instinct">{"".join(rows)}
+        </div>
+        <div class="meal-adds-sublabel flavors-label">{e(tonight.get('flavors_label', 'The flavors'))}</div>
+        <ul class="flavors">{flavor_rows}
+        </ul>"""
+
     rows = []
     for opt in tonight["options"]:
         ways = '<span class="tonight-sep"> · </span>'.join(way_link(w) for w in opt["ways"])
@@ -286,6 +337,29 @@ def render_tonight(tonight, flavors, edition_slug, depth, meal_slugs):
         </div>
         <div class="meal-adds-sublabel flavors-label">{e(tonight.get('flavors_label', 'The flavors'))}</div>
         <ul class="flavors">{flavor_rows}
+        </ul>"""
+
+def render_dishes(dishes, meals_by_slug, edition_slug, depth):
+    """
+    The month's dishes: a short, hand-picked list of specific meals worth
+    cooking, each a link to its cooking card. Inspiration first; the instinct
+    rows below explain how they work.
+    """
+    rows = []
+    for d in dishes:
+        meal = meals_by_slug.get(d["slug"])
+        if not meal:
+            fail(f"dishes: '{d['slug']}' has no meal page")
+        href = rel(depth, f"{edition_slug}/meals/{d['slug']}/")
+        meta = " · ".join(x for x in [meal.get("kind"), meal.get("time_short")] if x)
+        rows.append(f"""
+        <li class="dish">
+          <a class="dish-name" href="{href}">{e(meal['name'])}</a>
+          <span class="dish-meta">{e(meta)}</span>
+          <span class="dish-line">{e(d['line'])}</span>
+        </li>""")
+    return f"""
+        <ul class="dishes">{"".join(rows)}
         </ul>"""
 
 # ── Week buckets ───────────────────────────────────────────────────────────────
@@ -340,7 +414,7 @@ def render_bring_home(bring_home, ingredients_data, featured, depth, ing_index_p
         inner = (f"""
           <span class="bring-home-name">{e(item['name'])}</span>
           <span class="bring-home-qty">{e(item['qty'])}</span>
-          <span class="bring-home-note">{e(note)}</span>
+          {f'<span class="bring-home-note">{e(note)}</span>' if note else ""}
           {uses_html}""")
         if slug:
             href = rel(depth, f"{base}/{slug}/")
@@ -359,7 +433,7 @@ def render_bring_home(bring_home, ingredients_data, featured, depth, ing_index_p
     proteins = bring_home.get("proteins") or []
     protein_html = ""
     if proteins:
-        protein_rows = "".join(row(pr, pr["why"], pr.get("uses", "")) for pr in proteins)
+        protein_rows = "".join(row(pr, pr.get("why", ""), pr.get("uses", "")) for pr in proteins)
         protein_html = f"""
 <p class="bring-home-group">Proteins</p>
 <div class="bring-home-list">{protein_rows}</div>"""
@@ -1134,8 +1208,15 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
       </aside>""" if ritual else ""
 
     drink        = edition["drink"]
-    weekend      = edition["weekend_meal"]
-    if edition.get("tonight"):
+    # The weekend meal is optional: an edition can fold it into its dishes.
+    weekend      = edition.get("weekend_meal")
+    if not weekend:
+        jump_entries = [j for j in jump_entries if j[0] != "weekend"]
+    if edition.get("dishes"):
+        meals_body = (render_dishes(edition["dishes"], meals_by_slug or {}, slug, depth)
+                      + render_tonight(edition["tonight"], edition.get("flavors", []), slug,
+                                       depth, set(meals_by_slug or {})))
+    elif edition.get("tonight"):
         meals_body = render_tonight(edition["tonight"], edition.get("flavors", []), slug,
                                     depth, set(meals_by_slug or {}))
     else:
@@ -1150,6 +1231,12 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
     field_notes_href = rel(depth, f"{slug}/field-notes/")
     drink_href   = rel(depth, f"{slug}/{drink['slug']}/")
     weekend_href = rel(depth, f"{slug}/weekend/")
+    weekend_html = f"""
+      <article class="section col-12" id="weekend" aria-labelledby="weekend-heading">
+        {render_linkout("The weekend meal", weekend['name'], weekend['intro'],
+                        weekend['card_line'], weekend_href, "Make the weekend meal", "weekend-heading")}
+      </article>
+""" if weekend else ""
 
     body = f"""
     <section class="hero" aria-label="{e(month)} edition">
@@ -1192,12 +1279,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
                         drink['card_line'], drink_href, "Make the drink", "drink-heading")}
       </article>
 {ritual_html}
-
-      <article class="section col-12" id="weekend" aria-labelledby="weekend-heading">
-        {render_linkout("The weekend meal", weekend['name'], weekend['intro'],
-                        weekend['card_line'], weekend_href, "Make the weekend meal", "weekend-heading")}
-      </article>
-
+{weekend_html}
       <aside class="section section--aside col-12" id="notice" aria-label="One thing to notice">
         <div class="section-label">One thing to notice</div>
         <h2>{e(edition['one_thing_to_notice']['headline'])}</h2>
@@ -1405,6 +1487,31 @@ def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_
         f"""
           <li class="cook-step"><span class="cook-step-text">{e(st['text'])}</span></li>"""
         for st in meal["steps"])
+    # Formula meals open with protein and flavor pickers; a dish commits to
+    # one combination and instead closes by explaining itself — how it works,
+    # and a few intentional swaps — so the next time needs no recipe.
+    pickers = f"""
+      <section aria-labelledby="protein-heading" class="cook-section">
+        <h2 id="protein-heading"><span class="cook-num">1</span> Pick a protein</h2>
+        <ul class="cook-choices">{protein_rows}
+        </ul>
+      </section>
+
+      <section aria-labelledby="flavor-heading" class="cook-section">
+        <h2 id="flavor-heading"><span class="cook-num">2</span> Pick a flavor</h2>
+        <ul class="cook-choices">{"".join(flavor_rows)}
+        </ul>
+      </section>
+""" if meal.get("proteins") else ""
+    how_html = ""
+    if meal.get("how_it_works"):
+        swaps = "".join(f"<li>{e(sw)}</li>" for sw in meal.get("swaps", []))
+        how_html = f"""
+        <section aria-labelledby="how-heading" class="cook-section cook-how">
+          <h2 id="how-heading">How it works</h2>
+          <p class="cook-how-text">{e(meal['how_it_works'])}</p>
+          {f'<h3 class="cook-swaps-title">Make it your own</h3><ul class="checklist">{swaps}</ul>' if swaps else ""}
+        </section>"""
     leftovers = (f"""
         <section aria-labelledby="leftovers-heading" class="cook-section">
           <h2 id="leftovers-heading">Leftovers</h2>
@@ -1417,30 +1524,18 @@ def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_
     </div>
 
     <div class="meal-header cook-header">
-      <div class="section-label">{e(month)} · weeknight</div>
+      <div class="section-label">{e(month)} · {e((meal.get('kind') or 'weeknight').lower())}</div>
       <h1>{e(meal.get('display_name', meal['name']))}</h1>
       <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:680px">{e(meal['intro'])}</p>
       {f'<p class="cook-meta">{meta}</p>' if meta else ""}
       <button type="button" class="cook-wake" hidden>Keep screen on while cooking</button>
     </div>
 
-    <div class="cook-card">
-      <section aria-labelledby="protein-heading" class="cook-section">
-        <h2 id="protein-heading"><span class="cook-num">1</span> Pick a protein</h2>
-        <ul class="cook-choices">{protein_rows}
-        </ul>
-      </section>
-
-      <section aria-labelledby="flavor-heading" class="cook-section">
-        <h2 id="flavor-heading"><span class="cook-num">2</span> Pick a flavor</h2>
-        <ul class="cook-choices">{"".join(flavor_rows)}
-        </ul>
-      </section>
-
+    <div class="cook-card">{pickers}
       <section aria-labelledby="needs-heading" class="cook-section">
         <h2 id="needs-heading">You'll need</h2>
         <ul class="checklist">{needs}</ul>
-        <p class="cook-hint">Plus your protein and your flavor.</p>
+        {'<p class="cook-hint">Plus your protein and your flavor.</p>' if pickers else ""}
       </section>
 
       <section aria-labelledby="steps-heading" class="cook-section">
@@ -1449,7 +1544,7 @@ def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_
         <ol class="cook-steps">{steps}
         </ol>
       </section>
-      {leftovers}
+      {leftovers}{how_html}
     </div>
 
     <script>
@@ -1653,6 +1748,24 @@ def verify(edition_slug, ingredient_slugs, meal_slugs, house_flavor_slugs, ing_i
 
 HREF_RE = re.compile(r'href="([^"]*)"')
 
+def build_redirect_page(target, canonical_url):
+    """A page that has moved. Forwards immediately, with a plain link as fallback."""
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url={e(target)}">
+  <link rel="canonical" href="{e(canonical_url)}">
+  <title>Moved — Seasonal</title>
+</head>
+<body>
+  <p>This page has moved. <a href="{e(target)}">Continue</a>.</p>
+</body>
+</html>
+"""
+
+
 def verify_links():
     """
     Walk every built page and confirm each internal link resolves to a real file.
@@ -1840,11 +1953,19 @@ def build_edition(edition_dir_name):
     write_page(SITE / edition_slug / "field-notes" / "index.html", fn_html)
 
     # Weekend meal page — fixed slug so the masthead link is stable across editions
-    weekend_html = build_weekend_page(
-        edition, depth=2, canonical_url=f"{base_url}/{edition_slug}/weekend/",
-        edition_context=edition_context,
-    )
-    write_page(SITE / edition_slug / "weekend" / "index.html", weekend_html)
+    if edition.get("weekend_meal"):
+        weekend_html = build_weekend_page(
+            edition, depth=2, canonical_url=f"{base_url}/{edition_slug}/weekend/",
+            edition_context=edition_context,
+        )
+        write_page(SITE / edition_slug / "weekend" / "index.html", weekend_html)
+
+    # Retired URLs — a small page at each old path that forwards to its replacement
+    for old_path, new_path in edition.get("redirects", {}).items():
+        depth  = old_path.strip("/").count("/") + 2
+        target = rel(depth, f"{edition_slug}/{new_path}")
+        write_page(SITE / edition_slug / old_path.strip("/") / "index.html", build_redirect_page(
+            target, f"{base_url}/{edition_slug}/{new_path}"))
 
     # Consolidated snapshot
     build_content_snapshot(edition, guides, ingredients_data)
@@ -1854,7 +1975,8 @@ def build_edition(edition_dir_name):
         edition_slug,
         ingredient_slugs=ingredient_slugs,
         meal_slugs=meal_slugs,
-        house_flavor_slugs=hf_slugs_built + [drink_slug, "weekend", "field-notes"],
+        house_flavor_slugs=hf_slugs_built + [drink_slug, "field-notes"]
+                           + (["weekend"] if edition.get("weekend_meal") else []),
         ing_index_dir=str(ing_index_dir),
     )
 

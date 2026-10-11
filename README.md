@@ -19,7 +19,7 @@ Each monthly edition includes:
 
 - A short opening note
 - The seasonal basket — six to eight ingredients worth organizing a week around
-- Meal formats — a handful of simple meal shapes that suit the month, each with three ways to finish it
+- The month's dishes — six or seven specific meals worth cooking, each explaining how it works — and a cook-by-instinct guide to each protein
 - Field Notes — short pieces, each a secret worth knowing
 - At least one House Flavor: a make-once jar that improves meals all week
 - One weekend meal — where the month's new cut and method are taught

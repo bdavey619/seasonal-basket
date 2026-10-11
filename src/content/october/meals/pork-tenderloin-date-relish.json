@@ -1,0 +1,61 @@
+{
+  "slug": "pork-tenderloin-date-relish",
+  "name": "Roast pork tenderloin with sweet potatoes and date-feta relish",
+  "display_name": "Pork tenderloin with date-feta relish",
+  "kind": "Weeknight",
+  "time": "40 minutes",
+  "time_short": "40 min",
+  "yield": "Dinner tonight and two lunches",
+  "intro": "A whole tenderloin roasted beside sweet potatoes, sliced while it's still blushing pink, and covered in a salty, sweet relish of dates, feta, lemon, and chile.",
+  "needs": [
+    "1 pork tenderloin, about 1¼ lbs",
+    "2 sweet potatoes, in 1-inch cubes",
+    "1 red bell pepper, in strips",
+    "6 Medjool dates, pitted and chopped",
+    "2 oz feta, crumbled",
+    "1 lemon",
+    "Chile flakes",
+    "Olive oil and salt",
+    "Arugula, to serve"
+  ],
+  "steps": [
+    {
+      "cue": "425°F",
+      "text": "Heat the oven. Toss the sweet potatoes and pepper with oil and salt and spread them on a sheet pan."
+    },
+    {
+      "cue": "10 min",
+      "text": "Roast the vegetables on their own first."
+    },
+    {
+      "cue": "20–25 min",
+      "text": "Rub the pork with oil and salt and lay it in the middle of the pan. Roast until the center is just pink."
+    },
+    {
+      "text": "Meanwhile, make the relish: the dates, the feta, the zest and juice of the lemon, a pinch of chile flakes, and 3 tbsp olive oil, stirred together."
+    },
+    {
+      "cue": "Rest 5 min",
+      "text": "Take the pork out at 145°F, or when it's just pink in the middle, and let it rest before slicing."
+    },
+    {
+      "cue": "Finish",
+      "text": "Slice it thick over the sweet potatoes and arugula, and spoon the relish over everything."
+    }
+  ],
+  "how_it_works": "Lean meat has almost no fat to keep it juicy or carry flavor, so the richness goes on at the end instead: a relish of olive oil, salty feta, and sweet dates does what a fattier cut would do on its own. The other half of the lesson is pulling it early — pork is at its best slightly pink.",
+  "swaps": [
+    "Thick pork chops, seared hard, take the same relish.",
+    "No feta? Salt the relish a little more.",
+    "Extra relish is good on roasted squash or spread on toast."
+  ],
+  "leftovers": "Sliced pork and sweet potatoes over rice, with the leftover relish, is two lunches.",
+  "linked_house_flavor": "ajvar",
+  "linked_field_notes": [],
+  "linked_ingredients": [
+    "sweet-potatoes",
+    "red-bell-peppers",
+    "fresh-dates",
+    "arugula"
+  ]
+}

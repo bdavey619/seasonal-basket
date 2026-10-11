@@ -2,7 +2,7 @@
   "slug": "arugula",
   "name": "Arugula",
   "month": "October",
-  "tile_uses": "The warm plate, tacos, toast, the salad",
+  "tile_uses": "The tacos, the toast, the October salad",
   "why_now": "Arugula is a cool-weather green. In summer heat it bolts and turns harsh; planted in September, it's ready in October with a gentler, peppery bite. It's the first green in months that tastes like it wanted to grow.",
   "how_to_choose": [
     "Small leaves are milder than big, deeply lobed ones",
@@ -41,10 +41,10 @@
     }
   ],
   "weekday_uses": [
-    "On the warm plate over roasted squash and rice",
-    "In fish tacos in place of lettuce",
-    "On top of toast with ajvar and an egg",
-    "Beside a baked sweet potato, dressed with lemon"
+    "In rockfish tacos in place of lettuce",
+    "Dressed with lemon on ajvar toast",
+    "Under roast pork and its relish",
+    "On top of crispy lamb and yogurt"
   ],
   "weekend_use": "The base of the October salad: arugula, pomegranate, torn dates, and feta, dressed at the last second.",
   "storage": "Unwashed, wrapped in a dry paper towel inside a bag, in the crisper. Three or four days. Wash it right before using.",
