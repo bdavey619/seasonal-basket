@@ -269,6 +269,8 @@ def render_tonight(tonight, flavors, edition_slug, depth, meal_slugs):
     # pairing line, then a few one-sentence moves (method + flavor + produce),
     # each linking to the dish that demonstrates it.
     if any("moves" in opt for opt in tonight["options"]):
+        # Each protein is one closed line (name and pairing reason); opening it
+        # shows the moves, each led by a short label so the list scans.
         rows = []
         for opt in tonight["options"]:
             moves = []
@@ -280,17 +282,23 @@ def render_tonight(tonight, flavors, edition_slug, depth, meal_slugs):
                     dish_href = rel(depth, f"{edition_slug}/meals/{mv['dish']}/")
                     link = (f' <a class="instinct-dish" href="{dish_href}">'
                             f'{e(mv["dish_label"])} →</a>')
-                moves.append(f'<li>{e(mv["text"])}{link}</li>')
-            best = best_links(opt)
+                lead = f'<strong class="instinct-lead">{e(mv["lead"])}.</strong> ' if mv.get("lead") else ""
+                moves.append(f'<li>{lead}{e(mv["text"])}{link}</li>')
+            best = [f'<a class="instinct-chip" href="#flavor-{e(fs)}">{e(flavors_by_slug[fs]["name"])}</a>'
+                    for fs in opt.get("best_with", []) if fs in flavors_by_slug]
+            if len(best) != len(opt.get("best_with", [])):
+                fail(f"tonight: '{opt['name']}' names an unknown flavor")
             best_html = (f'<p class="instinct-best"><span class="pairs-label">Best with</span> '
-                         f'{" · ".join(best)}</p>') if best else ""
+                         f'{"".join(best)}</p>') if best else ""
             rows.append(f"""
-        <div class="instinct-row">
-          <h3 class="instinct-name">{e(opt['name'])}</h3>
-          <p class="instinct-why">{e(opt['why'])}</p>
-          <ul class="instinct-moves">{"".join(moves)}</ul>
-          {best_html}
-        </div>""")
+        <details class="instinct-row">
+          <summary><span class="instinct-name">{e(opt['name'])}</span>
+            <span class="instinct-why">{e(opt['why'])}</span></summary>
+          <div class="instinct-body">
+            <ul class="instinct-moves">{"".join(moves)}</ul>
+            {best_html}
+          </div>
+        </details>""")
         flavor_rows = "".join(f"""
         <li class="flavor-row" id="flavor-{e(f['slug'])}">
           <span class="flavor-name">{e(f['name'])}</span>
@@ -339,11 +347,35 @@ def render_tonight(tonight, flavors, edition_slug, depth, meal_slugs):
         <ul class="flavors">{flavor_rows}
         </ul>"""
 
+def render_plate(colors):
+    """
+    A small drawing of the dish seen from above: a plate with its main
+    ingredients as soft rounds, largest first. A stand-in until the dish has
+    a real photo.
+    """
+    layouts = {
+        2: [(26, 30, 12), (40, 36, 10)],
+        3: [(26, 29, 12), (41, 26, 9), (37, 42, 9)],
+        4: [(25, 29, 12), (41, 25, 8.5), (39, 41, 9), (25, 44, 6.5)],
+        5: [(25, 29, 12), (41, 25, 8.5), (39, 41, 9), (25, 44, 6.5), (33, 17, 5)],
+    }
+    spots = layouts.get(len(colors))
+    if not spots:
+        fail(f"plate: needs 2–5 colors, got {len(colors)}")
+    rounds = "".join(f'<circle cx="{x}" cy="{y}" r="{r}" fill="{e(c)}"/>'
+                     for (x, y, r), c in zip(spots, colors))
+    return (f'<svg class="dish-plate" viewBox="0 0 64 64" aria-hidden="true">'
+            f'<circle class="plate-rim" cx="32" cy="32" r="30"/>'
+            f'<circle class="plate-well" cx="32" cy="32" r="23.5"/>'
+            f'<g class="plate-food">{rounds}</g></svg>')
+
+
 def render_dishes(dishes, meals_by_slug, edition_slug, depth):
     """
     The month's dishes: a short, hand-picked list of specific meals worth
     cooking, each a link to its cooking card. Inspiration first; the instinct
-    rows below explain how they work.
+    rows below explain how they work. Each row carries a picture: the dish's
+    photo once one exists, otherwise a drawing of its plate.
     """
     rows = []
     for d in dishes:
@@ -352,11 +384,23 @@ def render_dishes(dishes, meals_by_slug, edition_slug, depth):
             fail(f"dishes: '{d['slug']}' has no meal page")
         href = rel(depth, f"{edition_slug}/meals/{d['slug']}/")
         meta = " · ".join(x for x in [meal.get("kind"), meal.get("time_short")] if x)
+        if d.get("photo"):
+            photo_src = rel(depth, f"{edition_slug}/{d['photo']}")
+            picture = f'<img class="dish-photo" src="{photo_src}" alt="" loading="lazy">'
+        elif d.get("plate"):
+            picture = render_plate(d["plate"])
+        else:
+            picture = ""
         rows.append(f"""
         <li class="dish">
-          <a class="dish-name" href="{href}">{e(meal['name'])}</a>
-          <span class="dish-meta">{e(meta)}</span>
-          <span class="dish-line">{e(d['line'])}</span>
+          <a class="dish-link" href="{href}">
+            {picture}
+            <span class="dish-text">
+              <span class="dish-meta">{e(meta)}</span>
+              <span class="dish-name">{e(meal['name'])}</span>
+              <span class="dish-line">{e(d['line'])}</span>
+            </span>
+          </a>
         </li>""")
     return f"""
         <ul class="dishes">{"".join(rows)}
@@ -1238,19 +1282,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
       </article>
 """ if weekend else ""
 
-    body = f"""
-    <section class="hero" aria-label="{e(month)} edition">
-      <div>
-        <h1>{e(month)}</h1>
-        {thesis_html}
-        <p class="dek">{e(edition['opening_note'])}</p>
-      </div>
-      {month_card_html}
-    </section>
-
-
-    <div class="grid">
-      <article class="section col-12" id="basket" aria-labelledby="basket-heading">
+    basket_section = f"""      <article class="section col-12" id="basket" aria-labelledby="basket-heading">
         <div class="section-label">The {e(month)} basket</div>
         <h2 id="basket-heading">{e(edition['bring_home']['heading'])}</h2>
         <div class="card card--dark">
@@ -1259,14 +1291,37 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
         </div>
         <a href="{basket_href}" class="house-flavor-cta">→ All {len(edition['featured_ingredients'])} ingredients, in full</a>
       </article>
-
-      <article class="section col-12" id="meals" aria-labelledby="transforms-heading">
+"""
+    meals_section = f"""      <article class="section col-12" id="meals" aria-labelledby="transforms-heading">
         <div class="section-label">The meals</div>
         <h2 id="transforms-heading">{e(edition.get('meals_heading', f'Your usual meals, wearing {month}.'))}</h2>
         <p class="section-dek">{edition_meals_dek}</p>
         {meals_body}
       </article>
+"""
+    # Editions built around dishes lead with them: most visits are "what should
+    # I cook?", and the shopping list is one tap away for the weekly trip.
+    dishes_first = bool(edition.get("dishes"))
+    first_sections = (meals_section + "\n" + basket_section if dishes_first
+                      else basket_section + "\n" + meals_section)
+    if dishes_first:
+        jump_entries.sort(key=lambda j: 0 if j[0] == "meals" else 1)
+    quick_html = ("""
+        <p class="hero-quick"><a href="#meals">What to cook ↓</a><a href="#basket">The shopping list ↓</a></p>""" if dishes_first else "")
 
+    body = f"""
+    <section class="hero" aria-label="{e(month)} edition">
+      <div>
+        <h1>{e(month)}</h1>
+        {thesis_html}
+        <p class="dek">{e(edition['opening_note'])}</p>{quick_html}
+      </div>
+      {month_card_html}
+    </section>
+
+
+    <div class="grid">
+{first_sections}
       <article class="section col-12" id="field-notes" aria-labelledby="field-notes-heading">
         <div class="section-label" id="field-notes-heading">{e(edition.get('field_notes_label', 'Field Notes'))}</div>
         {render_field_note_index(edition['field_notes'], field_notes_href)}
@@ -1959,6 +2014,14 @@ def build_edition(edition_dir_name):
             edition_context=edition_context,
         )
         write_page(SITE / edition_slug / "weekend" / "index.html", weekend_html)
+
+    # Dish photos, once there are any, live beside the edition's content
+    images_dir = content_dir / "images"
+    if images_dir.is_dir():
+        shutil.copytree(images_dir, SITE / edition_slug / "images", dirs_exist_ok=True)
+    for d in edition.get("dishes", []):
+        if d.get("photo") and not (content_dir / d["photo"]).exists():
+            fail(f"dishes: photo '{d['photo']}' for '{d['slug']}' not found in {content_dir}")
 
     # Retired URLs — a small page at each old path that forwards to its replacement
     for old_path, new_path in edition.get("redirects", {}).items():
