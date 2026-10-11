@@ -99,6 +99,8 @@ The meals section has two halves that teach each other.
 
 A great dish inspires you to cook; its "How it works" teaches you to cook it without the page. The instinct rows point back to a dish that shows each idea in practice.
 
+**Retiring a page.** Once an edition is live, its URLs may be bookmarked. When a page is removed or renamed, add the old path to the edition's `redirects` (old path → replacement, relative to the edition) so the build leaves a forwarding page behind.
+
 ## Meal Formats Change With the Season
 
 The repeatable meals are formats, not fixed dishes: a shape with slots (one vegetable, one protein, one pan, a hot oven, the jar after). Each month chooses three to five formats that suit its weather and basket, and each format gets made more than once within the month. A familiar format can carry over when it still fits; none is permanent. Rice bowl, pasta, and tacos were July's through September's — October replaced them with a sheet-pan dinner, a warm plate, fish tacos, toast for dinner, and a baked sweet potato.

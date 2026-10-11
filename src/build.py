@@ -1748,6 +1748,24 @@ def verify(edition_slug, ingredient_slugs, meal_slugs, house_flavor_slugs, ing_i
 
 HREF_RE = re.compile(r'href="([^"]*)"')
 
+def build_redirect_page(target, canonical_url):
+    """A page that has moved. Forwards immediately, with a plain link as fallback."""
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url={e(target)}">
+  <link rel="canonical" href="{e(canonical_url)}">
+  <title>Moved — Seasonal</title>
+</head>
+<body>
+  <p>This page has moved. <a href="{e(target)}">Continue</a>.</p>
+</body>
+</html>
+"""
+
+
 def verify_links():
     """
     Walk every built page and confirm each internal link resolves to a real file.
@@ -1941,6 +1959,13 @@ def build_edition(edition_dir_name):
             edition_context=edition_context,
         )
         write_page(SITE / edition_slug / "weekend" / "index.html", weekend_html)
+
+    # Retired URLs — a small page at each old path that forwards to its replacement
+    for old_path, new_path in edition.get("redirects", {}).items():
+        depth  = old_path.strip("/").count("/") + 2
+        target = rel(depth, f"{edition_slug}/{new_path}")
+        write_page(SITE / edition_slug / old_path.strip("/") / "index.html", build_redirect_page(
+            target, f"{base_url}/{edition_slug}/{new_path}"))
 
     # Consolidated snapshot
     build_content_snapshot(edition, guides, ingredients_data)

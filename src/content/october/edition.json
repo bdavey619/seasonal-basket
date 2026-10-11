@@ -365,5 +365,14 @@
       "slug": "seared-rockfish-brown-butter",
       "line": "October's lesson: a hard sear and brown butter."
     }
-  ]
+  ],
+  "redirects": {
+    "weekend": "meals/seared-rockfish-brown-butter/",
+    "meals/warm-plate": "meals/crispy-lamb-kabocha/",
+    "meals/sheet-pan-dinner": "meals/sausages-peppers-ajvar/",
+    "meals/fish-tacos": "meals/rockfish-tacos/",
+    "meals/toast-for-dinner": "meals/ajvar-egg-toast/",
+    "meals/baked-sweet-potato": "meals/sweet-potatoes-black-beans/",
+    "meals/skillet-hash": "#meals"
+  }
 }
