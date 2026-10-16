@@ -1,0 +1,80 @@
+{
+  "slug": "lamb-meatballs-ajvar",
+  "name": "Lamb and feta meatballs simmered in ajvar, over rice",
+  "display_name": "Lamb meatballs in ajvar",
+  "kind": "Weeknight",
+  "time": "35 minutes",
+  "time_short": "35 min",
+  "yield": "Dinner tonight and a lunch",
+  "intro": "Small lamb meatballs with feta folded in, browned hard, then simmered ten minutes in the jar. Over rice with cold garlicky yogurt and pomegranate, it tastes like it took all afternoon.",
+  "needs": [
+    "1 lb ground lamb",
+    "1 thick slice of sourdough, crust off, torn small",
+    "1 egg",
+    "2 oz feta, crumbled",
+    "2 garlic cloves, grated",
+    "Ajvar, about ½ cup",
+    "½ cup Greek yogurt",
+    "½ lemon",
+    "Seeds of ½ pomegranate",
+    "Rice, cooked, to serve",
+    "Olive oil, chile flakes, and salt"
+  ],
+  "steps": [
+    {
+      "cue": "5 min",
+      "text": "Soak the torn bread in 2 tbsp water until soft, then mash it with a fork. This keeps the meatballs tender."
+    },
+    {
+      "text": "Add the lamb, the egg, the feta, one garlic clove, a pinch of chile flakes, and 1 tsp salt. Mix with your hands just until it holds together, then roll it into about 16 balls."
+    },
+    {
+      "cue": "6–8 min",
+      "text": "Heat 1 tbsp olive oil in a large skillet over medium-high. Brown the meatballs on all sides, turning them as each side crusts. They don't need to be cooked through yet."
+    },
+    {
+      "text": "Pour off all but a spoonful of the fat. Stir the ajvar and ½ cup water into the pan around the meatballs."
+    },
+    {
+      "cue": "Covered · 10 min",
+      "text": "Cover and simmer over medium-low until the meatballs are cooked through (160°F in the middle) and the sauce has thickened. Uncover for the last minute or two if it's thin."
+    },
+    {
+      "text": "Meanwhile, stir the other garlic clove, the lemon juice, and a pinch of salt into the yogurt."
+    },
+    {
+      "cue": "Finish",
+      "text": "Rice, meatballs and sauce over it, a spoonful of garlicky yogurt, and pomegranate on top."
+    }
+  ],
+  "how_it_works": "Brown first, then simmer: the browning gives flavor and a crust, and the gentle simmer cooks the middle without drying it out, while the sauce picks up everything left in the pan. The soaked bread holds moisture inside the meat, so the meatballs stay soft. A short simmer is a weeknight cousin of a braise — the slow version waits for November.",
+  "swaps": [
+    "Make them with ground chicken or pork; the method doesn't change.",
+    "Pile them into toasted sourdough instead of over rice.",
+    "Swap the yogurt for crumbled feta and a squeeze of lemon."
+  ],
+  "leftovers": "They're better the next day. Reheat gently in their sauce, covered, with a splash of water, and have them over rice for lunch.",
+  "linked_house_flavor": "ajvar",
+  "linked_field_notes": [],
+  "linked_ingredients": [
+    "pomegranates",
+    "red-bell-peppers"
+  ],
+  "sources": [
+    {
+      "title": "Lamb Meatballs with Spicy Tomato Sauce — Food52",
+      "url": "https://food52.com/recipes/72332-lamb-meatballs-with-spicy-tomato-sauce",
+      "note": "brown the meatballs, build the sauce, return them covered to finish, feta on top"
+    },
+    {
+      "title": "One-Pot Lamb Meatballs — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/14814-one-pot-lamb-meatballs-with-eggplant-and-chickpeas",
+      "note": "meatballs nestled into sauce, covered on low heat until 160°F"
+    },
+    {
+      "title": "Safe Minimum Internal Temperature Chart — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+      "note": "ground lamb is safe at 160°F"
+    }
+  ]
+}

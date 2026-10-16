@@ -10,12 +10,12 @@
     "Smear it on a tortilla before the fish."
   ],
   "ingredients": [
-    "4 red bell peppers",
-    "2 garlic cloves, grated",
-    "¼ cup olive oil",
-    "1 tbsp red wine vinegar",
-    "1 tsp salt",
-    "½ tsp sugar",
+    "6 red bell peppers",
+    "3 garlic cloves, grated",
+    "⅓ cup olive oil",
+    "1½ tbsp red wine vinegar",
+    "1½ tsp salt",
+    "¾ tsp sugar",
     "Chile flakes, to taste"
   ],
   "method": "Char the peppers on a gas burner, grill, or under the broiler, turning until they're black all over — the same dry-flame move from July and August. Put them in a covered bowl for fifteen minutes, then peel and seed them. Chop them finely by hand; it should stay rough, not smooth. Warm the oil in a wide pan over medium-low, add the peppers and everything else, and cook, stirring often, for about twenty minutes, until it thickens, darkens, and the oil starts to separate at the edges. Taste: it should be sweet, smoky, and sharp. Spoon it into a jar and pour a thin layer of oil over the top. The idea underneath is the one worth keeping: char, peel, then cook it down slowly until the water is gone and the flavor is concentrated. That's how a vegetable becomes something that keeps.",
@@ -53,6 +53,18 @@
       "label": "The weekend dish",
       "action": "On the table.",
       "context": "For anyone who wants smoke against the brown butter."
+    },
+    {
+      "meal": "lamb-meatballs-ajvar",
+      "label": "Lamb meatballs",
+      "action": "Simmer in it.",
+      "context": "Thinned with water, it's the whole sauce."
+    },
+    {
+      "meal": "eggs-in-ajvar",
+      "label": "Eggs in ajvar",
+      "action": "Poach eggs in it.",
+      "context": "Loosened like a tomato sauce, with the lid on."
     }
   ],
   "linked_ingredients": [
