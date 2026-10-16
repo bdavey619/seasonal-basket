@@ -3,8 +3,8 @@
   "name": "Crispy lamb over yogurt with kabocha, pomegranate, and dates",
   "display_name": "Crispy lamb over yogurt",
   "kind": "Weeknight",
-  "time": "35 minutes, or 15 if the squash is already roasted",
-  "time_short": "35 min",
+  "time": "45 minutes, or 15 if the squash is already roasted",
+  "time_short": "45 min",
   "yield": "Dinner tonight and a second plate",
   "intro": "Lamb browned until it crackles, spooned hot over cold salted yogurt, with sweet roasted squash, dates, and pomegranate. Rich, sour, sweet, and crisp in every forkful.",
   "needs": [
@@ -22,8 +22,8 @@
   ],
   "steps": [
     {
-      "cue": "425°F · 30 min",
-      "text": "Heat the oven. Toss the kabocha with oil and salt and roast until the edges are dark and a knife slides through."
+      "cue": "425°F · 35–40 min",
+      "text": "Heat the oven. Toss the kabocha with oil and salt, spread it on a sheet pan, and roast, flipping once halfway, until the edges are dark and a knife slides through."
     },
     {
       "text": "Stir a big pinch of salt and a squeeze of lemon into the yogurt. Spread half of it on a plate."
@@ -34,7 +34,7 @@
     },
     {
       "cue": "4–5 min",
-      "text": "Break it up and keep cooking until it's browned all over and crackling at the edges."
+      "text": "Break it up and keep cooking until it's browned all over, crackling at the edges, and no pink is left."
     },
     {
       "cue": "1 min",
@@ -61,5 +61,22 @@
     "pomegranates",
     "fresh-dates",
     "arugula"
+  ],
+  "sources": [
+    {
+      "title": "Crispy Chickpeas and Lamb with Greens and Garlicky Yogurt — Alison Roman, Dining In (reprinted by WPR)",
+      "url": "https://wpr.org/food/recipe-crispy-chickpeas-lamb-greens-garlicky-yogurt-alison-roman",
+      "note": "the same idea: ground lamb crisped in a skillet over lemony Greek yogurt"
+    },
+    {
+      "title": "Roasted Kabocha Squash — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/100058-roasted-kabocha-squash-with-miso-soy-vinaigrette",
+      "note": "wedges at 425°F take 35–50 minutes and need a flip to brown both sides"
+    },
+    {
+      "title": "Safe Minimum Internal Temperature Chart — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+      "note": "ground lamb is safe at 160°F — crisped all the way through, it's well past it"
+    }
   ]
 }

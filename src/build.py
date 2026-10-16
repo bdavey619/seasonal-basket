@@ -1567,6 +1567,19 @@ def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_
           <p class="cook-how-text">{e(meal['how_it_works'])}</p>
           {f'<h3 class="cook-swaps-title">Make it your own</h3><ul class="checklist">{swaps}</ul>' if swaps else ""}
         </section>"""
+    # Where the method was checked: tested recipes for the same dish or
+    # technique, and food-safety temperatures. Our adaptation, their testing.
+    sources_html = ""
+    if meal.get("sources"):
+        items = "".join(
+            f'<li><a href="{e(src["url"])}" rel="noopener">{e(src["title"])}</a>'
+            f'<span class="cook-source-note"> — {e(src["note"])}</span></li>'
+            for src in meal["sources"])
+        sources_html = f"""
+        <section aria-labelledby="sources-heading" class="cook-section cook-sources">
+          <h2 id="sources-heading">Checked against</h2>
+          <ul class="cook-source-list">{items}</ul>
+        </section>"""
     leftovers = (f"""
         <section aria-labelledby="leftovers-heading" class="cook-section">
           <h2 id="leftovers-heading">Leftovers</h2>
@@ -1599,7 +1612,7 @@ def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_
         <ol class="cook-steps">{steps}
         </ol>
       </section>
-      {leftovers}{how_html}
+      {leftovers}{how_html}{sources_html}
     </div>
 
     <script>

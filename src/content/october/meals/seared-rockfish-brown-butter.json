@@ -3,8 +3,8 @@
   "name": "Seared rockfish, brown butter, and the October salad",
   "display_name": "Seared rockfish, brown butter",
   "kind": "Weekend",
-  "time": "About 45 minutes",
-  "time_short": "45 min",
+  "time": "About 50 minutes",
+  "time_short": "50 min",
   "yield": "Dinner, and lunch tomorrow",
   "intro": "A fish most people walk past, seared hard and finished in brown butter, over roasted kabocha, with a salad of arugula, pomegranate, dates, and feta that only works this month.",
   "needs": [
@@ -21,8 +21,8 @@
   ],
   "steps": [
     {
-      "cue": "425°F · 30–35 min",
-      "text": "Heat the oven. Toss the kabocha with oil and salt and roast until the edges are dark and a knife slides through."
+      "cue": "425°F · 35–40 min",
+      "text": "Heat the oven. Toss the kabocha with oil and salt, spread it on a sheet pan, and roast, flipping once halfway, until the edges are dark and a knife slides through."
     },
     {
       "cue": "15 min",
@@ -30,7 +30,7 @@
     },
     {
       "cue": "Med-high",
-      "text": "Heat a heavy skillet over medium-high with a thin film of oil until it shimmers. Lay the fillets in, away from you."
+      "text": "Heat a nonstick or well-seasoned carbon-steel or cast-iron skillet over medium-high with a thin film of oil until it shimmers — rockfish is delicate and sticks to anything else. Lay the fillets in, away from you."
     },
     {
       "cue": "3–4 min",
@@ -38,7 +38,7 @@
     },
     {
       "cue": "1–2 min",
-      "text": "Flip, add the butter, and tilt the pan, spooning the foaming butter over the fish until it smells nutty and turns golden brown. Squeeze in half the lemon."
+      "text": "Flip, add the butter, and tilt the pan toward you so it pools. Spoon the foaming butter over the fish again and again until it smells nutty and turns golden brown, and the thickest part flakes (140°F). Squeeze in half the lemon."
     },
     {
       "text": "Put the arugula, pomegranate, dates, and feta in a bowl. Dress it at the table with olive oil, the rest of the lemon, and salt."
@@ -66,5 +66,22 @@
     "arugula",
     "pomegranates",
     "fresh-dates"
+  ],
+  "sources": [
+    {
+      "title": "Butter-Basted Fish Fillets — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/12376-butter-basted-fish-fillets-with-garlic-and-thyme",
+      "note": "the basting method: flip once, add butter, tilt and spoon, pull at 140°F"
+    },
+    {
+      "title": "Roasted Kabocha Squash — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/100058-roasted-kabocha-squash-with-miso-soy-vinaigrette",
+      "note": "wedges at 425°F take 35–50 minutes and need a flip to brown both sides"
+    },
+    {
+      "title": "Safe Minimum Internal Temperature Chart — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+      "note": "fish is safe at 145°F; it climbs a few degrees after it leaves the pan"
+    }
   ]
 }

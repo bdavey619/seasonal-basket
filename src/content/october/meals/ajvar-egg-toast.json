@@ -49,5 +49,17 @@
   "linked_ingredients": [
     "arugula",
     "red-bell-peppers"
+  ],
+  "sources": [
+    {
+      "title": "Ramps on Toast with Poached Egg and Ajvar — Maja Lukic, Food52",
+      "url": "https://food52.com/recipes/28260-ramps-on-toast-with-poached-egg-and-ajvar",
+      "note": "ajvar on toast under a runny egg, finished with olive oil and flaky salt"
+    },
+    {
+      "title": "Avocado Toast with Fried Eggs — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/11693-avocado-toast-with-fried-eggs",
+      "note": "the same shape of dinner: crisp toast, a spread, a fried egg"
+    }
   ]
 }

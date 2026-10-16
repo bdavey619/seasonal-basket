@@ -19,11 +19,11 @@
   "steps": [
     {
       "cue": "400°F",
-      "text": "Heat the oven. Scrub the potatoes, prick each a few times, rub with oil and salt, and set them on a sheet pan."
+      "text": "Heat the oven. Scrub the potatoes, prick each a few times, rub with oil and salt, and set them on a foil-lined sheet pan — the syrup that runs out will burn onto a bare one."
     },
     {
-      "cue": "About 1 hr",
-      "text": "Bake until the skin puffs away from the flesh and syrup beads out and caramelizes on the pan. Soft isn't done — keep going."
+      "cue": "45–60 min",
+      "text": "Bake without turning them, so the bottoms caramelize, until a knife slides in with no resistance and syrup beads out. Big potatoes can take an hour or more. Soft isn't done — keep going."
     },
     {
       "text": "Stir the lime zest, half its juice, and a pinch of salt into the yogurt."
@@ -51,5 +51,17 @@
   "linked_field_notes": [],
   "linked_ingredients": [
     "sweet-potatoes"
+  ],
+  "sources": [
+    {
+      "title": "Baked Sweet Potatoes — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/1600-baked-sweet-potatoes",
+      "note": "400°F, 40–50 minutes, and don't turn them so the bottom skin caramelizes"
+    },
+    {
+      "title": "Baked Sweet Potatoes with Maple Crème Fraîche — Nik Sharma, Food52",
+      "url": "https://food52.com/recipes/84388-baked-sweet-potatoes-with-maple-crme-frache-recipe",
+      "note": "why the browning happens"
+    }
   ]
 }
