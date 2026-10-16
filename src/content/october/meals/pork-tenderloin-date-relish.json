@@ -3,8 +3,8 @@
   "name": "Roast pork tenderloin with sweet potatoes and date-feta relish",
   "display_name": "Pork tenderloin with date-feta relish",
   "kind": "Weeknight",
-  "time": "40 minutes",
-  "time_short": "40 min",
+  "time": "45 minutes",
+  "time_short": "45 min",
   "yield": "Dinner tonight and two lunches",
   "intro": "A whole tenderloin roasted beside sweet potatoes, sliced while it's still blushing pink, and covered in a salty, sweet relish of dates, feta, lemon, and chile.",
   "needs": [
@@ -29,14 +29,14 @@
     },
     {
       "cue": "20–25 min",
-      "text": "Rub the pork with oil and salt and lay it in the middle of the pan. Roast until the center is just pink."
+      "text": "Rub the pork with oil and salt. For a browned outside, sear it first in a hot oiled skillet, 2 minutes a side. Lay it in the middle of the pan and roast until the thickest part reads 140°F."
     },
     {
       "text": "Meanwhile, make the relish: the dates, the feta, the zest and juice of the lemon, a pinch of chile flakes, and 3 tbsp olive oil, stirred together."
     },
     {
-      "cue": "Rest 5 min",
-      "text": "Take the pork out at 145°F, or when it's just pink in the middle, and let it rest before slicing."
+      "cue": "Rest 10 min",
+      "text": "Take the pork out at 140°F and let it rest 10 minutes; it finishes at about 145°F, still just pink in the middle."
     },
     {
       "cue": "Finish",
@@ -57,5 +57,22 @@
     "red-bell-peppers",
     "fresh-dates",
     "arugula"
+  ],
+  "sources": [
+    {
+      "title": "Pan-Seared Oven-Roasted Pork Tenderloins — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/6014-pan-seared-oven-roasted-pork-tenderloins",
+      "note": "pull at 135–140°F and rest; the sear is what browns it"
+    },
+    {
+      "title": "Sheet Pan Pork Tenderloin with Sweet Potatoes — Heart & Stroke",
+      "url": "https://www.heartandstroke.ca/healthy-living/recipes/meat/sheet-pan-pork-tenderloin-with-sweet-potatoes",
+      "note": "the same pan at 425°F: 20–25 minutes for the pork"
+    },
+    {
+      "title": "Safe Minimum Internal Temperature Chart — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+      "note": "whole pork cuts are safe at 145°F with a 3-minute rest"
+    }
   ]
 }

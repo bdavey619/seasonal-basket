@@ -30,11 +30,11 @@
     },
     {
       "cue": "3–4 min",
-      "text": "Heat a thin film of oil in a heavy skillet until it shimmers. Lay the fish in, away from you, and don't touch it until it lets go of the pan on its own."
+      "text": "Heat a nonstick or well-seasoned carbon-steel or cast-iron skillet over medium-high with a thin film of oil until it shimmers — rockfish is delicate and sticks to anything else. Lay the fish in, away from you, and don't touch it until it lets go of the pan on its own."
     },
     {
       "cue": "1–2 min",
-      "text": "Flip, cook until opaque all the way through, then flake it in the pan with a fork."
+      "text": "Flip and cook until it's opaque all the way through and flakes easily, then flake it in the pan with a fork."
     },
     {
       "cue": "Finish",
@@ -56,5 +56,22 @@
     "rockfish",
     "pomegranates",
     "arugula"
+  ],
+  "sources": [
+    {
+      "title": "Fish Tacos on the Grill — Food52",
+      "url": "https://food52.com/recipes/5532-fish-tacos-on-the-grill",
+      "note": "2–4 minutes a side for thin white fillets, in a pan if you have no grill"
+    },
+    {
+      "title": "Butter-Basted Fish Fillets — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/12376-butter-basted-fish-fillets-with-garlic-and-thyme",
+      "note": "dry fillets, a nonstick or carbon-steel pan, hands off until the first flip"
+    },
+    {
+      "title": "Safe Minimum Internal Temperature Chart — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+      "note": "fish is done at 145°F, or when it's opaque and flakes with a fork"
+    }
   ]
 }

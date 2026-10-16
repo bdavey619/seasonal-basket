@@ -3,8 +3,8 @@
   "name": "Chicken sausages, peppers, and kabocha with ajvar",
   "display_name": "Sausages, peppers, and ajvar",
   "kind": "Weeknight",
-  "time": "40 minutes, most of it in the oven",
-  "time_short": "40 min",
+  "time": "45 minutes, most of it in the oven",
+  "time_short": "45 min",
   "yield": "Dinner tonight and two lunches",
   "intro": "Sausages roasted on one pan with squash and sweet peppers until everything browns in their fat — served the Balkan way, with a pile of ajvar on the side and bread to drag through it.",
   "needs": [
@@ -23,11 +23,16 @@
       "text": "Heat the oven. If the kabocha is too hard to cut, put it in whole for 10 minutes first."
     },
     {
-      "text": "Toss the squash and peppers with the olive oil and a big pinch of salt and spread them on a sheet pan with room between the pieces. Add the sausages."
+      "text": "Toss the squash with half the olive oil and a pinch of salt, spread it on a sheet pan, and give it 10 minutes on its own.",
+      "cue": "10 min"
     },
     {
-      "cue": "30 min",
-      "text": "Roast, turning the sausages once, until they're browned and the squash edges are dark."
+      "cue": "",
+      "text": "Toss the peppers with the rest of the oil and salt and add them to the pan with the sausages, leaving room between everything."
+    },
+    {
+      "cue": "25–30 min",
+      "text": "Roast, turning the sausages once, until they're browned and the squash edges are dark. Raw chicken sausage is done at 165°F; precooked just needs to brown."
     },
     {
       "cue": "Last 5 min",
@@ -53,5 +58,22 @@
   "linked_ingredients": [
     "kabocha-squash",
     "red-bell-peppers"
+  ],
+  "sources": [
+    {
+      "title": "Sheet-Pan Italian Sausage and Peppers — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/13205-sheet-pan-italian-sausage-with-peppers-onions-tomatoes-and-polenta",
+      "note": "sausages and peppers on one hot pan, about 25–30 minutes"
+    },
+    {
+      "title": "Roasted Kabocha Squash — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/100058-roasted-kabocha-squash-with-miso-soy-vinaigrette",
+      "note": "squash wedges need longer than peppers, so they go in first"
+    },
+    {
+      "title": "Safe Minimum Internal Temperature Chart — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+      "note": "poultry sausage is safe at 165°F"
+    }
   ]
 }

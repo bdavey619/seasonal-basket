@@ -1523,3 +1523,15 @@ footer {
   .dish-plate, .dish-photo { width: 58px; height: 58px; }
   .dish-name { font-size: 1.08rem; }
 }
+
+/* Sources a dish was checked against: small, last, out of the way. */
+.cook-sources h2 { font-size: 1rem; }
+.cook-source-list { list-style: none; margin: 0; padding: 0; }
+.cook-source-list li {
+  padding: 4px 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .82rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.cook-source-list a { color: var(--primary); }
