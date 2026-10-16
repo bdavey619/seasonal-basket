@@ -40,8 +40,8 @@
       {
         "slug": "red-bell-peppers",
         "name": "Red bell peppers",
-        "qty": "8",
-        "note": "The last sweet ones. Six go into the jar."
+        "qty": "6",
+        "note": "The last sweet ones. Four go into the jar."
       },
       {
         "slug": "sweet-potatoes",
@@ -70,7 +70,7 @@
     ],
     "also_buy": [
       "2 lemons",
-      "3 limes",
+      "2 limes",
       "corn tortillas",
       "a block of feta",
       "hibiscus tea"
@@ -99,8 +99,8 @@
       },
       {
         "name": "Chicken sausage",
-        "qty": "1½ lbs",
-        "uses": "Sausages and peppers, the crispy rice, lunches"
+        "qty": "1 lb",
+        "uses": "Sausages and peppers with ajvar, two lunches"
       },
       {
         "name": "Pork tenderloin",
@@ -109,8 +109,8 @@
       },
       {
         "name": "Ground lamb",
-        "qty": "2 lbs",
-        "uses": "Crispy lamb over yogurt, the meatballs, lunches"
+        "qty": "1 lb",
+        "uses": "Crispy lamb over yogurt, a second plate"
       }
     ],
     "feeds": "Feeds one big appetite for a week: every dinner, and lunch from the leftovers most days."
@@ -143,7 +143,7 @@
     {
       "slug": "october-peppers",
       "name": "October is when peppers go in jars.",
-      "body": "Across the Balkans, autumn is ajvar season: red peppers are at their cheapest, and families roast them by the crate and cook them down into a relish that lasts into winter. You don't need a crate. Six peppers make a jar. It's the same impulse behind everything in this basket — buy it while it's here, and make it keep."
+      "body": "Across the Balkans, autumn is ajvar season: red peppers are at their cheapest, and families roast them by the crate and cook them down into a relish that lasts into winter. You don't need a crate. Four peppers make a jar. It's the same impulse behind everything in this basket — buy it while it's here, and make it keep."
     },
     {
       "slug": "kabocha-cutting",
@@ -200,7 +200,7 @@
     "month": "November",
     "status": "Arriving November 1."
   },
-  "meals_heading": "Ten things to cook in October.",
+  "meals_heading": "Seven things to cook in October.",
   "meals_dek": "Specific dishes, chosen for this month's basket. Each one ends by explaining how it works — so the next time, you won't need it.",
   "meals_back_label": "October's meals",
   "tonight": {
@@ -249,10 +249,8 @@
             "dish_label": "With ajvar"
           },
           {
-            "lead": "Crispy rice",
-            "text": "Brown it in coins, then press cold rice into the same pan and leave it until it crusts. An egg on top.",
-            "dish": "crispy-rice-sausage",
-            "dish_label": "The crispy rice"
+            "lead": "Leftovers",
+            "text": "Slice it into a skillet with cubed sweet potato until it all crisps, and crack an egg on top."
           }
         ]
       },
@@ -291,12 +289,6 @@
             "dish_label": "Over yogurt"
           },
           {
-            "lead": "Meatballs",
-            "text": "Roll it with feta and soaked bread, brown it, then simmer it ten minutes in something smoky.",
-            "dish": "lamb-meatballs-ajvar",
-            "dish_label": "In ajvar"
-          },
-          {
             "lead": "Stuffed",
             "text": "Pile it into a split baked sweet potato with feta and dates."
           }
@@ -318,12 +310,6 @@
           },
           {
             "lead": "Baked",
-            "text": "Loosen the jar with water, crack eggs into it, and cover the pan until the whites set.",
-            "dish": "eggs-in-ajvar",
-            "dish_label": "Eggs in ajvar"
-          },
-          {
-            "lead": "Sweet potatoes",
             "text": "Bake sweet potatoes until the sugar runs and fill them with warm beans.",
             "dish": "sweet-potatoes-black-beans",
             "dish_label": "The sweet potatoes"
@@ -374,16 +360,6 @@
       ]
     },
     {
-      "slug": "lamb-meatballs-ajvar",
-      "line": "Browned, then ten minutes in the jar. Tastes like an afternoon.",
-      "plate": [
-        "#c0472f",
-        "#7a4a32",
-        "#f6f1e3",
-        "#b8283a"
-      ]
-    },
-    {
       "slug": "pork-tenderloin-date-relish",
       "line": "Lean pork pulled while pink; the relish brings the richness.",
       "plate": [
@@ -400,16 +376,6 @@
         "#c43a2c",
         "#d9822b",
         "#8a5a3c"
-      ]
-    },
-    {
-      "slug": "crispy-rice-sausage",
-      "line": "Yesterday's rice, left alone until it turns to crust.",
-      "plate": [
-        "#d9b46a",
-        "#8a5a3c",
-        "#f2b632",
-        "#56673a"
       ]
     },
     {
@@ -430,16 +396,6 @@
         "#fbf8f1",
         "#f2b632",
         "#56673a"
-      ]
-    },
-    {
-      "slug": "eggs-in-ajvar",
-      "line": "The jar as a sauce, four eggs set in it.",
-      "plate": [
-        "#c0472f",
-        "#fbf8f1",
-        "#f2b632",
-        "#c89a5a"
       ]
     },
     {
