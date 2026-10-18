@@ -6,11 +6,12 @@
   "time": "45 minutes, most of it in the oven",
   "time_short": "45 min",
   "yield": "Dinner tonight and a lunch",
-  "intro": "Sausages roasted on one pan with squash and sweet peppers until everything browns in their fat — served the Balkan way, with a pile of ajvar on the side and bread to drag through it.",
+  "intro": "Sausages roasted on one pan with squash and sweet peppers until everything browns in their fat, with lacinato kale crisping at the edges in the last minutes — served the Balkan way, with a pile of ajvar on the side and bread to drag through it.",
   "needs": [
     "1 lb chicken sausage, 4–5 links",
     "½ large kabocha (about 1½ lbs), in 1-inch wedges",
     "2 red bell peppers, in thick strips",
+    "½ bunch lacinato kale, leaves stripped from the ribs and torn",
     "Ajvar, a few big spoonfuls",
     "1 lemon",
     "2 tbsp olive oil",
@@ -35,6 +36,10 @@
       "text": "Roast, turning the sausages once, until they're browned and the squash edges are dark. Raw chicken sausage is done at 165°F; precooked just needs to brown."
     },
     {
+      "cue": "Last 8–10 min",
+      "text": "Toss the torn kale leaves with 1 tsp olive oil and a pinch of salt and scatter them over and between everything, in one layer where you can. (The thick ribs stay tough in the time the leaves take, which is why they come off.) The kale is done when the edges crisp and the rest has just wilted."
+    },
+    {
       "cue": "Last 5 min",
       "text": "Toast the sourdough in a skillet with a little oil while the pan finishes."
     },
@@ -43,7 +48,7 @@
       "text": "Everything on the plate, a big spoonful of ajvar beside it, lemon squeezed over the vegetables."
     }
   ],
-  "how_it_works": "Sausage brings its own fat, and on a hot sheet pan that fat runs out and roasts the vegetables around it — the pan seasons itself. Ajvar is what's served with grilled sausages across the Balkans: smoky, sweet, a little sharp, exactly what cuts the richness.",
+  "how_it_works": "Sausage brings its own fat, and on a hot sheet pan that fat runs out and roasts the vegetables around it — the pan seasons itself. Ajvar is what's served with grilled sausages across the Balkans: smoky, sweet, a little sharp, exactly what cuts the richness. The kale goes in last: on a hot pan it crisps in that same fat in minutes, and a slightly bitter green is what rich sausage wants beside it.",
   "swaps": [
     "Any sausage works — pork or chicken.",
     "Sweet potato instead of kabocha, same timing.",
@@ -66,6 +71,16 @@
       "note": "sausages and peppers on one hot pan, about 25–30 minutes"
     },
     {
+      "title": "Roasted Kale — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/articles/4225-why-you-ll-love-roasted-kale",
+      "note": "stems removed, a hot oven, about 10 minutes, leaves left alone to crisp"
+    },
+    {
+      "title": "One-Pan Spicy Sausage with Cannellini Beans and Kale — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/16627-one-pan-spicy-sausage-with-cannellini-beans-and-kale",
+      "note": "sausage and lacinato kale in one pan"
+    },
+    {
       "title": "Roasted Kabocha Squash — America's Test Kitchen",
       "url": "https://www.americastestkitchen.com/recipes/100058-roasted-kabocha-squash-with-miso-soy-vinaigrette",
       "note": "squash wedges need longer than peppers, so they go in first"
@@ -80,24 +95,24 @@
     "serving": "Half the recipe: two to three sausages, half the squash and peppers, ajvar, and one thick slice of sourdough or 1 cup cooked rice.",
     "excludes": "Nothing beyond the bread or rice.",
     "kcal": [
-      950,
-      1250
+      1000,
+      1300
     ],
     "protein": [
       45,
-      55
+      60
     ],
     "carbs": [
-      90,
-      130
+      95,
+      135
     ],
     "fat": [
       50,
-      60
+      65
     ],
     "fiber": [
       15,
-      15
+      20
     ]
   }
 }

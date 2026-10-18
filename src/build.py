@@ -508,7 +508,7 @@ def render_bring_home(bring_home, ingredients_data, featured, depth, ing_index_p
 
     rows = "".join(
         row(item, item['note'],
-            ingredients_data.get(item.get("slug"), {}).get("tile_uses", "") if item.get("slug") else "")
+            ingredients_data.get(item.get("slug"), {}).get("tile_uses", "") if item.get("slug") else item.get("uses", ""))
         for item in bring_home.get("items", []))
 
     # Proteins get their own rows: how much, which meals, and — in place of a
@@ -1616,13 +1616,22 @@ def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_
     nutrition_line = ""
     nutrition_html = ""
     if nut:
+        depends = ", depending on the fish" if nut.get("variants") else ""
         nutrition_line = (f'\n      <p class="cook-nutrition">About {nutrition_about(nut["kcal"], 50)} kcal and '
-                          f'{nutrition_about(nut["protein"], 5)} g protein a serving</p>')
+                          f'{nutrition_about(nut["protein"], 5)} g protein a serving{depends}</p>')
         rows = "".join(
             f'<tr><th scope="row">{label}</th><td>{nutrition_range(nut[key], unit)}</td></tr>'
             for label, key, unit in [("Calories", "kcal", " kcal"), ("Protein", "protein", " g"),
                                      ("Carbohydrates", "carbs", " g"), ("Fat", "fat", " g"),
                                      ("Fiber", "fiber", " g")])
+        variants_html = ""
+        if nut.get("variants"):
+            vrows = "".join(
+                f'<tr><th scope="row">{e(v["label"])}</th><td>{nutrition_range(v["kcal"], " kcal")}</td>'
+                f'<td>{nutrition_range(v["protein"], " g")}</td><td>{nutrition_range(v["fat"], " g")}</td></tr>'
+                for v in nut["variants"])
+            variants_html = (f'<p><strong>By fish:</strong></p><table class="cook-nutrition-table">'
+                             f'<tr><th></th><th>Calories</th><th>Protein</th><th>Fat</th></tr>{vrows}</table>')
         with_meal = ""
         if nut.get("with_meal") and meal.get("make_it_a_meal"):
             wm = nut["with_meal"]
@@ -1632,6 +1641,7 @@ def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_
         <details class="cook-section cook-nutrition-more">
           <summary>Nutrition estimate, per serving</summary>
           <table class="cook-nutrition-table">{rows}</table>
+          {variants_html}
           <p><strong>A serving:</strong> {e(nut['serving'])}</p>
           <p><strong>Not included:</strong> {e(nut['excludes'])}</p>
           {with_meal}

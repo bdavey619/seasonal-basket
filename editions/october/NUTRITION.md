@@ -1,6 +1,6 @@
 # October — nutrition worksheet
 
-Per-serving estimates from the ingredient amounts in each recipe. Low/high values carry the real uncertainty (fish species, sausage brand, kabocha's density, how much frying fat stays in the pan). Rounded to the nearest 50 kcal and 5 g before publishing. These are estimates, not lab measurements.
+Per-serving estimates from the ingredient amounts in each recipe. Low/high values carry the real uncertainty (fish choice, sausage brand, kabocha's density, how much frying fat stays in the pan). Rounded to the nearest 50 kcal and 5 g before publishing. These are estimates, not lab measurements.
 
 ## rockfish-tacos
 
@@ -47,7 +47,7 @@ Recipe makes 2 serving(s). **Serving:** One packet with 1 cup cooked rice and ha
 
 | Ingredient (whole recipe) | grams | kcal | protein | carbs | fat | fiber |
 |---|---|---|---|---|---|---|
-| firm white fish | 454 | 413–663 | 84–105 | 0 | 6–24 | 0 |
+| yellowtail | 454 | 663 | 105 | 0 | 24 | 0 |
 | ajvar | 44 | 70–97 | 0 | 4–4 | 6–8 | 1 |
 | olive oil | 27 | 239 | 0 | 0 | 27 | 0 |
 | arugula | 40 | 10 | 1 | 1 | 0 | 1 |
@@ -56,8 +56,12 @@ Recipe makes 2 serving(s). **Serving:** One packet with 1 cup cooked rice and ha
 | olive oil | 14 | 119 | 0 | 0 | 14 | 0 |
 | rice, cooked | 316 | 411 | 9 | 89 | 1 | 1 |
 | lemon or lime | 25 | 6–8 | 0 | 2–2 | 0 | 0 |
-| **Per serving** | | **769–909** | **48–59** | **83–84** | **27–37** | **6–6** |
-| *Published (rounded)* | | 750–900 | 50–60 | 85 | 25–35 | 5 |
+| **Per serving** | | **859–1049** | **53–59** | **83–84** | **35–56** | **6–6** |
+| *(rows above use Local yellowtail)* | | | | | | |
+| **Local yellowtail, per serving** | | 900–900 | 60–60 | 85–85 | 35–35 | |
+| **Wild salmon, per serving** | | 850–900 | 55–55 | 85–85 | 35–40 | |
+| **Farmed salmon, per serving** | | 1050–1050 | 55–55 | 85–85 | 55–55 | |
+| *Published (rounded)* | | 850–1050 | 55–60 | 85 | 35–55 | 5 |
 
 ## pork-tenderloin-date-relish
 
@@ -91,8 +95,10 @@ Recipe makes 2 serving(s). **Serving:** Half the recipe: two to three sausages, 
 | olive oil | 27 | 239 | 0 | 0 | 27 | 0 |
 | ajvar | 66–88 | 106–194 | 1 | 5–9 | 9–17 | 2–3 |
 | sourdough | 120–150 | 326–408 | 13–16 | 62–78 | 3–4 | 3–3 |
-| **Per serving** | | **975–1257** | **46–56** | **91–131** | **49–60** | **13–17** |
-| *Published (rounded)* | | 950–1250 | 45–55 | 90–130 | 50–60 | 15 |
+| kale | 75–100 | 26–43 | 2–3 | 3–4 | 0–2 | 3–4 |
+| olive oil | 4 | 40 | 0 | 0 | 4 | 0 |
+| **Per serving** | | **1008–1299** | **47–58** | **93–133** | **52–63** | **15–19** |
+| *Published (rounded)* | | 1000–1300 | 45–60 | 95–135 | 50–65 | 15–20 |
 
 ## ajvar-egg-toast
 
@@ -133,7 +139,7 @@ With the "Make it a meal" pairing (egg, olive oil): about 800–950 kcal, 35–4
 
 ## orzo-salad
 
-Recipe makes 3 serving(s). **Serving:** A lunch: a third of the salad, with a handful of arugula and pomegranate. As one of five snack bowls, about 60% of these numbers.  
+Recipe makes 4 serving(s). **Serving:** A lunch: a quarter of the salad, with pomegranate on top. As one of six snack bowls, about two-thirds of these numbers.  
 **Not included:** Nothing.
 
 | Ingredient (whole recipe) | grams | kcal | protein | carbs | fat | fiber |
@@ -144,19 +150,24 @@ Recipe makes 3 serving(s). **Serving:** A lunch: a third of the salad, with a ha
 | feta | 85 | 224 | 12 | 3 | 18 | 0 |
 | olive oil | 71 | 626 | 0 | 0 | 71 | 0 |
 | lemon or lime | 20 | 5–6 | 0 | 2 | 0 | 0 |
-| arugula | 60 | 15 | 2 | 2 | 0 | 1 |
+| kale | 150–200 | 52–86 | 4–6 | 7–9 | 1–3 | 6–8 |
+| chickpeas | 240–255 | 331–354 | 17–18 | 54–57 | 7 | 15–16 |
 | pomegranate seeds | 85 | 71 | 1 | 16 | 1 | 3 |
-| **Per serving** | | **740–850** | **17–19** | **90–109** | **36–39** | **9–12** |
-| *Published (rounded)* | | 750–850 | 15–20 | 90–110 | 35–40 | 10 |
+| **Per serving** | | **647–744** | **17–20** | **82–98** | **29–31** | **12–15** |
+| *Published (rounded)* | | 650–750 | 15–20 | 80–100 | 30 | 10–15 |
 
-With the "Make it a meal" pairing (egg, feta): about 900–1050 kcal, 30–35 g protein.
+With the "Make it a meal" pairing (egg, feta): about 850–900 kcal, 30–35 g protein.
 
 ## Ingredient values used
 
 | Ingredient | basis | kcal | protein | carbs | fat | fiber | source |
 |---|---|---|---|---|---|---|---|
 | rockfish | per 100 g | 90 | 18.4 | 0 | 1.3–1.6 | 0 | USDA: rockfish, Pacific, raw |
-| firm white fish | per 100 g | 91–146 | 18.4–23.1 | 0 | 1.3–5.2 | 0 | USDA: halibut / seabass (low) to yellowtail (high), raw |
+| yellowtail | per 100 g | 146 | 23.1 | 0 | 5.2 | 0 | USDA: yellowtail, mixed species, raw |
+| salmon, wild | per 100 g | 131–146 | 21.6–22.3 | 0 | 4.7–5.9 | 0 | USDA: sockeye to coho salmon, wild, raw |
+| salmon, farmed | per 100 g | 208 | 20.4 | 0 | 13.4 | 0 | USDA: Atlantic salmon, farmed, raw |
+| kale | per 100 g | 35–43 | 2.9 | 4.4 | 0.5–1.5 | 4.1 | USDA: kale, raw (leaves) |
+| chickpeas | per 100 g | 138–139 | 7 | 22.5 | 2.8 | 6.4 | USDA: chickpeas, canned, drained |
 | chicken sausage | per 85 g unit | 160–190 | 13–15 | 3–5 | 11–13 | 0 | Package labels, per 85 g link (brands vary) |
 | pork tenderloin | per 100 g | 109–120 | 20.9–21 | 0 | 2.2–3.5 | 0 | USDA: pork tenderloin, raw, lean only to lean and fat |
 | egg | per 50 g unit | 72 | 6.3 | 0.4 | 4.8 | 0 | USDA: egg, whole, large |

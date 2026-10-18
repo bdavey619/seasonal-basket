@@ -1,22 +1,24 @@
 {
   "slug": "orzo-salad",
-  "name": "Orzo salad with roasted kabocha, feta, and pomegranate",
+  "name": "Orzo salad with roasted kabocha, chickpeas, kale, and feta",
   "display_name": "Orzo salad",
   "kind": "Make-ahead",
   "time": "45 minutes, most of it roasting and cooling",
   "time_short": "45 min",
-  "yield": "Five snack bowls, or three lunches",
-  "intro": "Make it on Sunday and it carries the week: orzo dressed while it's hot, dark-roasted squash, salty feta. Arugula and pomegranate go on each bowl as you eat it, so it tastes new on day four.",
+  "yield": "Six snack bowls, or four lunches",
+  "intro": "Make it on Sunday and it carries the week: orzo and chickpeas dressed while the orzo is hot, dark-roasted squash, lacinato kale rubbed soft with the dressing, salty feta. Pomegranate goes on each bowl as you eat it.",
   "needs": [
     "8 oz orzo (half a box)",
     "½ large kabocha (about 1½ lbs), in ¾-inch cubes",
+    "1 can chickpeas, drained",
+    "1 bunch lacinato kale, leaves stripped from the ribs and sliced thin",
     "3 oz feta, crumbled",
     "⅓ cup olive oil, plus more for the squash",
     "3 tbsp red wine vinegar",
     "½ lemon",
     "1 garlic clove, grated",
     "Chile flakes and salt",
-    "To serve: arugula and pomegranate seeds"
+    "To serve: pomegranate seeds"
   ],
   "steps": [
     {
@@ -27,39 +29,42 @@
       "text": "Whisk the olive oil, vinegar, lemon juice, garlic, a pinch of chile flakes, and ½ tsp salt in a large bowl. Spoon 2 tbsp of it into a small jar and keep it for serving."
     },
     {
+      "cue": "1 min",
+      "text": "Put the kale in a second bowl with a pinch of salt and 1 tbsp of the dressing, and squeeze it with your hands for a minute, until it darkens and softens. Set it aside."
+    },
+    {
       "cue": "About 10 min",
       "text": "Boil the orzo in well-salted water — it should taste like the sea — for 2 minutes longer than the package says. Cold pasta firms up, so it needs the extra time."
     },
     {
-      "text": "Drain it without rinsing and toss it hot with the dressing in the bowl. Hot pasta drinks the dressing; cold pasta only gets coated."
+      "text": "Drain it without rinsing and toss it hot with the chickpeas and the dressing in the bowl. Hot pasta drinks the dressing; cold pasta only gets coated."
     },
     {
       "cue": "15 min",
       "text": "Spread the dressed orzo on a sheet pan to cool so it doesn't clump."
     },
     {
-      "text": "Fold in the cooled squash and the feta, pack it into a covered container, and refrigerate it within 2 hours. Keep the arugula and pomegranate out."
+      "text": "Fold in the cooled squash, the kale, and the feta, pack it into a covered container, and refrigerate it within 2 hours. Keep the pomegranate out."
     },
     {
       "cue": "To eat",
-      "text": "Scoop a bowl, add a handful of arugula and some pomegranate, a spoonful of the saved dressing, and taste: cold dulls flavor, so it usually wants a squeeze of lemon and a pinch of salt."
+      "text": "Scoop a bowl, add some pomegranate and a spoonful of the saved dressing, and taste: cold dulls flavor, so it usually wants a squeeze of lemon and a pinch of salt."
     }
   ],
-  "how_it_works": "Three things make a pasta salad last: dress the pasta while it's hot so the flavor goes in, not just on; cook it a little past al dente because the cold firms it; and keep anything delicate out of the container until you eat it. The formula works every month — orzo, the month's vegetable, one cheese, a sharp dressing, something fresh at the end.",
+  "how_it_works": "Three things make a pasta salad last: dress the pasta while it's hot so the flavor goes in, not just on; cook it a little past al dente because the cold firms it; and keep anything delicate out of the container until you eat it. Kale is the one green that belongs in the container: rubbed with salt and dressing, it softens without wilting. Chickpeas soak up the dressing alongside the orzo and give every bite something to bite into. The formula works every month — orzo, the month's vegetable, one cheese, a sharp dressing, something fresh at the end.",
   "swaps": [
     "Leftover roasted sweet potato in place of the kabocha.",
     "Whisk a spoonful of ajvar into the dressing for smoke.",
     "Torn dates for sweetness against the feta."
   ],
-  "leftovers": "It is the leftovers. Covered in the fridge, it keeps 3 to 4 days.",
+  "leftovers": "It is the leftovers. Covered in the fridge, it keeps 3 to 4 days. The kale is at its best for the first two, then softens more, like a cooked green.",
   "linked_house_flavor": "ajvar",
   "linked_field_notes": [
     "kabocha-cutting"
   ],
   "linked_ingredients": [
     "kabocha-squash",
-    "pomegranates",
-    "arugula"
+    "pomegranates"
   ],
   "sources": [
     {
@@ -71,6 +76,11 @@
       "title": "How to Make a More Satisfying Pasta Salad — America's Test Kitchen",
       "url": "https://www.americastestkitchen.com/articles/8595-how-to-make-the-best-pasta-salad",
       "note": "cook it past al dente for a cold salad; season it harder than a hot dish"
+    },
+    {
+      "title": "Celebration-Worthy Kale Salads — Cook's Illustrated",
+      "url": "https://www.americastestkitchen.com/cooksillustrated/articles/6097-celebration-worthy-salads",
+      "note": "a quick massage tenderizes kale so a dressed salad holds; their kale salads keep about 2 days"
     },
     {
       "title": "How to Make Pasta Salad Without a Recipe — Food52",
@@ -85,32 +95,32 @@
   ],
   "make_it_a_meal": "For a lunch, halve two soft-boiled eggs over the bowl and crumble on a little more feta. The yolks dress the orzo.",
   "nutrition": {
-    "serving": "A lunch: a third of the salad, with a handful of arugula and pomegranate. As one of five snack bowls, about 60% of these numbers.",
+    "serving": "A lunch: a quarter of the salad, with pomegranate on top. As one of six snack bowls, about two-thirds of these numbers.",
     "excludes": "Nothing.",
     "kcal": [
-      750,
-      850
+      650,
+      750
     ],
     "protein": [
       15,
       20
     ],
     "carbs": [
-      90,
-      110
+      80,
+      100
     ],
     "fat": [
-      35,
-      40
+      30,
+      30
     ],
     "fiber": [
       10,
-      10
+      15
     ],
     "with_meal": {
       "kcal": [
-        900,
-        1050
+        850,
+        900
       ],
       "protein": [
         30,

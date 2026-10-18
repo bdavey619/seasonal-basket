@@ -3,7 +3,7 @@ Seasonal — nutrition worksheet.
 
 Editorial tool, not part of the build. For each dish it adds up per-serving
 estimates from the ingredient amounts written in the recipe, using low/high
-values per ingredient so uncertainty (fish species, sausage brand, how much
+values per ingredient so uncertainty (fish choice, sausage brand, how much
 frying oil is eaten) shows up as a range instead of false precision.
 
 Run:  python3 tools/nutrition_worksheet.py october
@@ -23,7 +23,11 @@ from pathlib import Path
 # Nutrients: kcal, protein, carbs, fat, fiber — per 100 g (or per unit when unit is set).
 DB = {
     "rockfish":        (None, dict(kcal=(90, 90), protein=(18.4, 18.4), carbs=(0, 0), fat=(1.3, 1.6), fiber=(0, 0)), "USDA: rockfish, Pacific, raw"),
-    "firm white fish": (None, dict(kcal=(91, 146), protein=(18.4, 23.1), carbs=(0, 0), fat=(1.3, 5.2), fiber=(0, 0)), "USDA: halibut / seabass (low) to yellowtail (high), raw"),
+    "yellowtail":      (None, dict(kcal=(146, 146), protein=(23.1, 23.1), carbs=(0, 0), fat=(5.2, 5.2), fiber=(0, 0)), "USDA: yellowtail, mixed species, raw"),
+    "salmon, wild":    (None, dict(kcal=(131, 146), protein=(21.6, 22.3), carbs=(0, 0), fat=(4.7, 5.9), fiber=(0, 0)), "USDA: sockeye to coho salmon, wild, raw"),
+    "salmon, farmed":  (None, dict(kcal=(208, 208), protein=(20.4, 20.4), carbs=(0, 0), fat=(13.4, 13.4), fiber=(0, 0)), "USDA: Atlantic salmon, farmed, raw"),
+    "kale":            (None, dict(kcal=(35, 43), protein=(2.9, 2.9), carbs=(4.4, 4.4), fat=(0.5, 1.5), fiber=(4.1, 4.1)), "USDA: kale, raw (leaves)"),
+    "chickpeas":       (None, dict(kcal=(138, 139), protein=(7, 7), carbs=(22.5, 22.5), fat=(2.8, 2.8), fiber=(6.4, 6.4)), "USDA: chickpeas, canned, drained"),
     "chicken sausage": (85, dict(kcal=(160, 190), protein=(13, 15), carbs=(3, 5), fat=(11, 13), fiber=(0, 0)), "Package labels, per 85 g link (brands vary)"),
     "pork tenderloin": (None, dict(kcal=(109, 120), protein=(20.9, 21), carbs=(0, 0), fat=(2.2, 3.5), fiber=(0, 0)), "USDA: pork tenderloin, raw, lean only to lean and fat"),
     "egg":             (50, dict(kcal=(72, 72), protein=(6.3, 6.3), carbs=(0.4, 0.4), fat=(4.8, 4.8), fiber=(0, 0)), "USDA: egg, whole, large"),
@@ -67,7 +71,9 @@ OCTOBER = {
     "fish-in-parchment": dict(
         servings=2, serving="One packet with 1 cup cooked rice and half the salad.",
         excludes="Nothing beyond the 1 cup of rice.",
-        items=[("firm white fish", 454), ("ajvar", 2 * 22), ("olive oil", 2 * TBSP_OIL), ("arugula", 40),
+        # The fish is whatever's best at the market; each choice is estimated on its own.
+        variants={"Local yellowtail": "yellowtail", "Wild salmon": "salmon, wild", "Farmed salmon": "salmon, farmed"},
+        items=[("rich fish", 454), ("ajvar", 2 * 22), ("olive oil", 2 * TBSP_OIL), ("arugula", 40),
                ("pomegranate seeds", 85), ("medjool date", 3 * 24), ("olive oil", 1 * TBSP_OIL),
                ("rice, cooked", 2 * 158), ("lemon or lime", 25)]),
     "pork-tenderloin-date-relish": dict(
@@ -82,8 +88,9 @@ OCTOBER = {
         # of sausage alone; half a 3-lb kabocha (500–650 g usable) split two ways. The pan's 2 tbsp oil is
         # counted once; the ajvar includes its own oil; the bread is one slice per serving (or 1 cup rice,
         # about the same). Rendered sausage fat left on the pan isn't subtracted, so the top of the range is generous.
+        # Half a bunch of lacinato kale is ~75–100 g of leaves once the ribs are stripped, with 1 tsp oil.
         items=[("chicken sausage", 454), ("kabocha", (500, 650)), ("red bell pepper", 240), ("olive oil", 2 * TBSP_OIL),
-               ("ajvar", (3 * 22, 4 * 22)), ("sourdough", (2 * 60, 2 * 75))]),
+               ("ajvar", (3 * 22, 4 * 22)), ("sourdough", (2 * 60, 2 * 75)), ("kale", (75, 100)), ("olive oil", 4.5)]),
     "ajvar-egg-toast": dict(
         servings=1, serving="The whole recipe: two eggs on two thick slices of sourdough.",
         excludes="Nothing.",
@@ -98,10 +105,12 @@ OCTOBER = {
         items=[("sweet potato", (600, 720)), ("olive oil", 4 * 4.5), ("black beans", 250), ("ajvar", (3 * 22, 4 * 22)),
                ("greek yogurt 2%", 113), ("feta", 28), ("lemon or lime", 30)]),
     "orzo-salad": dict(
-        servings=3, serving="A lunch: a third of the salad, with a handful of arugula and pomegranate. As one of five snack bowls, about 60% of these numbers.",
+        servings=4, serving="A lunch: a quarter of the salad, with pomegranate on top. As one of six snack bowls, about two-thirds of these numbers.",
         excludes="Nothing.",
+        # One bunch of lacinato kale is ~150–200 g of leaves; one can of chickpeas is ~240–255 g drained.
         items=[("orzo, dry", 227), ("kabocha", (500, 650)), ("olive oil", (1 * TBSP_OIL, 1.5 * TBSP_OIL)), ("feta", 85),
-               ("olive oil", 0.33 * 236 * 0.91), ("lemon or lime", 20), ("arugula", 60), ("pomegranate seeds", 85)]),
+               ("olive oil", 0.33 * 236 * 0.91), ("lemon or lime", 20), ("kale", (150, 200)), ("chickpeas", (240, 255)),
+               ("pomegranate seeds", 85)]),
 }
 
 # Optional "Make it a meal" pairings, as extra items for ONE serving.
@@ -152,17 +161,34 @@ def main(month):
         sys.exit("Only October is entered so far.")
     out = ["# October — nutrition worksheet", "",
            "Per-serving estimates from the ingredient amounts in each recipe. Low/high values carry the real uncertainty "
-           "(fish species, sausage brand, kabocha's density, how much frying fat stays in the pan). Rounded to the nearest "
+           "(fish choice, sausage brand, kabocha's density, how much frying fat stays in the pan). Rounded to the nearest "
            "50 kcal and 5 g before publishing. These are estimates, not lab measurements.", ""]
     summary = {}
     for slug, d in OCTOBER.items():
-        tot, rows = add(d["items"])
         s = d["servings"]
-        per = {n: (tot[n][0] / s, tot[n][1] / s) for n in NUTRIENTS}
+        variant_rows = []
+        if d.get("variants"):
+            # Estimate each fish on its own; the overall range spans all of them.
+            per = {n: [float("inf"), 0.0] for n in NUTRIENTS}
+            for label, fish in d["variants"].items():
+                vtot, _ = add([(fish if name == "rich fish" else name, amt) for name, amt in d["items"]])
+                vper = {n: (vtot[n][0] / s, vtot[n][1] / s) for n in NUTRIENTS}
+                for n in NUTRIENTS:
+                    per[n][0] = min(per[n][0], vper[n][0]); per[n][1] = max(per[n][1], vper[n][1])
+                variant_rows.append(dict(label=label, kcal=display(*vper["kcal"], 50),
+                                         **{n: display(*vper[n], 5) for n in ["protein", "carbs", "fat"]}))
+            per = {n: tuple(per[n]) for n in NUTRIENTS}
+            first = next(iter(d["variants"].values()))
+            tot, rows = add([(first if name == "rich fish" else name, amt) for name, amt in d["items"]])
+        else:
+            tot, rows = add(d["items"])
+            per = {n: (tot[n][0] / s, tot[n][1] / s) for n in NUTRIENTS}
         shown = {"kcal": display(*per["kcal"], 50)}
         for n in ["protein", "carbs", "fat", "fiber"]:
             shown[n] = display(*per[n], 5)
         summary[slug] = dict(shown=shown, serving=d["serving"], excludes=d["excludes"])
+        if variant_rows:
+            summary[slug]["variants"] = variant_rows
         out += [f"## {slug}", "", f"Recipe makes {s} serving(s). **Serving:** {d['serving']}  ", f"**Not included:** {d['excludes']}", "",
                 "| Ingredient (whole recipe) | grams | kcal | protein | carbs | fat | fiber |", "|---|---|---|---|---|---|---|"]
         for name, lo_g, hi_g, r in rows:
@@ -170,6 +196,11 @@ def main(month):
             cells = [f"{r[n][0]:.0f}" if abs(r[n][0] - r[n][1]) < 0.5 else f"{r[n][0]:.0f}–{r[n][1]:.0f}" for n in NUTRIENTS]
             out.append(f"| {name} | {g} | " + " | ".join(cells) + " |")
         out.append("| **Per serving** | | " + " | ".join(f"**{per[n][0]:.0f}–{per[n][1]:.0f}**" for n in NUTRIENTS) + " |")
+        if variant_rows:
+            out.append(f"| *(rows above use {next(iter(d['variants']))})* | | | | | | |")
+            for v in variant_rows:
+                out.append(f"| **{v['label']}, per serving** | | {v['kcal'][0]}–{v['kcal'][1]} | {v['protein'][0]}–{v['protein'][1]} | "
+                           f"{v['carbs'][0]}–{v['carbs'][1]} | {v['fat'][0]}–{v['fat'][1]} | |")
         out.append("| *Published (rounded)* | | " + " | ".join(f"{shown[n][0]}–{shown[n][1]}" if shown[n][0] != shown[n][1] else f"{shown[n][0]}" for n in NUTRIENTS) + " |")
         if slug in PAIRINGS:
             ptot, _ = add(PAIRINGS[slug])
