@@ -32,55 +32,40 @@
     "heading": "This is what I'd bring home.",
     "items": [
       {
-        "slug": "kabocha-squash",
-        "name": "Kabocha squash",
-        "qty": "2 large",
-        "note": "The sweetest squash there is. It keeps for months."
-      },
-      {
         "slug": "red-bell-peppers",
         "name": "Red bell peppers",
-        "qty": "7",
-        "note": "The last sweet ones. Four go into the jar."
+        "qty": "4",
+        "note": "For the jar. A couple of dishes below add more."
       },
       {
-        "slug": "sweet-potatoes",
-        "name": "Sweet potatoes",
-        "qty": "6 medium",
-        "note": "New crop. Dinner, when the week gets away from you."
+        "slug": "kabocha-squash",
+        "name": "Kabocha squash",
+        "qty": "1 large",
+        "note": "The sweetest squash there is. One covers two kabocha dishes, and it keeps for months."
       },
       {
         "slug": "arugula",
         "name": "Arugula",
-        "qty": "2 bunches",
+        "qty": "1 bunch",
         "note": "The first greens since spring that aren't harsh."
-      },
-      {
-        "name": "Lacinato kale",
-        "qty": "2 bunches",
-        "note": "The first sturdy green of the cool weather. Strip the leaves from the ribs.",
-        "uses": "The sausage pan, the orzo salad, a morning hash"
       },
       {
         "slug": "pomegranates",
         "name": "Pomegranates",
         "qty": "3",
-        "note": "Buy the heavy, lopsided ones."
+        "note": "Buy the heavy, lopsided ones. One is for the drink."
       },
       {
         "slug": "fresh-dates",
         "name": "Medjool dates",
         "qty": "1 lb",
-        "note": "Soft enough to dent. Those are the new ones."
+        "note": "Soft enough to dent. Those are the new ones. They keep for months, so a pound covers the dishes and the mornings."
       }
     ],
     "also_buy": [
-      "5 lemons",
-      "4 limes",
-      "corn tortillas",
+      "4 lemons",
+      "3 limes",
       "a block of feta",
-      "a box of orzo",
-      "a can of chickpeas",
       "hibiscus tea"
     ],
     "pantry": [
@@ -97,31 +82,47 @@
       "chile flakes",
       "salt"
     ],
-    "cost_note": "Around $40–55 for the produce and $65–85 for the four proteins, from one well-stocked supermarket and a fish market. Everything in this edition is on these lines — nothing else to buy.",
-    "proteins": [
-      {
-        "slug": "rockfish",
-        "name": "Rockfish fillets",
-        "qty": "2 lbs, in two trips",
-        "uses": "The tacos, the weekend dish — from the fish market, or the store's fish counter"
-      },
-      {
-        "name": "Chicken sausage",
-        "qty": "1 lb",
-        "uses": "Sausages and peppers with ajvar, a lunch"
-      },
-      {
-        "name": "Pork tenderloin",
-        "qty": "1, about 1¼ lbs",
-        "uses": "With date-feta relish, two lunches"
-      },
-      {
-        "name": "Salmon or yellowtail",
-        "qty": "1 lb",
-        "uses": "Whichever looks best at the fish market. Fish in parchment, a lunch."
-      }
-    ],
-    "feeds": "Feeds one big appetite for a week: every dinner, and lunch from the leftovers most days."
+    "cost_note": "A week like the one suggested, everyday list included, runs about $100–130 at a well-stocked supermarket and a fish market — mostly depending on the fish. Store-counter rockfish and farmed salmon keep it near $100. Everything in this edition is on these lines — nothing else to buy.",
+    "feeds": "Pick five dishes. With their leftovers, that's dinner every night and lunch most days for one big appetite.",
+    "week": {
+      "core_label": "Every week",
+      "label": "Then pick five",
+      "suggested": "A good week: fish in parchment, rockfish tacos, roast pork, the sausage pan, and the sweet potatoes, with the orzo salad for lunches. The tacos and sweet potatoes each make two dinners.",
+      "dishes": [
+        {
+          "slug": "fish-in-parchment",
+          "buy": "1 lb salmon or yellowtail from the fish market, parchment paper"
+        },
+        {
+          "slug": "pork-tenderloin-date-relish",
+          "buy": "1 pork tenderloin (about 1¼ lbs), 2 sweet potatoes, 1 more red pepper"
+        },
+        {
+          "slug": "sausages-peppers-ajvar",
+          "buy": "1 lb chicken sausage, 2 more red peppers, ½ bunch lacinato kale. Uses half the kabocha."
+        },
+        {
+          "slug": "rockfish-tacos",
+          "buy": "1 lb rockfish (fish market or the store's counter), corn tortillas"
+        },
+        {
+          "slug": "ajvar-egg-toast",
+          "buy": "Nothing extra"
+        },
+        {
+          "slug": "sweet-potatoes-black-beans",
+          "buy": "4 sweet potatoes"
+        },
+        {
+          "slug": "orzo-salad",
+          "buy": "A box of orzo, a can of chickpeas, 1 bunch lacinato kale. Uses half the kabocha."
+        },
+        {
+          "slug": "seared-rockfish-brown-butter",
+          "buy": "1 lb rockfish, another bunch of arugula for the salad. Uses half the kabocha."
+        }
+      ]
+    }
   },
   "staples": [
     "Sticky white rice",
