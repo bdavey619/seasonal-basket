@@ -5,7 +5,7 @@
   "edition_number": 4,
   "status": "published",
   "base_url": "https://bdavey.co/seasonal-basket",
-  "opening_note": "October is San Diego's second summer. Some years the hottest week lands now, when the wind blows in from the desert. But the harvest has moved inland — new dates, new sweet potatoes, heavy pomegranates, the last sweet peppers — and as the water cools, the local rockfish comes in. Everything below comes from one store, and it all keeps you cooking through the week.",
+  "opening_note": "October is San Diego's second summer. Some years the hottest week lands now, when the wind blows in from the desert. But the harvest has moved inland — new dates, new sweet potatoes, heavy pomegranates, the last sweet peppers — and as the water cools, the local rockfish comes in. Everything below comes from one store and a fish market, and it all keeps you cooking through the week.",
   "thesis": "Keep the meal. Change the season.",
   "palette": {
     "background": "#e9e3d6",
@@ -69,7 +69,7 @@
       }
     ],
     "also_buy": [
-      "2 lemons",
+      "3 lemons",
       "2 limes",
       "corn tortillas",
       "a block of feta",
@@ -89,13 +89,13 @@
       "chile flakes",
       "salt"
     ],
-    "cost_note": "Around $30–40 for the produce and $55–70 for the four proteins, all from one well-stocked supermarket. Everything in this edition is on these lines — nothing else to buy.",
+    "cost_note": "Around $30–40 for the produce and $65–85 for the four proteins, from one well-stocked supermarket and a fish market. Everything in this edition is on these lines — nothing else to buy.",
     "proteins": [
       {
         "slug": "rockfish",
         "name": "Rockfish fillets",
         "qty": "2 lbs, in two trips",
-        "uses": "The tacos, the weekend dish"
+        "uses": "The tacos, the weekend dish — from the fish market, or the store's fish counter"
       },
       {
         "name": "Chicken sausage",
@@ -108,9 +108,9 @@
         "uses": "With date-feta relish, two lunches"
       },
       {
-        "name": "Ground lamb",
+        "name": "Firm white fish",
         "qty": "1 lb",
-        "uses": "Crispy lamb over yogurt, a second plate"
+        "uses": "Yellowtail, white seabass, or halibut from the fish market — whatever came in. Fish in parchment, a lunch."
       }
     ],
     "feeds": "Feeds one big appetite for a week: every dinner, and lunch from the leftovers most days."
@@ -154,6 +154,11 @@
       "slug": "dry-hot-hands-off",
       "name": "Dry fish, hot pan, hands off.",
       "body": "Fish sticks when it's wet or when you move it too soon. Pat it dry, salt it, heat the pan until the oil shimmers, lay the fillet down away from you, and leave it alone for three minutes. When it's ready, it lets go of the pan on its own. That's also the first step of every braise — you'll use it on bone-in chicken thighs once the evenings cool."
+    },
+    {
+      "slug": "fish-smell",
+      "name": "Fish without the smell.",
+      "body": "Most of the smell is the fish's fat breaking down in the heat, plus spatter landing on the stove and the wall. Buy it the day you cook it, from a counter that sells a lot of fish. Cook it briefly, or sealed in parchment. Turn the fan on before the pan heats and open a window across the room. Afterward, wipe down the stove and the wall behind it, take the wrapping out that night, and simmer a cup of water with half a cup of vinegar and a few lemon peels for ten minutes. Eat leftover fish cold; reheating it is what fills a room."
     }
   ],
   "drink": {
@@ -275,22 +280,26 @@
         ]
       },
       {
-        "name": "Ground lamb",
-        "why": "Rich, slightly gamey meat wants sweet and sour against it.",
+        "name": "Firm white fish",
+        "why": "Meaty fish like yellowtail or seabass carries as much flavor as meat does — smoke, sweetness, something sharp.",
         "best_with": [
-          "sweet-salty",
+          "smoky",
           "cool-sharp"
         ],
         "moves": [
           {
-            "lead": "Crisp",
-            "text": "Brown it hard until it crusts, and spoon it over cold salted yogurt with fruit.",
-            "dish": "crispy-lamb-kabocha",
-            "dish_label": "Over yogurt"
+            "lead": "Parchment",
+            "text": "Seal it in paper with a spoonful of the jar and lemon, and bake until the packet puffs.",
+            "dish": "fish-in-parchment",
+            "dish_label": "In parchment"
           },
           {
-            "lead": "Stuffed",
-            "text": "Pile it into a split baked sweet potato with feta and dates."
+            "lead": "Over yogurt",
+            "text": "Sear or broil it and set it over salted yogurt stirred with garlic, with roasted kabocha, pomegranate, and dates."
+          },
+          {
+            "lead": "Leftovers",
+            "text": "Flake it cold over rice with arugula and lemon. Don't reheat it."
           }
         ]
       },
@@ -350,13 +359,13 @@
   ],
   "dishes": [
     {
-      "slug": "crispy-lamb-kabocha",
-      "line": "Rich, sour, sweet, and crisp in every forkful.",
+      "slug": "fish-in-parchment",
+      "line": "Sealed in paper, so the smell stays in the packet until you open it.",
       "plate": [
-        "#d9822b",
-        "#f4efe4",
-        "#7a4a32",
-        "#b8283a"
+        "#efe3c8",
+        "#f3eee4",
+        "#c0472f",
+        "#f2d64b"
       ]
     },
     {
@@ -421,11 +430,12 @@
   ],
   "redirects": {
     "weekend": "meals/seared-rockfish-brown-butter/",
-    "meals/warm-plate": "meals/crispy-lamb-kabocha/",
+    "meals/warm-plate": "meals/fish-in-parchment/",
     "meals/sheet-pan-dinner": "meals/sausages-peppers-ajvar/",
     "meals/fish-tacos": "meals/rockfish-tacos/",
     "meals/toast-for-dinner": "meals/ajvar-egg-toast/",
     "meals/baked-sweet-potato": "meals/sweet-potatoes-black-beans/",
-    "meals/skillet-hash": "#meals"
+    "meals/skillet-hash": "#meals",
+    "meals/crispy-lamb-kabocha": "meals/fish-in-parchment/"
   }
 }

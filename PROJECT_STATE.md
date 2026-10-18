@@ -147,15 +147,15 @@ The original versions are in git history before this change.
 
 ## October — What the Edition Teaches
 
-October follows September's blueprint with three changes in how editions are built, all now in `EDITORIAL_PLAYBOOK.md`: one store and one closed shopping list; meal formats that change with the season; and the month's cut and method.
+October follows September's blueprint with three changes in how editions are built, all now in `EDITORIAL_PLAYBOOK.md`: one store (plus a fish market for fish, from week three) and one closed shopping list; meal formats that change with the season; and the month's cut and method.
 
 October answers the question September left open — heat or storage — with storage. San Diego's October is a second summer, but the harvest moves inland: Medjool dates, new-crop sweet potatoes, pomegranates, and kabocha, which improves for weeks on the counter. Red bell peppers (the jar's base) and arugula are the fresh side. Every basket item is available at one well-stocked supermarket; guavas and whole fish were cut because they weren't.
 
 **The shopping list** is the basket plus "Also buy" (lemons, limes, corn tortillas, feta, hibiscus tea) and "From your kitchen" (rice, black beans, sourdough, Greek yogurt, eggs, butter, olive oil, garlic, red wine vinegar, sugar, chile flakes, salt). Nothing else is mentioned anywhere in the edition.
 
-**The meals** are seven dishes, then "Or cook by instinct." Dishes: crispy lamb over yogurt with kabocha, pomegranate, and dates; roast pork tenderloin with sweet potatoes and date-feta relish; chicken sausages, peppers, and kabocha with ajvar; rockfish tacos with pomegranate and lime yogurt; ajvar toast with fried eggs (meatless); baked sweet potatoes with black beans, ajvar, and lime yogurt (meatless); and the weekend dish, seared rockfish with brown butter and the October salad. Each ends with "How it works" and "Make it your own." The instinct rows carry each protein's pairing line, a few one-sentence moves linked to the dishes, and its best flavors; the four flavors are defined once below. The weekend meal and the old format pages (sheet-pan dinner, warm plate, skillet hash, toast for dinner, baked sweet potato) were folded in or retired.
+**The meals** are seven dishes, then "Or cook by instinct." Dishes: fish baked in parchment with ajvar and lemon (replaced crispy lamb in week three — the cook isn't a lamb person, and parchment keeps the fish smell out of the condo); roast pork tenderloin with sweet potatoes and date-feta relish; chicken sausages, peppers, and kabocha with ajvar; rockfish tacos with pomegranate and lime yogurt; ajvar toast with fried eggs (meatless); baked sweet potatoes with black beans, ajvar, and lime yogurt (meatless); and the weekend dish, seared rockfish with brown butter and the October salad. Each ends with "How it works" and "Make it your own." The instinct rows carry each protein's pairing line, a few one-sentence moves linked to the dishes, and its best flavors; the four flavors are defined once below. The weekend meal and the old format pages (sheet-pan dinner, warm plate, skillet hash, toast for dinner, baked sweet potato) were folded in or retired.
 
-**The proteins** are four, each with its pairing line on the basket card: rockfish, 2 lbs in two trips (the cut; *a mild fish needs something peppery and sharp*), chicken sausage, 1 lb (*its fat bastes the vegetables*), pork tenderloin, about 1¼ lbs (*lean meat gets its richness from the finish*), and ground lamb, 1 lb (*rich meat wants sweet and sour*). Eggs and black beans carry the no-meat nights.
+**The proteins** are four, each with its pairing line on the basket card: rockfish, 2 lbs in two trips (the cut; *a mild fish needs something peppery and sharp*), chicken sausage, 1 lb (*its fat bastes the vegetables*), pork tenderloin, about 1¼ lbs (*lean meat gets its richness from the finish*), and 1 lb of firm white fish from the fish market — yellowtail, white seabass, or halibut (*meaty fish carries as much flavor as meat*), which replaced ground lamb in week three. Eggs and black beans carry the no-meat nights.
 
 The House Flavor is ajvar, made from peppers alone. The drink is cold-steeped hibiscus with pomegranate. One thing to notice is how to read a fresh fillet. No local ritual.
 
@@ -170,7 +170,7 @@ Which proteins each edition led with. No protein leads two months in a row; eggs
 | July | Wild salmon (the cut), skirt steak, shrimp |
 | August | Thick pork chops (the cut), halibut, chicken drumsticks, prosciutto |
 | September | Mahi-mahi (the cut), ground beef, boneless chicken thighs |
-| October | Rockfish (the cut), chicken sausage, pork tenderloin, ground lamb |
+| October | Rockfish (the cut), chicken sausage, pork tenderloin, firm white fish from the fish market (replaced ground lamb) |
 
 ## The Year's Cuts, Methods, and Tools (draft)
 

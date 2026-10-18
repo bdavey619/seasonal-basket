@@ -5,7 +5,7 @@
 Do these in order. Each step depends on the one before; the reasons behind each live in the sections below.
 
 1. **Read the weather and the season — honestly.** Research what is actually ripe in Southern California this month, and what the weather really is (San Diego's October is a second summer, not New England's fall). Decide what the month teaches: heat or restraint, fresh or storage.
-2. **Choose the basket from one store.** Six to eight seasonal ingredients, mostly vegetables, every one reliably available at a well-stocked supermarket. Include whatever the month's jar is made from. If it's only at a specialty market, leave it out.
+2. **Choose the basket from one store, plus a fish market for fish.** Six to eight seasonal ingredients, mostly vegetables, every one reliably available at a well-stocked supermarket. Include whatever the month's jar is made from. Fish may come from a fish market; everything else that's only at a specialty market stays out.
 3. **Choose the proteins — as many as the meals call for, with no fixed limit.** For each candidate, answer four questions:
    - *Category:* does it fill a gap? Aim for different kinds — fish, poultry, red meat, pork — not one animal on repeat.
    - *Rotation:* did it lead last month? Check the protein log; if so, pick another.
@@ -82,11 +82,11 @@ Each edition is organized around the four pillars. These are editorial scaffoldi
 6. Drink + Local ritual
 7. Weekend meal + One thing to notice
 
-## One Store, One List
+## One Store Plus a Fish Market, One List
 
 Two rules for every edition, from October on:
 
-- **Everything in the basket comes from one store.** A normal, well-stocked supermarket is the reference (Whole Foods, in practice). If an ingredient is only reliable at a specialty market, it doesn't go in the basket — save it for a month that is deliberately about that store. When a fish or cut may be out, name the substitute that works in every meal.
+- **Everything comes from one store, plus a fish market for the fish.** A normal, well-stocked supermarket is the reference (Whole Foods, in practice). Fish is the one exception: a local fish market sells what was caught this week, fresher and more varied than a supermarket counter, so the fish can come from there — and should still work from the store's counter if that's all you have. Name fish by type ("firm white fish — yellowtail, white seabass, or halibut") rather than one species, so the cook can buy what came in. Any other ingredient that's only reliable at a specialty market stays out of the basket — save it for a month that is deliberately about that store. When a fish or cut may be out, name the substitute that works in every meal.
 - **The shopping list is closed.** Every ingredient the edition mentions — in meals, the jar, the drink, the weekend meal, the ingredient pages — is either in the basket, on the "Also buy" line, or on the "From your kitchen" line, all shown in the basket card. No optional extras that aren't on a list (no "a splash of mezcal," no "if you have cotija"). Pick one cheese, one citrus, one tortilla, and use them everywhere. Before publishing, read every page against those three lines.
 
 ## Dishes First, Instinct Underneath

@@ -1,0 +1,83 @@
+{
+  "slug": "fish-in-parchment",
+  "name": "Fish baked in parchment with ajvar and lemon, and the October salad",
+  "display_name": "Fish in parchment",
+  "kind": "Weeknight",
+  "time": "25 minutes",
+  "time_short": "25 min",
+  "yield": "Dinner tonight and a fish lunch",
+  "intro": "A fresh fillet from the fish market, sealed in paper with a spoonful of the jar, lemon, and garlic. It steams in its own juices, and the smell stays in the packet until you cut it open at the table.",
+  "needs": [
+    "1 lb firm white fish — yellowtail, white seabass, or halibut — about 1 inch thick, in two pieces",
+    "Ajvar, 2 big spoonfuls",
+    "1 lemon, half sliced thin",
+    "1 garlic clove, sliced thin",
+    "Parchment paper",
+    "A big handful of arugula",
+    "Seeds of ½ pomegranate",
+    "3 Medjool dates, pitted and torn",
+    "Rice, cooked, to serve",
+    "Olive oil, chile flakes, and salt"
+  ],
+  "steps": [
+    {
+      "cue": "400°F",
+      "text": "Heat the oven. Tear off two sheets of parchment about 15 inches long and fold each in half like a book."
+    },
+    {
+      "text": "Salt the fish on both sides. Open each sheet, spread a spoonful of ajvar just beside the fold, and lay a fillet on it. Top with lemon slices, garlic, a pinch of chile flakes, and 1 tbsp olive oil."
+    },
+    {
+      "text": "Fold the paper over the fish and crimp the open edges in small, tight, overlapping folds all the way around, so no steam can escape. Set both packets on a sheet pan."
+    },
+    {
+      "cue": "12–15 min",
+      "text": "Bake until the packets puff. Inch-thick fillets take about 15 minutes; thinner ones about 10. To check, cut a small slit: the fish should be opaque and flake at the thickest part (145°F)."
+    },
+    {
+      "text": "Meanwhile, toss the arugula, pomegranate, and dates with olive oil, the juice of the other half lemon, and a pinch of salt."
+    },
+    {
+      "cue": "Finish",
+      "text": "Set a packet on rice and cut it open at the table, away from your face — the steam is hot. Spoon the juices over the rice, salad beside it."
+    }
+  ],
+  "how_it_works": "The sealed packet steams the fish in its own juices and the sauce you put under it, so it cooks gently and quickly and can't dry out. Gentle, short cooking is also what keeps fish from smelling: the smell comes from its fat breaking down with heat and air, and here there's little of either, and what there is stays in the paper. Any fish, any thick sauce, the same fold.",
+  "swaps": [
+    "Rockfish works too; thinner fillets take about 10 minutes.",
+    "Chile-garlic oil instead of ajvar.",
+    "Salted yogurt on the side for something cool."
+  ],
+  "leftovers": "Bake both packets and keep the second for lunch. Eat it cold, flaked over rice and arugula with lemon. Don't reheat it — reheated fish is where the smell comes from.",
+  "linked_house_flavor": "ajvar",
+  "linked_field_notes": [
+    "fish-smell"
+  ],
+  "linked_ingredients": [
+    "arugula",
+    "pomegranates",
+    "fresh-dates"
+  ],
+  "sources": [
+    {
+      "title": "Mediterranean Fish en Papillote — Food52",
+      "url": "https://food52.com/recipes/82601-mediterranean-fish-en-papillote",
+      "note": "sealed packets at 400°F for 15–18 minutes"
+    },
+    {
+      "title": "Salmon en Papillote — Food52",
+      "url": "https://food52.com/recipes/90827-best-salmon-en-papillote",
+      "note": "400°F for 12 minutes, timed to the fillet's thickness"
+    },
+    {
+      "title": "How to Cook Salmon So It Doesn't Taste Fishy — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/articles/7235-why-salmon-smells-fishy",
+      "note": "cooking fish briefly and gently keeps the smell down"
+    },
+    {
+      "title": "Safe Minimum Internal Temperature Chart — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+      "note": "fish is done at 145°F, or when it's opaque and flakes with a fork"
+    }
+  ]
+}
