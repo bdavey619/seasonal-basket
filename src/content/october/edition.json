@@ -73,6 +73,7 @@
       "2 limes",
       "corn tortillas",
       "a block of feta",
+      "a box of orzo",
       "hibiscus tea"
     ],
     "pantry": [
@@ -205,7 +206,7 @@
     "month": "November",
     "status": "Arriving November 1."
   },
-  "meals_heading": "Seven things to cook in October.",
+  "meals_heading": "Eight things to cook in October.",
   "meals_dek": "Specific dishes, chosen for this month's basket. Each one ends by explaining how it works — so the next time, you won't need it.",
   "meals_back_label": "October's meals",
   "tonight": {
@@ -415,6 +416,17 @@
         "#2b2622",
         "#f4efe4",
         "#8fae3e"
+      ]
+    },
+    {
+      "slug": "orzo-salad",
+      "line": "Make it Sunday, eat it all week. The fresh things go on at the end.",
+      "plate": [
+        "#efe6cc",
+        "#d9822b",
+        "#f6f3ea",
+        "#b8283a",
+        "#56673a"
       ]
     },
     {

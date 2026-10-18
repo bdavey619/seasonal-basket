@@ -1,0 +1,86 @@
+{
+  "slug": "orzo-salad",
+  "name": "Orzo salad with roasted kabocha, feta, and pomegranate",
+  "display_name": "Orzo salad",
+  "kind": "Make-ahead",
+  "time": "45 minutes, most of it roasting and cooling",
+  "time_short": "45 min",
+  "yield": "Five snack bowls, or three lunches",
+  "intro": "Make it on Sunday and it carries the week: orzo dressed while it's hot, dark-roasted squash, salty feta. Arugula and pomegranate go on each bowl as you eat it, so it tastes new on day four.",
+  "needs": [
+    "8 oz orzo (half a box)",
+    "½ kabocha, in ¾-inch cubes",
+    "3 oz feta, crumbled",
+    "⅓ cup olive oil, plus more for the squash",
+    "3 tbsp red wine vinegar",
+    "½ lemon",
+    "1 garlic clove, grated",
+    "Chile flakes and salt",
+    "To serve: arugula and pomegranate seeds"
+  ],
+  "steps": [
+    {
+      "cue": "425°F · 25–30 min",
+      "text": "Heat the oven. Toss the squash with oil and salt, spread it on a sheet pan in one layer, and roast, flipping once, until the edges are dark and it's tender. Let it cool."
+    },
+    {
+      "text": "Whisk the olive oil, vinegar, lemon juice, garlic, a pinch of chile flakes, and ½ tsp salt in a large bowl. Spoon 2 tbsp of it into a small jar and keep it for serving."
+    },
+    {
+      "cue": "About 10 min",
+      "text": "Boil the orzo in well-salted water — it should taste like the sea — for 2 minutes longer than the package says. Cold pasta firms up, so it needs the extra time."
+    },
+    {
+      "text": "Drain it without rinsing and toss it hot with the dressing in the bowl. Hot pasta drinks the dressing; cold pasta only gets coated."
+    },
+    {
+      "cue": "15 min",
+      "text": "Spread the dressed orzo on a sheet pan to cool so it doesn't clump."
+    },
+    {
+      "text": "Fold in the cooled squash and the feta, pack it into a covered container, and refrigerate it within 2 hours. Keep the arugula and pomegranate out."
+    },
+    {
+      "cue": "To eat",
+      "text": "Scoop a bowl, add a handful of arugula and some pomegranate, a spoonful of the saved dressing, and taste: cold dulls flavor, so it usually wants a squeeze of lemon and a pinch of salt."
+    }
+  ],
+  "how_it_works": "Three things make a pasta salad last: dress the pasta while it's hot so the flavor goes in, not just on; cook it a little past al dente because the cold firms it; and keep anything delicate out of the container until you eat it. The formula works every month — orzo, the month's vegetable, one cheese, a sharp dressing, something fresh at the end.",
+  "swaps": [
+    "Sliced leftover chicken sausage or pork for a lunch with protein.",
+    "Whisk a spoonful of ajvar into the dressing for smoke.",
+    "Torn dates for sweetness against the feta."
+  ],
+  "leftovers": "It is the leftovers. Covered in the fridge, it keeps 3 to 4 days.",
+  "linked_house_flavor": "ajvar",
+  "linked_field_notes": [
+    "kabocha-cutting"
+  ],
+  "linked_ingredients": [
+    "kabocha-squash",
+    "pomegranates",
+    "arugula"
+  ],
+  "sources": [
+    {
+      "title": "Orzo Salad — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/8699-orzo-salad-with-cucumber-red-onion-and-mint",
+      "note": "orzo dressed with a sharp vinaigrette, feta, made ahead"
+    },
+    {
+      "title": "How to Make a More Satisfying Pasta Salad — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/articles/8595-how-to-make-the-best-pasta-salad",
+      "note": "cook it past al dente for a cold salad; season it harder than a hot dish"
+    },
+    {
+      "title": "How to Make Pasta Salad Without a Recipe — Food52",
+      "url": "https://food52.com/blog/10406-how-to-make-pasta-salad-without-a-recipe",
+      "note": "dress it warm, cool it spread out, add tender greens last"
+    },
+    {
+      "title": "Leftovers and Food Safety — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/leftovers-and-food-safety",
+      "note": "refrigerate within 2 hours; cooked leftovers keep 3 to 4 days"
+    }
+  ]
+}
