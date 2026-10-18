@@ -191,7 +191,7 @@ Each month should build on the last: gentle heat (July), salt-and-rest (August),
 
 ## Next Milestone
 
-Begin the November edition: bone-in chicken thighs, braising, and the Dutch oven, if the weather has actually turned. Pick two or three other proteins that don't repeat October's — check the protein log. Persimmons and pomegranates peak; the first citrus arrives.
+Begin the November edition: bone-in chicken thighs, braising, and the Dutch oven, if the weather has actually turned. Its make-ahead should be the first soup — one pot, eaten through the week, with portions frozen. Pick two or three other proteins that don't repeat October's — check the protein log. Persimmons and pomegranates peak; the first citrus arrives.
 
 ## Development Handoff Goal
 
