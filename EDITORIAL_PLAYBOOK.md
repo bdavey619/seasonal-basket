@@ -5,7 +5,7 @@
 Do these in order. Each step depends on the one before; the reasons behind each live in the sections below.
 
 1. **Read the weather and the season — honestly.** Research what is actually ripe in Southern California this month, and what the weather really is (San Diego's October is a second summer, not New England's fall). Decide what the month teaches: heat or restraint, fresh or storage.
-2. **Choose the basket from one store, plus a fish market for fish.** Six to eight seasonal ingredients, mostly vegetables, every one reliably available at a well-stocked supermarket. Include whatever the month's jar is made from. Fish may come from a fish market; everything else that's only at a specialty market stays out.
+2. **Choose the basket from one store, plus a fish market for fish.** Six to eight seasonal ingredients, mostly vegetables, every one reliably available at a well-stocked supermarket. Include whatever the month's jar is made from. Fish may come from a fish market; everything else that's only at a specialty market stays out. Choose with variety in mind from the start (see "Nutritional Variety as Inspiration"): is there a dark green coming into season, an oily fish at the counter, a legume or grain that belongs with this produce?
 3. **Choose the proteins — as many as the meals call for, with no fixed limit.** For each candidate, answer four questions:
    - *Category:* does it fill a gap? Aim for different kinds — fish, poultry, red meat, pork — not one animal on repeat.
    - *Rotation:* did it lead last month? Check the protein log; if so, pick another.
@@ -18,7 +18,7 @@ Do these in order. Each step depends on the one before; the reasons behind each 
 7. **Write the shopping list and close it.** Basket, proteins (with amounts, meals, and pairing line), "Also buy," and "From your kitchen." Pick one cheese, one citrus, one tortilla. Then read every page — meals, jar, drink, weekend meal, ingredient pages — and remove or list anything not on those lines.
 8. **Set the quantities.** One active cook with a big appetite, dinner every night, leftovers for lunch most days: roughly 8 oz of raw protein per meal. State it in the basket card's "feeds" line. Give every recipe a serving size a real person eats: "dinner for one" means one person eats it all; name rice by the cup, yogurt by type (2% Greek), and oil by the tablespoon wherever it's more than a film in the pan.
 9. **Write the rest of the edition.** Field Notes, the jar, the drink, one thing to notice. Leave out any section that isn't about cooking this month.
-10. **Estimate nutrition, then review the month.** Enter each dish in `tools/nutrition_worksheet.py`, run it, and copy the rounded figures into each meal's `nutrition` block (see "Nutrition, Quietly"). Then run the monthly nutrition review below and record it in `PROJECT_STATE.md`.
+10. **Estimate nutrition, then look back.** Enter each dish in `tools/nutrition_worksheet.py`, run it, and copy the rounded figures into each meal's `nutrition` block (see "Nutrition, Quietly"). Then reread the month against the variety questions below and record what you found in `PROJECT_STATE.md` — by now it should confirm choices already made, not send you back to patch them.
 11. **Check and record.** Build (it verifies pages, links, and that every meal is reachable). Check the page at phone and desktop width. Add the month to the protein log and update the year plan in `PROJECT_STATE.md`.
 
 ## Product Vision
@@ -131,12 +131,14 @@ Nutrition supports the cooking; it never leads it.
 - **Servings first.** A number is only as good as the serving it describes. Fix vague servings before estimating.
 - **Keep it current.** Any change to a recipe's amounts means re-running the worksheet before publishing.
 
-## Monthly Nutrition Review
+## Nutritional Variety as Inspiration
 
-An editorial check, run once the basket and dishes are drafted. It lives in `PROJECT_STATE.md`, never on the site. It's a set of prompts, not quotas — the season decides, and a month can be light on something if the reason is good.
+Variety is a source of ideas, not a box to tick after the fact. Bring these questions to steps 2–5, while the basket and dishes are still taking shape, and let the answers suggest better food: the green that crisps on the sausage pan, the oily fish that parchment was made for, the chickpeas that give a make-ahead salad something to bite into. The test for every addition is the same as for anything else in the edition — it has to make a dish more interesting or more delicious. If it only satisfies a guideline, leave it out.
+
+Prefer substitutions and enhancements inside existing dishes over new recipes or a longer shopping list. Prefer a preference over a rule where quality matters more (a great traditional sourdough beats a mediocre whole-grain one). The record lives in `PROJECT_STATE.md`, never on the site. These are prompts, not quotas — the season decides, and a month can be light on something if the reason is good.
 
 - **Proteins.** At least three kinds across the month (fish, poultry, pork or red meat, eggs or legumes)? Different from last month's lead?
-- **Omega-3s.** An oily fish (salmon, mackerel, sardines, yellowtail, black cod) this month or last? Lean white fish doesn't count.
+- **Omega-3s.** An oily fish (salmon, mackerel, sardines, yellowtail, black cod) this month or last? Lean white fish doesn't count. When a dish can take more than one fish, estimate each one separately.
 - **Legumes.** At least one dish built on beans or lentils, not just a side?
 - **Greens.** A leafy or cruciferous green when one is in season?
 - **Grains and carbohydrates.** A good spread of carbohydrates (rice, potatoes, bread, tortillas, pasta), and at least one whole grain or whole-grain option?

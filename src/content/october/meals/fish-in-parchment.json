@@ -6,9 +6,9 @@
   "time": "25 minutes",
   "time_short": "25 min",
   "yield": "Dinner tonight and a fish lunch",
-  "intro": "A fresh fillet from the fish market, sealed in paper with a spoonful of the jar, lemon, and garlic. It steams in its own juices, and the smell stays in the packet until you cut it open at the table.",
+  "intro": "A rich fillet from the fish market — salmon, or local yellowtail — sealed in paper with a spoonful of the jar, lemon, and garlic. It steams in its own juices, and the smell stays in the packet until you cut it open at the table.",
   "needs": [
-    "1 lb firm white fish — yellowtail, white seabass, or halibut — about 1 inch thick, in two pieces",
+    "1 lb salmon or yellowtail fillet, about 1 inch thick, in two pieces",
     "Ajvar, 2 big spoonfuls",
     "1 lemon, half sliced thin",
     "1 garlic clove, sliced thin",
@@ -32,7 +32,7 @@
     },
     {
       "cue": "12–15 min",
-      "text": "Bake until the packets puff. Inch-thick fillets take about 15 minutes; thinner ones about 10. To check, cut a small slit: the fish should be opaque and flake at the thickest part (145°F)."
+      "text": "Bake until the packets puff. Inch-thick fillets take about 15 minutes; thinner ones about 10. To check, cut a small slit: the fish should flake at the thickest part (the USDA's safe temperature is 145°F). Salmon goes from silky to dry quickly, so check at 12."
     },
     {
       "text": "Meanwhile, toss the arugula, pomegranate, and dates with 1 tbsp olive oil, the juice of the other half lemon, and a pinch of salt."
@@ -42,9 +42,9 @@
       "text": "Set a packet on rice and cut it open at the table, away from your face — the steam is hot. Spoon the juices over the rice, salad beside it."
     }
   ],
-  "how_it_works": "The sealed packet steams the fish in its own juices and the sauce you put under it, so it cooks gently and quickly and can't dry out. Gentle, short cooking is also what keeps fish from smelling: the smell comes from its fat breaking down with heat and air, and here there's little of either, and what there is stays in the paper. Any fish, any thick sauce, the same fold.",
+  "how_it_works": "The sealed packet steams the fish in its own juices and the sauce you put under it, so it cooks gently and quickly and can't dry out. That suits a rich fish best: salmon and yellowtail carry the smoky, sweet jar and the lemon, and the sweet-sour salad beside them cuts the richness. Gentle, short cooking is also what keeps fish from smelling — the smell comes from its fat breaking down with heat and air, there's little of either here, and what there is stays in the paper. Any fish, any thick sauce, the same fold.",
   "swaps": [
-    "Rockfish works too; thinner fillets take about 10 minutes.",
+    "Halibut or white seabass for something leaner and milder; same time.",
     "Chile-garlic oil instead of ajvar.",
     "Salted yogurt on the side for something cool."
   ],
@@ -84,11 +84,11 @@
     "serving": "One packet with 1 cup cooked rice and half the salad.",
     "excludes": "Nothing beyond the 1 cup of rice.",
     "kcal": [
-      750,
-      900
+      850,
+      1050
     ],
     "protein": [
-      50,
+      55,
       60
     ],
     "carbs": [
@@ -96,12 +96,71 @@
       85
     ],
     "fat": [
-      25,
-      35
+      35,
+      55
     ],
     "fiber": [
       5,
       5
+    ],
+    "variants": [
+      {
+        "label": "Local yellowtail",
+        "kcal": [
+          900,
+          900
+        ],
+        "protein": [
+          60,
+          60
+        ],
+        "carbs": [
+          85,
+          85
+        ],
+        "fat": [
+          35,
+          35
+        ]
+      },
+      {
+        "label": "Wild salmon",
+        "kcal": [
+          850,
+          900
+        ],
+        "protein": [
+          55,
+          55
+        ],
+        "carbs": [
+          85,
+          85
+        ],
+        "fat": [
+          35,
+          40
+        ]
+      },
+      {
+        "label": "Farmed salmon",
+        "kcal": [
+          1050,
+          1050
+        ],
+        "protein": [
+          55,
+          55
+        ],
+        "carbs": [
+          85,
+          85
+        ],
+        "fat": [
+          55,
+          55
+        ]
+      }
     ]
   }
 }
