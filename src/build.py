@@ -354,6 +354,12 @@ def nutrition_range(pair, unit=""):
     return (fmt(lo) if lo == hi else f"{fmt(lo)}–{fmt(hi)}") + unit
 
 
+def nutrition_about(pair, step):
+    """One rounded figure for the card line: the middle of the range, to the nearest step."""
+    mid = (pair[0] + pair[1]) / 2
+    return f"{int(mid / step + 0.5) * step:,}"
+
+
 def render_mornings(mornings):
     """
     Mornings and the hours between: small ideas from the same basket, grouped
@@ -1610,9 +1616,8 @@ def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_
     nutrition_line = ""
     nutrition_html = ""
     if nut:
-        nutrition_line = (f'\n      <p class="cook-nutrition">About {nutrition_range(nut["kcal"])} kcal · '
-                          f'{nutrition_range(nut["protein"], " g")} protein a serving'
-                          f'<span class="cook-nutrition-note"> (estimate)</span></p>')
+        nutrition_line = (f'\n      <p class="cook-nutrition">About {nutrition_about(nut["kcal"], 50)} kcal and '
+                          f'{nutrition_about(nut["protein"], 5)} g protein a serving</p>')
         rows = "".join(
             f'<tr><th scope="row">{label}</th><td>{nutrition_range(nut[key], unit)}</td></tr>'
             for label, key, unit in [("Calories", "kcal", " kcal"), ("Protein", "protein", " g"),

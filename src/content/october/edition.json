@@ -34,19 +34,19 @@
       {
         "slug": "kabocha-squash",
         "name": "Kabocha squash",
-        "qty": "1 large",
+        "qty": "2 large",
         "note": "The sweetest squash there is. It keeps for months."
       },
       {
         "slug": "red-bell-peppers",
         "name": "Red bell peppers",
-        "qty": "6",
+        "qty": "7",
         "note": "The last sweet ones. Four go into the jar."
       },
       {
         "slug": "sweet-potatoes",
         "name": "Sweet potatoes",
-        "qty": "4 medium",
+        "qty": "6 medium",
         "note": "New crop. Dinner, when the week gets away from you."
       },
       {
@@ -69,8 +69,8 @@
       }
     ],
     "also_buy": [
-      "3 lemons",
-      "2 limes",
+      "5 lemons",
+      "4 limes",
       "corn tortillas",
       "a block of feta",
       "a box of orzo",
@@ -90,7 +90,7 @@
       "chile flakes",
       "salt"
     ],
-    "cost_note": "Around $30–40 for the produce and $65–85 for the four proteins, from one well-stocked supermarket and a fish market. Everything in this edition is on these lines — nothing else to buy.",
+    "cost_note": "Around $35–50 for the produce and $65–85 for the four proteins, from one well-stocked supermarket and a fish market. Everything in this edition is on these lines — nothing else to buy.",
     "proteins": [
       {
         "slug": "rockfish",

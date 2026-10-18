@@ -78,12 +78,19 @@ OCTOBER = {
     "sausages-peppers-ajvar": dict(
         servings=2, serving="Half the recipe: two to three sausages, half the squash and peppers, ajvar, and one thick slice of sourdough or 1 cup cooked rice.",
         excludes="Nothing beyond the bread or rice.",
+        # Checked: 1 lb sausage is ~5⅓ links at 160–190 kcal each (labels), so half the pan is ~430–510 kcal
+        # of sausage alone; half a 3-lb kabocha (500–650 g usable) split two ways. The pan's 2 tbsp oil is
+        # counted once; the ajvar includes its own oil; the bread is one slice per serving (or 1 cup rice,
+        # about the same). Rendered sausage fat left on the pan isn't subtracted, so the top of the range is generous.
         items=[("chicken sausage", 454), ("kabocha", (500, 650)), ("red bell pepper", 240), ("olive oil", 2 * TBSP_OIL),
                ("ajvar", (3 * 22, 4 * 22)), ("sourdough", (2 * 60, 2 * 75))]),
     "ajvar-egg-toast": dict(
         servings=1, serving="The whole recipe: two eggs on two thick slices of sourdough.",
         excludes="Nothing.",
-        items=[("sourdough", (120, 150)), ("olive oil", (1.5 * TBSP_OIL, 2 * TBSP_OIL)), ("egg", 2 * 50),
+        # 2 tbsp oil go in the pan once: the bread soaks up most of it and the eggs fry
+        # in what's left, so count 1¼–1¾ tbsp eaten, not 2 for the bread plus more for the eggs.
+        # The ajvar value already includes the jar's own oil; the ½ tbsp is the arugula's dressing.
+        items=[("sourdough", (120, 150)), ("olive oil", (1.25 * TBSP_OIL, 1.75 * TBSP_OIL)), ("egg", 2 * 50),
                ("ajvar", (2 * 22, 3 * 22)), ("arugula", 20), ("olive oil", 0.5 * TBSP_OIL)]),
     "sweet-potatoes-black-beans": dict(
         servings=2, serving="Half the recipe: two baked sweet potatoes, half the beans, ¼ cup yogurt, feta, ajvar.",

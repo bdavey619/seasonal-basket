@@ -115,7 +115,7 @@ A short section after the dishes and before "Or cook by instinct": three weekday
 - **From the same basket.** Every idea uses the closed shopping list. Mornings are where the month's produce, the jar, and the leftovers get a second life: a cold wedge of last night's squash, the jar on eggs, the month's fruit on yogurt.
 - **Weekdays are fast; weekends can be a project.** Weekday ideas take five minutes or come straight from the fridge. Weekend ideas can borrow from a real tradition (eggs on garlic yogurt, a hash, a slow scramble).
 - **Seasonal and culinary, never a fitness menu.** No "protein hacks," no shakes, no packaged bars or granola. If an idea reads like a gym snack, rewrite it as food someone would want to eat.
-- **Mind the allergy.** Nothing with tree nuts, peanuts, or sesame — and that rules out most granola, nut butters, pesto, seeded breads, and store-bought "power" snacks.
+- **Nut-free, sesame-free.** Like every edition, nothing with tree nuts, peanuts, or sesame — and that rules out most granola, nut butters, pesto, seeded breads, and store-bought "power" snacks.
 
 ## Make It a Meal
 
@@ -143,7 +143,7 @@ An editorial check, run once the basket and dishes are drafted. It lives in `PRO
 - **Color and fiber.** Produce from more than one color family? A few high-fiber meals?
 - **Enough to eat.** Do the proteins and amounts support dinner and most lunches for an active cook (the "feeds" line)? Do the light dishes have a "Make it a meal"?
 
-The editor's own goals — an active cook rebuilding strength who surfs, runs, and plays tennis — inform these questions. They don't organize the edition: the season, the basket, and the cooking still come first.
+Seasonal is written for an active cook — someone who trains, plays outside, and eats to match. That reader informs these questions; it doesn't organize the edition. The season, the basket, and the cooking still come first.
 
 ## Meal Formats Change With the Season
 

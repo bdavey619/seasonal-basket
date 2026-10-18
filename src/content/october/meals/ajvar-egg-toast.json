@@ -67,8 +67,8 @@
     "serving": "The whole recipe: two eggs on two thick slices of sourdough.",
     "excludes": "Nothing.",
     "kcal": [
-      800,
-      1000
+      750,
+      950
     ],
     "protein": [
       25,
@@ -79,8 +79,8 @@
       85
     ],
     "fat": [
-      45,
-      60
+      40,
+      55
     ],
     "fiber": [
       5,
@@ -88,7 +88,7 @@
     ],
     "with_meal": {
       "kcal": [
-        900,
+        850,
         1100
       ],
       "protein": [

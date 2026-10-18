@@ -102,15 +102,15 @@ Recipe makes 1 serving(s). **Serving:** The whole recipe: two eggs on two thick 
 | Ingredient (whole recipe) | grams | kcal | protein | carbs | fat | fiber |
 |---|---|---|---|---|---|---|
 | sourdough | 120–150 | 326–408 | 13–16 | 62–78 | 3–4 | 3–3 |
-| olive oil | 20–27 | 179–239 | 0 | 0 | 20–27 | 0 |
+| olive oil | 17–24 | 149–209 | 0 | 0 | 17–24 | 0 |
 | egg | 100 | 144 | 13 | 1 | 10 | 0 |
 | ajvar | 44–66 | 70–145 | 0 | 4–7 | 6–13 | 1–2 |
 | arugula | 20 | 5 | 1 | 1 | 0 | 0 |
 | olive oil | 7 | 60 | 0 | 0 | 7 | 0 |
-| **Per serving** | | **784–1001** | **27–30** | **67–86** | **45–60** | **4–6** |
-| *Published (rounded)* | | 800–1000 | 25–30 | 65–85 | 45–60 | 5 |
+| **Per serving** | | **755–971** | **27–30** | **67–86** | **42–56** | **4–6** |
+| *Published (rounded)* | | 750–950 | 25–30 | 65–85 | 40–55 | 5 |
 
-With the "Make it a meal" pairing (egg, greek yogurt 2%): about 900–1100 kcal, 40–40 g protein.
+With the "Make it a meal" pairing (egg, greek yogurt 2%): about 850–1100 kcal, 40–40 g protein.
 
 ## sweet-potatoes-black-beans
 
