@@ -13,12 +13,13 @@ Do these in order. Each step depends on the one before; the reasons behind each 
    - *Cut and weather:* which cut suits the month's weather? Quick, lean cuts when it's warm; long-cooked cuts when it's cool. Seafood seasonality is literal — name it. Meat seasonality usually isn't — say so, and choose the cut for the weather.
    One of the proteins is the month's cut: the new one the weekend meal teaches.
 4. **Choose the method and, only if one is genuinely coming back into use, a tool.** The method is taught by the weekend meal and named in one Field Note that points to next month.
-5. **Choose the dishes.** Six or seven specific dishes that suit the weather and the basket, including the weekend dish and at least one meatless one. Then write the instinct rows from them: each protein's pairing line and two or three moves, linking the moves the dishes demonstrate. Every dish must be linked from the edition page; the build checks. One of the dishes is **the make-ahead**: something cooked once that keeps in the fridge for snacks and lunches all week (see "The Make-Ahead" below).
+5. **Choose the dishes.** Six or seven specific dishes that suit the weather and the basket, including the weekend dish and at least one meatless one. Then write the instinct rows from them: each protein's pairing line and two or three moves, linking the moves the dishes demonstrate. Every dish must be linked from the edition page; the build checks. One of the dishes is **the make-ahead**: something cooked once that keeps in the fridge for snacks and lunches all week (see "The Make-Ahead" below). Then write **Mornings, and in between** from the same basket (see "Mornings, and In Between").
 6. **Choose three or four flavors.** Each is two or three things from the shopping list, defined once (what it is, how to do it). Give each protein its two best flavors, following from its pairing line.
 7. **Write the shopping list and close it.** Basket, proteins (with amounts, meals, and pairing line), "Also buy," and "From your kitchen." Pick one cheese, one citrus, one tortilla. Then read every page — meals, jar, drink, weekend meal, ingredient pages — and remove or list anything not on those lines.
-8. **Set the quantities.** One active cook with a big appetite, dinner every night, leftovers for lunch most days: roughly 8 oz of raw protein per meal. State it in the basket card's "feeds" line.
+8. **Set the quantities.** One active cook with a big appetite, dinner every night, leftovers for lunch most days: roughly 8 oz of raw protein per meal. State it in the basket card's "feeds" line. Give every recipe a serving size a real person eats: "dinner for one" means one person eats it all; name rice by the cup, yogurt by type (2% Greek), and oil by the tablespoon wherever it's more than a film in the pan.
 9. **Write the rest of the edition.** Field Notes, the jar, the drink, one thing to notice. Leave out any section that isn't about cooking this month.
-10. **Check and record.** Build (it verifies pages, links, and that every meal is reachable). Check the page at phone and desktop width. Add the month to the protein log and update the year plan in `PROJECT_STATE.md`.
+10. **Estimate nutrition, then review the month.** Enter each dish in `tools/nutrition_worksheet.py`, run it, and copy the rounded figures into each meal's `nutrition` block (see "Nutrition, Quietly"). Then run the monthly nutrition review below and record it in `PROJECT_STATE.md`.
+11. **Check and record.** Build (it verifies pages, links, and that every meal is reachable). Check the page at phone and desktop width. Add the month to the protein log and update the year plan in `PROJECT_STATE.md`.
 
 ## Product Vision
 
@@ -106,6 +107,43 @@ A great dish inspires you to cook; its "How it works" teaches you to cook it wit
 **The make-ahead.** Every edition has one dish made to keep: cooked once, eaten cold or quickly finished for snacks and lunches through the week. It sits alongside the jar (which keeps a flavor) and the drink — this one keeps a meal. The default is the fridge salad, and it's a formula, not a recipe: **orzo + the month's vegetable + one cheese + a sharp dressing (often the jar) + something fresh added at serving.** Keep orzo constant so the habit repeats; only the produce changes — raw in warm months, roasted in cool ones. Its rules: dress the pasta while it's hot; cook it two minutes past al dente, since the cold firms it; keep greens, herbs, juicy fruit, and burrata out of the container and add them to each bowl; season it harder than a hot dish and taste it again cold; refrigerate within two hours and eat it within three or four days. In the colder months the make-ahead becomes a soup: a big pot made once, eaten through the week and frozen in portions for later. Otherwise, when a month suits something else better, it can be a marinated bean salad or a frittata eaten cold — but it should be one thing, made once, that feeds the week.
 
 **Retiring a page.** Once an edition is live, its URLs may be bookmarked. When a page is removed or renamed, add the old path to the edition's `redirects` (old path → replacement, relative to the edition) so the build leaves a forwarding page behind.
+
+## Mornings, and In Between
+
+A short section after the dishes and before "Or cook by instinct": three weekday ideas, two or three for the weekend, and three for the hours between meals. One line each, like the instinct moves — ideas to cook from, not recipes to follow.
+
+- **From the same basket.** Every idea uses the closed shopping list. Mornings are where the month's produce, the jar, and the leftovers get a second life: a cold wedge of last night's squash, the jar on eggs, the month's fruit on yogurt.
+- **Weekdays are fast; weekends can be a project.** Weekday ideas take five minutes or come straight from the fridge. Weekend ideas can borrow from a real tradition (eggs on garlic yogurt, a hash, a slow scramble).
+- **Seasonal and culinary, never a fitness menu.** No "protein hacks," no shakes, no packaged bars or granola. If an idea reads like a gym snack, rewrite it as food someone would want to eat.
+- **Nut-free, sesame-free.** Like every edition, nothing with tree nuts, peanuts, or sesame — and that rules out most granola, nut butters, pesto, seeded breads, and store-bought "power" snacks.
+
+## Make It a Meal
+
+Some dishes are deliberately light: a toast, a salad, a meatless plate. Where pairing something with it genuinely makes it a better dinner, add one line — "Make it a meal" — after Leftovers: what to add and why it tastes right ("the yolks dress the orzo"). It's optional by design. Don't add it to dishes that are already a full meal, and never change a light recipe just to raise its protein; some dishes should stay snacks, sides, or small dinners.
+
+## Nutrition, Quietly
+
+Nutrition supports the cooking; it never leads it.
+
+- **Where it appears.** One small line on each recipe card — about how many calories and how much protein a serving — and a closed "Nutrition estimate" panel at the very end of the card with carbohydrates, fat, fiber, exactly what a serving is, and what's not included. Never on the edition page, the dish list, or the basket card. No daily totals, no targets, no sorting or filtering by nutrients.
+- **How it's estimated.** Every number comes from `tools/nutrition_worksheet.py`, which adds up the recipe's own ingredient amounts using standard values (USDA FoodData Central; Japan's food tables for kabocha, which USDA only lists as generic squash; package labels for branded items like sausage). Each ingredient carries a low and high value so real uncertainty — fish species, sausage brand, how much frying fat stays in the pan — becomes a range. The worksheet writes `editions/<month>/NUTRITION.md`, the audit trail for every figure.
+- **No false precision.** Round calories to the nearest 50 and grams to the nearest 5. Show a range whenever the low and high differ. Always say "about" and "estimate."
+- **Servings first.** A number is only as good as the serving it describes. Fix vague servings before estimating.
+- **Keep it current.** Any change to a recipe's amounts means re-running the worksheet before publishing.
+
+## Monthly Nutrition Review
+
+An editorial check, run once the basket and dishes are drafted. It lives in `PROJECT_STATE.md`, never on the site. It's a set of prompts, not quotas — the season decides, and a month can be light on something if the reason is good.
+
+- **Proteins.** At least three kinds across the month (fish, poultry, pork or red meat, eggs or legumes)? Different from last month's lead?
+- **Omega-3s.** An oily fish (salmon, mackerel, sardines, yellowtail, black cod) this month or last? Lean white fish doesn't count.
+- **Legumes.** At least one dish built on beans or lentils, not just a side?
+- **Greens.** A leafy or cruciferous green when one is in season?
+- **Grains and carbohydrates.** A good spread of carbohydrates (rice, potatoes, bread, tortillas, pasta), and at least one whole grain or whole-grain option?
+- **Color and fiber.** Produce from more than one color family? A few high-fiber meals?
+- **Enough to eat.** Do the proteins and amounts support dinner and most lunches for an active cook (the "feeds" line)? Do the light dishes have a "Make it a meal"?
+
+Seasonal is written for an active cook — someone who trains, plays outside, and eats to match. That reader informs these questions; it doesn't organize the edition. The season, the basket, and the cooking still come first.
 
 ## Meal Formats Change With the Season
 

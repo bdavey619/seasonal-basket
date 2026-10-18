@@ -16,7 +16,7 @@
     "A big handful of arugula",
     "Seeds of ½ pomegranate",
     "3 Medjool dates, pitted and torn",
-    "Rice, cooked, to serve",
+    "Rice: about 1 cup cooked per serving",
     "Olive oil, chile flakes, and salt"
   ],
   "steps": [
@@ -35,7 +35,7 @@
       "text": "Bake until the packets puff. Inch-thick fillets take about 15 minutes; thinner ones about 10. To check, cut a small slit: the fish should be opaque and flake at the thickest part (145°F)."
     },
     {
-      "text": "Meanwhile, toss the arugula, pomegranate, and dates with olive oil, the juice of the other half lemon, and a pinch of salt."
+      "text": "Meanwhile, toss the arugula, pomegranate, and dates with 1 tbsp olive oil, the juice of the other half lemon, and a pinch of salt."
     },
     {
       "cue": "Finish",
@@ -79,5 +79,29 @@
       "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
       "note": "fish is done at 145°F, or when it's opaque and flakes with a fork"
     }
-  ]
+  ],
+  "nutrition": {
+    "serving": "One packet with 1 cup cooked rice and half the salad.",
+    "excludes": "Nothing beyond the 1 cup of rice.",
+    "kcal": [
+      750,
+      900
+    ],
+    "protein": [
+      50,
+      60
+    ],
+    "carbs": [
+      85,
+      85
+    ],
+    "fat": [
+      25,
+      35
+    ],
+    "fiber": [
+      5,
+      5
+    ]
+  }
 }

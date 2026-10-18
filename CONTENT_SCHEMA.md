@@ -86,3 +86,33 @@
   "editorial_note": ""
 }
 ```
+
+## Dish and Edition Fields Added in October
+
+Optional fields on a meal (`src/content/<month>/meals/<slug>.json`):
+
+```json
+{
+  "make_it_a_meal": "One line: what to add, and why it tastes right.",
+  "nutrition": {
+    "serving": "What one serving is, in plain words.",
+    "excludes": "What the estimate leaves out (e.g. the rice).",
+    "kcal": [650, 700], "protein": [55, 60], "carbs": [75, 80], "fat": [10, 15], "fiber": [10, 10],
+    "with_meal": { "kcal": [900, 1100], "protein": [40, 40] }
+  }
+}
+```
+
+Nutrition figures are `[low, high]`, already rounded (50 kcal, 5 g), copied from `tools/nutrition_worksheet.py`. `with_meal` is the estimate with the "Make it a meal" pairing.
+
+Optional field on an edition:
+
+```json
+{
+  "mornings": {
+    "heading": "Mornings, and in between",
+    "dek": "",
+    "groups": [ { "label": "Weekdays", "items": [ { "name": "", "text": "" } ] } ]
+  }
+}
+```

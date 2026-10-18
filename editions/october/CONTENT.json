@@ -34,19 +34,19 @@
       {
         "slug": "kabocha-squash",
         "name": "Kabocha squash",
-        "qty": "1 large",
+        "qty": "2 large",
         "note": "The sweetest squash there is. It keeps for months."
       },
       {
         "slug": "red-bell-peppers",
         "name": "Red bell peppers",
-        "qty": "6",
+        "qty": "7",
         "note": "The last sweet ones. Four go into the jar."
       },
       {
         "slug": "sweet-potatoes",
         "name": "Sweet potatoes",
-        "qty": "4 medium",
+        "qty": "6 medium",
         "note": "New crop. Dinner, when the week gets away from you."
       },
       {
@@ -69,8 +69,8 @@
       }
     ],
     "also_buy": [
-      "3 lemons",
-      "2 limes",
+      "5 lemons",
+      "4 limes",
       "corn tortillas",
       "a block of feta",
       "a box of orzo",
@@ -80,7 +80,7 @@
       "rice",
       "black beans",
       "sourdough",
-      "Greek yogurt",
+      "2% Greek yogurt",
       "eggs",
       "butter",
       "olive oil",
@@ -90,7 +90,7 @@
       "chile flakes",
       "salt"
     ],
-    "cost_note": "Around $30–40 for the produce and $65–85 for the four proteins, from one well-stocked supermarket and a fish market. Everything in this edition is on these lines — nothing else to buy.",
+    "cost_note": "Around $35–50 for the produce and $65–85 for the four proteins, from one well-stocked supermarket and a fish market. Everything in this edition is on these lines — nothing else to buy.",
     "proteins": [
       {
         "slug": "rockfish",
@@ -101,7 +101,7 @@
       {
         "name": "Chicken sausage",
         "qty": "1 lb",
-        "uses": "Sausages and peppers with ajvar, two lunches"
+        "uses": "Sausages and peppers with ajvar, a lunch"
       },
       {
         "name": "Pork tenderloin",
@@ -450,6 +450,63 @@
     "meals/skillet-hash": "#meals",
     "meals/crispy-lamb-kabocha": "meals/fish-in-parchment/"
   },
+  "mornings": {
+    "heading": "Mornings, and in between",
+    "dek": "Small things from the same basket: quick on weekdays, slower on the weekend.",
+    "groups": [
+      {
+        "label": "Weekdays",
+        "items": [
+          {
+            "name": "Eggs and the jar",
+            "text": "Boiled eggs, halved and salted, with a spoonful of ajvar and a cold wedge of last night's kabocha. Ready before the kettle."
+          },
+          {
+            "name": "Yogurt, pomegranate, date",
+            "text": "Thick yogurt with a pinch of salt and a thread of olive oil, pomegranate seeds, and a torn date. The October plate, at breakfast."
+          },
+          {
+            "name": "Sweet potato toast",
+            "text": "A leftover baked sweet potato, smashed warm onto sourdough, with a fried egg, chile flakes, and lime."
+          }
+        ]
+      },
+      {
+        "label": "Weekends",
+        "items": [
+          {
+            "name": "Eggs on garlic yogurt",
+            "text": "The Turkish way: soft-poached eggs on salted garlic yogurt, chile flakes sizzled in brown butter poured over, sourdough to drag through it."
+          },
+          {
+            "name": "Slow eggs, feta, and the jar",
+            "text": "Three eggs scrambled slowly in butter, feta folded in at the end, on olive-oil toast with ajvar alongside."
+          },
+          {
+            "name": "Squash hash",
+            "text": "Cubes of roasted kabocha or sweet potato crisped hard in a skillet with any leftover pork or sausage, eggs cracked into the gaps, lime over the top."
+          }
+        ]
+      },
+      {
+        "label": "In between",
+        "items": [
+          {
+            "name": "Dates and feta",
+            "text": "A date split open, a piece of feta tucked inside, a pinch of chile. Sweet, salty, done."
+          },
+          {
+            "name": "Pomegranate, lime, chile",
+            "text": "Seeds in a cup with lime, salt, and chile flakes — the way San Diego's fruit carts sell everything."
+          },
+          {
+            "name": "A bowl of the orzo",
+            "text": "From the fridge, with a handful of arugula and a squeeze of lemon."
+          }
+        ]
+      }
+    ]
+  },
   "guides": [
     {
       "id": "jerome",
@@ -493,7 +550,7 @@
         "A pale orange patch on one side is fine; that's where it sat on the ground",
         "No soft spots anywhere"
       ],
-      "buy_this_much": "1 large, about 3 lbs. Half goes to the weekend, half to the week.",
+      "buy_this_much": "2 large, about 3 lbs each. Half a squash goes to each kabocha dish — the weekend fish, the sausage pan, and the orzo salad — and the last half keeps for months, or roasts for mornings.",
       "price_note": "Sold by the pound. Usually the cheapest squash per serving in the store, because almost none of it is water.",
       "pairs_with_month": [
         "pomegranates",
@@ -546,7 +603,7 @@
         "A green, fresh-looking stem",
         "Blocky, four-lobed peppers char more evenly than twisted ones"
       ],
-      "buy_this_much": "6. Four for the jar, two for the sheet pan.",
+      "buy_this_much": "7. Four for the jar, two for the sausage pan, one for the pork.",
       "price_note": "Loose peppers by the pound are almost always cheaper than the packaged bags.",
       "pairs_with_month": [
         "kabocha-squash",
@@ -596,7 +653,7 @@
         "Medium and evenly shaped, so they cook at one speed",
         "Orange-fleshed (garnet or jewel) for roasting"
       ],
-      "buy_this_much": "4 medium. Two baked dinners for two, or one dinner and a sheet pan.",
+      "buy_this_much": "6 medium. Four to bake for the two sweet-potato dinners, two for the pork's sheet pan.",
       "price_note": "Cheap now, and cheaper loose by the pound than in bags.",
       "pairs_with_month": [
         "red-bell-peppers",

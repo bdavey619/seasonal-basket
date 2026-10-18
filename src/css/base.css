@@ -1535,3 +1535,52 @@ footer {
   color: var(--muted);
 }
 .cook-source-list a { color: var(--primary); }
+
+/* Mornings: one line per idea, in three small groups. */
+.mornings { margin-top: 44px; }
+.mornings-groups {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 36px;
+  border-top: 1px solid var(--line);
+}
+.mornings-group .meal-adds-sublabel { margin-top: 16px; }
+.mornings-list { list-style: none; margin: 6px 0 0; padding: 0; }
+.mornings-list li {
+  padding: 6px 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .88rem;
+  line-height: 1.5;
+  color: #3d4842;
+}
+.mornings-name { color: var(--ink); font-weight: 700; }
+@media (max-width: 860px) {
+  .mornings-groups { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Nutrition: a quiet line under the meta, details closed at the end. */
+.cook-nutrition {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .82rem;
+  color: var(--muted);
+  margin: 4px 0 16px;
+}
+.cook-nutrition-more summary {
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .86rem;
+  color: var(--muted);
+}
+.cook-nutrition-more summary:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.cook-nutrition-more p {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: .82rem;
+  line-height: 1.5;
+  color: #3d4842;
+  margin: 8px 0 0;
+}
+.cook-nutrition-table { border-collapse: collapse; margin-top: 10px; font-family: ui-sans-serif, system-ui, -apple-system, sans-serif; font-size: .84rem; }
+.cook-nutrition-table th, .cook-nutrition-table td { text-align: left; padding: 4px 24px 4px 0; border-bottom: 1px solid var(--line); font-weight: 400; }
+.cook-nutrition-table th { color: var(--muted); }
+.cook-nutrition-table td { color: var(--ink); }
+.cook-nutrition-fine { color: var(--muted) !important; }

@@ -5,16 +5,16 @@
   "kind": "Weeknight",
   "time": "20 minutes",
   "time_short": "20 min",
-  "yield": "Dinner for one, about six tacos",
+  "yield": "Two dinners, three tacos each",
   "intro": "Mild local rockfish seared hard and flaked into warm tortillas with peppery arugula, cold lime yogurt, and pomegranate that bursts like salsa.",
   "needs": [
     "1 lb rockfish fillets",
     "12 corn tortillas — two per taco",
-    "½ cup Greek yogurt",
+    "½ cup 2% Greek yogurt",
     "1 lime",
     "Seeds of ½ pomegranate",
     "2 handfuls of arugula",
-    "Olive oil and salt"
+    "1 tbsp olive oil, and salt"
   ],
   "steps": [
     {
@@ -38,7 +38,7 @@
     },
     {
       "cue": "Finish",
-      "text": "Two tortillas, fish, arugula, a spoonful of lime yogurt, pomegranate on top, the rest of the lime squeezed over."
+      "text": "Three tacos tonight, two tortillas each: fish, arugula, a spoonful of lime yogurt, pomegranate on top, lime squeezed over."
     }
   ],
   "how_it_works": "A mild fish tastes of very little on its own, so everything around it is sharp, cold, or peppery: lime, yogurt, pomegranate, arugula. The sear is the technique — dry fish, hot pan, hands off — and it works on any firm fillet.",
@@ -47,7 +47,7 @@
     "For heat, warm olive oil with garlic and chile flakes and spoon it over instead of the yogurt.",
     "Smear ajvar on the tortillas first for smoke."
   ],
-  "leftovers": "Leftover fish is good cold the next day, on toast with lemon and olive oil.",
+  "leftovers": "Sear all the fish and keep half, flaked, for the second night. Cold rockfish in freshly warmed tortillas is just as good, and there's no reheating smell.",
   "linked_house_flavor": "ajvar",
   "linked_field_notes": [
     "dry-hot-hands-off"
@@ -73,5 +73,29 @@
       "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
       "note": "fish is done at 145°F, or when it's opaque and flakes with a fork"
     }
-  ]
+  ],
+  "nutrition": {
+    "serving": "Half the recipe: three tacos (six tortillas), half the fish, ¼ cup yogurt.",
+    "excludes": "Nothing — the recipe is the whole meal.",
+    "kcal": [
+      650,
+      700
+    ],
+    "protein": [
+      55,
+      60
+    ],
+    "carbs": [
+      75,
+      80
+    ],
+    "fat": [
+      10,
+      15
+    ],
+    "fiber": [
+      10,
+      10
+    ]
+  }
 }
