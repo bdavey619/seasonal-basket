@@ -475,7 +475,8 @@ def render_week(week):
 
 # ── Shopping card ──────────────────────────────────────────────────────────────
 
-def render_bring_home(bring_home, ingredients_data, featured, depth, ing_index_path):
+def render_bring_home(bring_home, ingredients_data, featured, depth, ing_index_path,
+                      meals_by_slug=None, edition_slug=""):
     """
     The basket: one row per ingredient carrying what it is, how much to buy, why,
     and what it's for — and linking to that ingredient's page. This is the only
@@ -532,6 +533,30 @@ def render_bring_home(bring_home, ingredients_data, featured, depth, ing_index_p
         for label, items in (("Also buy", bring_home.get("also_buy")),
                              ("From your kitchen", bring_home.get("pantry")))
         if items)
+    # Editions sized to a real week: an everyday list, then one line per dish
+    # saying what that dish adds. Pick five, buy those lines, and the list
+    # still adds up — the dishes stay options, not a schedule.
+    week = bring_home.get("week")
+    if week:
+        meals_by_slug = meals_by_slug or {}
+        dish_rows = []
+        for d in week["dishes"]:
+            meal = meals_by_slug.get(d["slug"])
+            if not meal:
+                fail(f"bring_home.week: '{d['slug']}' has no meal page")
+            href = rel(depth, f"{edition_slug}/meals/{d['slug']}/")
+            dish_rows.append(f"""<a class="bring-home-row" href="{href}">
+          <span class="bring-home-name">{e(meal.get('display_name', meal['name']))}</span>
+          <span class="bring-home-note">{e(d['buy'])}</span>
+        </a>""")
+        suggested = week.get("suggested")
+        suggested_html = (f'<p class="bring-home-feeds">{e(suggested)}</p>' if suggested else "")
+        return f"""{feeds_html}
+<p class="bring-home-group">{e(week.get('core_label', 'Every week'))}</p>
+<div class="bring-home-list">{rows}</div>{extra}
+<p class="bring-home-group">{e(week.get('label', 'Then pick five'))}</p>{suggested_html}
+<div class="bring-home-list">{"".join(dish_rows)}</div>
+{f'<p class="bring-home-cost">{cost}</p>' if cost else ""}"""
     return f"""{feeds_html}
 <div class="bring-home-list">{rows}</div>{protein_html}{extra}
 {f'<p class="bring-home-cost">{cost}</p>' if cost else ""}"""
@@ -1328,7 +1353,8 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
         <h2 id="basket-heading">{e(edition['bring_home']['heading'])}</h2>
         <div class="card card--dark">
           {render_bring_home(edition['bring_home'], ingredients_data,
-                             edition.get('featured_ingredients'), depth, ing_index_path)}
+                             edition.get('featured_ingredients'), depth, ing_index_path,
+                             meals_by_slug, slug)}
         </div>
         <a href="{basket_href}" class="house-flavor-cta">→ All {len(edition['featured_ingredients'])} ingredients, in full</a>
       </article>
