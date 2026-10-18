@@ -5,7 +5,7 @@
   "kind": "Weeknight",
   "time": "45 minutes, most of it in the oven",
   "time_short": "45 min",
-  "yield": "Dinner tonight and two lunches",
+  "yield": "Dinner tonight and a lunch",
   "intro": "Sausages roasted on one pan with squash and sweet peppers until everything browns in their fat — served the Balkan way, with a pile of ajvar on the side and bread to drag through it.",
   "needs": [
     "1 lb chicken sausage, 4–5 links",
@@ -15,7 +15,7 @@
     "1 lemon",
     "2 tbsp olive oil",
     "Salt",
-    "Sourdough, to serve"
+    "Sourdough or rice: a thick slice, or 1 cup cooked, per serving"
   ],
   "steps": [
     {
@@ -49,7 +49,7 @@
     "Sweet potato instead of kabocha, same timing.",
     "No ajvar made yet? Lemon, olive oil, and a pinch of chile flakes over the top."
   ],
-  "leftovers": "Pack two lunches before you sit down: sliced sausage, squash, and peppers over rice, ajvar on the side.",
+  "leftovers": "Pack a lunch before you sit down: sliced sausage, squash, and peppers over 1 cup of rice, ajvar on the side.",
   "linked_house_flavor": "ajvar",
   "linked_field_notes": [
     "kabocha-cutting",
@@ -75,5 +75,29 @@
       "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
       "note": "poultry sausage is safe at 165°F"
     }
-  ]
+  ],
+  "nutrition": {
+    "serving": "Half the recipe: two to three sausages, half the squash and peppers, ajvar, and one thick slice of sourdough or 1 cup cooked rice.",
+    "excludes": "Nothing beyond the bread or rice.",
+    "kcal": [
+      950,
+      1250
+    ],
+    "protein": [
+      45,
+      55
+    ],
+    "carbs": [
+      90,
+      130
+    ],
+    "fat": [
+      50,
+      60
+    ],
+    "fiber": [
+      15,
+      15
+    ]
+  }
 }

@@ -347,6 +347,40 @@ def render_tonight(tonight, flavors, edition_slug, depth, meal_slugs):
         <ul class="flavors">{flavor_rows}
         </ul>"""
 
+def nutrition_range(pair, unit=""):
+    """'650–700' or '45' from a [low, high] pair, already rounded in the worksheet."""
+    lo, hi = pair
+    fmt = lambda n: f"{n:,}"
+    return (fmt(lo) if lo == hi else f"{fmt(lo)}–{fmt(hi)}") + unit
+
+
+def render_mornings(mornings):
+    """
+    Mornings and the hours between: small ideas from the same basket, grouped
+    weekday / weekend / in between. One line each, like the instinct moves —
+    ideas to cook from, not recipes to follow.
+    """
+    if not mornings:
+        return ""
+    groups = []
+    for g in mornings["groups"]:
+        items = "".join(
+            f'<li><strong class="mornings-name">{e(it["name"])}.</strong> {e(it["text"])}</li>'
+            for it in g["items"])
+        groups.append(f"""
+          <div class="mornings-group">
+            <div class="meal-adds-sublabel">{e(g['label'])}</div>
+            <ul class="mornings-list">{items}</ul>
+          </div>""")
+    return f"""
+        <div class="mornings" id="mornings">
+          <h2 class="instinct-title" id="mornings-heading">{e(mornings['heading'])}</h2>
+          <p class="section-dek">{e(mornings.get('dek', ''))}</p>
+          <div class="mornings-groups">{"".join(groups)}
+          </div>
+        </div>"""
+
+
 def render_plate(colors):
     """
     A small drawing of the dish seen from above: a plate with its main
@@ -1258,6 +1292,7 @@ def build_edition_page(edition, depth, canonical_url, meal_hrefs=None, house_fla
         jump_entries = [j for j in jump_entries if j[0] != "weekend"]
     if edition.get("dishes"):
         meals_body = (render_dishes(edition["dishes"], meals_by_slug or {}, slug, depth)
+                      + render_mornings(edition.get("mornings"))
                       + render_tonight(edition["tonight"], edition.get("flavors", []), slug,
                                        depth, set(meals_by_slug or {})))
     elif edition.get("tonight"):
@@ -1567,6 +1602,41 @@ def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_
           <p class="cook-how-text">{e(meal['how_it_works'])}</p>
           {f'<h3 class="cook-swaps-title">Make it your own</h3><ul class="checklist">{swaps}</ul>' if swaps else ""}
         </section>"""
+    # Nutrition stays quiet: one line under the time and yield, the rest in a
+    # closed panel at the very end. Figures come from the editorial worksheet
+    # (tools/nutrition_worksheet.py), already rounded, and are always ranges
+    # or "about" — estimates, never measurements.
+    nut = meal.get("nutrition")
+    nutrition_line = ""
+    nutrition_html = ""
+    if nut:
+        nutrition_line = (f'\n      <p class="cook-nutrition">About {nutrition_range(nut["kcal"])} kcal · '
+                          f'{nutrition_range(nut["protein"], " g")} protein a serving'
+                          f'<span class="cook-nutrition-note"> (estimate)</span></p>')
+        rows = "".join(
+            f'<tr><th scope="row">{label}</th><td>{nutrition_range(nut[key], unit)}</td></tr>'
+            for label, key, unit in [("Calories", "kcal", " kcal"), ("Protein", "protein", " g"),
+                                     ("Carbohydrates", "carbs", " g"), ("Fat", "fat", " g"),
+                                     ("Fiber", "fiber", " g")])
+        with_meal = ""
+        if nut.get("with_meal") and meal.get("make_it_a_meal"):
+            wm = nut["with_meal"]
+            with_meal = (f'<p><strong>With “Make it a meal”:</strong> about {nutrition_range(wm["kcal"])} kcal '
+                         f'and {nutrition_range(wm["protein"], " g")} protein.</p>')
+        nutrition_html = f"""
+        <details class="cook-section cook-nutrition-more">
+          <summary>Nutrition estimate, per serving</summary>
+          <table class="cook-nutrition-table">{rows}</table>
+          <p><strong>A serving:</strong> {e(nut['serving'])}</p>
+          <p><strong>Not included:</strong> {e(nut['excludes'])}</p>
+          {with_meal}
+          <p class="cook-nutrition-fine">Estimated from standard nutrition data for each ingredient in the amounts above, then rounded. Fish, brands, and portions vary, so read these as a guide, not a measurement.</p>
+        </details>"""
+    meal_html = (f"""
+        <section aria-labelledby="meal-heading" class="cook-section">
+          <h2 id="meal-heading">Make it a meal</h2>
+          <p class="cook-leftovers">{e(meal['make_it_a_meal'])}</p>
+        </section>""") if meal.get("make_it_a_meal") else ""
     # Where the method was checked: tested recipes for the same dish or
     # technique, and food-safety temperatures. Our adaptation, their testing.
     sources_html = ""
@@ -1595,7 +1665,7 @@ def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_
       <div class="section-label">{e(month)} · {e((meal.get('kind') or 'weeknight').lower())}</div>
       <h1>{e(meal.get('display_name', meal['name']))}</h1>
       <p class="dek" style="font-size:clamp(1rem,2vw,1.35rem);max-width:680px">{e(meal['intro'])}</p>
-      {f'<p class="cook-meta">{meta}</p>' if meta else ""}
+      {f'<p class="cook-meta">{meta}</p>' if meta else ""}{nutrition_line}
       <button type="button" class="cook-wake" hidden>Keep screen on while cooking</button>
     </div>
 
@@ -1612,7 +1682,7 @@ def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_
         <ol class="cook-steps">{steps}
         </ol>
       </section>
-      {leftovers}{how_html}{sources_html}
+      {leftovers}{meal_html}{how_html}{sources_html}{nutrition_html}
     </div>
 
     <script>

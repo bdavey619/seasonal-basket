@@ -15,7 +15,7 @@
     "4 handfuls of arugula",
     "Seeds of ½ pomegranate",
     "4 Medjool dates, pitted and torn",
-    "A little feta, crumbled",
+    "1 oz feta, crumbled",
     "Olive oil and salt",
     "Ajvar, for the table"
   ],
@@ -41,7 +41,7 @@
       "text": "Flip, add the butter, and tilt the pan toward you so it pools. Spoon the foaming butter over the fish again and again until it smells nutty and turns golden brown, and the thickest part flakes (140°F). Squeeze in half the lemon."
     },
     {
-      "text": "Put the arugula, pomegranate, dates, and feta in a bowl. Dress it at the table with olive oil, the rest of the lemon, and salt."
+      "text": "Put the arugula, pomegranate, dates, and feta in a bowl. Dress it at the table with 2 tbsp olive oil, the rest of the lemon, and salt."
     },
     {
       "cue": "Finish",
@@ -83,5 +83,29 @@
       "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
       "note": "fish is safe at 145°F; it climbs a few degrees after it leaves the pan"
     }
-  ]
+  ],
+  "nutrition": {
+    "serving": "Half the recipe: one fillet, half the squash and salad.",
+    "excludes": "Ajvar at the table; no bread or rice.",
+    "kcal": [
+      950,
+      1150
+    ],
+    "protein": [
+      50,
+      55
+    ],
+    "carbs": [
+      90,
+      115
+    ],
+    "fat": [
+      45,
+      60
+    ],
+    "fiber": [
+      15,
+      15
+    ]
+  }
 }

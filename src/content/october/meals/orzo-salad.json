@@ -47,7 +47,7 @@
   ],
   "how_it_works": "Three things make a pasta salad last: dress the pasta while it's hot so the flavor goes in, not just on; cook it a little past al dente because the cold firms it; and keep anything delicate out of the container until you eat it. The formula works every month — orzo, the month's vegetable, one cheese, a sharp dressing, something fresh at the end.",
   "swaps": [
-    "Sliced leftover chicken sausage or pork for a lunch with protein.",
+    "Leftover roasted sweet potato in place of the kabocha.",
     "Whisk a spoonful of ajvar into the dressing for smoke.",
     "Torn dates for sweetness against the feta."
   ],
@@ -82,5 +82,40 @@
       "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/leftovers-and-food-safety",
       "note": "refrigerate within 2 hours; cooked leftovers keep 3 to 4 days"
     }
-  ]
+  ],
+  "make_it_a_meal": "For a lunch, halve two soft-boiled eggs over the bowl and crumble on a little more feta. The yolks dress the orzo.",
+  "nutrition": {
+    "serving": "A lunch: a third of the salad, with a handful of arugula and pomegranate. As one of five snack bowls, about 60% of these numbers.",
+    "excludes": "Nothing.",
+    "kcal": [
+      750,
+      850
+    ],
+    "protein": [
+      15,
+      20
+    ],
+    "carbs": [
+      90,
+      110
+    ],
+    "fat": [
+      35,
+      40
+    ],
+    "fiber": [
+      10,
+      10
+    ],
+    "with_meal": {
+      "kcal": [
+        900,
+        1050
+      ],
+      "protein": [
+        30,
+        35
+      ]
+    }
+  }
 }

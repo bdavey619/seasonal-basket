@@ -80,7 +80,7 @@
       "rice",
       "black beans",
       "sourdough",
-      "Greek yogurt",
+      "2% Greek yogurt",
       "eggs",
       "butter",
       "olive oil",
@@ -101,7 +101,7 @@
       {
         "name": "Chicken sausage",
         "qty": "1 lb",
-        "uses": "Sausages and peppers with ajvar, two lunches"
+        "uses": "Sausages and peppers with ajvar, a lunch"
       },
       {
         "name": "Pork tenderloin",
@@ -449,6 +449,63 @@
     "meals/baked-sweet-potato": "meals/sweet-potatoes-black-beans/",
     "meals/skillet-hash": "#meals",
     "meals/crispy-lamb-kabocha": "meals/fish-in-parchment/"
+  },
+  "mornings": {
+    "heading": "Mornings, and in between",
+    "dek": "Small things from the same basket: quick on weekdays, slower on the weekend.",
+    "groups": [
+      {
+        "label": "Weekdays",
+        "items": [
+          {
+            "name": "Eggs and the jar",
+            "text": "Boiled eggs, halved and salted, with a spoonful of ajvar and a cold wedge of last night's kabocha. Ready before the kettle."
+          },
+          {
+            "name": "Yogurt, pomegranate, date",
+            "text": "Thick yogurt with a pinch of salt and a thread of olive oil, pomegranate seeds, and a torn date. The October plate, at breakfast."
+          },
+          {
+            "name": "Sweet potato toast",
+            "text": "A leftover baked sweet potato, smashed warm onto sourdough, with a fried egg, chile flakes, and lime."
+          }
+        ]
+      },
+      {
+        "label": "Weekends",
+        "items": [
+          {
+            "name": "Eggs on garlic yogurt",
+            "text": "The Turkish way: soft-poached eggs on salted garlic yogurt, chile flakes sizzled in brown butter poured over, sourdough to drag through it."
+          },
+          {
+            "name": "Slow eggs, feta, and the jar",
+            "text": "Three eggs scrambled slowly in butter, feta folded in at the end, on olive-oil toast with ajvar alongside."
+          },
+          {
+            "name": "Squash hash",
+            "text": "Cubes of roasted kabocha or sweet potato crisped hard in a skillet with any leftover pork or sausage, eggs cracked into the gaps, lime over the top."
+          }
+        ]
+      },
+      {
+        "label": "In between",
+        "items": [
+          {
+            "name": "Dates and feta",
+            "text": "A date split open, a piece of feta tucked inside, a pinch of chile. Sweet, salty, done."
+          },
+          {
+            "name": "Pomegranate, lime, chile",
+            "text": "Seeds in a cup with lime, salt, and chile flakes — the way San Diego's fruit carts sell everything."
+          },
+          {
+            "name": "A bowl of the orzo",
+            "text": "From the fridge, with a handful of arugula and a squeeze of lemon."
+          }
+        ]
+      }
+    ]
   },
   "guides": [
     {

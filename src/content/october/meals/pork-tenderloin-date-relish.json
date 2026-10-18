@@ -49,7 +49,7 @@
     "No feta? Salt the relish a little more.",
     "Extra relish is good on roasted squash or spread on toast."
   ],
-  "leftovers": "Sliced pork and sweet potatoes over rice, with the leftover relish, is two lunches.",
+  "leftovers": "Sliced pork and sweet potatoes over 1 cup of cooked rice, with the leftover relish, is two lunches.",
   "linked_house_flavor": "ajvar",
   "linked_field_notes": [],
   "linked_ingredients": [
@@ -74,5 +74,29 @@
       "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
       "note": "whole pork cuts are safe at 145°F with a 3-minute rest"
     }
-  ]
+  ],
+  "nutrition": {
+    "serving": "A third of the recipe: about 6 oz pork, sweet potatoes and peppers, relish, arugula.",
+    "excludes": "Rice. The lunches go over 1 cup cooked rice: add about 200 kcal and 45 g carbohydrate.",
+    "kcal": [
+      650,
+      750
+    ],
+    "protein": [
+      45,
+      45
+    ],
+    "carbs": [
+      60,
+      65
+    ],
+    "fat": [
+      30,
+      35
+    ],
+    "fiber": [
+      5,
+      10
+    ]
+  }
 }

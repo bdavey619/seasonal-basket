@@ -38,7 +38,7 @@
   "how_it_works": "A great jar turns two eggs into dinner. Ajvar is smoky and sweet, the runny yolk turns it into a sauce, and lemony arugula keeps it from feeling heavy. Any thick, flavorful spread works the same way — this is a template for every month's jar.",
   "swaps": [
     "Flaked leftover fish on top instead of the eggs.",
-    "A spoonful of salted yogurt under the ajvar for something cool.",
+    "Leftover roasted kabocha, crisped in the same pan, under the eggs.",
     "Crumble feta over the top."
   ],
   "leftovers": "Toast doesn't keep. Make it fresh.",
@@ -61,5 +61,40 @@
       "url": "https://www.americastestkitchen.com/recipes/11693-avocado-toast-with-fried-eggs",
       "note": "the same shape of dinner: crisp toast, a spread, a fried egg"
     }
-  ]
+  ],
+  "make_it_a_meal": "Fry a third egg, and spread a spoonful of 2% Greek yogurt under the ajvar — cool and tangy against the smoke.",
+  "nutrition": {
+    "serving": "The whole recipe: two eggs on two thick slices of sourdough.",
+    "excludes": "Nothing.",
+    "kcal": [
+      800,
+      1000
+    ],
+    "protein": [
+      25,
+      30
+    ],
+    "carbs": [
+      65,
+      85
+    ],
+    "fat": [
+      45,
+      60
+    ],
+    "fiber": [
+      5,
+      5
+    ],
+    "with_meal": {
+      "kcal": [
+        900,
+        1100
+      ],
+      "protein": [
+        40,
+        40
+      ]
+    }
+  }
 }

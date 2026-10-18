@@ -5,13 +5,13 @@
   "kind": "Meatless",
   "time": "About an hour, almost all of it in the oven",
   "time_short": "1 hr",
-  "yield": "Dinner tonight, two more potatoes for later",
+  "yield": "Two dinners: two potatoes and half the beans each",
   "intro": "Sweet potatoes baked until their sugars run and caramelize on the pan, split open and filled with warm black beans, smoky ajvar, cold lime yogurt, and feta.",
   "needs": [
-    "4 sweet potatoes — two for tonight, two for later",
-    "1 can black beans, drained",
+    "4 sweet potatoes — two tonight, two for the second dinner",
+    "1 can black beans, drained — half tonight",
     "Ajvar, a few spoonfuls",
-    "½ cup Greek yogurt",
+    "½ cup 2% Greek yogurt",
     "1 lime",
     "Feta, crumbled",
     "Olive oil and salt"
@@ -30,7 +30,7 @@
     },
     {
       "cue": "Last 5 min",
-      "text": "Warm the beans in a small pan with a spoonful of ajvar and a pinch of salt."
+      "text": "Warm half the beans in a small pan with a spoonful of ajvar and a pinch of salt. The rest of the beans, two potatoes, and half the yogurt are the second dinner."
     },
     {
       "text": "Split each potato lengthwise, push the ends toward the middle so it opens, and salt the inside."
@@ -46,7 +46,7 @@
     "Torn dates and feta for a sweet-and-salty version.",
     "Kabocha wedges work the same way, in half the time."
   ],
-  "leftovers": "The extra potatoes keep four days. Reheat them whole, or cube them cold and crisp them in a skillet with an egg on top.",
+  "leftovers": "The second dinner keeps four days. Rewarm the potatoes whole in a hot oven, warm the other half of the beans, and finish it the same way.",
   "linked_house_flavor": "ajvar",
   "linked_field_notes": [],
   "linked_ingredients": [
@@ -63,5 +63,40 @@
       "url": "https://food52.com/recipes/84388-baked-sweet-potatoes-with-maple-crme-frache-recipe",
       "note": "why the browning happens"
     }
-  ]
+  ],
+  "make_it_a_meal": "Two eggs fried in olive oil on top. The runny yolks become a second sauce for the beans.",
+  "nutrition": {
+    "serving": "Half the recipe: two baked sweet potatoes, half the beans, ¼ cup yogurt, feta, ajvar.",
+    "excludes": "Nothing.",
+    "kcal": [
+      600,
+      750
+    ],
+    "protein": [
+      20,
+      25
+    ],
+    "carbs": [
+      90,
+      110
+    ],
+    "fat": [
+      20,
+      25
+    ],
+    "fiber": [
+      20,
+      25
+    ],
+    "with_meal": {
+      "kcal": [
+        800,
+        950
+      ],
+      "protein": [
+        35,
+        40
+      ]
+    }
+  }
 }
