@@ -25,6 +25,12 @@
   },
   "uses": [
     {
+      "meal": "fish-in-parchment",
+      "label": "Fish in parchment",
+      "action": "Under the fish.",
+      "context": "A spoonful sealed in the packet becomes the sauce."
+    },
+    {
       "meal": "sausages-peppers-ajvar",
       "label": "Sausages and peppers",
       "action": "A big spoonful beside.",
