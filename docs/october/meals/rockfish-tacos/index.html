@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://bdavey.co/seasonal-basket/october/meals/rockfish-tacos/" />
   <!-- Favicon placeholder: replace with actual favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
-  <link rel="stylesheet" href="../../../css/base.css?v=6808d7d3" />
+  <link rel="stylesheet" href="../../../css/base.css?v=30f322b2" />
   <link rel="stylesheet" href="../../../css/october.css?v=6df0b4dd" />
 </head>
 <body>
@@ -88,8 +88,21 @@
     <script>
       // Progressive enhancement for cooking with a phone: tap a step to mark
       // it done, and keep the screen awake where the browser allows it.
+      // Keyboard too: each step is focusable, Enter or Space toggles it, and a
+      // hidden "done" label tells screen readers what changed.
       document.querySelectorAll('.cook-step').forEach(function (li) {
-        li.addEventListener('click', function () { li.classList.toggle('is-done'); });
+        var state = document.createElement('span');
+        state.className = 'visually-hidden';
+        li.appendChild(state);
+        li.tabIndex = 0;
+        function toggle() {
+          var done = li.classList.toggle('is-done');
+          state.textContent = done ? ' (done)' : '';
+        }
+        li.addEventListener('click', toggle);
+        li.addEventListener('keydown', function (ev) {
+          if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); toggle(); }
+        });
       });
       (function () {
         var btn = document.querySelector('.cook-wake');

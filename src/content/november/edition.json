@@ -394,11 +394,23 @@
       "slug": "braised-chicken-leeks-fennel",
       "line": "November's lesson: a hard sear, then an hour in a low oven. Leftovers become the farro bowls.",
       "plate": [
-        "#c98a3e",
-        "#efe3c8",
+        "#b8743a",
+        "#e9dfc0",
         "#9db07a",
         "#e07b2e"
-      ]
+      ],
+      "in_week": true
+    },
+    {
+      "slug": "farro-braised-chicken-bowls",
+      "line": "The braise, midweek: chewy farro soaking up the juices.",
+      "plate": [
+        "#8a6a3e",
+        "#3f5a3a",
+        "#c98a3e",
+        "#dfe6c6"
+      ],
+      "in_week": true
     },
     {
       "slug": "beef-white-bean-chard-soup",
@@ -408,7 +420,8 @@
         "#f1eadb",
         "#3f5a3a",
         "#c7a45a"
-      ]
+      ],
+      "in_week": true
     },
     {
       "slug": "salmon-lentils-cauliflower",
@@ -418,7 +431,8 @@
         "#4d4a35",
         "#efe6cf",
         "#dfe6c6"
-      ]
+      ],
+      "in_week": true
     },
     {
       "slug": "orecchiette-sausage-chard",
@@ -428,17 +442,8 @@
         "#8a5a3c",
         "#3f5a3a",
         "#c3d29a"
-      ]
-    },
-    {
-      "slug": "farro-braised-chicken-bowls",
-      "line": "The braise, midweek: chewy farro soaking up the juices.",
-      "plate": [
-        "#a8834f",
-        "#c98a3e",
-        "#3f5a3a",
-        "#dfe6c6"
-      ]
+      ],
+      "in_week": true
     },
     {
       "slug": "flat-iron-steak-leeks",
@@ -454,10 +459,10 @@
       "slug": "sheet-pan-chicken-cauliflower",
       "line": "Hot pan, crackling skin, and the jar spooned over at the end.",
       "plate": [
-        "#c98a3e",
-        "#efe6cf",
-        "#dfe6c6",
-        "#e07b2e"
+        "#f2ecdc",
+        "#d9a85c",
+        "#e07b2e",
+        "#dfe6c6"
       ]
     },
     {
