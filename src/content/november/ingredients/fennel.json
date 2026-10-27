@@ -1,0 +1,45 @@
+{
+  "slug": "fennel",
+  "month": "November",
+  "name": "Fennel",
+  "tile_uses": "The jar, the weekend braise, the halibut salad",
+  "why_now": "Fennel is a cool-weather vegetable; as the nights drop into the fifties it comes back sweet and crisp. Raw, it's anise-cool and crunchy; cooked slowly, it turns soft and mild.",
+  "how_to_choose": [
+    "Heavy, tight, white bulbs",
+    "No brown bruising or splitting on the outer layers",
+    "Fresh, upright fronds; limp fronds mean it's been sitting"
+  ],
+  "buy_this_much": "3 bulbs: two for the jar, one for the braise. One more if you make the halibut.",
+  "price_note": "Sold by the bulb. Bigger bulbs are usually the better deal.",
+  "pairs_with_month": [
+    "satsumas",
+    "fuyu-persimmons",
+    "leeks"
+  ],
+  "pairs_with_staples": [
+    "chicken thighs",
+    "rice"
+  ],
+  "flavor_paths": [
+    {
+      "name": "Pickled",
+      "description": "The month's jar. Cold and sharp beside anything rich."
+    },
+    {
+      "name": "Braised",
+      "description": "With leeks under chicken thighs, until it's soft and sweet."
+    },
+    {
+      "name": "Shaved raw",
+      "description": "With persimmon and lemon."
+    }
+  ],
+  "weekday_uses": [
+    "Pickled, over lentils, beside steak, and on the farro bowls",
+    "Shaved raw with persimmon beside seared halibut"
+  ],
+  "weekend_use": "Cut in wedges and braised with leeks under the chicken thighs.",
+  "storage": "In the fridge, in a bag, for about a week. Cut off the stalks if they don't fit; keep a few fronds.",
+  "one_thing_to_learn": "Fennel changes completely with heat: raw it's crisp and cool, cooked it goes soft and sweet and loses most of its anise. Someone who doesn't like it raw may love it braised.",
+  "market_question": "Is this local?"
+}

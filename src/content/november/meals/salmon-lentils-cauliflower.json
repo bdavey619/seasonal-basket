@@ -1,0 +1,140 @@
+{
+  "slug": "salmon-lentils-cauliflower",
+  "name": "Roast salmon over warm lentils with cauliflower and pickled fennel",
+  "display_name": "Salmon over warm lentils",
+  "kind": "Weeknight",
+  "time": "45 minutes",
+  "time_short": "45 min",
+  "yield": "Dinner tonight and a lunch",
+  "intro": "A French classic, made with November's jar: French green lentils dressed warm with the pickled fennel's brine, dark-roasted cauliflower folded through, and salmon roasted on the same pan, set on top.",
+  "needs": [
+    "1 lb salmon fillet, about 1 inch thick, in two pieces",
+    "¾ cup French green lentils, rinsed",
+    "1 head cauliflower, in small florets",
+    "Pickled fennel, a big forkful, plus 3 tbsp of its brine",
+    "1 garlic clove, grated",
+    "4 tbsp olive oil",
+    "Grated Parmesan",
+    "Salt, black pepper, and chile flakes"
+  ],
+  "steps": [
+    {
+      "cue": "425°F · 30 min",
+      "text": "Heat the oven. Toss the cauliflower with 2 tbsp oil and salt, spread it out on a sheet pan, and roast, stirring once, until golden at the edges."
+    },
+    {
+      "cue": "20–25 min",
+      "text": "Meanwhile, cover the lentils with a few inches of water in a pot, add a pinch of salt, and simmer until tender but still holding their shape. Drain."
+    },
+    {
+      "text": "While they're warm, toss the lentils with the brine, 2 tbsp olive oil, the garlic, salt, pepper, and a pinch of chile flakes."
+    },
+    {
+      "cue": "10–12 min",
+      "text": "For the cauliflower's last stretch, push it to the sides, salt the salmon, and set it skin-side down in the middle of the pan. Roast until it flakes at the thickest part (the USDA's safe temperature is 145°F). Salmon goes from silky to dry quickly, so check at 10."
+    },
+    {
+      "cue": "Finish",
+      "text": "Fold the cauliflower and pickled fennel into the lentils, set the salmon on top, and finish with Parmesan and black pepper."
+    }
+  ],
+  "how_it_works": "Salmon over lentils is a French bistro dish for a reason: rich, oily fish wants something earthy and sharp underneath it. Lentils take in a dressing best while they're warm, and the jar's brine is the vinegar. French green lentils hold their shape where brown ones turn soft.",
+  "swaps": [
+    "Two fried eggs instead of the salmon, for a meat-free night.",
+    "Halibut instead of salmon; it needs a few minutes less.",
+    "Melted leeks folded in with the cauliflower."
+  ],
+  "leftovers": "Keep the second piece of salmon and a bowl of lentils for lunch. Eat them at room temperature with a squeeze of lemon; don't reheat the fish.",
+  "linked_house_flavor": "pickled-fennel",
+  "linked_field_notes": [],
+  "linked_ingredients": [
+    "cauliflower",
+    "fennel"
+  ],
+  "sources": [
+    {
+      "title": "Pan-Seared Salmon with Braised Lentils (Saumon avec Lentilles du Puy) — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/5098-pan-seared-salmon-with-braised-lentils-saumon-avec-lentilles-du-puy",
+      "note": "the classic pairing: lentilles du Puy under salmon"
+    },
+    {
+      "title": "Pomegranate Roasted Salmon with Lentils and Chard — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/12274-pomegranate-roasted-salmon-with-lentils-and-chard",
+      "note": "salmon roasted on a hot sheet pan over French green lentils"
+    },
+    {
+      "title": "Lemony Lentil Salad — Food52",
+      "url": "https://food52.com/recipes/12672-lemony-lentil-salad",
+      "note": "cauliflower roasted at 425°F for 30–35 minutes, lentils dressed while warm"
+    },
+    {
+      "title": "Safe Minimum Internal Temperature Chart — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+      "note": "fish is done at 145°F, or when it's opaque and flakes with a fork"
+    }
+  ],
+  "nutrition": {
+    "serving": "Half the recipe: one piece of salmon over half the lentils and cauliflower.",
+    "excludes": "Nothing.",
+    "kcal": [
+      900,
+      1100
+    ],
+    "protein": [
+      70,
+      80
+    ],
+    "carbs": [
+      60,
+      65
+    ],
+    "fat": [
+      40,
+      60
+    ],
+    "fiber": [
+      15,
+      15
+    ],
+    "variants": [
+      {
+        "label": "Wild salmon",
+        "kcal": [
+          900,
+          950
+        ],
+        "protein": [
+          75,
+          80
+        ],
+        "carbs": [
+          60,
+          65
+        ],
+        "fat": [
+          40,
+          45
+        ]
+      },
+      {
+        "label": "Farmed salmon",
+        "kcal": [
+          1050,
+          1100
+        ],
+        "protein": [
+          70,
+          75
+        ],
+        "carbs": [
+          60,
+          65
+        ],
+        "fat": [
+          60,
+          60
+        ]
+      }
+    ]
+  }
+}

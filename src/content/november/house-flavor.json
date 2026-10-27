@@ -1,0 +1,71 @@
+{
+  "slug": "pickled-fennel",
+  "name": "Pickled fennel",
+  "month": "november",
+  "intro": "One jar. Fennel and satsuma peel in September's brine — something sharp for a month of rich, slow food.",
+  "card_uses": [
+    "A forkful beside anything braised.",
+    "The brine dresses warm lentils.",
+    "Cold beside a seared steak.",
+    "On toast with shaved Parmesan."
+  ],
+  "ingredients": [
+    "2 fennel bulbs",
+    "Peel of 1 satsuma, in wide strips",
+    "1 cup white wine vinegar",
+    "1 cup water",
+    "1 tbsp salt",
+    "1 tsp sugar",
+    "½ tsp chile flakes"
+  ],
+  "method": "Trim the fennel, keep a few fronds, and slice the bulbs as thin as you can — a sharp knife is fine; a mandoline is faster. Pack the slices into a quart jar with the satsuma peel and chile flakes. Bring the vinegar, water, salt, and sugar to a boil, stirring until they dissolve, and pour it over the fennel while it's hot, pressing the slices under. Let it cool on the counter, then lid it and refrigerate. It's good in a few hours and better the next day. This is September's brine — one cup vinegar, one cup water, a tablespoon of salt, a teaspoon of sugar — and it works on anything crisp. The reason it belongs to November: a month of braises and soups is a month of rich, soft food, and every one of those plates wants something cold, crunchy, and sharp beside it.",
+  "storage": {
+    "note": "Keeps about three weeks in the refrigerator, kept under the brine. It softens as it goes and is crispest in the first two.",
+    "flagged_for_review": false
+  },
+  "uses": [
+    {
+      "meal": "salmon-lentils-cauliflower",
+      "label": "Salmon over lentils",
+      "action": "Brine as the dressing, fennel folded in.",
+      "context": "Lentils drink the brine while they're warm."
+    },
+    {
+      "meal": "braised-chicken-leeks-fennel",
+      "label": "The weekend braise",
+      "action": "On the table.",
+      "context": "Cold and sharp against the soft, rich pot."
+    },
+    {
+      "meal": "farro-braised-chicken-bowls",
+      "label": "Farro bowls",
+      "action": "On top.",
+      "context": "Crunch and acid over the braise juices."
+    },
+    {
+      "meal": "flat-iron-steak-leeks",
+      "label": "Flat iron steak",
+      "action": "Beside the steak.",
+      "context": "Rich beef wants something cold and sharp."
+    },
+    {
+      "meal": "sheet-pan-chicken-cauliflower",
+      "label": "Chicken and cauliflower",
+      "action": "Over the top, with the brine.",
+      "context": "The brine and the pan juices are the sauce."
+    },
+    {
+      "meal": "beef-white-bean-chard-soup",
+      "label": "The soup",
+      "action": "A forkful on top.",
+      "context": "It wakes up a bowl on day three."
+    }
+  ],
+  "linked_ingredients": [
+    "fennel",
+    "satsumas"
+  ],
+  "linked_field_notes": [
+    "sear-then-braise"
+  ]
+}

@@ -1,0 +1,536 @@
+{
+  "_note": "This is the canonical editable source for the November edition. Run python3 src/build.py to regenerate docs/. editions/november/CONTENT.json is auto-generated from this file and the ingredient JSONs.",
+  "month": "November",
+  "location": "San Diego",
+  "edition_number": 5,
+  "status": "upcoming",
+  "base_url": "https://bdavey.co/seasonal-basket",
+  "opening_note": "November is when San Diego's evenings finally turn. The days still reach the high sixties, but the nights drop into the fifties, and for the first time since spring an hour with a pot in the oven sounds good. The first satsumas arrive, persimmons ripen on bare trees, and the cool-weather vegetables come back — leeks, fennel, chard, cauliflower. Everything below comes from one store and a fish market, and it all keeps you cooking through the week.",
+  "thesis": "Keep the meal. Change the season.",
+  "palette": {
+    "background": "#e8e3d7",
+    "paper": "#f8f6ef",
+    "primary": "#8a3f17",
+    "secondary": "#3f5a3a",
+    "accent": "#e07b2e",
+    "ink": "#23221e",
+    "muted": "#67645a",
+    "line": "#d1cab8",
+    "cream": "#ece3cd",
+    "dark": "#262a22"
+  },
+  "featured_ingredients": [
+    "satsumas",
+    "fuyu-persimmons",
+    "fennel",
+    "swiss-chard",
+    "cauliflower",
+    "leeks",
+    "chicken-thighs"
+  ],
+  "bring_home": {
+    "heading": "This is what I'd bring home.",
+    "feeds": "Enough for one good week: the weekend braise and the farro bowls it leads to, the soup, salmon over lentils, and orecchiette with sausage — seven dinners and most lunches for one big appetite.",
+    "items": [
+      {
+        "slug": "satsumas",
+        "name": "Satsuma mandarins",
+        "qty": "2-lb bag",
+        "note": "Heavy for their size. A loose, puffy peel is normal."
+      },
+      {
+        "slug": "fuyu-persimmons",
+        "name": "Fuyu persimmons",
+        "qty": "4",
+        "note": "Squat and flat-bottomed, deep orange. Ready to eat firm."
+      },
+      {
+        "slug": "fennel",
+        "name": "Fennel",
+        "qty": "3 bulbs",
+        "note": "Two for the jar, one for the braise."
+      },
+      {
+        "slug": "leeks",
+        "name": "Leeks",
+        "qty": "6",
+        "note": "Two each for the braise, the soup, and the orecchiette."
+      },
+      {
+        "slug": "swiss-chard",
+        "name": "Swiss chard",
+        "qty": "3 bunches",
+        "note": "For the soup, the orecchiette, and the farro bowls."
+      },
+      {
+        "slug": "cauliflower",
+        "name": "Cauliflower",
+        "qty": "1 head",
+        "note": "Tight and heavy, for the salmon and lentils."
+      }
+    ],
+    "also_buy": [
+      "3 lemons",
+      "a wedge of Parmesan",
+      "farro (whole or semi-pearled)",
+      "French green lentils",
+      "orecchiette",
+      "2 cans white beans",
+      "2 cartons chicken stock",
+      "cinnamon sticks",
+      "dark brown sugar"
+    ],
+    "pantry": [
+      "rice",
+      "sourdough (whole-grain if it's a good one)",
+      "2% Greek yogurt",
+      "eggs",
+      "butter",
+      "olive oil",
+      "garlic",
+      "white wine vinegar",
+      "sugar",
+      "chile flakes",
+      "salt",
+      "black pepper",
+      "ground coffee"
+    ],
+    "cost_note": "This week's list runs about $95–150 at a well-stocked supermarket, typically around $120. The first week adds about $15 for Parmesan, cinnamon, and brown sugar that last the month. Everything in this edition is on these lines or on a dish's own page — nothing else to buy.",
+    "proteins": [
+      {
+        "slug": "chicken-thighs",
+        "name": "Bone-in chicken thighs",
+        "qty": "6, about 2½–3 lbs",
+        "uses": "The weekend braise, then the farro bowls"
+      },
+      {
+        "name": "Beef chuck roast",
+        "qty": "2½ lbs",
+        "uses": "The soup — six big bowls"
+      },
+      {
+        "name": "Salmon",
+        "qty": "1 lb",
+        "uses": "Over warm lentils, and a lunch"
+      },
+      {
+        "name": "Italian sausage",
+        "qty": "¾ lb",
+        "uses": "The orecchiette, and a lunch"
+      }
+    ],
+    "swap_note": "Cooking something else this week — the flat iron, the chicken and cauliflower, or the halibut? Each dish's page lists exactly what it needs."
+  },
+  "staples": [
+    "Sticky white rice",
+    "Ground beef or turkey",
+    "Chicken thighs",
+    "Salmon",
+    "Beans",
+    "Sourdough",
+    "Greek yogurt"
+  ],
+  "month_card": {
+    "items": [
+      "Persimmon",
+      "Satsuma",
+      "Leek"
+    ],
+    "sub": "The first cool nights, and the first citrus."
+  },
+  "house_flavor": "pickled-fennel",
+  "field_notes_label": "Field Notes",
+  "field_notes": [
+    {
+      "slug": "fuyu-or-hachiya",
+      "name": "Squat ones are for now.",
+      "body": "There are two persimmons in the bin, and they're eaten differently. A squat, flat-bottomed Fuyu is never astringent: eat it crisp, like an apple. A pointed, acorn-shaped Hachiya is full of tannin until it's completely soft — so soft it feels like a water balloon — and one bite early will dry out your whole mouth. Buy Fuyus to eat this week; buy Hachiyas only if you can wait."
+    },
+    {
+      "slug": "satsumas",
+      "name": "A loose peel is a good sign.",
+      "body": "Satsumas grow a puffy peel that comes away from the fruit; that's the variety, not age. Judge them by weight instead: pick up two of the same size and buy the heavier one. They're the reason to keep a bag in the fridge through December."
+    },
+    {
+      "slug": "sear-then-braise",
+      "name": "A braise is a sear that keeps going.",
+      "body": "Everything October taught about the sear — dry meat, hot pan, hands off until it lets go — is the first step of a braise. Then add a little liquid, partway up, and give it a low oven and time. Leave the lid off if there's skin to keep crisp. In December, the same pot holds a pork shoulder for three hours; the steps don't change."
+    },
+    {
+      "slug": "chard-stems",
+      "name": "Chard stems go in first.",
+      "body": "A bunch of chard is two vegetables: stems that need five minutes and leaves that need one. Chop the stems and start them with the leeks or the garlic; tear in the leaves at the end. Thrown in together, you get stringy stems or gray leaves."
+    }
+  ],
+  "drink": {
+    "slug": "sherman-heights-cafe-de-olla",
+    "name": "Sherman Heights Café de Olla",
+    "intro": "One drink. The evenings turned, and November opens with Día de los Muertos.",
+    "card_line": "Coffee, cinnamon, brown sugar, satsuma peel",
+    "keep": [
+      "Ground coffee",
+      "Water"
+    ],
+    "season_adds": [
+      "1 cinnamon stick",
+      "¼ cup dark brown sugar",
+      "A strip of satsuma peel"
+    ],
+    "method": "Bring four cups of water to a simmer in a saucepan with the cinnamon stick, brown sugar, and satsuma peel, and let it bubble gently for five minutes so the cinnamon opens up. Take it off the heat, stir in a third of a cup of ground coffee, and let it steep for four minutes. Pour it through a fine strainer, or a paper filter if you want it clean. It should taste like coffee first, then spice, and only a little sweet. It's traditionally made in a clay pot, the olla; any saucepan works.",
+    "try_another_way": [
+      {
+        "change": "Less sugar",
+        "context": "Start with two tablespoons if you take your coffee black."
+      },
+      {
+        "change": "Stronger",
+        "context": "A heaped half cup of coffee instead of a third, for slow mornings."
+      },
+      {
+        "change": "Lemon peel instead of satsuma",
+        "context": "Sharper and less floral."
+      },
+      {
+        "change": "Iced",
+        "context": "For the warm afternoons November still has."
+      }
+    ]
+  },
+  "one_thing_to_notice": {
+    "headline": "A braise should barely move.",
+    "body": "Open the oven and look at the pot. The liquid around the chicken should be shivering — a few lazy bubbles at the edges — not boiling. A hard boil tightens the meat and clouds the sauce. If it's rolling, turn the oven down twenty-five degrees. The same goes for the soup on the stove."
+  },
+  "market_question": "Which of these are ready to eat today?",
+  "next_edition": {
+    "month": "December",
+    "status": "Arriving December 1."
+  },
+  "meals_heading": "Eight things to cook in November.",
+  "meals_dek": "Specific dishes, chosen for this month's basket. Each one ends by explaining how it works — so the next time, you won't need it.",
+  "meals_back_label": "November's meals",
+  "flavors": [
+    {
+      "slug": "bright-sharp",
+      "name": "Bright and sharp",
+      "what": "Pickled fennel + its brine",
+      "how": "A forkful of the jar beside anything rich, and a spoonful of brine wherever you'd use vinegar."
+    },
+    {
+      "slug": "salty-sharp",
+      "name": "Salty and sharp",
+      "what": "Parmesan + lemon + black pepper",
+      "how": "Grate it fine, zest the lemon over, and crack pepper on top. Finishes soup, pasta, and greens."
+    },
+    {
+      "slug": "crisp-sweet",
+      "name": "Crisp and sweet",
+      "what": "Persimmon + fennel + lemon",
+      "how": "Slice both thin and dress them with lemon, olive oil, and salt. A cold salad beside anything warm."
+    },
+    {
+      "slug": "soft-rich",
+      "name": "Soft and rich",
+      "what": "Leeks melted in butter",
+      "how": "Sliced leeks, butter, a pinch of salt, ten minutes on low with the lid on. Under fish, through pasta, on toast."
+    }
+  ],
+  "tonight": {
+    "heading": "Or cook by instinct",
+    "dek": "When something's already in the fridge: what it wants, a few ways to cook it, and the flavors that suit it.",
+    "flavors_label": "November's four flavors",
+    "options": [
+      {
+        "name": "Chicken thighs",
+        "why": "Skin and bone are flavor you can cook into a pot — the reason a braise wants thighs, not breasts.",
+        "best_with": [
+          "bright-sharp",
+          "soft-rich"
+        ],
+        "moves": [
+          {
+            "lead": "Braise",
+            "text": "Sear them skin-side down, then an hour uncovered in a low oven on leeks and fennel.",
+            "dish": "braised-chicken-leeks-fennel",
+            "dish_label": "The weekend braise"
+          },
+          {
+            "lead": "Over farro",
+            "text": "Pull the leftovers off the bone and warm them in their juices with chard.",
+            "dish": "farro-braised-chicken-bowls",
+            "dish_label": "Farro bowls"
+          },
+          {
+            "lead": "Roast",
+            "text": "A hot sheet pan, cauliflower around them, the jar spooned over at the end.",
+            "dish": "sheet-pan-chicken-cauliflower",
+            "dish_label": "With cauliflower"
+          }
+        ]
+      },
+      {
+        "name": "Beef",
+        "why": "Hard-working cuts like chuck need time and liquid; easy ones like flat iron need a hot pan and a few minutes.",
+        "best_with": [
+          "salty-sharp",
+          "bright-sharp"
+        ],
+        "moves": [
+          {
+            "lead": "Soup",
+            "text": "Brown chuck hard, then two hours at a gentle simmer with leeks, beans, and chard.",
+            "dish": "beef-white-bean-chard-soup",
+            "dish_label": "The soup"
+          },
+          {
+            "lead": "Sear",
+            "text": "Flat iron in a hot pan, sliced thin across the grain over melted leeks.",
+            "dish": "flat-iron-steak-leeks",
+            "dish_label": "The flat iron"
+          },
+          {
+            "lead": "Leftovers",
+            "text": "Lift the beef out of the soup, crisp it in a hot pan, and pile it on farro with the pickled fennel."
+          }
+        ]
+      },
+      {
+        "name": "Salmon",
+        "why": "Rich, oily fish wants something earthy and sharp underneath it.",
+        "best_with": [
+          "bright-sharp",
+          "salty-sharp"
+        ],
+        "moves": [
+          {
+            "lead": "Over lentils",
+            "text": "Roast it on the cauliflower pan and set it on lentils dressed with the jar's brine.",
+            "dish": "salmon-lentils-cauliflower",
+            "dish_label": "With lentils"
+          },
+          {
+            "lead": "On leeks",
+            "text": "Set a fillet on a bed of melted leeks, cover the pan, and let it steam for ten minutes."
+          },
+          {
+            "lead": "Leftovers",
+            "text": "Flaked cold over farro with lemon and pickled fennel. Don't reheat it."
+          }
+        ]
+      },
+      {
+        "name": "Italian sausage",
+        "why": "Its fat and seasoning do the work of a sauce.",
+        "best_with": [
+          "salty-sharp",
+          "soft-rich"
+        ],
+        "moves": [
+          {
+            "lead": "Pasta",
+            "text": "Browned and crumbled through orecchiette with melted leeks and chard.",
+            "dish": "orecchiette-sausage-chard",
+            "dish_label": "The orecchiette"
+          },
+          {
+            "lead": "Roast",
+            "text": "Links on a hot pan with cauliflower, the jar over the top."
+          },
+          {
+            "lead": "In soup",
+            "text": "Browned and stirred into a bowl of the soup with extra chard."
+          }
+        ]
+      },
+      {
+        "name": "Halibut",
+        "why": "Lean, sweet fish wants something crisp and sweet-sharp beside it, not a heavy sauce.",
+        "best_with": [
+          "crisp-sweet",
+          "soft-rich"
+        ],
+        "moves": [
+          {
+            "lead": "Sear",
+            "text": "Dry fish, hot pan, hands off, with persimmon and fennel shaved beside it.",
+            "dish": "seared-halibut-persimmon",
+            "dish_label": "With persimmon"
+          },
+          {
+            "lead": "Leftovers",
+            "text": "Flake it cold over warm lentils with lemon."
+          }
+        ]
+      },
+      {
+        "name": "Eggs and beans",
+        "why": "For a meat-free night, they want sharpness and fat.",
+        "best_with": [
+          "bright-sharp",
+          "salty-sharp"
+        ],
+        "moves": [
+          {
+            "lead": "Lentils",
+            "text": "Two fried eggs on the warm lentils and cauliflower instead of the salmon.",
+            "dish": "salmon-lentils-cauliflower",
+            "dish_label": "Warm lentils"
+          },
+          {
+            "lead": "Pasta",
+            "text": "White beans through the orecchiette instead of the sausage.",
+            "dish": "orecchiette-sausage-chard",
+            "dish_label": "The orecchiette"
+          },
+          {
+            "lead": "In soup",
+            "text": "Crack an egg into a simmering bowl of the soup and cover it for four minutes."
+          }
+        ]
+      }
+    ]
+  },
+  "dishes": [
+    {
+      "slug": "braised-chicken-leeks-fennel",
+      "line": "November's lesson: a hard sear, then an hour in a low oven. Leftovers become the farro bowls.",
+      "plate": [
+        "#b8743a",
+        "#e9dfc0",
+        "#9db07a",
+        "#e07b2e"
+      ],
+      "in_week": true
+    },
+    {
+      "slug": "farro-braised-chicken-bowls",
+      "line": "The braise, midweek: chewy farro soaking up the juices.",
+      "plate": [
+        "#8a6a3e",
+        "#3f5a3a",
+        "#c98a3e",
+        "#dfe6c6"
+      ],
+      "in_week": true
+    },
+    {
+      "slug": "beef-white-bean-chard-soup",
+      "line": "Made on Sunday, it's dinner three times and lunch all week.",
+      "plate": [
+        "#6e4630",
+        "#f1eadb",
+        "#3f5a3a",
+        "#c7a45a"
+      ],
+      "in_week": true
+    },
+    {
+      "slug": "salmon-lentils-cauliflower",
+      "line": "A French classic: rich fish over lentils dressed with the jar's brine.",
+      "plate": [
+        "#e8866a",
+        "#4d4a35",
+        "#efe6cf",
+        "#dfe6c6"
+      ],
+      "in_week": true
+    },
+    {
+      "slug": "orecchiette-sausage-chard",
+      "line": "Sausage and greens, the way orecchiette is eaten in Puglia.",
+      "plate": [
+        "#efd9a6",
+        "#8a5a3c",
+        "#3f5a3a",
+        "#c3d29a"
+      ],
+      "in_week": true
+    },
+    {
+      "slug": "flat-iron-steak-leeks",
+      "line": "A tender, inexpensive steak over leeks melted in its pan.",
+      "plate": [
+        "#7a3b2a",
+        "#d9dcb8",
+        "#efe6cf",
+        "#a8834f"
+      ]
+    },
+    {
+      "slug": "sheet-pan-chicken-cauliflower",
+      "line": "Hot pan, crackling skin, and the jar spooned over at the end.",
+      "plate": [
+        "#f2ecdc",
+        "#d9a85c",
+        "#e07b2e",
+        "#dfe6c6"
+      ]
+    },
+    {
+      "slug": "seared-halibut-persimmon",
+      "line": "In season now. Seared, with crisp persimmon and fennel.",
+      "plate": [
+        "#f3eee4",
+        "#e2702a",
+        "#dfe6c6",
+        "#f2d64b"
+      ]
+    }
+  ],
+  "mornings": {
+    "heading": "Mornings, and in between",
+    "dek": "Small things from the same basket: quick on weekdays, slower on the weekend.",
+    "groups": [
+      {
+        "label": "Weekdays",
+        "items": [
+          {
+            "name": "Persimmon and yogurt",
+            "text": "A sliced Fuyu on thick yogurt with satsuma zest, a pinch of salt, and a thread of olive oil."
+          },
+          {
+            "name": "Soup and an egg",
+            "text": "A mug of the week's soup brought to a simmer, an egg cracked in, the lid on for four minutes. Breakfast that's already made."
+          },
+          {
+            "name": "Leeks on toast",
+            "text": "Leftover melted leeks warmed on sourdough, a fried egg, black pepper, and a little Parmesan."
+          }
+        ]
+      },
+      {
+        "label": "Weekends",
+        "items": [
+          {
+            "name": "Chard and Parmesan frittata",
+            "text": "Chard stems softened in butter, the leaves wilted in, eight eggs and plenty of Parmesan, finished in the oven."
+          },
+          {
+            "name": "Eggs in the braise",
+            "text": "The morning after: warm the leftover leeks and juices from the braise, make wells, crack in eggs, and cover until the whites set. Toast for dragging."
+          },
+          {
+            "name": "Persimmon toast",
+            "text": "Thick sourdough, butter, a ripe Fuyu sliced over it, flaky salt and black pepper."
+          }
+        ]
+      },
+      {
+        "label": "In between",
+        "items": [
+          {
+            "name": "Satsumas",
+            "text": "Three, peeled at your desk. The reason to buy a bag."
+          },
+          {
+            "name": "Persimmon and Parmesan",
+            "text": "Thin slices and shavings with black pepper, the way pears and cheese work."
+          },
+          {
+            "name": "A cup of the soup",
+            "text": "Hot, with a forkful of the pickled fennel on top."
+          }
+        ]
+      }
+    ]
+  }
+}

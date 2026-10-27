@@ -14,7 +14,7 @@ After a year of reading Seasonal, a reader hasn't accumulated dozens of recipes.
 
 ## Current Status
 
-October is the current edition. July, August, and September remain published and linked from the homepage archive; November is listed under "Next edition". The architecture, voice, and product philosophy are established. The site is deployed at GitHub Pages from `/docs` on `main`, served at `https://bdavey.co/seasonal-basket/`.
+October is the current edition. November is built and committed with `status: "upcoming"`: its pages exist at `/november/` (noindex) while the homepage still shows October and lists November under "Next edition". On November 1, set November's status to `published` and rebuild; October moves into the archive. July, August, and September remain published and linked from the homepage archive. The architecture, voice, and product philosophy are established. The site is deployed at GitHub Pages from `/docs` on `main`, served at `https://bdavey.co/seasonal-basket/`.
 
 ## What We Know
 
@@ -167,6 +167,24 @@ The House Flavor is ajvar, made from peppers alone. The drink is cold-steeped hi
 
 October is nut-free throughout, sesame included. Keep it that way where possible, and never make a nut the load-bearing ingredient of a jar or weekend meal.
 
+## November — What the Edition Teaches
+
+November is the month San Diego's evenings turn: days still reach the mid to high sixties, nights drop to the low fifties. The edition answers with the braise — the plan's cut, method, and tool (bone-in, skin-on chicken thighs; braising; the Dutch oven) — but only where the weather earns it: the weekend dish and the Sunday soup are the long cooks, and the weeknights stay quick.
+
+**The basket** is the first citrus and the cool-weather vegetables: satsuma mandarins, Fuyu persimmons, fennel, Swiss chard, cauliflower, and leeks. Satsumas, persimmons, and the jar's fennel are the "Every week" list; the rest are bought by dish.
+
+**The jar** is pickled fennel with satsuma peel and chile, in September's brine (one cup vinegar, one cup water, a tablespoon of salt, a teaspoon of sugar) — accumulation working as intended. A satsuma mojo was the first idea and was dropped in sourcing: tested recipes keep mojo about a day, and raw garlic in oil shouldn't be stretched, while pickled fennel keeps for weeks. The month's logic is that rich, slow food wants something cold and sharp beside it.
+
+**The meals** are eight dishes, then "Or cook by instinct" (revised after the first draft read as thin on weeknights and too meatless): braised chicken thighs with leeks, fennel, and satsuma (the weekend dish — sear, then uncovered at 325°F to about 195°F); beef, white bean, and chard soup (the Sunday make-ahead — six bowls, freezes); and six weeknight dinners — roast salmon over warm lentils with cauliflower and pickled fennel (eggs in its swaps for a meat-free night); orecchiette with Italian sausage, chard, and melted leeks (white beans in its swaps); farro bowls with the braise's leftovers, chard, and pickled fennel (the leftovers dish, and the month's whole grain); seared flat iron steak with melted leeks; roast chicken thighs and cauliflower; and seared halibut with persimmon and fennel salad. Four flavors: pickled fennel and brine; Parmesan, lemon, and pepper; persimmon, fennel, and lemon; leeks melted in butter.
+
+**The proteins** are chicken thighs (the cut; *skin and bone are flavor you cook into a pot*), beef — chuck for the soup and flat iron for a weeknight (*hard-working cuts need time and liquid; easy ones need a hot pan*), salmon (*rich fish wants something earthy and sharp underneath*), Italian sausage (*its fat and seasoning do the work of a sauce*), and halibut (*lean, sweet fish wants something crisp and sweet-sharp beside it*). Salmon and pork both appeared in October as supporting proteins; neither leads November, which the rotation rule allows, but December should avoid them as leads.
+
+**Shopping.** One simple list again, sized to the suggested week: the braise and the farro bowls it leads to, the soup, salmon over lentils, and orecchiette with sausage — seven dinners and most lunches. Produce: a 2-lb bag of satsumas, 4 Fuyu persimmons, 3 fennel, 6 leeks, 3 bunches chard, 1 cauliflower. Proteins: 6 bone-in chicken thighs, 2½ lbs chuck, 1 lb salmon, ¾ lb Italian sausage. Also buy: lemons, Parmesan, farro, French green lentils, orecchiette, white beans, chicken stock, cinnamon sticks, dark brown sugar. The other three dishes list their needs on their own pages, and the card says so. Price sheet used (October 2026, rounded): bone-in chicken thighs ~$3–5/lb; beef chuck roast $6–10/lb; flat iron $11–15/lb; salmon $14–18/lb (farmed to sockeye); Italian sausage $4–8/lb; halibut $15–35/lb, lingcod $17–25/lb, rockfish $10–18/lb; Parmesan ~$20–24/lb; farro ~$5 for 24 oz; leeks, chard, fennel, cauliflower ~$2.50–5 each or a bunch (estimates); satsumas and persimmons (estimates). The week: about $95–150, typically ~$120, plus ~$15 the first week for Parmesan, cinnamon, and brown sugar — at the top of the $90–120 aim, because it's a bigger week than the first draft.
+
+**The drink** is café de olla (coffee simmered with cinnamon, dark brown sugar, and satsuma peel), named for Sherman Heights. No local ritual.
+
+**November nutrition review.** Proteins: poultry, two cuts of beef, salmon, pork sausage, halibut, plus eggs, lentils, and white beans. Omega-3s: salmon over lentils. Legumes: lentils under the salmon and white beans in the soup. Greens: chard in three dishes and a frittata; cauliflower as the cruciferous vegetable. Grains: farro in the leftovers bowls and under the steak — the first draft's thin spot, fixed with a dish rather than a rule — plus rice, pasta, and sourdough. Color: orange (persimmon, satsuma, salmon), green (chard, leeks, fennel), white (cauliflower). Enough to eat: every dinner carries about 45–80 g protein a serving; the heaviest plates (orecchiette, farro bowls) were trimmed to ¾ lb sausage and ¾ cup farro after the first estimate. Nutrition audit trail: `editions/november/NUTRITION.md`.
+
 ## Protein Log
 
 Which proteins each edition led with. No protein leads two months in a row; eggs and beans don't count. July through September were first published on the staples (chicken thighs, ground beef or turkey, salmon) every month, then reworked onto this framework.
@@ -177,6 +195,7 @@ Which proteins each edition led with. No protein leads two months in a row; eggs
 | August | Thick pork chops (the cut), halibut, chicken drumsticks, prosciutto |
 | September | Mahi-mahi (the cut), ground beef, boneless chicken thighs |
 | October | Rockfish (the cut), chicken sausage, pork tenderloin, salmon or yellowtail from the fish market (replaced ground lamb) |
+| November | Bone-in chicken thighs (the cut), beef chuck and flat iron, salmon, Italian sausage, halibut (or lingcod or rockfish) |
 
 ## The Year's Cuts, Methods, and Tools (draft)
 
@@ -197,7 +216,7 @@ Each month should build on the last: gentle heat (July), salt-and-rest (August),
 
 ## Next Milestone
 
-Begin the November edition: bone-in chicken thighs, braising, and the Dutch oven, if the weather has actually turned. Its make-ahead should be the first soup — one pot, eaten through the week, with portions frozen. Pick two or three other proteins that don't repeat October's — check the protein log. Persimmons and pomegranates peak; the first citrus arrives.
+Publish November on November 1 (flip its status and rebuild), then begin December: pork shoulder, slow roasting, the Dutch oven or a roasting pan, if the plan still fits the weather. Don't repeat November's lead proteins; keep an oily fish in the month (November's is salmon). Use nutritional variety as inspiration from the start — Keep five weeknight dinners and one simple shopping list.
 
 ## Development Handoff Goal
 

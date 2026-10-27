@@ -1,0 +1,104 @@
+{
+  "slug": "braised-chicken-leeks-fennel",
+  "name": "Braised chicken thighs with leeks, fennel, and satsuma",
+  "display_name": "Braised chicken thighs",
+  "kind": "Weekend",
+  "time": "About 1¾ hours, most of it in the oven",
+  "time_short": "1¾ hrs",
+  "yield": "Dinner tonight, and four thighs for the farro bowls",
+  "intro": "Chicken thighs seared until the skin is deep gold, then braised uncovered on a bed of leeks and fennel with satsuma, so the meat falls off the bone and the skin stays crisp above the liquid. The first cool evening of the year, in one pot.",
+  "needs": [
+    "6 bone-in, skin-on chicken thighs (about 2½–3 lbs)",
+    "2 leeks, white and light green parts, sliced and rinsed",
+    "1 fennel bulb, in thin wedges (keep the fronds)",
+    "2 satsumas — zest of one, juice of both",
+    "4 garlic cloves, smashed",
+    "1½ cups chicken stock",
+    "1 tbsp olive oil",
+    "Salt, black pepper, and chile flakes",
+    "Sourdough or rice (1 cup cooked) per serving"
+  ],
+  "steps": [
+    {
+      "cue": "325°F",
+      "text": "Heat the oven with a rack in the lower middle. Pat the chicken completely dry and salt both sides."
+    },
+    {
+      "cue": "8–10 min",
+      "text": "Heat the oil in a Dutch oven over medium-high. Lay the thighs in skin-side down and leave them alone until the skin is deep golden and releases easily. Brown the other side for 2 minutes and move them to a plate. Work in two batches if they crowd."
+    },
+    {
+      "cue": "6–8 min",
+      "text": "Pour off all but about a tablespoon of fat. Add the leeks and fennel with a pinch of salt and cook, stirring, until soft and browned at the edges. Add the garlic and a pinch of chile flakes for the last minute."
+    },
+    {
+      "text": "Pour in the stock and satsuma juice and scrape up everything stuck to the bottom of the pot."
+    },
+    {
+      "cue": "60–75 min",
+      "text": "Nestle the thighs into the vegetables skin-side up, with the skin above the liquid. Slide the pot into the oven uncovered and braise until the meat is very tender and pulls from the bone (about 195°F)."
+    },
+    {
+      "cue": "Finish",
+      "text": "Satsuma zest and torn fennel fronds over the top. Spoon the leeks and juices over bread or rice, a thigh or two on top, and pickled fennel on the table."
+    }
+  ],
+  "how_it_works": "A braise is a sear that keeps going: the browning gives flavor and crisp skin, then a low oven and a little liquid turn dark meat soft. Leaving the lid off keeps the skin above the liquid crisp while the meat below it braises. Satsuma is the thing a rich pot needs at the end — sweet, bright acid.",
+  "swaps": [
+    "A lemon instead of the satsumas, for a sharper pot.",
+    "Chard stems and leaves stirred in for the last 10 minutes.",
+    "White beans added with the stock, for a heartier pot."
+  ],
+  "leftovers": "Pull the meat off the bone into the juices and refrigerate; that's the farro bowls later in the week. Or eat it over rice with the leeks for two lunches.",
+  "linked_house_flavor": "pickled-fennel",
+  "linked_field_notes": [
+    "sear-then-braise"
+  ],
+  "linked_ingredients": [
+    "chicken-thighs",
+    "leeks",
+    "fennel",
+    "satsumas"
+  ],
+  "sources": [
+    {
+      "title": "Braised Chicken Thighs with Fennel, Orange, and Cracked Olives — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/15484-braised-chicken-thighs-with-fennel-orange-and-cracked-olives",
+      "note": "sear skin-side down, braise skin-side up at 325°F to about 195°F, citrus with fennel"
+    },
+    {
+      "title": "One-Pan Lemon-Braised Chicken Thighs with Chickpeas and Fennel — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/8787-one-pan-lemon-braised-chicken-thighs-with-chickpeas-and-fennel",
+      "note": "uncovered, skin above the liquid, so it stays crisp"
+    },
+    {
+      "title": "Safe Minimum Internal Temperature Chart — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+      "note": "chicken is safe at 165°F; thighs braise past that to get tender"
+    }
+  ],
+  "nutrition": {
+    "serving": "A third of the recipe: two thighs with leeks, fennel, and juices, and 1 cup cooked rice or a thick slice of sourdough.",
+    "excludes": "Nothing beyond the rice or bread.",
+    "kcal": [
+      800,
+      1050
+    ],
+    "protein": [
+      50,
+      65
+    ],
+    "carbs": [
+      65,
+      70
+    ],
+    "fat": [
+      40,
+      60
+    ],
+    "fiber": [
+      5,
+      5
+    ]
+  }
+}

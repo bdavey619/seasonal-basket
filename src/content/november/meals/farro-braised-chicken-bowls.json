@@ -1,0 +1,93 @@
+{
+  "slug": "farro-braised-chicken-bowls",
+  "name": "Farro bowls with braised chicken, chard, and pickled fennel",
+  "display_name": "Farro and braised chicken bowls",
+  "kind": "Weeknight",
+  "time": "35 minutes, with leftover braise",
+  "time_short": "35 min",
+  "yield": "Dinner tonight and a lunch",
+  "intro": "What the weekend braise turns into midweek: nutty, chewy farro, the chicken pulled off the bone and warmed in its leeks and juices, chard wilted in, and the jar on top.",
+  "needs": [
+    "¾ cup farro, whole or semi-pearled",
+    "4 leftover braised chicken thighs, with their leeks and juices",
+    "½ bunch Swiss chard, stems chopped, leaves torn",
+    "Pickled fennel, a big forkful",
+    "½ lemon",
+    "Grated Parmesan",
+    "Salt and black pepper"
+  ],
+  "steps": [
+    {
+      "cue": "25–30 min",
+      "text": "Simmer the farro in a big pot of salted water, like pasta, until tender with a little chew. Pearled farro is faster — start checking at 15 minutes. Drain."
+    },
+    {
+      "text": "Meanwhile, pull the chicken off the bones in big pieces and discard the bones. Keep the skin if you like it."
+    },
+    {
+      "cue": "5 min",
+      "text": "Warm the leeks and juices from the braise in a skillet over medium. Add the chard stems and cook until tender, then the chicken and the chard leaves until the leaves wilt and everything is hot."
+    },
+    {
+      "cue": "Finish",
+      "text": "Farro in bowls, the chicken and greens over it with plenty of juice, pickled fennel, Parmesan, black pepper, and lemon."
+    }
+  ],
+  "how_it_works": "Braise once, eat twice: the juices left in the pot are the best sauce of the week, and farro is the grain built to soak them up without going soft. Farro is a whole grain when it's whole or semi-pearled; pearled farro cooks faster because most of the bran has been polished off.",
+  "swaps": [
+    "Rice instead of farro, if that's what's in the pantry.",
+    "Leftover roast chicken thighs from the cauliflower pan.",
+    "A fried egg on top."
+  ],
+  "leftovers": "Cooked farro keeps four days in the fridge; make a double batch and use it under the flat iron or the soup.",
+  "linked_house_flavor": "pickled-fennel",
+  "linked_field_notes": [
+    "chard-stems"
+  ],
+  "linked_ingredients": [
+    "chicken-thighs",
+    "swiss-chard",
+    "leeks"
+  ],
+  "sources": [
+    {
+      "title": "Simple Farro — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/8362-simple-farro",
+      "note": "boiled like pasta in plenty of salted water until tender with a slight chew"
+    },
+    {
+      "title": "How to prepare farro — Food52",
+      "url": "https://food52.com/hotline/15130-how-to-prepare-farro",
+      "note": "pearled cooks faster; semi-pearled and whole take longer"
+    },
+    {
+      "title": "Leftovers and Food Safety — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/leftovers-and-food-safety",
+      "note": "reheat leftovers to 165°F; cooked leftovers keep 3 to 4 days"
+    }
+  ],
+  "nutrition": {
+    "serving": "Half the recipe: two braised thighs with their leeks and juices, about 1 cup cooked farro, chard, and Parmesan.",
+    "excludes": "Nothing. These are the braise's leftovers, so don't count them twice.",
+    "kcal": [
+      900,
+      1200
+    ],
+    "protein": [
+      60,
+      75
+    ],
+    "carbs": [
+      75,
+      90
+    ],
+    "fat": [
+      40,
+      65
+    ],
+    "fiber": [
+      10,
+      15
+    ]
+  }
+}

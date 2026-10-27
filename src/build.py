@@ -442,6 +442,18 @@ def render_dishes(dishes, meals_by_slug, edition_slug, depth):
             </span>
           </a>
         </li>""")
+    # Editions whose basket covers a suggested week mark those dishes, so the
+    # list reads as "this week" and "also this month" and matches the basket.
+    if any(d.get("in_week") for d in dishes):
+        week_rows = [r for d, r in zip(dishes, rows) if d.get("in_week")]
+        more_rows = [r for d, r in zip(dishes, rows) if not d.get("in_week")]
+        return f"""
+        <div class="meal-adds-sublabel dishes-group">This week — what the basket covers</div>
+        <ul class="dishes">{"".join(week_rows)}
+        </ul>
+        <div class="meal-adds-sublabel dishes-group">Also this month</div>
+        <ul class="dishes">{"".join(more_rows)}
+        </ul>"""
     return f"""
         <ul class="dishes">{"".join(rows)}
         </ul>"""
@@ -507,8 +519,13 @@ def render_bring_home(bring_home, ingredients_data, featured, depth, ing_index_p
         # An item with no slug has no ingredient page to link to.
         return f'<div class="bring-home-row">{inner}\n        </div>'
 
+    # In a list sized to one week, a row's note already says what it's for;
+    # the ingredient page's "used in" line would repeat it and name dishes the
+    # week doesn't include, so it's left to the ingredient page.
+    week_sized = bool(bring_home.get("week") or bring_home.get("swap_note"))
     rows = "".join(
         row(item, item['note'],
+            "" if week_sized and item.get("note") else
             ingredients_data.get(item.get("slug"), {}).get("tile_uses", "") if item.get("slug") else item.get("uses", ""))
         for item in bring_home.get("items", []))
 
@@ -557,8 +574,10 @@ def render_bring_home(bring_home, ingredients_data, featured, depth, ing_index_p
 <p class="bring-home-group">{e(week.get('label', 'Then pick five'))}</p>{suggested_html}
 <div class="bring-home-list">{"".join(dish_rows)}</div>
 {f'<p class="bring-home-cost">{cost}</p>' if cost else ""}"""
+    swap = bring_home.get("swap_note")
+    swap_html = f'\n<p class="bring-home-feeds bring-home-swap">{e(swap)}</p>' if swap else ""
     return f"""{feeds_html}
-<div class="bring-home-list">{rows}</div>{protein_html}{extra}
+<div class="bring-home-list">{rows}</div>{protein_html}{extra}{swap_html}
 {f'<p class="bring-home-cost">{cost}</p>' if cost else ""}"""
 
 # ── Confidence score ───────────────────────────────────────────────────────────
@@ -1729,8 +1748,21 @@ def build_cook_card(meal, edition, depth, canonical_url, edition_context, house_
     <script>
       // Progressive enhancement for cooking with a phone: tap a step to mark
       // it done, and keep the screen awake where the browser allows it.
+      // Keyboard too: each step is focusable, Enter or Space toggles it, and a
+      // hidden "done" label tells screen readers what changed.
       document.querySelectorAll('.cook-step').forEach(function (li) {{
-        li.addEventListener('click', function () {{ li.classList.toggle('is-done'); }});
+        var state = document.createElement('span');
+        state.className = 'visually-hidden';
+        li.appendChild(state);
+        li.tabIndex = 0;
+        function toggle() {{
+          var done = li.classList.toggle('is-done');
+          state.textContent = done ? ' (done)' : '';
+        }}
+        li.addEventListener('click', toggle);
+        li.addEventListener('keydown', function (ev) {{
+          if (ev.key === 'Enter' || ev.key === ' ') {{ ev.preventDefault(); toggle(); }}
+        }});
       }});
       (function () {{
         var btn = document.querySelector('.cook-wake');
