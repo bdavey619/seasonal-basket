@@ -1,0 +1,47 @@
+{
+  "slug": "chicken-thighs",
+  "month": "November",
+  "name": "Bone-in, skin-on chicken thighs",
+  "tile_uses": "The weekend braise, the roast chicken and cauliflower",
+  "why_now": "There's nothing seasonal about chicken. What changes in November is the weather: the first cool evenings make an hour-long braise appealing again, and bone-in, skin-on thighs are the cut built for it. This is the month's cut.",
+  "how_to_choose": [
+    "Skin that covers the whole thigh, not shrunken back",
+    "Pink, plump meat with no gray edges",
+    "No liquid pooling in the package",
+    "Similar-sized thighs, so they cook evenly"
+  ],
+  "buy_this_much": "About 2½–3 lbs (6 thighs) for the braise, and 4 thighs for the roast pan.",
+  "price_note": "Bone-in, skin-on thighs are one of the cheapest cuts in the case, well below boneless.",
+  "pairs_with_month": [
+    "leeks",
+    "fennel",
+    "satsumas",
+    "cauliflower"
+  ],
+  "pairs_with_staples": [
+    "rice",
+    "sourdough"
+  ],
+  "flavor_paths": [
+    {
+      "name": "Braised",
+      "description": "Seared, then an hour in the oven with leeks, fennel, and satsuma."
+    },
+    {
+      "name": "Roasted",
+      "description": "On a hot sheet pan with cauliflower."
+    },
+    {
+      "name": "Pulled",
+      "description": "Leftovers off the bone, into soup or onto toast."
+    }
+  ],
+  "weekday_uses": [
+    "Roasted with cauliflower and pickled fennel",
+    "Leftover braise, pulled off the bone over rice"
+  ],
+  "weekend_use": "Seared and braised in the Dutch oven with leeks, fennel, and satsuma. The weekend dish.",
+  "storage": "In the coldest part of the fridge, in the package, for a day or two. Cook within two days of buying.",
+  "one_thing_to_learn": "Thighs are done at 165°F but better at 175–195°F: dark meat has connective tissue that keeps softening as it cooks, so a braised thigh at 195°F is more tender than one pulled at 165°F, not less.",
+  "market_question": "Do you have them skin-on, bone-in?"
+}

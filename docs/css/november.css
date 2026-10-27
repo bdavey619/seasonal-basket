@@ -1,0 +1,16 @@
+/* Seasonal — november.css
+   November palette variables. These are the only values that change between editions.
+   All layout, typography, and component styles live in base.css. */
+
+:root {
+  --bg:       #e8e3d7;
+  --paper:    #f8f6ef;
+  --primary:  #8a3f17;   /* persimmon, deep */
+  --secondary:#3f5a3a;   /* chard leaf */
+  --accent:   #e07b2e;   /* satsuma */
+  --ink:      #23221e;
+  --muted:    #67645a;
+  --line:     #d1cab8;
+  --cream:    #ece3cd;   /* leek white */
+  --dark:     #262a22;   /* the Dutch oven */
+}

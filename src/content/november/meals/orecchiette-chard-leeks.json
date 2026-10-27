@@ -1,0 +1,112 @@
+{
+  "slug": "orecchiette-chard-leeks",
+  "name": "Orecchiette with chard, melted leeks, chile, and Parmesan",
+  "display_name": "Orecchiette with chard and leeks",
+  "kind": "Meatless",
+  "time": "30 minutes",
+  "time_short": "30 min",
+  "yield": "Dinner tonight and a lunch",
+  "intro": "Leeks cooked slowly in butter until they melt, chard stems and leaves folded in, and little ear-shaped pasta catching all of it, with chile and plenty of Parmesan.",
+  "needs": [
+    "8 oz orecchiette",
+    "2 leeks, sliced thin and rinsed",
+    "1 bunch Swiss chard, stems chopped, leaves torn",
+    "2 tbsp butter and 1 tbsp olive oil",
+    "3 garlic cloves, sliced",
+    "2 oz Parmesan, grated",
+    "½ lemon",
+    "Salt, black pepper, and chile flakes"
+  ],
+  "steps": [
+    {
+      "cue": "10–12 min",
+      "text": "Melt the butter with the oil in a large skillet over medium-low. Add the leeks and a pinch of salt, cover, and cook, stirring now and then, until they're very soft and sweet but not browned."
+    },
+    {
+      "text": "Bring a big pot of well-salted water to a boil."
+    },
+    {
+      "cue": "5 min",
+      "text": "Uncover the leeks, add the chard stems, garlic, and a good pinch of chile flakes, and cook until the stems are tender."
+    },
+    {
+      "cue": "About 11 min",
+      "text": "Boil the orecchiette until just tender. Before you drain it, scoop out a cup of the pasta water."
+    },
+    {
+      "cue": "2 min",
+      "text": "Add the chard leaves to the skillet and stir until wilted. Add the pasta, half the Parmesan, and a splash of pasta water, and toss over the heat until it turns glossy and clings."
+    },
+    {
+      "cue": "Finish",
+      "text": "The rest of the Parmesan, black pepper, and a squeeze of lemon."
+    }
+  ],
+  "how_it_works": "Leeks cooked low and covered don't brown; they melt into a soft, sweet sauce of their own, which is why this needs so little else. Starchy pasta water and Parmesan, tossed over the heat, pull it all into something creamy without any cream. Chard stems go in before the leaves because they need longer.",
+  "swaps": [
+    "Any short pasta that catches sauce: rigatoni, shells, or penne.",
+    "Shredded leftover braised chicken folded in at the end.",
+    "Cauliflower florets boiled with the pasta, in place of the chard."
+  ],
+  "leftovers": "Pack a bowl for lunch. It's best warmed in a skillet with a splash of water, or at room temperature with more lemon.",
+  "make_it_a_meal": "Fold a can of drained white beans in with the chard leaves. They soak up the leeks and Parmesan and make it a heartier bowl.",
+  "linked_house_flavor": "pickled-fennel",
+  "linked_field_notes": [
+    "chard-stems"
+  ],
+  "linked_ingredients": [
+    "leeks",
+    "swiss-chard"
+  ],
+  "sources": [
+    {
+      "title": "Orecchiette with Italian Sausage and Swiss Chard — Food52",
+      "url": "https://food52.com/recipes/16825-orecchiette-with-italian-sausage-swiss-chard-and-a-maple-glaze",
+      "note": "orecchiette and chard tossed in the skillet with garlic and chile"
+    },
+    {
+      "title": "Swiss Chard and Lemon Ricotta Pasta — Food52",
+      "url": "https://food52.com/recipes/17723-swiss-chard-and-lemon-ricotta-pasta",
+      "note": "chard with Parmesan, lemon, and chile flakes through pasta"
+    },
+    {
+      "title": "Roasted Leeks with Black Pepper and Parm — Food52",
+      "url": "https://food52.com/recipes/86670-roasted-leeks-with-black-pepper-and-parm-recipe",
+      "note": "leeks cooked until soft and sweet, with Parmesan and pepper"
+    }
+  ],
+  "nutrition": {
+    "serving": "Half the recipe: about 4 oz dry pasta with the leeks, chard, and Parmesan.",
+    "excludes": "Nothing.",
+    "kcal": [
+      750,
+      800
+    ],
+    "protein": [
+      30,
+      30
+    ],
+    "carbs": [
+      100,
+      110
+    ],
+    "fat": [
+      25,
+      30
+    ],
+    "fiber": [
+      5,
+      10
+    ],
+    "with_meal": {
+      "kcal": [
+        1050,
+        1150
+      ],
+      "protein": [
+        45,
+        50
+      ]
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "slug": "lentils-cauliflower-egg",
+  "name": "Warm lentils with roasted cauliflower, pickled fennel, and a fried egg",
+  "display_name": "Warm lentils and cauliflower",
+  "kind": "Meatless",
+  "time": "45 minutes",
+  "time_short": "45 min",
+  "yield": "Dinner tonight and a lunch",
+  "intro": "French green lentils simmered until just tender and dressed while they're warm with the jar's brine, folded through dark-roasted cauliflower and pickled fennel, with a runny egg on top.",
+  "needs": [
+    "1 cup French green lentils, rinsed",
+    "1 head cauliflower, in small florets",
+    "4 eggs — two per serving",
+    "Pickled fennel, a big forkful, plus 3 tbsp of its brine",
+    "1 garlic clove, grated",
+    "4 tbsp olive oil, plus a little for the eggs",
+    "Grated Parmesan",
+    "Salt, black pepper, and chile flakes"
+  ],
+  "steps": [
+    {
+      "cue": "425°F · 30 min",
+      "text": "Heat the oven. Toss the cauliflower with 2 tbsp oil and salt, spread it out on a sheet pan, and roast, stirring once, until golden at the edges."
+    },
+    {
+      "cue": "20–25 min",
+      "text": "Meanwhile, cover the lentils with a few inches of water in a pot, add a pinch of salt, and simmer until tender but still holding their shape. Drain."
+    },
+    {
+      "text": "While they're warm, toss the lentils with the brine, 2 tbsp olive oil, the garlic, salt, pepper, and a pinch of chile flakes. Fold in the cauliflower and the pickled fennel."
+    },
+    {
+      "cue": "3 min",
+      "text": "Fry the eggs in a little olive oil until the whites are crisp at the edges and the yolks are runny."
+    },
+    {
+      "cue": "Finish",
+      "text": "Lentils in a bowl, two eggs on top, grated Parmesan and black pepper over everything."
+    }
+  ],
+  "how_it_works": "Lentils are earthy and plain, so they want sharpness and fat — and like pasta, they take in a dressing best while they're warm. The jar's brine is the vinegar, and the egg yolk is the richness. French green lentils hold their shape where brown ones turn soft.",
+  "swaps": [
+    "Leftover pulled chicken thigh instead of the eggs.",
+    "Seared halibut, flaked over the top.",
+    "Melted leeks folded in with the cauliflower."
+  ],
+  "leftovers": "The lentils and cauliflower keep three days. For lunch, eat them at room temperature with a squeeze of lemon, and fry fresh eggs if you can.",
+  "linked_house_flavor": "pickled-fennel",
+  "linked_field_notes": [],
+  "linked_ingredients": [
+    "cauliflower",
+    "fennel"
+  ],
+  "sources": [
+    {
+      "title": "Lemony Lentil Salad — Food52",
+      "url": "https://food52.com/recipes/12672-lemony-lentil-salad",
+      "note": "cauliflower roasted at 425°F for 30–35 minutes, green lentils simmered until just tender"
+    },
+    {
+      "title": "Lentil Salad with Olive Oil Fried Eggs — Food52",
+      "url": "https://food52.com/recipes/2607-lentil-salad-with-olive-oil-fried-eggs",
+      "note": "lentils du Puy simmered about 20 minutes, dressed, with eggs fried in olive oil on top"
+    }
+  ],
+  "nutrition": {
+    "serving": "Half the recipe: lentils and cauliflower with two fried eggs.",
+    "excludes": "Nothing.",
+    "kcal": [
+      850,
+      950
+    ],
+    "protein": [
+      45,
+      50
+    ],
+    "carbs": [
+      75,
+      85
+    ],
+    "fat": [
+      45,
+      50
+    ],
+    "fiber": [
+      15,
+      20
+    ]
+  }
+}

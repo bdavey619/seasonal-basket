@@ -6,7 +6,7 @@ estimates from the ingredient amounts written in the recipe, using low/high
 values per ingredient so uncertainty (fish choice, sausage brand, how much
 frying oil is eaten) shows up as a range instead of false precision.
 
-Run:  python3 tools/nutrition_worksheet.py october
+Run:  python3 tools/nutrition_worksheet.py <month>   (october, november)
 It writes editions/<month>/NUTRITION.md (the audit trail) and prints the
 rounded figures to copy into each meal's "nutrition" block. When a recipe's
 amounts change, update its entry here and re-run before publishing.
@@ -47,6 +47,21 @@ DB = {
     "pomegranate seeds": (None, dict(kcal=(83, 83), protein=(1.7, 1.7), carbs=(18.7, 18.7), fat=(1.2, 1.2), fiber=(4, 4)), "USDA: pomegranate, raw"),
     "arugula":         (None, dict(kcal=(25, 25), protein=(2.6, 2.6), carbs=(3.7, 3.7), fat=(0.7, 0.7), fiber=(1.6, 1.6)), "USDA: arugula, raw"),
     "ajvar":           (None, dict(kcal=(160, 220), protein=(1, 1.3), carbs=(8, 10), fat=(13, 19), fiber=(2.5, 3)), "Calculated from the October jar recipe (peppers cooked down with oil); yield varies"),
+    "chicken thigh":   (None, dict(kcal=(190, 221), protein=(16.5, 17.1), carbs=(0, 0.3), fat=(13.3, 16.6), fiber=(0, 0)), "USDA: chicken thigh, meat and skin, raw (enter edible weight: about 70% of bone-in weight)"),
+    "beef chuck":      (None, dict(kcal=(180, 250), protein=(18.5, 20), carbs=(0, 0), fat=(10, 19), fiber=(0, 0)), "USDA: beef chuck, lean and fat, raw (wide range: trim varies)"),
+    "halibut":         (None, dict(kcal=(85, 91), protein=(17.7, 18.6), carbs=(0, 0), fat=(1, 1.5), fiber=(0, 0)), "USDA: halibut, Atlantic and Pacific, raw; lingcod and rockfish are about the same"),
+    "leeks":           (None, dict(kcal=(61, 61), protein=(1.5, 1.5), carbs=(14.2, 14.2), fat=(0.3, 0.3), fiber=(1.8, 1.8)), "USDA: leeks, bulb and lower leaf, raw"),
+    "fennel":          (None, dict(kcal=(31, 31), protein=(1.2, 1.2), carbs=(7.3, 7.3), fat=(0.2, 0.2), fiber=(3.1, 3.1)), "USDA: fennel bulb, raw"),
+    "chard":           (None, dict(kcal=(19, 20), protein=(1.8, 1.9), carbs=(3.7, 4.1), fat=(0.1, 0.2), fiber=(1.6, 1.6)), "USDA: Swiss chard, raw"),
+    "cauliflower":     (None, dict(kcal=(25, 25), protein=(1.9, 1.9), carbs=(5, 5), fat=(0.3, 0.3), fiber=(2, 2)), "USDA: cauliflower, raw"),
+    "fuyu persimmon":  (None, dict(kcal=(70, 70), protein=(0.6, 0.6), carbs=(18.6, 18.6), fat=(0.2, 0.2), fiber=(3.6, 3.6)), "USDA: persimmon, Japanese, raw"),
+    "satsuma":         (None, dict(kcal=(53, 53), protein=(0.8, 0.8), carbs=(13.3, 13.3), fat=(0.3, 0.3), fiber=(1.8, 1.8)), "USDA: tangerines (mandarin oranges), raw"),
+    "lentils, dry":    (None, dict(kcal=(352, 352), protein=(24.6, 25.8), carbs=(63, 63), fat=(1.1, 1.1), fiber=(10.7, 10.7)), "USDA: lentils, raw (French green are similar)"),
+    "white beans":     (None, dict(kcal=(114, 125), protein=(7.4, 7.6), carbs=(21, 22), fat=(0.4, 0.5), fiber=(5, 6.3)), "USDA: white / great northern beans, canned, drained"),
+    "pasta, dry":      (None, dict(kcal=(357, 371), protein=(12.5, 13.6), carbs=(71, 75), fat=(1.2, 1.5), fiber=(2.5, 3.5)), "USDA: pasta, dry, enriched"),
+    "parmesan":        (None, dict(kcal=(392, 392), protein=(35.8, 35.8), carbs=(3.2, 3.2), fat=(25.8, 25.8), fiber=(0, 0)), "USDA: Parmesan, hard"),
+    "chicken stock":   (None, dict(kcal=(4, 15), protein=(0.5, 1.5), carbs=(0.3, 1), fat=(0, 0.5), fiber=(0, 0)), "USDA / labels: chicken stock, ready to use"),
+    "pickled fennel":  (None, dict(kcal=(25, 35), protein=(1, 1.2), carbs=(6, 8), fat=(0.2, 0.2), fiber=(2.5, 3)), "Calculated from the November jar: fennel in a vinegar brine (the brine adds almost nothing)"),
     "lemon or lime":   (None, dict(kcal=(25, 30), protein=(0.4, 0.6), carbs=(8, 10), fat=(0.2, 0.3), fiber=(0, 0.3)), "USDA: juice"),
 }
 
@@ -114,10 +129,50 @@ OCTOBER = {
 }
 
 # Optional "Make it a meal" pairings, as extra items for ONE serving.
-PAIRINGS = {
+PAIRINGS_OCTOBER = {
     "ajvar-egg-toast": [("egg", 50), ("greek yogurt 2%", 57)],
     "sweet-potatoes-black-beans": [("egg", 100), ("olive oil", 0.5 * TBSP_OIL)],
     "orzo-salad": [("egg", 100), ("feta", 14)],
+}
+
+# Bone-in thighs: about 70% of the weight is meat and skin you eat (USDA yield).
+THIGH_EDIBLE = 0.70
+NOVEMBER = {
+    "braised-chicken-leeks-fennel": dict(
+        servings=3, serving="A third of the recipe: two thighs with leeks, fennel, and juices, and 1 cup cooked rice or a thick slice of sourdough.",
+        excludes="Nothing beyond the rice or bread.",
+        # Rendered fat is poured off before the vegetables go in; the thighs still keep their skin.
+        items=[("chicken thigh", (1135 * THIGH_EDIBLE, 1360 * THIGH_EDIBLE)), ("leeks", (180, 240)), ("fennel", (200, 280)),
+               ("satsuma", 150), ("chicken stock", 355), ("olive oil", (0.5 * TBSP_OIL, 1 * TBSP_OIL)), ("rice, cooked", 3 * 158)]),
+    "sheet-pan-chicken-cauliflower": dict(
+        servings=2, serving="Half the recipe: two thighs, half the cauliflower, the jar, and 1 cup cooked rice.",
+        excludes="Nothing beyond the rice.",
+        items=[("chicken thigh", 795 * THIGH_EDIBLE), ("cauliflower", (550, 700)), ("olive oil", 2 * TBSP_OIL),
+               ("satsuma", 75), ("pickled fennel", 60), ("rice, cooked", 2 * 158)]),
+    "beef-white-bean-chard-soup": dict(
+        servings=6, serving="One of six big bowls (about 2 cups), with a little grated Parmesan.",
+        excludes="Bread.",
+        items=[("beef chuck", 1135), ("leeks", (180, 240)), ("chard", (300, 400)), ("white beans", (480, 510)),
+               ("chicken stock", 946), ("olive oil", 2 * TBSP_OIL), ("parmesan", (30, 45)), ("lemon or lime", 30)]),
+    "seared-halibut-persimmon": dict(
+        servings=2, serving="One fillet with half the salad and 1 cup cooked rice.",
+        excludes="Nothing beyond the rice.",
+        items=[("halibut", 454), ("fuyu persimmon", (280, 340)), ("fennel", (200, 280)), ("parmesan", 28),
+               ("olive oil", 3 * TBSP_OIL), ("lemon or lime", 30), ("rice, cooked", 2 * 158)]),
+    "lentils-cauliflower-egg": dict(
+        servings=2, serving="Half the recipe: lentils and cauliflower with two fried eggs.",
+        excludes="Nothing.",
+        # 1 cup dry French green lentils is about 190–200 g.
+        items=[("lentils, dry", (190, 200)), ("cauliflower", (550, 700)), ("egg", 4 * 50), ("pickled fennel", 60),
+               ("olive oil", (4.5 * TBSP_OIL, 5 * TBSP_OIL)), ("parmesan", (15, 20))]),
+    "orecchiette-chard-leeks": dict(
+        servings=2, serving="Half the recipe: about 4 oz dry pasta with the leeks, chard, and Parmesan.",
+        excludes="Nothing.",
+        items=[("pasta, dry", 227), ("leeks", (180, 240)), ("chard", (300, 400)), ("butter", 2 * TBSP_BUTTER),
+               ("olive oil", 1 * TBSP_OIL), ("parmesan", 57), ("lemon or lime", 15)]),
+}
+PAIRINGS_NOVEMBER = {
+    "orecchiette-chard-leeks": [("white beans", (240, 255))],
 }
 
 NUTRIENTS = ["kcal", "protein", "carbs", "fat", "fiber"]
@@ -157,14 +212,15 @@ def display(lo, hi, step):
 
 
 def main(month):
-    if month != "october":
-        sys.exit("Only October is entered so far.")
-    out = ["# October — nutrition worksheet", "",
+    if month not in MONTHS:
+        sys.exit(f"No worksheet entered for {month}. Known: {', '.join(MONTHS)}")
+    DISHES, PAIRINGS = MONTHS[month]
+    out = [f"# {month.capitalize()} — nutrition worksheet", "",
            "Per-serving estimates from the ingredient amounts in each recipe. Low/high values carry the real uncertainty "
            "(fish choice, sausage brand, kabocha's density, how much frying fat stays in the pan). Rounded to the nearest "
            "50 kcal and 5 g before publishing. These are estimates, not lab measurements.", ""]
     summary = {}
-    for slug, d in OCTOBER.items():
+    for slug, d in DISHES.items():
         s = d["servings"]
         variant_rows = []
         if d.get("variants"):
@@ -210,13 +266,24 @@ def main(month):
             out.append(f"\nWith the \"Make it a meal\" pairing ({', '.join(n for n, _ in PAIRINGS[slug])}): about {wk[0]}–{wk[1]} kcal, {wp[0]}–{wp[1]} g protein.")
         out.append("")
     out += ["## Ingredient values used", "", "| Ingredient | basis | kcal | protein | carbs | fat | fiber | source |", "|---|---|---|---|---|---|---|---|"]
+    used = set()
+    for d in DISHES.values():
+        used.update(name for name, _ in d["items"])
+        used.update(d.get("variants", {}).values())
+    for items in PAIRINGS.values():
+        used.update(name for name, _ in items)
     for name, (unit, vals, src) in DB.items():
+        if name not in used:
+            continue
         basis = f"per {unit} g unit" if unit else "per 100 g"
         cells = [f"{vals[n][0]}" if vals[n][0] == vals[n][1] else f"{vals[n][0]}–{vals[n][1]}" for n in NUTRIENTS]
         out.append(f"| {name} | {basis} | " + " | ".join(cells) + f" | {src} |")
     Path(f"editions/{month}/NUTRITION.md").write_text("\n".join(out) + "\n")
     import json
     print(json.dumps(summary, indent=1, ensure_ascii=False))
+
+
+MONTHS = {"october": (OCTOBER, PAIRINGS_OCTOBER), "november": (NOVEMBER, PAIRINGS_NOVEMBER)}
 
 
 if __name__ == "__main__":

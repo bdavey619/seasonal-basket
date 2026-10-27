@@ -1,0 +1,47 @@
+{
+  "slug": "satsumas",
+  "month": "November",
+  "name": "Satsuma mandarins",
+  "tile_uses": "The jar, the weekend braise, mornings, the drink",
+  "why_now": "Satsumas are among the first California citrus of the season, and they start arriving in November — sweet, seedless, and so loose in their skins they peel in one piece. They're at their best now and through December.",
+  "how_to_choose": [
+    "Heavy for their size; light ones have started to dry out",
+    "A puffy, loose peel is normal for a satsuma, not a sign of age",
+    "Bright orange, with a little green near the stem still fine",
+    "No soft, sunken spots"
+  ],
+  "buy_this_much": "A 2-lb bag, about ten. One goes into the jar and the braise; the rest get eaten out of hand.",
+  "price_note": "Usually sold in bags or by the pound; the bags are cheaper and just as good.",
+  "pairs_with_month": [
+    "fennel",
+    "fuyu-persimmons",
+    "leeks"
+  ],
+  "pairs_with_staples": [
+    "Greek yogurt",
+    "chicken thighs"
+  ],
+  "flavor_paths": [
+    {
+      "name": "Peeled",
+      "description": "Out of hand. The reason to buy a bag."
+    },
+    {
+      "name": "Zested",
+      "description": "Over a braise or yogurt, right at the end."
+    },
+    {
+      "name": "Peel in a jar",
+      "description": "Strips in the pickled fennel; the oil in the peel perfumes the brine."
+    }
+  ],
+  "weekday_uses": [
+    "Peel into the pickled fennel",
+    "Zest over yogurt and persimmon",
+    "Segments over the roast chicken and cauliflower"
+  ],
+  "weekend_use": "Juice and zest into the weekend braise, where they keep a rich pot bright.",
+  "storage": "In the fridge, loose, for up to two weeks. On the counter they're fine for a few days.",
+  "one_thing_to_learn": "A satsuma's loose peel is the variety, not age. Judge them by weight instead: a heavy one is full of juice.",
+  "market_question": "Are these this year's first?"
+}

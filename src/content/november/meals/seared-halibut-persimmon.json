@@ -1,0 +1,97 @@
+{
+  "slug": "seared-halibut-persimmon",
+  "name": "Seared halibut with persimmon and fennel salad",
+  "display_name": "Seared halibut, persimmon salad",
+  "kind": "Weeknight",
+  "time": "25 minutes",
+  "time_short": "25 min",
+  "yield": "Dinner tonight and a lunch",
+  "intro": "California halibut is in season now. Sear it the way October taught — dry fish, hot pan, hands off — and serve it beside a cold salad of Fuyu persimmon and fennel, shaved thin with lemon and Parmesan.",
+  "needs": [
+    "1 lb halibut (or lingcod, or rockfish), about 1 inch thick, in two pieces",
+    "2 Fuyu persimmons, sliced thin",
+    "1 fennel bulb, shaved thin (keep the fronds)",
+    "1 lemon",
+    "1 oz Parmesan, shaved with a peeler",
+    "3 tbsp olive oil",
+    "Salt and black pepper",
+    "Rice: about 1 cup cooked per serving"
+  ],
+  "steps": [
+    {
+      "cue": "10 min",
+      "text": "Salt the fish and leave it on a plate. Pat it completely dry right before it goes in the pan."
+    },
+    {
+      "text": "Toss the fennel and persimmon with the juice of half the lemon, 2 tbsp olive oil, salt, and pepper. Scatter the Parmesan and fronds over the top."
+    },
+    {
+      "cue": "4–5 min",
+      "text": "Heat 1 tbsp oil in a nonstick or well-seasoned skillet over medium-high until it shimmers. Lay the fish in, away from you, and leave it until the underside is golden and it releases on its own."
+    },
+    {
+      "cue": "3–5 min",
+      "text": "Flip and cook until the thickest part flakes when you press it (the USDA's safe temperature is 145°F). Thinner fillets take less."
+    },
+    {
+      "cue": "Finish",
+      "text": "Fish over rice, the salad beside it, the rest of the lemon squeezed over everything."
+    }
+  ],
+  "how_it_works": "Lean, sweet fish wants something crisp and sweet-sharp beside it, not a heavy sauce. Halibut is firmer than October's rockfish, so it needs a few more minutes a side, but it's the same sear: the crust forms when you stop moving it. Fuyu persimmon is the rare fruit that's crisp enough to shave like a vegetable.",
+  "swaps": [
+    "Lingcod or rockfish if the halibut is out; thinner fillets cook faster.",
+    "A forkful of pickled fennel in place of the raw fennel.",
+    "Satsuma segments in the salad instead of persimmon."
+  ],
+  "leftovers": "Cook both pieces and keep one for lunch: cold, flaked over rice with the rest of the salad. Don't reheat it.",
+  "linked_house_flavor": "pickled-fennel",
+  "linked_field_notes": [
+    "fuyu-or-hachiya"
+  ],
+  "linked_ingredients": [
+    "fuyu-persimmons",
+    "fennel"
+  ],
+  "sources": [
+    {
+      "title": "Pan-Seared Halibut with Wilted Bitter Salad — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/16790-pan-seared-halibut-with-wilted-bitter-salad",
+      "note": "inch-thick fillets, medium-high heat, about 8–10 minutes in all, flipped once"
+    },
+    {
+      "title": "Fennel Slaw with Persimmons — Food52",
+      "url": "https://food52.com/recipes/20479-fennel-slaw-with-persimmons-and-lime-vinaigrette",
+      "note": "shaved fennel with firm Fuyu persimmon, so the slices hold their shape"
+    },
+    {
+      "title": "Safe Minimum Internal Temperature Chart — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+      "note": "fish is done at 145°F, or when it's opaque and flakes with a fork"
+    }
+  ],
+  "nutrition": {
+    "serving": "One fillet with half the salad and 1 cup cooked rice.",
+    "excludes": "Nothing beyond the rice.",
+    "kcal": [
+      750,
+      800
+    ],
+    "protein": [
+      50,
+      55
+    ],
+    "carbs": [
+      80,
+      90
+    ],
+    "fat": [
+      25,
+      30
+    ],
+    "fiber": [
+      10,
+      10
+    ]
+  }
+}

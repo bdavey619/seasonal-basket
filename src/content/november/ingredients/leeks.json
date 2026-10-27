@@ -1,0 +1,45 @@
+{
+  "slug": "leeks",
+  "month": "November",
+  "name": "Leeks",
+  "tile_uses": "The weekend braise, the soup, the orecchiette",
+  "why_now": "Leeks come into their own as the weather cools. Cooked slowly in butter, they melt into something soft and sweet that turns a braise, a soup, or a bowl of pasta into a cool-weather dish.",
+  "how_to_choose": [
+    "Straight, firm white and light-green parts",
+    "Fresh, dark tops without yellowing",
+    "Medium leeks are more tender than very thick ones"
+  ],
+  "buy_this_much": "2 for each leek dish you pick.",
+  "price_note": "Sold singly or in bunches of two or three.",
+  "pairs_with_month": [
+    "fennel",
+    "swiss-chard"
+  ],
+  "pairs_with_staples": [
+    "chicken thighs",
+    "eggs"
+  ],
+  "flavor_paths": [
+    {
+      "name": "Melted",
+      "description": "Butter, salt, ten minutes on low with the lid on."
+    },
+    {
+      "name": "Braised",
+      "description": "Under chicken thighs, with fennel and satsuma."
+    },
+    {
+      "name": "In soup",
+      "description": "The first thing in the pot."
+    }
+  ],
+  "weekday_uses": [
+    "Melted through orecchiette with chard",
+    "The base of the beef and white bean soup",
+    "Left over on toast with an egg"
+  ],
+  "weekend_use": "Softened with fennel under the braised chicken thighs.",
+  "storage": "In the fridge, unwashed, for up to two weeks.",
+  "one_thing_to_learn": "Leeks hold grit between their layers. Slice them first, then swish the slices in a bowl of cold water and lift them out with your hands; the sand sinks to the bottom.",
+  "market_question": "How long do these keep?"
+}
