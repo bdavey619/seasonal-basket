@@ -2,14 +2,14 @@
   "slug": "leeks",
   "month": "November",
   "name": "Leeks",
-  "tile_uses": "The weekend braise, the soup, the orecchiette",
+  "tile_uses": "The braise, the soup, the orecchiette, the flat iron",
   "why_now": "Leeks come into their own as the weather cools. Cooked slowly in butter, they melt into something soft and sweet that turns a braise, a soup, or a bowl of pasta into a cool-weather dish.",
   "how_to_choose": [
     "Straight, firm white and light-green parts",
     "Fresh, dark tops without yellowing",
     "Medium leeks are more tender than very thick ones"
   ],
-  "buy_this_much": "2 for each leek dish you pick.",
+  "buy_this_much": "6 for the suggested week: two each for the braise, the soup, and the orecchiette. Two more for the flat iron.",
   "price_note": "Sold singly or in bunches of two or three.",
   "pairs_with_month": [
     "fennel",
@@ -34,8 +34,9 @@
     }
   ],
   "weekday_uses": [
-    "Melted through orecchiette with chard",
     "The base of the beef and white bean soup",
+    "Melted in sausage fat for the orecchiette",
+    "Melted under a seared flat iron",
     "Left over on toast with an egg"
   ],
   "weekend_use": "Softened with fennel under the braised chicken thighs.",

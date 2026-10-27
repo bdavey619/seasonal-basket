@@ -2,14 +2,14 @@
   "slug": "swiss-chard",
   "month": "November",
   "name": "Swiss chard",
-  "tile_uses": "The soup, the orecchiette, a frittata",
+  "tile_uses": "The soup, the orecchiette, the farro bowls",
   "why_now": "Chard is one of the greens that does best in Southern California's cool season. It's tender enough to cook in minutes and sturdy enough for a pot of soup.",
   "how_to_choose": [
     "Glossy, upright leaves with no yellowing",
     "Crisp stems that snap rather than bend",
     "Any color — rainbow, red, or white — cooks the same"
   ],
-  "buy_this_much": "1 bunch for each chard dish you pick.",
+  "buy_this_much": "3 bunches for the suggested week: the soup, the orecchiette, and the farro bowls (and a frittata).",
   "price_note": "Sold by the bunch.",
   "pairs_with_month": [
     "leeks",
@@ -35,7 +35,8 @@
   ],
   "weekday_uses": [
     "Stirred into the beef and white bean soup",
-    "Wilted through orecchiette with leeks and Parmesan"
+    "Wilted through orecchiette with sausage and leeks",
+    "Wilted into the braise juices for the farro bowls"
   ],
   "weekend_use": "Stems and leaves folded into a chard and Parmesan frittata.",
   "storage": "In the fridge, wrapped loosely in a damp towel in a bag, for up to five days.",

@@ -62,6 +62,10 @@ DB = {
     "parmesan":        (None, dict(kcal=(392, 392), protein=(35.8, 35.8), carbs=(3.2, 3.2), fat=(25.8, 25.8), fiber=(0, 0)), "USDA: Parmesan, hard"),
     "chicken stock":   (None, dict(kcal=(4, 15), protein=(0.5, 1.5), carbs=(0.3, 1), fat=(0, 0.5), fiber=(0, 0)), "USDA / labels: chicken stock, ready to use"),
     "pickled fennel":  (None, dict(kcal=(25, 35), protein=(1, 1.2), carbs=(6, 8), fat=(0.2, 0.2), fiber=(2.5, 3)), "Calculated from the November jar: fennel in a vinegar brine (the brine adds almost nothing)"),
+    "italian sausage": (None, dict(kcal=(290, 346), protein=(13.9, 14.3), carbs=(0.6, 3), fat=(24.3, 31), fiber=(0, 0)), "USDA: Italian sausage, pork, raw (mild entry to the more common figure)"),
+    "flat iron":       (None, dict(kcal=(170, 210), protein=(19, 20.5), carbs=(0, 0), fat=(9, 14), fiber=(0, 0)), "USDA: beef chuck, top blade (flat iron), lean and fat, raw (estimate)"),
+    "farro, dry":      (None, dict(kcal=(340, 378), protein=(12, 15), carbs=(67, 75), fat=(2, 2.5), fiber=(7, 11)), "Labels: whole / semi-pearled farro, dry"),
+    "fat poured off":  (None, dict(kcal=(884, 884), protein=(0, 0), carbs=(0, 0), fat=(100, 100), fiber=(0, 0)), "Rendered fat poured out of the pan (entered as a negative amount)"),
     "lemon or lime":   (None, dict(kcal=(25, 30), protein=(0.4, 0.6), carbs=(8, 10), fat=(0.2, 0.3), fiber=(0, 0.3)), "USDA: juice"),
 }
 
@@ -159,21 +163,36 @@ NOVEMBER = {
         excludes="Nothing beyond the rice.",
         items=[("halibut", 454), ("fuyu persimmon", (280, 340)), ("fennel", (200, 280)), ("parmesan", 28),
                ("olive oil", 3 * TBSP_OIL), ("lemon or lime", 30), ("rice, cooked", 2 * 158)]),
-    "lentils-cauliflower-egg": dict(
-        servings=2, serving="Half the recipe: lentils and cauliflower with two fried eggs.",
+    "salmon-lentils-cauliflower": dict(
+        servings=2, serving="Half the recipe: one piece of salmon over half the lentils and cauliflower.",
         excludes="Nothing.",
-        # 1 cup dry French green lentils is about 190–200 g.
-        items=[("lentils, dry", (190, 200)), ("cauliflower", (550, 700)), ("egg", 4 * 50), ("pickled fennel", 60),
-               ("olive oil", (4.5 * TBSP_OIL, 5 * TBSP_OIL)), ("parmesan", (15, 20))]),
-    "orecchiette-chard-leeks": dict(
-        servings=2, serving="Half the recipe: about 4 oz dry pasta with the leeks, chard, and Parmesan.",
+        variants={"Wild salmon": "salmon, wild", "Farmed salmon": "salmon, farmed"},
+        # ¾ cup dry French green lentils is about 140–150 g.
+        items=[("rich fish", 454), ("lentils, dry", (140, 150)), ("cauliflower", (550, 700)), ("pickled fennel", 60),
+               ("olive oil", 4 * TBSP_OIL), ("parmesan", (15, 20))]),
+    "orecchiette-sausage-chard": dict(
+        servings=2, serving="Half the recipe: about 4 oz dry pasta with 6 oz sausage, leeks, chard, and Parmesan.",
         excludes="Nothing.",
-        items=[("pasta, dry", 227), ("leeks", (180, 240)), ("chard", (300, 400)), ("butter", 2 * TBSP_BUTTER),
-               ("olive oil", 1 * TBSP_OIL), ("parmesan", 57), ("lemon or lime", 15)]),
+        # ¾ lb sausage; most rendered fat is poured off, so the low end uses the leaner USDA entry
+        # and the high end counts it all.
+        # ¾ lb sausage is ~90 g of fat; about a third to a half renders, and all but a tablespoon is poured off.
+        items=[("fat poured off", (-33, -15)), ("pasta, dry", 227), ("italian sausage", 340), ("leeks", (180, 240)), ("chard", (300, 400)),
+               ("butter", 1 * TBSP_BUTTER), ("parmesan", 57), ("lemon or lime", 15)]),
+    "flat-iron-steak-leeks": dict(
+        servings=2, serving="Half the steak with half the leeks and 1 cup cooked farro.",
+        excludes="Nothing beyond the farro (rice is about the same).",
+        # 1 cup cooked farro is about 50 g dry.
+        items=[("flat iron", 567), ("leeks", (180, 240)), ("butter", 1 * TBSP_BUTTER), ("olive oil", (0.5 * TBSP_OIL, 1 * TBSP_OIL)),
+               ("pickled fennel", 60), ("farro, dry", (95, 105))]),
+    "farro-braised-chicken-bowls": dict(
+        servings=2, serving="Half the recipe: two braised thighs with their leeks and juices, about 1 cup cooked farro, chard, and Parmesan.",
+        excludes="Nothing. These are the braise's leftovers, so don't count them twice.",
+        # Two thirds of the braise (four of six thighs, and their share of the pot), without its rice.
+        items=[("chicken thigh", (1135 * THIGH_EDIBLE * 2 / 3, 1360 * THIGH_EDIBLE * 2 / 3)), ("leeks", (120, 160)), ("fennel", (130, 190)),
+               ("satsuma", 100), ("chicken stock", 237), ("olive oil", (0.33 * TBSP_OIL, 0.67 * TBSP_OIL)),
+               ("farro, dry", (140, 150)), ("chard", (150, 200)), ("pickled fennel", 60), ("parmesan", (15, 20)), ("lemon or lime", 15)]),
 }
-PAIRINGS_NOVEMBER = {
-    "orecchiette-chard-leeks": [("white beans", (240, 255))],
-}
+PAIRINGS_NOVEMBER = {}
 
 NUTRIENTS = ["kcal", "protein", "carbs", "fat", "fiber"]
 

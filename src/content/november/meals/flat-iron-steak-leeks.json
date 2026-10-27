@@ -1,0 +1,96 @@
+{
+  "slug": "flat-iron-steak-leeks",
+  "name": "Seared flat iron steak with melted leeks and pickled fennel",
+  "display_name": "Flat iron steak with leeks",
+  "kind": "Weeknight",
+  "time": "25 minutes",
+  "time_short": "25 min",
+  "yield": "Dinner tonight and a lunch",
+  "intro": "Flat iron is one of the best-value steaks in the case: tender, beefy, and quick. Seared hard and sliced across the grain over leeks melted in its own pan, with the cold jar on the side.",
+  "needs": [
+    "1¼ lbs flat iron steak, about 1 inch thick",
+    "2 leeks, sliced thin and rinsed",
+    "1 tbsp butter and 1 tbsp olive oil",
+    "Pickled fennel, a big forkful",
+    "Farro or rice: about 1 cup cooked per serving",
+    "Salt and black pepper"
+  ],
+  "steps": [
+    {
+      "cue": "Up to 1 hr",
+      "text": "Salt the steak on both sides and leave it on a plate, in the fridge if it's longer than half an hour. Pat it dry before it goes in the pan."
+    },
+    {
+      "cue": "8–10 min",
+      "text": "Melt the butter in a skillet over medium-low, add the leeks and a pinch of salt, cover, and cook until soft and sweet. Scoop them into a bowl and wipe out the pan."
+    },
+    {
+      "cue": "8–10 min",
+      "text": "Heat the oil in the skillet over medium-high until it shimmers. Sear the steak, flipping every 2 minutes, until it's well browned and reaches your doneness: 125°F for medium-rare, which is how most cooks serve flat iron. The USDA's safe temperature for steak is 145°F with a 3-minute rest."
+    },
+    {
+      "cue": "Rest 5 min",
+      "text": "Let it rest on a board while you warm the leeks in the pan's drippings."
+    },
+    {
+      "cue": "Finish",
+      "text": "Slice the steak thin across the grain. Farro or rice, the leeks, the steak, black pepper, and pickled fennel beside it."
+    }
+  ],
+  "how_it_works": "Flat iron comes from the shoulder like chuck, but from a muscle that barely works, so it's tender after minutes instead of hours. Salting ahead seasons it through and dries the surface so it browns. Slicing across the grain is what makes any steak tender to eat; rich beef wants something cold and sharp beside it, and that's the jar.",
+  "swaps": [
+    "Skirt or sirloin steak; skirt cooks in about half the time.",
+    "Chard leaves wilted in the drippings instead of the leeks.",
+    "Grated Parmesan and lemon over the sliced steak."
+  ],
+  "leftovers": "Slice the second half for lunch: cold over farro with pickled fennel and lemon, or warmed for a minute in a hot pan.",
+  "linked_house_flavor": "pickled-fennel",
+  "linked_field_notes": [
+    "sear-then-braise"
+  ],
+  "linked_ingredients": [
+    "leeks",
+    "fennel"
+  ],
+  "sources": [
+    {
+      "title": "Pan-Seared Inexpensive Steak — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/6004-pan-seared-inexpensive-steak",
+      "note": "searing cheaper, beefier cuts hard and slicing them thin"
+    },
+    {
+      "title": "Pan-Seared Strip Steaks — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/12368-pan-seared-strip-steaks",
+      "note": "flip every 2 minutes, 120–125°F for medium-rare, rest 5 minutes; flat iron is thinner, so check early"
+    },
+    {
+      "title": "Safe Minimum Internal Temperature Chart — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+      "note": "steaks are safe at 145°F with a 3-minute rest"
+    }
+  ],
+  "nutrition": {
+    "serving": "Half the steak with half the leeks and 1 cup cooked farro.",
+    "excludes": "Nothing beyond the farro (rice is about the same).",
+    "kcal": [
+      800,
+      1000
+    ],
+    "protein": [
+      60,
+      70
+    ],
+    "carbs": [
+      45,
+      60
+    ],
+    "fat": [
+      35,
+      55
+    ],
+    "fiber": [
+      5,
+      10
+    ]
+  }
+}

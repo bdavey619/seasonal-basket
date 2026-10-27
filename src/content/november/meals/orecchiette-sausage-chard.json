@@ -1,0 +1,106 @@
+{
+  "slug": "orecchiette-sausage-chard",
+  "name": "Orecchiette with Italian sausage, chard, and melted leeks",
+  "display_name": "Orecchiette with sausage and chard",
+  "kind": "Weeknight",
+  "time": "30 minutes",
+  "time_short": "30 min",
+  "yield": "Dinner tonight and a lunch",
+  "intro": "The classic way orecchiette is eaten in southern Italy — with sausage and bitter greens — made with November's leeks and chard. The sausage browns first, and its fat melts the leeks.",
+  "needs": [
+    "8 oz orecchiette",
+    "¾ lb Italian sausage, casings removed",
+    "2 leeks, sliced thin and rinsed",
+    "1 bunch Swiss chard, stems chopped, leaves torn",
+    "1 tbsp butter",
+    "3 garlic cloves, sliced",
+    "2 oz Parmesan, grated",
+    "½ lemon",
+    "Salt, black pepper, and chile flakes"
+  ],
+  "steps": [
+    {
+      "text": "Bring a big pot of well-salted water to a boil."
+    },
+    {
+      "cue": "6–8 min",
+      "text": "Brown the sausage in a large skillet over medium-high, breaking it into bite-sized pieces, until it's browned and cooked through. Lift it out with a slotted spoon and pour off all but about a tablespoon of the fat."
+    },
+    {
+      "cue": "8–10 min",
+      "text": "Lower the heat to medium-low, add the butter, leeks, and a pinch of salt, cover, and cook, stirring now and then, until the leeks are soft and sweet."
+    },
+    {
+      "cue": "5 min",
+      "text": "Uncover, add the chard stems, garlic, and a good pinch of chile flakes, and cook until the stems are tender."
+    },
+    {
+      "cue": "About 11 min",
+      "text": "Boil the orecchiette until just tender. Before you drain it, scoop out a cup of the pasta water."
+    },
+    {
+      "cue": "2 min",
+      "text": "Stir the chard leaves into the skillet until wilted. Add the pasta, the sausage, half the Parmesan, and a splash of pasta water, and toss over the heat until glossy."
+    },
+    {
+      "cue": "Finish",
+      "text": "The rest of the Parmesan, black pepper, and a squeeze of lemon."
+    }
+  ],
+  "how_it_works": "Sausage seasons the whole dish: a spoonful of its fat cooks the leeks, and the bits stuck to the pan dissolve into the sauce. Leeks cooked low and covered don't brown; they melt. Starchy pasta water and Parmesan, tossed over the heat, pull it all together without cream. Chard stems go in before the leaves because they need longer.",
+  "swaps": [
+    "A can of white beans instead of the sausage, for a meat-free night.",
+    "Ground turkey with a pinch of chile and garlic, if you'd rather skip pork.",
+    "Shredded leftover braised chicken instead of the sausage."
+  ],
+  "leftovers": "Pack a bowl for lunch. It's best warmed in a skillet with a splash of water.",
+  "linked_house_flavor": "pickled-fennel",
+  "linked_field_notes": [
+    "chard-stems"
+  ],
+  "linked_ingredients": [
+    "leeks",
+    "swiss-chard"
+  ],
+  "sources": [
+    {
+      "title": "Orecchiette with Italian Sausage and Swiss Chard — Food52",
+      "url": "https://food52.com/recipes/16825-orecchiette-with-italian-sausage-swiss-chard-and-a-maple-glaze",
+      "note": "sausage and chard tossed with orecchiette in the skillet, with garlic and chile"
+    },
+    {
+      "title": "Swiss Chard and Lemon Ricotta Pasta — Food52",
+      "url": "https://food52.com/recipes/17723-swiss-chard-and-lemon-ricotta-pasta",
+      "note": "chard with Parmesan, lemon, and chile flakes through pasta"
+    },
+    {
+      "title": "Safe Minimum Internal Temperature Chart — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+      "note": "ground pork, including sausage, is safe at 160°F"
+    }
+  ],
+  "nutrition": {
+    "serving": "Half the recipe: about 4 oz dry pasta with 6 oz sausage, leeks, chard, and Parmesan.",
+    "excludes": "Nothing.",
+    "kcal": [
+      1000,
+      1200
+    ],
+    "protein": [
+      50,
+      55
+    ],
+    "carbs": [
+      100,
+      115
+    ],
+    "fat": [
+      40,
+      60
+    ],
+    "fiber": [
+      5,
+      10
+    ]
+  }
+}

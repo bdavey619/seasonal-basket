@@ -30,7 +30,7 @@
   ],
   "bring_home": {
     "heading": "This is what I'd bring home.",
-    "feeds": "Pick five dishes. With their leftovers, that's dinner every night and lunch most days for one big appetite.",
+    "feeds": "Enough for one good week: the weekend braise and the farro bowls it leads to, the soup, salmon over lentils, and orecchiette with sausage — seven dinners and most lunches for one big appetite.",
     "items": [
       {
         "slug": "satsumas",
@@ -47,13 +47,36 @@
       {
         "slug": "fennel",
         "name": "Fennel",
-        "qty": "2 bulbs",
-        "note": "For the jar. A couple of dishes below add one more."
+        "qty": "3 bulbs",
+        "note": "Two for the jar, one for the braise."
+      },
+      {
+        "slug": "leeks",
+        "name": "Leeks",
+        "qty": "6",
+        "note": "Two each for the braise, the soup, and the orecchiette."
+      },
+      {
+        "slug": "swiss-chard",
+        "name": "Swiss chard",
+        "qty": "3 bunches",
+        "note": "For the soup, the orecchiette, and the farro bowls."
+      },
+      {
+        "slug": "cauliflower",
+        "name": "Cauliflower",
+        "qty": "1 head",
+        "note": "Tight and heavy, for the salmon and lentils."
       }
     ],
     "also_buy": [
       "3 lemons",
       "a wedge of Parmesan",
+      "farro (whole or semi-pearled)",
+      "French green lentils",
+      "orecchiette",
+      "2 cans white beans",
+      "2 cartons chicken stock",
       "cinnamon sticks",
       "dark brown sugar"
     ],
@@ -72,38 +95,31 @@
       "black pepper",
       "ground coffee"
     ],
-    "week": {
-      "core_label": "Every week",
-      "label": "Then pick five",
-      "suggested": "A good week: the weekend braise, the soup, the orecchiette, the warm lentils, and the seared fish. The soup makes three dinners and lunches besides.",
-      "dishes": [
-        {
-          "slug": "braised-chicken-leeks-fennel",
-          "buy": "6 bone-in, skin-on chicken thighs (about 2½–3 lbs), 2 leeks, 1 more fennel bulb, a carton of chicken stock"
-        },
-        {
-          "slug": "beef-white-bean-chard-soup",
-          "buy": "2½ lbs beef chuck roast, 2 leeks, 1 bunch chard, 2 cans white beans, a carton of chicken stock"
-        },
-        {
-          "slug": "sheet-pan-chicken-cauliflower",
-          "buy": "4 bone-in, skin-on chicken thighs (about 1¾ lbs), 1 head cauliflower"
-        },
-        {
-          "slug": "seared-halibut-persimmon",
-          "buy": "1 lb halibut, lingcod, or rockfish from the fish market, 1 more fennel bulb"
-        },
-        {
-          "slug": "lentils-cauliflower-egg",
-          "buy": "1 cup French green lentils, 1 head cauliflower"
-        },
-        {
-          "slug": "orecchiette-chard-leeks",
-          "buy": "8 oz orecchiette, 2 leeks, 1 bunch chard — and a can of white beans to make it a meal"
-        }
-      ]
-    },
-    "cost_note": "A week like the one suggested runs about $90–135 at a well-stocked supermarket and a fish market, depending mostly on the fish: halibut is the treat, rockfish or lingcod keep it near the low end. The first week adds about $15 for Parmesan, cinnamon, and brown sugar that last the month. Everything in this edition is on these lines — nothing else to buy."
+    "cost_note": "This week's list runs about $95–150 at a well-stocked supermarket, typically around $120. The first week adds about $15 for Parmesan, cinnamon, and brown sugar that last the month. Everything in this edition is on these lines or on a dish's own page — nothing else to buy.",
+    "proteins": [
+      {
+        "slug": "chicken-thighs",
+        "name": "Bone-in chicken thighs",
+        "qty": "6, about 2½–3 lbs",
+        "uses": "The weekend braise, then the farro bowls"
+      },
+      {
+        "name": "Beef chuck roast",
+        "qty": "2½ lbs",
+        "uses": "The soup — six big bowls"
+      },
+      {
+        "name": "Salmon",
+        "qty": "1 lb",
+        "uses": "Over warm lentils, and a lunch"
+      },
+      {
+        "name": "Italian sausage",
+        "qty": "¾ lb",
+        "uses": "The orecchiette, and a lunch"
+      }
+    ],
+    "swap_note": "Cooking something else this week — the flat iron, the chicken and cauliflower, or the halibut? Each dish's page lists exactly what it needs."
   },
   "staples": [
     "Sticky white rice",
@@ -189,7 +205,7 @@
     "month": "December",
     "status": "Arriving December 1."
   },
-  "meals_heading": "Six things to cook in November.",
+  "meals_heading": "Eight things to cook in November.",
   "meals_dek": "Specific dishes, chosen for this month's basket. Each one ends by explaining how it works — so the next time, you won't need it.",
   "meals_back_label": "November's meals",
   "flavors": [
@@ -238,20 +254,22 @@
             "dish_label": "The weekend braise"
           },
           {
+            "lead": "Over farro",
+            "text": "Pull the leftovers off the bone and warm them in their juices with chard.",
+            "dish": "farro-braised-chicken-bowls",
+            "dish_label": "Farro bowls"
+          },
+          {
             "lead": "Roast",
             "text": "A hot sheet pan, cauliflower around them, the jar spooned over at the end.",
             "dish": "sheet-pan-chicken-cauliflower",
             "dish_label": "With cauliflower"
-          },
-          {
-            "lead": "Leftovers",
-            "text": "Pull the meat off the bone into a bowl of the soup, or onto toast with the pickled fennel."
           }
         ]
       },
       {
-        "name": "Beef chuck",
-        "why": "A hard-working cut turns tender only with time and liquid — the opposite of a steak.",
+        "name": "Beef",
+        "why": "Hard-working cuts like chuck need time and liquid; easy ones like flat iron need a hot pan and a few minutes.",
         "best_with": [
           "salty-sharp",
           "bright-sharp"
@@ -259,17 +277,67 @@
         "moves": [
           {
             "lead": "Soup",
-            "text": "Brown it hard, then two hours at a gentle simmer with leeks, beans, and chard.",
+            "text": "Brown chuck hard, then two hours at a gentle simmer with leeks, beans, and chard.",
             "dish": "beef-white-bean-chard-soup",
             "dish_label": "The soup"
           },
           {
-            "lead": "Buy",
-            "text": "Ask for a chuck roast and cut it yourself; packaged stew meat is often mixed cuts that cook unevenly."
+            "lead": "Sear",
+            "text": "Flat iron in a hot pan, sliced thin across the grain over melted leeks.",
+            "dish": "flat-iron-steak-leeks",
+            "dish_label": "The flat iron"
           },
           {
             "lead": "Leftovers",
-            "text": "Lift the beef out of the soup, crisp it in a hot pan, and pile it on rice with the pickled fennel."
+            "text": "Lift the beef out of the soup, crisp it in a hot pan, and pile it on farro with the pickled fennel."
+          }
+        ]
+      },
+      {
+        "name": "Salmon",
+        "why": "Rich, oily fish wants something earthy and sharp underneath it.",
+        "best_with": [
+          "bright-sharp",
+          "salty-sharp"
+        ],
+        "moves": [
+          {
+            "lead": "Over lentils",
+            "text": "Roast it on the cauliflower pan and set it on lentils dressed with the jar's brine.",
+            "dish": "salmon-lentils-cauliflower",
+            "dish_label": "With lentils"
+          },
+          {
+            "lead": "On leeks",
+            "text": "Set a fillet on a bed of melted leeks, cover the pan, and let it steam for ten minutes."
+          },
+          {
+            "lead": "Leftovers",
+            "text": "Flaked cold over farro with lemon and pickled fennel. Don't reheat it."
+          }
+        ]
+      },
+      {
+        "name": "Italian sausage",
+        "why": "Its fat and seasoning do the work of a sauce.",
+        "best_with": [
+          "salty-sharp",
+          "soft-rich"
+        ],
+        "moves": [
+          {
+            "lead": "Pasta",
+            "text": "Browned and crumbled through orecchiette with melted leeks and chard.",
+            "dish": "orecchiette-sausage-chard",
+            "dish_label": "The orecchiette"
+          },
+          {
+            "lead": "Roast",
+            "text": "Links on a hot pan with cauliflower, the jar over the top."
+          },
+          {
+            "lead": "In soup",
+            "text": "Browned and stirred into a bowl of the soup with extra chard."
           }
         ]
       },
@@ -288,18 +356,14 @@
             "dish_label": "With persimmon"
           },
           {
-            "lead": "On leeks",
-            "text": "Set a fillet on a bed of melted leeks, cover the pan, and let it steam for ten minutes — a small braise."
-          },
-          {
             "lead": "Leftovers",
-            "text": "Flake it cold over warm lentils with lemon. Don't reheat it."
+            "text": "Flake it cold over warm lentils with lemon."
           }
         ]
       },
       {
-        "name": "Eggs, lentils, and beans",
-        "why": "Earthy and plain on their own, they want sharpness and fat.",
+        "name": "Eggs and beans",
+        "why": "For a meat-free night, they want sharpness and fat.",
         "best_with": [
           "bright-sharp",
           "salty-sharp"
@@ -307,14 +371,14 @@
         "moves": [
           {
             "lead": "Lentils",
-            "text": "Dress them warm with the jar's brine, roasted cauliflower, a fried egg on top.",
-            "dish": "lentils-cauliflower-egg",
+            "text": "Two fried eggs on the warm lentils and cauliflower instead of the salmon.",
+            "dish": "salmon-lentils-cauliflower",
             "dish_label": "Warm lentils"
           },
           {
             "lead": "Pasta",
-            "text": "Melted leeks and chard through short pasta, white beans folded in.",
-            "dish": "orecchiette-chard-leeks",
+            "text": "White beans through the orecchiette instead of the sausage.",
+            "dish": "orecchiette-sausage-chard",
             "dish_label": "The orecchiette"
           },
           {
@@ -328,7 +392,7 @@
   "dishes": [
     {
       "slug": "braised-chicken-leeks-fennel",
-      "line": "November's lesson: a hard sear, then an hour in a low oven.",
+      "line": "November's lesson: a hard sear, then an hour in a low oven. Leftovers become the farro bowls.",
       "plate": [
         "#c98a3e",
         "#efe3c8",
@@ -338,12 +402,52 @@
     },
     {
       "slug": "beef-white-bean-chard-soup",
-      "line": "Made on Sunday, it's dinner twice and lunch all week.",
+      "line": "Made on Sunday, it's dinner three times and lunch all week.",
       "plate": [
         "#6e4630",
         "#f1eadb",
         "#3f5a3a",
         "#c7a45a"
+      ]
+    },
+    {
+      "slug": "salmon-lentils-cauliflower",
+      "line": "A French classic: rich fish over lentils dressed with the jar's brine.",
+      "plate": [
+        "#e8866a",
+        "#4d4a35",
+        "#efe6cf",
+        "#dfe6c6"
+      ]
+    },
+    {
+      "slug": "orecchiette-sausage-chard",
+      "line": "Sausage and greens, the way orecchiette is eaten in Puglia.",
+      "plate": [
+        "#efd9a6",
+        "#8a5a3c",
+        "#3f5a3a",
+        "#c3d29a"
+      ]
+    },
+    {
+      "slug": "farro-braised-chicken-bowls",
+      "line": "The braise, midweek: chewy farro soaking up the juices.",
+      "plate": [
+        "#a8834f",
+        "#c98a3e",
+        "#3f5a3a",
+        "#dfe6c6"
+      ]
+    },
+    {
+      "slug": "flat-iron-steak-leeks",
+      "line": "A tender, inexpensive steak over leeks melted in its pan.",
+      "plate": [
+        "#7a3b2a",
+        "#d9dcb8",
+        "#efe6cf",
+        "#a8834f"
       ]
     },
     {
@@ -364,26 +468,6 @@
         "#e2702a",
         "#dfe6c6",
         "#f2d64b"
-      ]
-    },
-    {
-      "slug": "lentils-cauliflower-egg",
-      "line": "Lentils dressed warm with the brine, an egg on top.",
-      "plate": [
-        "#4d4a35",
-        "#efe6cf",
-        "#f2b632",
-        "#dfe6c6"
-      ]
-    },
-    {
-      "slug": "orecchiette-chard-leeks",
-      "line": "Leeks melted in butter, chard, chile, and Parmesan.",
-      "plate": [
-        "#efd9a6",
-        "#3f5a3a",
-        "#c3d29a",
-        "#f3eddc"
       ]
     }
   ],
@@ -533,7 +617,7 @@
         "Firm but not rock-hard for salads; a little give for eating out of hand",
         "Skip pointed, acorn-shaped ones unless they're jelly-soft: those are Hachiya"
       ],
-      "buy_this_much": "4. Two for the salad beside the fish, two for mornings.",
+      "buy_this_much": "4 for mornings and snacks; 2 more if you make the halibut.",
       "price_note": "Sold by the each. Farmers markets often have them in bags for less.",
       "pairs_with_month": [
         "fennel",
@@ -579,7 +663,7 @@
         "No brown bruising or splitting on the outer layers",
         "Fresh, upright fronds; limp fronds mean it's been sitting"
       ],
-      "buy_this_much": "2 bulbs for the jar every week, plus one for each fennel dish you pick.",
+      "buy_this_much": "3 bulbs: two for the jar, one for the braise. One more if you make the halibut.",
       "price_note": "Sold by the bulb. Bigger bulbs are usually the better deal.",
       "pairs_with_month": [
         "satsumas",
@@ -605,7 +689,7 @@
         }
       ],
       "weekday_uses": [
-        "Pickled, beside roast chicken and over lentils",
+        "Pickled, over lentils, beside steak, and on the farro bowls",
         "Shaved raw with persimmon beside seared halibut"
       ],
       "weekend_use": "Cut in wedges and braised with leeks under the chicken thighs.",
@@ -617,14 +701,14 @@
       "slug": "swiss-chard",
       "month": "November",
       "name": "Swiss chard",
-      "tile_uses": "The soup, the orecchiette, a frittata",
+      "tile_uses": "The soup, the orecchiette, the farro bowls",
       "why_now": "Chard is one of the greens that does best in Southern California's cool season. It's tender enough to cook in minutes and sturdy enough for a pot of soup.",
       "how_to_choose": [
         "Glossy, upright leaves with no yellowing",
         "Crisp stems that snap rather than bend",
         "Any color — rainbow, red, or white — cooks the same"
       ],
-      "buy_this_much": "1 bunch for each chard dish you pick.",
+      "buy_this_much": "3 bunches for the suggested week: the soup, the orecchiette, and the farro bowls (and a frittata).",
       "price_note": "Sold by the bunch.",
       "pairs_with_month": [
         "leeks",
@@ -650,7 +734,8 @@
       ],
       "weekday_uses": [
         "Stirred into the beef and white bean soup",
-        "Wilted through orecchiette with leeks and Parmesan"
+        "Wilted through orecchiette with sausage and leeks",
+        "Wilted into the braise juices for the farro bowls"
       ],
       "weekend_use": "Stems and leaves folded into a chard and Parmesan frittata.",
       "storage": "In the fridge, wrapped loosely in a damp towel in a bag, for up to five days.",
@@ -661,14 +746,14 @@
       "slug": "cauliflower",
       "month": "November",
       "name": "Cauliflower",
-      "tile_uses": "The roast chicken pan, the warm lentils",
+      "tile_uses": "The salmon and lentils, the roast chicken pan",
       "why_now": "Cauliflower is a cool-season crop, and it's sweeter and denser now than at any time in summer. Roasted hard, it turns nutty and golden at the edges.",
       "how_to_choose": [
         "Tight, creamy-white curds with no brown spots",
         "Heavy for its size",
         "Fresh, green leaves hugging the head"
       ],
-      "buy_this_much": "1 head for each cauliflower dish you pick.",
+      "buy_this_much": "1 head for the salmon and lentils; one more for the roast chicken pan.",
       "price_note": "Sold by the head. A heavier head for the same price is more cauliflower.",
       "pairs_with_month": [
         "fennel",
@@ -693,8 +778,8 @@
         }
       ],
       "weekday_uses": [
-        "Roasted on the sheet pan with chicken thighs",
-        "Roasted and folded into warm lentils"
+        "Roasted and folded into warm lentils under salmon",
+        "Roasted on the sheet pan with chicken thighs"
       ],
       "weekend_use": "Leftover florets, crisped in a skillet, under a fried egg.",
       "storage": "In the fridge, unwashed, in a loose bag, for up to a week.",
@@ -705,14 +790,14 @@
       "slug": "leeks",
       "month": "November",
       "name": "Leeks",
-      "tile_uses": "The weekend braise, the soup, the orecchiette",
+      "tile_uses": "The braise, the soup, the orecchiette, the flat iron",
       "why_now": "Leeks come into their own as the weather cools. Cooked slowly in butter, they melt into something soft and sweet that turns a braise, a soup, or a bowl of pasta into a cool-weather dish.",
       "how_to_choose": [
         "Straight, firm white and light-green parts",
         "Fresh, dark tops without yellowing",
         "Medium leeks are more tender than very thick ones"
       ],
-      "buy_this_much": "2 for each leek dish you pick.",
+      "buy_this_much": "6 for the suggested week: two each for the braise, the soup, and the orecchiette. Two more for the flat iron.",
       "price_note": "Sold singly or in bunches of two or three.",
       "pairs_with_month": [
         "fennel",
@@ -737,8 +822,9 @@
         }
       ],
       "weekday_uses": [
-        "Melted through orecchiette with chard",
         "The base of the beef and white bean soup",
+        "Melted in sausage fat for the orecchiette",
+        "Melted under a seared flat iron",
         "Left over on toast with an egg"
       ],
       "weekend_use": "Softened with fennel under the braised chicken thighs.",
@@ -750,7 +836,7 @@
       "slug": "chicken-thighs",
       "month": "November",
       "name": "Bone-in, skin-on chicken thighs",
-      "tile_uses": "The weekend braise, the roast chicken and cauliflower",
+      "tile_uses": "The weekend braise, the farro bowls",
       "why_now": "There's nothing seasonal about chicken. What changes in November is the weather: the first cool evenings make an hour-long braise appealing again, and bone-in, skin-on thighs are the cut built for it. This is the month's cut.",
       "how_to_choose": [
         "Skin that covers the whole thigh, not shrunken back",
@@ -758,7 +844,7 @@
         "No liquid pooling in the package",
         "Similar-sized thighs, so they cook evenly"
       ],
-      "buy_this_much": "About 2½–3 lbs (6 thighs) for the braise, and 4 thighs for the roast pan.",
+      "buy_this_much": "6, about 2½–3 lbs: the braise, with four left for the farro bowls. Four more if you make the roast chicken and cauliflower.",
       "price_note": "Bone-in, skin-on thighs are one of the cheapest cuts in the case, well below boneless.",
       "pairs_with_month": [
         "leeks",
@@ -785,8 +871,8 @@
         }
       ],
       "weekday_uses": [
-        "Roasted with cauliflower and pickled fennel",
-        "Leftover braise, pulled off the bone over rice"
+        "Leftover braise, pulled off the bone over farro",
+        "Roasted with cauliflower and pickled fennel"
       ],
       "weekend_use": "Seared and braised in the Dutch oven with leeks, fennel, and satsuma. The weekend dish.",
       "storage": "In the coldest part of the fridge, in the package, for a day or two. Cook within two days of buying.",

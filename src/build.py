@@ -557,8 +557,10 @@ def render_bring_home(bring_home, ingredients_data, featured, depth, ing_index_p
 <p class="bring-home-group">{e(week.get('label', 'Then pick five'))}</p>{suggested_html}
 <div class="bring-home-list">{"".join(dish_rows)}</div>
 {f'<p class="bring-home-cost">{cost}</p>' if cost else ""}"""
+    swap = bring_home.get("swap_note")
+    swap_html = f'\n<p class="bring-home-feeds bring-home-swap">{e(swap)}</p>' if swap else ""
     return f"""{feeds_html}
-<div class="bring-home-list">{rows}</div>{protein_html}{extra}
+<div class="bring-home-list">{rows}</div>{protein_html}{extra}{swap_html}
 {f'<p class="bring-home-cost">{cost}</p>' if cost else ""}"""
 
 # ── Confidence score ───────────────────────────────────────────────────────────

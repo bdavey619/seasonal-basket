@@ -70,46 +70,86 @@ Recipe makes 2 serving(s). **Serving:** One fillet with half the salad and 1 cup
 | **Per serving** | | **765–813** | **52–54** | **80–88** | **27–28** | **9–11** |
 | *Published (rounded)* | | 750–800 | 50–55 | 80–90 | 25–30 | 10 |
 
-## lentils-cauliflower-egg
+## salmon-lentils-cauliflower
 
-Recipe makes 2 serving(s). **Serving:** Half the recipe: lentils and cauliflower with two fried eggs.  
+Recipe makes 2 serving(s). **Serving:** Half the recipe: one piece of salmon over half the lentils and cauliflower.  
 **Not included:** Nothing.
 
 | Ingredient (whole recipe) | grams | kcal | protein | carbs | fat | fiber |
 |---|---|---|---|---|---|---|
-| lentils, dry | 190–200 | 669–704 | 47–52 | 120–126 | 2 | 20–21 |
+| salmon, wild | 454 | 595–663 | 98–101 | 0 | 21–27 | 0 |
+| lentils, dry | 140–150 | 493–528 | 34–39 | 88–94 | 2 | 15–16 |
 | cauliflower | 550–700 | 138–175 | 10–13 | 28–35 | 2 | 11–14 |
-| egg | 200 | 288 | 25 | 2 | 19 | 0 |
 | pickled fennel | 60 | 15–21 | 1 | 4–5 | 0 | 2 |
-| olive oil | 61–68 | 537–597 | 0 | 0 | 61–68 | 0 |
+| olive oil | 54 | 477 | 0 | 0 | 54 | 0 |
 | parmesan | 15–20 | 59–78 | 5–7 | 0 | 4–5 | 0 |
-| **Per serving** | | **853–932** | **44–49** | **76–84** | **44–48** | **16–19** |
-| *Published (rounded)* | | 850–950 | 45–50 | 75–85 | 45–50 | 15–20 |
+| **Per serving** | | **888–1112** | **72–81** | **60–67** | **41–62** | **14–16** |
+| *(rows above use Wild salmon)* | | | | | | |
+| **Wild salmon, per serving** | | 900–950 | 75–80 | 60–65 | 40–45 | |
+| **Farmed salmon, per serving** | | 1050–1100 | 70–75 | 60–65 | 60–60 | |
+| *Published (rounded)* | | 900–1100 | 70–80 | 60–65 | 40–60 | 15 |
 
-## orecchiette-chard-leeks
+## orecchiette-sausage-chard
 
-Recipe makes 2 serving(s). **Serving:** Half the recipe: about 4 oz dry pasta with the leeks, chard, and Parmesan.  
+Recipe makes 2 serving(s). **Serving:** Half the recipe: about 4 oz dry pasta with 6 oz sausage, leeks, chard, and Parmesan.  
 **Not included:** Nothing.
 
 | Ingredient (whole recipe) | grams | kcal | protein | carbs | fat | fiber |
 |---|---|---|---|---|---|---|
+| fat poured off | -33–-15 | -292–-133 | -0 | -0 | -33–-15 | -0 |
 | pasta, dry | 227 | 810–842 | 28–31 | 161–170 | 3–3 | 6–8 |
+| italian sausage | 340 | 986–1176 | 47–49 | 2–10 | 83–105 | 0 |
 | leeks | 180–240 | 110–146 | 3–4 | 26–34 | 1 | 3–4 |
 | chard | 300–400 | 57–80 | 5–8 | 11–16 | 0–1 | 5–6 |
-| butter | 28 | 204 | 0 | 0 | 23 | 0 |
-| olive oil | 14 | 119 | 0 | 0 | 14 | 0 |
+| butter | 14 | 102 | 0 | 0 | 12 | 0 |
 | parmesan | 57 | 223 | 20 | 2 | 15 | 0 |
 | lemon or lime | 15 | 4–4 | 0 | 1 | 0 | 0 |
-| **Per serving** | | **764–810** | **29–31** | **100–112** | **27–28** | **7–9** |
-| *Published (rounded)* | | 750–800 | 30 | 100–110 | 25–30 | 5–10 |
+| **Per serving** | | **1000–1221** | **52–56** | **101–117** | **40–61** | **7–9** |
+| *Published (rounded)* | | 1000–1200 | 50–55 | 100–115 | 40–60 | 5–10 |
 
-With the "Make it a meal" pairing (white beans): about 1050–1150 kcal, 45–50 g protein.
+## flat-iron-steak-leeks
+
+Recipe makes 2 serving(s). **Serving:** Half the steak with half the leeks and 1 cup cooked farro.  
+**Not included:** Nothing beyond the farro (rice is about the same).
+
+| Ingredient (whole recipe) | grams | kcal | protein | carbs | fat | fiber |
+|---|---|---|---|---|---|---|
+| flat iron | 567 | 964–1191 | 108–116 | 0 | 51–79 | 0 |
+| leeks | 180–240 | 110–146 | 3–4 | 26–34 | 1 | 3–4 |
+| butter | 14 | 102 | 0 | 0 | 12 | 0 |
+| olive oil | 7–14 | 60–119 | 0 | 0 | 7–14 | 0 |
+| pickled fennel | 60 | 15–21 | 1 | 4–5 | 0 | 2 |
+| farro, dry | 95–105 | 323–397 | 11–16 | 64–79 | 2–3 | 7–12 |
+| **Per serving** | | **787–988** | **61–68** | **46–59** | **36–54** | **6–9** |
+| *Published (rounded)* | | 800–1000 | 60–70 | 45–60 | 35–55 | 5–10 |
+
+## farro-braised-chicken-bowls
+
+Recipe makes 2 serving(s). **Serving:** Half the recipe: two braised thighs with their leeks and juices, about 1 cup cooked farro, chard, and Parmesan.  
+**Not included:** Nothing. These are the braise's leftovers, so don't count them twice.
+
+| Ingredient (whole recipe) | grams | kcal | protein | carbs | fat | fiber |
+|---|---|---|---|---|---|---|
+| chicken thigh | 530–635 | 1006–1403 | 87–109 | 0–2 | 70–105 | 0 |
+| leeks | 120–160 | 73–98 | 2–2 | 17–23 | 0 | 2–3 |
+| fennel | 130–190 | 40–59 | 2–2 | 9–14 | 0 | 4–6 |
+| satsuma | 100 | 53 | 1 | 13 | 0 | 2 |
+| chicken stock | 237 | 9–36 | 1–4 | 1–2 | 0–1 | 0 |
+| olive oil | 4–9 | 39–80 | 0 | 0 | 4–9 | 0 |
+| farro, dry | 140–150 | 476–567 | 17–22 | 94–112 | 3–4 | 10–16 |
+| chard | 150–200 | 28–40 | 3–4 | 6–8 | 0 | 2–3 |
+| pickled fennel | 60 | 15–21 | 1 | 4–5 | 0 | 2 |
+| parmesan | 15–20 | 59–78 | 5–7 | 0 | 4–5 | 0 |
+| lemon or lime | 15 | 4–4 | 0 | 1 | 0 | 0 |
+| **Per serving** | | **902–1219** | **59–76** | **73–91** | **41–63** | **11–16** |
+| *Published (rounded)* | | 900–1200 | 60–75 | 75–90 | 40–65 | 10–15 |
 
 ## Ingredient values used
 
 | Ingredient | basis | kcal | protein | carbs | fat | fiber | source |
 |---|---|---|---|---|---|---|---|
-| egg | per 50 g unit | 72 | 6.3 | 0.4 | 4.8 | 0 | USDA: egg, whole, large |
+| salmon, wild | per 100 g | 131–146 | 21.6–22.3 | 0 | 4.7–5.9 | 0 | USDA: sockeye to coho salmon, wild, raw |
+| salmon, farmed | per 100 g | 208 | 20.4 | 0 | 13.4 | 0 | USDA: Atlantic salmon, farmed, raw |
 | olive oil | per 100 g | 884 | 0 | 0 | 100 | 0 | USDA: olive oil (1 tbsp = 13.5 g) |
 | butter | per 100 g | 717 | 0.9 | 0.1 | 81 | 0 | USDA: butter (1 tbsp = 14.2 g) |
 | rice, cooked | per 100 g | 130 | 2.7 | 28.2 | 0.3 | 0.4 | USDA: white rice, cooked (1 cup = 158 g) |
@@ -128,4 +168,8 @@ With the "Make it a meal" pairing (white beans): about 1050–1150 kcal, 45–50
 | parmesan | per 100 g | 392 | 35.8 | 3.2 | 25.8 | 0 | USDA: Parmesan, hard |
 | chicken stock | per 100 g | 4–15 | 0.5–1.5 | 0.3–1 | 0–0.5 | 0 | USDA / labels: chicken stock, ready to use |
 | pickled fennel | per 100 g | 25–35 | 1–1.2 | 6–8 | 0.2 | 2.5–3 | Calculated from the November jar: fennel in a vinegar brine (the brine adds almost nothing) |
+| italian sausage | per 100 g | 290–346 | 13.9–14.3 | 0.6–3 | 24.3–31 | 0 | USDA: Italian sausage, pork, raw (mild entry to the more common figure) |
+| flat iron | per 100 g | 170–210 | 19–20.5 | 0 | 9–14 | 0 | USDA: beef chuck, top blade (flat iron), lean and fat, raw (estimate) |
+| farro, dry | per 100 g | 340–378 | 12–15 | 67–75 | 2–2.5 | 7–11 | Labels: whole / semi-pearled farro, dry |
+| fat poured off | per 100 g | 884 | 0 | 0 | 100 | 0 | Rendered fat poured out of the pan (entered as a negative amount) |
 | lemon or lime | per 100 g | 25–30 | 0.4–0.6 | 8–10 | 0.2–0.3 | 0–0.3 | USDA: juice |
