@@ -14,7 +14,7 @@ After a year of reading Seasonal, a reader hasn't accumulated dozens of recipes.
 
 ## Current Status
 
-October is the current edition. November is built and committed with `status: "upcoming"`: its pages exist at `/november/` (noindex) while the homepage still shows October and lists November under "Next edition". On November 1, set November's status to `published` and rebuild; October moves into the archive. July, August, and September remain published and linked from the homepage archive. The architecture, voice, and product philosophy are established. The site is deployed at GitHub Pages from `/docs` on `main`, served at `https://bdavey.co/seasonal-basket/`.
+November is the current edition (published November 1). October, September, August, and July remain published and linked from the homepage archive; December is listed under "Next edition".
 
 ## What We Know
 
@@ -216,7 +216,7 @@ Each month should build on the last: gentle heat (July), salt-and-rest (August),
 
 ## Next Milestone
 
-Publish November on November 1 (flip its status and rebuild), then begin December: pork shoulder, slow roasting, the Dutch oven or a roasting pan, if the plan still fits the weather. Don't repeat November's lead proteins; keep an oily fish in the month (November's is salmon). Use nutritional variety as inspiration from the start — Keep five weeknight dinners and one simple shopping list.
+Begin December: pork shoulder, slow roasting, the Dutch oven or a roasting pan, if the plan still fits the weather. Don't repeat November's lead proteins; keep an oily fish in the month (November's is salmon). Use nutritional variety as inspiration from the start — Keep five weeknight dinners and one simple shopping list.
 
 ## Development Handoff Goal
 
