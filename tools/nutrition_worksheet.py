@@ -65,6 +65,8 @@ DB = {
     "italian sausage": (None, dict(kcal=(290, 346), protein=(13.9, 14.3), carbs=(0.6, 3), fat=(24.3, 31), fiber=(0, 0)), "USDA: Italian sausage, pork, raw (mild entry to the more common figure)"),
     "flat iron":       (None, dict(kcal=(170, 210), protein=(19, 20.5), carbs=(0, 0), fat=(9, 14), fiber=(0, 0)), "USDA: beef chuck, top blade (flat iron), lean and fat, raw (estimate)"),
     "farro, dry":      (None, dict(kcal=(340, 378), protein=(12, 15), carbs=(67, 75), fat=(2, 2.5), fiber=(7, 11)), "Labels: whole / semi-pearled farro, dry"),
+    "carrots":         (None, dict(kcal=(41, 41), protein=(0.9, 0.9), carbs=(9.6, 9.6), fat=(0.2, 0.2), fiber=(2.8, 2.8)), "USDA: carrots, raw"),
+    "canned tomatoes": (None, dict(kcal=(18, 21), protein=(0.8, 1), carbs=(4, 4.5), fat=(0.1, 0.3), fiber=(1, 1.9)), "USDA: tomatoes, canned, whole, with juice"),
     "fat poured off":  (None, dict(kcal=(884, 884), protein=(0, 0), carbs=(0, 0), fat=(100, 100), fiber=(0, 0)), "Rendered fat poured out of the pan (entered as a negative amount)"),
     "lemon or lime":   (None, dict(kcal=(25, 30), protein=(0.4, 0.6), carbs=(8, 10), fat=(0.2, 0.3), fiber=(0, 0.3)), "USDA: juice"),
 }
@@ -148,16 +150,24 @@ NOVEMBER = {
         # Rendered fat is poured off before the vegetables go in; the thighs still keep their skin.
         items=[("chicken thigh", (1135 * THIGH_EDIBLE, 1360 * THIGH_EDIBLE)), ("leeks", (180, 240)), ("fennel", (200, 280)),
                ("satsuma", 150), ("chicken stock", 355), ("olive oil", (0.5 * TBSP_OIL, 1 * TBSP_OIL)), ("rice, cooked", 3 * 158)]),
-    "sheet-pan-chicken-cauliflower": dict(
-        servings=2, serving="Half the recipe: two thighs, half the cauliflower, the jar, and 1 cup cooked rice.",
-        excludes="Nothing beyond the rice.",
-        items=[("chicken thigh", 795 * THIGH_EDIBLE), ("cauliflower", (550, 700)), ("olive oil", 2 * TBSP_OIL),
-               ("satsuma", 75), ("pickled fennel", 60), ("rice, cooked", 2 * 158)]),
+    "chicken-white-beans-chard": dict(
+        servings=2, serving="Half the recipe: two thighs over half the beans and chard, and a thick slice of sourdough.",
+        excludes="Nothing beyond the bread.",
+        # Rendered fat is poured off down to a tablespoon before the beans go in.
+        items=[("chicken thigh", 795 * THIGH_EDIBLE), ("white beans", (240, 255)), ("chard", (150, 200)), ("chicken stock", 237),
+               ("satsuma", 75), ("olive oil", (0.5 * TBSP_OIL, 1 * TBSP_OIL)), ("pickled fennel", 60), ("sourdough", (120, 150))]),
     "beef-white-bean-chard-soup": dict(
         servings=6, serving="One of six big bowls (about 2 cups), with a little grated Parmesan.",
         excludes="Bread.",
         items=[("beef chuck", 1135), ("leeks", (180, 240)), ("chard", (300, 400)), ("white beans", (480, 510)),
                ("chicken stock", 946), ("olive oil", 2 * TBSP_OIL), ("parmesan", (30, 45)), ("lemon or lime", 30)]),
+    "minestrone-sausage": dict(
+        servings=6, serving="One of six big bowls (about 2 cups), with a little grated Parmesan.",
+        excludes="Bread.",
+        # Sausage fat stays in the pot to cook the vegetables.
+        items=[("italian sausage", 340), ("leeks", (180, 240)), ("fennel", (200, 280)), ("carrots", (120, 150)), ("chard", (300, 400)),
+               ("canned tomatoes", 794), ("white beans", (480, 510)), ("chicken stock", 946), ("pasta, dry", (170, 180)),
+               ("olive oil", 2 * TBSP_OIL), ("parmesan", (30, 45))]),
     "seared-halibut-persimmon": dict(
         servings=2, serving="One fillet with half the salad and 1 cup cooked rice.",
         excludes="Nothing beyond the rice.",
@@ -192,7 +202,9 @@ NOVEMBER = {
                ("satsuma", 100), ("chicken stock", 237), ("olive oil", (0.33 * TBSP_OIL, 0.67 * TBSP_OIL)),
                ("farro, dry", (140, 150)), ("chard", (150, 200)), ("pickled fennel", 60), ("parmesan", (15, 20)), ("lemon or lime", 15)]),
 }
-PAIRINGS_NOVEMBER = {}
+PAIRINGS_NOVEMBER = {
+    "minestrone-sausage": [("egg", 50), ("sourdough", (60, 75)), ("parmesan", 10)],
+}
 
 NUTRIENTS = ["kcal", "protein", "carbs", "fat", "fiber"]
 

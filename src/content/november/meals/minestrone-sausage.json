@@ -1,0 +1,127 @@
+{
+  "slug": "minestrone-sausage",
+  "name": "Minestrone with Italian sausage, chard, and white beans",
+  "display_name": "Minestrone with sausage",
+  "kind": "Make-ahead",
+  "time": "About 1 hour",
+  "time_short": "1 hr",
+  "yield": "About six big bowls",
+  "intro": "The Italian fall soup, made from November's basket: leeks, fennel, chard, white beans, a Parmesan rind for depth, and Italian sausage browned first so the whole pot tastes of it. The quicker of the month's two soups.",
+  "needs": [
+    "¾ lb Italian sausage, casings removed",
+    "2 leeks, sliced and rinsed",
+    "1 fennel bulb, diced",
+    "2 carrots, diced",
+    "1 bunch Swiss chard, stems chopped, leaves torn",
+    "3 garlic cloves, sliced",
+    "1 can (28 oz) whole tomatoes, crushed by hand",
+    "2 cans white beans, drained",
+    "1 carton (4 cups) chicken stock, plus 3 cups water",
+    "A Parmesan rind, and grated Parmesan to serve",
+    "1 cup small pasta (ditalini, or orecchiette)",
+    "2 tbsp olive oil",
+    "Salt, black pepper, and chile flakes"
+  ],
+  "steps": [
+    {
+      "cue": "6–8 min",
+      "text": "Heat the oil in a Dutch oven over medium-high. Brown the sausage, breaking it up, and lift it out with a slotted spoon."
+    },
+    {
+      "cue": "8–10 min",
+      "text": "Lower the heat to medium. Add the leeks, fennel, carrots, chard stems, and a pinch of salt and cook in the sausage fat until soft. Add the garlic and a pinch of chile flakes for the last minute."
+    },
+    {
+      "text": "Add the tomatoes and their juice, the beans, stock, water, Parmesan rind, and the sausage, and bring to a simmer."
+    },
+    {
+      "cue": "25 min",
+      "text": "Simmer gently, partly covered, until the vegetables are tender and the broth tastes rich."
+    },
+    {
+      "cue": "10 min",
+      "text": "Add the pasta and cook until tender. If you're keeping most of the pot for the week, cook the pasta separately and add it to each bowl, so it doesn't swell in the fridge."
+    },
+    {
+      "cue": "2 min",
+      "text": "Stir in the chard leaves until they wilt. Take out the rind and season with salt and pepper."
+    },
+    {
+      "cue": "To serve",
+      "text": "Grated Parmesan, black pepper, and a thread of olive oil on each bowl. Cool the rest quickly and refrigerate it within 2 hours."
+    }
+  ],
+  "how_it_works": "Minestrone is a method more than a recipe: soften what's in season in fat, add tomatoes, beans, and liquid, simmer until it tastes rich, then add pasta and greens at the end. Browning the sausage first seasons everything after it, and the Parmesan rind gives the broth a depth that water and stock alone don't.",
+  "swaps": [
+    "Leave out the sausage and start with more olive oil, for a meat-free pot.",
+    "Cauliflower or a diced sweet potato with the carrots.",
+    "Shredded leftover braised chicken stirred in at the end."
+  ],
+  "leftovers": "It keeps four days in the fridge and three months in the freezer (without the pasta). On day two, it's even better; on day three, it's the start of ribollita.",
+  "make_it_a_meal": "Toast a thick slice of sourdough with Parmesan, and crack an egg into the simmering bowl, covered, for four minutes.",
+  "linked_house_flavor": "pickled-fennel",
+  "linked_field_notes": [
+    "chard-stems"
+  ],
+  "linked_ingredients": [
+    "leeks",
+    "fennel",
+    "swiss-chard"
+  ],
+  "sources": [
+    {
+      "title": "Hearty Minestrone — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/5030-hearty-minestrone",
+      "note": "white beans and a Parmesan rind simmered with the vegetables; the rind comes out before serving"
+    },
+    {
+      "title": "Desperation Minestrone Soup — Food52",
+      "url": "https://food52.com/recipes/73204-desperation-minestrone-soup",
+      "note": "whatever vegetables are in season, a Parmesan rind, pasta and greens in for the last 10 minutes"
+    },
+    {
+      "title": "Safe Minimum Internal Temperature Chart — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+      "note": "ground pork, including sausage, is safe at 160°F"
+    },
+    {
+      "title": "Leftovers and Food Safety — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/leftovers-and-food-safety",
+      "note": "refrigerate within 2 hours; 3 to 4 days in the fridge, 3 to 4 months frozen"
+    }
+  ],
+  "nutrition": {
+    "serving": "One of six big bowls (about 2 cups), with a little grated Parmesan.",
+    "excludes": "Bread.",
+    "kcal": [
+      500,
+      600
+    ],
+    "protein": [
+      25,
+      30
+    ],
+    "carbs": [
+      55,
+      65
+    ],
+    "fat": [
+      20,
+      25
+    ],
+    "fiber": [
+      10,
+      15
+    ],
+    "with_meal": {
+      "kcal": [
+        750,
+        900
+      ],
+      "protein": [
+        40,
+        45
+      ]
+    }
+  }
+}

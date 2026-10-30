@@ -49,10 +49,10 @@
       "context": "Rich beef wants something cold and sharp."
     },
     {
-      "meal": "sheet-pan-chicken-cauliflower",
-      "label": "Chicken and cauliflower",
-      "action": "Over the top, with the brine.",
-      "context": "The brine and the pan juices are the sauce."
+      "meal": "chicken-white-beans-chard",
+      "label": "One-pot chicken",
+      "action": "Beside the bowl.",
+      "context": "Cold and sharp against beans and crisp skin."
     },
     {
       "meal": "beef-white-bean-chard-soup",

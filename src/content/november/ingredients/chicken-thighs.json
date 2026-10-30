@@ -2,7 +2,7 @@
   "slug": "chicken-thighs",
   "month": "November",
   "name": "Bone-in, skin-on chicken thighs",
-  "tile_uses": "The weekend braise, the farro bowls",
+  "tile_uses": "The weekend braise, the farro bowls, the one-pot chicken",
   "why_now": "There's nothing seasonal about chicken. What changes in November is the weather: the first cool evenings make an hour-long braise appealing again, and bone-in, skin-on thighs are the cut built for it. This is the month's cut.",
   "how_to_choose": [
     "Skin that covers the whole thigh, not shrunken back",
@@ -10,7 +10,7 @@
     "No liquid pooling in the package",
     "Similar-sized thighs, so they cook evenly"
   ],
-  "buy_this_much": "6, about 2½–3 lbs: the braise, with four left for the farro bowls. Four more if you make the roast chicken and cauliflower.",
+  "buy_this_much": "6, about 2½–3 lbs: the braise, with four left for the farro bowls. Four more if you make the one-pot chicken with white beans.",
   "price_note": "Bone-in, skin-on thighs are one of the cheapest cuts in the case, well below boneless.",
   "pairs_with_month": [
     "leeks",
@@ -28,8 +28,8 @@
       "description": "Seared, then an hour in the oven with leeks, fennel, and satsuma."
     },
     {
-      "name": "Roasted",
-      "description": "On a hot sheet pan with cauliflower."
+      "name": "One pot",
+      "description": "Seared in the Dutch oven, then finished over white beans and chard."
     },
     {
       "name": "Pulled",
@@ -38,7 +38,7 @@
   ],
   "weekday_uses": [
     "Leftover braise, pulled off the bone over farro",
-    "Roasted with cauliflower and pickled fennel"
+    "In the Dutch oven over white beans and chard"
   ],
   "weekend_use": "Seared and braised in the Dutch oven with leeks, fennel, and satsuma. The weekend dish.",
   "storage": "In the coldest part of the fridge, in the package, for a day or two. Cook within two days of buying.",
