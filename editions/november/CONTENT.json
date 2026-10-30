@@ -3,7 +3,7 @@
   "month": "November",
   "location": "San Diego",
   "edition_number": 5,
-  "status": "upcoming",
+  "status": "published",
   "base_url": "https://bdavey.co/seasonal-basket",
   "opening_note": "November is when San Diego's evenings finally turn. The days still reach the high sixties, but the nights drop into the fifties, and for the first time since spring an hour with a pot in the oven sounds good. The first satsumas arrive, persimmons ripen on bare trees, and the cool-weather vegetables come back — leeks, fennel, chard, cauliflower. Everything below comes from one store and a fish market, and it all keeps you cooking through the week.",
   "thesis": "Keep the meal. Change the season.",
@@ -119,7 +119,7 @@
         "uses": "The orecchiette, and a lunch"
       }
     ],
-    "swap_note": "Cooking something else this week — the flat iron, the chicken and cauliflower, or the halibut? Each dish's page lists exactly what it needs."
+    "swap_note": "Cooking something else this week — the one-pot chicken, the minestrone instead of the beef soup, the flat iron, or the halibut? Each dish's page lists exactly what it needs."
   },
   "staples": [
     "Sticky white rice",
@@ -205,7 +205,7 @@
     "month": "December",
     "status": "Arriving December 1."
   },
-  "meals_heading": "Eight things to cook in November.",
+  "meals_heading": "Nine things to cook in November.",
   "meals_dek": "Specific dishes, chosen for this month's basket. Each one ends by explaining how it works — so the next time, you won't need it.",
   "meals_back_label": "November's meals",
   "flavors": [
@@ -260,10 +260,10 @@
             "dish_label": "Farro bowls"
           },
           {
-            "lead": "Roast",
-            "text": "A hot sheet pan, cauliflower around them, the jar spooned over at the end.",
-            "dish": "sheet-pan-chicken-cauliflower",
-            "dish_label": "With cauliflower"
+            "lead": "One pot",
+            "text": "Seared in the Dutch oven, then finished uncovered over white beans and chard.",
+            "dish": "chicken-white-beans-chard",
+            "dish_label": "With white beans"
           }
         ]
       },
@@ -332,8 +332,10 @@
             "dish_label": "The orecchiette"
           },
           {
-            "lead": "Roast",
-            "text": "Links on a hot pan with cauliflower, the jar over the top."
+            "lead": "Soup",
+            "text": "Browned first in the pot, so the whole minestrone tastes of it.",
+            "dish": "minestrone-sausage",
+            "dish_label": "The minestrone"
           },
           {
             "lead": "In soup",
@@ -446,6 +448,26 @@
       "in_week": true
     },
     {
+      "slug": "chicken-white-beans-chard",
+      "line": "A weeknight braise: crisp skin above the pot, white beans and chard below.",
+      "plate": [
+        "#b8743a",
+        "#f2ecdc",
+        "#3f5a3a",
+        "#e07b2e"
+      ]
+    },
+    {
+      "slug": "minestrone-sausage",
+      "line": "The quicker of the month's soups. Swap it in for the beef soup any week.",
+      "plate": [
+        "#c0472f",
+        "#f1eadb",
+        "#3f5a3a",
+        "#e8a25a"
+      ]
+    },
+    {
       "slug": "flat-iron-steak-leeks",
       "line": "A tender, inexpensive steak over leeks melted in its pan.",
       "plate": [
@@ -453,16 +475,6 @@
         "#d9dcb8",
         "#efe6cf",
         "#a8834f"
-      ]
-    },
-    {
-      "slug": "sheet-pan-chicken-cauliflower",
-      "line": "Hot pan, crackling skin, and the jar spooned over at the end.",
-      "plate": [
-        "#f2ecdc",
-        "#d9a85c",
-        "#e07b2e",
-        "#dfe6c6"
       ]
     },
     {
@@ -532,6 +544,9 @@
         ]
       }
     ]
+  },
+  "redirects": {
+    "meals/sheet-pan-chicken-cauliflower": "meals/chicken-white-beans-chard/"
   },
   "guides": [
     {
@@ -603,7 +618,7 @@
       "weekday_uses": [
         "Peel into the pickled fennel",
         "Zest over yogurt and persimmon",
-        "Segments over the roast chicken and cauliflower"
+        "Juice and zest in the one-pot chicken with white beans"
       ],
       "weekend_use": "Juice and zest into the weekend braise, where they keep a rich pot bright.",
       "storage": "In the fridge, loose, for up to two weeks. On the counter they're fine for a few days.",
@@ -695,7 +710,8 @@
       ],
       "weekday_uses": [
         "Pickled, over lentils, beside steak, and on the farro bowls",
-        "Shaved raw with persimmon beside seared halibut"
+        "Shaved raw with persimmon beside seared halibut",
+        "Diced into the minestrone with the leeks"
       ],
       "weekend_use": "Cut in wedges and braised with leeks under the chicken thighs.",
       "storage": "In the fridge, in a bag, for about a week. Cut off the stalks if they don't fit; keep a few fronds.",
@@ -706,7 +722,7 @@
       "slug": "swiss-chard",
       "month": "November",
       "name": "Swiss chard",
-      "tile_uses": "The soup, the orecchiette, the farro bowls",
+      "tile_uses": "The soup, the orecchiette, the farro bowls, the minestrone",
       "why_now": "Chard is one of the greens that does best in Southern California's cool season. It's tender enough to cook in minutes and sturdy enough for a pot of soup.",
       "how_to_choose": [
         "Glossy, upright leaves with no yellowing",
@@ -740,7 +756,8 @@
       "weekday_uses": [
         "Stirred into the beef and white bean soup",
         "Wilted through orecchiette with sausage and leeks",
-        "Wilted into the braise juices for the farro bowls"
+        "Wilted into the braise juices for the farro bowls",
+        "Stems early and leaves late in the minestrone"
       ],
       "weekend_use": "Stems and leaves folded into a chard and Parmesan frittata.",
       "storage": "In the fridge, wrapped loosely in a damp towel in a bag, for up to five days.",
@@ -751,14 +768,14 @@
       "slug": "cauliflower",
       "month": "November",
       "name": "Cauliflower",
-      "tile_uses": "The salmon and lentils, the roast chicken pan",
+      "tile_uses": "The salmon and lentils",
       "why_now": "Cauliflower is a cool-season crop, and it's sweeter and denser now than at any time in summer. Roasted hard, it turns nutty and golden at the edges.",
       "how_to_choose": [
         "Tight, creamy-white curds with no brown spots",
         "Heavy for its size",
         "Fresh, green leaves hugging the head"
       ],
-      "buy_this_much": "1 head for the salmon and lentils; one more for the roast chicken pan.",
+      "buy_this_much": "1 head for the salmon and lentils.",
       "price_note": "Sold by the head. A heavier head for the same price is more cauliflower.",
       "pairs_with_month": [
         "fennel",
@@ -784,7 +801,7 @@
       ],
       "weekday_uses": [
         "Roasted and folded into warm lentils under salmon",
-        "Roasted on the sheet pan with chicken thighs"
+        "Florets in the one-pot chicken or the minestrone, if you have extra"
       ],
       "weekend_use": "Leftover florets, crisped in a skillet, under a fried egg.",
       "storage": "In the fridge, unwashed, in a loose bag, for up to a week.",
@@ -795,7 +812,7 @@
       "slug": "leeks",
       "month": "November",
       "name": "Leeks",
-      "tile_uses": "The braise, the soup, the orecchiette, the flat iron",
+      "tile_uses": "The braise, the soups, the orecchiette, the flat iron",
       "why_now": "Leeks come into their own as the weather cools. Cooked slowly in butter, they melt into something soft and sweet that turns a braise, a soup, or a bowl of pasta into a cool-weather dish.",
       "how_to_choose": [
         "Straight, firm white and light-green parts",
@@ -830,7 +847,8 @@
         "The base of the beef and white bean soup",
         "Melted in sausage fat for the orecchiette",
         "Melted under a seared flat iron",
-        "Left over on toast with an egg"
+        "Left over on toast with an egg",
+        "Softened in sausage fat to start the minestrone"
       ],
       "weekend_use": "Softened with fennel under the braised chicken thighs.",
       "storage": "In the fridge, unwashed, for up to two weeks.",
@@ -841,7 +859,7 @@
       "slug": "chicken-thighs",
       "month": "November",
       "name": "Bone-in, skin-on chicken thighs",
-      "tile_uses": "The weekend braise, the farro bowls",
+      "tile_uses": "The weekend braise, the farro bowls, the one-pot chicken",
       "why_now": "There's nothing seasonal about chicken. What changes in November is the weather: the first cool evenings make an hour-long braise appealing again, and bone-in, skin-on thighs are the cut built for it. This is the month's cut.",
       "how_to_choose": [
         "Skin that covers the whole thigh, not shrunken back",
@@ -849,7 +867,7 @@
         "No liquid pooling in the package",
         "Similar-sized thighs, so they cook evenly"
       ],
-      "buy_this_much": "6, about 2½–3 lbs: the braise, with four left for the farro bowls. Four more if you make the roast chicken and cauliflower.",
+      "buy_this_much": "6, about 2½–3 lbs: the braise, with four left for the farro bowls. Four more if you make the one-pot chicken with white beans.",
       "price_note": "Bone-in, skin-on thighs are one of the cheapest cuts in the case, well below boneless.",
       "pairs_with_month": [
         "leeks",
@@ -867,8 +885,8 @@
           "description": "Seared, then an hour in the oven with leeks, fennel, and satsuma."
         },
         {
-          "name": "Roasted",
-          "description": "On a hot sheet pan with cauliflower."
+          "name": "One pot",
+          "description": "Seared in the Dutch oven, then finished over white beans and chard."
         },
         {
           "name": "Pulled",
@@ -877,7 +895,7 @@
       ],
       "weekday_uses": [
         "Leftover braise, pulled off the bone over farro",
-        "Roasted with cauliflower and pickled fennel"
+        "In the Dutch oven over white beans and chard"
       ],
       "weekend_use": "Seared and braised in the Dutch oven with leeks, fennel, and satsuma. The weekend dish.",
       "storage": "In the coldest part of the fridge, in the package, for a day or two. Cook within two days of buying.",

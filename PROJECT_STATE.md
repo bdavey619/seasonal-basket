@@ -14,7 +14,7 @@ After a year of reading Seasonal, a reader hasn't accumulated dozens of recipes.
 
 ## Current Status
 
-October is the current edition. November is built and committed with `status: "upcoming"`: its pages exist at `/november/` (noindex) while the homepage still shows October and lists November under "Next edition". On November 1, set November's status to `published` and rebuild; October moves into the archive. July, August, and September remain published and linked from the homepage archive. The architecture, voice, and product philosophy are established. The site is deployed at GitHub Pages from `/docs` on `main`, served at `https://bdavey.co/seasonal-basket/`.
+November is the current edition (published November 1). October, September, August, and July remain published and linked from the homepage archive; December is listed under "Next edition".
 
 ## What We Know
 
@@ -175,7 +175,7 @@ November is the month San Diego's evenings turn: days still reach the mid to hig
 
 **The jar** is pickled fennel with satsuma peel and chile, in September's brine (one cup vinegar, one cup water, a tablespoon of salt, a teaspoon of sugar) — accumulation working as intended. A satsuma mojo was the first idea and was dropped in sourcing: tested recipes keep mojo about a day, and raw garlic in oil shouldn't be stretched, while pickled fennel keeps for weeks. The month's logic is that rich, slow food wants something cold and sharp beside it.
 
-**The meals** are eight dishes, then "Or cook by instinct" (revised after the first draft read as thin on weeknights and too meatless): braised chicken thighs with leeks, fennel, and satsuma (the weekend dish — sear, then uncovered at 325°F to about 195°F); beef, white bean, and chard soup (the Sunday make-ahead — six bowls, freezes); and six weeknight dinners — roast salmon over warm lentils with cauliflower and pickled fennel (eggs in its swaps for a meat-free night); orecchiette with Italian sausage, chard, and melted leeks (white beans in its swaps); farro bowls with the braise's leftovers, chard, and pickled fennel (the leftovers dish, and the month's whole grain); seared flat iron steak with melted leeks; roast chicken thighs and cauliflower; and seared halibut with persimmon and fennel salad. Four flavors: pickled fennel and brine; Parmesan, lemon, and pepper; persimmon, fennel, and lemon; leeks melted in butter.
+**The meals** are nine dishes, then "Or cook by instinct": braised chicken thighs with leeks, fennel, and satsuma (the weekend dish — sear, then uncovered at 325°F to about 195°F); two make-ahead soups — beef, white bean, and chard (two hours) or minestrone with Italian sausage (one hour), whichever the week wants; and six weeknight dinners — roast salmon over warm lentils with cauliflower and pickled fennel (eggs in its swaps for a meat-free night); orecchiette with Italian sausage, chard, and melted leeks (white beans in its swaps); farro bowls with the braise's leftovers (the leftovers dish, and the month's whole grain); one-pot chicken thighs with white beans, chard, and satsuma (a weeknight Dutch-oven braise, 350°F on the upper rack to 185°F, which replaced a sheet-pan version); seared flat iron steak with melted leeks; and seared halibut with persimmon and fennel salad. The Dutch oven carries four of the nine. Four flavors: pickled fennel and brine; Parmesan, lemon, and pepper; persimmon, fennel, and lemon; leeks melted in butter.
 
 **The proteins** are chicken thighs (the cut; *skin and bone are flavor you cook into a pot*), beef — chuck for the soup and flat iron for a weeknight (*hard-working cuts need time and liquid; easy ones need a hot pan*), salmon (*rich fish wants something earthy and sharp underneath*), Italian sausage (*its fat and seasoning do the work of a sauce*), and halibut (*lean, sweet fish wants something crisp and sweet-sharp beside it*). Salmon and pork both appeared in October as supporting proteins; neither leads November, which the rotation rule allows, but December should avoid them as leads.
 
@@ -216,7 +216,7 @@ Each month should build on the last: gentle heat (July), salt-and-rest (August),
 
 ## Next Milestone
 
-Publish November on November 1 (flip its status and rebuild), then begin December: pork shoulder, slow roasting, the Dutch oven or a roasting pan, if the plan still fits the weather. Don't repeat November's lead proteins; keep an oily fish in the month (November's is salmon). Use nutritional variety as inspiration from the start — Keep five weeknight dinners and one simple shopping list.
+Begin December: pork shoulder, slow roasting, the Dutch oven or a roasting pan, if the plan still fits the weather. Don't repeat November's lead proteins; keep an oily fish in the month (November's is salmon). Use nutritional variety as inspiration from the start — Keep five weeknight dinners and one simple shopping list.
 
 ## Development Handoff Goal
 

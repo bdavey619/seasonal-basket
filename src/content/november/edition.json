@@ -3,7 +3,7 @@
   "month": "November",
   "location": "San Diego",
   "edition_number": 5,
-  "status": "upcoming",
+  "status": "published",
   "base_url": "https://bdavey.co/seasonal-basket",
   "opening_note": "November is when San Diego's evenings finally turn. The days still reach the high sixties, but the nights drop into the fifties, and for the first time since spring an hour with a pot in the oven sounds good. The first satsumas arrive, persimmons ripen on bare trees, and the cool-weather vegetables come back — leeks, fennel, chard, cauliflower. Everything below comes from one store and a fish market, and it all keeps you cooking through the week.",
   "thesis": "Keep the meal. Change the season.",
@@ -119,7 +119,7 @@
         "uses": "The orecchiette, and a lunch"
       }
     ],
-    "swap_note": "Cooking something else this week — the flat iron, the chicken and cauliflower, or the halibut? Each dish's page lists exactly what it needs."
+    "swap_note": "Cooking something else this week — the one-pot chicken, the minestrone instead of the beef soup, the flat iron, or the halibut? Each dish's page lists exactly what it needs."
   },
   "staples": [
     "Sticky white rice",
@@ -205,7 +205,7 @@
     "month": "December",
     "status": "Arriving December 1."
   },
-  "meals_heading": "Eight things to cook in November.",
+  "meals_heading": "Nine things to cook in November.",
   "meals_dek": "Specific dishes, chosen for this month's basket. Each one ends by explaining how it works — so the next time, you won't need it.",
   "meals_back_label": "November's meals",
   "flavors": [
@@ -260,10 +260,10 @@
             "dish_label": "Farro bowls"
           },
           {
-            "lead": "Roast",
-            "text": "A hot sheet pan, cauliflower around them, the jar spooned over at the end.",
-            "dish": "sheet-pan-chicken-cauliflower",
-            "dish_label": "With cauliflower"
+            "lead": "One pot",
+            "text": "Seared in the Dutch oven, then finished uncovered over white beans and chard.",
+            "dish": "chicken-white-beans-chard",
+            "dish_label": "With white beans"
           }
         ]
       },
@@ -332,8 +332,10 @@
             "dish_label": "The orecchiette"
           },
           {
-            "lead": "Roast",
-            "text": "Links on a hot pan with cauliflower, the jar over the top."
+            "lead": "Soup",
+            "text": "Browned first in the pot, so the whole minestrone tastes of it.",
+            "dish": "minestrone-sausage",
+            "dish_label": "The minestrone"
           },
           {
             "lead": "In soup",
@@ -446,6 +448,26 @@
       "in_week": true
     },
     {
+      "slug": "chicken-white-beans-chard",
+      "line": "A weeknight braise: crisp skin above the pot, white beans and chard below.",
+      "plate": [
+        "#b8743a",
+        "#f2ecdc",
+        "#3f5a3a",
+        "#e07b2e"
+      ]
+    },
+    {
+      "slug": "minestrone-sausage",
+      "line": "The quicker of the month's soups. Swap it in for the beef soup any week.",
+      "plate": [
+        "#c0472f",
+        "#f1eadb",
+        "#3f5a3a",
+        "#e8a25a"
+      ]
+    },
+    {
       "slug": "flat-iron-steak-leeks",
       "line": "A tender, inexpensive steak over leeks melted in its pan.",
       "plate": [
@@ -453,16 +475,6 @@
         "#d9dcb8",
         "#efe6cf",
         "#a8834f"
-      ]
-    },
-    {
-      "slug": "sheet-pan-chicken-cauliflower",
-      "line": "Hot pan, crackling skin, and the jar spooned over at the end.",
-      "plate": [
-        "#f2ecdc",
-        "#d9a85c",
-        "#e07b2e",
-        "#dfe6c6"
       ]
     },
     {
@@ -532,5 +544,8 @@
         ]
       }
     ]
+  },
+  "redirects": {
+    "meals/sheet-pan-chicken-cauliflower": "meals/chicken-white-beans-chard/"
   }
 }

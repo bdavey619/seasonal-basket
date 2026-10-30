@@ -2,14 +2,14 @@
   "slug": "cauliflower",
   "month": "November",
   "name": "Cauliflower",
-  "tile_uses": "The salmon and lentils, the roast chicken pan",
+  "tile_uses": "The salmon and lentils",
   "why_now": "Cauliflower is a cool-season crop, and it's sweeter and denser now than at any time in summer. Roasted hard, it turns nutty and golden at the edges.",
   "how_to_choose": [
     "Tight, creamy-white curds with no brown spots",
     "Heavy for its size",
     "Fresh, green leaves hugging the head"
   ],
-  "buy_this_much": "1 head for the salmon and lentils; one more for the roast chicken pan.",
+  "buy_this_much": "1 head for the salmon and lentils.",
   "price_note": "Sold by the head. A heavier head for the same price is more cauliflower.",
   "pairs_with_month": [
     "fennel",
@@ -35,7 +35,7 @@
   ],
   "weekday_uses": [
     "Roasted and folded into warm lentils under salmon",
-    "Roasted on the sheet pan with chicken thighs"
+    "Florets in the one-pot chicken or the minestrone, if you have extra"
   ],
   "weekend_use": "Leftover florets, crisped in a skillet, under a fried egg.",
   "storage": "In the fridge, unwashed, in a loose bag, for up to a week.",
