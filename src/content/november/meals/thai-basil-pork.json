@@ -58,12 +58,13 @@
   "swaps": [
     "Ground chicken or turkey instead of the pork.",
     "Cauliflower florets or more green beans, if that's what's in the fridge.",
-    "Crumbled firm tofu in place of the pork, for a meat-free night."
+    "Pressed oyster mushrooms in place of the pork, for a meat-free night: 1 lb, seared under a weight in the cast iron, chopped, and added with the green beans."
   ],
   "leftovers": "Pack the second portion over rice before you sit down. Reheat it in a hot pan and fry a fresh egg; leftover rice from the week makes the weekend fried rice.",
   "linked_house_flavor": null,
   "linked_field_notes": [
-    "small-batches-big-heat"
+    "small-batches-big-heat",
+    "press-the-mushrooms"
   ],
   "linked_ingredients": [],
   "sources": [
@@ -76,6 +77,11 @@
       "title": "Thai Stir-Fried Pork with Basil, Chilies and Garlic (Pad Kraprao) — Milk Street",
       "url": "https://www.177milkstreet.com/recipes/thai-stir-fried-pork-with-basil-chilies-and-garlic-pad-kraprao",
       "note": "the basil isn't fried; it wilts in at the very end"
+    },
+    {
+      "title": "Essential BBQ Mushroom Steaks (In the Wicked Kitchen) — The Beet",
+      "url": "https://thebeet.com/in-the-wicked-kitchen-on-the-beet-essential-bbq-mushroom-steaks",
+      "note": "Derek Sarno's press and sear: oyster mushrooms pressed in a hot pan until browned and less than half as thick (for the meat-free swap)"
     },
     {
       "title": "Safe Minimum Internal Temperature Chart — USDA",

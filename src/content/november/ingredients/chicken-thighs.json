@@ -2,7 +2,7 @@
   "slug": "chicken-thighs",
   "month": "November",
   "name": "Bone-in, skin-on chicken thighs",
-  "tile_uses": "The weekend braise, the farro bowls, the crisp chicken",
+  "tile_uses": "The weekend braise, the farro bowls, the crisp chicken, the tinga",
   "why_now": "There's nothing seasonal about chicken. What changes in November is the weather: the first cool evenings make an hour-long braise appealing again, and bone-in, skin-on thighs are the cut built for it. This is the month's cut.",
   "how_to_choose": [
     "Skin that covers the whole thigh, not shrunken back",
@@ -10,7 +10,7 @@
     "No liquid pooling in the package",
     "Similar-sized thighs, so they cook evenly"
   ],
-  "buy_this_much": "6, about 2½–3 lbs: the braise, with four left for the farro bowls. Four more if you make the crisp chicken with white beans.",
+  "buy_this_much": "6, about 2½–3 lbs: the braise, with four left for the farro bowls. Four more for the crisp chicken with white beans or the tinga.",
   "price_note": "Bone-in, skin-on thighs are one of the cheapest cuts in the case, well below boneless.",
   "pairs_with_month": [
     "leeks",
@@ -38,7 +38,8 @@
   ],
   "weekday_uses": [
     "Leftover braise, pulled off the bone over farro",
-    "In the air fryer, over garlicky white beans and chard"
+    "In the air fryer, over garlicky white beans and chard",
+    "Shredded into a chipotle and tomato sauce for tinga tostadas"
   ],
   "weekend_use": "Seared and braised in the Dutch oven with leeks, fennel, and satsuma. The weekend dish.",
   "storage": "In the coldest part of the fridge, in the package, for a day or two. Cook within two days of buying.",
