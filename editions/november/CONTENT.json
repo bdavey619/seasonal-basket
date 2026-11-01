@@ -30,7 +30,7 @@
   ],
   "bring_home": {
     "heading": "This is what I'd bring home.",
-    "feeds": "Enough for one good week: the weekend braise and the farro bowls it leads to, a pot of minestrone, salmon over lentils, lomo saltado, and Thai basil pork — six dinners and most lunches for one big appetite.",
+    "feeds": "Enough for one good week: the weekend braise and the farro bowls it leads to, a pot of minestrone, salmon over lentils, and Thai basil pork — six dinners and most lunches for one big appetite.",
     "items": [
       {
         "slug": "satsumas",
@@ -74,21 +74,6 @@
         "note": "For the minestrone."
       },
       {
-        "name": "Russet potatoes",
-        "qty": "2 medium",
-        "note": "The lomo saltado's fries."
-      },
-      {
-        "name": "Red onion",
-        "qty": "1",
-        "note": "For the lomo saltado."
-      },
-      {
-        "name": "Roma tomatoes",
-        "qty": "4",
-        "note": "Two for the lomo saltado, two for tomatoes and eggs."
-      },
-      {
         "name": "Green beans",
         "qty": "½ lb",
         "note": "For the basil pork."
@@ -99,14 +84,9 @@
         "note": "Thai basil if there is any, for the pork."
       },
       {
-        "name": "Cilantro",
-        "qty": "1 bunch",
-        "note": "For the lomo saltado."
-      },
-      {
         "name": "Serrano chiles",
-        "qty": "4",
-        "note": "One for the lomo saltado, the rest for the basil pork."
+        "qty": "3",
+        "note": "Two for the basil pork, one sliced for the table."
       }
     ],
     "also_buy": [
@@ -140,7 +120,7 @@
       "black pepper",
       "ground coffee"
     ],
-    "cost_note": "This week's list runs about $100–145 at a well-stocked supermarket, typically around $120. The first week adds about $25 for Parmesan, cinnamon, brown sugar, and the three sauces, which last well past the month. Soy, oyster, and fish sauce are nut-free as a rule, but brands vary: check each label. Everything in this edition is on these lines or on a dish's own page — nothing else to buy.",
+    "cost_note": "This week's list runs about $85–125 at a well-stocked supermarket, typically around $105. The first week adds about $25 for Parmesan, cinnamon, brown sugar, and the three sauces, which last well past the month. Soy, oyster, and fish sauce are nut-free as a rule, but brands vary: check each label. Everything in this edition is on these lines or on a dish's own page — nothing else to buy.",
     "proteins": [
       {
         "slug": "chicken-thighs",
@@ -159,17 +139,12 @@
         "uses": "Over warm lentils, and a lunch"
       },
       {
-        "name": "Sirloin steak",
-        "qty": "1 lb",
-        "uses": "The lomo saltado, and a lunch"
-      },
-      {
         "name": "Ground pork",
         "qty": "1 lb",
         "uses": "The basil pork, and a lunch"
       }
     ],
-    "swap_note": "Cooking something else this week — the chicken tinga tostadas, the crisp chicken with white beans, or the halibut? Each dish's page lists exactly what it needs."
+    "swap_note": "One stir-fry a week: make the lomo saltado in place of the basil pork any week you like. Cooking something else — the chicken tinga tostadas, the crisp chicken with white beans, or the halibut? Each dish's page lists exactly what it needs."
   },
   "staples": [
     "Sticky white rice",
@@ -479,7 +454,7 @@
           },
           {
             "lead": "Tomatoes",
-            "text": "Scrambled soft, then folded into tomatoes cooked down with garlic and a pinch of sugar. Over rice in ten minutes."
+            "text": "Scrambled soft, then folded into tomatoes cooked down with garlic and a pinch of sugar, over rice in ten minutes — two extra Romas in a lomo saltado week."
           }
         ]
       }
@@ -531,17 +506,6 @@
       "in_week": true
     },
     {
-      "slug": "lomo-saltado",
-      "line": "Peru's beef stir-fry: soy, vinegar, and tomato, over fries and rice.",
-      "plate": [
-        "#6e3a26",
-        "#e8b04a",
-        "#c0472f",
-        "#f1eadb"
-      ],
-      "in_week": true
-    },
-    {
       "slug": "thai-basil-pork",
       "line": "Thailand's everyday plate: pork, garlic, chile, basil, and a crisp fried egg.",
       "plate": [
@@ -560,6 +524,16 @@
         "#f2ecdc",
         "#3f5a3a",
         "#e07b2e"
+      ]
+    },
+    {
+      "slug": "lomo-saltado",
+      "line": "Peru's beef stir-fry: soy, vinegar, and tomato, over fries and rice. Swap it in for the basil pork any week.",
+      "plate": [
+        "#6e3a26",
+        "#e8b04a",
+        "#c0472f",
+        "#f1eadb"
       ]
     },
     {
@@ -600,7 +574,7 @@
           },
           {
             "name": "Tomatoes and eggs",
-            "text": "China's home classic, in ten minutes: three eggs scrambled soft in the wok and set aside, two chopped tomatoes cooked with garlic, salt, and a pinch of sugar until saucy, the eggs folded back in. Over rice or toast."
+            "text": "China's home classic, in ten minutes: three eggs scrambled soft in the wok and set aside, two chopped tomatoes cooked with garlic, salt, and a pinch of sugar until saucy, the eggs folded back in. Over rice or toast. In a lomo saltado week, buy two extra Roma tomatoes for it."
           }
         ]
       },
