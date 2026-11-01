@@ -1,0 +1,119 @@
+{
+  "slug": "chicken-tinga-tostadas",
+  "name": "Chicken tinga tostadas with black beans and pickled red onion",
+  "display_name": "Chicken tinga tostadas",
+  "kind": "Weeknight",
+  "time": "About 45 minutes",
+  "time_short": "45 min",
+  "yield": "Dinner tonight and a lunch",
+  "intro": "Tinga is Puebla's shredded chicken in a smoky chipotle and tomato sauce. Here the thighs cook in the air fryer while the sauce simmers, then everything goes on tortillas crisped in the same air fryer, over warm black beans, with red onion pickled in the jar's brine. It's the one to cook in week three, when the month's first dishes start to feel familiar.",
+  "needs": [
+    "4 bone-in, skin-on chicken thighs (about 1¾ lbs)",
+    "8 corn tortillas (6-inch)",
+    "1 can (14½ oz) diced tomatoes, fire-roasted if the store has them",
+    "2–3 chipotle chiles in adobo, plus 1 tbsp of the sauce (a small can; the rest freezes)",
+    "1 red onion: half sliced for the sauce, half sliced thin for pickling",
+    "3 garlic cloves, plus 1 more for the beans",
+    "½ cup chicken stock",
+    "1 can black beans, with their liquid",
+    "3 tbsp pickled fennel brine",
+    "½ bunch cilantro",
+    "2% Greek yogurt, to serve",
+    "3 tbsp neutral oil (canola or vegetable, not peanut)",
+    "Salt"
+  ],
+  "steps": [
+    {
+      "cue": "375°F · 25–30 min",
+      "text": "Pat the chicken dry, salt both sides, and set it skin-side up in the air fryer, spaced apart. Cook until the thickest thigh reads about 185°F."
+    },
+    {
+      "cue": "15 min",
+      "text": "Meanwhile, put the thinly sliced half onion in a small bowl with the brine and a pinch of salt. Toss now and then; it turns pink and soft while everything else cooks."
+    },
+    {
+      "cue": "5 min",
+      "text": "Heat 1 tbsp oil in the 12-inch skillet over medium. Cook the other half of the onion with a pinch of salt until soft, then the garlic for 30 seconds."
+    },
+    {
+      "cue": "5 min",
+      "text": "Add the tomatoes, chipotles, adobo sauce, and stock and simmer until slightly thickened. Blend it smooth in the food processor and pour it back into the skillet. Start with 2 chipotles; add the third if you want more heat."
+    },
+    {
+      "cue": "5 min",
+      "text": "When the chicken is done, pull off the skin and bones and shred the meat with two forks. Stir it into the sauce and simmer until it clings and the pan looks almost dry. Taste for salt."
+    },
+    {
+      "cue": "5 min",
+      "text": "Warm the black beans with their liquid and a grated garlic clove in a small pan, mashing them into a rough paste."
+    },
+    {
+      "cue": "400°F · 4–6 min",
+      "text": "Brush the tortillas lightly with oil and crisp them in the air fryer in batches, flipping halfway, until they're golden and snap. They firm up more as they cool."
+    },
+    {
+      "cue": "Finish",
+      "text": "Beans on each tostada, then the tinga, a spoonful of yogurt, the pickled onion, and cilantro. Eat them over the plate."
+    }
+  ],
+  "how_it_works": "Tinga's flavor comes from chipotles, smoked and dried jalapeños packed in a tangy adobo sauce. Blending the sauce smooth lets it coat every strand of chicken, and simmering the shredded meat in it until the pan is nearly dry concentrates it. The beans hold the tostada together, the yogurt cools the heat, and the quick-pickled onion is the bright, sharp thing a rich, smoky plate needs.",
+  "swaps": [
+    "Store-bought tostada shells instead of crisping your own.",
+    "Over rice as a bowl, or in warm tortillas as tacos.",
+    "Leftover braised chicken, shredded, in place of the fresh thighs."
+  ],
+  "leftovers": "Pack the second portion of tinga and beans separately and crisp fresh tortillas for lunch; built tostadas go soft. The tinga keeps four days and reheats well.",
+  "linked_house_flavor": "pickled-fennel",
+  "linked_field_notes": [
+    "the-air-fryer"
+  ],
+  "linked_ingredients": [
+    "chicken-thighs"
+  ],
+  "sources": [
+    {
+      "title": "Shredded Chicken Tacos (Tinga de Pollo) — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/8891-shredded-chicken-tacos-tinga-de-pollo",
+      "note": "chicken shredded into a chipotle and tomato sauce"
+    },
+    {
+      "title": "Chicken Tinga — Brian Lagerstrom",
+      "url": "https://www.brianlagerstrom.com/recipes/chicken-tinga",
+      "note": "salted thighs roasted, then shredded into the sauce, served as tostadas"
+    },
+    {
+      "title": "Air-Fryer Roasted Chicken Thighs with Ras el Hanout and Lemon — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/16821-air-fryer-roasted-chicken-thighs-with-ras-el-hanout-and-lemon",
+      "note": "bone-in thighs at 375°F, skin-side up and spaced apart"
+    },
+    {
+      "title": "Safe Minimum Internal Temperature Chart — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+      "note": "chicken is safe at 165°F; thighs shred more easily closer to 185°F"
+    }
+  ],
+  "nutrition": {
+    "serving": "Half the recipe: four tostadas with half the tinga, beans, and yogurt.",
+    "excludes": "Nothing.",
+    "kcal": [
+      850,
+      1050
+    ],
+    "protein": [
+      65,
+      75
+    ],
+    "carbs": [
+      85,
+      100
+    ],
+    "fat": [
+      25,
+      40
+    ],
+    "fiber": [
+      20,
+      25
+    ]
+  }
+}

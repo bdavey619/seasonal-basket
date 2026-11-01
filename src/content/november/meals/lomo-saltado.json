@@ -67,13 +67,14 @@
   "swaps": [
     "Flank or skirt steak instead of sirloin; slice it thin across the grain.",
     "A spoonful of ají amarillo paste in the sauce, if the store has it — that's the Peruvian chile.",
-    "Two fried eggs over the rice, fries, and vegetables instead of the beef, for a meat-free night."
+    "Pressed oyster mushrooms in place of the beef, for a meat-free night: 1 lb, seared under a weight in the cast iron, torn into strips, and added where the beef goes back in."
   ],
   "leftovers": "Pack the second portion of beef and vegetables over rice before you sit down. The fries don't keep, so make only what you'll eat tonight. Reheat the beef in a hot pan, and a fried egg on top makes it lunch.",
   "linked_house_flavor": null,
   "linked_field_notes": [
     "small-batches-big-heat",
-    "the-air-fryer"
+    "the-air-fryer",
+    "press-the-mushrooms"
   ],
   "linked_ingredients": [],
   "sources": [
@@ -91,6 +92,11 @@
       "title": "Air-Fryer French Fries — America's Test Kitchen",
       "url": "https://www.americastestkitchen.com/recipes/11347-air-fryer-french-fries",
       "note": "rinsed, soaked 10 minutes in hot water, 350°F for 8 minutes, then 400°F, tossed every 5 minutes"
+    },
+    {
+      "title": "Essential BBQ Mushroom Steaks (In the Wicked Kitchen) — The Beet",
+      "url": "https://thebeet.com/in-the-wicked-kitchen-on-the-beet-essential-bbq-mushroom-steaks",
+      "note": "Derek Sarno's press and sear: oyster mushrooms pressed in a hot pan until browned and less than half as thick (for the meat-free swap)"
     },
     {
       "title": "Safe Minimum Internal Temperature Chart — USDA",

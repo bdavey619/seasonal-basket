@@ -85,8 +85,8 @@
       },
       {
         "name": "Roma tomatoes",
-        "qty": "2",
-        "note": "For the lomo saltado."
+        "qty": "4",
+        "note": "Two for the lomo saltado, two for tomatoes and eggs."
       },
       {
         "name": "Green beans",
@@ -169,7 +169,7 @@
         "uses": "The basil pork, and a lunch"
       }
     ],
-    "swap_note": "Cooking something else this week — the crisp chicken with white beans, or the halibut? Each dish's page lists exactly what it needs."
+    "swap_note": "Cooking something else this week — the chicken tinga tostadas, the crisp chicken with white beans, or the halibut? Each dish's page lists exactly what it needs."
   },
   "staples": [
     "Sticky white rice",
@@ -210,6 +210,11 @@
       "slug": "the-air-fryer",
       "name": "The air fryer is a small, fast oven.",
       "body": "It doesn't fry anything. It blows very hot air around the food, which is why it crisps chicken skin and Brussels sprouts better than a crowded sheet pan. The oven's rules still apply: one layer, room around each piece, a toss or a flip halfway. It runs hotter and faster than an oven recipe expects, so check early. Fat collects in the drawer; pour it off before a second batch, or it smokes."
+    },
+    {
+      "slug": "press-the-mushrooms",
+      "name": "Press a mushroom like a steak.",
+      "body": "Oyster mushrooms are mostly water. Tear them into big clusters, lay them in a hot, lightly oiled cast-iron pan, and set something heavy on top — a smaller skillet, or the Dutch oven's lid with a can inside. The weight squeezes the water out so they brown instead of steam, and in about 5 minutes a side they shrink to half their thickness, crisp at the edges and meaty inside. Salt them once they've browned. It's October's sear with a weight on it."
     },
     {
       "slug": "chard-stems",
@@ -260,7 +265,7 @@
     "month": "December",
     "status": "Arriving December 1."
   },
-  "meals_heading": "Eight things to cook in November.",
+  "meals_heading": "Nine things to cook in November.",
   "meals_dek": "Specific dishes, chosen for this month's basket. Each one ends by explaining how it works — so the next time, you won't need it.",
   "meals_back_label": "November's meals",
   "flavors": [
@@ -313,6 +318,12 @@
             "text": "Pull the leftovers off the bone and warm them in their juices.",
             "dish": "farro-braised-chicken-bowls",
             "dish_label": "Farro bowls"
+          },
+          {
+            "lead": "Shredded",
+            "text": "Cooked in the air fryer, then simmered in a smoky chipotle and tomato sauce.",
+            "dish": "chicken-tinga-tostadas",
+            "dish_label": "The tinga"
           },
           {
             "lead": "Air fryer",
@@ -421,6 +432,32 @@
         ]
       },
       {
+        "name": "Mushrooms",
+        "why": "Pressed hard in a hot pan, oyster mushrooms go crisp and meaty: the meat-free night that actually fills the plate.",
+        "best_with": [
+          "salty-hot",
+          "bright-sharp"
+        ],
+        "moves": [
+          {
+            "lead": "Pressed",
+            "text": "Torn into clusters and seared in the cast iron under a heavy pot, until half as thick and deeply browned."
+          },
+          {
+            "lead": "With basil",
+            "text": "Pressed, then chopped and tossed in the wok with garlic, chile, and basil in place of the pork.",
+            "dish": "thai-basil-pork",
+            "dish_label": "Thai basil pork"
+          },
+          {
+            "lead": "Saltado",
+            "text": "Pressed, torn into strips, and tossed with the onion, soy, vinegar, and tomato in place of the beef.",
+            "dish": "lomo-saltado",
+            "dish_label": "Lomo saltado"
+          }
+        ]
+      },
+      {
         "name": "Eggs and beans",
         "why": "For a meat-free night, they want sharpness and fat.",
         "best_with": [
@@ -441,8 +478,8 @@
             "dish_label": "The beans"
           },
           {
-            "lead": "In soup",
-            "text": "Crack an egg into a simmering bowl of the minestrone and cover it for four minutes."
+            "lead": "Tomatoes",
+            "text": "Scrambled soft, then folded into tomatoes cooked down with garlic and a pinch of sugar. Over rice in ten minutes."
           }
         ]
       }
@@ -526,6 +563,16 @@
       ]
     },
     {
+      "slug": "chicken-tinga-tostadas",
+      "line": "For week three, when the month feels familiar: smoky chipotle chicken on crisp tostadas.",
+      "plate": [
+        "#a8442a",
+        "#e6c27a",
+        "#2f2a26",
+        "#f2ecdc"
+      ]
+    },
+    {
       "slug": "seared-halibut-satsuma-fennel",
       "line": "In season now. Seared, with shaved fennel and satsuma.",
       "plate": [
@@ -552,8 +599,8 @@
             "text": "A mug of the week's soup brought to a simmer, an egg cracked in, the lid on for four minutes. Breakfast that's already made."
           },
           {
-            "name": "Leeks on toast",
-            "text": "Leftover leeks and juices from the braise, warmed on sourdough, with a fried egg and black pepper."
+            "name": "Tomatoes and eggs",
+            "text": "China's home classic, in ten minutes: three eggs scrambled soft in the wok and set aside, two chopped tomatoes cooked with garlic, salt, and a pinch of sugar until saucy, the eggs folded back in. Over rice or toast."
           }
         ]
       },
@@ -906,7 +953,7 @@
       "slug": "chicken-thighs",
       "month": "November",
       "name": "Bone-in, skin-on chicken thighs",
-      "tile_uses": "The weekend braise, the farro bowls, the crisp chicken",
+      "tile_uses": "The weekend braise, the farro bowls, the crisp chicken, the tinga",
       "why_now": "There's nothing seasonal about chicken. What changes in November is the weather: the first cool evenings make an hour-long braise appealing again, and bone-in, skin-on thighs are the cut built for it. This is the month's cut.",
       "how_to_choose": [
         "Skin that covers the whole thigh, not shrunken back",
@@ -914,7 +961,7 @@
         "No liquid pooling in the package",
         "Similar-sized thighs, so they cook evenly"
       ],
-      "buy_this_much": "6, about 2½–3 lbs: the braise, with four left for the farro bowls. Four more if you make the crisp chicken with white beans.",
+      "buy_this_much": "6, about 2½–3 lbs: the braise, with four left for the farro bowls. Four more for the crisp chicken with white beans or the tinga.",
       "price_note": "Bone-in, skin-on thighs are one of the cheapest cuts in the case, well below boneless.",
       "pairs_with_month": [
         "leeks",
@@ -942,7 +989,8 @@
       ],
       "weekday_uses": [
         "Leftover braise, pulled off the bone over farro",
-        "In the air fryer, over garlicky white beans and chard"
+        "In the air fryer, over garlicky white beans and chard",
+        "Shredded into a chipotle and tomato sauce for tinga tostadas"
       ],
       "weekend_use": "Seared and braised in the Dutch oven with leeks, fennel, and satsuma. The weekend dish.",
       "storage": "In the coldest part of the fridge, in the package, for a day or two. Cook within two days of buying.",

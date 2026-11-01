@@ -53,6 +53,12 @@
       "label": "The minestrone",
       "action": "A forkful on top.",
       "context": "It wakes up a bowl on day three."
+    },
+    {
+      "meal": "chicken-tinga-tostadas",
+      "label": "Tinga tostadas",
+      "action": "The brine pickles the red onion.",
+      "context": "Fifteen minutes, and it's pink and sharp."
     }
   ],
   "linked_ingredients": [

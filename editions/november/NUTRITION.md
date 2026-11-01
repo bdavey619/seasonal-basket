@@ -139,6 +139,25 @@ Recipe makes 2 serving(s). **Serving:** Half the recipe: two thighs over half th
 | **Per serving** | | **822–1053** | **64–69** | **66–80** | **33–51** | **10–13** |
 | *Published (rounded)* | | 800–1050 | 65–70 | 65–80 | 35–50 | 10–15 |
 
+## chicken-tinga-tostadas
+
+Recipe makes 2 serving(s). **Serving:** Half the recipe: four tostadas with half the tinga, beans, and yogurt.  
+**Not included:** Nothing.
+
+| Ingredient (whole recipe) | grams | kcal | protein | carbs | fat | fiber |
+|---|---|---|---|---|---|---|
+| chicken thigh, meat only | 437–477 | 529–644 | 86–94 | 0 | 18–26 | 0 |
+| corn tortilla | 208 | 416–456 | 11–12 | 86–93 | 6 | 12–13 |
+| canned tomatoes | 411 | 74–86 | 3–4 | 16–18 | 0–1 | 4–8 |
+| chipotle in adobo | 40–60 | 16–42 | 1–1 | 2–6 | 0–2 | 1–2 |
+| red onion | 150–200 | 60–80 | 2–2 | 14–19 | 0 | 3–3 |
+| chicken stock | 118 | 5–18 | 1–2 | 0–1 | 0–1 | 0 |
+| black beans | 240–260 | 264–343 | 17–23 | 48–62 | 1 | 17–23 |
+| greek yogurt 2% | 90–120 | 63–88 | 9–12 | 3–4 | 2–3 | 0 |
+| neutral oil | 27–40 | 239–358 | 0 | 0 | 27–40 | 0 |
+| **Per serving** | | **833–1057** | **65–75** | **85–101** | **27–40** | **18–25** |
+| *Published (rounded)* | | 850–1050 | 65–75 | 85–100 | 25–40 | 20–25 |
+
 ## seared-halibut-satsuma-fennel
 
 Recipe makes 2 serving(s). **Serving:** One fillet with half the salad and 1 cup cooked rice.  
@@ -162,8 +181,11 @@ Recipe makes 2 serving(s). **Serving:** One fillet with half the salad and 1 cup
 | salmon, wild | per 100 g | 131–146 | 21.6–22.3 | 0 | 4.7–5.9 | 0 | USDA: sockeye to coho salmon, wild, raw |
 | salmon, farmed | per 100 g | 208 | 20.4 | 0 | 13.4 | 0 | USDA: Atlantic salmon, farmed, raw |
 | egg | per 50 g unit | 72 | 6.3 | 0.4 | 4.8 | 0 | USDA: egg, whole, large |
+| black beans | per 100 g | 110–132 | 7–8.9 | 20–23.7 | 0.5 | 7–8.7 | USDA: black beans, cooked / canned, drained |
+| greek yogurt 2% | per 100 g | 70–73 | 10–10.1 | 3.5 | 2–2.1 | 0 | Label: 2% plain Greek yogurt (170 g = 120 kcal, 17 g protein) |
 | olive oil | per 100 g | 884 | 0 | 0 | 100 | 0 | USDA: olive oil (1 tbsp = 13.5 g) |
 | sourdough | per 100 g | 272 | 10.8 | 51.9 | 2.4 | 2.2 | USDA: French or sourdough bread |
+| corn tortilla | per 26 g unit | 52–57 | 1.4–1.5 | 10.7–11.6 | 0.7 | 1.5–1.6 | USDA: corn tortilla, ~6-inch |
 | rice, cooked | per 100 g | 130 | 2.7 | 28.2 | 0.3 | 0.4 | USDA: white rice, cooked (1 cup = 158 g) |
 | chicken thigh | per 100 g | 190–221 | 16.5–17.1 | 0–0.3 | 13.3–16.6 | 0 | USDA: chicken thigh, meat and skin, raw (enter edible weight: about 70% of bone-in weight) |
 | halibut | per 100 g | 85–91 | 17.7–18.6 | 0 | 1–1.5 | 0 | USDA: halibut, Atlantic and Pacific, raw; lingcod and rockfish are about the same |
@@ -196,4 +218,6 @@ Recipe makes 2 serving(s). **Serving:** One fillet with half the salad and 1 cup
 | fish sauce | per 100 g | 35 | 5.1 | 3.6 | 0 | 0 | USDA: fish sauce; 1 tbsp = 18 g |
 | sugar | per 100 g | 387 | 0 | 100 | 0 | 0 | USDA: sugar, granulated |
 | neutral oil | per 100 g | 884 | 0 | 0 | 100 | 0 | USDA: canola or vegetable oil (1 tbsp = 13.5 g) |
+| chicken thigh, meat only | per 100 g | 121–135 | 19.7 | 0 | 4.1–5.5 | 0 | USDA: chicken thigh, meat only, raw (skin and bone removed: about 55–60% of bone-in weight) |
+| chipotle in adobo | per 100 g | 40–70 | 1.5–2 | 6–10 | 1–3 | 3–4 | Labels: chipotle peppers in adobo sauce (brands vary) |
 | lemon or lime | per 100 g | 25–30 | 0.4–0.6 | 8–10 | 0.2–0.3 | 0–0.3 | USDA: juice |

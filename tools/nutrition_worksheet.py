@@ -80,6 +80,8 @@ DB = {
     "fish sauce":      (None, dict(kcal=(35, 35), protein=(5.1, 5.1), carbs=(3.6, 3.6), fat=(0, 0), fiber=(0, 0)), "USDA: fish sauce; 1 tbsp = 18 g"),
     "sugar":           (None, dict(kcal=(387, 387), protein=(0, 0), carbs=(100, 100), fat=(0, 0), fiber=(0, 0)), "USDA: sugar, granulated"),
     "neutral oil":     (None, dict(kcal=(884, 884), protein=(0, 0), carbs=(0, 0), fat=(100, 100), fiber=(0, 0)), "USDA: canola or vegetable oil (1 tbsp = 13.5 g)"),
+    "chicken thigh, meat only": (None, dict(kcal=(121, 135), protein=(19.7, 19.7), carbs=(0, 0), fat=(4.1, 5.5), fiber=(0, 0)), "USDA: chicken thigh, meat only, raw (skin and bone removed: about 55–60% of bone-in weight)"),
+    "chipotle in adobo": (None, dict(kcal=(40, 70), protein=(1.5, 2), carbs=(6, 10), fat=(1, 3), fiber=(3, 4)), "Labels: chipotle peppers in adobo sauce (brands vary)"),
     "lemon or lime":   (None, dict(kcal=(25, 30), protein=(0.4, 0.6), carbs=(8, 10), fat=(0.2, 0.3), fiber=(0, 0.3)), "USDA: juice"),
 }
 
@@ -203,6 +205,13 @@ NOVEMBER = {
         # In the air fryer some fat renders into the drawer; only a spoonful goes back into the beans.
         items=[("chicken thigh", 795 * THIGH_EDIBLE), ("fat poured off", (-25, -10)), ("white beans", (240, 255)), ("chard", (150, 200)),
                ("chicken stock", 118), ("satsuma", 75), ("olive oil", 1 * TBSP_OIL), ("pickled fennel", 60), ("sourdough", (120, 150))]),
+    "chicken-tinga-tostadas": dict(
+        servings=2, serving="Half the recipe: four tostadas with half the tinga, beans, and yogurt.",
+        excludes="Nothing.",
+        # Skin comes off before shredding; tortillas are brushed with oil, the rest cooks the onion.
+        items=[("chicken thigh, meat only", (795 * 0.55, 795 * 0.60)), ("corn tortilla", 8 * 26), ("canned tomatoes", 411), ("chipotle in adobo", (40, 60)),
+               ("red onion", (150, 200)), ("chicken stock", 118), ("black beans", (240, 260)), ("greek yogurt 2%", (90, 120)),
+               ("neutral oil", (2 * TBSP_OIL, 3 * TBSP_OIL))]),
     "seared-halibut-satsuma-fennel": dict(
         servings=2, serving="One fillet with half the salad and 1 cup cooked rice.",
         excludes="Nothing beyond the rice.",
