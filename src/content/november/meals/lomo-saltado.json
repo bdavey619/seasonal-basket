@@ -1,0 +1,125 @@
+{
+  "slug": "lomo-saltado",
+  "name": "Lomo saltado: Peruvian beef stir-fry with tomato, onion, and fries",
+  "display_name": "Lomo saltado",
+  "kind": "Weeknight",
+  "time": "About 45 minutes, most of it while the fries cook",
+  "time_short": "45 min",
+  "yield": "Dinner tonight and a lunch",
+  "intro": "Peru's best-known everyday dish, from the Chinese-Peruvian kitchens of Lima: sirloin seared hard in a wok with red onion, glazed with soy and vinegar, then tossed with tomato, chile, and cilantro off the heat. It's served with both fries and rice, and the fries come from the air fryer while the rice cooker does the rest.",
+  "needs": [
+    "1 lb sirloin steak, sliced across the grain into strips about ½ inch thick and 2 inches long",
+    "1 lb russet potatoes (2 medium), peeled, in ½-inch sticks",
+    "1 red onion, in thick wedges",
+    "2 Roma tomatoes, in wedges, seeds scooped out",
+    "1 serrano chile, in thin strips",
+    "3 garlic cloves, minced",
+    "3 tbsp soy sauce",
+    "2 tbsp white wine vinegar",
+    "1 tbsp oyster sauce",
+    "3 tbsp neutral oil (canola or vegetable, not peanut), plus 1 tbsp for the fries",
+    "½ bunch cilantro, chopped",
+    "Salt and black pepper",
+    "Rice: ¾ cup jasmine rice, for about 2 cups cooked"
+  ],
+  "steps": [
+    {
+      "cue": "Start",
+      "text": "Rinse the rice until the water runs clear and start it in the rice cooker."
+    },
+    {
+      "cue": "10 min",
+      "text": "Rinse the potato sticks in a bowl of cold water, swishing and draining until the water stays clear. Cover them with hot tap water and leave them for 10 minutes. Drain and pat them completely dry, then toss with 1 tbsp oil."
+    },
+    {
+      "cue": "350°F · 8 min",
+      "text": "Spread the potatoes in the air fryer and cook for 8 minutes. Toss them gently."
+    },
+    {
+      "cue": "400°F · 15–20 min",
+      "text": "Turn it up and keep cooking, tossing every 5 minutes, until deep golden and crisp. Salt them as they come out. Do the rest while they cook."
+    },
+    {
+      "text": "Stir together the soy sauce, vinegar, and oyster sauce. Pat the beef dry and season it with pepper; the soy brings the salt. Have everything cut and next to the stove before the wok goes on."
+    },
+    {
+      "cue": "2–3 min a batch",
+      "text": "Heat the wok over your highest heat until it smokes. Add 1 tbsp oil and half the beef in one layer. Leave it for a minute until it browns, then toss until browned outside and still pink inside. Move it to a plate and repeat with another tablespoon of oil and the rest of the beef."
+    },
+    {
+      "cue": "2 min",
+      "text": "Add the last tablespoon of oil and the onion. Toss until charred at the edges but still crunchy, then the garlic for 30 seconds."
+    },
+    {
+      "cue": "30 sec",
+      "text": "Return the beef and its juices, pour in the sauce, and toss until it bubbles and turns glossy."
+    },
+    {
+      "cue": "Off the heat",
+      "text": "Fold in the tomatoes, chile, and most of the cilantro. The tomatoes should warm through, not collapse."
+    },
+    {
+      "cue": "Finish",
+      "text": "Rice on the plate, the beef over it with plenty of the sauce, and the fries tossed through at the last second or piled beside it so they stay crisp. The rest of the cilantro on top."
+    }
+  ],
+  "how_it_works": "Lomo saltado is what happened when Cantonese cooks in Peru put local beef, tomatoes, and potatoes in a wok: a stir-fry seasoned with soy and vinegar, served with both of the country's starches. A home burner can't heat a wok like a restaurant flame, so the beef goes in two batches and gets left alone long enough to brown; crowded, it steams and turns gray. The tomatoes and chile go in off the heat to stay fresh against the dark, glossy sauce, and the fries soak up whatever's left.",
+  "swaps": [
+    "Flank or skirt steak instead of sirloin; slice it thin across the grain.",
+    "A spoonful of ají amarillo paste in the sauce, if the store has it — that's the Peruvian chile.",
+    "Two fried eggs over the rice, fries, and vegetables instead of the beef, for a meat-free night."
+  ],
+  "leftovers": "Pack the second portion of beef and vegetables over rice before you sit down. The fries don't keep, so make only what you'll eat tonight. Reheat the beef in a hot pan, and a fried egg on top makes it lunch.",
+  "linked_house_flavor": null,
+  "linked_field_notes": [
+    "small-batches-big-heat",
+    "the-air-fryer"
+  ],
+  "linked_ingredients": [],
+  "sources": [
+    {
+      "title": "Lomo Saltado (Peruvian Beef Stir-Fry) — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/17546-lomo-saltado-peruvian-beef-stir-fry",
+      "note": "beef and red onion glazed with soy and oyster sauce and vinegar; tomatoes and chile folded in off the heat; sirloin or skirt works"
+    },
+    {
+      "title": "Chinese-Peruvian Beef Stir-Fry with French Fries (Lomo Saltado) — Food52",
+      "url": "https://food52.com/recipes/77906-chinese-peruvian-beef-stir-fry-with-french-fries-lomo-saltado",
+      "note": "the chifa dish, served with fries and rice"
+    },
+    {
+      "title": "Air-Fryer French Fries — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/11347-air-fryer-french-fries",
+      "note": "rinsed, soaked 10 minutes in hot water, 350°F for 8 minutes, then 400°F, tossed every 5 minutes"
+    },
+    {
+      "title": "Safe Minimum Internal Temperature Chart — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+      "note": "whole cuts of beef are safe at 145°F; thin strips get there in seconds"
+    }
+  ],
+  "nutrition": {
+    "serving": "Half the recipe: half the beef and vegetables, half the fries, and about 1 cup cooked rice.",
+    "excludes": "Nothing.",
+    "kcal": [
+      950,
+      1200
+    ],
+    "protein": [
+      60,
+      65
+    ],
+    "carbs": [
+      90,
+      105
+    ],
+    "fat": [
+      35,
+      55
+    ],
+    "fiber": [
+      5,
+      5
+    ]
+  }
+}

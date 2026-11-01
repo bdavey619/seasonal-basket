@@ -2,18 +2,18 @@
   "slug": "cauliflower",
   "month": "November",
   "name": "Cauliflower",
-  "tile_uses": "The salmon and lentils",
+  "tile_uses": "The farro bowls",
   "why_now": "Cauliflower is a cool-season crop, and it's sweeter and denser now than at any time in summer. Roasted hard, it turns nutty and golden at the edges.",
   "how_to_choose": [
     "Tight, creamy-white curds with no brown spots",
     "Heavy for its size",
     "Fresh, green leaves hugging the head"
   ],
-  "buy_this_much": "1 head for the salmon and lentils.",
+  "buy_this_much": "1 head for the farro bowls.",
   "price_note": "Sold by the head. A heavier head for the same price is more cauliflower.",
   "pairs_with_month": [
-    "fennel",
-    "satsumas"
+    "chicken-thighs",
+    "fennel"
   ],
   "pairs_with_staples": [
     "chicken thighs",
@@ -21,12 +21,12 @@
   ],
   "flavor_paths": [
     {
-      "name": "Roasted hard",
-      "description": "450°F, until the edges are dark."
+      "name": "Air fryer",
+      "description": "400°F, tossed halfway, until the edges are dark."
     },
     {
-      "name": "With lentils",
-      "description": "Warm, with pickled fennel and a fried egg."
+      "name": "With farro",
+      "description": "Under braised chicken and the jar."
     },
     {
       "name": "With Parmesan",
@@ -34,11 +34,11 @@
     }
   ],
   "weekday_uses": [
-    "Roasted and folded into warm lentils under salmon",
-    "Florets in the one-pot chicken or the minestrone, if you have extra"
+    "Crisped in the air fryer for the farro bowls",
+    "Florets in the minestrone or the white beans, if you have extra"
   ],
   "weekend_use": "Leftover florets, crisped in a skillet, under a fried egg.",
   "storage": "In the fridge, unwashed, in a loose bag, for up to a week.",
-  "one_thing_to_learn": "Cauliflower is mostly water, so it browns only when it has room. Spread it out on the pan with space around each piece; crowded, it steams and stays pale.",
+  "one_thing_to_learn": "Cauliflower is mostly water, so it browns only when it has room. Spread it out in one layer, in the air fryer or on a pan, with space around each piece; crowded, it steams and stays pale.",
   "market_question": "Is this local?"
 }

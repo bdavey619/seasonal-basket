@@ -1,0 +1,99 @@
+{
+  "slug": "seared-halibut-satsuma-fennel",
+  "name": "Seared halibut with shaved fennel and satsuma",
+  "display_name": "Seared halibut, fennel and satsuma",
+  "kind": "Weeknight",
+  "time": "25 minutes",
+  "time_short": "25 min",
+  "yield": "Dinner tonight and a lunch",
+  "intro": "California halibut is in season now. Sear it the way October taught — dry fish, hot pan, hands off — and serve it beside a cold salad of fennel shaved paper-thin and satsuma rounds, dressed with lemon, olive oil, and a pinch of chile.",
+  "needs": [
+    "1 lb halibut (or lingcod, or rockfish), about 1 inch thick, in two pieces",
+    "1 fennel bulb, shaved thin (keep the fronds)",
+    "3 satsumas, peeled and sliced into rounds",
+    "½ lemon",
+    "3 tbsp olive oil",
+    "Salt, black pepper, and chile flakes",
+    "Rice: about 1 cup cooked per serving"
+  ],
+  "steps": [
+    {
+      "cue": "10 min",
+      "text": "Salt the fish and leave it on a plate. Pat it completely dry right before it goes in the pan."
+    },
+    {
+      "text": "Shave the fennel with the food processor's thin slicing disk, or as thin as you can with a sharp knife. Toss it with the lemon juice, 2 tbsp olive oil, and salt, and lay the satsuma rounds over it with the fronds and a pinch of chile flakes."
+    },
+    {
+      "cue": "4–5 min",
+      "text": "Heat 1 tbsp oil in the nonstick or cast-iron skillet over medium-high until it shimmers. Lay the fish in, away from you, and leave it until the underside is golden and it releases on its own."
+    },
+    {
+      "cue": "3–5 min",
+      "text": "Flip and cook until the thickest part flakes when you press it (the USDA's safe temperature is 145°F). Thinner fillets take less."
+    },
+    {
+      "cue": "Finish",
+      "text": "Fish over rice, the salad beside it, and the salad's juices spooned over the fish."
+    }
+  ],
+  "how_it_works": "Lean, sweet fish wants something crisp, cold, and sharp beside it, not a heavy sauce. Halibut is firmer than October's rockfish, so it needs a few more minutes a side, but it's the same sear: the crust forms when you stop moving it. Fennel and citrus is the Sicilian salad; shaved thin, the fennel turns tender in the dressing in a few minutes and stays crunchy.",
+  "swaps": [
+    "Lingcod or rockfish if the halibut is out; thinner fillets cook faster.",
+    "A forkful of pickled fennel in place of the raw fennel.",
+    "The air fryer at 400°F for 8–10 minutes instead of the pan, if you'd rather keep the smell out of the kitchen."
+  ],
+  "leftovers": "Cook both pieces and keep one for lunch: cold, flaked over rice with the rest of the salad. Don't reheat it.",
+  "linked_house_flavor": "pickled-fennel",
+  "linked_field_notes": [],
+  "linked_ingredients": [
+    "fennel",
+    "satsumas"
+  ],
+  "sources": [
+    {
+      "title": "Pan-Seared Halibut with Wilted Bitter Salad — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/16790-pan-seared-halibut-with-wilted-bitter-salad",
+      "note": "inch-thick fillets, medium-high heat, about 8–10 minutes in all, flipped once"
+    },
+    {
+      "title": "Fennel, Orange, and Olive Salad — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/12663-fennel-orange-and-olive-salad",
+      "note": "thin-sliced fennel and citrus rounds dressed with lemon juice and olive oil"
+    },
+    {
+      "title": "Fennel & Orange Salad (Insalata di Finocchio e Aranci) — Food52",
+      "url": "https://food52.com/recipes/27997-fennel-orange-salad-insalada-di-finocchio-e-aranci",
+      "note": "the Sicilian salad: paper-thin fennel and citrus, olive oil, salt"
+    },
+    {
+      "title": "Safe Minimum Internal Temperature Chart — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+      "note": "fish is done at 145°F, or when it's opaque and flakes with a fork"
+    }
+  ],
+  "nutrition": {
+    "serving": "One fillet with half the salad and 1 cup cooked rice.",
+    "excludes": "Nothing beyond the rice.",
+    "kcal": [
+      650,
+      700
+    ],
+    "protein": [
+      45,
+      50
+    ],
+    "carbs": [
+      65,
+      70
+    ],
+    "fat": [
+      25,
+      25
+    ],
+    "fiber": [
+      5,
+      5
+    ]
+  }
+}

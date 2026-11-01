@@ -1,0 +1,45 @@
+{
+  "slug": "brussels-sprouts",
+  "month": "November",
+  "name": "Brussels sprouts",
+  "tile_uses": "The salmon and lentils",
+  "why_now": "Brussels sprouts are a cool-season crop, and they arrive in November sweeter than they'll be at any other time; a little cold makes them convert starch to sugar. Crisped hard, their outer leaves go brown and nutty and the centers turn tender.",
+  "how_to_choose": [
+    "Small, tight, bright green heads, an inch or so across",
+    "Heavy for their size",
+    "No yellow outer leaves or black spots",
+    "Similar sizes, so they cook evenly"
+  ],
+  "buy_this_much": "1 lb for the salmon and lentils.",
+  "price_note": "Sold loose by the pound or in bags. Loose lets you pick small, even ones.",
+  "pairs_with_month": [
+    "fennel",
+    "satsumas"
+  ],
+  "pairs_with_staples": [
+    "eggs",
+    "rice"
+  ],
+  "flavor_paths": [
+    {
+      "name": "Air fryer",
+      "description": "Halved, 350°F, tossed halfway, until crisp at the edges."
+    },
+    {
+      "name": "With lentils",
+      "description": "Folded into lentils dressed with the jar's brine."
+    },
+    {
+      "name": "With fish sauce",
+      "description": "Tossed hot with a spoonful of fish sauce and chile."
+    }
+  ],
+  "weekday_uses": [
+    "Crisped in the air fryer and folded into warm lentils under salmon",
+    "Leftovers tossed with fish sauce and chile, beside rice"
+  ],
+  "weekend_use": "Halved and crisped, under two fried eggs.",
+  "storage": "In the fridge, unwashed, in a bag, for up to a week. Trim them just before cooking.",
+  "one_thing_to_learn": "Overcooked Brussels sprouts smell like cabbage because they are cabbage. Cooked hot and fast, cut side down or in moving hot air, they brown before the sulfur builds up.",
+  "market_question": "Do you have smaller ones?"
+}

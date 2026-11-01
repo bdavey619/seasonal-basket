@@ -6,19 +6,18 @@
   "time": "About 1 hour",
   "time_short": "1 hr",
   "yield": "About six big bowls",
-  "intro": "The Italian fall soup, made from November's basket: leeks, fennel, chard, white beans, a Parmesan rind for depth, and Italian sausage browned first so the whole pot tastes of it. The quicker of the month's two soups.",
+  "intro": "The Italian fall soup, made from November's basket: leeks, carrots, chard, white beans, a Parmesan rind for depth, and Italian sausage browned first so the whole pot tastes of it. The month's one soup: make it on Sunday and it's lunch all week.",
   "needs": [
     "¾ lb Italian sausage, casings removed",
     "2 leeks, sliced and rinsed",
-    "1 fennel bulb, diced",
-    "2 carrots, diced",
+    "3 carrots, diced",
     "1 bunch Swiss chard, stems chopped, leaves torn",
     "3 garlic cloves, sliced",
     "1 can (28 oz) whole tomatoes, crushed by hand",
     "2 cans white beans, drained",
     "1 carton (4 cups) chicken stock, plus 3 cups water",
     "A Parmesan rind, and grated Parmesan to serve",
-    "1 cup small pasta (ditalini, or orecchiette)",
+    "1 cup ditalini or other small pasta",
     "2 tbsp olive oil",
     "Salt, black pepper, and chile flakes"
   ],
@@ -29,7 +28,7 @@
     },
     {
       "cue": "8–10 min",
-      "text": "Lower the heat to medium. Add the leeks, fennel, carrots, chard stems, and a pinch of salt and cook in the sausage fat until soft. Add the garlic and a pinch of chile flakes for the last minute."
+      "text": "Lower the heat to medium. Add the leeks, carrots, chard stems, and a pinch of salt and cook in the sausage fat until soft. Add the garlic and a pinch of chile flakes for the last minute."
     },
     {
       "text": "Add the tomatoes and their juice, the beans, stock, water, Parmesan rind, and the sausage, and bring to a simmer."
@@ -54,7 +53,7 @@
   "how_it_works": "Minestrone is a method more than a recipe: soften what's in season in fat, add tomatoes, beans, and liquid, simmer until it tastes rich, then add pasta and greens at the end. Browning the sausage first seasons everything after it, and the Parmesan rind gives the broth a depth that water and stock alone don't.",
   "swaps": [
     "Leave out the sausage and start with more olive oil, for a meat-free pot.",
-    "Cauliflower or a diced sweet potato with the carrots.",
+    "A diced fennel bulb with the carrots, or cauliflower florets.",
     "Shredded leftover braised chicken stirred in at the end."
   ],
   "leftovers": "It keeps four days in the fridge and three months in the freezer (without the pasta). On day two, it's even better; on day three, it's the start of ribollita.",
@@ -65,7 +64,6 @@
   ],
   "linked_ingredients": [
     "leeks",
-    "fennel",
     "swiss-chard"
   ],
   "sources": [
@@ -99,10 +97,10 @@
     ],
     "protein": [
       25,
-      30
+      25
     ],
     "carbs": [
-      55,
+      50,
       65
     ],
     "fat": [
@@ -111,7 +109,7 @@
     ],
     "fiber": [
       10,
-      15
+      10
     ],
     "with_meal": {
       "kcal": [

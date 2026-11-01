@@ -10,22 +10,22 @@
       "notices": "What is at its peak this week versus what is being pushed. What the farmers themselves are eating.",
       "assigned_ingredients": [
         "satsumas",
-        "fuyu-persimmons",
         "fennel",
+        "leeks",
         "swiss-chard",
         "cauliflower",
-        "leeks",
+        "brussels-sprouts",
         "chicken-thighs"
       ],
       "quotes": {
         "satsumas": "If the peel's coming away from the fruit, that's not old. That's a satsuma.",
-        "fuyu-persimmons": "Squat ones, eat today. Pointy ones, wait till they're mush.",
         "fennel": "Heavy and white. If the fronds are flopping, it's been sitting.",
         "swiss-chard": "Two vegetables for the price of one. Don't throw out the stems.",
         "cauliflower": "Tight and heavy. Brown spots, walk away.",
         "leeks": "Buy them with the dirt still on. Means nobody's been handling them.",
         "chicken-thighs": "Skin on, bone in. Everything you're paying for is in the pot.",
-        "edition": "November is the month the stove earns its keep again."
+        "edition": "November is the month the stove earns its keep again.",
+        "brussels-sprouts": "Small and tight. The big loose ones taste like cabbage."
       }
     }
   ]

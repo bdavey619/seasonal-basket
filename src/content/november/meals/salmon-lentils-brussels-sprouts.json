@@ -1,0 +1,142 @@
+{
+  "slug": "salmon-lentils-brussels-sprouts",
+  "name": "Salmon over warm lentils with crisp Brussels sprouts and pickled fennel",
+  "display_name": "Salmon over warm lentils",
+  "kind": "Weeknight",
+  "time": "45 minutes",
+  "time_short": "45 min",
+  "yield": "Dinner tonight and a lunch",
+  "intro": "A French classic, made with November's jar: French green lentils dressed warm with the pickled fennel's brine, Brussels sprouts crisped in the air fryer and folded through, and the salmon cooked in the same air fryer after them, set on top.",
+  "needs": [
+    "1 lb salmon fillet, about 1 inch thick, in two pieces",
+    "¾ cup French green lentils, rinsed",
+    "1 lb Brussels sprouts, trimmed and halved",
+    "Pickled fennel, a big forkful, plus 3 tbsp of its brine",
+    "1 garlic clove, grated",
+    "3 tbsp olive oil, plus a little for the salmon",
+    "½ lemon",
+    "Salt, black pepper, and chile flakes"
+  ],
+  "steps": [
+    {
+      "cue": "20–25 min",
+      "text": "Cover the lentils with a few inches of water in a pot, add a pinch of salt, and simmer until tender but still holding their shape. Drain."
+    },
+    {
+      "cue": "350°F · 20–25 min",
+      "text": "Meanwhile, toss the sprouts with 1 tbsp oil and salt and cook them in the air fryer, tossing halfway, until tender, well browned, and crisp at the edges."
+    },
+    {
+      "text": "While the lentils are warm, toss them with the brine, 2 tbsp olive oil, the garlic, salt, pepper, and a pinch of chile flakes. Fold in the sprouts."
+    },
+    {
+      "cue": "400°F · 8–12 min",
+      "text": "Rub the salmon with a little oil and salt and set it skin-side down in the air fryer. Cook until it flakes at the thickest part (the USDA's safe temperature is 145°F). Salmon goes from silky to dry quickly, so check at 8."
+    },
+    {
+      "cue": "Finish",
+      "text": "Lentils and sprouts in bowls, pickled fennel folded through, the salmon on top, and lemon and black pepper over everything."
+    }
+  ],
+  "how_it_works": "Salmon over lentils is a French bistro dish for a reason: rich, oily fish wants something earthy and sharp underneath it. Lentils take in a dressing best while they're warm, and the jar's brine is the vinegar. French green lentils hold their shape where brown ones turn soft. Brussels sprouts crisp at a moderate 350°F, which gives the insides time to turn tender before the outsides burn; the salmon wants the higher heat.",
+  "swaps": [
+    "Two fried eggs instead of the salmon, for a meat-free night.",
+    "Halibut instead of salmon; it needs a few minutes less.",
+    "Cauliflower florets instead of the sprouts, at 400°F."
+  ],
+  "leftovers": "Keep the second piece of salmon and a bowl of lentils for lunch. Eat them at room temperature with a squeeze of lemon; don't reheat the fish.",
+  "linked_house_flavor": "pickled-fennel",
+  "linked_field_notes": [
+    "the-air-fryer"
+  ],
+  "linked_ingredients": [
+    "brussels-sprouts",
+    "fennel"
+  ],
+  "sources": [
+    {
+      "title": "Pan-Seared Salmon with Braised Lentils (Saumon avec Lentilles du Puy) — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/5098-pan-seared-salmon-with-braised-lentils-saumon-avec-lentilles-du-puy",
+      "note": "the classic pairing: lentilles du Puy under salmon"
+    },
+    {
+      "title": "Air-Fried Brussels Sprouts — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/12466-air-fried-brussels-sprouts",
+      "note": "350°F for 20 to 25 minutes, tossed halfway; lower heat than 400°F lets the centers turn tender"
+    },
+    {
+      "title": "Air-Fryer Roasted Salmon Fillets — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/12457-air-fryer-roasted-salmon-fillets",
+      "note": "skin-on fillets at 400°F for the best color"
+    },
+    {
+      "title": "Safe Minimum Internal Temperature Chart — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+      "note": "fish is done at 145°F, or when it's opaque and flakes with a fork"
+    }
+  ],
+  "nutrition": {
+    "serving": "Half the recipe: one piece of salmon over half the lentils and Brussels sprouts.",
+    "excludes": "Nothing.",
+    "kcal": [
+      800,
+      1050
+    ],
+    "protein": [
+      70,
+      80
+    ],
+    "carbs": [
+      65,
+      70
+    ],
+    "fat": [
+      30,
+      55
+    ],
+    "fiber": [
+      15,
+      20
+    ],
+    "variants": [
+      {
+        "label": "Wild salmon",
+        "kcal": [
+          800,
+          900
+        ],
+        "protein": [
+          75,
+          80
+        ],
+        "carbs": [
+          65,
+          70
+        ],
+        "fat": [
+          30,
+          40
+        ]
+      },
+      {
+        "label": "Farmed salmon",
+        "kcal": [
+          1000,
+          1050
+        ],
+        "protein": [
+          70,
+          75
+        ],
+        "carbs": [
+          65,
+          70
+        ],
+        "fat": [
+          50,
+          55
+        ]
+      }
+    ]
+  }
+}

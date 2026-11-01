@@ -2,7 +2,7 @@
   "slug": "satsumas",
   "month": "November",
   "name": "Satsuma mandarins",
-  "tile_uses": "The jar, the weekend braise, mornings, the drink",
+  "tile_uses": "The jar, the weekend braise, the halibut salad, mornings, the drink",
   "why_now": "Satsumas are among the first California citrus of the season, and they start arriving in November — sweet, seedless, and so loose in their skins they peel in one piece. They're at their best now and through December.",
   "how_to_choose": [
     "Heavy for their size; light ones have started to dry out",
@@ -14,8 +14,8 @@
   "price_note": "Usually sold in bags or by the pound; the bags are cheaper and just as good.",
   "pairs_with_month": [
     "fennel",
-    "fuyu-persimmons",
-    "leeks"
+    "leeks",
+    "chicken-thighs"
   ],
   "pairs_with_staples": [
     "Greek yogurt",
@@ -37,8 +37,9 @@
   ],
   "weekday_uses": [
     "Peel into the pickled fennel",
-    "Zest over yogurt and persimmon",
-    "Juice and zest in the one-pot chicken with white beans"
+    "Zest and segments over yogurt in the morning",
+    "Sliced into rounds over shaved fennel beside the halibut",
+    "Juice and zest in the white beans under the crisp chicken"
   ],
   "weekend_use": "Juice and zest into the weekend braise, where they keep a rich pot bright.",
   "storage": "In the fridge, loose, for up to two weeks. On the counter they're fine for a few days.",

@@ -1,0 +1,110 @@
+{
+  "slug": "thai-basil-pork",
+  "name": "Thai basil pork with green beans and a crisp fried egg",
+  "display_name": "Thai basil pork",
+  "kind": "Weeknight",
+  "time": "25 minutes, with the rice cooker going",
+  "time_short": "25 min",
+  "yield": "Dinner tonight and a lunch",
+  "intro": "Pad kra pao, the dish Thailand eats for lunch every day: ground pork stir-fried hard with garlic and chile, green beans for crunch, a salty-sweet sauce, and a fistful of basil wilted in at the end. It goes over rice with a fried egg whose edges are crisp and whose yolk runs into everything.",
+  "needs": [
+    "1 lb ground pork",
+    "½ lb green beans, trimmed, in 1-inch pieces",
+    "6 garlic cloves",
+    "2 serrano chiles or 3–5 Thai chiles, plus one more, sliced, for the table",
+    "1 tbsp oyster sauce",
+    "2 tsp soy sauce",
+    "2 tsp fish sauce, plus 2 tbsp for the table",
+    "1 tsp sugar",
+    "2 cups basil leaves — Thai basil if the store has it; Italian basil works",
+    "2 eggs",
+    "3 tbsp neutral oil (canola or vegetable, not peanut)",
+    "Rice: ¾ cup jasmine rice, for about 2 cups cooked"
+  ],
+  "steps": [
+    {
+      "cue": "Start",
+      "text": "Rinse the rice until the water runs clear and start it in the rice cooker."
+    },
+    {
+      "text": "Chop the garlic and chiles together until fine. Stir the oyster sauce, soy sauce, 2 tsp fish sauce, sugar, and 2 tbsp water in a small bowl. For the table, stir the sliced chile into 2 tbsp fish sauce."
+    },
+    {
+      "cue": "15 sec",
+      "text": "Heat the wok over high until it smokes. Add 1 tbsp oil and the garlic and chile, and stir until fragrant but not brown."
+    },
+    {
+      "cue": "5–6 min",
+      "text": "Add the pork, press it flat, and leave it for 2 minutes to brown. Then break it up and keep cooking until there's no pink left (160°F) and plenty of browned bits."
+    },
+    {
+      "cue": "3 min",
+      "text": "Add the green beans and a splash of water and toss until they're bright green and crisp-tender."
+    },
+    {
+      "cue": "1 min",
+      "text": "Pour in the sauce and toss until it coats everything. Take the wok off the heat, add the basil, and toss until it just wilts."
+    },
+    {
+      "cue": "2–3 min",
+      "text": "Heat 2 tbsp oil in the nonstick skillet over medium-high. Crack in the eggs and spoon the hot oil over the whites until the edges are brown and lacy and the yolks are still runny."
+    },
+    {
+      "cue": "Finish",
+      "text": "Rice on the plate, the pork beside it, an egg on top, and the chile fish sauce on the table to spoon over."
+    }
+  ],
+  "how_it_works": "The garlic and chile go in first and only briefly; they flavor the oil, and burned garlic turns bitter. The pork is browned before it's broken up, the same lesson as any sear. Basil goes in off the heat, so it wilts without turning black. Fish sauce brings the salt, oyster sauce the sweet savoriness, and the runny yolk turns the plate into its own sauce. Cook with a neutral oil, not peanut, and check the labels on the sauces; brands vary.",
+  "swaps": [
+    "Ground chicken or turkey instead of the pork.",
+    "Cauliflower florets or more green beans, if that's what's in the fridge.",
+    "Crumbled firm tofu in place of the pork, for a meat-free night."
+  ],
+  "leftovers": "Pack the second portion over rice before you sit down. Reheat it in a hot pan and fry a fresh egg; leftover rice from the week makes the weekend fried rice.",
+  "linked_house_flavor": null,
+  "linked_field_notes": [
+    "small-batches-big-heat"
+  ],
+  "linked_ingredients": [],
+  "sources": [
+    {
+      "title": "Pad Gra Prow (Holy Basil Stir-Fry) — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/14920-pad-gra-prow-holy-basil-stir-fry",
+      "note": "ground pork with fish, oyster, and soy sauces, served over jasmine rice with a crisp fried egg and a fish sauce and chile table sauce"
+    },
+    {
+      "title": "Thai Stir-Fried Pork with Basil, Chilies and Garlic (Pad Kraprao) — Milk Street",
+      "url": "https://www.177milkstreet.com/recipes/thai-stir-fried-pork-with-basil-chilies-and-garlic-pad-kraprao",
+      "note": "the basil isn't fried; it wilts in at the very end"
+    },
+    {
+      "title": "Safe Minimum Internal Temperature Chart — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+      "note": "ground pork is safe at 160°F"
+    }
+  ],
+  "nutrition": {
+    "serving": "Half the recipe: half the pork and green beans, one fried egg, and about 1 cup cooked rice.",
+    "excludes": "Nothing.",
+    "kcal": [
+      900,
+      1150
+    ],
+    "protein": [
+      55,
+      60
+    ],
+    "carbs": [
+      55,
+      65
+    ],
+    "fat": [
+      50,
+      75
+    ],
+    "fiber": [
+      5,
+      5
+    ]
+  }
+}

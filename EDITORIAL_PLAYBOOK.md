@@ -13,7 +13,7 @@ Do these in order. Each step depends on the one before; the reasons behind each 
    - *Cut and weather:* which cut suits the month's weather? Quick, lean cuts when it's warm; long-cooked cuts when it's cool. Seafood seasonality is literal — name it. Meat seasonality usually isn't — say so, and choose the cut for the weather.
    One of the proteins is the month's cut: the new one the weekend meal teaches.
 4. **Choose the method and, only if one is genuinely coming back into use, a tool.** The method is taught by the weekend meal and named in one Field Note that points to next month.
-5. **Choose the dishes.** Seven or eight specific dishes that suit the weather and the basket: the weekend dish, the make-ahead, and at least five weeknight dinners under about 45 minutes, including one built on another dish's leftovers. Label dishes by when you cook them (weekend, weeknight, make-ahead), not by "meatless"; give at least one dish a meat-free version in its swaps instead of a separate meatless dish. Then write the instinct rows from them: each protein's pairing line and two or three moves, linking the moves the dishes demonstrate. Every dish must be linked from the edition page; the build checks. One of the dishes is **the make-ahead**: something cooked once that keeps in the fridge for snacks and lunches all week (see "The Make-Ahead" below). Then write **Mornings, and in between** from the same basket (see "Mornings, and In Between").
+5. **Choose the dishes.** Seven or eight specific dishes that suit the weather and the basket: the weekend dish, the make-ahead, and at least five weeknight dinners under about 45 minutes, including one built on another dish's leftovers. Label dishes by when you cook them (weekend, weeknight, make-ahead), not by "meatless"; give at least one dish a meat-free version in its swaps instead of a separate meatless dish. Then write the instinct rows from them: each protein's pairing line and two or three moves, linking the moves the dishes demonstrate. Every dish must be linked from the edition page; the build checks. One of the dishes is **the make-ahead**: something cooked once that keeps in the fridge for snacks and lunches all week (see "The Make-Ahead" below). Then write **Mornings, and in between** from the same basket (see "Mornings, and In Between"). Then **check the balance** (see "Balance Across the Dishes").
 6. **Choose three or four flavors.** Each is two or three things from the shopping list, defined once (what it is, how to do it). Give each protein its two best flavors, following from its pairing line.
 7. **Write the shopping list for a real week, and close it.** One simple list, sized to a suggested week of five dishes (seven dinners and most lunches) — not to every dish, and not split into sections. Say which dishes it's for in the "feeds" line, and add one line: anyone cooking a different dish finds exactly what it needs on that dish's page, under "You'll need." The dishes stay options. Basket, proteins (with amounts, meals, and pairing line), "Also buy," and "From your kitchen." Pick one cheese, one citrus, one tortilla. Then read every page — meals, jar, drink, weekend meal, ingredient pages — and remove or list anything not on those lines.
 8. **Set the quantities.** One active cook with a big appetite, dinner every night, leftovers for lunch most days: roughly 8 oz of raw protein per meal. State it in the basket card's "feeds" line. Give every recipe a serving size a real person eats: "dinner for one" means one person eats it all; name rice by the cup, yogurt by type (2% Greek), and oil by the tablespoon wherever it's more than a film in the pan.
@@ -179,6 +179,28 @@ There is no fixed number of proteins. An edition names as many as its meals natu
 - All proteins go in the basket card's "Proteins" block: amount, which meals and lunches it covers, and the pairing line. The month's cut links to its ingredient page.
 
 **Portions.** Quantities are written for one active cook with a big appetite, cooking dinner every night and eating leftovers for lunch most days. The basket card states this in its "feeds" line. Plan roughly 8 oz of raw protein per meal, and cook the sheet-pan and skillet proteins in batches big enough to leave lunches.
+
+## Balance Across the Dishes
+
+A month can pass every other rule and still taste like one dish eight times. Before writing the rest, lay the dishes side by side and check:
+
+- **No ingredient carries the month.** No vegetable, cheese, or bean in more than about three dishes. A shared ingredient should be a convenience (one package of sausage, one jar), not the flavor of every plate.
+- **One soup, one long braise.** At most one soup, and no more than two dishes that live in the Dutch oven or the oven for an hour. The rest cook in under 45 minutes.
+- **Soft and crisp, rich and bright.** Count the brothy, soft dishes. If they're half the month, move weeknights to the air fryer, the wok, or a hot pan, and give the rich dishes something cold and sharp beside them.
+- **Reach past one cuisine.** At least one or two dishes from outside the month's main tradition, chosen from what the basket and a San Diego supermarket already support — Mexican, Peruvian, Thai, Japanese, Korean — as long as they stay nut- and sesame-free.
+- **Two dishes in the same pot shouldn't be twins.** If choosing between them is barely a choice, cut one.
+
+## The Kitchen
+
+Write for the kitchen the reader actually has, and use all of it:
+
+- A 6-quart enameled Dutch oven (wine and tomatoes are fine in it).
+- A 13-quart air fryer: crisp chicken skin, fries, Brussels sprouts, cauliflower, and salmon, without heating the oven.
+- A wok, for stir-fries on a home burner (cook in batches).
+- Skillets: 10½-inch and 12½-inch stainless, 10½-inch cast iron, 10½-inch nonstick (eggs and delicate fish).
+- A 12-cup food processor (shaving fennel, slicing, chopping).
+- A small (3-cup) rice cooker, the oven's broiler, and the usual basics.
+- No grill, pressure cooker, or slow cooker. Don't write recipes that need them.
 
 ## The Month's Cut, Method, and Tool
 

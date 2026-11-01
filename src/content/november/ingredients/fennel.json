@@ -13,8 +13,8 @@
   "price_note": "Sold by the bulb. Bigger bulbs are usually the better deal.",
   "pairs_with_month": [
     "satsumas",
-    "fuyu-persimmons",
-    "leeks"
+    "leeks",
+    "chicken-thighs"
   ],
   "pairs_with_staples": [
     "chicken thighs",
@@ -31,13 +31,13 @@
     },
     {
       "name": "Shaved raw",
-      "description": "With persimmon and lemon."
+      "description": "Paper-thin, with satsuma and lemon."
     }
   ],
   "weekday_uses": [
-    "Pickled, over lentils, beside steak, and on the farro bowls",
-    "Shaved raw with persimmon beside seared halibut",
-    "Diced into the minestrone with the leeks"
+    "Pickled, over lentils, on the farro bowls, and beside the crisp chicken",
+    "Shaved raw with satsuma beside seared halibut",
+    "Diced into the minestrone with the carrots, if you have an extra bulb"
   ],
   "weekend_use": "Cut in wedges and braised with leeks under the chicken thighs.",
   "storage": "In the fridge, in a bag, for about a week. Cut off the stalks if they don't fit; keep a few fronds.",

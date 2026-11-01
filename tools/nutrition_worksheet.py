@@ -54,7 +54,6 @@ DB = {
     "fennel":          (None, dict(kcal=(31, 31), protein=(1.2, 1.2), carbs=(7.3, 7.3), fat=(0.2, 0.2), fiber=(3.1, 3.1)), "USDA: fennel bulb, raw"),
     "chard":           (None, dict(kcal=(19, 20), protein=(1.8, 1.9), carbs=(3.7, 4.1), fat=(0.1, 0.2), fiber=(1.6, 1.6)), "USDA: Swiss chard, raw"),
     "cauliflower":     (None, dict(kcal=(25, 25), protein=(1.9, 1.9), carbs=(5, 5), fat=(0.3, 0.3), fiber=(2, 2)), "USDA: cauliflower, raw"),
-    "fuyu persimmon":  (None, dict(kcal=(70, 70), protein=(0.6, 0.6), carbs=(18.6, 18.6), fat=(0.2, 0.2), fiber=(3.6, 3.6)), "USDA: persimmon, Japanese, raw"),
     "satsuma":         (None, dict(kcal=(53, 53), protein=(0.8, 0.8), carbs=(13.3, 13.3), fat=(0.3, 0.3), fiber=(1.8, 1.8)), "USDA: tangerines (mandarin oranges), raw"),
     "lentils, dry":    (None, dict(kcal=(352, 352), protein=(24.6, 25.8), carbs=(63, 63), fat=(1.1, 1.1), fiber=(10.7, 10.7)), "USDA: lentils, raw (French green are similar)"),
     "white beans":     (None, dict(kcal=(114, 125), protein=(7.4, 7.6), carbs=(21, 22), fat=(0.4, 0.5), fiber=(5, 6.3)), "USDA: white / great northern beans, canned, drained"),
@@ -68,6 +67,19 @@ DB = {
     "carrots":         (None, dict(kcal=(41, 41), protein=(0.9, 0.9), carbs=(9.6, 9.6), fat=(0.2, 0.2), fiber=(2.8, 2.8)), "USDA: carrots, raw"),
     "canned tomatoes": (None, dict(kcal=(18, 21), protein=(0.8, 1), carbs=(4, 4.5), fat=(0.1, 0.3), fiber=(1, 1.9)), "USDA: tomatoes, canned, whole, with juice"),
     "fat poured off":  (None, dict(kcal=(884, 884), protein=(0, 0), carbs=(0, 0), fat=(100, 100), fiber=(0, 0)), "Rendered fat poured out of the pan (entered as a negative amount)"),
+    "sirloin":         (None, dict(kcal=(150, 200), protein=(20.5, 22), carbs=(0, 0), fat=(7, 12.5), fiber=(0, 0)), "USDA: beef top sirloin steak, raw, lean only to lean and fat"),
+    "ground pork":     (None, dict(kcal=(215, 263), protein=(16.9, 18.5), carbs=(0, 0), fat=(15, 21.2), fiber=(0, 0)), "USDA: ground pork, raw (generic) to 85% lean labels"),
+    "russet potato":   (None, dict(kcal=(79, 79), protein=(2.1, 2.1), carbs=(18.1, 18.1), fat=(0.1, 0.1), fiber=(1.3, 1.3)), "USDA: potatoes, russet, raw"),
+    "red onion":       (None, dict(kcal=(40, 40), protein=(1.1, 1.1), carbs=(9.3, 9.3), fat=(0.1, 0.1), fiber=(1.7, 1.7)), "USDA: onions, raw"),
+    "tomato":          (None, dict(kcal=(18, 18), protein=(0.9, 0.9), carbs=(3.9, 3.9), fat=(0.2, 0.2), fiber=(1.2, 1.2)), "USDA: tomatoes, red, raw"),
+    "green beans":     (None, dict(kcal=(31, 31), protein=(1.8, 1.8), carbs=(7, 7), fat=(0.2, 0.2), fiber=(2.7, 2.7)), "USDA: snap beans, green, raw"),
+    "brussels sprouts": (None, dict(kcal=(43, 43), protein=(3.4, 3.4), carbs=(9, 9), fat=(0.3, 0.3), fiber=(3.8, 3.8)), "USDA: Brussels sprouts, raw"),
+    "basil":           (None, dict(kcal=(23, 23), protein=(3.2, 3.2), carbs=(2.7, 2.7), fat=(0.6, 0.6), fiber=(1.6, 1.6)), "USDA: basil, fresh"),
+    "soy sauce":       (None, dict(kcal=(53, 60), protein=(8.1, 10.5), carbs=(4.9, 5.6), fat=(0.1, 0.6), fiber=(0.8, 0.8)), "USDA: soy sauce (shoyu); 1 tbsp = 16 g"),
+    "oyster sauce":    (None, dict(kcal=(51, 100), protein=(1.4, 2), carbs=(10.9, 22), fat=(0.3, 0.3), fiber=(0.3, 0.3)), "USDA / labels: oyster sauce; 1 tbsp = 18 g (sweeter brands run higher)"),
+    "fish sauce":      (None, dict(kcal=(35, 35), protein=(5.1, 5.1), carbs=(3.6, 3.6), fat=(0, 0), fiber=(0, 0)), "USDA: fish sauce; 1 tbsp = 18 g"),
+    "sugar":           (None, dict(kcal=(387, 387), protein=(0, 0), carbs=(100, 100), fat=(0, 0), fiber=(0, 0)), "USDA: sugar, granulated"),
+    "neutral oil":     (None, dict(kcal=(884, 884), protein=(0, 0), carbs=(0, 0), fat=(100, 100), fiber=(0, 0)), "USDA: canola or vegetable oil (1 tbsp = 13.5 g)"),
     "lemon or lime":   (None, dict(kcal=(25, 30), protein=(0.4, 0.6), carbs=(8, 10), fat=(0.2, 0.3), fiber=(0, 0.3)), "USDA: juice"),
 }
 
@@ -150,57 +162,52 @@ NOVEMBER = {
         # Rendered fat is poured off before the vegetables go in; the thighs still keep their skin.
         items=[("chicken thigh", (1135 * THIGH_EDIBLE, 1360 * THIGH_EDIBLE)), ("leeks", (180, 240)), ("fennel", (200, 280)),
                ("satsuma", 150), ("chicken stock", 355), ("olive oil", (0.5 * TBSP_OIL, 1 * TBSP_OIL)), ("rice, cooked", 3 * 158)]),
-    "chicken-white-beans-chard": dict(
-        servings=2, serving="Half the recipe: two thighs over half the beans and chard, and a thick slice of sourdough.",
-        excludes="Nothing beyond the bread.",
-        # Rendered fat is poured off down to a tablespoon before the beans go in.
-        items=[("chicken thigh", 795 * THIGH_EDIBLE), ("white beans", (240, 255)), ("chard", (150, 200)), ("chicken stock", 237),
-               ("satsuma", 75), ("olive oil", (0.5 * TBSP_OIL, 1 * TBSP_OIL)), ("pickled fennel", 60), ("sourdough", (120, 150))]),
-    "beef-white-bean-chard-soup": dict(
-        servings=6, serving="One of six big bowls (about 2 cups), with a little grated Parmesan.",
-        excludes="Bread.",
-        items=[("beef chuck", 1135), ("leeks", (180, 240)), ("chard", (300, 400)), ("white beans", (480, 510)),
-               ("chicken stock", 946), ("olive oil", 2 * TBSP_OIL), ("parmesan", (30, 45)), ("lemon or lime", 30)]),
-    "minestrone-sausage": dict(
-        servings=6, serving="One of six big bowls (about 2 cups), with a little grated Parmesan.",
-        excludes="Bread.",
-        # Sausage fat stays in the pot to cook the vegetables.
-        items=[("italian sausage", 340), ("leeks", (180, 240)), ("fennel", (200, 280)), ("carrots", (120, 150)), ("chard", (300, 400)),
-               ("canned tomatoes", 794), ("white beans", (480, 510)), ("chicken stock", 946), ("pasta, dry", (170, 180)),
-               ("olive oil", 2 * TBSP_OIL), ("parmesan", (30, 45))]),
-    "seared-halibut-persimmon": dict(
-        servings=2, serving="One fillet with half the salad and 1 cup cooked rice.",
-        excludes="Nothing beyond the rice.",
-        items=[("halibut", 454), ("fuyu persimmon", (280, 340)), ("fennel", (200, 280)), ("parmesan", 28),
-               ("olive oil", 3 * TBSP_OIL), ("lemon or lime", 30), ("rice, cooked", 2 * 158)]),
-    "salmon-lentils-cauliflower": dict(
-        servings=2, serving="Half the recipe: one piece of salmon over half the lentils and cauliflower.",
-        excludes="Nothing.",
-        variants={"Wild salmon": "salmon, wild", "Farmed salmon": "salmon, farmed"},
-        # ¾ cup dry French green lentils is about 140–150 g.
-        items=[("rich fish", 454), ("lentils, dry", (140, 150)), ("cauliflower", (550, 700)), ("pickled fennel", 60),
-               ("olive oil", 4 * TBSP_OIL), ("parmesan", (15, 20))]),
-    "orecchiette-sausage-chard": dict(
-        servings=2, serving="Half the recipe: about 4 oz dry pasta with 6 oz sausage, leeks, chard, and Parmesan.",
-        excludes="Nothing.",
-        # ¾ lb sausage; most rendered fat is poured off, so the low end uses the leaner USDA entry
-        # and the high end counts it all.
-        # ¾ lb sausage is ~90 g of fat; about a third to a half renders, and all but a tablespoon is poured off.
-        items=[("fat poured off", (-33, -15)), ("pasta, dry", 227), ("italian sausage", 340), ("leeks", (180, 240)), ("chard", (300, 400)),
-               ("butter", 1 * TBSP_BUTTER), ("parmesan", 57), ("lemon or lime", 15)]),
-    "flat-iron-steak-leeks": dict(
-        servings=2, serving="Half the steak with half the leeks and 1 cup cooked farro.",
-        excludes="Nothing beyond the farro (rice is about the same).",
-        # 1 cup cooked farro is about 50 g dry.
-        items=[("flat iron", 567), ("leeks", (180, 240)), ("butter", 1 * TBSP_BUTTER), ("olive oil", (0.5 * TBSP_OIL, 1 * TBSP_OIL)),
-               ("pickled fennel", 60), ("farro, dry", (95, 105))]),
     "farro-braised-chicken-bowls": dict(
-        servings=2, serving="Half the recipe: two braised thighs with their leeks and juices, about 1 cup cooked farro, chard, and Parmesan.",
+        servings=2, serving="Half the recipe: two braised thighs with their leeks and juices, about 1 cup cooked farro, half the cauliflower, and Parmesan.",
         excludes="Nothing. These are the braise's leftovers, so don't count them twice.",
         # Two thirds of the braise (four of six thighs, and their share of the pot), without its rice.
         items=[("chicken thigh", (1135 * THIGH_EDIBLE * 2 / 3, 1360 * THIGH_EDIBLE * 2 / 3)), ("leeks", (120, 160)), ("fennel", (130, 190)),
                ("satsuma", 100), ("chicken stock", 237), ("olive oil", (0.33 * TBSP_OIL, 0.67 * TBSP_OIL)),
-               ("farro, dry", (140, 150)), ("chard", (150, 200)), ("pickled fennel", 60), ("parmesan", (15, 20)), ("lemon or lime", 15)]),
+               ("farro, dry", (140, 150)), ("cauliflower", (550, 700)), ("olive oil", 1 * TBSP_OIL), ("pickled fennel", 60),
+               ("parmesan", (15, 20)), ("lemon or lime", 15)]),
+    "minestrone-sausage": dict(
+        servings=6, serving="One of six big bowls (about 2 cups), with a little grated Parmesan.",
+        excludes="Bread.",
+        # Sausage fat stays in the pot to cook the vegetables.
+        items=[("italian sausage", 340), ("leeks", (180, 240)), ("carrots", (180, 225)), ("chard", (300, 400)),
+               ("canned tomatoes", 794), ("white beans", (480, 510)), ("chicken stock", 946), ("pasta, dry", (170, 180)),
+               ("olive oil", 2 * TBSP_OIL), ("parmesan", (30, 45))]),
+    "salmon-lentils-brussels-sprouts": dict(
+        servings=2, serving="Half the recipe: one piece of salmon over half the lentils and Brussels sprouts.",
+        excludes="Nothing.",
+        variants={"Wild salmon": "salmon, wild", "Farmed salmon": "salmon, farmed"},
+        # ¾ cup dry French green lentils is about 140–150 g; 1 lb sprouts loses a little to trimming.
+        items=[("rich fish", 454), ("lentils, dry", (140, 150)), ("brussels sprouts", (400, 454)), ("pickled fennel", 60),
+               ("olive oil", (3 * TBSP_OIL, 3.5 * TBSP_OIL)), ("lemon or lime", 15)]),
+    "lomo-saltado": dict(
+        servings=2, serving="Half the recipe: half the beef and vegetables, half the fries, and about 1 cup cooked rice.",
+        excludes="Nothing.",
+        # 1 lb potatoes, peeled; nearly all the oil stays in the dish (the fries hold theirs).
+        items=[("sirloin", 454), ("russet potato", (400, 454)), ("red onion", (150, 200)), ("tomato", (120, 150)),
+               ("soy sauce", 48), ("oyster sauce", 18), ("neutral oil", (3 * TBSP_OIL, 4 * TBSP_OIL)), ("rice, cooked", (316, 355))]),
+    "thai-basil-pork": dict(
+        servings=2, serving="Half the recipe: half the pork and green beans, one fried egg, and about 1 cup cooked rice.",
+        excludes="Nothing.",
+        # Some of the egg-frying oil stays in the pan; the table fish sauce is eaten partly.
+        items=[("ground pork", 454), ("green beans", (200, 227)), ("basil", 40), ("soy sauce", 11), ("oyster sauce", 18),
+               ("fish sauce", (24, 48)), ("sugar", 4), ("egg", 100), ("neutral oil", (1.75 * TBSP_OIL, 3 * TBSP_OIL)),
+               ("rice, cooked", (316, 355))]),
+    "chicken-white-beans-chard": dict(
+        servings=2, serving="Half the recipe: two thighs over half the beans and chard, and a thick slice of sourdough.",
+        excludes="Nothing beyond the bread.",
+        # In the air fryer some fat renders into the drawer; only a spoonful goes back into the beans.
+        items=[("chicken thigh", 795 * THIGH_EDIBLE), ("fat poured off", (-25, -10)), ("white beans", (240, 255)), ("chard", (150, 200)),
+               ("chicken stock", 118), ("satsuma", 75), ("olive oil", 1 * TBSP_OIL), ("pickled fennel", 60), ("sourdough", (120, 150))]),
+    "seared-halibut-satsuma-fennel": dict(
+        servings=2, serving="One fillet with half the salad and 1 cup cooked rice.",
+        excludes="Nothing beyond the rice.",
+        items=[("halibut", 454), ("satsuma", (200, 250)), ("fennel", (200, 280)),
+               ("olive oil", 3 * TBSP_OIL), ("lemon or lime", 15), ("rice, cooked", 2 * 158)]),
 }
 PAIRINGS_NOVEMBER = {
     "minestrone-sausage": [("egg", 50), ("sourdough", (60, 75)), ("parmesan", 10)],
