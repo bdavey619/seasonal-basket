@@ -395,6 +395,19 @@ At the end of each edition, the reader should have at least one thing they will 
 - Techniques from prior editions can be assumed without re-explanation. A brief callback ("the same charring technique from last month") is sufficient.
 - Staple meals carry forward. The basket changes; the meals stay familiar.
 
+## Trusted Sources and Influences
+
+The reader's favorite cooks, to use when choosing dishes and checking recipes:
+
+Life by Mike G, J. Kenji López-Alt, Yarin Danieli, Everyday Is Feast Day, Drew Cooks, Brian Lagerstrom, Carlsbad Cravings, Derek Sarno, José El Cook, Ian Fujimoto, Aaron and Claire, Food Wishes (Chef John), FeedThePudge, Devin Gaffney, Cafe Maddy, Hailee Catalano, Chef Billy Parisi, Chef Jack Ovens, Not Another Cooking Show, Yeung Man Cooking, Ethan Chlebowski, Bon Appétit, Josh Cortis.
+
+How to use them:
+
+- **For ideas.** When choosing a month's dishes, look at what these cooks make with the month's basket. They lean toward technique explained, big flavor, and a wide range of cuisines, which suits the "how it works" ending on every dish.
+- **For checking a recipe.** A cook's written recipe (on their site, in a cookbook, or in a publication) can go under "Checked against" next to the test kitchens. A video alone can't: we can't verify quantities we can't read. Prefer a test-kitchen recipe for times and temperatures, and the cook's version for the flavor.
+- **Never copy.** Write every dish fresh for the month's basket, the reader's kitchen, and the allergy rules. Name the cook only as a source link.
+- **Watch the allergies.** Korean and Chinese home cooking often relies on sesame oil, sesame seeds, or peanuts. Leave them out, or don't use the dish.
+
 ## Recipe Philosophy
 
 Most content should be meal guidance, not formal recipes.
