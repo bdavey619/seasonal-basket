@@ -2,14 +2,14 @@
   "slug": "swiss-chard",
   "month": "November",
   "name": "Swiss chard",
-  "tile_uses": "The soup, the orecchiette, the farro bowls",
+  "tile_uses": "The minestrone, the crisp chicken's white beans",
   "why_now": "Chard is one of the greens that does best in Southern California's cool season. It's tender enough to cook in minutes and sturdy enough for a pot of soup.",
   "how_to_choose": [
     "Glossy, upright leaves with no yellowing",
     "Crisp stems that snap rather than bend",
     "Any color — rainbow, red, or white — cooks the same"
   ],
-  "buy_this_much": "3 bunches for the suggested week: the soup, the orecchiette, and the farro bowls (and a frittata).",
+  "buy_this_much": "1 bunch for the suggested week: the minestrone. Another if you make the crisp chicken with white beans (half a bunch) or a frittata.",
   "price_note": "Sold by the bunch.",
   "pairs_with_month": [
     "leeks",
@@ -25,8 +25,8 @@
       "description": "Stems early, leaves at the end."
     },
     {
-      "name": "With pasta",
-      "description": "With melted leeks, chile, and Parmesan."
+      "name": "With beans",
+      "description": "Stems with the garlic, leaves wilted into the beans."
     },
     {
       "name": "With eggs",
@@ -34,9 +34,8 @@
     }
   ],
   "weekday_uses": [
-    "Stirred into the beef and white bean soup",
-    "Wilted through orecchiette with sausage and leeks",
-    "Wilted into the braise juices for the farro bowls"
+    "Stems early and leaves late in the minestrone",
+    "Wilted into garlicky white beans under crisp chicken"
   ],
   "weekend_use": "Stems and leaves folded into a chard and Parmesan frittata.",
   "storage": "In the fridge, wrapped loosely in a damp towel in a bag, for up to five days.",

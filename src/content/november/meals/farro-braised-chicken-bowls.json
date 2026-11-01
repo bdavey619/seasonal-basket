@@ -1,16 +1,17 @@
 {
   "slug": "farro-braised-chicken-bowls",
-  "name": "Farro bowls with braised chicken, chard, and pickled fennel",
+  "name": "Farro bowls with braised chicken, crisp cauliflower, and pickled fennel",
   "display_name": "Farro and braised chicken bowls",
   "kind": "Weeknight",
   "time": "35 minutes, with leftover braise",
   "time_short": "35 min",
   "yield": "Dinner tonight and a lunch",
-  "intro": "What the weekend braise turns into midweek: nutty, chewy farro, the chicken pulled off the bone and warmed in its leeks and juices, chard wilted in, and the jar on top.",
+  "intro": "What the weekend braise turns into midweek: nutty, chewy farro, the chicken pulled off the bone and warmed in its leeks and juices, cauliflower crisped in the air fryer, and the jar on top.",
   "needs": [
     "¾ cup farro, whole or semi-pearled",
     "4 leftover braised chicken thighs, with their leeks and juices",
-    "½ bunch Swiss chard, stems chopped, leaves torn",
+    "1 head cauliflower, in small florets",
+    "1 tbsp olive oil",
     "Pickled fennel, a big forkful",
     "½ lemon",
     "Grated Parmesan",
@@ -22,31 +23,35 @@
       "text": "Simmer the farro in a big pot of salted water, like pasta, until tender with a little chew. Pearled farro is faster — start checking at 15 minutes. Drain."
     },
     {
-      "text": "Meanwhile, pull the chicken off the bones in big pieces and discard the bones. Keep the skin if you like it."
+      "cue": "400°F · 20–25 min",
+      "text": "Meanwhile, toss the cauliflower with the oil and salt and cook it in the air fryer, tossing halfway, until tender and dark gold at the edges."
+    },
+    {
+      "text": "Pull the chicken off the bones in big pieces and discard the bones. Keep the skin if you like it."
     },
     {
       "cue": "5 min",
-      "text": "Warm the leeks and juices from the braise in a skillet over medium. Add the chard stems and cook until tender, then the chicken and the chard leaves until the leaves wilt and everything is hot."
+      "text": "Warm the leeks and juices from the braise in a skillet over medium, then add the chicken and heat it through."
     },
     {
       "cue": "Finish",
-      "text": "Farro in bowls, the chicken and greens over it with plenty of juice, pickled fennel, Parmesan, black pepper, and lemon."
+      "text": "Farro in bowls, the chicken over it with plenty of juice, the cauliflower, pickled fennel, Parmesan, black pepper, and lemon."
     }
   ],
   "how_it_works": "Braise once, eat twice: the juices left in the pot are the best sauce of the week, and farro is the grain built to soak them up without going soft. Farro is a whole grain when it's whole or semi-pearled; pearled farro cooks faster because most of the bran has been polished off.",
   "swaps": [
     "Rice instead of farro, if that's what's in the pantry.",
-    "Leftover roast chicken thighs from the cauliflower pan.",
+    "Leftover thighs from the crisp chicken and white beans.",
     "A fried egg on top."
   ],
-  "leftovers": "Cooked farro keeps four days in the fridge; make a double batch and use it under the flat iron or the soup.",
+  "leftovers": "Cooked farro keeps four days in the fridge; make a double batch and use it under the salmon or in a bowl of the minestrone.",
   "linked_house_flavor": "pickled-fennel",
   "linked_field_notes": [
-    "chard-stems"
+    "the-air-fryer"
   ],
   "linked_ingredients": [
     "chicken-thighs",
-    "swiss-chard",
+    "cauliflower",
     "leeks"
   ],
   "sources": [
@@ -54,6 +59,11 @@
       "title": "Simple Farro — America's Test Kitchen",
       "url": "https://www.americastestkitchen.com/recipes/8362-simple-farro",
       "note": "boiled like pasta in plenty of salted water until tender with a slight chew"
+    },
+    {
+      "title": "Air-Fryer Curried Roasted Cauliflower and Chickpea Salad — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/12468-air-fryer-curried-roasted-cauliflower-and-chickpea-salad",
+      "note": "a head of florets at 400°F for 23 to 25 minutes, tossed halfway, until golden at the edges"
     },
     {
       "title": "How to prepare farro — Food52",
@@ -67,27 +77,27 @@
     }
   ],
   "nutrition": {
-    "serving": "Half the recipe: two braised thighs with their leeks and juices, about 1 cup cooked farro, chard, and Parmesan.",
+    "serving": "Half the recipe: two braised thighs with their leeks and juices, about 1 cup cooked farro, half the cauliflower, and Parmesan.",
     "excludes": "Nothing. These are the braise's leftovers, so don't count them twice.",
     "kcal": [
-      900,
-      1200
+      1000,
+      1350
     ],
     "protein": [
-      60,
-      75
+      65,
+      80
     ],
     "carbs": [
-      75,
-      90
+      85,
+      105
     ],
     "fat": [
-      40,
-      65
+      50,
+      70
     ],
     "fiber": [
-      10,
-      15
+      15,
+      20
     ]
   }
 }

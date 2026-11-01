@@ -1,0 +1,105 @@
+{
+  "slug": "chicken-white-beans-chard",
+  "name": "Crisp chicken thighs over garlicky white beans, chard, and satsuma",
+  "display_name": "Crisp chicken and white beans",
+  "kind": "Weeknight",
+  "time": "About 40 minutes",
+  "time_short": "40 min",
+  "yield": "Dinner tonight and a lunch",
+  "intro": "Bone-in thighs in the air fryer, skin-side up, until the skin crackles and the meat is juicy, set over white beans simmered in a skillet with garlic, chard, stock, and satsuma. A spoonful of the chicken's drippings goes into the beans.",
+  "needs": [
+    "4 bone-in, skin-on chicken thighs (about 1¾ lbs)",
+    "1 can white beans, drained and rinsed",
+    "½ bunch Swiss chard, stems chopped, leaves torn",
+    "½ cup chicken stock",
+    "1 satsuma — zest and juice",
+    "3 garlic cloves, sliced",
+    "1 tbsp olive oil",
+    "Pickled fennel, to serve",
+    "Sourdough, to serve",
+    "Salt, black pepper, and chile flakes"
+  ],
+  "steps": [
+    {
+      "text": "Pat the chicken completely dry, trim any skin hanging off the edges, and salt both sides. Dry skin is what crisps."
+    },
+    {
+      "cue": "375°F · 25–30 min",
+      "text": "Set the thighs in the air fryer skin-side up, spaced apart in one layer. Cook until the skin is deep golden and crisp and the thickest thigh reads about 185°F. There's no need to flip them."
+    },
+    {
+      "cue": "3 min",
+      "text": "With 15 minutes to go, warm the oil in the 12-inch skillet over medium. Add the garlic, chard stems, and a pinch of chile flakes and cook until the stems soften."
+    },
+    {
+      "cue": "5 min",
+      "text": "Add the beans, stock, and satsuma juice and simmer, mashing a few beans against the pan so the liquid turns creamy."
+    },
+    {
+      "cue": "2 min",
+      "text": "Stir in the chard leaves until they wilt, and a spoonful of the drippings from under the chicken. Season with salt and pepper."
+    },
+    {
+      "cue": "Finish",
+      "text": "Let the chicken rest for 5 minutes. Beans and greens in shallow bowls, a thigh or two on top, satsuma zest, pickled fennel, and bread for the juices."
+    }
+  ],
+  "how_it_works": "An air fryer is a small, powerful convection oven: hot air moving fast over the skin dries and renders it, and the fat drips away instead of pooling, so the skin crisps without a sear. Thighs are forgiving and are best around 185°F, where their connective tissue has melted. Beans simmered with stock and mashed a little make their own sauce, and the drippings give it the chicken's flavor.",
+  "swaps": [
+    "Cauliflower florets in the beans, in place of the chard.",
+    "A lemon instead of the satsuma, for sharper beans.",
+    "French green lentils (cooked) instead of the beans."
+  ],
+  "leftovers": "Pack a thigh over the beans for lunch. Recrisp the chicken in the air fryer at 375°F for 5 minutes and warm the beans in a small pan.",
+  "linked_house_flavor": "pickled-fennel",
+  "linked_field_notes": [
+    "the-air-fryer",
+    "chard-stems"
+  ],
+  "linked_ingredients": [
+    "chicken-thighs",
+    "swiss-chard",
+    "satsumas"
+  ],
+  "sources": [
+    {
+      "title": "Air-Fryer Roasted Chicken Thighs with Ras el Hanout and Lemon — America's Test Kitchen",
+      "url": "https://www.americastestkitchen.com/recipes/16821-air-fryer-roasted-chicken-thighs-with-ras-el-hanout-and-lemon",
+      "note": "bone-in thighs at 375°F, skin-side up and spaced apart in the basket"
+    },
+    {
+      "title": "One-Skillet Crispy Chicken with Brothy Beans — Food52",
+      "url": "https://food52.com/recipes/85151-skillet-chicken-thighs-recipe-with-brothy-beans",
+      "note": "white beans and greens simmered in stock under crisp-skinned thighs"
+    },
+    {
+      "title": "Safe Minimum Internal Temperature Chart — USDA",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+      "note": "chicken is safe at 165°F; thighs are juicier and more tender closer to 185°F"
+    }
+  ],
+  "nutrition": {
+    "serving": "Half the recipe: two thighs over half the beans and chard, and a thick slice of sourdough.",
+    "excludes": "Nothing beyond the bread.",
+    "kcal": [
+      800,
+      1050
+    ],
+    "protein": [
+      65,
+      70
+    ],
+    "carbs": [
+      65,
+      80
+    ],
+    "fat": [
+      35,
+      50
+    ],
+    "fiber": [
+      10,
+      15
+    ]
+  }
+}

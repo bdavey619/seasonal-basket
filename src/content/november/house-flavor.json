@@ -6,7 +6,7 @@
   "card_uses": [
     "A forkful beside anything braised.",
     "The brine dresses warm lentils.",
-    "Cold beside a seared steak.",
+    "Cold beside crisp chicken.",
     "On toast with shaved Parmesan."
   ],
   "ingredients": [
@@ -25,7 +25,7 @@
   },
   "uses": [
     {
-      "meal": "salmon-lentils-cauliflower",
+      "meal": "salmon-lentils-brussels-sprouts",
       "label": "Salmon over lentils",
       "action": "Brine as the dressing, fennel folded in.",
       "context": "Lentils drink the brine while they're warm."
@@ -43,20 +43,14 @@
       "context": "Crunch and acid over the braise juices."
     },
     {
-      "meal": "flat-iron-steak-leeks",
-      "label": "Flat iron steak",
-      "action": "Beside the steak.",
-      "context": "Rich beef wants something cold and sharp."
+      "meal": "chicken-white-beans-chard",
+      "label": "Crisp chicken",
+      "action": "Beside the bowl.",
+      "context": "Cold and sharp against beans and crisp skin."
     },
     {
-      "meal": "sheet-pan-chicken-cauliflower",
-      "label": "Chicken and cauliflower",
-      "action": "Over the top, with the brine.",
-      "context": "The brine and the pan juices are the sauce."
-    },
-    {
-      "meal": "beef-white-bean-chard-soup",
-      "label": "The soup",
+      "meal": "minestrone-sausage",
+      "label": "The minestrone",
       "action": "A forkful on top.",
       "context": "It wakes up a bowl on day three."
     }
